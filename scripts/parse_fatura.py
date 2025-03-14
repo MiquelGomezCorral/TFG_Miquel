@@ -5,6 +5,10 @@ import random
 
 from parse import save_and_parse_files
 
+# ===========================================
+#             Management logic
+# ===========================================
+
 def main(args):
     random.seed(args.seed)
     valid_templates = list(range(1,2)) # 1 Different templates
@@ -57,6 +61,9 @@ def parse_json(data, template):
     if template == 1:
         return parse_template_1(data, pre_parsed_factura)
         
+# ===========================================
+#             TEMPLATE PARSERS
+# ===========================================
     
 
 def parse_template_1(data, parsed_factura):
@@ -84,6 +91,10 @@ def parse_template_1(data, parsed_factura):
     return parsed_factura
     
     
+
+# ===========================================
+#                MAIN
+# ===========================================
 
     
     
