@@ -2,6 +2,7 @@ import argparse
 import json
 import os
 import random
+from typing import Any, Dict, List, Tuple
 
 from parse import save_and_parse_files
 
@@ -9,14 +10,29 @@ from parse import save_and_parse_files
 #             Management logic
 # ===========================================
 
-def main(args):
+def main(args) -> None:
+    """
+    Main function to process and save parsed files. It loads files from the dataset, 
+    parses them based on predefined templates, and saves the results to a specified location.
+    
+    Args:
+        args: An object containing the following attributes:
+            - n_files (int): Number of files to process (optional).
+            - dataset_path (str): Path to the dataset folder.
+            - save_path (str): Path where parsed files will be saved.
+            - seed (int): Random seed for reproducibility.
+
+    
+    Returns:
+        None
+    """
     random.seed(args.seed)
-    valid_templates = list(range(1,2)) # 1 Different templates
-    n_valid_templates = len(valid_templates)
+    valid_templates: List[int] = list(range(1,2)) # 1 Different templates
+    n_valid_templates: int = len(valid_templates)
     
-    file_ids = random.sample(list(range(200)), k=args.n_files) # Instances go from 0 to 199
+    file_ids: List[int] = random.sample(list(range(200)), k=args.n_files) # Instances go from 0 to 199
     
-    pre_parsed_files: list[tuple] = []
+    pre_parsed_files: List[Tuple[str, dict]] = []
     
     print(f"Processing {args.n_files} Files...")
     for i in range(args.n_files):
@@ -29,7 +45,7 @@ def main(args):
             print(f" - {i+1}: Processing {file_name}...")
             
             d = json.load(f)
-            pre_parsed_file = parse_json(d, curr_template)
+            pre_parsed_file = extract_json(d, curr_template)
 
             pre_parsed_files.append((file_name, pre_parsed_file))
 
@@ -39,7 +55,18 @@ def main(args):
     print(f"DONE!")
 
         
-def parse_json(data, template):
+def extract_json(data: dict, template: int) -> dict:
+    """
+    Extracts JSON data based on the specified template and returns a pre-parsed dictionary.
+
+    Args:
+        data (dict): The raw JSON data to be parsed.
+        template (int): The template number that determines how to parse the data.
+    
+    Returns:
+        dict: The parsed data in the desired structure.
+    """
+    
     pre_parsed_factura = {
         "buyer": "",
         "address": "",
@@ -59,26 +86,40 @@ def parse_json(data, template):
     }
     
     if template == 1:
-        return parse_template_1(data, pre_parsed_factura)
+        return extract_template_1(data, pre_parsed_factura)
         
 # ===========================================
 #             TEMPLATE PARSERS
 # ===========================================
     
 
-def parse_template_1(data, parsed_factura):
+def extract_template_1(data: Dict[str, Any], parsed_factura: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Extracts and parses the information from the raw data for template 1 and fills the parsed_factura structure.
+
+    Args:
+        data (Dict[str, Any]): The raw data from the template, expected to contain keys like 'BUYER', 'DATE', 
+                                'SUB_TOTAL', 'DISCOUNT', 'TAX', and 'TOTAL', each holding a 'text' field.
+        parsed_factura (Dict[str, Any]): A dictionary to be populated with extracted and parsed information, 
+                                         such as buyer, address, date, subtotal, etc.
+    
+    Returns:
+        Dict[str, Any]: The updated `parsed_factura` dictionary with parsed values for each field.
+    """
+    
     text_aux = data["BUYER"]["text"].split("\n")
-    parsed_factura["buyer"] = text_aux[0].split(":")[1] # Bill to:James Miller
-    parsed_factura["address"] = " ".join(text_aux[1:3]) # 41839 Lee Terrace Apt. 982\nLake Gregoryland, WV 71038 US
+    parsed_factura["buyer"] = text_aux[0].split(":")[1] # Bill to:James Miller -> "James Miller"
+    parsed_factura["address"] = " ".join(text_aux[1:3]) # 41839 Lee Terrace Apt. 982\nLake Gregoryland, WV 71038 US -> One line
     
     text_aux = data["DATE"]["text"].split(": ")
     parsed_factura["date"] = text_aux[1] # Date: 20-Mar-2008
 
+    # Extracting shopping or tax flag (still not parsed)    
     parsed_factura["shopping_or_tax"] = None 
     
     text_aux = data["SUB_TOTAL"]["text"].split()
-    parsed_factura["currency"] = text_aux[-1] 
-    parsed_factura["subtotal"] = text_aux[-2] 
+    parsed_factura["currency"] = text_aux[-1] # €, EUR, $, USD...
+    parsed_factura["subtotal"] = text_aux[-2]
     
     text_aux = data["DISCOUNT"]["text"].split()
     parsed_factura["discount"] = text_aux[-1] 
