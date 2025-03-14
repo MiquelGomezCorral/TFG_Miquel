@@ -4,9 +4,9 @@ import os
 import random
 from typing import List, Tuple
 
-from parse import save_and_parse_files
+from parse import save_and_parse_files, separator_str, len_separator_str
 from file_class import Factura, Product
-from scripts.extract_templates import extract_json
+from extract_templates import extract_json
 
 
 # ===========================================
@@ -32,36 +32,39 @@ def main(args) -> None:
     random.seed(args.seed)
     valid_templates: List[int] = list([1,3,5,6,8]) # 5 Different templates
     n_valid_templates: int = len(valid_templates)
+    samples_per_template = (args.n_files // n_valid_templates) 
     
-    file_ids: List[int] = random.sample(list(range(200)), k=args.n_files) # Instances go from 0 to 199
+    file_ids: List[int] = []
+    for i in valid_templates:
+        file_ids.append(random.sample(list(range(200)), k=samples_per_template)) # Instances go from 0 to 199, so random
     
     pre_parsed_files: List[Tuple[str, Factura]] = []
     
-    print(f"Processing {args.n_files} Files...")
+    print(f"{separator_str}")
+    print(f"{f'Processing {args.n_files} Files...':^{len_separator_str}}\n")
+    
     for i in range(args.n_files):
         curr_template = valid_templates[i%n_valid_templates]
-        curr_file_id = file_ids[i]
+        curr_file_id = file_ids[i%n_valid_templates][i//n_valid_templates]
         file_name = f"Template{curr_template}_Instance{curr_file_id}.json"
         
         file_path = os.path.join(args.dataset_json_path, file_name)
         with open(file_path) as f:
-            print(f" - {i+1}: Processing {file_name}...")
+            print(f" - {i+1:<4}: Processing {file_name}...")
             
             d = json.load(f)
             pre_parsed_file = extract_json(d, curr_template)
 
             pre_parsed_files.append((file_name, pre_parsed_file))
 
-    print(f"\nSaving files...")
-    save_and_parse_files(pre_parsed_files, args.save_path, args.dataset_img_path)
-
-    print(f"DONE!")
-
-        
-
-        
-
+    print(f"{separator_str}")
+    print(f"{f'Saving {args.n_files} Files...':^{len_separator_str}}\n")
     
+    
+    save_and_parse_files(pre_parsed_files, args.save_path, args.dataset_img_path, args.test_split, args.val_split)
+
+    print(f"{separator_str}")
+    print(f"{f'DONE!':^{len_separator_str}}\n")
 
 # ===========================================
 #                MAIN
@@ -69,7 +72,9 @@ def main(args) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--n_files", type=int, default=55)
+    parser.add_argument("--test_split", type=float)
+    parser.add_argument("--val_split", type=float)
+    parser.add_argument("--n_files", type=int, default=100)
     parser.add_argument("--dataset_json_path", type=str, default="datasets_finetune/FATURA/Annotations/Original_Format")
     parser.add_argument("--dataset_img_path", type=str, default="datasets_finetune/FATURA/images")
     parser.add_argument("--save_path", type=str, default="datasets_finetune/outputs/FATURA")

@@ -9,16 +9,16 @@ class Factura:
         self.buyer: str = ""
         self.address: str = ""
         self.date: str = ""
-        self.shopping_or_tax: bool = None  # True for Shopping, False for Tax
+        self.shopping_or_tax: bool = None  # True for Commercial, False for Tax
         self.currency: str = ""
         self.subtotal: float = 0.0
         self.discount: float = 0.0
         self.tax: float = 0.0
         self.total: float = 0.0
-        self.products: List[Product] = []
+        # self.products: List[Product] = []
 
     def __repr__(self):
-        return f"Factura(buyer={self.buyer}, address={self.address}, date={self.date}, shopping_or_tax={self.shopping_or_tax}, currency={self.currency}, subtotal={self.subtotal}, discount={self.discount}, tax={self.tax}, total={self.total}, products={self.products})"
+        return f"Factura(buyer={self.buyer}, address={self.address}, date={self.date}, shopping_or_tax={self.shopping_or_tax}, currency={self.currency}, subtotal={self.subtotal}, discount={self.discount}, tax={self.tax}, total={self.total})"#, products={self.products})"
 
     def to_dict(self):
         """
@@ -34,7 +34,7 @@ class Factura:
             "discount": self.discount,
             "tax": self.tax,
             "total": self.total,
-            "products": [Product.convert_to_dict(product) for product in self.products]  # Convert products to dictionaries
+            # "products": [Product.convert_to_dict(product) for product in self.products]  # Convert products to dictionaries
         }
 
     @classmethod  
@@ -52,7 +52,7 @@ class Factura:
         factura.discount = data.get("discount", 0.0)
         factura.tax = data.get("tax", 0.0)
         factura.total = data.get("total", 0.0)
-        factura.products = data.get("products", [])
+        # factura.products = data.get("products", [])
         return factura
         
 class Product:

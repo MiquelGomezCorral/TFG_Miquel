@@ -11,6 +11,9 @@ from file_class import Factura, Product
 #             Management logic
 # ===========================================
 
+separator_str: str = "\n___________________________________________________________________________"
+len_separator_str: int = len(separator_str)
+
 def load_ensure_parse_and_save_files(args) -> None:
     """
     Loads files from the specified dataset path, extracts relevant data, 
@@ -34,7 +37,8 @@ def load_ensure_parse_and_save_files(args) -> None:
     
     # file_ids = random.choices(list(range(200)), k=args.n_files) # Instances go from 0 to 199
     
-    print(f"Processing {len(files)} Files...")
+    print(f"{separator_str}")
+    print(f"{f'Processing {args.n_files} Files...':^{len_separator_str}}\n")
     for i, file_name in enumerate(files):
         file_path = os.path.join(args.dataset_json_path, file_name)
         with open(file_path) as f:
@@ -43,14 +47,16 @@ def load_ensure_parse_and_save_files(args) -> None:
             data = json.load(f)            
             pre_parsed_files.append((file_name, data["original_data"]))
 
-    print(f"\nSaving files...")
+    print(f"{separator_str}")
+    print(f"{f'Saving {args.n_files} Files...':^{len_separator_str}}\n")
     
-    save_and_parse_files(pre_parsed_files, args.save_path, args.dataset_img_path, args.test_split)
+    save_and_parse_files(pre_parsed_files, args.save_path, args.dataset_img_path, args.test_split, args.val_split)
 
-    print(f"DONE!")
+    print(f"{separator_str}")
+    print(f"{f'DONE!':^{len_separator_str}}\n")
 
 
-def save_and_parse_files(pre_parsed_files: List[Tuple["str", Factura]], save_path: str, dataset_img_path: str, test_split: Optional[float] = None) -> None:
+def save_and_parse_files(pre_parsed_files: List[Tuple["str", Factura]], save_path: str, dataset_img_path: str, test_split: float = None, val_split: float = None) -> None:
     """
     Saves and parses files, either saves then on a single folder or with a test/train split.
 
@@ -62,10 +68,10 @@ def save_and_parse_files(pre_parsed_files: List[Tuple["str", Factura]], save_pat
     Returns:
         None
     """    
-    if test_split is None:
+    if test_split is None and val_split is None:
         save_and_parse_files_normal(pre_parsed_files, save_path, dataset_img_path)
     else: 
-        save_and_parse_files_split(pre_parsed_files, save_path, dataset_img_path, test_split)
+        save_and_parse_files_split(pre_parsed_files, save_path, dataset_img_path, test_split, val_split)
         
         
 # ===========================================
@@ -91,25 +97,9 @@ def save_and_parse_files_normal(pre_parsed_files: List[Tuple["str", Factura]], s
     os.makedirs(save_path_redeable, exist_ok=True)        
         
     save_files(pre_parsed_files, save_path_metadata, dataset_img_path, save_path_redeable)
-        
-        # for file_name, pre_parsed_data in pre_parsed_files:
-        #     pre_parsed_data = pre_parsed_data if isinstance(pre_parsed_data, Factura) else Factura.from_dict(pre_parsed_data) 
-            
-        #     file_name_jpg: str = ".".join(file_name.split(".")[:-1]) + ".jpg" # Change extension of the file name to jpg
-        #     file_path_jpg: str = os.path.join(dataset_img_path, file_name_jpg)
-            
-        #     parsed_data_redeable: dict = parse_file_redeable(file_name_jpg, pre_parsed_data)
-        #     parsed_data_metadata: dict = parse_file_metadata(file_name_jpg, pre_parsed_data)
-        
-        #     file_path_redeable = os.path.join(save_path_redeable, file_name)   
-        #     with open(file_path_redeable, "w") as out_redeable:
-        #         json.dump(parsed_data_redeable, out_redeable, indent=4, ensure_ascii=False)
-        #     shutil.copy(file_path_jpg, save_path_redeable)
-                
-        #     out_metadata.write(json.dumps(parsed_data_metadata) + "\n")
             
             
-def save_and_parse_files_split(pre_parsed_files: List[Tuple["str",Factura]], save_path: str, dataset_img_path: str, test_split: float) -> None:
+def save_and_parse_files_split(pre_parsed_files: List[Tuple["str",Factura]], save_path: str, dataset_img_path: str, test_split: float, val_split: float) -> None:
     """
     Saves, parses and splits the files into training and testing sets, storing each set
     in different folders for both readable and metadata data.
@@ -124,54 +114,36 @@ def save_and_parse_files_split(pre_parsed_files: List[Tuple["str",Factura]], sav
         None
     """
     save_path_redeable: str = os.path.join(save_path, "redeable")
-    save_path_metadata_test: str = os.path.join(save_path, "test")
     save_path_metadata_train: str = os.path.join(save_path, "train")
     
+    if test_split is not None:
+        save_path_metadata_test: str = os.path.join(save_path, "test")
+        os.makedirs(save_path_metadata_test, exist_ok=True)
+    else: test_split = 0
+    if val_split is not None:
+        save_path_metadata_val: str = os.path.join(save_path, "val")
+        os.makedirs(save_path_metadata_val, exist_ok=True)
+    else: val_split = 0
+        
     os.makedirs(save_path_redeable, exist_ok=True)        
-    os.makedirs(save_path_metadata_test, exist_ok=True)
     os.makedirs(save_path_metadata_train, exist_ok=True)
-
         
-    n: int = int(len(pre_parsed_files) * test_split)
-    test_pre_parsed_files: List[Tuple[str, dict]] = pre_parsed_files[:n]
-    train_pre_parsed_files: List[Tuple[str, dict]] = pre_parsed_files[n:]
+    N = len(pre_parsed_files)
+    n_test: int = int(N * test_split)
+    n_val: int = int(N * val_split)
+    n_train: int = N - (n_test + n_val)
+    train_pre_parsed_files: List[Tuple[str, dict]] = pre_parsed_files[:n_train]
+    test_pre_parsed_files: List[Tuple[str, dict]]  = pre_parsed_files[n_train:n_train + n_test]
+    val_pre_parsed_files: List[Tuple[str, dict]]   = pre_parsed_files[n_train + n_test:]
     
-    save_files(test_pre_parsed_files, save_path_metadata_test, dataset_img_path, save_path_redeable)
-        
-    # with open(os.path.join(save_path_metadata_test, "metadata.jsonl"), "w") as out_metadata:
-        # for file_name, pre_parsed_data in test_pre_parsed_files:
-        #     pre_parsed_data = pre_parsed_data if isinstance(pre_parsed_data, Factura) else Factura.from_dict(pre_parsed_data) 
-            
-        #     file_name_jpg: str = ".".join(file_name.split(".")[:-1]) + ".jpg" # Change extension of the file name to jpg
-        #     file_path_jpg: str = os.path.join(dataset_img_path, file_name_jpg)
-            
-        #     parsed_data_redeable: dict = parse_file_redeable(file_name_jpg, pre_parsed_data)
-        #     parsed_data_metadata: dict = parse_file_metadata(file_name_jpg, pre_parsed_data)
-
-        #     file_path_redeable = os.path.join(save_path_redeable, file_name)   
-        #     with open(file_path_redeable, "w") as out_redeable:
-        #         json.dump(parsed_data_redeable, out_redeable, indent=4, ensure_ascii=False)
-        #     shutil.copy(file_path_jpg, save_path_redeable)
-            
-        #     out_metadata.write(json.dumps(parsed_data_metadata) + "\n")
-            
+    print(f" - Traning samples:    {n_train}")
+    print(f" - Testing samples:    {n_test}")
+    print(f" - Validation samples: {n_val}")
+    
     save_files(train_pre_parsed_files, save_path_metadata_train, dataset_img_path, save_path_redeable)
-    # with open(os.path.join(save_path_metadata_train, "metadata.jsonl"), "w") as out_metadata:
-        # for file_name, pre_parsed_data in train_pre_parsed_files:
-            # pre_parsed_data = pre_parsed_data if isinstance(pre_parsed_data, Factura) else Factura.from_dict(pre_parsed_data) 
+    save_files(test_pre_parsed_files , save_path_metadata_test , dataset_img_path, save_path_redeable)
+    save_files(val_pre_parsed_files  , save_path_metadata_val  , dataset_img_path, save_path_redeable)
             
-            # file_name_jpg: str = ".".join(file_name.split(".")[:-1]) + ".jpg" # Change extension of the file name to jpg
-            # file_path_jpg: str = os.path.join(dataset_img_path, file_name_jpg)
-            
-            # parsed_data_redeable: dict = parse_file_redeable(file_name_jpg, pre_parsed_data)
-            # parsed_data_metadata: dict = parse_file_metadata(file_name_jpg, pre_parsed_data)
-        
-            # file_path_redeable = os.path.join(save_path_redeable, file_name)   
-            # with open(file_path_redeable, "w") as out_redeable:
-            #     json.dump(parsed_data_redeable, out_redeable, indent=4, ensure_ascii=False)
-            # shutil.copy(file_path_jpg, save_path_redeable)
-                
-            # out_metadata.write(json.dumps(parsed_data_metadata) + "\n")
     
     
 def save_files(pre_parsed_files, save_path_metadata, dataset_img_path, save_path_redeable):
@@ -247,6 +219,7 @@ def parse_file_redeable(file_name: str, pre_parsed_data: Factura) -> Dict[str, A
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--test_split", type=float)
+    parser.add_argument("--val_split", type=float)
     parser.add_argument("--dataset_json_path", type=str, default="datasets_finetune/outputs/FATURA/redeable")
     parser.add_argument("--dataset_img_path", type=str, default="datasets_finetune/FATURA/images")
     parser.add_argument("--save_path", type=str, default="datasets_finetune/outputs/FATURA")
