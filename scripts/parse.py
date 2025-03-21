@@ -121,7 +121,7 @@ def save_and_parse_files_split(pre_parsed_files: List[Tuple["str",Factura]], sav
         os.makedirs(save_path_metadata_test, exist_ok=True)
     else: test_split = 0
     if val_split is not None:
-        save_path_metadata_val: str = os.path.join(save_path, "val")
+        save_path_metadata_val: str = os.path.join(save_path, "validation")
         os.makedirs(save_path_metadata_val, exist_ok=True)
     else: val_split = 0
         
