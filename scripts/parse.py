@@ -140,9 +140,11 @@ def save_and_parse_files_split(pre_parsed_files: List[Tuple["str",Factura]], sav
     print(f" - Testing samples:    {n_test}")
     print(f" - Validation samples: {n_val}")
     
-    save_files(train_pre_parsed_files, save_path_metadata_train, dataset_img_path, save_path_redeable)
-    save_files(test_pre_parsed_files , save_path_metadata_test , dataset_img_path, save_path_redeable)
-    save_files(val_pre_parsed_files  , save_path_metadata_val  , dataset_img_path, save_path_redeable)
+    save_files(    train_pre_parsed_files, save_path_metadata_train, dataset_img_path, save_path_redeable)
+    if test_split > 0:
+        save_files(test_pre_parsed_files,  save_path_metadata_test , dataset_img_path, save_path_redeable)
+    if val_split > 0:
+        save_files(val_pre_parsed_files,   save_path_metadata_val  , dataset_img_path, save_path_redeable)
             
     
     
