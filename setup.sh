@@ -15,4 +15,7 @@ pip install "transformers==4.38.2" \
             "datasets" \
             "sentence-transformers==2.2.2"
 
+git config --global user.email "miquelgc2003@gmail.com"
+git config --global user.name "Miquel Gómez Corral"
+
 echo "✅ Environment setup complete!"
