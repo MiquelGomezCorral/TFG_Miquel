@@ -5,14 +5,14 @@ import random
 import shutil
 from typing import Any, Dict, List, Optional, Tuple
 
+from utils import separator_str, len_separator_str
 from file_class import Factura, Product
 
 # ===========================================
 #             Management logic
 # ===========================================
 
-separator_str: str = "\n___________________________________________________________________________"
-len_separator_str: int = len(separator_str)
+
 
 def load_ensure_parse_and_save_files(args) -> None:
     """
@@ -36,9 +36,8 @@ def load_ensure_parse_and_save_files(args) -> None:
     files: List[str] = os.listdir(args.dataset_json_path)  # Lists all files and folders
     
     # file_ids = random.choices(list(range(200)), k=args.n_files) # Instances go from 0 to 199
+    print_separator(f'Processing {args.n_files} Files...')
     
-    print(f"{separator_str}")
-    print(f"{f'Processing {args.n_files} Files...':^{len_separator_str}}\n")
     for i, file_name in enumerate(files):
         file_path = os.path.join(args.dataset_json_path, file_name)
         with open(file_path) as f:
@@ -47,13 +46,11 @@ def load_ensure_parse_and_save_files(args) -> None:
             data = json.load(f)            
             pre_parsed_files.append((file_name, data["original_data"]))
 
-    print(f"{separator_str}")
-    print(f"{f'Saving {args.n_files} Files...':^{len_separator_str}}\n")
+    print_separator(f'Saving {args.n_files} Files...')
     
     save_and_parse_files(pre_parsed_files, args.save_path, args.dataset_img_path, args.test_split, args.val_split)
 
-    print(f"{separator_str}")
-    print(f"{f'DONE!':^{len_separator_str}}\n")
+    print_separator('DONE"')
 
 
 def save_and_parse_files(pre_parsed_files: List[Tuple["str", Factura]], save_path: str, dataset_img_path: str, test_split: float = None, val_split: float = None) -> None:

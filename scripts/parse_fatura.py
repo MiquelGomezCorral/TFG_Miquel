@@ -2,12 +2,14 @@ import argparse
 import json
 import os
 import random
+import time
 from typing import List, Tuple
 
-from parse import save_and_parse_files, separator_str, len_separator_str
+from parse import save_and_parse_files,
+from utils import print_separator
 from file_class import Factura, Product
 from extract_templates import extract_json
-
+from utils import print_time
 
 # ===========================================
 #             Management logic
@@ -34,14 +36,15 @@ def main(args) -> None:
     n_valid_templates: int = len(valid_templates)
     samples_per_template = (args.n_files // n_valid_templates) 
     
-    file_ids: List[int] = []
-    for i in valid_templates:
-        file_ids.append(random.sample(list(range(200)), k=samples_per_template)) # Instances go from 0 to 199, so random
+    file_ids: List[int] = [
+        random.sample(list(range(200)), k=samples_per_template) for i in valid_templates
+    ]
     
     pre_parsed_files: List[Tuple[str, Factura]] = []
     
-    print(f"{separator_str}")
-    print(f"{f'Processing {args.n_files} Files...':^{len_separator_str}}\n")
+    # ================== PROCESSING =========================
+    t1 = time.time()
+    print_separator(f'Processing {args.n_files} Files...')
     
     for i in range(args.n_files):
         curr_template = valid_templates[i%n_valid_templates]
@@ -57,14 +60,20 @@ def main(args) -> None:
 
             pre_parsed_files.append((file_name, pre_parsed_file))
 
-    print(f"{separator_str}")
-    print(f"{f'Saving {args.n_files} Files...':^{len_separator_str}}\n")
+    t2 = time.time()
+    diff = t2-t1
+    print_time(diff, args.n_files)
     
+    # ================== SAVING =========================
+    print_separator(f'Saving {args.n_files} Files...')
     
     save_and_parse_files(pre_parsed_files, args.save_path, args.dataset_img_path, args.test_split, args.val_split)
 
-    print(f"{separator_str}")
-    print(f"{f'DONE!':^{len_separator_str}}\n")
+    t3 = time.time()
+    diff = t3-t2
+    print_time(diff, args.n_files)
+    
+    print_separator('DONE!')
 
 # ===========================================
 #                MAIN
