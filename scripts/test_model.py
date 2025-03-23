@@ -1,14 +1,10 @@
 import os
-import sys
 from utils import print_separator, change_directory, print_time
 change_directory()
   
-import json
-from datasets import load_dataset
 import argparse
 import time
 
-from sconf import Config
 from test_donut import test
 
 
@@ -16,7 +12,7 @@ if __name__ == "__main__":
   parser = argparse.ArgumentParser()
   parser.add_argument(
     "--pretrained_model_name_or_path", type=str,
-   default="naver-clova-ix/donut-base-finetuned-cord-v2"
+   default="./result/training/fatura_train/fatura_train_0/"#"naver-clova-ix/donut-base-finetuned-cord-v2"
   )
   parser.add_argument(
     "--dataset_name_or_path", type=str,
@@ -28,11 +24,11 @@ if __name__ == "__main__":
   )
   parser.add_argument(
     "--task_name", type=str,
-    default="Fatura"
+    default="fatura_test"
   )
   parser.add_argument(
     "--save_path", type=str,
-    default="result/fatura/output.json"
+    default="result/fatura_test/output.json"
   )
   
   args, left_argv = parser.parse_known_args()

@@ -1,10 +1,7 @@
 import os
-import sys
 from utils import print_separator, change_directory, print_time
 change_directory()
 
-import json
-from datasets import load_dataset
 import argparse
 import time
 
@@ -25,17 +22,15 @@ if __name__ == "__main__":
   )
   parser.add_argument(
     "--dataset_name_or_path", type=str, required=False,
-    default= f"[
-      'dataset/new_generated_images/'
-    ]" #"['naver-clova-ix/cord-v1']"
+    default= f"['dataset/fatura/']" #"['naver-clova-ix/cord-v1']"
   )
   parser.add_argument(
     "--exp_version", type=str, required=False,
-    default="test_experiment"
+    default="fatura_train_0"
   )
   parser.add_argument(
     "--exp_name", type=str, required=False,
-    default="test_experiment"
+    default="fatura_train"
   )
   parser.add_argument(
     "--result_path", type=str, required=False,
@@ -43,7 +38,7 @@ if __name__ == "__main__":
   )
   parser.add_argument(
     "--task_name", type=str, 
-    default="fatura"
+    default="fatura_train"
   )
   args, left_argv = parser.parse_known_args()
 
@@ -62,7 +57,7 @@ if __name__ == "__main__":
   
   t2 = time.time()
   diff = t2-t1
-  print_time(diff, space=True)
+  print_time(diff, space=True )
   print_separator(f'DONE!')
   
   
