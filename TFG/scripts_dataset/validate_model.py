@@ -75,5 +75,6 @@ if __name__ == "__main__":
 
     # ================== VALIDATION =========================
     validate_model(args.output_path)
+    
     print_separator(f'DONE!')
   

@@ -5,7 +5,7 @@ import random
 import shutil
 from typing import Any, Dict, List, Optional, Tuple
 
-from utils import separator_str, len_separator_str
+from utils import print_separator
 from file_class import Factura, Product
 
 # ===========================================

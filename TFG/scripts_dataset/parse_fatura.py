@@ -5,7 +5,7 @@ import random
 import time
 from typing import List, Tuple
 
-from parse import save_and_parse_files,
+from parse import save_and_parse_files
 from utils import print_separator
 from file_class import Factura, Product
 from extract_templates import extract_json
