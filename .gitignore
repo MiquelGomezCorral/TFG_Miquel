@@ -1,6 +1,7 @@
 donut/
 keys.txt
 datasets_finetune/
+module_ocr_llm/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

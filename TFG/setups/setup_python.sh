@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Upgrade pip
+pip install --upgrade pip
+
+# Install dependencies
+pip install "transformers==4.38.2" \
+            "timm==0.6.13" \
+            "gcsfs==2024.12.0" \
+            "datasets[vision]" "pytorch-lightning>=1.6.4" \
+            "nltk" \
+            "sentencepiece" \
+            "zss" \
+            "sconf>=0.2.3" \
+            "datasets" \
+            "sentence-transformers==2.2.2"
+            
+echo "✅ Environment setup complete!"
