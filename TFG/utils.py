@@ -25,14 +25,14 @@ def print_separator(text: str) -> None:
     print(f"{separator_str}")
     print(f"{f'{text}':^{len_separator_str}}\n")
     
-def change_directory() -> None:
+def change_directory(new_directory: str = "donut") -> None:
     curr_directory =  os.getcwd()
     print("\nOld Current Directory:", curr_directory)
     if curr_directory.endswith("scripts"):
         os.chdir("../") 
         print("New Directory:", os.getcwd())
     if not curr_directory.endswith("donut"):
-        os.chdir("./donut") 
+        os.chdir(f"./{new_directory}") 
         print("New Directory:", os.getcwd(), "\n")
     
     sys.path.append(os.getcwd())

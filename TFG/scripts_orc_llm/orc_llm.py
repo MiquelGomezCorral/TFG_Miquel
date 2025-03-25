@@ -171,8 +171,7 @@ def save_output(llm_output: LLMStructuredResponse, save_path: str, save_name: st
 
 
 if __name__ == "__main__":
-    import sys
-    import dotenv
+
     sys.path.append("/app")
     dotenv.load_dotenv()
 
