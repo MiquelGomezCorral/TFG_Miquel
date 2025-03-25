@@ -1,9 +1,12 @@
 {
 	"name": "TFG_Miquel_Container",
 	"dockerComposeFile": [
-	"../module_ocr_llm/docker-compose.yml"
+	  "../module_ocr_llm/docker-compose.yml"
 	],
-	"service": "tfg_container",  // Replace with the actual service name from your docker-compose file
-	"workspaceFolder": "/workspaces/TFG_Miquel",
-	"shutdownAction": "none"
-}
+	"service": "dev-container",
+	"workspaceFolder": "/app",
+	"mounts": [
+	  "source=${localWorkspaceFolder},target=/app,type=bind,consistency=cached"
+	]
+  }
+  
