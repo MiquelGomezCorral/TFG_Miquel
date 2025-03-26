@@ -6,10 +6,7 @@ import json
 import argparse
 from collections import Counter
 
-
-def validate_model(output_path: str) -> dict:
-    print_separator(f'Validating output...')
-    
+def load_output_validate_model(output_path: str):
     with open(output_path, "r") as f:
         output = json.load(f)
         
@@ -17,26 +14,21 @@ def validate_model(output_path: str) -> dict:
         raise KeyError("Missing required keys: 'ground_truths' or 'predictions'.")
     
     ground_truths = output["ground_truths"]
-    model_predictions = output["predictions"]
+    model_predictions = output["predictions"]     
 
-    # print(f"{ground_truths = }")
-    # print(f"{model_predictions = }")
     
+    validate_model(ground_truths, model_predictions)
+
+
+def validate_model(ground_truths, model_predictions) -> dict:
+    print_separator(f'Validating output...')
     scores = Counter()
     N = len(ground_truths)
     if N == 0: raise ValueError("Empty output, no output values found.")
     
     for gt, out in zip(ground_truths, model_predictions):
-        # print(f"\n{gt = }")
-        # print(f"{out = }")
-        
         any_wrong = False
         for key_gt, val_gt in gt.items():
-            # print(f"{key_gt = }")
-            # print(f"{val_gt = }")
-            # print(f"{key_out = }")
-            # print(f"{val_out = }")
-            
             if key_gt not in out:
                 scores[key_gt] += 0
                 any_wrong = True
@@ -64,7 +56,6 @@ def print_scores(scores: dict, N: int) -> None:
         print(f"{key:>15} | {val:^5} | {ratio:0.4f}")
     
     
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -74,7 +65,7 @@ if __name__ == "__main__":
     args, left_argv = parser.parse_known_args()
 
     # ================== VALIDATION =========================
-    validate_model(args.output_path)
+    load_output_validate_model(args.output_path)
     
     print_separator(f'DONE!')
   

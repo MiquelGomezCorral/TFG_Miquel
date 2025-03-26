@@ -143,8 +143,7 @@ def save_and_parse_files_split(pre_parsed_files: List[Tuple["str",Factura]], sav
     if val_split > 0:
         save_files(val_pre_parsed_files,   save_path_metadata_val  , dataset_img_path, save_path_redeable)
             
-    
-    
+
 def save_files(pre_parsed_files, save_path_metadata, dataset_img_path, save_path_redeable):
     file_path_metadata: str = os.path.join(save_path_metadata, "metadata.jsonl")
     
