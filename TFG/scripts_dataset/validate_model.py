@@ -54,8 +54,10 @@ def validate_model(ground_truths, model_predictions) -> dict:
     return scores
 
 def validate_answer(key_gt, val_gt, val_out) -> bool: 
-    val_gt = val_gt.lower()
-    val_out = val_out.lower()
+    if isinstance(val_gt, str):
+        val_gt = val_gt.lower()
+    if isinstance(val_out, str):
+        val_out = val_out.lower()
     
     if key_gt == "date":
         gt_format = "%d-%b-%Y"
