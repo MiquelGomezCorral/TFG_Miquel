@@ -7,6 +7,9 @@ import argparse
 from collections import Counter
 
 def load_output_validate_model(output_path: str):
+    print_separator(f'Opening file...')
+    print(f"File: {output_path}")
+    
     with open(output_path, "r") as f:
         output = json.load(f)
         
@@ -15,7 +18,6 @@ def load_output_validate_model(output_path: str):
     
     ground_truths = output["ground_truths"]
     model_predictions = output["predictions"]     
-
     
     validate_model(ground_truths, model_predictions)
 
@@ -27,17 +29,22 @@ def validate_model(ground_truths, model_predictions) -> dict:
     if N == 0: raise ValueError("Empty output, no output values found.")
     
     for gt, out in zip(ground_truths, model_predictions):
-        any_wrong = False
+        if not isinstance(gt, dict):
+            gt = json.loads(gt)
+        if not isinstance(out, dict):
+            out = json.loads(out)
+        
+        all_correct = True
         for key_gt, val_gt in gt.items():
             if key_gt not in out:
                 scores[key_gt] += 0
-                any_wrong = True
+                all_correct = False
             else:
-                correct = val_gt != out[key_gt] 
-                any_wrong = any_wrong or correct
+                correct = val_gt == out[key_gt] 
+                all_correct = all_correct and correct
                 scores[key_gt] += 1 if correct else 0
         
-        scores["all"] += 1 if not any_wrong else 0
+        scores["all"] += 1 if all_correct else 0
         
     scores = {key: (val, val / N) for key, val in scores.items()}    
     
@@ -60,7 +67,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--output_path", type=str,
-        default="result/fatura_test/output.json"
+        default="TFG/outputs/FATURA/orc_llm/output.json"
     )
     args, left_argv = parser.parse_known_args()
 

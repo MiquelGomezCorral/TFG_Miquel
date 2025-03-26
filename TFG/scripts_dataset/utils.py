@@ -49,7 +49,7 @@ def print_time(sec: float, n_files: Optional[int] = None, space: bool = False, p
 def change_directory(new_directory: str = None) -> None:
     curr_directory = os.getcwd()
     print("\nOld Current Directory:", curr_directory)
-    if curr_directory.endswith("scripts"):
+    if not curr_directory.endswith("TFG_Miquel"):
         os.chdir("../") 
         print("New Directory:", os.getcwd())
     if new_directory is not None and not curr_directory.endswith(new_directory):

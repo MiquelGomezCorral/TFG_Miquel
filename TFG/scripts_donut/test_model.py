@@ -1,5 +1,5 @@
 import os
-from TFG.utils import print_separator, change_directory, print_time
+from TFG.scripts_dataset.utils import print_separator, change_directory, print_time
 change_directory(new_directory="donut")
   
 import argparse
