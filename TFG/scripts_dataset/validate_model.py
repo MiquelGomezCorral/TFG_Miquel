@@ -1,12 +1,12 @@
 import os
-from utils import print_separator, change_directory
+from utils import change_directory
 change_directory()
 
-import csv
 import json
 import argparse
 from datetime import datetime
 from collections import Counter
+from TFG.scripts_dataset.utils import print_separator, levenshtein_similarity, print_scores, save_scores
 
 def load_output_validate_model(output_path: str):
     print_separator(f'Opening file...')
@@ -59,6 +59,7 @@ def validate_model(output_path: str, ground_truths, model_predictions) -> dict:
     
     return scores
 
+
 def validate_answer(key_gt, val_gt, val_out) -> bool: 
     if isinstance(val_gt, str):
         val_gt = val_gt.lower()
@@ -95,56 +96,6 @@ def validate_answer(key_gt, val_gt, val_out) -> bool:
 
     return val_gt == val_out
 
-def levenshtein_similarity(str1, str2):
-    distance = levenshtein_distance(str1, str2)
-    max_len = max(len(str1), len(str2))
-    return 1 - distance / max_len
-
-def levenshtein_distance(str1, str2):
-    m, n = len(str1), len(str2)
-    dp = [[0] * (n + 1) for _ in range(m + 1)]
-
-    # Initialize the base cases
-    for i in range(m + 1):
-        dp[i][0] = i
-    for j in range(n + 1):
-        dp[0][j] = j
-
-    # Fill the DP table
-    for i in range(1, m + 1):
-        for j in range(1, n + 1):
-            if str1[i - 1] == str2[j - 1]:
-                dp[i][j] = dp[i - 1][j - 1]
-            else:
-                dp[i][j] = 1 + min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1])
-
-    return dp[m][n]
-
-def print_scores(scores: dict, file_out = None) -> None:
-    val, ratio = scores['all']
-    print(f"{'Field':>15} | {'Hits':^5} | {'Acuracy':<7}", file=file_out)
-    separator = "------------------------------------------"
-    print(separator, file=file_out)
-    print(f"{'General Score':>15} | {val:^5} | {ratio:0.4f}\n", file=file_out)
-    for key, (val, ratio) in scores.items():
-        if key == "all": continue
-        print(f"{key:>15} | {val:^5} | {ratio:0.4f}", file=file_out)
-    
-def save_scores(scores: dict, path: str) -> None:
-    with open(os.path.join(path, "score.csv"), 'w', newline="") as out_file:
-        out_writer = csv.DictWriter(
-            out_file, fieldnames=["Field", "Hits", "Accuracy"]
-        )
-        out_writer.writeheader()  # Write header row
-
-        for key, (val, ratio) in scores.items():
-            out_writer.writerow({
-                "Field": "General Score" if key == "all" else key,
-                "Hits": val,
-                "Accuracy": ratio
-            })
-    
-    
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
