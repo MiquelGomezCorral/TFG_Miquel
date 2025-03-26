@@ -1,0 +1,14 @@
+Processed 100 files in total
+
+Total time: 
+ - 0100 files in: 14 mins, 57.8406 sec.
+ - Per document:  08.9784 sec
+Average time Preparing: 
+ - 0100 files in: 00.7405 sec.
+ - Per document:  00.0074 sec
+Average time Extracting: 
+ - 0100 files in: 07 mins, 58.4366 sec.
+ - Per document:  04.7843 sec
+Average time Structured: 
+ - 0100 files in: 06 mins, 58.6413 sec.
+ - Per document:  04.1864 sec

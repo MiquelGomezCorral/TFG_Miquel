@@ -30,15 +30,15 @@ def parse_seconds_to_minutes(sec: float) -> str:
         return f"{seconds:02}.{decimals:04} sec"
 
 
-def print_time(sec: float, n_files: Optional[int] = None, space: bool = False, prefix: str = "", out_file: Optional[TextIO] = None) -> None:
+def print_time(sec: float, n_files: Optional[int] = None, space: bool = False, prefix: str = "", sufix: str = "", out_file: Optional[TextIO] = None) -> None:
     if space:
         print("")
 
     if n_files is not None:
-        message = f"{prefix}\n - {n_files:04} files in: {parse_seconds_to_minutes(sec)}.\n"
+        message = f"{prefix}\n - {n_files:04} files in: {parse_seconds_to_minutes(sec)}{sufix}.\n"
         message += f" - Per document:  {parse_seconds_to_minutes(sec / n_files)}"
     else:
-        message = f"{prefix}Time: {parse_seconds_to_minutes(sec)}."
+        message = f"{prefix}Time: {parse_seconds_to_minutes(sec)}{sufix}."
 
     print(message)
 
