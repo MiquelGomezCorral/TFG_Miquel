@@ -4,6 +4,7 @@ change_directory()
   
 import json
 import argparse
+from datetime import datetime
 from collections import Counter
 
 def load_output_validate_model(output_path: str):
@@ -40,7 +41,7 @@ def validate_model(ground_truths, model_predictions) -> dict:
                 scores[key_gt] += 0
                 all_correct = False
             else:
-                correct = val_gt == out[key_gt] 
+                correct = validate_answer(key_gt, val_gt, out[key_gt])
                 all_correct = all_correct and correct
                 scores[key_gt] += 1 if correct else 0
         
@@ -51,6 +52,27 @@ def validate_model(ground_truths, model_predictions) -> dict:
     print_scores(scores, N)
     
     return scores
+
+def validate_answer(key_gt, val_gt, val_out) -> bool: 
+    val_gt = val_gt.lower()
+    val_out = val_out.lower()
+    
+    if key_gt == "date":
+        gt_format = "%d-%b-%Y"
+        date_obj = datetime.strptime(val_gt, gt_format)
+        return date_obj.strftime("%Y-%m-%d") == val_gt
+    
+    if key_gt == "currency":
+        usd = ["$", "usd"]
+        eur = ["€", "eur"]
+        if val_gt in usd:
+            return val_out in usd
+        elif val_gt in eur:
+            return val_out in eur
+        else: return False
+        
+
+    return val_gt == val_out
 
 def print_scores(scores: dict, N: int) -> None:
     val, ratio = scores['all']
