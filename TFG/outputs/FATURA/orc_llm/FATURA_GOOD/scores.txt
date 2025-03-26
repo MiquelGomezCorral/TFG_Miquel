@@ -1,0 +1,13 @@
+          Field | Hits  | Acuracy
+------------------------------------------
+  General Score |  21   | 0.2100
+
+          buyer |  100  | 1.0000
+        address |  99   | 0.9900
+           date |  100  | 1.0000
+shopping_or_tax |  38   | 0.3800
+       currency |  100  | 1.0000
+       subtotal |  80   | 0.8000
+       discount |  96   | 0.9600
+            tax |  97   | 0.9700
+          total |  100  | 1.0000

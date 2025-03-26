@@ -1,0 +1,11 @@
+Field,Hits,Accuracy
+buyer,100,1.0
+address,99,0.99
+date,100,1.0
+shopping_or_tax,38,0.38
+currency,100,1.0
+subtotal,80,0.8
+discount,96,0.96
+tax,97,0.97
+total,100,1.0
+General Score,21,0.21

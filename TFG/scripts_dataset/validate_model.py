@@ -1,7 +1,8 @@
 import os
 from utils import print_separator, change_directory
 change_directory()
-  
+
+import csv
 import json
 import argparse
 from datetime import datetime
@@ -9,9 +10,10 @@ from collections import Counter
 
 def load_output_validate_model(output_path: str):
     print_separator(f'Opening file...')
-    print(f"File: {output_path}")
+    output_file_path = os.path.join(output_path, "output.json")
+    print(f"File: {output_file_path}")
     
-    with open(output_path, "r") as f:
+    with open(output_file_path, "r") as f:
         output = json.load(f)
         
     if "ground_truths" not in output or "predictions" not in output:
@@ -20,10 +22,10 @@ def load_output_validate_model(output_path: str):
     ground_truths = output["ground_truths"]
     model_predictions = output["predictions"]     
     
-    validate_model(ground_truths, model_predictions)
+    validate_model(output_path, ground_truths, model_predictions)
 
 
-def validate_model(ground_truths, model_predictions) -> dict:
+def validate_model(output_path: str, ground_truths, model_predictions) -> dict:
     print_separator(f'Validating output...')
     scores = Counter()
     N = len(ground_truths)
@@ -49,7 +51,11 @@ def validate_model(ground_truths, model_predictions) -> dict:
         
     scores = {key: (val, val / N) for key, val in scores.items()}    
     
-    print_scores(scores, N)
+    print_scores(scores)
+    print_separator(f'Saving output...')
+    with open(os.path.join(output_path, "scores.txt"), "w") as out_file:
+        print_scores(scores, out_file)
+    save_scores(scores, output_path)
     
     return scores
 
@@ -114,31 +120,36 @@ def levenshtein_distance(str1, str2):
 
     return dp[m][n]
 
-# Example usage
-string1 = "kitten"
-string2 = "sitting"
-distance = levenshtein_distance(string1, string2)
-print(f"Levenshtein distance between '{string1}' and '{string2}' is {distance}")
-
-
-
-
-def print_scores(scores: dict, N: int) -> None:
+def print_scores(scores: dict, file_out = None) -> None:
     val, ratio = scores['all']
-    print(f"{'Field':>15} | {'Hits':^5} | {'Acuracy':<7}")
+    print(f"{'Field':>15} | {'Hits':^5} | {'Acuracy':<7}", file=file_out)
     separator = "------------------------------------------"
-    print(separator)
-    print(f"{'General Score':>15} | {val:^5} | {ratio:0.4f}\n")
+    print(separator, file=file_out)
+    print(f"{'General Score':>15} | {val:^5} | {ratio:0.4f}\n", file=file_out)
     for key, (val, ratio) in scores.items():
         if key == "all": continue
-        print(f"{key:>15} | {val:^5} | {ratio:0.4f}")
+        print(f"{key:>15} | {val:^5} | {ratio:0.4f}", file=file_out)
+    
+def save_scores(scores: dict, path: str) -> None:
+    with open(os.path.join(path, "score.csv"), 'w', newline="") as out_file:
+        out_writer = csv.DictWriter(
+            out_file, fieldnames=["Field", "Hits", "Accuracy"]
+        )
+        out_writer.writeheader()  # Write header row
+
+        for key, (val, ratio) in scores.items():
+            out_writer.writerow({
+                "Field": "General Score" if key == "all" else key,
+                "Hits": val,
+                "Accuracy": ratio
+            })
     
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--output_path", type=str,
-        default="TFG/outputs/FATURA/orc_llm/FATURA_2/output.json"
+        default="TFG/outputs/FATURA/orc_llm/FATURA_GOOD"
     )
     args, left_argv = parser.parse_known_args()
 
