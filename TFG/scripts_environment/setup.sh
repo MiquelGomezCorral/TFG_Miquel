@@ -41,7 +41,10 @@ if [ "$PIP" = true ]; then
                 "zss" \
                 "sconf>=0.2.3" \
                 "datasets" \
-                "sentence-transformers==2.2.2"
+                "sentence-transformers==2.2.2" \
+                "ipynb"\
+                "pytorch-lightning wandb" \
+                "transformers datasets sentencepiece"
 fi 
 
 if [ "$GIT" = true ]; then

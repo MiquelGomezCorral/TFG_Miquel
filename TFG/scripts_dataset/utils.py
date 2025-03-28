@@ -10,19 +10,26 @@ from typing import Literal, Optional, TextIO
 separator_short = "_______________________________"
 separator_normal = "____________________________________________________________________"
 separator_long = "___________________________________________________________________________________________________________________________________"
+separator_super = "==================================================================================================================================="
 
 
-def print_separator(text: str, sep_type: Literal["SHORT", "NORMAL", "LONG"] = "NORMAL") -> None:
+def print_separator(text: str, sep_type: Literal["SHORT", "NORMAL", "LONG", "SUPER"] = "NORMAL") -> None:
     if sep_type == "SHORT":
         sep = separator_short
     if sep_type == "NORMAL":
         sep = separator_normal
     if sep_type == "LONG":
         sep = separator_long
-
-    print(sep)
-    print(f"{text:^{len(sep)}}\n")
-
+    if sep_type == "SUPER":
+        sep = separator_super
+    
+    if sep_type == "SUPER":
+        print(sep)
+        print(f"{text:^{len(sep)}}")
+        print(sep, "\n")
+    else:
+        print(sep)
+        print(f"{text:^{len(sep)}}\n")
 
 def parse_seconds_to_minutes(sec: float) -> str:
     minutes = int(sec // 60)
