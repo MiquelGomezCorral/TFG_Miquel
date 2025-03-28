@@ -1,4 +1,5 @@
 #!/bin/bash
+# set -e
 
 # Parse arguments
 ALL=false
@@ -23,8 +24,7 @@ fi
 
 
 if [ "$PIP" = true ]; then
-    echo ""
-    echo "======================================"
+    echo -e "\n======================================"
     echo "           PIP INSTALLING"
     echo "======================================"
     # Upgrade pip
@@ -45,8 +45,7 @@ if [ "$PIP" = true ]; then
 fi 
 
 if [ "$GIT" = true ]; then
-    echo ""
-    echo "======================================"
+    echo -e "\n======================================"
     echo "              CLONNING"
     echo "======================================"
 
@@ -55,27 +54,31 @@ if [ "$GIT" = true ]; then
 
 
     if [ -d './module_ocr_llm/' ]; then
+        echo -e "\n- PULLING module_ocr_llm"
+
         cd ./module_ocr_llm/
         git pull
         cd ../
     else
+        echo -e "\n- CLONNING module_ocr_llm"
         git clone git@bitbucket.org:solverrepos/module_ocr_llm.git
     fi
 
 
     if [ -d './donut/' ]; then
+        echo -e "\n- PULLING Donut"
         cd ./donut/
         git pull
         cd ../
     else
+        echo -e "\n- CLONING Donut"
         git clone https://github.com/clovaai/donut.git
     fi
 fi
 
 
 if [[ "$ALL" = true || "$PIP" = true || "$GIT" = true ]]; then
-  echo ""
-  echo "======================================"
+  echo -e "\n======================================"
   echo "   ✅ Environment setup complete!"
   echo "======================================"
 else
