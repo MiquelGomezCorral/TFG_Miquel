@@ -19,8 +19,8 @@ class DonutModelPLModule(pl.LightningModule):
         self.processor = processor
         self.model = model
         self.max_length = max_length
-        self.train_dataloader = train_dataloader
-        self.val_dataloader = val_dataloader
+        self._train_dataloader = train_dataloader
+        self._val_dataloader = val_dataloader
         
 
     def training_step(self, batch, batch_idx):
@@ -78,7 +78,7 @@ class DonutModelPLModule(pl.LightningModule):
         return optimizer
 
     def train_dataloader(self):
-        return train_dataloader
+        return self._train_dataloader
 
     def val_dataloader(self):
-        return val_dataloader
+        return self._val_dataloader

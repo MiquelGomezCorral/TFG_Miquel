@@ -32,19 +32,7 @@ if [ "$PIP" = true ]; then
 
 
     # Install dependencies
-    pip install "transformers==4.38.2" \
-                "timm==0.6.13" \
-                "gcsfs==2024.12.0" \
-                "datasets[vision]" "pytorch-lightning>=1.6.4" \
-                "nltk" \
-                "sentencepiece" \
-                "zss" \
-                "sconf>=0.2.3" \
-                "datasets" \
-                "sentence-transformers==2.2.2" \
-                "ipynb"\
-                "pytorch-lightning wandb" \
-                "transformers datasets sentencepiece"
+    pip install -r "./TFG/requirements.txt"
 fi 
 
 if [ "$GIT" = true ]; then
@@ -68,15 +56,15 @@ if [ "$GIT" = true ]; then
     fi
 
 
-    if [ -d './donut/' ]; then
-        echo -e "\n- PULLING Donut"
-        cd ./donut/
-        git pull
-        cd ../
-    else
-        echo -e "\n- CLONING Donut"
-        git clone https://github.com/clovaai/donut.git
-    fi
+    # if [ -d './donut/' ]; then
+    #     echo -e "\n- PULLING Donut"
+    #     cd ./donut/
+    #     git pull
+    #     cd ../
+    # else
+    #     echo -e "\n- CLONING Donut"
+    #     git clone https://github.com/clovaai/donut.git
+    # fi
 fi
 
 

@@ -23,7 +23,7 @@ import pytorch_lightning as pl
 from pytorch_lightning.loggers import WandbLogger
 from pytorch_lightning.callbacks import Callback, EarlyStopping
 
-
+from test_model import test_model
 from TFG.scripts_donut.tokenizer import DonutDataset, added_tokens
 from TFG.scripts_donut.lightning_module import DonutModelPLModule
 
@@ -31,29 +31,38 @@ from TFG.scripts_donut.lightning_module import DonutModelPLModule
 class Model_Config():
     image_size: list[int] = field(default_factory=lambda: [1280, 960]) 
     max_length: int = 768
+    
+    special_token: str = "<s_fatura>"
 
     config: dict = field(default_factory=lambda: {
-        "max_epochs": 30,
+        "max_epochs": 16,
         "val_check_interval": 0.2,  # how many times we want to validate during an epoch
-        "check_val_every_n_epoch": 1,
+        "check_val_every_n_epoch": 4,
         "gradient_clip_val": 1.0,
-        "num_training_samples_per_epoch": 800,
+        "num_training_samples_per_epoch": 25,
         "lr": 3e-5,
         "train_batch_sizes": [8],
         "val_batch_sizes": [1],
         # "seed": 2022,
         "num_nodes": 1,
-        "warmup_steps": 300,  # 800/8*30/10, 10%
-        "result_path": "./result",
+        "warmup_steps": 3,  # 10%
+        "result_path": "./TFG/outputs/donut/model_output",
         "verbose": True,
     })
 
-def train(args):
+def train_model(args):
     MODEL_CONFIG = Model_Config()
     
-    print_separator(f'Loadding dataset {args.dataset_name_or_path}...', sep_type="LONG")
-    dataset = load_dataset(args.dataset_name_or_path)
+    # =============================================================================
+    #                            DATASET BASIC, NOT USED
+    # =============================================================================
+    # print_separator(f'Loadding dataset {args.dataset_name_or_path}...', sep_type="LONG")
+    # dataset = load_dataset(args.dataset_name_or_path)
     
+    
+    # =============================================================================
+    #                                   MODEL
+    # =============================================================================
     print_separator(f'Loadding model {args.pretrained_model_name_or_path}...', sep_type="LONG")
     """update image_size of the encoder due to   during pre-training, a larger image size was used!"""
     
@@ -68,8 +77,11 @@ def train(args):
     processor = DonutProcessor.from_pretrained("naver-clova-ix/donut-base")
     model = VisionEncoderDecoderModel.from_pretrained("naver-clova-ix/donut-base", config=config)
     
-    
-    print_separator(f'Creating pytorch DataSet...', sep_type="LONG")
+
+    # =============================================================================
+    #                               DATASET PYTORCH
+    # =============================================================================
+    print_separator(f'Creating pytorch Dataset...', sep_type="LONG")
     """TAKE INTO ACCOUNT THAT WE MODIFY THE TOKENIZER"""
     processor.image_processor.size = MODEL_CONFIG.image_size[::-1] # should be (width, height)
     processor.image_processor.do_align_long_axis = False
@@ -80,8 +92,8 @@ def train(args):
         processor=processor,
         max_length=MODEL_CONFIG.max_length,
         split="train",
-        task_start_token="<s_cord-v2>",
-        prompt_end_token="<s_cord-v2>",
+        task_start_token=MODEL_CONFIG.special_token,
+        prompt_end_token=MODEL_CONFIG.special_token,
         sort_json_key=False, # cord dataset is preprocessed, so no need for this
     )
 
@@ -91,8 +103,8 @@ def train(args):
         processor=processor,
         max_length=MODEL_CONFIG.max_length,
         split="validation", 
-        task_start_token="<s_cord-v2>", 
-        prompt_end_token="<s_cord-v2>",
+        task_start_token=MODEL_CONFIG.special_token, 
+        prompt_end_token=MODEL_CONFIG.special_token,
         sort_json_key=False, # cord dataset is preprocessed, so no need for this
     )
     
@@ -105,7 +117,7 @@ def train(args):
     The model will automatically create the `decoder_input_ids` (the decoder inputs) based on the `labels`, by shifting them one position to the right and prepending the decoder_start_token_id. I recommend checking [this video](https://www.youtube.com/watch?v=IGu7ivuy1Ag&t=888s&ab_channel=NielsRogge) if you want to understand how models like Donut automatically create decoder_input_ids - and more broadly how Donut works."""
 
     model.config.pad_token_id = processor.tokenizer.pad_token_id
-    model.config.decoder_start_token_id = processor.tokenizer.convert_tokens_to_ids(['<s_cord-v2>'])[0]
+    model.config.decoder_start_token_id = processor.tokenizer.convert_tokens_to_ids([MODEL_CONFIG.special_token])[0]
     
     print(" - Pad token ID:", processor.decode([model.config.pad_token_id]))
     print(" - Decoder start token ID:", processor.decode([model.config.decoder_start_token_id]))
@@ -115,27 +127,41 @@ def train(args):
     val_dataloader = DataLoader(val_dataset, batch_size=1, shuffle=False, num_workers=4)
 
     
-    print_separator(f'TRAINING...', sep_type="SUPER")
+    # =============================================================================
+    #                               TRAINING
+    # =============================================================================
+    print_separator(f'TRAINING', sep_type="SUPER")
     model_module = DonutModelPLModule(MODEL_CONFIG.config, processor, model, MODEL_CONFIG.max_length, train_dataloader, val_dataloader)
     
-    wandb_logger = WandbLogger(project="Donut", name="demo-run-cord")
+    wandb_logger = WandbLogger(project="Donut", name=args.task_name)
     early_stop_callback = EarlyStopping(monitor="val_edit_distance", patience=3, verbose=False, mode="min")
     trainer = pl.Trainer(
             accelerator="gpu",
             devices=1,
-            max_epochs=config.get("max_epochs"),
-            val_check_interval=config.get("val_check_interval"),
-            check_val_every_n_epoch=config.get("check_val_every_n_epoch"),
-            gradient_clip_val=config.get("gradient_clip_val"),
+            max_epochs=MODEL_CONFIG.config["max_epochs"], #get("max_epochs"),
+            val_check_interval=MODEL_CONFIG.config["val_check_interval"], #get("val_check_interval"),
+            check_val_every_n_epoch=MODEL_CONFIG.config["check_val_every_n_epoch"], #get("check_val_every_n_epoch"),
+            gradient_clip_val=MODEL_CONFIG.config["gradient_clip_val"], #get("gradient_clip_val"),
             precision=16, # we'll use mixed precision
             num_sanity_val_steps=0,
             logger=wandb_logger,
             callbacks=[early_stop_callback],#[PushToHubCallback(), early_stop_callback],
     )
 
-    trainer.fit(model_module)
+    trainer.fit(model_module, train_dataloaders=train_dataloader, val_dataloaders=val_dataloader)
+    
+    # =============================================================================
+    #                               TESTING
+    # =============================================================================
+    # print_separator(f'TESTING', sep_type="SUPER")
+    
+    test_model(model, processor)
 
 
+
+# =============================================================================
+#                               MAIN
+# =============================================================================
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -145,14 +171,6 @@ if __name__ == "__main__":
     parser.add_argument(
         "--dataset_name_or_path", type=str, required=False,
         default= f"datasets_finetune/outputs/FATURA" #"['naver-clova-ix/cord-v1']"
-    )
-    parser.add_argument(
-        "--exp_version", type=str, required=False,
-        default="fatura_train_0"
-    )
-    parser.add_argument(
-        "--exp_name", type=str, required=False,
-        default="fatura_train"
     )
     parser.add_argument(
         "--result_path", type=str, required=False,
@@ -171,7 +189,7 @@ if __name__ == "__main__":
     t1 = time.time()
     print_separator(f'Training {args.task_name}...', sep_type="SUPER")
 
-    train(args)
+    train_model(args)
 
     t2 = time.time()
     diff = t2-t1

@@ -1,8 +1,12 @@
 donut/
-keys.txt
 datasets_finetune/
 module_ocr_llm/
+keys.txt
 !script_orc_llm.py
+
+!TFG/outputs/donut/
+TFG/outputs/donut/model_output/*
+wandb/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
