@@ -1,57 +1,41 @@
 import os
 import sys
-curr_directory = os.getcwd()
-print("\nOld Current Directory:", curr_directory)
-if not curr_directory.endswith("TFG_Miquel"):
-    os.chdir("../") 
-    print("New Directory:", os.getcwd())
-# if new_directory is not None and not curr_directory.endswith(new_directory):
-#     os.chdir(f"./{new_directory}") 
-#     print("New Directory:", os.getcwd(), "\n")
-sys.path.append(os.getcwd())
-
-from TFG.scripts_dataset.utils import print_separator, change_directory, print_time
-# change_directory() #new_directory="donut"
+if __name__ == "__main__":
+    curr_directory = os.getcwd()
+    print("\nStarting Directory:", curr_directory)
+    if not curr_directory.endswith("TFG_Miquel"):
+        os.chdir("../") 
+        print("New Directory:", os.getcwd())
+    # if new_directory is not None and not curr_directory.endswith(new_directory):
+    #     os.chdir(f"./{new_directory}") 
+    #     print("New Directory:", os.getcwd(), "\n")
+    sys.path.append(os.getcwd())
 
 import time
 import argparse
 from datasets import load_dataset
 from torch.utils.data import DataLoader
-from dataclasses import dataclass, field
 from transformers import VisionEncoderDecoderConfig, DonutProcessor, VisionEncoderDecoderModel
 import pytorch_lightning as pl
 from pytorch_lightning.loggers import WandbLogger
-from pytorch_lightning.callbacks import Callback, EarlyStopping
+from pytorch_lightning.callbacks import Callback, EarlyStopping, ModelCheckpoint
 
 from test_model import test_model
-from TFG.scripts_donut.tokenizer import DonutDataset, added_tokens
+from TFG.scripts_donut.config import Config, Model_Config
 from TFG.scripts_donut.lightning_module import DonutModelPLModule
-
-@dataclass
-class Model_Config():
-    image_size: list[int] = field(default_factory=lambda: [1280, 960]) 
-    max_length: int = 768
-    
-    special_token: str = "<s_fatura>"
-
-    config: dict = field(default_factory=lambda: {
-        "max_epochs": 16,
-        "val_check_interval": 0.2,  # how many times we want to validate during an epoch
-        "check_val_every_n_epoch": 4,
-        "gradient_clip_val": 1.0,
-        "num_training_samples_per_epoch": 25,
-        "lr": 3e-5,
-        "train_batch_sizes": [8],
-        "val_batch_sizes": [1],
-        # "seed": 2022,
-        "num_nodes": 1,
-        "warmup_steps": 3,  # 10%
-        "result_path": "./TFG/outputs/donut/model_output",
-        "verbose": True,
-    })
+from TFG.scripts_donut.tokenizer import DonutDataset, added_tokens
+from TFG.scripts_dataset.utils import print_separator, change_directory, print_time
 
 def train_model(args):
+    CONFIG = Config(
+        model_trained_path = os.path.join(args.result_path, "model_trained"),
+        model_prediction_path = os.path.join(args.result_path, "model_predictions"),
+        pretrained_model_name_or_path = args.pretrained_model_name_or_path,
+        dataset_name_or_path = args.dataset_name_or_path,
+        task_name = args.task_name,
+    )
     MODEL_CONFIG = Model_Config()
+    
     
     # =============================================================================
     #                            DATASET BASIC, NOT USED
@@ -63,19 +47,19 @@ def train_model(args):
     # =============================================================================
     #                                   MODEL
     # =============================================================================
-    print_separator(f'Loadding model {args.pretrained_model_name_or_path}...', sep_type="LONG")
+    print_separator(f'Loadding model {CONFIG.pretrained_model_name_or_path}...', sep_type="LONG")
     """update image_size of the encoder due to   during pre-training, a larger image size was used!"""
     
-    config = VisionEncoderDecoderConfig.from_pretrained(args.pretrained_model_name_or_path)
-    config.encoder.image_size = MODEL_CONFIG.image_size # (height, width)
+    vision_encoder_config = VisionEncoderDecoderConfig.from_pretrained(CONFIG.pretrained_model_name_or_path)
+    vision_encoder_config.encoder.image_size = CONFIG.image_size # (height, width)
     # update max_length of the decoder (for generation)
-    config.decoder.max_length = MODEL_CONFIG.max_length
+    vision_encoder_config.decoder.max_length = CONFIG.max_length
     # TODO we should actually update max_position_embeddings and interpolate the pre-trained ones:
     # https://github.com/clovaai/donut/blob/0acc65a85d140852b8d9928565f0f6b2d98dc088/donut/model.py#L602
     
     """CHECK FOR WARNING ABOUT THE WEIGHTS BEING WELL LOADED"""
     processor = DonutProcessor.from_pretrained("naver-clova-ix/donut-base")
-    model = VisionEncoderDecoderModel.from_pretrained("naver-clova-ix/donut-base", config=config)
+    model = VisionEncoderDecoderModel.from_pretrained("naver-clova-ix/donut-base", config=vision_encoder_config)
     
 
     # =============================================================================
@@ -83,31 +67,32 @@ def train_model(args):
     # =============================================================================
     print_separator(f'Creating pytorch Dataset...', sep_type="LONG")
     """TAKE INTO ACCOUNT THAT WE MODIFY THE TOKENIZER"""
-    processor.image_processor.size = MODEL_CONFIG.image_size[::-1] # should be (width, height)
+    processor.image_processor.size = CONFIG.image_size[::-1] # should be (width, height)
     processor.image_processor.do_align_long_axis = False
 
     train_dataset = DonutDataset(
-        dataset_name_or_path=args.dataset_name_or_path, 
+        dataset_name_or_path=CONFIG.dataset_name_or_path, 
         model=model,
         processor=processor,
-        max_length=MODEL_CONFIG.max_length,
+        max_length=CONFIG.max_length,
         split="train",
-        task_start_token=MODEL_CONFIG.special_token,
-        prompt_end_token=MODEL_CONFIG.special_token,
+        task_start_token=CONFIG.special_token,
+        prompt_end_token=CONFIG.special_token,
         sort_json_key=False, # cord dataset is preprocessed, so no need for this
     )
 
     val_dataset = DonutDataset(
-        dataset_name_or_path=args.dataset_name_or_path, 
+        dataset_name_or_path=CONFIG.dataset_name_or_path, 
         model=model,
         processor=processor,
-        max_length=MODEL_CONFIG.max_length,
+        max_length=CONFIG.max_length,
         split="validation", 
-        task_start_token=MODEL_CONFIG.special_token, 
-        prompt_end_token=MODEL_CONFIG.special_token,
+        task_start_token=CONFIG.special_token, 
+        prompt_end_token=CONFIG.special_token,
         sort_json_key=False, # cord dataset is preprocessed, so no need for this
     )
     
+    print_separator(f'Special Tokens', sep_type="NORMAL")
     print(f"Added {len(added_tokens)} tokens: \n - ", added_tokens)
     print(" - Original number of tokens:", processor.tokenizer.vocab_size)
     print(" - Number of tokens after adding special tokens:", len(processor.tokenizer))
@@ -117,13 +102,15 @@ def train_model(args):
     The model will automatically create the `decoder_input_ids` (the decoder inputs) based on the `labels`, by shifting them one position to the right and prepending the decoder_start_token_id. I recommend checking [this video](https://www.youtube.com/watch?v=IGu7ivuy1Ag&t=888s&ab_channel=NielsRogge) if you want to understand how models like Donut automatically create decoder_input_ids - and more broadly how Donut works."""
 
     model.config.pad_token_id = processor.tokenizer.pad_token_id
-    model.config.decoder_start_token_id = processor.tokenizer.convert_tokens_to_ids([MODEL_CONFIG.special_token])[0]
+    model.config.decoder_start_token_id = processor.tokenizer.convert_tokens_to_ids([CONFIG.special_token])[0]
     
     print(" - Pad token ID:", processor.decode([model.config.pad_token_id]))
     print(" - Decoder start token ID:", processor.decode([model.config.decoder_start_token_id]))
     
-    print_separator(f'Creating pytorch DataLoaders...', sep_type="LONG")
+    print_separator(f'Creating pytorch Data Loaders...', sep_type="LONG")
+    print(" - Creating Training Dataloader...")
     train_dataloader = DataLoader(train_dataset, batch_size=1, shuffle=True, num_workers=4)
+    print(" - Creating Validation Dataloader...")
     val_dataloader = DataLoader(val_dataset, batch_size=1, shuffle=False, num_workers=4)
 
     
@@ -131,21 +118,30 @@ def train_model(args):
     #                               TRAINING
     # =============================================================================
     print_separator(f'TRAINING', sep_type="SUPER")
-    model_module = DonutModelPLModule(MODEL_CONFIG.config, processor, model, MODEL_CONFIG.max_length, train_dataloader, val_dataloader)
+    model_module = DonutModelPLModule(MODEL_CONFIG.to_dict(), processor, model, CONFIG.max_length, train_dataloader, val_dataloader)
     
-    wandb_logger = WandbLogger(project="Donut", name=args.task_name)
+    wandb_logger = WandbLogger(project="Donut", name=CONFIG.task_name)
     early_stop_callback = EarlyStopping(monitor="val_edit_distance", patience=3, verbose=False, mode="min")
+    
+    checkpoint_callback = ModelCheckpoint(
+        monitor='val_edit_distance',  # monitor metric validation loss
+        mode='min',  # We want to minimize the edit distance
+        save_top_k=CONFIG.save_top_k,  # 1 to Only save the best model
+        save_last=False,  # Do not save the last model 
+        dirpath='./temp',  # Directory to store checkpoints
+        filename='donut_champion', 
+    )
     trainer = pl.Trainer(
             accelerator="gpu",
             devices=1,
-            max_epochs=MODEL_CONFIG.config["max_epochs"], #get("max_epochs"),
-            val_check_interval=MODEL_CONFIG.config["val_check_interval"], #get("val_check_interval"),
-            check_val_every_n_epoch=MODEL_CONFIG.config["check_val_every_n_epoch"], #get("check_val_every_n_epoch"),
-            gradient_clip_val=MODEL_CONFIG.config["gradient_clip_val"], #get("gradient_clip_val"),
+            max_epochs=MODEL_CONFIG.max_epochs, #get("max_epochs"),
+            val_check_interval=MODEL_CONFIG.val_check_interval, #get("val_check_interval"),
+            check_val_every_n_epoch=MODEL_CONFIG.check_val_every_n_epoch, #get("check_val_every_n_epoch"),
+            gradient_clip_val=MODEL_CONFIG.gradient_clip_val, #get("gradient_clip_val"),
             precision=16, # we'll use mixed precision
             num_sanity_val_steps=0,
             logger=wandb_logger,
-            callbacks=[early_stop_callback],#[PushToHubCallback(), early_stop_callback],
+            callbacks=[checkpoint_callback, early_stop_callback],#[PushToHubCallback(), early_stop_callback],
     )
 
     trainer.fit(model_module, train_dataloaders=train_dataloader, val_dataloaders=val_dataloader)
@@ -155,7 +151,12 @@ def train_model(args):
     # =============================================================================
     # print_separator(f'TESTING', sep_type="SUPER")
     
-    test_model(model, processor)
+    test_model(
+        model, processor, 
+        save_path = CONFIG.model_prediction_path,
+        dataset_name_or_path = CONFIG.dataset_name_or_path, 
+        task_pront = CONFIG.special_token,
+    )
 
 
 
@@ -174,7 +175,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--result_path", type=str, required=False,
-        default='result/training/'
+        default='./TFG/outputs/donut'
     )
     parser.add_argument(
         "--task_name", type=str, 

@@ -1,14 +1,15 @@
 import os
 import sys
-curr_directory = os.getcwd()
-print("\nOld Current Directory:", curr_directory)
-if not curr_directory.endswith("TFG_Miquel"):
-    os.chdir("../") 
-    print("New Directory:", os.getcwd())
-# if new_directory is not None and not curr_directory.endswith(new_directory):
-#     os.chdir(f"./{new_directory}") 
-#     print("New Directory:", os.getcwd(), "\n")
-sys.path.append(os.getcwd())
+if __name__ == "__main__":
+    curr_directory = os.getcwd()
+    print("\nOld Current Directory:", curr_directory)
+    if not curr_directory.endswith("TFG_Miquel"):
+        os.chdir("../") 
+        print("New Directory:", os.getcwd())
+    # if new_directory is not None and not curr_directory.endswith(new_directory):
+    #     os.chdir(f"./{new_directory}") 
+    #     print("New Directory:", os.getcwd(), "\n")
+    sys.path.append(os.getcwd())
 
 from TFG.scripts_dataset.utils import print_separator, change_directory, print_time
 
@@ -25,7 +26,7 @@ import argparse
 import time
 
 
-def test_model(model, processor):
+def test_model(model, processor, dataset_name_or_path, save_path, task_pront):
     print_separator(f'TESTING', sep_type="SUPER")
     
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -36,14 +37,14 @@ def test_model(model, processor):
     output_list = []
     accs = []
 
-    dataset = load_dataset("naver-clova-ix/cord-v2", split="validation")
+    dataset = load_dataset(dataset_name_or_path, split="test")
 
     for idx, sample in tqdm(enumerate(dataset), total=len(dataset)):
         # prepare encoder inputs
         pixel_values = processor(sample["image"].convert("RGB"), return_tensors="pt").pixel_values
         pixel_values = pixel_values.to(device)
         # prepare decoder inputs
-        task_prompt = "<s_fatura>"
+        task_prompt = task_pront
         decoder_input_ids = processor.tokenizer(task_prompt, add_special_tokens=False, return_tensors="pt").input_ids
         decoder_input_ids = decoder_input_ids.to(device)
         
@@ -76,7 +77,10 @@ def test_model(model, processor):
         output_list.append(seq)
 
     scores = {"accuracies": accs, "mean_accuracy": np.mean(accs)}
-    print(scores, f"length : {len(accs)}")
+    
+    os.makedirs(save_path, exist_ok=True)
+    with open(os.path.join(save_path, "predictions.txt"), "w") as f:
+        print(scores, f"length : {len(accs)}", file=f)
 
 
 

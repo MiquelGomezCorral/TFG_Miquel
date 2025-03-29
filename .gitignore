@@ -5,8 +5,9 @@ keys.txt
 !script_orc_llm.py
 
 !TFG/outputs/donut/
-TFG/outputs/donut/model_output/*
+TFG/outputs/donut/model_trained/*
 wandb/
+temp/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
