@@ -35,6 +35,7 @@ def test_model(model, processor, dataset_name_or_path, save_path, task_pront):
     model.to(device)
 
     output_list = []
+    ground_truh_list = []
     accs = []
 
     dataset = load_dataset(dataset_name_or_path, split="test")
@@ -75,16 +76,24 @@ def test_model(model, processor, dataset_name_or_path, save_path, task_pront):
 
         accs.append(score)
         output_list.append(seq)
+        ground_truh_list.append(ground_truth)
 
-    scores = {"accuracies": accs, "mean_accuracy": np.mean(accs)}
+
+    scores = {
+        "n_samples": len(accs),
+        "mean_accuracy": np.mean(accs), 
+        "ground_truths": ground_truh_list, 
+        "predictions": output_list, 
+        "accuracies": accs
+    }
+    print("Scores:", scores)
     
-    os.makedirs(save_path, exist_ok=True)
-    with open(os.path.join(save_path, "predictions.txt"), "w") as f:
-        print(scores, f"length : {len(accs)}", file=f)
+    if save_path is not None:
+        os.makedirs(save_path, exist_ok=True)
+        with open(os.path.join(save_path, "predictions.json"), "w") as f:
+            json.dump(scores, f)
 
-
-
-
+    return scores
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

@@ -1,9 +1,10 @@
-from pathlib import Path
 import re
-from nltk import edit_distance
-import numpy as np
+import time
 import math
 import torch
+import numpy as np
+from pathlib import Path
+from nltk import edit_distance
 
 from torch.nn.utils.rnn import pad_sequence
 from torch.optim.lr_scheduler import LambdaLR
@@ -11,16 +12,21 @@ from torch.optim.lr_scheduler import LambdaLR
 import pytorch_lightning as pl
 from pytorch_lightning.utilities import rank_zero_only
 
+# from TFG.scripts_dataset.utils import print_time
+
 
 class DonutModelPLModule(pl.LightningModule):
-    def __init__(self, config, processor, model, max_length, train_dataloader, val_dataloader):
+    def __init__(self, config, processor, model, max_length, metric, train_dataloader, val_dataloader):
         super().__init__()
         self.config = config
         self.processor = processor
         self.model = model
         self.max_length = max_length
+        self.metric = metric
         self._train_dataloader = train_dataloader
         self._val_dataloader = val_dataloader
+        
+        self.scores_hist = []
         
 
     def training_step(self, batch, batch_idx):
@@ -32,6 +38,7 @@ class DonutModelPLModule(pl.LightningModule):
         return loss
 
     def validation_step(self, batch, batch_idx, dataset_idx=0):
+        # t_start = time.time()
         pixel_values, labels, answers = batch
         batch_size = pixel_values.shape[0]
         # we feed the prompt to the model
@@ -55,20 +62,26 @@ class DonutModelPLModule(pl.LightningModule):
             predictions.append(seq)
 
         scores = []
-        for pred, answer in zip(predictions, answers):
+        for answer, pred in zip(answers, predictions):
             pred = re.sub(r"(?:(?<=>) | (?=</s_))", "", pred)
             # NOT NEEDED ANYMORE
             # answer = re.sub(r"<.*?>", "", answer, count=1)
             answer = answer.replace(self.processor.tokenizer.eos_token, "")
-            scores.append(edit_distance(pred, answer) / max(len(pred), len(answer)))
+            scores.append(
+                self.metric(pred, answer)
+                # 
+            )
 
             if self.config.get("verbose", False) and len(scores) == 1:
-                print(f"Prediction: {pred}")
-                print(f"    Answer: {answer}")
-                print(f" Normed ED: {scores[0]}")
+                # print(f"\n VALIDATED SAMPLE NUMBER: {idx+1}:")
+                print(f" - Prediction: {pred}")
+                print(f" -     Answer: {answer}")
+                print(f" - Loss ({self.metric__name__}): {scores[0]:0.4f}")
 
         self.log("val_edit_distance", np.mean(scores))
+        # print_time(time.time()-t_start, n_files=len(predictions), prefix="samples validated in:")
         
+        self.scores_hist.append(scores)
         return scores
 
     def configure_optimizers(self):

@@ -1,7 +1,9 @@
 import os
 import sys
 import csv
-from typing import Literal, Optional, TextIO
+import time
+import json
+from typing import Tuple, Literal, Optional, TextIO
 
 # =================================================
 #                   GENERAL
@@ -45,7 +47,10 @@ def parse_seconds_to_minutes(sec: float) -> str:
 def print_time(sec: float, n_files: Optional[int] = None, space: bool = False, prefix: str = "", out_file: Optional[TextIO] = None) -> None:
     if space:
         print("")
-
+    
+    if not prefix.endswith(" "):
+        prefix = f"{prefix} "
+    
     if n_files is not None:
         message = f"{prefix}\n - {n_files:04} files in: {parse_seconds_to_minutes(sec)}.\n"
         message += f" - Per document:  {parse_seconds_to_minutes(sec / n_files)}"
@@ -127,6 +132,64 @@ def save_scores(scores: dict, path: str) -> None:
             })
     
     
+class TimeTracker:
+    def __init__(self, name: str):
+        self.name = name
+        self.hist: list[Tuple[str, float]] = []
+        
+        print(f"\n    TIME TRACKER FOR {name} INITIALIZED    \n")
+    
+    def track(self, tag: str, verbose: bool = False, space: bool = True) -> float:
+        """
+        Track the time of a certain point and add it a tag. Return time since las track
+        """
+        
+        t = time.time()
+        diff = t - self.hist[-1][1] if len(self.hist) > 0 else 0
+        self.hist.append((tag, t, diff))
+        if verbose: 
+            print_time(diff, prefix=tag, space=space)
+        return diff
+    
+    def get_metrics(self, n: int = None) -> dict:
+        """
+        Return a dict with all the metrics with the form: tag: (time, diff) 
+        Added Normalized if n of samples is passed with the form: tag: (time, diff, diff/n) 
+        """
+        t = time.time()
+        self.hist[0] = ("Total", t, t - self.hist[-1][1])
+        
+        if n is None:
+            return {
+                tag: (time, diff) for (tag, time, diff) in self.hist
+            }
+        else:
+            return {
+                tag: (time, diff, diff/n) for (tag, time, diff) in self.hist
+            }
+        
+    def save_metric(self, save_path: str, n: int = None) -> dict:
+        metrics = self.get_metrics(n)
+        
+        with open(save_path, "w") as f:
+            json.dump(metrics, f)
+            
+        return metrics
+        
+    def print_metrics(self, n: int = None, out_file: TextIO = None) -> dict:
+        metrics = self.get_metrics(n)
+        
+        if n is not None:
+            print(f"Processed {n} files in total\n")
+        
+        for tag, records in metrics.items():
+            diff = records[1]
+            
+            print_time(diff, n_files=n, prefix=tag, out_file=out_file)
+            
+        
+        return metrics
+        
 
 if __name__ == "__main__":
     print("\n")

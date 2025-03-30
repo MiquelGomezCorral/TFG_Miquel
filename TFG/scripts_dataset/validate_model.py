@@ -1,6 +1,7 @@
 import os
-from utils import change_directory
-change_directory()
+if __name__ == "__main__":
+    from utils import change_directory
+    change_directory()
 
 import json
 import argparse
@@ -32,69 +33,79 @@ def validate_model(output_path: str, ground_truths, model_predictions) -> dict:
     if N == 0: raise ValueError("Empty output, no output values found.")
     
     for gt, out in zip(ground_truths, model_predictions):
-        if not isinstance(gt, dict):
-            gt = json.loads(gt)
-        if not isinstance(out, dict):
-            out = json.loads(out)
-        
-        all_correct = True
-        for key_gt, val_gt in gt.items():
-            if key_gt not in out:
-                scores[key_gt] += 0
-                all_correct = False
-            else:
-                correct = validate_answer(key_gt, val_gt, out[key_gt])
-                all_correct = all_correct and correct
-                scores[key_gt] += 1 if correct else 0
-        
-        scores["all"] += 1 if all_correct else 0
+        new_scores, all_correct, proportion = validate_prediction(gt, out)
+        scores += new_scores
         
     scores = {key: (val, val / N) for key, val in scores.items()}    
     
     print_scores(scores)
-    print_separator(f'Saving output...')
-    with open(os.path.join(output_path, "scores.txt"), "w") as out_file:
-        print_scores(scores, out_file)
-    save_scores(scores, output_path)
+    if output_path:
+        print_separator(f'Saving output...')
+        with open(os.path.join(output_path, "scores.txt"), "w") as out_file:
+            print_scores(scores, out_file)
+        save_scores(scores, output_path)
     
     return scores
+        
+def validate_prediction(gt, pred):
+    if not isinstance(gt, dict):
+        gt = json.loads(gt)
+    if not isinstance(pred, dict):
+        pred = json.loads(pred)
 
+    scores = Counter()
+    n_correct = 0
+    for key_gt, val_gt in gt.items():
+        if key_gt not in pred:
+            scores[key_gt] += 0
+        else:
+            correct = validate_answer(key_gt, val_gt, pred[key_gt])
+            n_correct += 1 if correct else 0
+            scores[key_gt] += 1 if correct else 0
+    
+    total_keys = len(gt)
+    proportion = n_correct / total_keys
+    all_correct = proportion == 1
+    scores["all"] = int(all_correct)
+    
+    return scores, all_correct, proportion
+        
 
-def validate_answer(key_gt, val_gt, val_out) -> bool: 
+def validate_answer(key_gt, val_gt, val_pred) -> bool: 
     if isinstance(val_gt, str):
         val_gt = val_gt.lower()
-    if isinstance(val_out, str):
-        val_out = val_out.lower()
+    if isinstance(val_pred, str):
+        val_pred = val_pred.lower()
     
-    # if key_gt in ["discount", "tax"] and val_gt != val_out:
-    #     print(f"{key_gt:<10}: {val_gt = } | {val_out = }")
+    # if key_gt in ["discount", "tax"] and val_gt != val_pred:
+    #     print(f"{key_gt:<10}: {val_gt = } | {val_pred = }")
         
     if key_gt == "date":
         gt_format = "%d-%b-%Y"
         date_obj = datetime.strptime(val_gt, gt_format)
         val_gt = date_obj.strftime("%Y-%m-%d")
-        return val_gt == val_out
+        return val_gt == val_pred
     
     if key_gt == "currency":
         usd = ["$", "usd"]
         eur = ["€", "eur"]
         if val_gt in usd:
-            return val_out in usd
+            return val_pred in usd
         elif val_gt in eur:
-            return val_out in eur
+            return val_pred in eur
         else: return False
         
     if key_gt == "address":
-        similarity = levenshtein_similarity(val_gt, val_out)
+        similarity = levenshtein_similarity(val_gt, val_pred)
         return similarity > 0.95
     
     # THIS SHOULD NOT BE DONE: THE MODEL SHOULD BE ABLE TO SPECIFY IF A FIELD APPEARS OR NOT
     if key_gt in ["discount", "tax", "subtotal", "total"]:
         if val_gt is None:
-            return val_out is None or val_out == 0.0
+            return val_pred is None or val_pred == 0.0
         
 
-    return val_gt == val_out
+    return val_gt == val_pred
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

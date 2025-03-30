@@ -1,5 +1,6 @@
 import os
 import sys
+
 if __name__ == "__main__":
     curr_directory = os.getcwd()
     print("\nStarting Directory:", curr_directory)
@@ -11,7 +12,7 @@ if __name__ == "__main__":
     #     print("New Directory:", os.getcwd(), "\n")
     sys.path.append(os.getcwd())
 
-import time
+import json
 import argparse
 from datasets import load_dataset
 from torch.utils.data import DataLoader
@@ -24,7 +25,9 @@ from test_model import test_model
 from TFG.scripts_donut.config import Config, Model_Config
 from TFG.scripts_donut.lightning_module import DonutModelPLModule
 from TFG.scripts_donut.tokenizer import DonutDataset, added_tokens
-from TFG.scripts_dataset.utils import print_separator, change_directory, print_time
+from TFG.scripts_dataset.utils import print_separator, change_directory, print_time, TimeTracker
+from TFG.scripts_dataset.validate_model import validate_prediction
+
 
 def train_model(args):
     CONFIG = Config(
@@ -34,9 +37,12 @@ def train_model(args):
         dataset_name_or_path = args.dataset_name_or_path,
         task_name = args.task_name,
     )
-    MODEL_CONFIG = Model_Config()
+    MODEL_CONFIG = Model_Config(
+        metric_function = lambda ground_truth, prediction: validate_prediction(ground_truth, prediction)
+    )
     
-    
+    TIME_TRAKER = TimeTracker(name="Training")
+    TIME_TRAKER.track("Start")
     # =============================================================================
     #                            DATASET BASIC, NOT USED
     # =============================================================================
@@ -60,6 +66,7 @@ def train_model(args):
     """CHECK FOR WARNING ABOUT THE WEIGHTS BEING WELL LOADED"""
     processor = DonutProcessor.from_pretrained("naver-clova-ix/donut-base")
     model = VisionEncoderDecoderModel.from_pretrained("naver-clova-ix/donut-base", config=vision_encoder_config)
+    TIME_TRAKER.track("Getting Model", verbose=True)
     
 
     # =============================================================================
@@ -97,6 +104,9 @@ def train_model(args):
     print(" - Original number of tokens:", processor.tokenizer.vocab_size)
     print(" - Number of tokens after adding special tokens:", len(processor.tokenizer))
     
+    TIME_TRAKER.track("Creating pythorch Dataset", verbose=True)
+    
+    
     print_separator(f'Setting additional atributes...', sep_type="NORMAL")
     """nother important thing is that we need to set 2 additional attributes in the configuration of the model. This is not required, but will allow us to train the model by only providing the decoder targets, without having to provide any decoder inputs.
     The model will automatically create the `decoder_input_ids` (the decoder inputs) based on the `labels`, by shifting them one position to the right and prepending the decoder_start_token_id. I recommend checking [this video](https://www.youtube.com/watch?v=IGu7ivuy1Ag&t=888s&ab_channel=NielsRogge) if you want to understand how models like Donut automatically create decoder_input_ids - and more broadly how Donut works."""
@@ -107,18 +117,30 @@ def train_model(args):
     print(" - Pad token ID:", processor.decode([model.config.pad_token_id]))
     print(" - Decoder start token ID:", processor.decode([model.config.decoder_start_token_id]))
     
+    TIME_TRAKER.track("Setting additional atributes", verbose=True)
+    
+    
     print_separator(f'Creating pytorch Data Loaders...', sep_type="LONG")
     print(" - Creating Training Dataloader...")
     train_dataloader = DataLoader(train_dataset, batch_size=1, shuffle=True, num_workers=4)
     print(" - Creating Validation Dataloader...")
     val_dataloader = DataLoader(val_dataset, batch_size=1, shuffle=False, num_workers=4)
 
+    TIME_TRAKER.track("Creating pytorch Data Loaders", verbose=True)
     
     # =============================================================================
     #                               TRAINING
     # =============================================================================
     print_separator(f'TRAINING', sep_type="SUPER")
-    model_module = DonutModelPLModule(MODEL_CONFIG.to_dict(), processor, model, CONFIG.max_length, train_dataloader, val_dataloader)
+    model_module = DonutModelPLModule(
+        MODEL_CONFIG.to_dict(), 
+        processor, 
+        model, 
+        CONFIG.max_length, 
+        MODEL_CONFIG.metric_function,
+        train_dataloader, 
+        val_dataloader
+    )
     
     wandb_logger = WandbLogger(project="Donut", name=CONFIG.task_name)
     early_stop_callback = EarlyStopping(monitor="val_edit_distance", patience=3, verbose=False, mode="min")
@@ -146,18 +168,34 @@ def train_model(args):
 
     trainer.fit(model_module, train_dataloaders=train_dataloader, val_dataloaders=val_dataloader)
     
+    TIME_TRAKER.track("Training", verbose=True)
+    
     # =============================================================================
     #                               TESTING
     # =============================================================================
     # print_separator(f'TESTING', sep_type="SUPER")
     
-    test_model(
+    # Get the scores if you want to do something with them. But by providing saving path they are saved automatically
+    scores = test_model(
         model, processor, 
         save_path = CONFIG.model_prediction_path,
         dataset_name_or_path = CONFIG.dataset_name_or_path, 
         task_pront = CONFIG.special_token,
     )
+    
+    # =============================================================================
+    #                               TIMING
+    # =============================================================================
+    print_separator(f'TIMING', sep_type="SUPER")
 
+    TIME_TRAKER.track("Testing", verbose=True)
+    
+    # timeming = TIME_TRAKER.get_metrics()
+    metrics = TIME_TRAKER.print_metrics()
+    with open(os.path.join(args.result_path, "timing.txt"), "w") as f:
+        TIME_TRAKER.print_metrics(out_file = f)
+    with open(os.path.join(args.result_path, "timing.json"), "w") as f:
+        json.dump(metrics, f)
 
 
 # =============================================================================
@@ -187,13 +225,13 @@ if __name__ == "__main__":
         args.task_name = os.path.basename(args.dataset_name_or_path)
         
     # ================== Training =========================
-    t1 = time.time()
+    # t1 = time.time()
     print_separator(f'Training {args.task_name}...', sep_type="SUPER")
 
     train_model(args)
 
-    t2 = time.time()
-    diff = t2-t1
-    print_time(diff, space=True )
+    # t2 = time.time()
+    # diff = t2-t1
+    # print_time(diff, space=True )
     print_separator(f'DONE!', sep_type="SUPER")
 

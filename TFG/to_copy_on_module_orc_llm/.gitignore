@@ -5,6 +5,7 @@
 
 *
 !script_orc_llm.py
+!test_orc_llm.py
 !.gitignore
 !.gitkeep
 !utils.py
