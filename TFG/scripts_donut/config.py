@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Dict, Callable
 from nltk import edit_distance
 from dataclasses import dataclass, field, asdict
 
@@ -6,7 +6,7 @@ from dataclasses import dataclass, field, asdict
 class Model_Config:
     max_epochs: int = 100
     val_check_interval: float = 0.5  # how many times we want to validate during an epoch
-    check_val_every_n_epoch: int = 10
+    check_val_every_n_epoch: int = 5
     gradient_clip_val: float = 1.0
     num_training_samples_per_epoch: int = 25
     lr: float = 3e-5
@@ -17,7 +17,7 @@ class Model_Config:
     warmup_steps: int = 3  # 10% of epochs
     verbose: bool = True
     
-    metric_function: function = (
+    metric_function: Callable[[dict, dict], float] = (
         lambda ground_truth, prediction: edit_distance(ground_truth, prediction) / max(len(ground_truth), len(prediction))
     )
 

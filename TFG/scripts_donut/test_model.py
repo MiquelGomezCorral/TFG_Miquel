@@ -1,5 +1,6 @@
 import os
 import sys
+
 if __name__ == "__main__":
     curr_directory = os.getcwd()
     print("\nOld Current Directory:", curr_directory)
@@ -12,6 +13,7 @@ if __name__ == "__main__":
     sys.path.append(os.getcwd())
 
 from TFG.scripts_dataset.utils import print_separator, change_directory, print_time
+from TFG.scripts_donut.donut_utils import from_output_to_json
 
 import re
 import json
@@ -64,6 +66,7 @@ def test_model(model, processor, dataset_name_or_path, save_path, task_pront):
             )
 
         # turn into JSON
+        # seq = from_output_to_json(processor, outputs.sequences)
         seq = processor.batch_decode(outputs.sequences)[0]
         seq = seq.replace(processor.tokenizer.eos_token, "").replace(processor.tokenizer.pad_token, "")
         seq = re.sub(r"<.*?>", "", seq, count=1).strip()  # remove first task start token

@@ -48,13 +48,28 @@ def validate_model(output_path: str, ground_truths, model_predictions) -> dict:
     return scores
         
 def validate_prediction(gt, pred):
-    if not isinstance(gt, dict):
-        gt = json.loads(gt)
-    if not isinstance(pred, dict):
-        pred = json.loads(pred)
-
+    """
+        Recieve json str or dict ground trugths and model predictions and outputs the corresponding metrics
+    """
+    print("\nVALIDATE PREDICTION: ")
+    print(f"{gt = } ")
+    print(f"{pred = } ")
+    
     scores = Counter()
     n_correct = 0
+    
+    if not isinstance(gt, dict):
+        if len(gt) == 0: 
+            print("WARNING, EMPTY 'Ground Truth':", gt)
+            return scores, False, 0
+        gt = json.loads(gt)
+    if not isinstance(pred, dict):
+        if len(pred) == 0: 
+            print("WARNING, EMPTY 'Prediction':", pred)
+            return scores, False, 0
+        pred = json.loads(pred)
+
+    
     for key_gt, val_gt in gt.items():
         if key_gt not in pred:
             scores[key_gt] += 0

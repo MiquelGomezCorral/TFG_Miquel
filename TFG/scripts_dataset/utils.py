@@ -11,7 +11,7 @@ from typing import Tuple, Literal, Optional, TextIO
 
 separator_short = "_______________________________"
 separator_normal = "____________________________________________________________________"
-separator_long = "___________________________________________________________________________________________________________________________________"
+separator_long =  "___________________________________________________________________________________________________________________________________"
 separator_super = "==================================================================================================================================="
 
 
@@ -137,7 +137,7 @@ class TimeTracker:
         self.name = name
         self.hist: list[Tuple[str, float]] = []
         
-        print(f"\n    TIME TRACKER FOR {name} INITIALIZED    \n")
+        print_separator(f"TIME TRACKER FOR '{name}' INITIALIZED", sep_type="LONG")
     
     def track(self, tag: str, verbose: bool = False, space: bool = True) -> float:
         """

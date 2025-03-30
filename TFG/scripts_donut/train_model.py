@@ -28,6 +28,8 @@ from TFG.scripts_donut.tokenizer import DonutDataset, added_tokens
 from TFG.scripts_dataset.utils import print_separator, change_directory, print_time, TimeTracker
 from TFG.scripts_dataset.validate_model import validate_prediction
 
+def fatura_metric(ground_truth, prediction):
+    return 1-validate_prediction(ground_truth, prediction)[2]
 
 def train_model(args):
     CONFIG = Config(
@@ -38,7 +40,7 @@ def train_model(args):
         task_name = args.task_name,
     )
     MODEL_CONFIG = Model_Config(
-        metric_function = lambda ground_truth, prediction: validate_prediction(ground_truth, prediction)
+        metric_function = fatura_metric
     )
     
     TIME_TRAKER = TimeTracker(name="Training")
@@ -68,7 +70,7 @@ def train_model(args):
     model = VisionEncoderDecoderModel.from_pretrained("naver-clova-ix/donut-base", config=vision_encoder_config)
     TIME_TRAKER.track("Getting Model", verbose=True)
     
-
+    
     # =============================================================================
     #                               DATASET PYTORCH
     # =============================================================================
