@@ -160,7 +160,10 @@ class TimeTracker:
         Added Normalized if n of samples is passed with the form: tag: (time, diff, diff/n) 
         """
         t = time.time()
-        self.hist[0] = ("Total", t, t - self.hist[-1][1])
+        if len(self.hist) > 0: 
+            self.hist[0] = ("Total", t, t - self.hist[0][1])
+        else:
+            print("WARNING: Getting metrics with 0 tracked points. This will return an empty dict.")
         
         if n is None:
             return {
