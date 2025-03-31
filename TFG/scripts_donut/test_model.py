@@ -1,6 +1,8 @@
 import os
 import sys
 
+from TFG.scripts_dataset.validate_model import validate_model
+
 if __name__ == "__main__":
     curr_directory = os.getcwd()
     print("\nOld Current Directory:", curr_directory)
@@ -20,6 +22,7 @@ import json
 import torch
 import numpy as np
 from tqdm.auto import tqdm
+from typing import Callable, Tuple
 
 from donut import JSONParseEvaluator
 from datasets import load_dataset
@@ -28,9 +31,16 @@ import argparse
 import time
 
 
-def test_model(model, processor, dataset_name_or_path, save_path, task_pront):
-    print_separator(f'TESTING', sep_type="SUPER")
+def test_model(
+    model, processor, dataset_name_or_path, save_path, task_pront, 
+    verbose: bool = True,
+    evaluators: list[Tuple[str, Callable[[dict,dict], float]]] = None
+):
+    if evaluators is None: evaluators = []
+    evaluators = [('N_Tree_ED', lambda gt, pred: JSONParseEvaluator().cal_acc(pred, gt))] + evaluators
     
+    
+    print_separator(f'TESTING', sep_type="SUPER")
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     model.eval()
@@ -38,7 +48,7 @@ def test_model(model, processor, dataset_name_or_path, save_path, task_pront):
 
     output_list = []
     ground_truh_list = []
-    accs = []
+    scores_list = []
 
     dataset = load_dataset(dataset_name_or_path, split="test")
 
@@ -66,32 +76,40 @@ def test_model(model, processor, dataset_name_or_path, save_path, task_pront):
             )
 
         # turn into JSON
-        # seq = from_output_to_json(processor, outputs.sequences)
-        seq = processor.batch_decode(outputs.sequences)[0]
-        seq = seq.replace(processor.tokenizer.eos_token, "").replace(processor.tokenizer.pad_token, "")
-        seq = re.sub(r"<.*?>", "", seq, count=1).strip()  # remove first task start token
-        seq = processor.token2json(seq)
+        output_json = from_output_to_json(processor, outputs.sequences, second_reg=False)
+        # seq = processor.batch_decode(outputs.sequences)[0]
+        # seq = seq.replace(processor.tokenizer.eos_token, "").replace(processor.tokenizer.pad_token, "")
+        # seq = re.sub(r"<.*?>", "", seq, count=1).strip()  # remove first task start token
+        # seq = processor.token2json(seq)
 
-        ground_truth = json.loads(sample["ground_truth"])
-        ground_truth = ground_truth["gt_parse"]
-        evaluator = JSONParseEvaluator()
-        score = evaluator.cal_acc(seq, ground_truth)
+        ground_truth_json = json.loads(sample["ground_truth"])
+        ground_truth_json = ground_truth_json["gt_parse"]
+        
+        scores = {
+            name: evaluator(ground_truth_json, output_json) for name, evaluator in evaluators 
+        }
 
-        accs.append(score)
-        output_list.append(seq)
-        ground_truh_list.append(ground_truth)
+        scores_list.append(scores)
+        output_list.append(output_json)
+        ground_truh_list.append(ground_truth_json)
 
 
     scores = {
-        "n_samples": len(accs),
-        "mean_accuracy": np.mean(accs), 
+        "n_samples": len(scores_list),
+        "mean_accuracy": np.mean([scs["N_Tree_ED"] for scs in scores_list]), 
         "ground_truths": ground_truh_list, 
         "predictions": output_list, 
-        "accuracies": accs
+        "accuracies": scores_list
     }
-    print("Scores:", scores)
     
-    if save_path is not None:
+    validate_model(
+        output_path=save_path,
+        ground_truths=ground_truh_list,
+        model_predictions=output_list,
+        verbose=verbose
+    )
+    
+    if save_path:
         os.makedirs(save_path, exist_ok=True)
         with open(os.path.join(save_path, "predictions.json"), "w") as f:
             json.dump(scores, f)

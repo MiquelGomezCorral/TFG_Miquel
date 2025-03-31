@@ -26,7 +26,7 @@ def load_output_validate_model(output_path: str):
     validate_model(output_path, ground_truths, model_predictions)
 
 
-def validate_model(output_path: str, ground_truths, model_predictions) -> dict:
+def validate_model(output_path: str, ground_truths, model_predictions, verbose: bool = True) -> dict:
     print_separator(f'Validating output...')
     scores = Counter()
     N = len(ground_truths)
@@ -38,11 +38,12 @@ def validate_model(output_path: str, ground_truths, model_predictions) -> dict:
         
     scores = {key: (val, val / N) for key, val in scores.items()}    
     
-    print_scores(scores)
+    if verbose:
+        print_scores(scores)
     if output_path:
         print_separator(f'Saving output...')
         with open(os.path.join(output_path, "scores.txt"), "w") as out_file:
-            print_scores(scores, out_file)
+            print_scores(scores, file_out = out_file)
         save_scores(scores, output_path)
     
     return scores
@@ -51,11 +52,8 @@ def validate_prediction(gt, pred):
     """
         Recieve json str or dict ground trugths and model predictions and outputs the corresponding metrics
     """
-    print("\nVALIDATE PREDICTION: ")
-    print(f"{gt = } ")
-    print(f"{pred = } ")
-    
     scores = Counter()
+    scores["all"] = 0
     n_correct = 0
     
     if not isinstance(gt, dict):
@@ -118,6 +116,9 @@ def validate_answer(key_gt, val_gt, val_pred) -> bool:
     if key_gt in ["discount", "tax", "subtotal", "total"]:
         if val_gt is None:
             return val_pred is None or val_pred == 0.0
+        
+    if key_gt == "shopping_or_tax": 
+        return True # We skip this paraneter
         
 
     return val_gt == val_pred

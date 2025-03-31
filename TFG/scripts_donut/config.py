@@ -1,12 +1,12 @@
-from typing import Dict, Callable
+from typing import Dict, Callable, Iterable
 from nltk import edit_distance
 from dataclasses import dataclass, field, asdict
 
 @dataclass
 class Model_Config:
     max_epochs: int = 100
-    val_check_interval: float = 0.5  # how many times we want to validate during an epoch
-    check_val_every_n_epoch: int = 5
+    val_check_interval: float = 0.25  # how many times we want to validate during an epoch
+    check_val_every_n_epoch: int = 10
     gradient_clip_val: float = 1.0
     num_training_samples_per_epoch: int = 25
     lr: float = 3e-5
@@ -17,8 +17,8 @@ class Model_Config:
     warmup_steps: int = 3  # 10% of epochs
     verbose: bool = True
     
-    metric_function: Callable[[dict, dict], float] = (
-        lambda ground_truth, prediction: edit_distance(ground_truth, prediction) / max(len(ground_truth), len(prediction))
+    metrics: Iterable[Callable[[dict, dict], float]] = (
+        # ("Normed_ED", lambda ground_truth, prediction: edit_distance(ground_truth, prediction) / max(len(ground_truth), len(prediction)))
     )
 
     # Method to update configuration from a dictionary

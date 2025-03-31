@@ -1,3 +1,5 @@
+
+
 import os
 import sys
 
@@ -11,6 +13,12 @@ if __name__ == "__main__":
     #     os.chdir(f"./{new_directory}") 
     #     print("New Directory:", os.getcwd(), "\n")
     sys.path.append(os.getcwd())
+        
+    import threading
+    from TFG.scripts_donut.donut_print import print_donut, stop_event
+
+    donut_thread = threading.Thread(target=lambda: print_donut(infinite=True))
+    donut_thread.start()
 
 import json
 import argparse
@@ -40,7 +48,7 @@ def train_model(args):
         task_name = args.task_name,
     )
     MODEL_CONFIG = Model_Config(
-        metric_function = fatura_metric
+        metrics = [("fatura_metric", fatura_metric)]
     )
     
     TIME_TRAKER = TimeTracker(name="Training")
@@ -135,13 +143,13 @@ def train_model(args):
     # =============================================================================
     print_separator(f'TRAINING', sep_type="SUPER")
     model_module = DonutModelPLModule(
-        MODEL_CONFIG.to_dict(), 
-        processor, 
-        model, 
-        CONFIG.max_length, 
-        MODEL_CONFIG.metric_function,
-        train_dataloader, 
-        val_dataloader
+        config=MODEL_CONFIG.to_dict(), 
+        processor=processor, 
+        model=model, 
+        max_length=CONFIG.max_length, 
+        metrics=MODEL_CONFIG.metrics,
+        train_dataloader=train_dataloader, 
+        val_dataloader=val_dataloader
     )
     
     wandb_logger = WandbLogger(project="Donut", name=CONFIG.task_name)
@@ -183,16 +191,16 @@ def train_model(args):
         save_path = CONFIG.model_prediction_path,
         dataset_name_or_path = CONFIG.dataset_name_or_path, 
         task_pront = CONFIG.special_token,
+        evaluators= MODEL_CONFIG.metrics
     )
+    
+    TIME_TRAKER.track("Testing", verbose=True)
     
     # =============================================================================
     #                               TIMING
     # =============================================================================
     print_separator(f'TIMING', sep_type="SUPER")
 
-    TIME_TRAKER.track("Testing", verbose=True)
-    
-    # timeming = TIME_TRAKER.get_metrics()
     metrics = TIME_TRAKER.print_metrics()
     with open(os.path.join(args.result_path, "timing.txt"), "w") as f:
         TIME_TRAKER.print_metrics(out_file = f)
@@ -206,25 +214,33 @@ def train_model(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--pretrained_model_name_or_path", type=str, required=False,
+        "-m", "--pretrained_model_name_or_path", type=str, required=False,
         default="naver-clova-ix/donut-base"
     )
     parser.add_argument(
-        "--dataset_name_or_path", type=str, required=False,
+        "-d", "--dataset_name_or_path", type=str, required=False,
         default= f"datasets_finetune/outputs/FATURA" #"['naver-clova-ix/cord-v1']"
     )
     parser.add_argument(
-        "--result_path", type=str, required=False,
+        "-o", "--result_path", type=str, required=False,
         default='./TFG/outputs/donut'
     )
     parser.add_argument(
-        "--task_name", type=str, 
+        "-n", "--task_name", type=str, 
         default="fatura_train"
+    )
+    parser.add_argument(
+        "-k", "--make_me_a_donut", action="store_true", 
+        default=False
     )
     args, left_argv = parser.parse_known_args()
 
     if args.task_name is None:
         args.task_name = os.path.basename(args.dataset_name_or_path)
+        
+    # ================== Silly donut ======================
+    stop_event.set()  # Signal the thread to stop
+    donut_thread.join()
         
     # ================== Training =========================
     # t1 = time.time()

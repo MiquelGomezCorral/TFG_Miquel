@@ -129,10 +129,7 @@ def print_time(sec: float, n_files: Optional[int] = None, space: bool = False, p
     else:
         message = f"{prefix}Time: {parse_seconds_to_minutes(sec)}."
 
-    print(message)
-
-    if out_file:
-        print(message, file=out_file)
+    print(message, file=out_file)
 
     
 class TimeTracker:
@@ -186,14 +183,13 @@ class TimeTracker:
         metrics = self.get_metrics(n)
         
         if n is not None:
-            print(f"Processed {n} files in total\n")
+            print(f"Processed {n} files in total\n", out_file=out_file)
         
         for tag, records in metrics.items():
             diff = records[1]
             
             print_time(diff, n_files=n, prefix=tag, out_file=out_file)
-            
-        
+                    
         return metrics
         
 
