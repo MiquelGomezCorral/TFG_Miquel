@@ -33,36 +33,6 @@ def print_separator(text: str, sep_type: Literal["SHORT", "NORMAL", "LONG", "SUP
         print(sep)
         print(f"{text:^{len(sep)}}\n")
 
-def parse_seconds_to_minutes(sec: float) -> str:
-    minutes = int(sec // 60)
-    seconds = int(sec % 60)
-    decimals = int((sec % 1) * 10000)
-
-    if minutes > 0:
-        return f"{minutes:02} mins, {seconds:02}.{decimals:04} sec"
-    else:
-        return f"{seconds:02}.{decimals:04} sec"
-
-
-def print_time(sec: float, n_files: Optional[int] = None, space: bool = False, prefix: str = "", out_file: Optional[TextIO] = None) -> None:
-    if space:
-        print("")
-    
-    if not prefix.endswith(" "):
-        prefix = f"{prefix} "
-    
-    if n_files is not None:
-        message = f"{prefix}\n - {n_files:04} files in: {parse_seconds_to_minutes(sec)}.\n"
-        message += f" - Per document:  {parse_seconds_to_minutes(sec / n_files)}"
-    else:
-        message = f"{prefix}Time: {parse_seconds_to_minutes(sec)}."
-
-    print(message)
-
-    if out_file:
-        print(message, file=out_file)
-
-
 def change_directory(new_directory: str = None) -> None:
     curr_directory = os.getcwd()
     print("\nOld Current Directory:", curr_directory)
@@ -130,7 +100,40 @@ def save_scores(scores: dict, path: str) -> None:
                 "Hits": val,
                 "Accuracy": ratio
             })
+ 
+# =================================================
+#                   TIME TRACKER
+# =================================================
     
+def parse_seconds_to_minutes(sec: float) -> str:
+    minutes = int(sec // 60)
+    seconds = int(sec % 60)
+    decimals = int((sec % 1) * 10000)
+
+    if minutes > 0:
+        return f"{minutes:02} mins, {seconds:02}.{decimals:04} sec"
+    else:
+        return f"{seconds:02}.{decimals:04} sec"
+
+
+def print_time(sec: float, n_files: Optional[int] = None, space: bool = False, prefix: str = "", out_file: Optional[TextIO] = None) -> None:
+    if space:
+        print("")
+    
+    if not prefix.endswith(" "):
+        prefix = f"{prefix} "
+    
+    if n_files is not None:
+        message = f"{prefix}\n - {n_files:04} files in: {parse_seconds_to_minutes(sec)}.\n"
+        message += f" - Per document:  {parse_seconds_to_minutes(sec / n_files)}"
+    else:
+        message = f"{prefix}Time: {parse_seconds_to_minutes(sec)}."
+
+    print(message)
+
+    if out_file:
+        print(message, file=out_file)
+
     
 class TimeTracker:
     def __init__(self, name: str):
