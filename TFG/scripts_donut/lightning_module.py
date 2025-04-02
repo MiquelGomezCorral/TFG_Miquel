@@ -62,17 +62,20 @@ class DonutModelPLModule(pl.LightningModule):
             return_dict_in_generate=True,
         )
     
+        predictions_sequence = []
         predictions_json = []
         for seq in self.processor.tokenizer.batch_decode(outputs.sequences):
+            # print(f"{seq = }")
+            predictions_sequence.append(seq)
             seq = seq.replace(self.processor.tokenizer.eos_token, "").replace(self.processor.tokenizer.pad_token, "")
             seq = re.sub(r"<.*?>", "", seq, count=1).strip()  # remove first task start token
             seq = re.sub(r"(?:(?<=>) | (?=</s_))", "", seq)
             seq = self.processor.token2json(seq)
-            
             predictions_json.append(seq)
         
-        grount_truths_json = from_output_to_json(self.processor, grount_truths[0], decoded=True)
-
+        # print(f" - {grount_truths[0] = }")
+        grount_truths_json = from_output_to_json(self.processor, grount_truths[0], decoded=True, remove_first_tag=False)
+        # print(f" - {grount_truths_json = }")
         scores = []
         # In case not more than one sample is passed per batchs 
         if not isinstance(grount_truths_json, list) and not isinstance(grount_truths_json, tuple):
@@ -80,18 +83,19 @@ class DonutModelPLModule(pl.LightningModule):
         if not isinstance(predictions_json, list) and not isinstance(predictions_json, tuple):
             predictions_json = [predictions_json]
             
-        for gt, pred in zip(grount_truths_json, predictions_json):
+        for gt_seq, gt_json, preq_seq, pred_json in zip(grount_truths, grount_truths_json, predictions_sequence, predictions_json):
             scores.append({
-                "Normed_ED": edit_distance(json.dumps(gt), json.dumps(pred)) / max(len(json.dumps(gt)), len(json.dumps(pred))),
-                **{name: metric(gt, pred) for name, metric in self.metrics}
+                "Normed_ED": edit_distance(gt_seq, preq_seq) / max(len(gt_seq), len(preq_seq)),
+                **{name: metric(gt_json, pred_json) for name, metric in self.metrics}
             })
 
             if self.config.get("verbose", False):
                 # print(f"\n VALIDATED SAMPLE NUMBER: {idx+1}:")
-                print(f"\n - Ground Truth: {gt}")
-                print(f" -   Prediction: {pred}")
+                print(f" - Ground Truth: {gt_json}")
+                print(f" -   Prediction: {pred_json}")
                 for name, metric in scores[0].items():
                     print(f" - Loss ({name}): {metric:0.4f}")
+                print("")
 
         self.log("val_edit_distance", np.mean([scs["Normed_ED"] for scs in scores]))
         # print_time(time.time()-t_start, n_files=len(predictions), prefix="samples validated in:")

@@ -1,5 +1,6 @@
 # original code https://gist.github.com/Denbergvanthijs/7f6936ca90a683d37216fd80f5750e9c#file-donut-py
 
+import itertools
 import time
 import sys
 import numpy as np
@@ -77,10 +78,9 @@ def print_donut(n_iters: int = screen_size * screen_size, infinite: bool = False
     global A, B
     
     if infinite:
-        n_iters = int(1e10)
+        n_iters = 1e14
         
-    start_time = time.time() 
-    for frame in range(n_iters):
+    for _ in itertools.repeat(42, n_iters):
         # Check if the event is set
         if stop_event.is_set():  
             clean_all()
@@ -93,12 +93,7 @@ def print_donut(n_iters: int = screen_size * screen_size, infinite: bool = False
         print(*[clear_bash_line] * (len(output)+1), sep="")
         pprint(output)
         
-        time.sleep(0.01)
-        # Compute time taken and sleep only for remaining time
-        # elapsed_time = time.time() - start_time
-        # next_frame_time = (frame + 1) * frame_delay
-        # sleep_time = max(0, next_frame_time - elapsed_time)
-        # time.sleep(sleep_time)
+        time.sleep(frame_delay)
        
 def clean_all():
     print(*[clear_bash_line] * (view_box), sep="")

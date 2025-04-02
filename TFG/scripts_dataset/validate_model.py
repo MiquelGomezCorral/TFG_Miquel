@@ -46,6 +46,7 @@ def validate_model(output_path: str, ground_truths, model_predictions, verbose: 
             print_scores(scores, file_out = out_file)
         save_scores(scores, output_path)
     
+    print(f"Validate model: {scores = }")
     return scores
         
 def validate_prediction(gt, pred):
