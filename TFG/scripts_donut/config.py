@@ -4,11 +4,11 @@ from dataclasses import dataclass, field, asdict
 
 @dataclass
 class Model_Config:
-    max_epochs: int = 100
+    max_epochs: int = 300
     val_check_interval: float = 0.25  # how many times we want to validate during an epoch
     check_val_every_n_epoch: int = 10
     gradient_clip_val: float = 1.0
-    num_training_samples_per_epoch: int = 25
+    num_training_samples_per_epoch: int = 100
     lr: float = 3e-5
     train_batch_sizes: tuple[int] = (8,) #list[int] = field(default_factory=lambda: [8])
     val_batch_sizes: tuple[int] = (1,) #list[int] = field(default_factory=lambda: [1])

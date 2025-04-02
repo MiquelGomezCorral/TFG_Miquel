@@ -2,6 +2,7 @@ import os
 import sys
 import argparse
 
+
 if __name__ == "__main__":
     curr_directory = os.getcwd()
     print("\nStarting Directory:", curr_directory)
@@ -23,6 +24,7 @@ if __name__ == "__main__":
     parser.add_argument("-o", "--result_path", type=str, required=False, default='./TFG/outputs/donut')
     parser.add_argument("-n", "--task_name", type=str, default="fatura_train")
     parser.add_argument("-k", "--stop_the_donut", action="store_true", default=False)
+    parser.add_argument("-b", "--boom_folders", action="store_false", default=True)
     args, left_argv = parser.parse_known_args()
 
     if args.task_name is None:
@@ -49,6 +51,7 @@ from pytorch_lightning.loggers import WandbLogger
 from pytorch_lightning.callbacks import Callback, EarlyStopping, ModelCheckpoint
 
 from test_model import test_model
+from TFG.scripts_donut.donut_utils import clear_folder
 from TFG.scripts_donut.config import Config, Model_Config
 from TFG.scripts_donut.lightning_module import DonutModelPLModule
 from TFG.scripts_donut.tokenizer import DonutDataset, added_tokens
@@ -236,6 +239,11 @@ if __name__ == "__main__":
     donut_process.terminate()  # Kill the process
     donut_process.join()  # Ensure cleanup
     clean_all()
+    
+    # ================== Clear repo =========================
+    if args.boom_folders:
+        clear_folder(folder="./temp")
+        clear_folder(folder="./wandb")
     # ================== Training =========================
     # t1 = time.time()
     print_separator(f'Training {args.task_name}...', sep_type="SUPER")

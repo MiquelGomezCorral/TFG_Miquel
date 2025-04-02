@@ -1,6 +1,7 @@
 import re
-
+import os
 import torch
+import shutil
 
 def from_output_to_json(processor, outputs, decoded: bool = False, second_reg: bool = True, remove_first_tag: bool = True) -> str:
     if not decoded:
@@ -19,3 +20,12 @@ def from_output_to_json(processor, outputs, decoded: bool = False, second_reg: b
         seq = re.sub(r"(?:(?<=>) | (?=</s_))", "", seq)
     seq = processor.token2json(seq)
     return seq
+
+def clear_folder(folder='./temp'):
+    """Clear the contents of the temporary folder."""
+    if os.path.exists(folder) and os.path.isdir(folder):
+        # Remove all contents in the temp directory
+        shutil.rmtree(folder)
+        print(f"Cleared the {folder} folder.")
+    else:
+        print(f"The directory {folder} does not exist.")

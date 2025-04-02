@@ -7,7 +7,9 @@ import json
 import argparse
 from datetime import datetime
 from collections import Counter
-from TFG.scripts_dataset.utils import print_separator, levenshtein_similarity, print_scores, save_scores
+from TFG.scripts_dataset.utils import print_separator
+from TFG.scripts_dataset.metrics import print_scores, save_scores
+from TFG.scripts_dataset.metrics import check_date_value, levenshtein_similarity
 
 def load_output_validate_model(output_path: str):
     print_separator(f'Opening file...')
@@ -23,18 +25,24 @@ def load_output_validate_model(output_path: str):
     ground_truths = output["ground_truths"]
     model_predictions = output["predictions"]     
     
-    validate_model(output_path, ground_truths, model_predictions)
-
+    validate_model(output_path, ground_truths, model_predictions, verbose=True)
 
 def validate_model(output_path: str, ground_truths, model_predictions, verbose: bool = True) -> dict:
     print_separator(f'Validating output...')
-    scores = Counter()
     N = len(ground_truths)
     if N == 0: raise ValueError("Empty output, no output values found.")
     
+    scores = Counter()
+    # Initialize all fields with a score of 0 so it showsthem even if not validated
+    # for key in ground_truths[0]:
+    #     scores[key] = 0 
+    # scores["all"] = 0
+    
     for gt, out in zip(ground_truths, model_predictions):
-        new_scores, all_correct, proportion = validate_prediction(gt, out)
-        scores += new_scores
+        new_scores, all_correct, proportion, mistakes = validate_prediction(gt, out)
+        scores.update(new_scores)
+        if verbose:
+            print(F" - Mistakes: mistakes{mistakes}")
         
     scores = {key: (val, val / N) for key, val in scores.items()}    
     
@@ -54,9 +62,8 @@ def validate_prediction(gt, pred):
         Recieve json str or dict ground trugths and model predictions and outputs the corresponding metrics
     """
     scores = Counter()
-    scores["all"] = 0
     n_correct = 0
-    
+    mistaken_keys = set()
     if not isinstance(gt, dict):
         if len(gt) == 0: 
             print("WARNING, EMPTY 'Ground Truth':", gt)
@@ -74,32 +81,25 @@ def validate_prediction(gt, pred):
             scores[key_gt] += 0
         else:
             correct = validate_answer(key_gt, val_gt, pred[key_gt])
-            if key_gt == "shopping_or_tax": print(f"{correct=}")
+            if not correct: mistaken_keys.add(key_gt)
             n_correct += 1 if correct else 0
             scores[key_gt] += 1 if correct else 0
     
     total_keys = len(gt)
     proportion = n_correct / total_keys
-    all_correct = proportion == 1
+    all_correct = len(mistaken_keys) == 0
     scores["all"] = int(all_correct)
     
-    return scores, all_correct, proportion
+    return scores, all_correct, proportion, list(mistaken_keys)
         
-
 def validate_answer(key_gt, val_gt, val_pred) -> bool: 
     if isinstance(val_gt, str):
         val_gt = val_gt.lower()
     if isinstance(val_pred, str):
         val_pred = val_pred.lower()
     
-    # if key_gt in ["discount", "tax"] and val_gt != val_pred:
-    #     print(f"{key_gt:<10}: {val_gt = } | {val_pred = }")
-        
     if key_gt == "date":
-        gt_format = "%d-%b-%Y"
-        date_obj = datetime.strptime(val_gt, gt_format)
-        val_gt = date_obj.strftime("%Y-%m-%d")
-        return val_gt == val_pred
+        return check_date_value(val_gt, val_pred)
     
     if key_gt == "currency":
         usd = ["$", "usd"]

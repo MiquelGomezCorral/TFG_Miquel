@@ -2,6 +2,7 @@ donut/
 datasets_finetune/
 module_ocr_llm/
 keys.txt
+wandb_api_key.txt
 !script_orc_llm.py
 
 !TFG/outputs/donut/

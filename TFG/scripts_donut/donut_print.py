@@ -11,7 +11,7 @@ from TFG.scripts_dataset.utils import print_separator
 stop_event = threading.Event()
 
 
-screen_size = 20
+screen_size = 17
 view_box = screen_size + 5
 theta_spacing = 0.07
 phi_spacing = 0.02
@@ -78,7 +78,8 @@ def print_donut(n_iters: int = screen_size * screen_size, infinite: bool = False
     global A, B
     
     if infinite:
-        n_iters = 1e14
+        # iterator = itertools.count()
+        n_iters = int(1e14)
         
     for _ in itertools.repeat(42, n_iters):
         # Check if the event is set
