@@ -74,6 +74,7 @@ def validate_prediction(gt, pred):
             scores[key_gt] += 0
         else:
             correct = validate_answer(key_gt, val_gt, pred[key_gt])
+            if key_gt == "shopping_or_tax": print(f"{correct=}")
             n_correct += 1 if correct else 0
             scores[key_gt] += 1 if correct else 0
     
@@ -121,7 +122,6 @@ def validate_answer(key_gt, val_gt, val_pred) -> bool:
     if key_gt == "shopping_or_tax": 
         return True # We skip this paraneter
         
-
     return val_gt == val_pred
 
 if __name__ == "__main__":
