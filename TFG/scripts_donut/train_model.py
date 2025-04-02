@@ -1,7 +1,6 @@
-
-
 import os
 import sys
+import argparse
 
 if __name__ == "__main__":
     curr_directory = os.getcwd()
@@ -13,15 +12,35 @@ if __name__ == "__main__":
     #     os.chdir(f"./{new_directory}") 
     #     print("New Directory:", os.getcwd(), "\n")
     sys.path.append(os.getcwd())
-        
-    import threading
-    from TFG.scripts_donut.donut_print import print_donut, stop_event
+    
+    
+    # ============================================================ 
+    #                   Parse arguments
+    # ============================================================
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-m", "--pretrained_model_name_or_path", type=str, required=False, default="naver-clova-ix/donut-base")
+    parser.add_argument("-d", "--dataset_name_or_path", type=str, required=False, default= f"datasets_finetune/outputs/FATURA") #"['naver-clova-ix/cord-v1']"
+    parser.add_argument("-o", "--result_path", type=str, required=False, default='./TFG/outputs/donut')
+    parser.add_argument("-n", "--task_name", type=str, default="fatura_train")
+    parser.add_argument("-k", "--stop_the_donut", action="store_true", default=False)
+    args, left_argv = parser.parse_known_args()
 
-    donut_thread = threading.Thread(target=lambda: print_donut(infinite=True))
-    donut_thread.start()
+    if args.task_name is None:
+        args.task_name = os.path.basename(args.dataset_name_or_path)
+        
+        
+    # ============================================================ 
+    # Start the donut animation in a separate process
+    # ============================================================
+    if not args.stop_the_donut:
+        import multiprocessing
+        from TFG.scripts_donut.donut_print import print_donut, clean_all
+            
+        stop_event = multiprocessing.Event()
+        donut_process = multiprocessing.Process(target=lambda: print_donut(infinite=True))
+        donut_process.start()
 
 import json
-import argparse
 from datasets import load_dataset
 from torch.utils.data import DataLoader
 from transformers import VisionEncoderDecoderConfig, DonutProcessor, VisionEncoderDecoderModel
@@ -212,36 +231,11 @@ def train_model(args):
 #                               MAIN
 # =============================================================================
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "-m", "--pretrained_model_name_or_path", type=str, required=False,
-        default="naver-clova-ix/donut-base"
-    )
-    parser.add_argument(
-        "-d", "--dataset_name_or_path", type=str, required=False,
-        default= f"datasets_finetune/outputs/FATURA" #"['naver-clova-ix/cord-v1']"
-    )
-    parser.add_argument(
-        "-o", "--result_path", type=str, required=False,
-        default='./TFG/outputs/donut'
-    )
-    parser.add_argument(
-        "-n", "--task_name", type=str, 
-        default="fatura_train"
-    )
-    parser.add_argument(
-        "-k", "--make_me_a_donut", action="store_true", 
-        default=False
-    )
-    args, left_argv = parser.parse_known_args()
-
-    if args.task_name is None:
-        args.task_name = os.path.basename(args.dataset_name_or_path)
-        
     # ================== Silly donut ======================
-    stop_event.set()  # Signal the thread to stop
-    donut_thread.join()
-        
+    stop_event.set()  # Signal the animation to stop
+    donut_process.terminate()  # Kill the process
+    donut_process.join()  # Ensure cleanup
+    clean_all()
     # ================== Training =========================
     # t1 = time.time()
     print_separator(f'Training {args.task_name}...', sep_type="SUPER")

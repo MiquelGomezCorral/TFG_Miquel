@@ -81,9 +81,9 @@ def print_donut(n_iters: int = screen_size * screen_size, infinite: bool = False
         
     start_time = time.time() 
     for frame in range(n_iters):
-    # while True:
-        if stop_event.is_set():  # Check if the event is set
-            print(*[clear_bash_line] * (view_box), sep="")
+        # Check if the event is set
+        if stop_event.is_set():  
+            clean_all()
             break
         A += theta_spacing
         B += phi_spacing
@@ -93,13 +93,16 @@ def print_donut(n_iters: int = screen_size * screen_size, infinite: bool = False
         print(*[clear_bash_line] * (len(output)+1), sep="")
         pprint(output)
         
-        # time.sleep(0.01)
+        time.sleep(0.01)
         # Compute time taken and sleep only for remaining time
-        elapsed_time = time.time() - start_time
-        next_frame_time = (frame + 1) * frame_delay
-        sleep_time = max(0, next_frame_time - elapsed_time)
-        time.sleep(sleep_time)
-            
+        # elapsed_time = time.time() - start_time
+        # next_frame_time = (frame + 1) * frame_delay
+        # sleep_time = max(0, next_frame_time - elapsed_time)
+        # time.sleep(sleep_time)
+       
+def clean_all():
+    print(*[clear_bash_line] * (view_box), sep="")
+         
 
 
 if __name__ == "__main__":    
