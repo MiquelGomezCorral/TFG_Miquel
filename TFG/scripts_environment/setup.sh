@@ -62,12 +62,17 @@ fi
 
 if [ "$GIT" = true ]; then
     echo -e "\n======================================"
-    echo "              CLONNING"
+    echo "         PULLING SELF (TFG_Miquel)"
     echo "======================================"
 
     git config --global user.email "miquelgc2003@gmail.com"
     git config --global user.name "Miquel Gómez Corral"
 
+    git pull
+
+    echo -e "\n======================================"
+    echo "              CLONNING OCR"
+    echo "======================================"
 
     if [ -d './module_ocr_llm/' ]; then
         echo -e "\n- PULLING module_ocr_llm"
