@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance13.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Dominique Williams DDS\", \"address\": \"264 Susan Hills Apt. 493 Lisaland, NM 59280 US\", \"date\": \"24-Feb-2008\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 24.15, \"total\": 702.98}}",
+    "original_data": {
+        "buyer": "Dominique Williams DDS",
+        "address": "264 Susan Hills Apt. 493 Lisaland, NM 59280 US",
+        "date": "24-Feb-2008",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 24.15,
+        "total": 702.98
+    }
+}

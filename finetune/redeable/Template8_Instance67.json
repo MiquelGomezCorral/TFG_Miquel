@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance67.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jennifer Rivera\", \"address\": \"9047 Taylor Drives Apt. 860 Valerieburgh, NH 88458 US\", \"date\": \"06-Nov-2014\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 300.46, \"discount\": null, \"tax\": null, \"total\": 300.92}}",
+    "original_data": {
+        "buyer": "Jennifer Rivera",
+        "address": "9047 Taylor Drives Apt. 860 Valerieburgh, NH 88458 US",
+        "date": "06-Nov-2014",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 300.46,
+        "discount": null,
+        "tax": null,
+        "total": 300.92
+    }
+}

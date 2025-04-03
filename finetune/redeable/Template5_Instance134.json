@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance134.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Phyllis Bradley\", \"address\": \"235 Ronald Place Leeburgh, NE 13159 US\", \"date\": \"18-Mar-2004\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 893.96, \"discount\": null, \"tax\": 32.77, \"total\": 916.18}}",
+    "original_data": {
+        "buyer": "Phyllis Bradley",
+        "address": "235 Ronald Place Leeburgh, NE 13159 US",
+        "date": "18-Mar-2004",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 893.96,
+        "discount": null,
+        "tax": 32.77,
+        "total": 916.18
+    }
+}

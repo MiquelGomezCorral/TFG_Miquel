@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance147.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Toni Michael\", \"address\": \"67863 Stephen Brooks Hooverville, SD 43930 US\", \"date\": \"02-Jun-2019\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 768.0, \"discount\": null, \"tax\": null, \"total\": 778.2}}",
+    "original_data": {
+        "buyer": "Toni Michael",
+        "address": "67863 Stephen Brooks Hooverville, SD 43930 US",
+        "date": "02-Jun-2019",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 768.0,
+        "discount": null,
+        "tax": null,
+        "total": 778.2
+    }
+}

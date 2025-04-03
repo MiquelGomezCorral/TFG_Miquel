@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance169.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Nathaniel York\", \"address\": \"4832 Sarah Dale Apt. 094 Carrollmouth, NV 23157 US\", \"date\": \"19-Aug-2011\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 15.52, \"total\": 457.52}}",
+    "original_data": {
+        "buyer": "Nathaniel York",
+        "address": "4832 Sarah Dale Apt. 094 Carrollmouth, NV 23157 US",
+        "date": "19-Aug-2011",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 15.52,
+        "total": 457.52
+    }
+}

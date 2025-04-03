@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance63.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Andrew Lewis\", \"address\": \"614 Megan Bypass Apt. 605 Jameshaven, NH 47437 US\", \"date\": \"30-Oct-1994\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 678.0, \"discount\": null, \"tax\": 47.27, \"total\": 699.03}}",
+    "original_data": {
+        "buyer": "Andrew Lewis",
+        "address": "614 Megan Bypass Apt. 605 Jameshaven, NH 47437 US",
+        "date": "30-Oct-1994",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 678.0,
+        "discount": null,
+        "tax": 47.27,
+        "total": 699.03
+    }
+}

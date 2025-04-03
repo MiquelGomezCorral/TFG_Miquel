@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance153.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Allison Marsh\", \"address\": \"505 Meagan Shore Apt. 622 Ronaldshire, MH 79677 US\", \"date\": \"01-Oct-2015\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 64.48, \"total\": 1059.89}}",
+    "original_data": {
+        "buyer": "Allison Marsh",
+        "address": "505 Meagan Shore Apt. 622 Ronaldshire, MH 79677 US",
+        "date": "01-Oct-2015",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 64.48,
+        "total": 1059.89
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance47.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Brenda Chavez\", \"address\": \"892 Michael Ramp Jessicaberg, NC 02054 US\", \"date\": \"27-Oct-2020\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 692.26, \"discount\": null, \"tax\": null, \"total\": 710.31}}",
+    "original_data": {
+        "buyer": "Brenda Chavez",
+        "address": "892 Michael Ramp Jessicaberg, NC 02054 US",
+        "date": "27-Oct-2020",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 692.26,
+        "discount": null,
+        "tax": null,
+        "total": 710.31
+    }
+}

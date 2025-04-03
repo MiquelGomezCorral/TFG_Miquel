@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance154.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Gloria Davis\", \"address\": \"530 Johns Underpass North Kevinburgh, NC 94385 US\", \"date\": \"15-Jun-2009\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 316.03, \"discount\": 7.27, \"tax\": 14.54, \"total\": 316.95}}",
+    "original_data": {
+        "buyer": "Gloria Davis",
+        "address": "530 Johns Underpass North Kevinburgh, NC 94385 US",
+        "date": "15-Jun-2009",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 316.03,
+        "discount": 7.27,
+        "tax": 14.54,
+        "total": 316.95
+    }
+}

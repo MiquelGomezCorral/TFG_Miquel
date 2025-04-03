@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance37.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jennifer Wright\", \"address\": \"106 Billy Divide Suite 994 West Valerie, CA 11277 US\", \"date\": \"07-Mar-2002\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 755.45, \"discount\": null, \"tax\": 38.98, \"total\": 780.38}}",
+    "original_data": {
+        "buyer": "Jennifer Wright",
+        "address": "106 Billy Divide Suite 994 West Valerie, CA 11277 US",
+        "date": "07-Mar-2002",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 755.45,
+        "discount": null,
+        "tax": 38.98,
+        "total": 780.38
+    }
+}

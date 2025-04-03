@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance28.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Christopher Evans\", \"address\": \"539 Stephanie Port Suite 984 Michaelfurt, AR 09560 US\", \"date\": \"01-Nov-2004\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 279.64, \"discount\": 7.97, \"tax\": 11.94, \"total\": 284.39}}",
+    "original_data": {
+        "buyer": "Christopher Evans",
+        "address": "539 Stephanie Port Suite 984 Michaelfurt, AR 09560 US",
+        "date": "01-Nov-2004",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 279.64,
+        "discount": 7.97,
+        "tax": 11.94,
+        "total": 284.39
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance113.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Daniel Suarez\", \"address\": \"8489 Willis Spring Apt. 608 Wallerstad, WV 94201 US\", \"date\": \"31-Mar-2019\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 632.96, \"discount\": null, \"tax\": null, \"total\": 661.26}}",
+    "original_data": {
+        "buyer": "Daniel Suarez",
+        "address": "8489 Willis Spring Apt. 608 Wallerstad, WV 94201 US",
+        "date": "31-Mar-2019",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 632.96,
+        "discount": null,
+        "tax": null,
+        "total": 661.26
+    }
+}

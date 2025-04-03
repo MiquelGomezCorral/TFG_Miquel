@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance54.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Mrs. Stephanie Rodriguez\", \"address\": \"1121 Susan Harbors Apt. 660 Port Jacobland, FM 31815 US\", \"date\": \"14-Jun-2011\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 196.76, \"discount\": null, \"tax\": 12.07, \"total\": 201.69}}",
+    "original_data": {
+        "buyer": "Mrs. Stephanie Rodriguez",
+        "address": "1121 Susan Harbors Apt. 660 Port Jacobland, FM 31815 US",
+        "date": "14-Jun-2011",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 196.76,
+        "discount": null,
+        "tax": 12.07,
+        "total": 201.69
+    }
+}

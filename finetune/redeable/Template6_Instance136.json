@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance136.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Carl Hanna\", \"address\": \"612 Amy Orchard Mezaberg, NC 50889 US\", \"date\": \"09-Feb-2019\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 270.76, \"discount\": null, \"tax\": 11.4, \"total\": 270.25}}",
+    "original_data": {
+        "buyer": "Carl Hanna",
+        "address": "612 Amy Orchard Mezaberg, NC 50889 US",
+        "date": "09-Feb-2019",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 270.76,
+        "discount": null,
+        "tax": 11.4,
+        "total": 270.25
+    }
+}

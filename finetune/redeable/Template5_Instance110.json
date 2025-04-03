@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance110.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Hector Brown\", \"address\": \"70649 Stanley Plains Deckertown, NJ 30473 US\", \"date\": \"20-Jan-2017\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 236.47, \"discount\": null, \"tax\": 10.84, \"total\": 241.82}}",
+    "original_data": {
+        "buyer": "Hector Brown",
+        "address": "70649 Stanley Plains Deckertown, NJ 30473 US",
+        "date": "20-Jan-2017",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 236.47,
+        "discount": null,
+        "tax": 10.84,
+        "total": 241.82
+    }
+}

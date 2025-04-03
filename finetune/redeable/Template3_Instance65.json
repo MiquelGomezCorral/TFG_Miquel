@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance65.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Leah Wells\", \"address\": \"00972 Wade Street Mullinshaven, IL 75895 US\", \"date\": \"05-Aug-2007\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 83.23, \"total\": 1262.24}}",
+    "original_data": {
+        "buyer": "Leah Wells",
+        "address": "00972 Wade Street Mullinshaven, IL 75895 US",
+        "date": "05-Aug-2007",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 83.23,
+        "total": 1262.24
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance70.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Barbara Perez\", \"address\": \"481 Jessica Points Jamesbury, CT 17200 US\", \"date\": \"02-Oct-2014\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 481.55, \"discount\": 18.25, \"tax\": 23.05, \"total\": 491.07}}",
+    "original_data": {
+        "buyer": "Barbara Perez",
+        "address": "481 Jessica Points Jamesbury, CT 17200 US",
+        "date": "02-Oct-2014",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 481.55,
+        "discount": 18.25,
+        "tax": 23.05,
+        "total": 491.07
+    }
+}

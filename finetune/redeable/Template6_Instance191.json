@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance191.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Evan Roberts\", \"address\": \"32824 Nicholas Rue Suite 275 Port Angela, NV 86125 US\", \"date\": \"16-Jan-1994\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 1364.29, \"discount\": null, \"tax\": 71.5, \"total\": 1389.4}}",
+    "original_data": {
+        "buyer": "Evan Roberts",
+        "address": "32824 Nicholas Rue Suite 275 Port Angela, NV 86125 US",
+        "date": "16-Jan-1994",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 1364.29,
+        "discount": null,
+        "tax": 71.5,
+        "total": 1389.4
+    }
+}

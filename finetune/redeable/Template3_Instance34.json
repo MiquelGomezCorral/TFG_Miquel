@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance34.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Charles Stout\", \"address\": \"42475 Gill Prairie Suite 747 Roseview, TX 13277 US\", \"date\": \"26-Jul-2012\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 49.3, \"total\": 883.72}}",
+    "original_data": {
+        "buyer": "Charles Stout",
+        "address": "42475 Gill Prairie Suite 747 Roseview, TX 13277 US",
+        "date": "26-Jul-2012",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 49.3,
+        "total": 883.72
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance92.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Crystal Hall\", \"address\": \"210 Jimenez Squares Carrilloburgh, IA 18416 US\", \"date\": \"30-Jan-2015\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1476.87, \"discount\": null, \"tax\": 50.48, \"total\": 1473.15}}",
+    "original_data": {
+        "buyer": "Crystal Hall",
+        "address": "210 Jimenez Squares Carrilloburgh, IA 18416 US",
+        "date": "30-Jan-2015",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1476.87,
+        "discount": null,
+        "tax": 50.48,
+        "total": 1473.15
+    }
+}

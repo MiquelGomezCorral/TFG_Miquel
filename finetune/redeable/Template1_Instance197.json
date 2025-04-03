@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance197.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"James Andrews\", \"address\": \"6911 Smith Street Deniseborough, PA 66674 US\", \"date\": \"29-Jul-2021\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 473.53, \"discount\": 6.16, \"tax\": 25.51, \"total\": 493.97}}",
+    "original_data": {
+        "buyer": "James Andrews",
+        "address": "6911 Smith Street Deniseborough, PA 66674 US",
+        "date": "29-Jul-2021",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 473.53,
+        "discount": 6.16,
+        "tax": 25.51,
+        "total": 493.97
+    }
+}

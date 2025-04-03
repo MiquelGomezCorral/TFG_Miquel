@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance12.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Joseph Kennedy\", \"address\": \"69526 Annette Tunnel New Jennifer, CA 04412 US\", \"date\": \"20-Apr-2007\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 23.69, \"total\": 489.97}}",
+    "original_data": {
+        "buyer": "Joseph Kennedy",
+        "address": "69526 Annette Tunnel New Jennifer, CA 04412 US",
+        "date": "20-Apr-2007",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 23.69,
+        "total": 489.97
+    }
+}

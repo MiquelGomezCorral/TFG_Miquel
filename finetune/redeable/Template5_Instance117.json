@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance117.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jennifer Hall\", \"address\": \"09325 Gloria Mount Apt. 343 Rojasstad, WA 14443 US\", \"date\": \"15-Nov-2013\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 768.66, \"discount\": null, \"tax\": 41.19, \"total\": 796.32}}",
+    "original_data": {
+        "buyer": "Jennifer Hall",
+        "address": "09325 Gloria Mount Apt. 343 Rojasstad, WA 14443 US",
+        "date": "15-Nov-2013",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 768.66,
+        "discount": null,
+        "tax": 41.19,
+        "total": 796.32
+    }
+}

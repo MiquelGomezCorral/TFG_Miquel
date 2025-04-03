@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance144.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Sonya Anderson\", \"address\": \"34054 Nguyen Pine Apt. 299 Brownbury, OH 92819 US\", \"date\": \"02-May-2018\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 170.38, \"discount\": 8.08, \"tax\": 6.24, \"total\": 173.72}}",
+    "original_data": {
+        "buyer": "Sonya Anderson",
+        "address": "34054 Nguyen Pine Apt. 299 Brownbury, OH 92819 US",
+        "date": "02-May-2018",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 170.38,
+        "discount": 8.08,
+        "tax": 6.24,
+        "total": 173.72
+    }
+}

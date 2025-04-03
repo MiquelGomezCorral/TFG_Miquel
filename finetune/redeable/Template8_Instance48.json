@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance48.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Dean Chapman\", \"address\": \"320 Patterson Shoals North Gabrielaport, AK 33075 US\", \"date\": \"21-Feb-2019\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 776.61, \"discount\": null, \"tax\": null, \"total\": 783.96}}",
+    "original_data": {
+        "buyer": "Dean Chapman",
+        "address": "320 Patterson Shoals North Gabrielaport, AK 33075 US",
+        "date": "21-Feb-2019",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 776.61,
+        "discount": null,
+        "tax": null,
+        "total": 783.96
+    }
+}

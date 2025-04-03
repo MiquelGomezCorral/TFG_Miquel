@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance30.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jacqueline Campbell\", \"address\": \"7310 Sanders Park South Katiefort, MI 80113 US\", \"date\": \"05-Jun-1997\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1313.64, \"discount\": 26.8, \"tax\": 70.15, \"total\": 1355.28}}",
+    "original_data": {
+        "buyer": "Jacqueline Campbell",
+        "address": "7310 Sanders Park South Katiefort, MI 80113 US",
+        "date": "05-Jun-1997",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1313.64,
+        "discount": 26.8,
+        "tax": 70.15,
+        "total": 1355.28
+    }
+}

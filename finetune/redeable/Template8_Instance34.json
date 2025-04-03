@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance34.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michelle Bright\", \"address\": \"99517 Charles Row Martinezshire, NM 85353 US\", \"date\": \"30-Jan-2015\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 162.39, \"discount\": null, \"tax\": null, \"total\": 170.45}}",
+    "original_data": {
+        "buyer": "Michelle Bright",
+        "address": "99517 Charles Row Martinezshire, NM 85353 US",
+        "date": "30-Jan-2015",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 162.39,
+        "discount": null,
+        "tax": null,
+        "total": 170.45
+    }
+}

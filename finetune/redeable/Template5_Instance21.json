@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance21.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Evelyn Hernandez\", \"address\": \"00343 Robert Garden Suite 953 Margaretfort, TX 02376 US\", \"date\": \"23-Nov-2008\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 69.56, \"discount\": null, \"tax\": 3.53, \"total\": 71.48}}",
+    "original_data": {
+        "buyer": "Evelyn Hernandez",
+        "address": "00343 Robert Garden Suite 953 Margaretfort, TX 02376 US",
+        "date": "23-Nov-2008",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 69.56,
+        "discount": null,
+        "tax": 3.53,
+        "total": 71.48
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance22.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"John Kim\", \"address\": \"7867 Danielle Viaduct Apt. 217 New April, MA 00661 US\", \"date\": \"16-May-2007\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 641.92, \"discount\": null, \"tax\": null, \"total\": 649.82}}",
+    "original_data": {
+        "buyer": "John Kim",
+        "address": "7867 Danielle Viaduct Apt. 217 New April, MA 00661 US",
+        "date": "16-May-2007",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 641.92,
+        "discount": null,
+        "tax": null,
+        "total": 649.82
+    }
+}

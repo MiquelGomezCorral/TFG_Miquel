@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance100.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Harold Thompson\", \"address\": \"688 Steven Drive Suite 636 Port Ritamouth, MI 46855 US\", \"date\": \"08-Mar-2013\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 691.28, \"discount\": null, \"tax\": 22.52, \"total\": 701.56}}",
+    "original_data": {
+        "buyer": "Harold Thompson",
+        "address": "688 Steven Drive Suite 636 Port Ritamouth, MI 46855 US",
+        "date": "08-Mar-2013",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 691.28,
+        "discount": null,
+        "tax": 22.52,
+        "total": 701.56
+    }
+}

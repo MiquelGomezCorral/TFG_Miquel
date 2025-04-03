@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance158.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Annette Myers\", \"address\": \"15003 Deleon Loop Suite 878 Andersonview, WI 90154 US\", \"date\": \"06-Feb-2020\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 514.28, \"discount\": null, \"tax\": null, \"total\": 515.39}}",
+    "original_data": {
+        "buyer": "Annette Myers",
+        "address": "15003 Deleon Loop Suite 878 Andersonview, WI 90154 US",
+        "date": "06-Feb-2020",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 514.28,
+        "discount": null,
+        "tax": null,
+        "total": 515.39
+    }
+}

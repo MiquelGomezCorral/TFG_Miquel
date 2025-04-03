@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance10.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Patrick Rodriguez\", \"address\": \"9566 Vasquez Inlet North Erica, IN 28285 US\", \"date\": \"04-Aug-2020\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 553.73, \"discount\": null, \"tax\": 24.86, \"total\": 564.97}}",
+    "original_data": {
+        "buyer": "Patrick Rodriguez",
+        "address": "9566 Vasquez Inlet North Erica, IN 28285 US",
+        "date": "04-Aug-2020",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 553.73,
+        "discount": null,
+        "tax": 24.86,
+        "total": 564.97
+    }
+}

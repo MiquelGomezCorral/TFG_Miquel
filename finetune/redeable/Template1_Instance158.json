@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance158.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Joseph Brown\", \"address\": \"70978 Brian Valley Suite 962 East Lori, GU 95961 US\", \"date\": \"25-Aug-1997\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 86.5, \"discount\": 1.51, \"tax\": 4.43, \"total\": 89.57}}",
+    "original_data": {
+        "buyer": "Joseph Brown",
+        "address": "70978 Brian Valley Suite 962 East Lori, GU 95961 US",
+        "date": "25-Aug-1997",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 86.5,
+        "discount": 1.51,
+        "tax": 4.43,
+        "total": 89.57
+    }
+}

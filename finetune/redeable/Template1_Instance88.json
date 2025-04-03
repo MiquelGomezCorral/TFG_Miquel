@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance88.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Samuel Cohen\", \"address\": \"010 Lauren Tunnel Port Anthony, ME 04796 US\", \"date\": \"21-Oct-2019\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 824.45, \"discount\": 23.74, \"tax\": 28.24, \"total\": 843.87}}",
+    "original_data": {
+        "buyer": "Samuel Cohen",
+        "address": "010 Lauren Tunnel Port Anthony, ME 04796 US",
+        "date": "21-Oct-2019",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 824.45,
+        "discount": 23.74,
+        "tax": 28.24,
+        "total": 843.87
+    }
+}

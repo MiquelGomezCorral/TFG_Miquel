@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance18.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Robert Christensen\", \"address\": \"57343 Ryan Mountain North Monique, ND 95442 US\", \"date\": \"10-Sep-1994\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 1186.14, \"discount\": null, \"tax\": 67.72, \"total\": 1225.75}}",
+    "original_data": {
+        "buyer": "Robert Christensen",
+        "address": "57343 Ryan Mountain North Monique, ND 95442 US",
+        "date": "10-Sep-1994",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 1186.14,
+        "discount": null,
+        "tax": 67.72,
+        "total": 1225.75
+    }
+}

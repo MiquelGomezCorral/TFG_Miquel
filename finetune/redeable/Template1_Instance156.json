@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance156.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Savannah Castaneda\", \"address\": \"316 Thomas Crescent Henrytown, SD 62628 US\", \"date\": \"09-Mar-1995\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 795.31, \"discount\": 33.4, \"tax\": 52.81, \"total\": 810.02}}",
+    "original_data": {
+        "buyer": "Savannah Castaneda",
+        "address": "316 Thomas Crescent Henrytown, SD 62628 US",
+        "date": "09-Mar-1995",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 795.31,
+        "discount": 33.4,
+        "tax": 52.81,
+        "total": 810.02
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance48.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kristy Garcia\", \"address\": \"08438 Fox Manor Suite 559 Garciaberg, KS 21066 US\", \"date\": \"16-Feb-1993\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 389.16, \"discount\": null, \"tax\": 21.19, \"total\": 404.01}}",
+    "original_data": {
+        "buyer": "Kristy Garcia",
+        "address": "08438 Fox Manor Suite 559 Garciaberg, KS 21066 US",
+        "date": "16-Feb-1993",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 389.16,
+        "discount": null,
+        "tax": 21.19,
+        "total": 404.01
+    }
+}

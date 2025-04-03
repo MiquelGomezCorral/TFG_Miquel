@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance121.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Tara Barnes\", \"address\": \"3732 Wright Ports Ashleyport, VT 08388 US\", \"date\": \"01-Jun-2012\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 56.14, \"total\": 902.62}}",
+    "original_data": {
+        "buyer": "Tara Barnes",
+        "address": "3732 Wright Ports Ashleyport, VT 08388 US",
+        "date": "01-Jun-2012",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 56.14,
+        "total": 902.62
+    }
+}

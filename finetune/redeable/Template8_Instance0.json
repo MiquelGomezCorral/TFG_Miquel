@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance0.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kathryn Bates\", \"address\": \"8110 Lee Haven West Michele, IN 23979 US\", \"date\": \"22-Sep-2010\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 202.42, \"discount\": null, \"tax\": null, \"total\": 208.39}}",
+    "original_data": {
+        "buyer": "Kathryn Bates",
+        "address": "8110 Lee Haven West Michele, IN 23979 US",
+        "date": "22-Sep-2010",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 202.42,
+        "discount": null,
+        "tax": null,
+        "total": 208.39
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance65.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Russell King\", \"address\": \"425 Jason Junction Apt. 418 New Tyler, FM 05250 US\", \"date\": \"31-Oct-2020\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 646.42, \"discount\": null, \"tax\": 43.88, \"total\": 681.64}}",
+    "original_data": {
+        "buyer": "Russell King",
+        "address": "425 Jason Junction Apt. 418 New Tyler, FM 05250 US",
+        "date": "31-Oct-2020",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 646.42,
+        "discount": null,
+        "tax": 43.88,
+        "total": 681.64
+    }
+}

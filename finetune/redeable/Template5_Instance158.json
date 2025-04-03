@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance158.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Alan Armstrong\", \"address\": \"9564 Sullivan Stravenue Elliottshire, AL 56714 US\", \"date\": \"05-May-2015\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 702.56, \"discount\": null, \"tax\": 36.47, \"total\": 724.28}}",
+    "original_data": {
+        "buyer": "Alan Armstrong",
+        "address": "9564 Sullivan Stravenue Elliottshire, AL 56714 US",
+        "date": "05-May-2015",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 702.56,
+        "discount": null,
+        "tax": 36.47,
+        "total": 724.28
+    }
+}

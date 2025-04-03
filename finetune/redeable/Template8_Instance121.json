@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance121.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Laura Jacobson\", \"address\": \"3918 Anderson Trail Port Douglas, NV 93561 US\", \"date\": \"11-Nov-2021\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 664.22, \"discount\": null, \"tax\": null, \"total\": 677.72}}",
+    "original_data": {
+        "buyer": "Laura Jacobson",
+        "address": "3918 Anderson Trail Port Douglas, NV 93561 US",
+        "date": "11-Nov-2021",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 664.22,
+        "discount": null,
+        "tax": null,
+        "total": 677.72
+    }
+}

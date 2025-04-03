@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance83.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"William Jimenez\", \"address\": \"14000 Chaney Falls Apt. 349 South Hannahfort, ID 32998 US\", \"date\": \"15-Mar-2012\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 820.23, \"discount\": null, \"tax\": 33.01, \"total\": 834.13}}",
+    "original_data": {
+        "buyer": "William Jimenez",
+        "address": "14000 Chaney Falls Apt. 349 South Hannahfort, ID 32998 US",
+        "date": "15-Mar-2012",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 820.23,
+        "discount": null,
+        "tax": 33.01,
+        "total": 834.13
+    }
+}

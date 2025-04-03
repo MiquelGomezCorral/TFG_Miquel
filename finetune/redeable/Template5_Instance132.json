@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance132.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Roberto Williams\", \"address\": \"91850 Jackson Plaza Suite 840 West Jasmine, TN 17879 US\", \"date\": \"06-Jan-2019\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 370.83, \"discount\": null, \"tax\": 14.67, \"total\": 378.19}}",
+    "original_data": {
+        "buyer": "Roberto Williams",
+        "address": "91850 Jackson Plaza Suite 840 West Jasmine, TN 17879 US",
+        "date": "06-Jan-2019",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 370.83,
+        "discount": null,
+        "tax": 14.67,
+        "total": 378.19
+    }
+}

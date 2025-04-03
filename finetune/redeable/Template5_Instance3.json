@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance3.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Lee Smith\", \"address\": \"368 Larson Streets Suite 433 South Christinastad, NJ 75733 US\", \"date\": \"19-Sep-2013\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 201.98, \"discount\": null, \"tax\": 6.35, \"total\": 205.04}}",
+    "original_data": {
+        "buyer": "Lee Smith",
+        "address": "368 Larson Streets Suite 433 South Christinastad, NJ 75733 US",
+        "date": "19-Sep-2013",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 201.98,
+        "discount": null,
+        "tax": 6.35,
+        "total": 205.04
+    }
+}

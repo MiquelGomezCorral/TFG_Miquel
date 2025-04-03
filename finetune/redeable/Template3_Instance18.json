@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance18.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Thomas Duke\", \"address\": \"17576 Timothy Islands Johnstad, MN 71551 US\", \"date\": \"03-Nov-2021\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 45.89, \"total\": 787.77}}",
+    "original_data": {
+        "buyer": "Thomas Duke",
+        "address": "17576 Timothy Islands Johnstad, MN 71551 US",
+        "date": "03-Nov-2021",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 45.89,
+        "total": 787.77
+    }
+}

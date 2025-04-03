@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance104.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Margaret Lewis\", \"address\": \"1241 Megan Cove Apt. 411 South Teresashire, CO 39172 US\", \"date\": \"07-Mar-2019\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 611.6, \"discount\": null, \"tax\": 33.1, \"total\": 619.56}}",
+    "original_data": {
+        "buyer": "Margaret Lewis",
+        "address": "1241 Megan Cove Apt. 411 South Teresashire, CO 39172 US",
+        "date": "07-Mar-2019",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 611.6,
+        "discount": null,
+        "tax": 33.1,
+        "total": 619.56
+    }
+}

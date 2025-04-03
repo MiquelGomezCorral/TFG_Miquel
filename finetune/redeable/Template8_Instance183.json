@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance183.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ms. Donna Hill\", \"address\": \"595 Kevin Station Suite 549 Freemanstad, AZ 82772 US\", \"date\": \"27-Aug-2017\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 636.56, \"discount\": null, \"tax\": null, \"total\": 652.65}}",
+    "original_data": {
+        "buyer": "Ms. Donna Hill",
+        "address": "595 Kevin Station Suite 549 Freemanstad, AZ 82772 US",
+        "date": "27-Aug-2017",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 636.56,
+        "discount": null,
+        "tax": null,
+        "total": 652.65
+    }
+}

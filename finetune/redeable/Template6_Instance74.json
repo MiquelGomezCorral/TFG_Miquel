@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance74.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Dan Hurley\", \"address\": \"90096 Li Stravenue Roberthaven, DC 25337 US\", \"date\": \"17-Jan-2006\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 213.41, \"discount\": null, \"tax\": 6.7, \"total\": 211.08}}",
+    "original_data": {
+        "buyer": "Dan Hurley",
+        "address": "90096 Li Stravenue Roberthaven, DC 25337 US",
+        "date": "17-Jan-2006",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 213.41,
+        "discount": null,
+        "tax": 6.7,
+        "total": 211.08
+    }
+}

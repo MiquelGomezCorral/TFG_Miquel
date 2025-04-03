@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance150.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Margaret Christian\", \"address\": \"919 Jeffrey Burgs Suite 568 East Thomashaven, MT 51917 US\", \"date\": \"17-Aug-1999\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 19.95, \"total\": 385.98}}",
+    "original_data": {
+        "buyer": "Margaret Christian",
+        "address": "919 Jeffrey Burgs Suite 568 East Thomashaven, MT 51917 US",
+        "date": "17-Aug-1999",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 19.95,
+        "total": 385.98
+    }
+}

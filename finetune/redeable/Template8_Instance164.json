@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance164.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Brian Yang\", \"address\": \"61239 Robert Dale North Shirleyport, CA 32639 US\", \"date\": \"16-Jun-2013\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 167.11, \"discount\": null, \"tax\": null, \"total\": 167.57}}",
+    "original_data": {
+        "buyer": "Brian Yang",
+        "address": "61239 Robert Dale North Shirleyport, CA 32639 US",
+        "date": "16-Jun-2013",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 167.11,
+        "discount": null,
+        "tax": null,
+        "total": 167.57
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance99.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kevin Roy\", \"address\": \"965 Barker Islands Apt. 971 Ashleyburgh, MP 63364 US\", \"date\": \"05-Mar-2012\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 227.74, \"discount\": null, \"tax\": 11.63, \"total\": 231.13}}",
+    "original_data": {
+        "buyer": "Kevin Roy",
+        "address": "965 Barker Islands Apt. 971 Ashleyburgh, MP 63364 US",
+        "date": "05-Mar-2012",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 227.74,
+        "discount": null,
+        "tax": 11.63,
+        "total": 231.13
+    }
+}

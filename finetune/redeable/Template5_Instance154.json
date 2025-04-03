@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance154.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Evelyn Norris\", \"address\": \"32279 Salazar Lakes Apt. 201 Hubbardton, AK 23269 US\", \"date\": \"26-Nov-1994\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 348.42, \"discount\": null, \"tax\": 20.03, \"total\": 359.63}}",
+    "original_data": {
+        "buyer": "Evelyn Norris",
+        "address": "32279 Salazar Lakes Apt. 201 Hubbardton, AK 23269 US",
+        "date": "26-Nov-1994",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 348.42,
+        "discount": null,
+        "tax": 20.03,
+        "total": 359.63
+    }
+}

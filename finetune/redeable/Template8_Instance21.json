@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance21.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"David Leon\", \"address\": \"858 Martinez Port Apt. 480 East Monica, SD 62080 US\", \"date\": \"17-Jun-2020\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 610.17, \"discount\": null, \"tax\": null, \"total\": 610.21}}",
+    "original_data": {
+        "buyer": "David Leon",
+        "address": "858 Martinez Port Apt. 480 East Monica, SD 62080 US",
+        "date": "17-Jun-2020",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 610.17,
+        "discount": null,
+        "tax": null,
+        "total": 610.21
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance157.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"James Wright\", \"address\": \"443 Edwards Radial Port Dawn, NV 71924 US\", \"date\": \"02-Aug-2022\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 803.2, \"discount\": null, \"tax\": 29.16, \"total\": 810.11}}",
+    "original_data": {
+        "buyer": "James Wright",
+        "address": "443 Edwards Radial Port Dawn, NV 71924 US",
+        "date": "02-Aug-2022",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 803.2,
+        "discount": null,
+        "tax": 29.16,
+        "total": 810.11
+    }
+}

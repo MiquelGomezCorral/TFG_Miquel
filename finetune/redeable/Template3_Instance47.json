@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance47.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Diana Brown\", \"address\": \"475 Garza Rapid East Baileyfort, NM 00752 US\", \"date\": \"28-Oct-2014\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 109.77, \"total\": 1877.85}}",
+    "original_data": {
+        "buyer": "Diana Brown",
+        "address": "475 Garza Rapid East Baileyfort, NM 00752 US",
+        "date": "28-Oct-2014",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 109.77,
+        "total": 1877.85
+    }
+}

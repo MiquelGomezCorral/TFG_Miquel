@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance166.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Laurie Sanchez\", \"address\": \"25521 Jennifer Skyway Apt. 655 Daniellemouth, WY 90737 US\", \"date\": \"26-Apr-2008\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 9.77, \"total\": 190.36}}",
+    "original_data": {
+        "buyer": "Laurie Sanchez",
+        "address": "25521 Jennifer Skyway Apt. 655 Daniellemouth, WY 90737 US",
+        "date": "26-Apr-2008",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 9.77,
+        "total": 190.36
+    }
+}

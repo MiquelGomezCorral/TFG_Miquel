@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance45.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Reginald Bowen\", \"address\": \"3554 Amanda Groves Suite 075 Smithview, WY 28820 US\", \"date\": \"06-Apr-2000\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 550.86, \"discount\": null, \"tax\": 33.77, \"total\": 564.19}}",
+    "original_data": {
+        "buyer": "Reginald Bowen",
+        "address": "3554 Amanda Groves Suite 075 Smithview, WY 28820 US",
+        "date": "06-Apr-2000",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 550.86,
+        "discount": null,
+        "tax": 33.77,
+        "total": 564.19
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance41.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Erica Barrera\", \"address\": \"858 Michael Circles Davidbury, PW 38580 US\", \"date\": \"30-Jan-2005\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 634.29, \"discount\": 12.11, \"tax\": 20.48, \"total\": 624.7}}",
+    "original_data": {
+        "buyer": "Erica Barrera",
+        "address": "858 Michael Circles Davidbury, PW 38580 US",
+        "date": "30-Jan-2005",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 634.29,
+        "discount": 12.11,
+        "tax": 20.48,
+        "total": 624.7
+    }
+}

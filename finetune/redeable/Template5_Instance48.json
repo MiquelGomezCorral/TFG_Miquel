@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance48.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Monica Bartlett\", \"address\": \"639 Bryant Fort Apt. 570 Port Dillonport, HI 33800 US\", \"date\": \"31-Aug-2015\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 579.0, \"discount\": null, \"tax\": 29.5, \"total\": 597.85}}",
+    "original_data": {
+        "buyer": "Monica Bartlett",
+        "address": "639 Bryant Fort Apt. 570 Port Dillonport, HI 33800 US",
+        "date": "31-Aug-2015",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 579.0,
+        "discount": null,
+        "tax": 29.5,
+        "total": 597.85
+    }
+}

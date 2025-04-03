@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance72.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jesse Friedman\", \"address\": \"696 Herring Junction Nicolehaven, LA 88635 US\", \"date\": \"04-Aug-2018\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 379.16, \"discount\": null, \"tax\": null, \"total\": 378.32}}",
+    "original_data": {
+        "buyer": "Jesse Friedman",
+        "address": "696 Herring Junction Nicolehaven, LA 88635 US",
+        "date": "04-Aug-2018",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 379.16,
+        "discount": null,
+        "tax": null,
+        "total": 378.32
+    }
+}

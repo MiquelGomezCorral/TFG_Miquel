@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance195.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Diane Ramirez\", \"address\": \"290 James Course Suite 206 North Jennifer, KY 89335 US\", \"date\": \"16-May-2009\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 855.79, \"discount\": 9.67, \"tax\": 29.15, \"total\": 868.42}}",
+    "original_data": {
+        "buyer": "Diane Ramirez",
+        "address": "290 James Course Suite 206 North Jennifer, KY 89335 US",
+        "date": "16-May-2009",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 855.79,
+        "discount": 9.67,
+        "tax": 29.15,
+        "total": 868.42
+    }
+}

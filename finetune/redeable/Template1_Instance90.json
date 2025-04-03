@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance90.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Heather Snyder\", \"address\": \"61303 Kayla Plains Apt. 801 Carolbury, WV 72045 US\", \"date\": \"12-Apr-2000\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 858.86, \"discount\": 12.54, \"tax\": 36.45, \"total\": 873.58}}",
+    "original_data": {
+        "buyer": "Heather Snyder",
+        "address": "61303 Kayla Plains Apt. 801 Carolbury, WV 72045 US",
+        "date": "12-Apr-2000",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 858.86,
+        "discount": 12.54,
+        "tax": 36.45,
+        "total": 873.58
+    }
+}

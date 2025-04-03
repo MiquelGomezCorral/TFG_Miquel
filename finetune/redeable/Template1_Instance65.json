@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance65.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jessica Santana\", \"address\": \"602 Chavez Expressway Sabrinabury, VI 14923 US\", \"date\": \"14-Apr-2015\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 917.4, \"discount\": 36.33, \"tax\": 35.57, \"total\": 932.51}}",
+    "original_data": {
+        "buyer": "Jessica Santana",
+        "address": "602 Chavez Expressway Sabrinabury, VI 14923 US",
+        "date": "14-Apr-2015",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 917.4,
+        "discount": 36.33,
+        "tax": 35.57,
+        "total": 932.51
+    }
+}

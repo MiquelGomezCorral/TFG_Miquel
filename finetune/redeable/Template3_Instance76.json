@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance76.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Austin Allen\", \"address\": \"479 Kenneth Spring Jacobport, FL 21911 US\", \"date\": \"04-Aug-2007\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 5.57, \"total\": 127.75}}",
+    "original_data": {
+        "buyer": "Austin Allen",
+        "address": "479 Kenneth Spring Jacobport, FL 21911 US",
+        "date": "04-Aug-2007",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 5.57,
+        "total": 127.75
+    }
+}

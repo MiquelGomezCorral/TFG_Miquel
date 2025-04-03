@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance37.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Katie Harris\", \"address\": \"2970 Ward Prairie West James, MS 20182 US\", \"date\": \"07-Nov-1994\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 97.88, \"discount\": 4.72, \"tax\": 3.72, \"total\": 100.16}}",
+    "original_data": {
+        "buyer": "Katie Harris",
+        "address": "2970 Ward Prairie West James, MS 20182 US",
+        "date": "07-Nov-1994",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 97.88,
+        "discount": 4.72,
+        "tax": 3.72,
+        "total": 100.16
+    }
+}

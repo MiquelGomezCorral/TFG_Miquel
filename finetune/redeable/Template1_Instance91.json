@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance91.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jerome Cooper\", \"address\": \"1637 Shawn Forest Apt. 944 Rosalesshire, ND 30133 US\", \"date\": \"21-May-2019\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1190.68, \"discount\": 25.48, \"tax\": 42.93, \"total\": 1201.22}}",
+    "original_data": {
+        "buyer": "Jerome Cooper",
+        "address": "1637 Shawn Forest Apt. 944 Rosalesshire, ND 30133 US",
+        "date": "21-May-2019",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1190.68,
+        "discount": 25.48,
+        "tax": 42.93,
+        "total": 1201.22
+    }
+}

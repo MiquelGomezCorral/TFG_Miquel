@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance183.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Courtney Stevens\", \"address\": \"039 Jessica Haven Apt. 744 Elizabethberg, IN 04855 US\", \"date\": \"28-Nov-2016\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 739.36, \"discount\": null, \"tax\": 26.18, \"total\": 747.65}}",
+    "original_data": {
+        "buyer": "Courtney Stevens",
+        "address": "039 Jessica Haven Apt. 744 Elizabethberg, IN 04855 US",
+        "date": "28-Nov-2016",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 739.36,
+        "discount": null,
+        "tax": 26.18,
+        "total": 747.65
+    }
+}

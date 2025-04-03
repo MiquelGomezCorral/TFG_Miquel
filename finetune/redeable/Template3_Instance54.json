@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance54.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jane Mays\", \"address\": \"8101 Dean Mountain New Meganton, VA 43023 US\", \"date\": \"25-Jul-2016\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 17.21, \"total\": 403.96}}",
+    "original_data": {
+        "buyer": "Jane Mays",
+        "address": "8101 Dean Mountain New Meganton, VA 43023 US",
+        "date": "25-Jul-2016",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 17.21,
+        "total": 403.96
+    }
+}

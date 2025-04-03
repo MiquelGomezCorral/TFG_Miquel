@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance43.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Brooke Hull\", \"address\": \"045 Regina Stream Suite 653 Howardstad, AL 53224 US\", \"date\": \"17-Mar-2021\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 1218.52, \"discount\": 33.63, \"tax\": 79.5, \"total\": 1268.41}}",
+    "original_data": {
+        "buyer": "Brooke Hull",
+        "address": "045 Regina Stream Suite 653 Howardstad, AL 53224 US",
+        "date": "17-Mar-2021",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 1218.52,
+        "discount": 33.63,
+        "tax": 79.5,
+        "total": 1268.41
+    }
+}

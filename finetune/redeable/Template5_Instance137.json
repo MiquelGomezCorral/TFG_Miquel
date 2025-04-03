@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance137.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Gloria Vaughn\", \"address\": \"6228 Stafford Lake Port Samuelton, AR 46719 US\", \"date\": \"11-May-2016\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 916.85, \"discount\": null, \"tax\": 60.36, \"total\": 964.37}}",
+    "original_data": {
+        "buyer": "Gloria Vaughn",
+        "address": "6228 Stafford Lake Port Samuelton, AR 46719 US",
+        "date": "11-May-2016",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 916.85,
+        "discount": null,
+        "tax": 60.36,
+        "total": 964.37
+    }
+}

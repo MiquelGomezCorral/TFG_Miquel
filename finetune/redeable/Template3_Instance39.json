@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance39.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Laura Howard\", \"address\": \"00515 Alan Mount New Angela, AZ 10764 US\", \"date\": \"01-Oct-1995\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 28.18, \"total\": 450.63}}",
+    "original_data": {
+        "buyer": "Laura Howard",
+        "address": "00515 Alan Mount New Angela, AZ 10764 US",
+        "date": "01-Oct-1995",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 28.18,
+        "total": 450.63
+    }
+}

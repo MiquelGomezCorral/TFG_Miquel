@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance51.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Adrienne Morales\", \"address\": \"61655 Sandra Knolls Apt. 778 Frenchton, OR 04915 US\", \"date\": \"08-Sep-2005\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 37.79, \"total\": 828.68}}",
+    "original_data": {
+        "buyer": "Adrienne Morales",
+        "address": "61655 Sandra Knolls Apt. 778 Frenchton, OR 04915 US",
+        "date": "08-Sep-2005",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 37.79,
+        "total": 828.68
+    }
+}

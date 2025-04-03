@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance77.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Tara Erickson\", \"address\": \"951 Brian Meadows Jessicaburgh, SD 95515 US\", \"date\": \"10-Feb-2020\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 727.19, \"discount\": null, \"tax\": 33.75, \"total\": 727.13}}",
+    "original_data": {
+        "buyer": "Tara Erickson",
+        "address": "951 Brian Meadows Jessicaburgh, SD 95515 US",
+        "date": "10-Feb-2020",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 727.19,
+        "discount": null,
+        "tax": 33.75,
+        "total": 727.13
+    }
+}

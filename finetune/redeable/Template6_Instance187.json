@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance187.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ellen Williamson\", \"address\": \"2751 Huerta Unions Suite 222 West Anthonyburgh, VT 84126 US\", \"date\": \"17-May-2021\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 780.07, \"discount\": null, \"tax\": 46.12, \"total\": 812.69}}",
+    "original_data": {
+        "buyer": "Ellen Williamson",
+        "address": "2751 Huerta Unions Suite 222 West Anthonyburgh, VT 84126 US",
+        "date": "17-May-2021",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 780.07,
+        "discount": null,
+        "tax": 46.12,
+        "total": 812.69
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance129.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"John Marks\", \"address\": \"6337 Anthony Villages Suite 643 Port Veronicamouth, NE 09226 US\", \"date\": \"22-Sep-1998\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 1181.96, \"discount\": 44.8, \"tax\": 52.07, \"total\": 1178.95}}",
+    "original_data": {
+        "buyer": "John Marks",
+        "address": "6337 Anthony Villages Suite 643 Port Veronicamouth, NE 09226 US",
+        "date": "22-Sep-1998",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 1181.96,
+        "discount": 44.8,
+        "tax": 52.07,
+        "total": 1178.95
+    }
+}

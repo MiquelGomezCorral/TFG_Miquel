@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance163.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Daniel Bauer\", \"address\": \"8128 Jennifer Squares Apt. 213 South Michelechester, NV 44971 US\", \"date\": \"01-Dec-2000\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 491.09, \"discount\": 22.59, \"tax\": 20.47, \"total\": 488.97}}",
+    "original_data": {
+        "buyer": "Daniel Bauer",
+        "address": "8128 Jennifer Squares Apt. 213 South Michelechester, NV 44971 US",
+        "date": "01-Dec-2000",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 491.09,
+        "discount": 22.59,
+        "tax": 20.47,
+        "total": 488.97
+    }
+}

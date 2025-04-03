@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance138.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Megan Cunningham\", \"address\": \"611 Daniels Coves Nelsonton, SD 41469 US\", \"date\": \"16-Jul-2011\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 257.46, \"discount\": null, \"tax\": 11.37, \"total\": 264.04}}",
+    "original_data": {
+        "buyer": "Megan Cunningham",
+        "address": "611 Daniels Coves Nelsonton, SD 41469 US",
+        "date": "16-Jul-2011",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 257.46,
+        "discount": null,
+        "tax": 11.37,
+        "total": 264.04
+    }
+}

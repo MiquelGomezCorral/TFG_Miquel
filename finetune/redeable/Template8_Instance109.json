@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance109.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Gary Young\", \"address\": \"028 Summers Way East Gary, PW 47599 US\", \"date\": \"06-Oct-2020\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 691.89, \"discount\": null, \"tax\": null, \"total\": 725.61}}",
+    "original_data": {
+        "buyer": "Gary Young",
+        "address": "028 Summers Way East Gary, PW 47599 US",
+        "date": "06-Oct-2020",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 691.89,
+        "discount": null,
+        "tax": null,
+        "total": 725.61
+    }
+}

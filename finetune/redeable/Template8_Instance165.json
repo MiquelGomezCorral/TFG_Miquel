@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance165.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Lisa Flores\", \"address\": \"914 Jeffery Rapids Apt. 987 Kingbury, LA 02232 US\", \"date\": \"01-May-1999\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 641.98, \"discount\": null, \"tax\": null, \"total\": 657.71}}",
+    "original_data": {
+        "buyer": "Lisa Flores",
+        "address": "914 Jeffery Rapids Apt. 987 Kingbury, LA 02232 US",
+        "date": "01-May-1999",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 641.98,
+        "discount": null,
+        "tax": null,
+        "total": 657.71
+    }
+}

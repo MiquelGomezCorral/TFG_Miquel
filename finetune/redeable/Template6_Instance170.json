@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance170.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Rita Martinez\", \"address\": \"743 Kerr Vista Howardfort, IA 57845 US\", \"date\": \"17-Oct-1993\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 628.33, \"discount\": null, \"tax\": 19.03, \"total\": 638.06}}",
+    "original_data": {
+        "buyer": "Rita Martinez",
+        "address": "743 Kerr Vista Howardfort, IA 57845 US",
+        "date": "17-Oct-1993",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 628.33,
+        "discount": null,
+        "tax": 19.03,
+        "total": 638.06
+    }
+}

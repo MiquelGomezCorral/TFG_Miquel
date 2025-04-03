@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance61.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Mia Ho\", \"address\": \"9784 Bryant Islands Suite 820 New Aaron, NM 98300 US\", \"date\": \"15-Oct-2014\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 325.8, \"discount\": null, \"tax\": 11.79, \"total\": 328.11}}",
+    "original_data": {
+        "buyer": "Mia Ho",
+        "address": "9784 Bryant Islands Suite 820 New Aaron, NM 98300 US",
+        "date": "15-Oct-2014",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 325.8,
+        "discount": null,
+        "tax": 11.79,
+        "total": 328.11
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance108.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"John Murphy\", \"address\": \"82914 Summers Inlet Wardton, UT 66627 US\", \"date\": \"30-Aug-2004\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 709.44, \"discount\": null, \"tax\": 33.03, \"total\": 722.96}}",
+    "original_data": {
+        "buyer": "John Murphy",
+        "address": "82914 Summers Inlet Wardton, UT 66627 US",
+        "date": "30-Aug-2004",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 709.44,
+        "discount": null,
+        "tax": 33.03,
+        "total": 722.96
+    }
+}

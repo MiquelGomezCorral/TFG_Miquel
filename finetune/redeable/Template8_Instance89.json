@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance89.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Roger Owens\", \"address\": \"844 Jenna Meadow New Erinburgh, KS 91075 US\", \"date\": \"06-Oct-2015\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 754.69, \"discount\": null, \"tax\": null, \"total\": 771.0}}",
+    "original_data": {
+        "buyer": "Roger Owens",
+        "address": "844 Jenna Meadow New Erinburgh, KS 91075 US",
+        "date": "06-Oct-2015",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 754.69,
+        "discount": null,
+        "tax": null,
+        "total": 771.0
+    }
+}

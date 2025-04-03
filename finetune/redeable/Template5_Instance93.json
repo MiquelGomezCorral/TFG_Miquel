@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance93.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Deanna Rosales\", \"address\": \"48959 Matthew Burgs North Kevintown, NV 93032 US\", \"date\": \"22-Apr-2021\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 898.38, \"discount\": null, \"tax\": 27.17, \"total\": 912.25}}",
+    "original_data": {
+        "buyer": "Deanna Rosales",
+        "address": "48959 Matthew Burgs North Kevintown, NV 93032 US",
+        "date": "22-Apr-2021",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 898.38,
+        "discount": null,
+        "tax": 27.17,
+        "total": 912.25
+    }
+}

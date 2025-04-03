@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance141.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Noah Lopez\", \"address\": \"612 Rogers Knolls East Johnton, MS 61693 US\", \"date\": \"24-Dec-1996\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 607.66, \"discount\": 16.59, \"tax\": 34.07, \"total\": 622.53}}",
+    "original_data": {
+        "buyer": "Noah Lopez",
+        "address": "612 Rogers Knolls East Johnton, MS 61693 US",
+        "date": "24-Dec-1996",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 607.66,
+        "discount": 16.59,
+        "tax": 34.07,
+        "total": 622.53
+    }
+}

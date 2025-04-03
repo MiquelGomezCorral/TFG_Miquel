@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance149.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Danielle Bradley\", \"address\": \"88360 Casey Brook Suite 449 Jordanborough, MT 01670 US\", \"date\": \"02-Apr-2012\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 569.48, \"discount\": null, \"tax\": 24.79, \"total\": 584.25}}",
+    "original_data": {
+        "buyer": "Danielle Bradley",
+        "address": "88360 Casey Brook Suite 449 Jordanborough, MT 01670 US",
+        "date": "02-Apr-2012",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 569.48,
+        "discount": null,
+        "tax": 24.79,
+        "total": 584.25
+    }
+}

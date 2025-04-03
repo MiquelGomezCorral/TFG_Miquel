@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance82.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Marissa Mahoney\", \"address\": \"4476 Evans Land North Justin, KS 06125 US\", \"date\": \"04-Dec-2005\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 16.36, \"total\": 436.33}}",
+    "original_data": {
+        "buyer": "Marissa Mahoney",
+        "address": "4476 Evans Land North Justin, KS 06125 US",
+        "date": "04-Dec-2005",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 16.36,
+        "total": 436.33
+    }
+}

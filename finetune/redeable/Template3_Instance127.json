@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance127.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Elizabeth Krueger DDS\", \"address\": \"85782 Kelly Tunnel Apt. 432 East James, MD 83156 US\", \"date\": \"14-Sep-2005\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 3.27, \"total\": 67.39}}",
+    "original_data": {
+        "buyer": "Elizabeth Krueger DDS",
+        "address": "85782 Kelly Tunnel Apt. 432 East James, MD 83156 US",
+        "date": "14-Sep-2005",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 3.27,
+        "total": 67.39
+    }
+}

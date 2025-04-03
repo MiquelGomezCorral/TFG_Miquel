@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance171.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Alan Hamilton\", \"address\": \"5373 Mary Mountain Apt. 627 Lewisville, HI 71093 US\", \"date\": \"10-Jun-2003\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 987.32, \"discount\": null, \"tax\": null, \"total\": 1006.57}}",
+    "original_data": {
+        "buyer": "Alan Hamilton",
+        "address": "5373 Mary Mountain Apt. 627 Lewisville, HI 71093 US",
+        "date": "10-Jun-2003",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 987.32,
+        "discount": null,
+        "tax": null,
+        "total": 1006.57
+    }
+}

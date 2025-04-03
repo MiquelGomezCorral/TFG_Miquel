@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance93.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"David Anderson\", \"address\": \"859 Tammy Glen Apt. 026 Lake Elizabethside, AZ 62974 US\", \"date\": \"09-Sep-2004\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 689.2, \"discount\": null, \"tax\": 47.08, \"total\": 717.88}}",
+    "original_data": {
+        "buyer": "David Anderson",
+        "address": "859 Tammy Glen Apt. 026 Lake Elizabethside, AZ 62974 US",
+        "date": "09-Sep-2004",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 689.2,
+        "discount": null,
+        "tax": 47.08,
+        "total": 717.88
+    }
+}

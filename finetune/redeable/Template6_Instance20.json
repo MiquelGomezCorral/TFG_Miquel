@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance20.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Christopher Porter\", \"address\": \"743 Megan Place Suite 579 Sheabury, VI 31186 US\", \"date\": \"25-Oct-2018\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 261.35, \"discount\": null, \"tax\": 17.89, \"total\": 276.47}}",
+    "original_data": {
+        "buyer": "Christopher Porter",
+        "address": "743 Megan Place Suite 579 Sheabury, VI 31186 US",
+        "date": "25-Oct-2018",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 261.35,
+        "discount": null,
+        "tax": 17.89,
+        "total": 276.47
+    }
+}

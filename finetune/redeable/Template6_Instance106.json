@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance106.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Tanner Hernandez\", \"address\": \"641 Mitchell Glen Nicolechester, ID 30279 US\", \"date\": \"13-Nov-1995\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 1357.25, \"discount\": null, \"tax\": 58.88, \"total\": 1370.25}}",
+    "original_data": {
+        "buyer": "Tanner Hernandez",
+        "address": "641 Mitchell Glen Nicolechester, ID 30279 US",
+        "date": "13-Nov-1995",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 1357.25,
+        "discount": null,
+        "tax": 58.88,
+        "total": 1370.25
+    }
+}

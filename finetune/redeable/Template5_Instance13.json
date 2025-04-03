@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance13.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Rebecca Williams\", \"address\": \"154 William Land Apt. 035 Robinsonland, HI 40760 US\", \"date\": \"25-Oct-2016\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1057.83, \"discount\": null, \"tax\": 54.13, \"total\": 1097.04}}",
+    "original_data": {
+        "buyer": "Rebecca Williams",
+        "address": "154 William Land Apt. 035 Robinsonland, HI 40760 US",
+        "date": "25-Oct-2016",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1057.83,
+        "discount": null,
+        "tax": 54.13,
+        "total": 1097.04
+    }
+}

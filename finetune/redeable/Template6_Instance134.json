@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance134.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Natalie Porter\", \"address\": \"73181 Neal Islands Lake Robertland, NH 76763 US\", \"date\": \"23-Dec-2014\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 1160.72, \"discount\": null, \"tax\": 71.2, \"total\": 1182.59}}",
+    "original_data": {
+        "buyer": "Natalie Porter",
+        "address": "73181 Neal Islands Lake Robertland, NH 76763 US",
+        "date": "23-Dec-2014",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 1160.72,
+        "discount": null,
+        "tax": 71.2,
+        "total": 1182.59
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance46.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kenneth Murphy\", \"address\": \"8312 Shawn Path Apt. 725 Port Andrea, FL 20000 US\", \"date\": \"13-Jun-2001\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1122.19, \"discount\": 50.72, \"tax\": 51.0, \"total\": 1123.7}}",
+    "original_data": {
+        "buyer": "Kenneth Murphy",
+        "address": "8312 Shawn Path Apt. 725 Port Andrea, FL 20000 US",
+        "date": "13-Jun-2001",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1122.19,
+        "discount": 50.72,
+        "tax": 51.0,
+        "total": 1123.7
+    }
+}

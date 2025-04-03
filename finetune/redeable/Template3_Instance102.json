@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance102.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Richard Fields\", \"address\": \"53129 Kimberly Place Suite 394 Gomezton, MN 21479 US\", \"date\": \"03-Jun-2012\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 65.81, \"total\": 1006.96}}",
+    "original_data": {
+        "buyer": "Richard Fields",
+        "address": "53129 Kimberly Place Suite 394 Gomezton, MN 21479 US",
+        "date": "03-Jun-2012",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 65.81,
+        "total": 1006.96
+    }
+}

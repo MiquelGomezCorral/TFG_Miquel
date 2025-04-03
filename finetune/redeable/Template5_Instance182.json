@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance182.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Julia Walters\", \"address\": \"24930 Brittney Light Petersonport, MA 05662 US\", \"date\": \"26-Oct-2013\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1232.25, \"discount\": null, \"tax\": 70.98, \"total\": 1244.45}}",
+    "original_data": {
+        "buyer": "Julia Walters",
+        "address": "24930 Brittney Light Petersonport, MA 05662 US",
+        "date": "26-Oct-2013",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1232.25,
+        "discount": null,
+        "tax": 70.98,
+        "total": 1244.45
+    }
+}

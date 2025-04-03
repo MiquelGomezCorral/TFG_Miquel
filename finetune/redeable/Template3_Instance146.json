@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance146.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Sara Chandler\", \"address\": \"3238 Banks Stravenue Suite 183 East Catherine, NE 17999 US\", \"date\": \"25-Dec-2000\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 58.61, \"total\": 1003.0}}",
+    "original_data": {
+        "buyer": "Sara Chandler",
+        "address": "3238 Banks Stravenue Suite 183 East Catherine, NE 17999 US",
+        "date": "25-Dec-2000",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 58.61,
+        "total": 1003.0
+    }
+}

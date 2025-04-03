@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance187.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Brian Cain\", \"address\": \"53566 Bryan Underpass South Javier, MO 97378 US\", \"date\": \"20-Nov-2000\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 702.7, \"discount\": null, \"tax\": 40.86, \"total\": 728.73}}",
+    "original_data": {
+        "buyer": "Brian Cain",
+        "address": "53566 Bryan Underpass South Javier, MO 97378 US",
+        "date": "20-Nov-2000",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 702.7,
+        "discount": null,
+        "tax": 40.86,
+        "total": 728.73
+    }
+}

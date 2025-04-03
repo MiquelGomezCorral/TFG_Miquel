@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance23.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Alexis Miller\", \"address\": \"69764 Powell Plains East James, ID 90872 US\", \"date\": \"15-Nov-2002\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 32.44, \"total\": 639.75}}",
+    "original_data": {
+        "buyer": "Alexis Miller",
+        "address": "69764 Powell Plains East James, ID 90872 US",
+        "date": "15-Nov-2002",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 32.44,
+        "total": 639.75
+    }
+}

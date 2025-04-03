@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance19.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jeffrey Cunningham III\", \"address\": \"850 Amanda Heights Suite 381 Lake Jeffrey, NE 33840 US\", \"date\": \"26-Feb-2020\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 36.44, \"total\": 1046.42}}",
+    "original_data": {
+        "buyer": "Jeffrey Cunningham III",
+        "address": "850 Amanda Heights Suite 381 Lake Jeffrey, NE 33840 US",
+        "date": "26-Feb-2020",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 36.44,
+        "total": 1046.42
+    }
+}

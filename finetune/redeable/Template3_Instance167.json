@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance167.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Deborah Wyatt\", \"address\": \"391 Phillips Turnpike South Danny, AL 83500 US\", \"date\": \"03-Mar-1996\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 70.06, \"total\": 1055.25}}",
+    "original_data": {
+        "buyer": "Deborah Wyatt",
+        "address": "391 Phillips Turnpike South Danny, AL 83500 US",
+        "date": "03-Mar-1996",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 70.06,
+        "total": 1055.25
+    }
+}

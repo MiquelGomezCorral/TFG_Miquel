@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance51.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Christopher Reed\", \"address\": \"11289 Daniel Hills Apt. 665 Lake Davidtown, IA 40481 US\", \"date\": \"13-Jun-2018\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 108.81, \"discount\": null, \"tax\": 6.3, \"total\": 111.56}}",
+    "original_data": {
+        "buyer": "Christopher Reed",
+        "address": "11289 Daniel Hills Apt. 665 Lake Davidtown, IA 40481 US",
+        "date": "13-Jun-2018",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 108.81,
+        "discount": null,
+        "tax": 6.3,
+        "total": 111.56
+    }
+}

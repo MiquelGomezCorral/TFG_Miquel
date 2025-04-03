@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance5.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Lauren Cox\", \"address\": \"94207 Pineda Shores Lewisburgh, AK 41262 US\", \"date\": \"18-Apr-2003\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 10.68, \"total\": 289.81}}",
+    "original_data": {
+        "buyer": "Lauren Cox",
+        "address": "94207 Pineda Shores Lewisburgh, AK 41262 US",
+        "date": "18-Apr-2003",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 10.68,
+        "total": 289.81
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance196.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Anthony Carson\", \"address\": \"991 Jaime Ways Port Anna, SC 66083 US\", \"date\": \"19-Aug-2016\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 360.36, \"discount\": 11.96, \"tax\": 16.01, \"total\": 368.73}}",
+    "original_data": {
+        "buyer": "Anthony Carson",
+        "address": "991 Jaime Ways Port Anna, SC 66083 US",
+        "date": "19-Aug-2016",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 360.36,
+        "discount": 11.96,
+        "tax": 16.01,
+        "total": 368.73
+    }
+}

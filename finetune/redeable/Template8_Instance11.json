@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance11.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Tony Hoffman\", \"address\": \"2694 Jennifer Island Nunezview, UT 74734 US\", \"date\": \"08-Feb-2010\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 124.58, \"discount\": null, \"tax\": null, \"total\": 129.59}}",
+    "original_data": {
+        "buyer": "Tony Hoffman",
+        "address": "2694 Jennifer Island Nunezview, UT 74734 US",
+        "date": "08-Feb-2010",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 124.58,
+        "discount": null,
+        "tax": null,
+        "total": 129.59
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance162.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Grace Smith\", \"address\": \"05831 Jennifer Light Apt. 224 East Steven, NY 50341 US\", \"date\": \"11-Sep-2016\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 490.48, \"discount\": 18.83, \"tax\": 15.27, \"total\": 494.57}}",
+    "original_data": {
+        "buyer": "Grace Smith",
+        "address": "05831 Jennifer Light Apt. 224 East Steven, NY 50341 US",
+        "date": "11-Sep-2016",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 490.48,
+        "discount": 18.83,
+        "tax": 15.27,
+        "total": 494.57
+    }
+}

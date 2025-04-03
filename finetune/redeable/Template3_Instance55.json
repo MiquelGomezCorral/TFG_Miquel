@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance55.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Richard Mcpherson\", \"address\": \"213 Melissa Run Murraytown, DC 97565 US\", \"date\": \"20-Aug-2017\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 40.82, \"total\": 838.48}}",
+    "original_data": {
+        "buyer": "Richard Mcpherson",
+        "address": "213 Melissa Run Murraytown, DC 97565 US",
+        "date": "20-Aug-2017",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 40.82,
+        "total": 838.48
+    }
+}

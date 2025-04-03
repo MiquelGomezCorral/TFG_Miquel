@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance25.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jennifer Gray\", \"address\": \"194 Kirsten Glen Suite 881 North Kellymouth, MT 96350 US\", \"date\": \"26-Aug-2021\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 411.94, \"discount\": null, \"tax\": 16.83, \"total\": 409.86}}",
+    "original_data": {
+        "buyer": "Jennifer Gray",
+        "address": "194 Kirsten Glen Suite 881 North Kellymouth, MT 96350 US",
+        "date": "26-Aug-2021",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 411.94,
+        "discount": null,
+        "tax": 16.83,
+        "total": 409.86
+    }
+}

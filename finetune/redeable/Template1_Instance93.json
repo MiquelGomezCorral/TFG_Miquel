@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance93.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ashley Wood\", \"address\": \"601 Hernandez Manor Sanchezchester, OK 87089 US\", \"date\": \"16-Aug-1993\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 550.49, \"discount\": 25.32, \"tax\": 38.52, \"total\": 566.61}}",
+    "original_data": {
+        "buyer": "Ashley Wood",
+        "address": "601 Hernandez Manor Sanchezchester, OK 87089 US",
+        "date": "16-Aug-1993",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 550.49,
+        "discount": 25.32,
+        "tax": 38.52,
+        "total": 566.61
+    }
+}

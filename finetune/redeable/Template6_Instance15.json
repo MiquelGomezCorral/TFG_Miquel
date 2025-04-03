@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance15.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Cynthia Harris\", \"address\": \"45866 Boone Vista Suite 057 West Phyllis, ID 76268 US\", \"date\": \"25-Jun-1996\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 154.1, \"discount\": null, \"tax\": 6.61, \"total\": 158.12}}",
+    "original_data": {
+        "buyer": "Cynthia Harris",
+        "address": "45866 Boone Vista Suite 057 West Phyllis, ID 76268 US",
+        "date": "25-Jun-1996",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 154.1,
+        "discount": null,
+        "tax": 6.61,
+        "total": 158.12
+    }
+}

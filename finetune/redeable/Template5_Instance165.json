@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance165.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jose Edwards\", \"address\": \"766 Sharon Road Suite 997 Lake Lindsay, UT 51329 US\", \"date\": \"26-May-2011\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 643.6, \"discount\": null, \"tax\": 44.16, \"total\": 676.88}}",
+    "original_data": {
+        "buyer": "Jose Edwards",
+        "address": "766 Sharon Road Suite 997 Lake Lindsay, UT 51329 US",
+        "date": "26-May-2011",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 643.6,
+        "discount": null,
+        "tax": 44.16,
+        "total": 676.88
+    }
+}

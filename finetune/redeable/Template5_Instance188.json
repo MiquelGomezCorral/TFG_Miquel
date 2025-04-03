@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance188.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michelle Keith\", \"address\": \"945 Dalton Key Suite 131 Lake Monicaview, MH 60367 US\", \"date\": \"09-Feb-2019\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 1101.09, \"discount\": null, \"tax\": 53.37, \"total\": 1133.87}}",
+    "original_data": {
+        "buyer": "Michelle Keith",
+        "address": "945 Dalton Key Suite 131 Lake Monicaview, MH 60367 US",
+        "date": "09-Feb-2019",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 1101.09,
+        "discount": null,
+        "tax": 53.37,
+        "total": 1133.87
+    }
+}

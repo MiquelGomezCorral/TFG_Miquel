@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance50.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Justin Garcia\", \"address\": \"32527 Johnson Streets Marcoburgh, AK 90968 US\", \"date\": \"10-Jun-2006\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1462.77, \"discount\": 71.97, \"tax\": 71.69, \"total\": 1481.07}}",
+    "original_data": {
+        "buyer": "Justin Garcia",
+        "address": "32527 Johnson Streets Marcoburgh, AK 90968 US",
+        "date": "10-Jun-2006",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1462.77,
+        "discount": 71.97,
+        "tax": 71.69,
+        "total": 1481.07
+    }
+}

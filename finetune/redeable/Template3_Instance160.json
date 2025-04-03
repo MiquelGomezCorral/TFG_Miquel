@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance160.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Shannon Lamb\", \"address\": \"39215 Rachel Ranch Apt. 305 Robertstad, NJ 75737 US\", \"date\": \"18-Jan-2020\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 26.29, \"total\": 709.51}}",
+    "original_data": {
+        "buyer": "Shannon Lamb",
+        "address": "39215 Rachel Ranch Apt. 305 Robertstad, NJ 75737 US",
+        "date": "18-Jan-2020",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 26.29,
+        "total": 709.51
+    }
+}

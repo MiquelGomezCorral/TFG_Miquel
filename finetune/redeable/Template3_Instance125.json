@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance125.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"David Jones\", \"address\": \"758 Richard Dale Richardsonfort, VA 44477 US\", \"date\": \"31-Aug-2018\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 9.43, \"total\": 187.31}}",
+    "original_data": {
+        "buyer": "David Jones",
+        "address": "758 Richard Dale Richardsonfort, VA 44477 US",
+        "date": "31-Aug-2018",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 9.43,
+        "total": 187.31
+    }
+}

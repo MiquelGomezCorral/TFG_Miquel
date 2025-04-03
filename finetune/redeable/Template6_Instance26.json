@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance26.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Eric Stuart\", \"address\": \"152 Lewis Station South Renee, NH 75942 US\", \"date\": \"10-Jun-2010\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 847.59, \"discount\": null, \"tax\": 55.97, \"total\": 871.01}}",
+    "original_data": {
+        "buyer": "Eric Stuart",
+        "address": "152 Lewis Station South Renee, NH 75942 US",
+        "date": "10-Jun-2010",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 847.59,
+        "discount": null,
+        "tax": 55.97,
+        "total": 871.01
+    }
+}

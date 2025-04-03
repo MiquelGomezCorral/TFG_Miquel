@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance50.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Brandy Wells\", \"address\": \"8994 Edwards Creek Suite 474 Halltown, VA 90148 US\", \"date\": \"25-Oct-2001\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 219.39, \"discount\": null, \"tax\": 14.62, \"total\": 227.54}}",
+    "original_data": {
+        "buyer": "Brandy Wells",
+        "address": "8994 Edwards Creek Suite 474 Halltown, VA 90148 US",
+        "date": "25-Oct-2001",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 219.39,
+        "discount": null,
+        "tax": 14.62,
+        "total": 227.54
+    }
+}

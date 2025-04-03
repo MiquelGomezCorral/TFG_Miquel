@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance174.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Katie Valdez\", \"address\": \"93797 Rodriguez Motorway Apt. 076 Jonesville, AS 83557 US\", \"date\": \"04-Jun-2017\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 299.26, \"discount\": null, \"tax\": null, \"total\": 301.69}}",
+    "original_data": {
+        "buyer": "Katie Valdez",
+        "address": "93797 Rodriguez Motorway Apt. 076 Jonesville, AS 83557 US",
+        "date": "04-Jun-2017",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 299.26,
+        "discount": null,
+        "tax": null,
+        "total": 301.69
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance10.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Patricia Perkins\", \"address\": \"93602 Marc Vista Suite 409 Lake Amandachester, NM 18719 US\", \"date\": \"29-Jun-2004\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 211.25, \"discount\": null, \"tax\": 8.88, \"total\": 217.93}}",
+    "original_data": {
+        "buyer": "Patricia Perkins",
+        "address": "93602 Marc Vista Suite 409 Lake Amandachester, NM 18719 US",
+        "date": "29-Jun-2004",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 211.25,
+        "discount": null,
+        "tax": 8.88,
+        "total": 217.93
+    }
+}

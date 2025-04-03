@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance129.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Frank Williams\", \"address\": \"2077 Holt Port Apt. 092 Warrenville, AL 73945 US\", \"date\": \"06-Jun-2004\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 649.95, \"discount\": null, \"tax\": 28.07, \"total\": 666.65}}",
+    "original_data": {
+        "buyer": "Frank Williams",
+        "address": "2077 Holt Port Apt. 092 Warrenville, AL 73945 US",
+        "date": "06-Jun-2004",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 649.95,
+        "discount": null,
+        "tax": 28.07,
+        "total": 666.65
+    }
+}

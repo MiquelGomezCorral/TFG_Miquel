@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance29.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Erin Andrews\", \"address\": \"9077 Darlene Road Claytonburgh, GU 21315 US\", \"date\": \"12-Jun-1997\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 35.03, \"total\": 556.17}}",
+    "original_data": {
+        "buyer": "Erin Andrews",
+        "address": "9077 Darlene Road Claytonburgh, GU 21315 US",
+        "date": "12-Jun-1997",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 35.03,
+        "total": 556.17
+    }
+}

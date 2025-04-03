@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance23.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jimmy Martin\", \"address\": \"6320 Jessica Spring New Mark, LA 22781 US\", \"date\": \"18-Aug-2010\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 259.89, \"discount\": null, \"tax\": null, \"total\": 261.54}}",
+    "original_data": {
+        "buyer": "Jimmy Martin",
+        "address": "6320 Jessica Spring New Mark, LA 22781 US",
+        "date": "18-Aug-2010",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 259.89,
+        "discount": null,
+        "tax": null,
+        "total": 261.54
+    }
+}

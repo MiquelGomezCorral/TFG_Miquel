@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance71.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Collin Harrell\", \"address\": \"67845 Davis Shore Apt. 462 Nancymouth, TN 76864 US\", \"date\": \"31-Oct-1993\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 841.57, \"discount\": null, \"tax\": 47.11, \"total\": 851.06}}",
+    "original_data": {
+        "buyer": "Collin Harrell",
+        "address": "67845 Davis Shore Apt. 462 Nancymouth, TN 76864 US",
+        "date": "31-Oct-1993",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 841.57,
+        "discount": null,
+        "tax": 47.11,
+        "total": 851.06
+    }
+}

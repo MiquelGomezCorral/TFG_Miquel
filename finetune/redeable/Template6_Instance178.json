@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance178.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Diana Glass\", \"address\": \"72366 David Well Swansonfurt, MI 76765 US\", \"date\": \"05-Sep-2021\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 839.5, \"discount\": null, \"tax\": 28.63, \"total\": 831.86}}",
+    "original_data": {
+        "buyer": "Diana Glass",
+        "address": "72366 David Well Swansonfurt, MI 76765 US",
+        "date": "05-Sep-2021",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 839.5,
+        "discount": null,
+        "tax": 28.63,
+        "total": 831.86
+    }
+}

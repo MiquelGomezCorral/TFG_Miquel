@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance108.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Haley Young\", \"address\": \"92875 Kidd Union Suite 856 Janetmouth, AS 75836 US\", \"date\": \"10-Feb-1994\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 313.62, \"discount\": null, \"tax\": null, \"total\": 321.39}}",
+    "original_data": {
+        "buyer": "Haley Young",
+        "address": "92875 Kidd Union Suite 856 Janetmouth, AS 75836 US",
+        "date": "10-Feb-1994",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 313.62,
+        "discount": null,
+        "tax": null,
+        "total": 321.39
+    }
+}

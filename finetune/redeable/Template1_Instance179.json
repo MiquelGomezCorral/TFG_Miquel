@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance179.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Victor Schmidt\", \"address\": \"7117 Anderson Alley Karenmouth, DC 16876 US\", \"date\": \"15-Apr-1993\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 647.06, \"discount\": 16.82, \"tax\": 43.35, \"total\": 676.89}}",
+    "original_data": {
+        "buyer": "Victor Schmidt",
+        "address": "7117 Anderson Alley Karenmouth, DC 16876 US",
+        "date": "15-Apr-1993",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 647.06,
+        "discount": 16.82,
+        "tax": 43.35,
+        "total": 676.89
+    }
+}

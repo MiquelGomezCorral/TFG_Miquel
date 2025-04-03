@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance152.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Nathan Anderson\", \"address\": \"9025 Gilbert Expressway East Jamieshire, VA 74517 US\", \"date\": \"02-Aug-2018\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 187.9, \"discount\": 5.04, \"tax\": 8.08, \"total\": 190.81}}",
+    "original_data": {
+        "buyer": "Nathan Anderson",
+        "address": "9025 Gilbert Expressway East Jamieshire, VA 74517 US",
+        "date": "02-Aug-2018",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 187.9,
+        "discount": 5.04,
+        "tax": 8.08,
+        "total": 190.81
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance166.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jessica Paul\", \"address\": \"629 John Isle Suite 508 Lindaberg, MS 56380 US\", \"date\": \"21-Sep-1999\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 318.08, \"discount\": 13.2, \"tax\": 19.83, \"total\": 330.18}}",
+    "original_data": {
+        "buyer": "Jessica Paul",
+        "address": "629 John Isle Suite 508 Lindaberg, MS 56380 US",
+        "date": "21-Sep-1999",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 318.08,
+        "discount": 13.2,
+        "tax": 19.83,
+        "total": 330.18
+    }
+}

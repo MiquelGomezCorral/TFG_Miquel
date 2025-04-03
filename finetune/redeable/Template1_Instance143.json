@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance143.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michelle Pena\", \"address\": \"60041 Matthew Hollow Apt. 041 New Amanda, ID 74788 US\", \"date\": \"15-Nov-2012\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 670.86, \"discount\": 20.8, \"tax\": 31.89, \"total\": 692.28}}",
+    "original_data": {
+        "buyer": "Michelle Pena",
+        "address": "60041 Matthew Hollow Apt. 041 New Amanda, ID 74788 US",
+        "date": "15-Nov-2012",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 670.86,
+        "discount": 20.8,
+        "tax": 31.89,
+        "total": 692.28
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance35.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Patrick Wright\", \"address\": \"33399 Kelly Loop Hollandville, ME 71262 US\", \"date\": \"29-Nov-2002\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 488.95, \"discount\": null, \"tax\": 28.35, \"total\": 509.18}}",
+    "original_data": {
+        "buyer": "Patrick Wright",
+        "address": "33399 Kelly Loop Hollandville, ME 71262 US",
+        "date": "29-Nov-2002",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 488.95,
+        "discount": null,
+        "tax": 28.35,
+        "total": 509.18
+    }
+}

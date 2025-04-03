@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance37.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Alison Williams\", \"address\": \"06009 Burke Vista Apt. 224 South Terrimouth, TN 31049 US\", \"date\": \"10-May-2015\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 647.12, \"discount\": null, \"tax\": 29.4, \"total\": 648.63}}",
+    "original_data": {
+        "buyer": "Alison Williams",
+        "address": "06009 Burke Vista Apt. 224 South Terrimouth, TN 31049 US",
+        "date": "10-May-2015",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 647.12,
+        "discount": null,
+        "tax": 29.4,
+        "total": 648.63
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance16.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Rhonda Mendez\", \"address\": \"7141 Sara Port Suite 644 North Jacobmouth, PW 57946 US\", \"date\": \"20-Mar-1996\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1566.99, \"discount\": null, \"tax\": 55.45, \"total\": 1597.52}}",
+    "original_data": {
+        "buyer": "Rhonda Mendez",
+        "address": "7141 Sara Port Suite 644 North Jacobmouth, PW 57946 US",
+        "date": "20-Mar-1996",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1566.99,
+        "discount": null,
+        "tax": 55.45,
+        "total": 1597.52
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance56.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Max Mclaughlin\", \"address\": \"697 Victoria Lodge Suite 294 East Beverlyshire, WV 68061 US\", \"date\": \"21-Oct-2002\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 10.1, \"total\": 245.68}}",
+    "original_data": {
+        "buyer": "Max Mclaughlin",
+        "address": "697 Victoria Lodge Suite 294 East Beverlyshire, WV 68061 US",
+        "date": "21-Oct-2002",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 10.1,
+        "total": 245.68
+    }
+}

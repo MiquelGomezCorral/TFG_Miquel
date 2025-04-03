@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance80.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ashley Evans\", \"address\": \"549 Parrish Tunnel East Robertfurt, VI 58957 US\", \"date\": \"01-Oct-1999\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 118.04, \"discount\": null, \"tax\": 4.86, \"total\": 118.56}}",
+    "original_data": {
+        "buyer": "Ashley Evans",
+        "address": "549 Parrish Tunnel East Robertfurt, VI 58957 US",
+        "date": "01-Oct-1999",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 118.04,
+        "discount": null,
+        "tax": 4.86,
+        "total": 118.56
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance145.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Angela Jennings\", \"address\": \"19371 Adams Port Apt. 829 West Amyville, NM 81327 US\", \"date\": \"19-May-2002\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 503.46, \"discount\": 14.1, \"tax\": 32.14, \"total\": 515.97}}",
+    "original_data": {
+        "buyer": "Angela Jennings",
+        "address": "19371 Adams Port Apt. 829 West Amyville, NM 81327 US",
+        "date": "19-May-2002",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 503.46,
+        "discount": 14.1,
+        "tax": 32.14,
+        "total": 515.97
+    }
+}

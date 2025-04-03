@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance72.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Richard Kramer\", \"address\": \"932 Shelley Trail Apt. 580 Powersshire, SD 21893 US\", \"date\": \"27-Dec-1997\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 400.38, \"discount\": 16.26, \"tax\": 26.78, \"total\": 413.55}}",
+    "original_data": {
+        "buyer": "Richard Kramer",
+        "address": "932 Shelley Trail Apt. 580 Powersshire, SD 21893 US",
+        "date": "27-Dec-1997",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 400.38,
+        "discount": 16.26,
+        "tax": 26.78,
+        "total": 413.55
+    }
+}

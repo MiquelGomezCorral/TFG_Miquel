@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance137.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Mary Winters\", \"address\": \"903 Jose Court Suite 741 Thompsontown, AR 55049 US\", \"date\": \"02-Aug-2000\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 40.37, \"total\": 624.04}}",
+    "original_data": {
+        "buyer": "Mary Winters",
+        "address": "903 Jose Court Suite 741 Thompsontown, AR 55049 US",
+        "date": "02-Aug-2000",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 40.37,
+        "total": 624.04
+    }
+}

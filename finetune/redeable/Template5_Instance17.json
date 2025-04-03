@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance17.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Mrs. Dana Hays\", \"address\": \"35444 Brown Keys Cooperport, VT 37515 US\", \"date\": \"07-Mar-1999\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 555.32, \"discount\": null, \"tax\": 32.78, \"total\": 577.38}}",
+    "original_data": {
+        "buyer": "Mrs. Dana Hays",
+        "address": "35444 Brown Keys Cooperport, VT 37515 US",
+        "date": "07-Mar-1999",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 555.32,
+        "discount": null,
+        "tax": 32.78,
+        "total": 577.38
+    }
+}

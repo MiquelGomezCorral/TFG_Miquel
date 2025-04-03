@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance33.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Patricia Wright\", \"address\": \"596 Wright Camp East Robertland, RI 11055 US\", \"date\": \"05-Mar-2007\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 824.93, \"discount\": null, \"tax\": null, \"total\": 826.62}}",
+    "original_data": {
+        "buyer": "Patricia Wright",
+        "address": "596 Wright Camp East Robertland, RI 11055 US",
+        "date": "05-Mar-2007",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 824.93,
+        "discount": null,
+        "tax": null,
+        "total": 826.62
+    }
+}

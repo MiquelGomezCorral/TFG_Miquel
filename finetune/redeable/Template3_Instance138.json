@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance138.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Amanda Ross\", \"address\": \"2432 Conley Mountains Apt. 464 Brianchester, CT 09821 US\", \"date\": \"17-Oct-1997\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 23.72, \"total\": 668.43}}",
+    "original_data": {
+        "buyer": "Amanda Ross",
+        "address": "2432 Conley Mountains Apt. 464 Brianchester, CT 09821 US",
+        "date": "17-Oct-1997",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 23.72,
+        "total": 668.43
+    }
+}

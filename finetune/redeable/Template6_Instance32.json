@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance32.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Danielle Sutton\", \"address\": \"797 King Rest Apt. 123 Perezside, NY 27239 US\", \"date\": \"12-Dec-2000\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 569.14, \"discount\": null, \"tax\": 25.55, \"total\": 579.04}}",
+    "original_data": {
+        "buyer": "Danielle Sutton",
+        "address": "797 King Rest Apt. 123 Perezside, NY 27239 US",
+        "date": "12-Dec-2000",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 569.14,
+        "discount": null,
+        "tax": 25.55,
+        "total": 579.04
+    }
+}

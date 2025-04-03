@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance172.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Donna Little\", \"address\": \"54031 Robertson Squares East Kimberlychester, MO 57002 US\", \"date\": \"04-Jun-1998\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 714.32, \"discount\": 11.36, \"tax\": 46.59, \"total\": 750.48}}",
+    "original_data": {
+        "buyer": "Donna Little",
+        "address": "54031 Robertson Squares East Kimberlychester, MO 57002 US",
+        "date": "04-Jun-1998",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 714.32,
+        "discount": 11.36,
+        "tax": 46.59,
+        "total": 750.48
+    }
+}

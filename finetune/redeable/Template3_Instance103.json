@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance103.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Debbie Ramirez\", \"address\": \"81810 Miller Key Apt. 462 Kimberlyport, MP 99762 US\", \"date\": \"03-Jan-2016\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 30.28, \"total\": 527.93}}",
+    "original_data": {
+        "buyer": "Debbie Ramirez",
+        "address": "81810 Miller Key Apt. 462 Kimberlyport, MP 99762 US",
+        "date": "03-Jan-2016",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 30.28,
+        "total": 527.93
+    }
+}

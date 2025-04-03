@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance0.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Robyn Johnson\", \"address\": \"233 Foster Gardens Johnburgh, ID 41900 US\", \"date\": \"18-Jan-1999\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 677.45, \"discount\": null, \"tax\": 23.66, \"total\": 677.33}}",
+    "original_data": {
+        "buyer": "Robyn Johnson",
+        "address": "233 Foster Gardens Johnburgh, ID 41900 US",
+        "date": "18-Jan-1999",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 677.45,
+        "discount": null,
+        "tax": 23.66,
+        "total": 677.33
+    }
+}

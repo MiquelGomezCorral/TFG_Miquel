@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance79.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Hunter Soto\", \"address\": \"07124 Arellano Valley Suite 209 West Adrienne, IA 18499 US\", \"date\": \"26-Oct-2006\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 782.37, \"discount\": null, \"tax\": 40.06, \"total\": 800.6}}",
+    "original_data": {
+        "buyer": "Hunter Soto",
+        "address": "07124 Arellano Valley Suite 209 West Adrienne, IA 18499 US",
+        "date": "26-Oct-2006",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 782.37,
+        "discount": null,
+        "tax": 40.06,
+        "total": 800.6
+    }
+}

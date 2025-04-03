@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance56.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Eileen Mitchell\", \"address\": \"8030 Elizabeth Haven Johnsonberg, ME 99434 US\", \"date\": \"15-Nov-2020\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 460.5, \"discount\": 14.23, \"tax\": 19.48, \"total\": 468.28}}",
+    "original_data": {
+        "buyer": "Eileen Mitchell",
+        "address": "8030 Elizabeth Haven Johnsonberg, ME 99434 US",
+        "date": "15-Nov-2020",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 460.5,
+        "discount": 14.23,
+        "tax": 19.48,
+        "total": 468.28
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance61.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Luis Richardson\", \"address\": \"5600 Mackenzie Way Apt. 489 Dominichaven, SC 07468 US\", \"date\": \"25-Sep-2021\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 593.76, \"discount\": 22.09, \"tax\": 33.97, \"total\": 606.06}}",
+    "original_data": {
+        "buyer": "Luis Richardson",
+        "address": "5600 Mackenzie Way Apt. 489 Dominichaven, SC 07468 US",
+        "date": "25-Sep-2021",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 593.76,
+        "discount": 22.09,
+        "tax": 33.97,
+        "total": 606.06
+    }
+}

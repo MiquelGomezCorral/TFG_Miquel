@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance13.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Adam Coleman\", \"address\": \"807 Michael Rue Suite 693 North Christopherborough, VI 18338 US\", \"date\": \"19-Feb-1993\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 281.2, \"discount\": 11.22, \"tax\": 16.43, \"total\": 284.5}}",
+    "original_data": {
+        "buyer": "Adam Coleman",
+        "address": "807 Michael Rue Suite 693 North Christopherborough, VI 18338 US",
+        "date": "19-Feb-1993",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 281.2,
+        "discount": 11.22,
+        "tax": 16.43,
+        "total": 284.5
+    }
+}

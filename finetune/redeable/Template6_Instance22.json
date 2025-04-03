@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance22.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michele Grimes\", \"address\": \"094 May Junction West Matthewville, SD 57329 US\", \"date\": \"10-Dec-2017\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 450.46, \"discount\": null, \"tax\": 22.45, \"total\": 458.18}}",
+    "original_data": {
+        "buyer": "Michele Grimes",
+        "address": "094 May Junction West Matthewville, SD 57329 US",
+        "date": "10-Dec-2017",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 450.46,
+        "discount": null,
+        "tax": 22.45,
+        "total": 458.18
+    }
+}

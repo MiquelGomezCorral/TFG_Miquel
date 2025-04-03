@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance59.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Curtis Woodward\", \"address\": \"312 Claire Gateway Port Vincent, ME 28576 US\", \"date\": \"07-Jun-2003\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 373.74, \"discount\": null, \"tax\": 23.45, \"total\": 378.99}}",
+    "original_data": {
+        "buyer": "Curtis Woodward",
+        "address": "312 Claire Gateway Port Vincent, ME 28576 US",
+        "date": "07-Jun-2003",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 373.74,
+        "discount": null,
+        "tax": 23.45,
+        "total": 378.99
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance95.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Patricia Bartlett\", \"address\": \"22574 Wu Burg West Emily, UT 89483 US\", \"date\": \"08-Aug-2009\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 211.65, \"discount\": 3.7, \"tax\": 12.29, \"total\": 221.61}}",
+    "original_data": {
+        "buyer": "Patricia Bartlett",
+        "address": "22574 Wu Burg West Emily, UT 89483 US",
+        "date": "08-Aug-2009",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 211.65,
+        "discount": 3.7,
+        "tax": 12.29,
+        "total": 221.61
+    }
+}

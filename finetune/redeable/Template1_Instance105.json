@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance105.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Albert Tyler\", \"address\": \"484 Williams Villages Suite 321 Lake Norma, SD 24816 US\", \"date\": \"21-Sep-2006\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 563.26, \"discount\": 17.74, \"tax\": 36.17, \"total\": 586.14}}",
+    "original_data": {
+        "buyer": "Albert Tyler",
+        "address": "484 Williams Villages Suite 321 Lake Norma, SD 24816 US",
+        "date": "21-Sep-2006",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 563.26,
+        "discount": 17.74,
+        "tax": 36.17,
+        "total": 586.14
+    }
+}

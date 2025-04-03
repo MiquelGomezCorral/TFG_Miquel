@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance132.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"John Mcdaniel\", \"address\": \"85289 Susan Place Suite 063 South Marissa, MI 17490 US\", \"date\": \"02-Oct-2022\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 1706.06, \"discount\": null, \"tax\": null, \"total\": 1799.22}}",
+    "original_data": {
+        "buyer": "John Mcdaniel",
+        "address": "85289 Susan Place Suite 063 South Marissa, MI 17490 US",
+        "date": "02-Oct-2022",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 1706.06,
+        "discount": null,
+        "tax": null,
+        "total": 1799.22
+    }
+}

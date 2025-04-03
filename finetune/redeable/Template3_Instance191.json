@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance191.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michael Cantu\", \"address\": \"4720 Barry Way Rossstad, MP 47430 US\", \"date\": \"12-Nov-2008\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 16.75, \"total\": 531.77}}",
+    "original_data": {
+        "buyer": "Michael Cantu",
+        "address": "4720 Barry Way Rossstad, MP 47430 US",
+        "date": "12-Nov-2008",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 16.75,
+        "total": 531.77
+    }
+}

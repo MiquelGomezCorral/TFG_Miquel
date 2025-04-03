@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance97.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Heather Schmidt\", \"address\": \"843 Perez Inlet Apt. 779 Brittanybury, AZ 31043 US\", \"date\": \"08-Dec-2003\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 558.55, \"discount\": null, \"tax\": 21.86, \"total\": 555.89}}",
+    "original_data": {
+        "buyer": "Heather Schmidt",
+        "address": "843 Perez Inlet Apt. 779 Brittanybury, AZ 31043 US",
+        "date": "08-Dec-2003",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 558.55,
+        "discount": null,
+        "tax": 21.86,
+        "total": 555.89
+    }
+}

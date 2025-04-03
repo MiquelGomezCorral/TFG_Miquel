@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance71.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Daniel Buck\", \"address\": \"975 Stacie Lodge North Nicholasburgh, MD 47483 US\", \"date\": \"25-Jan-2003\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 356.53, \"discount\": 4.49, \"tax\": 14.92, \"total\": 354.55}}",
+    "original_data": {
+        "buyer": "Daniel Buck",
+        "address": "975 Stacie Lodge North Nicholasburgh, MD 47483 US",
+        "date": "25-Jan-2003",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 356.53,
+        "discount": 4.49,
+        "tax": 14.92,
+        "total": 354.55
+    }
+}

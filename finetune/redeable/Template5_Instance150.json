@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance150.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Robert Bell\", \"address\": \"88768 Nguyen Tunnel Apt. 961 Lake Michelleborough, MT 57165 US\", \"date\": \"19-Feb-1993\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 664.31, \"discount\": null, \"tax\": 34.56, \"total\": 674.82}}",
+    "original_data": {
+        "buyer": "Robert Bell",
+        "address": "88768 Nguyen Tunnel Apt. 961 Lake Michelleborough, MT 57165 US",
+        "date": "19-Feb-1993",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 664.31,
+        "discount": null,
+        "tax": 34.56,
+        "total": 674.82
+    }
+}

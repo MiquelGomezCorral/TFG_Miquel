@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance137.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Alexander Hardin MD\", \"address\": \"7614 Samantha Terrace West William, UT 60540 US\", \"date\": \"23-Feb-2017\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 285.96, \"discount\": 6.86, \"tax\": 10.1, \"total\": 289.8}}",
+    "original_data": {
+        "buyer": "Alexander Hardin MD",
+        "address": "7614 Samantha Terrace West William, UT 60540 US",
+        "date": "23-Feb-2017",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 285.96,
+        "discount": 6.86,
+        "tax": 10.1,
+        "total": 289.8
+    }
+}

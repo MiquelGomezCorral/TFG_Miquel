@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance62.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Victor Roy\", \"address\": \"9950 Myers Ford Apt. 050 Nicolechester, CO 53953 US\", \"date\": \"19-Jan-2015\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 112.41, \"discount\": null, \"tax\": 5.9, \"total\": 114.65}}",
+    "original_data": {
+        "buyer": "Victor Roy",
+        "address": "9950 Myers Ford Apt. 050 Nicolechester, CO 53953 US",
+        "date": "19-Jan-2015",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 112.41,
+        "discount": null,
+        "tax": 5.9,
+        "total": 114.65
+    }
+}

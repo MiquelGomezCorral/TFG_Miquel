@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance110.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Cathy Peterson\", \"address\": \"5569 Dunn Ferry Apt. 021 Andrewview, NH 92778 US\", \"date\": \"10-Feb-2019\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 563.12, \"discount\": 21.57, \"tax\": 19.52, \"total\": 572.33}}",
+    "original_data": {
+        "buyer": "Cathy Peterson",
+        "address": "5569 Dunn Ferry Apt. 021 Andrewview, NH 92778 US",
+        "date": "10-Feb-2019",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 563.12,
+        "discount": 21.57,
+        "tax": 19.52,
+        "total": 572.33
+    }
+}

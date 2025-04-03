@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance118.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Dillon Anderson MD\", \"address\": \"0174 Espinoza Mountain New Dustinland, MD 43614 US\", \"date\": \"08-Mar-2010\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 941.01, \"discount\": null, \"tax\": 58.71, \"total\": 978.17}}",
+    "original_data": {
+        "buyer": "Dillon Anderson MD",
+        "address": "0174 Espinoza Mountain New Dustinland, MD 43614 US",
+        "date": "08-Mar-2010",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 941.01,
+        "discount": null,
+        "tax": 58.71,
+        "total": 978.17
+    }
+}

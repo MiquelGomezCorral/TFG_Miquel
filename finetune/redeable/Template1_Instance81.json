@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance81.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Eileen Clark\", \"address\": \"40802 Mary Plain Wagnerport, OR 78992 US\", \"date\": \"31-Dec-1997\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 739.26, \"discount\": 24.25, \"tax\": 32.45, \"total\": 754.12}}",
+    "original_data": {
+        "buyer": "Eileen Clark",
+        "address": "40802 Mary Plain Wagnerport, OR 78992 US",
+        "date": "31-Dec-1997",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 739.26,
+        "discount": 24.25,
+        "tax": 32.45,
+        "total": 754.12
+    }
+}

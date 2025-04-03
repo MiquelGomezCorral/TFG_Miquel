@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance161.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Christopher Herrera\", \"address\": \"005 Conner Parkways Apt. 784 South Sara, OK 61384 US\", \"date\": \"10-Mar-2004\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 645.88, \"discount\": null, \"tax\": 20.64, \"total\": 647.34}}",
+    "original_data": {
+        "buyer": "Christopher Herrera",
+        "address": "005 Conner Parkways Apt. 784 South Sara, OK 61384 US",
+        "date": "10-Mar-2004",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 645.88,
+        "discount": null,
+        "tax": 20.64,
+        "total": 647.34
+    }
+}

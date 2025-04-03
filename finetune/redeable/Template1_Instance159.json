@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance159.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Dr. Kevin Robinson\", \"address\": \"262 Becker Junction Wandachester, LA 16494 US\", \"date\": \"25-Jan-1994\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 807.94, \"discount\": 19.07, \"tax\": 42.35, \"total\": 839.38}}",
+    "original_data": {
+        "buyer": "Dr. Kevin Robinson",
+        "address": "262 Becker Junction Wandachester, LA 16494 US",
+        "date": "25-Jan-1994",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 807.94,
+        "discount": 19.07,
+        "tax": 42.35,
+        "total": 839.38
+    }
+}

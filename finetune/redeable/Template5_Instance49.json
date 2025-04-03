@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance49.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Lindsey Howell\", \"address\": \"5987 Smith Mission Suite 917 Susanbury, MO 01957 US\", \"date\": \"23-Oct-2003\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 421.09, \"discount\": null, \"tax\": 18.02, \"total\": 423.4}}",
+    "original_data": {
+        "buyer": "Lindsey Howell",
+        "address": "5987 Smith Mission Suite 917 Susanbury, MO 01957 US",
+        "date": "23-Oct-2003",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 421.09,
+        "discount": null,
+        "tax": 18.02,
+        "total": 423.4
+    }
+}

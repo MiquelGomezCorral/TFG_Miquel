@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance42.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Thomas Adams\", \"address\": \"421 Robert Valley Apt. 173 Saratown, MS 84994 US\", \"date\": \"14-Oct-2012\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1117.65, \"discount\": null, \"tax\": 62.06, \"total\": 1166.19}}",
+    "original_data": {
+        "buyer": "Thomas Adams",
+        "address": "421 Robert Valley Apt. 173 Saratown, MS 84994 US",
+        "date": "14-Oct-2012",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1117.65,
+        "discount": null,
+        "tax": 62.06,
+        "total": 1166.19
+    }
+}

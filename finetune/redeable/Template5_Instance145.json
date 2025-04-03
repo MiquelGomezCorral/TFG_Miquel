@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance145.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jennifer Parsons\", \"address\": \"456 Amanda Harbors West Melanieside, MP 55569 US\", \"date\": \"05-Jul-2010\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 419.68, \"discount\": null, \"tax\": 15.89, \"total\": 428.73}}",
+    "original_data": {
+        "buyer": "Jennifer Parsons",
+        "address": "456 Amanda Harbors West Melanieside, MP 55569 US",
+        "date": "05-Jul-2010",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 419.68,
+        "discount": null,
+        "tax": 15.89,
+        "total": 428.73
+    }
+}

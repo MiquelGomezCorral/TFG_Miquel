@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance9.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Rebecca Gray\", \"address\": \"9583 White Green Apt. 110 Port Nicholas, OR 66999 US\", \"date\": \"26-Feb-1996\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 7.68, \"total\": 176.52}}",
+    "original_data": {
+        "buyer": "Rebecca Gray",
+        "address": "9583 White Green Apt. 110 Port Nicholas, OR 66999 US",
+        "date": "26-Feb-1996",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 7.68,
+        "total": 176.52
+    }
+}

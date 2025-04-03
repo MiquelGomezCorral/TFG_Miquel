@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance177.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Russell Jones\", \"address\": \"429 Kenneth Ville Coleview, ND 37754 US\", \"date\": \"30-Sep-2019\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 161.71, \"discount\": null, \"tax\": 6.17, \"total\": 164.68}}",
+    "original_data": {
+        "buyer": "Russell Jones",
+        "address": "429 Kenneth Ville Coleview, ND 37754 US",
+        "date": "30-Sep-2019",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 161.71,
+        "discount": null,
+        "tax": 6.17,
+        "total": 164.68
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance118.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Penny Clark\", \"address\": \"713 Michael Spring Nicolemouth, HI 20842 US\", \"date\": \"07-Nov-1997\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 1084.82, \"discount\": null, \"tax\": 47.31, \"total\": 1112.39}}",
+    "original_data": {
+        "buyer": "Penny Clark",
+        "address": "713 Michael Spring Nicolemouth, HI 20842 US",
+        "date": "07-Nov-1997",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 1084.82,
+        "discount": null,
+        "tax": 47.31,
+        "total": 1112.39
+    }
+}

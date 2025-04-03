@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance34.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Hannah Cabrera\", \"address\": \"938 Brown Isle Apt. 858 Gregoryport, MD 27411 US\", \"date\": \"19-Nov-2010\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 523.96, \"discount\": 10.69, \"tax\": 19.75, \"total\": 535.8}}",
+    "original_data": {
+        "buyer": "Hannah Cabrera",
+        "address": "938 Brown Isle Apt. 858 Gregoryport, MD 27411 US",
+        "date": "19-Nov-2010",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 523.96,
+        "discount": 10.69,
+        "tax": 19.75,
+        "total": 535.8
+    }
+}

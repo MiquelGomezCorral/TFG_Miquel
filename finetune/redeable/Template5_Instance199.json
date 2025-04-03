@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance199.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jody Anderson\", \"address\": \"34996 Carter Brooks Espinozaland, CT 85850 US\", \"date\": \"18-Aug-2013\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1166.42, \"discount\": null, \"tax\": 71.63, \"total\": 1183.93}}",
+    "original_data": {
+        "buyer": "Jody Anderson",
+        "address": "34996 Carter Brooks Espinozaland, CT 85850 US",
+        "date": "18-Aug-2013",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1166.42,
+        "discount": null,
+        "tax": 71.63,
+        "total": 1183.93
+    }
+}

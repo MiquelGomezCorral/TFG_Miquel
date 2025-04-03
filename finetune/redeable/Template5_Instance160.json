@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance160.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jennifer Hall\", \"address\": \"8377 Harvey Knoll Suite 397 East Melissaview, PW 97183 US\", \"date\": \"08-May-1997\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 613.8, \"discount\": null, \"tax\": 39.86, \"total\": 625.12}}",
+    "original_data": {
+        "buyer": "Jennifer Hall",
+        "address": "8377 Harvey Knoll Suite 397 East Melissaview, PW 97183 US",
+        "date": "08-May-1997",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 613.8,
+        "discount": null,
+        "tax": 39.86,
+        "total": 625.12
+    }
+}

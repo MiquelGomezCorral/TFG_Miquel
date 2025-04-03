@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance131.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Gary Dixon\", \"address\": \"3864 Jordan Mission Suite 164 Kennethport, ND 97057 US\", \"date\": \"04-Sep-2006\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 42.02, \"total\": 834.98}}",
+    "original_data": {
+        "buyer": "Gary Dixon",
+        "address": "3864 Jordan Mission Suite 164 Kennethport, ND 97057 US",
+        "date": "04-Sep-2006",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 42.02,
+        "total": 834.98
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance6.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Russell Roach\", \"address\": \"602 Raymond Village New Lonnieshire, AR 20352 US\", \"date\": \"03-Dec-2021\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 839.4, \"discount\": null, \"tax\": 27.47, \"total\": 856.46}}",
+    "original_data": {
+        "buyer": "Russell Roach",
+        "address": "602 Raymond Village New Lonnieshire, AR 20352 US",
+        "date": "03-Dec-2021",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 839.4,
+        "discount": null,
+        "tax": 27.47,
+        "total": 856.46
+    }
+}

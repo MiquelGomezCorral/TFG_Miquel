@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance191.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Sherri Larsen\", \"address\": \"686 Levi Locks Marcusshire, VT 72969 US\", \"date\": \"16-Jun-1999\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 624.69, \"discount\": null, \"tax\": 32.18, \"total\": 626.57}}",
+    "original_data": {
+        "buyer": "Sherri Larsen",
+        "address": "686 Levi Locks Marcusshire, VT 72969 US",
+        "date": "16-Jun-1999",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 624.69,
+        "discount": null,
+        "tax": 32.18,
+        "total": 626.57
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance32.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Terri Blankenship\", \"address\": \"3131 Eric Unions Sherryhaven, KY 62154 US\", \"date\": \"21-Mar-2005\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 378.29, \"discount\": 5.14, \"tax\": 22.95, \"total\": 391.86}}",
+    "original_data": {
+        "buyer": "Terri Blankenship",
+        "address": "3131 Eric Unions Sherryhaven, KY 62154 US",
+        "date": "21-Mar-2005",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 378.29,
+        "discount": 5.14,
+        "tax": 22.95,
+        "total": 391.86
+    }
+}

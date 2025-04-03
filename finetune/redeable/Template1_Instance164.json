@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance164.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Mrs. Amanda Rodriguez\", \"address\": \"59779 Karen Point North Tyler, ID 05169 US\", \"date\": \"11-Jul-2018\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 603.54, \"discount\": 9.23, \"tax\": 19.52, \"total\": 613.64}}",
+    "original_data": {
+        "buyer": "Mrs. Amanda Rodriguez",
+        "address": "59779 Karen Point North Tyler, ID 05169 US",
+        "date": "11-Jul-2018",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 603.54,
+        "discount": 9.23,
+        "tax": 19.52,
+        "total": 613.64
+    }
+}

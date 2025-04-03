@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance107.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Tony Summers\", \"address\": \"50202 Reyes Stream Taylorberg, AR 94800 US\", \"date\": \"07-Aug-1998\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 41.34, \"total\": 682.56}}",
+    "original_data": {
+        "buyer": "Tony Summers",
+        "address": "50202 Reyes Stream Taylorberg, AR 94800 US",
+        "date": "07-Aug-1998",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 41.34,
+        "total": 682.56
+    }
+}

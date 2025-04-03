@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance58.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Dennis Shannon\", \"address\": \"326 Marsh Locks Landryport, HI 09976 US\", \"date\": \"16-Nov-2000\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 491.64, \"discount\": null, \"tax\": 19.57, \"total\": 500.69}}",
+    "original_data": {
+        "buyer": "Dennis Shannon",
+        "address": "326 Marsh Locks Landryport, HI 09976 US",
+        "date": "16-Nov-2000",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 491.64,
+        "discount": null,
+        "tax": 19.57,
+        "total": 500.69
+    }
+}

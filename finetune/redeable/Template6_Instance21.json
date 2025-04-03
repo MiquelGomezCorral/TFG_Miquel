@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance21.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Willie Phelps\", \"address\": \"63873 Jenny Landing Apt. 053 Fritzshire, AS 54716 US\", \"date\": \"03-Aug-2011\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 445.52, \"discount\": null, \"tax\": 16.19, \"total\": 441.17}}",
+    "original_data": {
+        "buyer": "Willie Phelps",
+        "address": "63873 Jenny Landing Apt. 053 Fritzshire, AS 54716 US",
+        "date": "03-Aug-2011",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 445.52,
+        "discount": null,
+        "tax": 16.19,
+        "total": 441.17
+    }
+}

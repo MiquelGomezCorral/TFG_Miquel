@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance129.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michael Best MD\", \"address\": \"60779 Moon Lights Ryantown, GU 03439 US\", \"date\": \"06-Nov-2000\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 52.33, \"total\": 798.89}}",
+    "original_data": {
+        "buyer": "Michael Best MD",
+        "address": "60779 Moon Lights Ryantown, GU 03439 US",
+        "date": "06-Nov-2000",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 52.33,
+        "total": 798.89
+    }
+}

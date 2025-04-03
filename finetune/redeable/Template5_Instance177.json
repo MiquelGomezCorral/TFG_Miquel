@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance177.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ryan Rodriguez\", \"address\": \"0111 Stanley Mountain New Jeanne, MI 57219 US\", \"date\": \"16-Jun-1996\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 829.53, \"discount\": null, \"tax\": 25.82, \"total\": 834.36}}",
+    "original_data": {
+        "buyer": "Ryan Rodriguez",
+        "address": "0111 Stanley Mountain New Jeanne, MI 57219 US",
+        "date": "16-Jun-1996",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 829.53,
+        "discount": null,
+        "tax": 25.82,
+        "total": 834.36
+    }
+}

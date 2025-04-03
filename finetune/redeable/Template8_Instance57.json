@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance57.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Oscar Brown\", \"address\": \"889 Corey Radial Apt. 084 Port Shawnport, SC 41611 US\", \"date\": \"13-Oct-2021\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 592.98, \"discount\": null, \"tax\": null, \"total\": 621.96}}",
+    "original_data": {
+        "buyer": "Oscar Brown",
+        "address": "889 Corey Radial Apt. 084 Port Shawnport, SC 41611 US",
+        "date": "13-Oct-2021",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 592.98,
+        "discount": null,
+        "tax": null,
+        "total": 621.96
+    }
+}

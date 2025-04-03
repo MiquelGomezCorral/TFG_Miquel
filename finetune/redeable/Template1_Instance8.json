@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance8.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Felicia Maldonado\", \"address\": \"7517 Joshua Courts North Thomas, PA 12435 US\", \"date\": \"22-Dec-1998\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 575.66, \"discount\": 22.91, \"tax\": 17.44, \"total\": 581.47}}",
+    "original_data": {
+        "buyer": "Felicia Maldonado",
+        "address": "7517 Joshua Courts North Thomas, PA 12435 US",
+        "date": "22-Dec-1998",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 575.66,
+        "discount": 22.91,
+        "tax": 17.44,
+        "total": 581.47
+    }
+}

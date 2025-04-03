@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance57.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kevin Larsen\", \"address\": \"431 Faith Mill East Sonyafort, AR 28350 US\", \"date\": \"30-Jan-2020\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 622.66, \"discount\": null, \"tax\": 27.22, \"total\": 633.32}}",
+    "original_data": {
+        "buyer": "Kevin Larsen",
+        "address": "431 Faith Mill East Sonyafort, AR 28350 US",
+        "date": "30-Jan-2020",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 622.66,
+        "discount": null,
+        "tax": 27.22,
+        "total": 633.32
+    }
+}

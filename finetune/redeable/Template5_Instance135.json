@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance135.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Terri Smith\", \"address\": \"756 David Rapid Webbmouth, TX 79946 US\", \"date\": \"05-Aug-2007\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 804.93, \"discount\": null, \"tax\": 30.42, \"total\": 803.07}}",
+    "original_data": {
+        "buyer": "Terri Smith",
+        "address": "756 David Rapid Webbmouth, TX 79946 US",
+        "date": "05-Aug-2007",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 804.93,
+        "discount": null,
+        "tax": 30.42,
+        "total": 803.07
+    }
+}

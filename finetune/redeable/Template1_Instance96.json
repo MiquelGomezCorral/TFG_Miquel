@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance96.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Gina Torres\", \"address\": \"7655 Kendra Lake Apt. 516 Port Bryanport, WA 05617 US\", \"date\": \"20-Mar-2004\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 259.55, \"discount\": 10.07, \"tax\": 10.64, \"total\": 266.95}}",
+    "original_data": {
+        "buyer": "Gina Torres",
+        "address": "7655 Kendra Lake Apt. 516 Port Bryanport, WA 05617 US",
+        "date": "20-Mar-2004",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 259.55,
+        "discount": 10.07,
+        "tax": 10.64,
+        "total": 266.95
+    }
+}

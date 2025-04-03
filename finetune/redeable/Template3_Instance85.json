@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance85.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Heather Black\", \"address\": \"666 Elizabeth Meadow Suite 310 New Stephaniefort, FM 81040 US\", \"date\": \"02-Jul-2005\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 17.74, \"total\": 418.88}}",
+    "original_data": {
+        "buyer": "Heather Black",
+        "address": "666 Elizabeth Meadow Suite 310 New Stephaniefort, FM 81040 US",
+        "date": "02-Jul-2005",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 17.74,
+        "total": 418.88
+    }
+}

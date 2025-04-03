@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance68.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Haley Hall\", \"address\": \"542 Morris Ridge Brownhaven, NE 18734 US\", \"date\": \"03-Nov-2007\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 677.06, \"discount\": null, \"tax\": 29.11, \"total\": 686.54}}",
+    "original_data": {
+        "buyer": "Haley Hall",
+        "address": "542 Morris Ridge Brownhaven, NE 18734 US",
+        "date": "03-Nov-2007",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 677.06,
+        "discount": null,
+        "tax": 29.11,
+        "total": 686.54
+    }
+}

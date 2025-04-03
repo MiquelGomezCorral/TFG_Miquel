@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance173.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Paula Lewis\", \"address\": \"4489 Kimberly Brooks Apt. 125 West David, MO 88228 US\", \"date\": \"23-Jul-2017\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 303.17, \"discount\": null, \"tax\": 19.92, \"total\": 315.42}}",
+    "original_data": {
+        "buyer": "Paula Lewis",
+        "address": "4489 Kimberly Brooks Apt. 125 West David, MO 88228 US",
+        "date": "23-Jul-2017",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 303.17,
+        "discount": null,
+        "tax": 19.92,
+        "total": 315.42
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance87.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Lori Jacobs\", \"address\": \"56416 Bradley Spring East Alison, VI 42671 US\", \"date\": \"09-Apr-2018\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 531.36, \"discount\": 24.71, \"tax\": 20.89, \"total\": 535.46}}",
+    "original_data": {
+        "buyer": "Lori Jacobs",
+        "address": "56416 Bradley Spring East Alison, VI 42671 US",
+        "date": "09-Apr-2018",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 531.36,
+        "discount": 24.71,
+        "tax": 20.89,
+        "total": 535.46
+    }
+}

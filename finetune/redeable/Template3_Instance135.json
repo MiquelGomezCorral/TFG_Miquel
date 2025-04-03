@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance135.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jacob Miller\", \"address\": \"98956 Bell Route South Kathleen, ID 03831 US\", \"date\": \"17-Dec-2001\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 48.2, \"total\": 1085.05}}",
+    "original_data": {
+        "buyer": "Jacob Miller",
+        "address": "98956 Bell Route South Kathleen, ID 03831 US",
+        "date": "17-Dec-2001",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 48.2,
+        "total": 1085.05
+    }
+}

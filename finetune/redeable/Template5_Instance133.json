@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance133.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Clifford Lee\", \"address\": \"6685 Wright Street West Katieburgh, AZ 55826 US\", \"date\": \"13-Oct-1995\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 807.5, \"discount\": null, \"tax\": 27.16, \"total\": 825.37}}",
+    "original_data": {
+        "buyer": "Clifford Lee",
+        "address": "6685 Wright Street West Katieburgh, AZ 55826 US",
+        "date": "13-Oct-1995",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 807.5,
+        "discount": null,
+        "tax": 27.16,
+        "total": 825.37
+    }
+}

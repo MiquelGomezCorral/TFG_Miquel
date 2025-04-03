@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance120.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Darrell Burgess\", \"address\": \"380 Anderson Rapid West Catherinestad, MT 27841 US\", \"date\": \"08-Aug-1996\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 5.88, \"total\": 179.4}}",
+    "original_data": {
+        "buyer": "Darrell Burgess",
+        "address": "380 Anderson Rapid West Catherinestad, MT 27841 US",
+        "date": "08-Aug-1996",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 5.88,
+        "total": 179.4
+    }
+}

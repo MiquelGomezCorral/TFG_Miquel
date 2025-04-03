@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance3.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Clifford Hubbard\", \"address\": \"816 Tran Plaza Apt. 249 Rebeccabury, KS 60646 US\", \"date\": \"21-Jan-2018\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 516.46, \"discount\": 17.66, \"tax\": 34.66, \"total\": 529.33}}",
+    "original_data": {
+        "buyer": "Clifford Hubbard",
+        "address": "816 Tran Plaza Apt. 249 Rebeccabury, KS 60646 US",
+        "date": "21-Jan-2018",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 516.46,
+        "discount": 17.66,
+        "tax": 34.66,
+        "total": 529.33
+    }
+}

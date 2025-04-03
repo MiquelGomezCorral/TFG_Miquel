@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance80.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Susan Stewart\", \"address\": \"05057 Alexander Points Suite 479 Port Tommy, VT 17967 US\", \"date\": \"31-Jan-2013\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 28.99, \"total\": 965.39}}",
+    "original_data": {
+        "buyer": "Susan Stewart",
+        "address": "05057 Alexander Points Suite 479 Port Tommy, VT 17967 US",
+        "date": "31-Jan-2013",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 28.99,
+        "total": 965.39
+    }
+}

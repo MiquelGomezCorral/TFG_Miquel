@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance113.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Steven Smith\", \"address\": \"04082 Thomas Pike Longtown, MH 22557 US\", \"date\": \"12-Mar-2021\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 507.44, \"discount\": null, \"tax\": 31.07, \"total\": 522.88}}",
+    "original_data": {
+        "buyer": "Steven Smith",
+        "address": "04082 Thomas Pike Longtown, MH 22557 US",
+        "date": "12-Mar-2021",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 507.44,
+        "discount": null,
+        "tax": 31.07,
+        "total": 522.88
+    }
+}

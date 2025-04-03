@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance78.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Dustin Perry MD\", \"address\": \"331 Bradley Alley Apt. 115 North Jonathan, FM 89212 US\", \"date\": \"23-Apr-2009\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 572.73, \"discount\": null, \"tax\": null, \"total\": 567.79}}",
+    "original_data": {
+        "buyer": "Dustin Perry MD",
+        "address": "331 Bradley Alley Apt. 115 North Jonathan, FM 89212 US",
+        "date": "23-Apr-2009",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 572.73,
+        "discount": null,
+        "tax": null,
+        "total": 567.79
+    }
+}

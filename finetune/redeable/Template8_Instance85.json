@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance85.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Cynthia Jones\", \"address\": \"3585 Melissa Estate Suite 923 Evanston, MA 69931 US\", \"date\": \"03-Sep-1999\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 498.82, \"discount\": null, \"tax\": null, \"total\": 497.93}}",
+    "original_data": {
+        "buyer": "Cynthia Jones",
+        "address": "3585 Melissa Estate Suite 923 Evanston, MA 69931 US",
+        "date": "03-Sep-1999",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 498.82,
+        "discount": null,
+        "tax": null,
+        "total": 497.93
+    }
+}

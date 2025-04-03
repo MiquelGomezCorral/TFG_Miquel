@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance83.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Charlotte Chambers\", \"address\": \"9386 Molina Station Apt. 680 Jenniferfurt, MO 98653 US\", \"date\": \"24-Feb-2016\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 4.84, \"total\": 105.38}}",
+    "original_data": {
+        "buyer": "Charlotte Chambers",
+        "address": "9386 Molina Station Apt. 680 Jenniferfurt, MO 98653 US",
+        "date": "24-Feb-2016",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 4.84,
+        "total": 105.38
+    }
+}

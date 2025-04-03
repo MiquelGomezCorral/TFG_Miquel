@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance155.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kimberly Flores\", \"address\": \"88376 Lindsey Causeway New Tracey, WA 82027 US\", \"date\": \"25-Jul-2018\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 609.12, \"discount\": 20.28, \"tax\": 32.43, \"total\": 616.94}}",
+    "original_data": {
+        "buyer": "Kimberly Flores",
+        "address": "88376 Lindsey Causeway New Tracey, WA 82027 US",
+        "date": "25-Jul-2018",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 609.12,
+        "discount": 20.28,
+        "tax": 32.43,
+        "total": 616.94
+    }
+}

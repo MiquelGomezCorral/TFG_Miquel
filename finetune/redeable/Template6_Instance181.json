@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance181.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Christina Wilson\", \"address\": \"85458 Cuevas Pines Suite 018 West Rodneychester, PW 96821 US\", \"date\": \"12-Feb-2008\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 392.96, \"discount\": null, \"tax\": 27.15, \"total\": 413.7}}",
+    "original_data": {
+        "buyer": "Christina Wilson",
+        "address": "85458 Cuevas Pines Suite 018 West Rodneychester, PW 96821 US",
+        "date": "12-Feb-2008",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 392.96,
+        "discount": null,
+        "tax": 27.15,
+        "total": 413.7
+    }
+}

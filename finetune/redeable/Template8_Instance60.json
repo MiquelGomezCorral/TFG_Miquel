@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance60.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Lynn Melton\", \"address\": \"297 John Knolls Suite 184 North Josephfurt, AS 58835 US\", \"date\": \"24-Jul-1995\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 766.06, \"discount\": null, \"tax\": null, \"total\": 777.23}}",
+    "original_data": {
+        "buyer": "Lynn Melton",
+        "address": "297 John Knolls Suite 184 North Josephfurt, AS 58835 US",
+        "date": "24-Jul-1995",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 766.06,
+        "discount": null,
+        "tax": null,
+        "total": 777.23
+    }
+}

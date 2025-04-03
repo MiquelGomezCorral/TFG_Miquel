@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance127.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Anthony Murphy\", \"address\": \"28065 Galloway Fork Suite 909 Keithberg, RI 75652 US\", \"date\": \"14-Feb-2018\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 624.36, \"discount\": 19.17, \"tax\": 37.56, \"total\": 633.76}}",
+    "original_data": {
+        "buyer": "Anthony Murphy",
+        "address": "28065 Galloway Fork Suite 909 Keithberg, RI 75652 US",
+        "date": "14-Feb-2018",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 624.36,
+        "discount": 19.17,
+        "tax": 37.56,
+        "total": 633.76
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance85.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Daisy Nelson\", \"address\": \"883 Rice Corners Suite 559 East Melissastad, IL 94949 US\", \"date\": \"11-Jul-2005\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 142.3, \"discount\": null, \"tax\": 5.11, \"total\": 145.01}}",
+    "original_data": {
+        "buyer": "Daisy Nelson",
+        "address": "883 Rice Corners Suite 559 East Melissastad, IL 94949 US",
+        "date": "11-Jul-2005",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 142.3,
+        "discount": null,
+        "tax": 5.11,
+        "total": 145.01
+    }
+}

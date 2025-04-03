@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance17.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Adrienne Haynes\", \"address\": \"310 Aguirre Club Suite 392 New Scott, LA 78952 US\", \"date\": \"04-Oct-2018\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 197.07, \"discount\": 8.59, \"tax\": 11.98, \"total\": 205.29}}",
+    "original_data": {
+        "buyer": "Adrienne Haynes",
+        "address": "310 Aguirre Club Suite 392 New Scott, LA 78952 US",
+        "date": "04-Oct-2018",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 197.07,
+        "discount": 8.59,
+        "tax": 11.98,
+        "total": 205.29
+    }
+}

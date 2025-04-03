@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance49.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Joshua Bradley\", \"address\": \"7878 Jamie Freeway Lake Heidi, MS 27565 US\", \"date\": \"28-Nov-2015\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 667.75, \"discount\": null, \"tax\": null, \"total\": 678.64}}",
+    "original_data": {
+        "buyer": "Joshua Bradley",
+        "address": "7878 Jamie Freeway Lake Heidi, MS 27565 US",
+        "date": "28-Nov-2015",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 667.75,
+        "discount": null,
+        "tax": null,
+        "total": 678.64
+    }
+}

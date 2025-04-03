@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance70.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Derrick Carrillo\", \"address\": \"24312 Sandra Vista Suite 624 Jenniferborough, OR 97129 US\", \"date\": \"29-May-2009\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 443.32, \"discount\": null, \"tax\": 22.44, \"total\": 453.35}}",
+    "original_data": {
+        "buyer": "Derrick Carrillo",
+        "address": "24312 Sandra Vista Suite 624 Jenniferborough, OR 97129 US",
+        "date": "29-May-2009",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 443.32,
+        "discount": null,
+        "tax": 22.44,
+        "total": 453.35
+    }
+}

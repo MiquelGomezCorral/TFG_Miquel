@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance6.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Beverly Phillips\", \"address\": \"5665 Ashley Junctions East Angelafurt, NE 58186 US\", \"date\": \"06-Dec-2010\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 38.96, \"discount\": null, \"tax\": null, \"total\": 38.74}}",
+    "original_data": {
+        "buyer": "Beverly Phillips",
+        "address": "5665 Ashley Junctions East Angelafurt, NE 58186 US",
+        "date": "06-Dec-2010",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 38.96,
+        "discount": null,
+        "tax": null,
+        "total": 38.74
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance167.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jesse Chavez DDS\", \"address\": \"74535 Robert Roads Apt. 089 Fitzgeraldshire, IN 10493 US\", \"date\": \"12-Feb-2015\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 983.71, \"discount\": null, \"tax\": null, \"total\": 999.52}}",
+    "original_data": {
+        "buyer": "Jesse Chavez DDS",
+        "address": "74535 Robert Roads Apt. 089 Fitzgeraldshire, IN 10493 US",
+        "date": "12-Feb-2015",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 983.71,
+        "discount": null,
+        "tax": null,
+        "total": 999.52
+    }
+}

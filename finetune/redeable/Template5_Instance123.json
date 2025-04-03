@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance123.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Timothy Martinez\", \"address\": \"720 Gina Fords Suite 724 Carolynchester, NM 99166 US\", \"date\": \"02-Nov-2014\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 838.92, \"discount\": null, \"tax\": 54.81, \"total\": 877.54}}",
+    "original_data": {
+        "buyer": "Timothy Martinez",
+        "address": "720 Gina Fords Suite 724 Carolynchester, NM 99166 US",
+        "date": "02-Nov-2014",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 838.92,
+        "discount": null,
+        "tax": 54.81,
+        "total": 877.54
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance175.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Theresa Vega\", \"address\": \"95498 Peter Dam Apt. 698 Victoriaton, NE 34892 US\", \"date\": \"03-Jan-2008\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1183.88, \"discount\": null, \"tax\": 64.59, \"total\": 1203.25}}",
+    "original_data": {
+        "buyer": "Theresa Vega",
+        "address": "95498 Peter Dam Apt. 698 Victoriaton, NE 34892 US",
+        "date": "03-Jan-2008",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1183.88,
+        "discount": null,
+        "tax": 64.59,
+        "total": 1203.25
+    }
+}

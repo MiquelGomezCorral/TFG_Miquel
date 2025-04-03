@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance113.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"George Campbell\", \"address\": \"033 Kelly Shoal Suite 318 Port Ericfort, ND 45923 US\", \"date\": \"29-Jan-2019\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 14.71, \"total\": 280.45}}",
+    "original_data": {
+        "buyer": "George Campbell",
+        "address": "033 Kelly Shoal Suite 318 Port Ericfort, ND 45923 US",
+        "date": "29-Jan-2019",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 14.71,
+        "total": 280.45
+    }
+}

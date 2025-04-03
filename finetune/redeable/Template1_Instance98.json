@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance98.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Angela White\", \"address\": \"6518 Moore Views Apt. 408 North Sarah, PW 52112 US\", \"date\": \"27-Feb-2005\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 667.54, \"discount\": 8.01, \"tax\": 29.75, \"total\": 666.38}}",
+    "original_data": {
+        "buyer": "Angela White",
+        "address": "6518 Moore Views Apt. 408 North Sarah, PW 52112 US",
+        "date": "27-Feb-2005",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 667.54,
+        "discount": 8.01,
+        "tax": 29.75,
+        "total": 666.38
+    }
+}

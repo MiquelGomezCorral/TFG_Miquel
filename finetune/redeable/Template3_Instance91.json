@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance91.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Antonio Wilson\", \"address\": \"6749 Glenn Valleys Apt. 184 Robertton, MI 16270 US\", \"date\": \"07-Sep-2021\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 67.42, \"total\": 1135.63}}",
+    "original_data": {
+        "buyer": "Antonio Wilson",
+        "address": "6749 Glenn Valleys Apt. 184 Robertton, MI 16270 US",
+        "date": "07-Sep-2021",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 67.42,
+        "total": 1135.63
+    }
+}

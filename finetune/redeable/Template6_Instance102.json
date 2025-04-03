@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance102.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Cheryl Pope\", \"address\": \"4620 Dodson Turnpike Suite 663 Santiagoburgh, IN 28466 US\", \"date\": \"03-Oct-2017\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1194.69, \"discount\": null, \"tax\": 78.06, \"total\": 1213.85}}",
+    "original_data": {
+        "buyer": "Cheryl Pope",
+        "address": "4620 Dodson Turnpike Suite 663 Santiagoburgh, IN 28466 US",
+        "date": "03-Oct-2017",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1194.69,
+        "discount": null,
+        "tax": 78.06,
+        "total": 1213.85
+    }
+}

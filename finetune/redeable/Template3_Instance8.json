@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance8.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jack Johnson\", \"address\": \"093 Stafford Ferry Suite 317 New Robert, VA 22277 US\", \"date\": \"19-Mar-2016\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 12.35, \"total\": 267.38}}",
+    "original_data": {
+        "buyer": "Jack Johnson",
+        "address": "093 Stafford Ferry Suite 317 New Robert, VA 22277 US",
+        "date": "19-Mar-2016",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 12.35,
+        "total": 267.38
+    }
+}

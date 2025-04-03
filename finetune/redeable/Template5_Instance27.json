@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance27.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Melissa Jones\", \"address\": \"914 Robin Camp Lake Rebeccaview, MI 84024 US\", \"date\": \"08-Feb-2007\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 1162.34, \"discount\": null, \"tax\": 41.9, \"total\": 1192.38}}",
+    "original_data": {
+        "buyer": "Melissa Jones",
+        "address": "914 Robin Camp Lake Rebeccaview, MI 84024 US",
+        "date": "08-Feb-2007",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 1162.34,
+        "discount": null,
+        "tax": 41.9,
+        "total": 1192.38
+    }
+}

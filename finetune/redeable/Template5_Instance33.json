@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance33.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michael Houston\", \"address\": \"9612 Adrienne Land Suite 996 West Cherylview, GU 46977 US\", \"date\": \"29-May-2014\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 726.31, \"discount\": null, \"tax\": 42.23, \"total\": 757.5}}",
+    "original_data": {
+        "buyer": "Michael Houston",
+        "address": "9612 Adrienne Land Suite 996 West Cherylview, GU 46977 US",
+        "date": "29-May-2014",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 726.31,
+        "discount": null,
+        "tax": 42.23,
+        "total": 757.5
+    }
+}

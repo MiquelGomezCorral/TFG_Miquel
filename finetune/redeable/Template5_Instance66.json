@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance66.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Christian Chang\", \"address\": \"29059 Melissa Trail Suite 831 New Lauraport, GA 17851 US\", \"date\": \"02-Nov-2019\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 989.24, \"discount\": null, \"tax\": 46.01, \"total\": 989.65}}",
+    "original_data": {
+        "buyer": "Christian Chang",
+        "address": "29059 Melissa Trail Suite 831 New Lauraport, GA 17851 US",
+        "date": "02-Nov-2019",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 989.24,
+        "discount": null,
+        "tax": 46.01,
+        "total": 989.65
+    }
+}

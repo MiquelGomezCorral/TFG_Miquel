@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance109.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Amanda Smith\", \"address\": \"216 Tracy Extensions Apt. 357 Jacksonton, VT 38328 US\", \"date\": \"08-Nov-2008\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 240.45, \"discount\": null, \"tax\": 12.9, \"total\": 243.73}}",
+    "original_data": {
+        "buyer": "Amanda Smith",
+        "address": "216 Tracy Extensions Apt. 357 Jacksonton, VT 38328 US",
+        "date": "08-Nov-2008",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 240.45,
+        "discount": null,
+        "tax": 12.9,
+        "total": 243.73
+    }
+}

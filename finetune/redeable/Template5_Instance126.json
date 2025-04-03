@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance126.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Evelyn Harrington\", \"address\": \"8868 Gomez Locks Bryantland, PW 87817 US\", \"date\": \"09-May-1999\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 288.44, \"discount\": null, \"tax\": 9.93, \"total\": 290.58}}",
+    "original_data": {
+        "buyer": "Evelyn Harrington",
+        "address": "8868 Gomez Locks Bryantland, PW 87817 US",
+        "date": "09-May-1999",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 288.44,
+        "discount": null,
+        "tax": 9.93,
+        "total": 290.58
+    }
+}

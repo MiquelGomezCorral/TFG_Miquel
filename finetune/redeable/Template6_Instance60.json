@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance60.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Todd Lewis\", \"address\": \"53045 Smith Crossroad Apt. 348 Kristenmouth, WA 77320 US\", \"date\": \"21-May-2013\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 660.18, \"discount\": null, \"tax\": 37.32, \"total\": 688.92}}",
+    "original_data": {
+        "buyer": "Todd Lewis",
+        "address": "53045 Smith Crossroad Apt. 348 Kristenmouth, WA 77320 US",
+        "date": "21-May-2013",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 660.18,
+        "discount": null,
+        "tax": 37.32,
+        "total": 688.92
+    }
+}

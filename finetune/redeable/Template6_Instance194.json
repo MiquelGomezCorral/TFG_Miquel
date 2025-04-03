@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance194.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Alicia Wade\", \"address\": \"171 Kayla Views Jamieshire, OR 98447 US\", \"date\": \"16-Jun-2006\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 300.48, \"discount\": null, \"tax\": 11.64, \"total\": 298.48}}",
+    "original_data": {
+        "buyer": "Alicia Wade",
+        "address": "171 Kayla Views Jamieshire, OR 98447 US",
+        "date": "16-Jun-2006",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 300.48,
+        "discount": null,
+        "tax": 11.64,
+        "total": 298.48
+    }
+}

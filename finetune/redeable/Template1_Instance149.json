@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance149.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"David Garcia\", \"address\": \"86712 Rodriguez Crest Arielmouth, FM 13713 US\", \"date\": \"10-Mar-2001\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 484.41, \"discount\": 21.9, \"tax\": 19.54, \"total\": 497.31}}",
+    "original_data": {
+        "buyer": "David Garcia",
+        "address": "86712 Rodriguez Crest Arielmouth, FM 13713 US",
+        "date": "10-Mar-2001",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 484.41,
+        "discount": 21.9,
+        "tax": 19.54,
+        "total": 497.31
+    }
+}

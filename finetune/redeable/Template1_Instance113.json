@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance113.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"April Clay\", \"address\": \"2926 Mark Divide Suite 529 West Blake, VT 74736 US\", \"date\": \"07-Feb-1998\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1062.43, \"discount\": 19.34, \"tax\": 73.83, \"total\": 1099.5}}",
+    "original_data": {
+        "buyer": "April Clay",
+        "address": "2926 Mark Divide Suite 529 West Blake, VT 74736 US",
+        "date": "07-Feb-1998",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1062.43,
+        "discount": 19.34,
+        "tax": 73.83,
+        "total": 1099.5
+    }
+}
