@@ -30,8 +30,7 @@ import itertools
 from pydantic import BaseModel, Field
 from ocr_llm_module.llm.azure.azure_openai import AzureOpenAILanguageModel
 from ocr_llm_module.ocr.azure.document_intelligence import AzureDocumentIntelligenceClient
-from utils import parse_seconds_to_minutes, print_separator, print_time
-
+from utils import parse_seconds_to_minutes, print_separator, print_time, TimeTracker
 
 # Define the structure of the response from the LLM
 class LLMStructuredResponse(BaseModel):
@@ -91,7 +90,7 @@ def main(args):
     print_separator("Initializing Clients and  variables...", sep_type="LONG")
     llm_client: AzureOpenAILanguageModel = AzureOpenAILanguageModel()
     ocr_client: AzureDocumentIntelligenceClient = AzureDocumentIntelligenceClient()
-
+    TIME_TRACKER = TimeTracker(name="OCR LLM Testing")
     # ================ Process files ================
     # for document in os.listdir(args.dataset_path):
     print_separator(f"Processing {n_files} files...", sep_type="LONG")
@@ -105,9 +104,11 @@ def main(args):
     predictions: list[LLMStructuredResponse] = []
 
     t_start = time.time()
+    TIME_TRACKER.track(tag="Start")
     with open(metadata_path, "r", encoding="utf-8") as f:
         for line in itertools.islice(f, args.max_files):
             t_f_start = time.time()
+            TIME_TRACKER.track(tag="File start", verbose=True)
             
             document = json.loads(line)
             document_name = document["file_name"]
@@ -120,29 +121,23 @@ def main(args):
             # Read invoice from file to bytesIO
             print(" - Preparing document...", end="\r")
             file_io = prepare_document(io.BytesIO(), document_path)
-            t_aux_1 = time.time()
-            diff = t_aux_1 - t_f_start
-            total_time_preraring += diff
-            print_time(diff, prefix=" - Preparing document. ")
+            TIME_TRACKER.track(tag="- Preparing document.", verbose=True)
+            
+            print_time(diff, prefix="- Preparing document. ")
 
             # Send document to ORC to extract content
             print(" - Extracting content...", end="\r")
             document_content, pages = document_to_orc(ocr_client, file_io)
-            t_aux_2 = time.time()
-            diff = t_aux_2 - t_aux_1
-            total_time_extracting += diff
-            print_time(diff, prefix=" - Extracting content. ")
+            TIME_TRACKER.track(tag="- Extracting content.", verbose=True)
 
             # Define the prompt and send it to send to the LLM
             print(" - Creating structured output...", end="\r")
             llm_output = document_to_llm(llm_client, document_content)
             predictions.append(json.loads(llm_output.model_dump_json()))
             
-            t_f_end = time.time()
-            diff = t_f_end - t_aux_2
-            total_time_structured += diff
-            print_time(diff, prefix=" - Creating structured output. ")
+            TIME_TRACKER.track(tag=" - Creating structured output.", verbose=True)
 
+            t_f_end = time.time()
             count += 1
             eta = (n_files - count) * (t_f_end - t_start) / count
             print_time(t_f_end - t_f_start, prefix="Total ", sufix=f". ETA: {parse_seconds_to_minutes(eta)}")
