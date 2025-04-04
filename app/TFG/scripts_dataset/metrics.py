@@ -63,7 +63,17 @@ def levenshtein_similarity(str1, str2):
     return 1 - distance / max_len
 
 def levenshtein_distance(str1, str2):
+    """Asume str1 is the ground truh and str2 is the prediction"""
     m, n = len(str1), len(str2)
+    
+    if m == 0:
+        if n == 0:
+            return 0
+        else:
+            return 1
+    elif n == 0:
+        return 1
+    
     dp = [[0] * (n + 1) for _ in range(m + 1)]
 
     # Initialize the base cases
