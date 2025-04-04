@@ -30,7 +30,7 @@ import itertools
 from pydantic import BaseModel, Field
 from ocr_llm_module.llm.azure.azure_openai import AzureOpenAILanguageModel
 from ocr_llm_module.ocr.azure.document_intelligence import AzureDocumentIntelligenceClient
-from utils import parse_seconds_to_minutes, print_separator, print_time, TimeTracker
+from TFG.scripts_dataset.utils import parse_seconds_to_minutes, print_separator, print_time, TimeTracker
 
 # Define the structure of the response from the LLM
 class LLMStructuredResponse(BaseModel):
@@ -91,6 +91,7 @@ def main(args):
     llm_client: AzureOpenAILanguageModel = AzureOpenAILanguageModel()
     ocr_client: AzureDocumentIntelligenceClient = AzureDocumentIntelligenceClient()
     TIME_TRACKER = TimeTracker(name="OCR LLM Testing")
+    
     # ================ Process files ================
     # for document in os.listdir(args.dataset_path):
     print_separator(f"Processing {n_files} files...", sep_type="LONG")
@@ -104,9 +105,9 @@ def main(args):
     predictions: list[LLMStructuredResponse] = []
 
     t_start = time.time()
-    TIME_TRACKER.track(tag="Start")
     with open(metadata_path, "r", encoding="utf-8") as f:
         for line in itertools.islice(f, args.max_files):
+            TIME_TRACKER.track(tag="Start")
             t_f_start = time.time()
             TIME_TRACKER.track(tag="File start", verbose=True)
             
@@ -123,8 +124,6 @@ def main(args):
             file_io = prepare_document(io.BytesIO(), document_path)
             TIME_TRACKER.track(tag="- Preparing document.", verbose=True)
             
-            print_time(diff, prefix="- Preparing document. ")
-
             # Send document to ORC to extract content
             print(" - Extracting content...", end="\r")
             document_content, pages = document_to_orc(ocr_client, file_io)
@@ -137,6 +136,7 @@ def main(args):
             
             TIME_TRACKER.track(tag=" - Creating structured output.", verbose=True)
 
+            TIME_TRACKER.print_metrics()
             t_f_end = time.time()
             count += 1
             eta = (n_files - count) * (t_f_end - t_start) / count
@@ -242,7 +242,7 @@ if __name__ == "__main__":
     dotenv.load_dotenv()
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset_path", type=str, default="./datasets_finetune/outputs/FATURA/test")
+    parser.add_argument("--dataset_path", type=str, default="./dataset_finetune/test")
     parser.add_argument("--save_path", type=str, default="./outputs/ocr_llm/FATURA_NEXT")
     parser.add_argument("--max_files", type=int, default=None)
     parser.add_argument("--seed", type=int, default=42)
