@@ -1,0 +1,4184 @@
+{
+	"status": "succeeded",
+	"createdDateTime": "2025-04-03T17:58:15Z",
+	"lastUpdatedDateTime": "2025-04-03T17:58:15Z",
+	"analyzeResult": {
+		"apiVersion": "2024-11-30",
+		"modelId": "ocr_finetuned_25_v1",
+		"stringIndexType": "utf16CodeUnit",
+		"content": "Cq\nINVOICE\nDate: 21-Jan-2018 Due Date : 30-Sep-2004 PO Number :91\nAddress: 16424 Timothy Mission Markville, AK 58294 US\nEmail:melvin40@example.net www.ThompsonandSons.org (GSTIN: 12345670 00070007\nBill to: Clifford Hubbard 816 Tran Plaza Apt. 249 Rebeccabury, KS 60646 US Tel:+(871)109-5778 Email:markgomez@example.com Site:https://melendez.biz/\nGSTIN: OG@AAMFCO376K124\nITEMS\nQUANTITY\nPRICE\nTurn compare throw.\n4.00\n$31.88\nExist significant know.\n1.00\n$60.02\nUse exactly soldier class.\n6.00\n$54.82\nTotal in words: five hundred and twenty- -nine point three three\nBank Name Central Bank of USA\nBranch Name Raf CAMP\nBank Account Number 11158150\nBank Swift Code SBININBB250\nThank you for choosing us!\nSUB_TOTAL : 516.46 USD DISCOUNT(3.42%): (-) 17.66 TAX:VAT (6.71%): 34.66 USD\nTOTAL : 529.33 USD",
+		"pages": [
+			{
+				"pageNumber": 1,
+				"angle": -0.02759999968111515,
+				"width": 595,
+				"height": 841,
+				"unit": "pixel",
+				"words": [
+					{
+						"content": "Cq",
+						"polygon": [
+							25,
+							19,
+							76,
+							23,
+							76,
+							75,
+							23,
+							70
+						],
+						"confidence": 0.65,
+						"span": {
+							"offset": 0,
+							"length": 2
+						}
+					},
+					{
+						"content": "INVOICE",
+						"polygon": [
+							327,
+							20,
+							403,
+							20,
+							403,
+							38,
+							327,
+							38
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 3,
+							"length": 7
+						}
+					},
+					{
+						"content": "Date:",
+						"polygon": [
+							327,
+							52,
+							356,
+							52,
+							356,
+							65,
+							327,
+							65
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 11,
+							"length": 5
+						}
+					},
+					{
+						"content": "21-Jan-2018",
+						"polygon": [
+							359,
+							52,
+							429,
+							51,
+							429,
+							65,
+							359,
+							65
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 17,
+							"length": 11
+						}
+					},
+					{
+						"content": "Due",
+						"polygon": [
+							328,
+							68,
+							351,
+							68,
+							351,
+							81,
+							328,
+							81
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 29,
+							"length": 3
+						}
+					},
+					{
+						"content": "Date",
+						"polygon": [
+							355,
+							68,
+							379,
+							68,
+							379,
+							81,
+							355,
+							81
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 33,
+							"length": 4
+						}
+					},
+					{
+						"content": ":",
+						"polygon": [
+							382,
+							68,
+							387,
+							68,
+							387,
+							82,
+							382,
+							81
+						],
+						"confidence": 0.977,
+						"span": {
+							"offset": 38,
+							"length": 1
+						}
+					},
+					{
+						"content": "30-Sep-2004",
+						"polygon": [
+							391,
+							68,
+							463,
+							68,
+							463,
+							81,
+							391,
+							81
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 40,
+							"length": 11
+						}
+					},
+					{
+						"content": "PO",
+						"polygon": [
+							327,
+							84,
+							344,
+							84,
+							344,
+							97,
+							327,
+							97
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 52,
+							"length": 2
+						}
+					},
+					{
+						"content": "Number",
+						"polygon": [
+							348,
+							84,
+							388,
+							85,
+							388,
+							97,
+							348,
+							97
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 55,
+							"length": 6
+						}
+					},
+					{
+						"content": ":91",
+						"polygon": [
+							390,
+							85,
+							409,
+							84,
+							409,
+							97,
+							390,
+							97
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 62,
+							"length": 3
+						}
+					},
+					{
+						"content": "Address:",
+						"polygon": [
+							28,
+							143,
+							79,
+							143,
+							79,
+							156,
+							28,
+							156
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 66,
+							"length": 8
+						}
+					},
+					{
+						"content": "16424",
+						"polygon": [
+							81,
+							143,
+							114,
+							143,
+							114,
+							156,
+							81,
+							156
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 75,
+							"length": 5
+						}
+					},
+					{
+						"content": "Timothy",
+						"polygon": [
+							117,
+							143,
+							164,
+							143,
+							164,
+							156,
+							117,
+							156
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 81,
+							"length": 7
+						}
+					},
+					{
+						"content": "Mission",
+						"polygon": [
+							167,
+							143,
+							214,
+							143,
+							214,
+							156,
+							167,
+							156
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 89,
+							"length": 7
+						}
+					},
+					{
+						"content": "Markville,",
+						"polygon": [
+							28,
+							157,
+							83,
+							157,
+							83,
+							170,
+							28,
+							170
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 97,
+							"length": 10
+						}
+					},
+					{
+						"content": "AK",
+						"polygon": [
+							86,
+							157,
+							104,
+							157,
+							104,
+							170,
+							86,
+							170
+						],
+						"confidence": 0.998,
+						"span": {
+							"offset": 108,
+							"length": 2
+						}
+					},
+					{
+						"content": "58294",
+						"polygon": [
+							107,
+							157,
+							141,
+							157,
+							141,
+							170,
+							107,
+							170
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 111,
+							"length": 5
+						}
+					},
+					{
+						"content": "US",
+						"polygon": [
+							144,
+							157,
+							162,
+							157,
+							162,
+							170,
+							144,
+							170
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 117,
+							"length": 2
+						}
+					},
+					{
+						"content": "Email:melvin40@example.net",
+						"polygon": [
+							26,
+							188,
+							197,
+							188,
+							197,
+							201,
+							26,
+							201
+						],
+						"confidence": 0.974,
+						"span": {
+							"offset": 120,
+							"length": 26
+						}
+					},
+					{
+						"content": "www.ThompsonandSons.org",
+						"polygon": [
+							26,
+							203,
+							191,
+							203,
+							191,
+							216,
+							26,
+							215
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 147,
+							"length": 23
+						}
+					},
+					{
+						"content": "(GSTIN:",
+						"polygon": [
+							26,
+							216,
+							71,
+							216,
+							71,
+							229,
+							26,
+							230
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 171,
+							"length": 7
+						}
+					},
+					{
+						"content": "12345670",
+						"polygon": [
+							75,
+							216,
+							128,
+							216,
+							128,
+							229,
+							75,
+							229
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 179,
+							"length": 8
+						}
+					},
+					{
+						"content": "00070007",
+						"polygon": [
+							131,
+							216,
+							186,
+							216,
+							186,
+							229,
+							131,
+							229
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 188,
+							"length": 8
+						}
+					},
+					{
+						"content": "Bill",
+						"polygon": [
+							331,
+							141,
+							350,
+							142,
+							350,
+							155,
+							330,
+							155
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 197,
+							"length": 4
+						}
+					},
+					{
+						"content": "to:",
+						"polygon": [
+							353,
+							142,
+							366,
+							142,
+							366,
+							155,
+							353,
+							155
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 202,
+							"length": 3
+						}
+					},
+					{
+						"content": "Clifford",
+						"polygon": [
+							368,
+							142,
+							411,
+							142,
+							411,
+							155,
+							368,
+							155
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 206,
+							"length": 8
+						}
+					},
+					{
+						"content": "Hubbard",
+						"polygon": [
+							415,
+							142,
+							466,
+							141,
+							466,
+							155,
+							415,
+							155
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 215,
+							"length": 7
+						}
+					},
+					{
+						"content": "816",
+						"polygon": [
+							330,
+							156,
+							351,
+							156,
+							351,
+							169,
+							330,
+							169
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 223,
+							"length": 3
+						}
+					},
+					{
+						"content": "Tran",
+						"polygon": [
+							354,
+							156,
+							380,
+							156,
+							380,
+							169,
+							354,
+							169
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 227,
+							"length": 4
+						}
+					},
+					{
+						"content": "Plaza",
+						"polygon": [
+							384,
+							156,
+							415,
+							156,
+							415,
+							169,
+							384,
+							169
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 232,
+							"length": 5
+						}
+					},
+					{
+						"content": "Apt.",
+						"polygon": [
+							418,
+							156,
+							441,
+							156,
+							441,
+							169,
+							418,
+							169
+						],
+						"confidence": 0.99,
+						"span": {
+							"offset": 238,
+							"length": 4
+						}
+					},
+					{
+						"content": "249",
+						"polygon": [
+							444,
+							156,
+							466,
+							156,
+							466,
+							169,
+							444,
+							169
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 243,
+							"length": 3
+						}
+					},
+					{
+						"content": "Rebeccabury,",
+						"polygon": [
+							331,
+							171,
+							410,
+							171,
+							410,
+							184,
+							331,
+							184
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 247,
+							"length": 12
+						}
+					},
+					{
+						"content": "KS",
+						"polygon": [
+							414,
+							171,
+							430,
+							171,
+							430,
+							184,
+							414,
+							184
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 260,
+							"length": 2
+						}
+					},
+					{
+						"content": "60646",
+						"polygon": [
+							433,
+							170,
+							467,
+							170,
+							467,
+							183,
+							433,
+							184
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 263,
+							"length": 5
+						}
+					},
+					{
+						"content": "US",
+						"polygon": [
+							470,
+							170,
+							488,
+							170,
+							488,
+							183,
+							470,
+							183
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 269,
+							"length": 2
+						}
+					},
+					{
+						"content": "Tel:+(871)109-5778",
+						"polygon": [
+							331,
+							185,
+							440,
+							185,
+							440,
+							198,
+							331,
+							199
+						],
+						"confidence": 0.904,
+						"span": {
+							"offset": 272,
+							"length": 18
+						}
+					},
+					{
+						"content": "Email:markgomez@example.com",
+						"polygon": [
+							331,
+							200,
+							523,
+							200,
+							523,
+							213,
+							331,
+							213
+						],
+						"confidence": 0.949,
+						"span": {
+							"offset": 291,
+							"length": 27
+						}
+					},
+					{
+						"content": "Site:https://melendez.biz/",
+						"polygon": [
+							331,
+							214,
+							477,
+							214,
+							477,
+							227,
+							331,
+							227
+						],
+						"confidence": 0.957,
+						"span": {
+							"offset": 319,
+							"length": 26
+						}
+					},
+					{
+						"content": "GSTIN:",
+						"polygon": [
+							230,
+							239,
+							270,
+							240,
+							270,
+							254,
+							230,
+							254
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 346,
+							"length": 6
+						}
+					},
+					{
+						"content": "OG@AAMFCO376K124",
+						"polygon": [
+							274,
+							240,
+							408,
+							239,
+							408,
+							253,
+							274,
+							254
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 353,
+							"length": 16
+						}
+					},
+					{
+						"content": "ITEMS",
+						"polygon": [
+							119,
+							552,
+							151,
+							553,
+							151,
+							562,
+							119,
+							562
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 370,
+							"length": 5
+						}
+					},
+					{
+						"content": "QUANTITY",
+						"polygon": [
+							308,
+							552,
+							361,
+							552,
+							361,
+							563,
+							308,
+							563
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 376,
+							"length": 8
+						}
+					},
+					{
+						"content": "PRICE",
+						"polygon": [
+							468,
+							552,
+							501,
+							552,
+							501,
+							563,
+							468,
+							563
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 385,
+							"length": 5
+						}
+					},
+					{
+						"content": "Turn",
+						"polygon": [
+							88,
+							570,
+							109,
+							571,
+							109,
+							581,
+							88,
+							581
+						],
+						"confidence": 0.625,
+						"span": {
+							"offset": 391,
+							"length": 4
+						}
+					},
+					{
+						"content": "compare",
+						"polygon": [
+							111,
+							571,
+							151,
+							571,
+							151,
+							581,
+							111,
+							581
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 396,
+							"length": 7
+						}
+					},
+					{
+						"content": "throw.",
+						"polygon": [
+							153,
+							571,
+							182,
+							571,
+							182,
+							581,
+							153,
+							581
+						],
+						"confidence": 0.912,
+						"span": {
+							"offset": 404,
+							"length": 6
+						}
+					},
+					{
+						"content": "4.00",
+						"polygon": [
+							324,
+							571,
+							345,
+							571,
+							345,
+							580,
+							324,
+							580
+						],
+						"confidence": 0.987,
+						"span": {
+							"offset": 411,
+							"length": 4
+						}
+					},
+					{
+						"content": "$31.88",
+						"polygon": [
+							468,
+							570,
+							501,
+							570,
+							501,
+							581,
+							468,
+							581
+						],
+						"confidence": 0.794,
+						"span": {
+							"offset": 416,
+							"length": 6
+						}
+					},
+					{
+						"content": "Exist",
+						"polygon": [
+							85,
+							588,
+							107,
+							589,
+							107,
+							599,
+							85,
+							599
+						],
+						"confidence": 0.996,
+						"span": {
+							"offset": 423,
+							"length": 5
+						}
+					},
+					{
+						"content": "significant",
+						"polygon": [
+							110,
+							589,
+							155,
+							589,
+							155,
+							600,
+							110,
+							599
+						],
+						"confidence": 0.989,
+						"span": {
+							"offset": 429,
+							"length": 11
+						}
+					},
+					{
+						"content": "know.",
+						"polygon": [
+							157,
+							589,
+							184,
+							589,
+							184,
+							600,
+							157,
+							600
+						],
+						"confidence": 0.704,
+						"span": {
+							"offset": 441,
+							"length": 5
+						}
+					},
+					{
+						"content": "1.00",
+						"polygon": [
+							325,
+							589,
+							345,
+							589,
+							345,
+							598,
+							325,
+							598
+						],
+						"confidence": 0.99,
+						"span": {
+							"offset": 447,
+							"length": 4
+						}
+					},
+					{
+						"content": "$60.02",
+						"polygon": [
+							468,
+							588,
+							502,
+							588,
+							502,
+							599,
+							468,
+							599
+						],
+						"confidence": 0.929,
+						"span": {
+							"offset": 452,
+							"length": 6
+						}
+					},
+					{
+						"content": "Use",
+						"polygon": [
+							78,
+							606,
+							96,
+							606,
+							96,
+							617,
+							78,
+							617
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 459,
+							"length": 3
+						}
+					},
+					{
+						"content": "exactly",
+						"polygon": [
+							99,
+							607,
+							130,
+							607,
+							130,
+							617,
+							99,
+							617
+						],
+						"confidence": 0.989,
+						"span": {
+							"offset": 463,
+							"length": 7
+						}
+					},
+					{
+						"content": "soldier",
+						"polygon": [
+							133,
+							607,
+							163,
+							607,
+							163,
+							617,
+							133,
+							617
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 471,
+							"length": 7
+						}
+					},
+					{
+						"content": "class.",
+						"polygon": [
+							165,
+							607,
+							192,
+							606,
+							192,
+							617,
+							165,
+							617
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 479,
+							"length": 6
+						}
+					},
+					{
+						"content": "6.00",
+						"polygon": [
+							323,
+							607,
+							345,
+							607,
+							345,
+							616,
+							323,
+							616
+						],
+						"confidence": 0.986,
+						"span": {
+							"offset": 486,
+							"length": 4
+						}
+					},
+					{
+						"content": "$54.82",
+						"polygon": [
+							468,
+							606,
+							502,
+							606,
+							502,
+							617,
+							468,
+							617
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 491,
+							"length": 6
+						}
+					},
+					{
+						"content": "Total",
+						"polygon": [
+							8,
+							655,
+							37,
+							655,
+							37,
+							667,
+							8,
+							667
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 498,
+							"length": 5
+						}
+					},
+					{
+						"content": "in",
+						"polygon": [
+							41,
+							655,
+							51,
+							655,
+							51,
+							667,
+							41,
+							667
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 504,
+							"length": 2
+						}
+					},
+					{
+						"content": "words:",
+						"polygon": [
+							54,
+							655,
+							93,
+							655,
+							93,
+							668,
+							54,
+							667
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 507,
+							"length": 6
+						}
+					},
+					{
+						"content": "five",
+						"polygon": [
+							100,
+							655,
+							121,
+							655,
+							121,
+							668,
+							100,
+							668
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 514,
+							"length": 4
+						}
+					},
+					{
+						"content": "hundred",
+						"polygon": [
+							125,
+							655,
+							172,
+							655,
+							172,
+							668,
+							125,
+							668
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 519,
+							"length": 7
+						}
+					},
+					{
+						"content": "and",
+						"polygon": [
+							176,
+							655,
+							197,
+							655,
+							197,
+							668,
+							176,
+							668
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 527,
+							"length": 3
+						}
+					},
+					{
+						"content": "twenty-",
+						"polygon": [
+							200,
+							655,
+							245,
+							655,
+							245,
+							668,
+							200,
+							668
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 531,
+							"length": 7
+						}
+					},
+					{
+						"content": "-nine",
+						"polygon": [
+							8,
+							670,
+							37,
+							670,
+							37,
+							682,
+							8,
+							682
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 539,
+							"length": 5
+						}
+					},
+					{
+						"content": "point",
+						"polygon": [
+							41,
+							670,
+							70,
+							670,
+							70,
+							682,
+							41,
+							682
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 545,
+							"length": 5
+						}
+					},
+					{
+						"content": "three",
+						"polygon": [
+							73,
+							670,
+							102,
+							670,
+							102,
+							681,
+							73,
+							682
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 551,
+							"length": 5
+						}
+					},
+					{
+						"content": "three",
+						"polygon": [
+							106,
+							670,
+							137,
+							670,
+							137,
+							681,
+							106,
+							681
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 557,
+							"length": 5
+						}
+					},
+					{
+						"content": "Bank",
+						"polygon": [
+							8,
+							682,
+							38,
+							682,
+							38,
+							694,
+							8,
+							694
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 563,
+							"length": 4
+						}
+					},
+					{
+						"content": "Name",
+						"polygon": [
+							41,
+							682,
+							75,
+							683,
+							75,
+							694,
+							41,
+							694
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 568,
+							"length": 4
+						}
+					},
+					{
+						"content": "Central",
+						"polygon": [
+							110,
+							682,
+							152,
+							682,
+							152,
+							694,
+							110,
+							694
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 573,
+							"length": 7
+						}
+					},
+					{
+						"content": "Bank",
+						"polygon": [
+							156,
+							682,
+							185,
+							682,
+							185,
+							694,
+							156,
+							694
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 581,
+							"length": 4
+						}
+					},
+					{
+						"content": "of",
+						"polygon": [
+							188,
+							682,
+							200,
+							682,
+							200,
+							694,
+							188,
+							694
+						],
+						"confidence": 0.999,
+						"span": {
+							"offset": 586,
+							"length": 2
+						}
+					},
+					{
+						"content": "USA",
+						"polygon": [
+							203,
+							682,
+							229,
+							682,
+							229,
+							694,
+							203,
+							694
+						],
+						"confidence": 0.996,
+						"span": {
+							"offset": 589,
+							"length": 3
+						}
+					},
+					{
+						"content": "Branch",
+						"polygon": [
+							8,
+							696,
+							50,
+							696,
+							50,
+							708,
+							8,
+							708
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 593,
+							"length": 6
+						}
+					},
+					{
+						"content": "Name",
+						"polygon": [
+							54,
+							697,
+							87,
+							697,
+							87,
+							708,
+							54,
+							708
+						],
+						"confidence": 0.989,
+						"span": {
+							"offset": 600,
+							"length": 4
+						}
+					},
+					{
+						"content": "Raf",
+						"polygon": [
+							119,
+							697,
+							139,
+							697,
+							139,
+							708,
+							119,
+							708
+						],
+						"confidence": 0.996,
+						"span": {
+							"offset": 605,
+							"length": 3
+						}
+					},
+					{
+						"content": "CAMP",
+						"polygon": [
+							142,
+							696,
+							178,
+							696,
+							178,
+							708,
+							142,
+							708
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 609,
+							"length": 4
+						}
+					},
+					{
+						"content": "Bank",
+						"polygon": [
+							8,
+							711,
+							38,
+							711,
+							38,
+							723,
+							8,
+							723
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 614,
+							"length": 4
+						}
+					},
+					{
+						"content": "Account",
+						"polygon": [
+							41,
+							711,
+							89,
+							711,
+							89,
+							723,
+							41,
+							723
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 619,
+							"length": 7
+						}
+					},
+					{
+						"content": "Number",
+						"polygon": [
+							91,
+							711,
+							138,
+							711,
+							138,
+							723,
+							91,
+							723
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 627,
+							"length": 6
+						}
+					},
+					{
+						"content": "11158150",
+						"polygon": [
+							145,
+							711,
+							199,
+							710,
+							199,
+							723,
+							145,
+							723
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 634,
+							"length": 8
+						}
+					},
+					{
+						"content": "Bank",
+						"polygon": [
+							8,
+							725,
+							38,
+							725,
+							38,
+							737,
+							8,
+							737
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 643,
+							"length": 4
+						}
+					},
+					{
+						"content": "Swift",
+						"polygon": [
+							42,
+							725,
+							70,
+							725,
+							70,
+							737,
+							42,
+							737
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 648,
+							"length": 5
+						}
+					},
+					{
+						"content": "Code",
+						"polygon": [
+							73,
+							725,
+							105,
+							725,
+							105,
+							737,
+							73,
+							737
+						],
+						"confidence": 0.989,
+						"span": {
+							"offset": 654,
+							"length": 4
+						}
+					},
+					{
+						"content": "SBININBB250",
+						"polygon": [
+							122,
+							725,
+							202,
+							725,
+							202,
+							737,
+							122,
+							737
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 659,
+							"length": 11
+						}
+					},
+					{
+						"content": "Thank",
+						"polygon": [
+							7,
+							769,
+							44,
+							769,
+							44,
+							783,
+							7,
+							783
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 671,
+							"length": 5
+						}
+					},
+					{
+						"content": "you",
+						"polygon": [
+							47,
+							769,
+							68,
+							769,
+							68,
+							783,
+							47,
+							783
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 677,
+							"length": 3
+						}
+					},
+					{
+						"content": "for",
+						"polygon": [
+							72,
+							769,
+							88,
+							769,
+							88,
+							783,
+							71,
+							783
+						],
+						"confidence": 0.999,
+						"span": {
+							"offset": 681,
+							"length": 3
+						}
+					},
+					{
+						"content": "choosing",
+						"polygon": [
+							91,
+							769,
+							144,
+							769,
+							144,
+							783,
+							91,
+							783
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 685,
+							"length": 8
+						}
+					},
+					{
+						"content": "us!",
+						"polygon": [
+							148,
+							769,
+							168,
+							769,
+							168,
+							783,
+							148,
+							783
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 694,
+							"length": 3
+						}
+					},
+					{
+						"content": "SUB_TOTAL",
+						"polygon": [
+							387,
+							664,
+							460,
+							664,
+							460,
+							677,
+							387,
+							677
+						],
+						"confidence": 0.958,
+						"span": {
+							"offset": 698,
+							"length": 9
+						}
+					},
+					{
+						"content": ":",
+						"polygon": [
+							463,
+							664,
+							466,
+							664,
+							466,
+							677,
+							463,
+							677
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 708,
+							"length": 1
+						}
+					},
+					{
+						"content": "516.46",
+						"polygon": [
+							470,
+							664,
+							507,
+							664,
+							507,
+							677,
+							470,
+							677
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 710,
+							"length": 6
+						}
+					},
+					{
+						"content": "USD",
+						"polygon": [
+							513,
+							664,
+							540,
+							664,
+							540,
+							677,
+							513,
+							677
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 717,
+							"length": 3
+						}
+					},
+					{
+						"content": "DISCOUNT(3.42%):",
+						"polygon": [
+							387,
+							680,
+							495,
+							680,
+							495,
+							694,
+							387,
+							693
+						],
+						"confidence": 0.935,
+						"span": {
+							"offset": 721,
+							"length": 16
+						}
+					},
+					{
+						"content": "(-)",
+						"polygon": [
+							499,
+							680,
+							511,
+							680,
+							511,
+							693,
+							499,
+							693
+						],
+						"confidence": 0.962,
+						"span": {
+							"offset": 738,
+							"length": 3
+						}
+					},
+					{
+						"content": "17.66",
+						"polygon": [
+							518,
+							680,
+							550,
+							680,
+							550,
+							693,
+							518,
+							693
+						],
+						"confidence": 0.996,
+						"span": {
+							"offset": 742,
+							"length": 5
+						}
+					},
+					{
+						"content": "TAX:VAT",
+						"polygon": [
+							387,
+							694,
+							439,
+							694,
+							439,
+							706,
+							387,
+							706
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 748,
+							"length": 7
+						}
+					},
+					{
+						"content": "(6.71%):",
+						"polygon": [
+							443,
+							694,
+							488,
+							693,
+							488,
+							706,
+							443,
+							706
+						],
+						"confidence": 0.98,
+						"span": {
+							"offset": 756,
+							"length": 8
+						}
+					},
+					{
+						"content": "34.66",
+						"polygon": [
+							495,
+							693,
+							525,
+							693,
+							525,
+							706,
+							495,
+							706
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 765,
+							"length": 5
+						}
+					},
+					{
+						"content": "USD",
+						"polygon": [
+							529,
+							693,
+							555,
+							693,
+							555,
+							706,
+							529,
+							706
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 771,
+							"length": 3
+						}
+					},
+					{
+						"content": "TOTAL",
+						"polygon": [
+							386,
+							737,
+							426,
+							737,
+							426,
+							750,
+							386,
+							750
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 775,
+							"length": 5
+						}
+					},
+					{
+						"content": ":",
+						"polygon": [
+							429,
+							737,
+							434,
+							737,
+							434,
+							750,
+							429,
+							750
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 781,
+							"length": 1
+						}
+					},
+					{
+						"content": "529.33",
+						"polygon": [
+							438,
+							737,
+							474,
+							737,
+							474,
+							750,
+							438,
+							750
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 783,
+							"length": 6
+						}
+					},
+					{
+						"content": "USD",
+						"polygon": [
+							478,
+							737,
+							505,
+							737,
+							505,
+							750,
+							478,
+							750
+						],
+						"confidence": 0.996,
+						"span": {
+							"offset": 790,
+							"length": 3
+						}
+					}
+				],
+				"lines": [
+					{
+						"content": "Cq",
+						"polygon": [
+							25,
+							19,
+							76,
+							21,
+							74,
+							74,
+							23,
+							72
+						],
+						"spans": [
+							{
+								"offset": 0,
+								"length": 2
+							}
+						]
+					},
+					{
+						"content": "INVOICE",
+						"polygon": [
+							327,
+							20,
+							402,
+							20,
+							403,
+							38,
+							327,
+							38
+						],
+						"spans": [
+							{
+								"offset": 3,
+								"length": 7
+							}
+						]
+					},
+					{
+						"content": "Date: 21-Jan-2018",
+						"polygon": [
+							327,
+							52,
+							428,
+							51,
+							428,
+							65,
+							327,
+							65
+						],
+						"spans": [
+							{
+								"offset": 11,
+								"length": 17
+							}
+						]
+					},
+					{
+						"content": "Due Date : 30-Sep-2004",
+						"polygon": [
+							328,
+							68,
+							463,
+							68,
+							463,
+							81,
+							328,
+							82
+						],
+						"spans": [
+							{
+								"offset": 29,
+								"length": 22
+							}
+						]
+					},
+					{
+						"content": "PO Number :91",
+						"polygon": [
+							327,
+							84,
+							408,
+							84,
+							408,
+							96,
+							327,
+							96
+						],
+						"spans": [
+							{
+								"offset": 52,
+								"length": 13
+							}
+						]
+					},
+					{
+						"content": "Address: 16424 Timothy Mission",
+						"polygon": [
+							28,
+							143,
+							213,
+							143,
+							213,
+							156,
+							28,
+							156
+						],
+						"spans": [
+							{
+								"offset": 66,
+								"length": 30
+							}
+						]
+					},
+					{
+						"content": "Markville, AK 58294 US",
+						"polygon": [
+							28,
+							157,
+							162,
+							157,
+							162,
+							170,
+							28,
+							170
+						],
+						"spans": [
+							{
+								"offset": 97,
+								"length": 22
+							}
+						]
+					},
+					{
+						"content": "Email:melvin40@example.net",
+						"polygon": [
+							26,
+							188,
+							197,
+							188,
+							197,
+							201,
+							26,
+							201
+						],
+						"spans": [
+							{
+								"offset": 120,
+								"length": 26
+							}
+						]
+					},
+					{
+						"content": "www.ThompsonandSons.org",
+						"polygon": [
+							26,
+							203,
+							191,
+							203,
+							190,
+							216,
+							26,
+							215
+						],
+						"spans": [
+							{
+								"offset": 147,
+								"length": 23
+							}
+						]
+					},
+					{
+						"content": "(GSTIN: 12345670 00070007",
+						"polygon": [
+							26,
+							216,
+							186,
+							215,
+							186,
+							229,
+							26,
+							229
+						],
+						"spans": [
+							{
+								"offset": 171,
+								"length": 25
+							}
+						]
+					},
+					{
+						"content": "Bill to: Clifford Hubbard",
+						"polygon": [
+							330,
+							141,
+							465,
+							141,
+							465,
+							155,
+							330,
+							154
+						],
+						"spans": [
+							{
+								"offset": 197,
+								"length": 25
+							}
+						]
+					},
+					{
+						"content": "816 Tran Plaza Apt. 249",
+						"polygon": [
+							330,
+							156,
+							465,
+							156,
+							465,
+							169,
+							330,
+							169
+						],
+						"spans": [
+							{
+								"offset": 223,
+								"length": 23
+							}
+						]
+					},
+					{
+						"content": "Rebeccabury, KS 60646 US",
+						"polygon": [
+							331,
+							171,
+							488,
+							170,
+							488,
+							183,
+							331,
+							184
+						],
+						"spans": [
+							{
+								"offset": 247,
+								"length": 24
+							}
+						]
+					},
+					{
+						"content": "Tel:+(871)109-5778",
+						"polygon": [
+							331,
+							185,
+							439,
+							185,
+							439,
+							198,
+							331,
+							198
+						],
+						"spans": [
+							{
+								"offset": 272,
+								"length": 18
+							}
+						]
+					},
+					{
+						"content": "Email:markgomez@example.com",
+						"polygon": [
+							331,
+							200,
+							523,
+							200,
+							523,
+							213,
+							331,
+							213
+						],
+						"spans": [
+							{
+								"offset": 291,
+								"length": 27
+							}
+						]
+					},
+					{
+						"content": "Site:https://melendez.biz/",
+						"polygon": [
+							331,
+							214,
+							477,
+							214,
+							477,
+							227,
+							331,
+							227
+						],
+						"spans": [
+							{
+								"offset": 319,
+								"length": 26
+							}
+						]
+					},
+					{
+						"content": "GSTIN: OG@AAMFCO376K124",
+						"polygon": [
+							230,
+							239,
+							408,
+							239,
+							408,
+							253,
+							230,
+							254
+						],
+						"spans": [
+							{
+								"offset": 346,
+								"length": 23
+							}
+						]
+					},
+					{
+						"content": "ITEMS",
+						"polygon": [
+							119,
+							552,
+							151,
+							553,
+							151,
+							562,
+							119,
+							562
+						],
+						"spans": [
+							{
+								"offset": 370,
+								"length": 5
+							}
+						]
+					},
+					{
+						"content": "QUANTITY",
+						"polygon": [
+							308,
+							552,
+							361,
+							552,
+							361,
+							563,
+							308,
+							563
+						],
+						"spans": [
+							{
+								"offset": 376,
+								"length": 8
+							}
+						]
+					},
+					{
+						"content": "PRICE",
+						"polygon": [
+							468,
+							552,
+							500,
+							552,
+							500,
+							563,
+							468,
+							562
+						],
+						"spans": [
+							{
+								"offset": 385,
+								"length": 5
+							}
+						]
+					},
+					{
+						"content": "Turn compare throw.",
+						"polygon": [
+							88,
+							570,
+							182,
+							571,
+							182,
+							581,
+							88,
+							581
+						],
+						"spans": [
+							{
+								"offset": 391,
+								"length": 19
+							}
+						]
+					},
+					{
+						"content": "4.00",
+						"polygon": [
+							324,
+							571,
+							345,
+							571,
+							345,
+							580,
+							324,
+							580
+						],
+						"spans": [
+							{
+								"offset": 411,
+								"length": 4
+							}
+						]
+					},
+					{
+						"content": "$31.88",
+						"polygon": [
+							468,
+							570,
+							501,
+							570,
+							501,
+							580,
+							468,
+							580
+						],
+						"spans": [
+							{
+								"offset": 416,
+								"length": 6
+							}
+						]
+					},
+					{
+						"content": "Exist significant know.",
+						"polygon": [
+							85,
+							588,
+							184,
+							589,
+							184,
+							600,
+							85,
+							599
+						],
+						"spans": [
+							{
+								"offset": 423,
+								"length": 23
+							}
+						]
+					},
+					{
+						"content": "1.00",
+						"polygon": [
+							325,
+							589,
+							345,
+							589,
+							345,
+							598,
+							325,
+							598
+						],
+						"spans": [
+							{
+								"offset": 447,
+								"length": 4
+							}
+						]
+					},
+					{
+						"content": "$60.02",
+						"polygon": [
+							468,
+							588,
+							501,
+							588,
+							501,
+							599,
+							468,
+							599
+						],
+						"spans": [
+							{
+								"offset": 452,
+								"length": 6
+							}
+						]
+					},
+					{
+						"content": "Use exactly soldier class.",
+						"polygon": [
+							78,
+							606,
+							191,
+							606,
+							191,
+							617,
+							78,
+							617
+						],
+						"spans": [
+							{
+								"offset": 459,
+								"length": 26
+							}
+						]
+					},
+					{
+						"content": "6.00",
+						"polygon": [
+							323,
+							607,
+							345,
+							607,
+							345,
+							616,
+							323,
+							616
+						],
+						"spans": [
+							{
+								"offset": 486,
+								"length": 4
+							}
+						]
+					},
+					{
+						"content": "$54.82",
+						"polygon": [
+							468,
+							606,
+							501,
+							606,
+							501,
+							616,
+							468,
+							616
+						],
+						"spans": [
+							{
+								"offset": 491,
+								"length": 6
+							}
+						]
+					},
+					{
+						"content": "Total in words: five hundred and twenty-",
+						"polygon": [
+							8,
+							654,
+							245,
+							655,
+							245,
+							668,
+							8,
+							668
+						],
+						"spans": [
+							{
+								"offset": 498,
+								"length": 40
+							}
+						]
+					},
+					{
+						"content": "-nine point three three",
+						"polygon": [
+							8,
+							670,
+							136,
+							670,
+							136,
+							681,
+							8,
+							682
+						],
+						"spans": [
+							{
+								"offset": 539,
+								"length": 23
+							}
+						]
+					},
+					{
+						"content": "Bank Name",
+						"polygon": [
+							8,
+							682,
+							75,
+							682,
+							75,
+							694,
+							8,
+							694
+						],
+						"spans": [
+							{
+								"offset": 563,
+								"length": 9
+							}
+						]
+					},
+					{
+						"content": "Central Bank of USA",
+						"polygon": [
+							110,
+							682,
+							229,
+							682,
+							229,
+							694,
+							110,
+							694
+						],
+						"spans": [
+							{
+								"offset": 573,
+								"length": 19
+							}
+						]
+					},
+					{
+						"content": "Branch Name",
+						"polygon": [
+							8,
+							696,
+							87,
+							697,
+							87,
+							708,
+							8,
+							708
+						],
+						"spans": [
+							{
+								"offset": 593,
+								"length": 11
+							}
+						]
+					},
+					{
+						"content": "Raf CAMP",
+						"polygon": [
+							119,
+							696,
+							178,
+							696,
+							178,
+							708,
+							119,
+							708
+						],
+						"spans": [
+							{
+								"offset": 605,
+								"length": 8
+							}
+						]
+					},
+					{
+						"content": "Bank Account Number 11158150",
+						"polygon": [
+							8,
+							711,
+							199,
+							710,
+							199,
+							723,
+							8,
+							723
+						],
+						"spans": [
+							{
+								"offset": 614,
+								"length": 28
+							}
+						]
+					},
+					{
+						"content": "Bank Swift Code",
+						"polygon": [
+							8,
+							725,
+							104,
+							725,
+							104,
+							737,
+							8,
+							737
+						],
+						"spans": [
+							{
+								"offset": 643,
+								"length": 15
+							}
+						]
+					},
+					{
+						"content": "SBININBB250",
+						"polygon": [
+							122,
+							725,
+							202,
+							725,
+							202,
+							737,
+							122,
+							737
+						],
+						"spans": [
+							{
+								"offset": 659,
+								"length": 11
+							}
+						]
+					},
+					{
+						"content": "Thank you for choosing us!",
+						"polygon": [
+							7,
+							769,
+							168,
+							769,
+							168,
+							783,
+							7,
+							783
+						],
+						"spans": [
+							{
+								"offset": 671,
+								"length": 26
+							}
+						]
+					},
+					{
+						"content": "SUB_TOTAL : 516.46 USD",
+						"polygon": [
+							387,
+							664,
+							539,
+							664,
+							539,
+							677,
+							387,
+							677
+						],
+						"spans": [
+							{
+								"offset": 698,
+								"length": 22
+							}
+						]
+					},
+					{
+						"content": "DISCOUNT(3.42%): (-) 17.66",
+						"polygon": [
+							387,
+							680,
+							550,
+							680,
+							550,
+							693,
+							387,
+							693
+						],
+						"spans": [
+							{
+								"offset": 721,
+								"length": 26
+							}
+						]
+					},
+					{
+						"content": "TAX:VAT (6.71%): 34.66 USD",
+						"polygon": [
+							387,
+							694,
+							555,
+							693,
+							555,
+							706,
+							387,
+							706
+						],
+						"spans": [
+							{
+								"offset": 748,
+								"length": 26
+							}
+						]
+					},
+					{
+						"content": "TOTAL : 529.33 USD",
+						"polygon": [
+							386,
+							737,
+							504,
+							737,
+							504,
+							749,
+							386,
+							750
+						],
+						"spans": [
+							{
+								"offset": 775,
+								"length": 18
+							}
+						]
+					}
+				],
+				"spans": [
+					{
+						"offset": 0,
+						"length": 793
+					}
+				]
+			}
+		],
+		"tables": [
+			{
+				"rowCount": 4,
+				"columnCount": 3,
+				"cells": [
+					{
+						"kind": "columnHeader",
+						"rowIndex": 0,
+						"columnIndex": 0,
+						"content": "ITEMS",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									36,
+									549,
+									248,
+									549,
+									248,
+									566,
+									36,
+									566
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 370,
+								"length": 5
+							}
+						],
+						"elements": [
+							"/paragraphs/7"
+						]
+					},
+					{
+						"kind": "columnHeader",
+						"rowIndex": 0,
+						"columnIndex": 1,
+						"content": "QUANTITY",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									248,
+									549,
+									413,
+									549,
+									413,
+									566,
+									248,
+									566
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 376,
+								"length": 8
+							}
+						],
+						"elements": [
+							"/paragraphs/8"
+						]
+					},
+					{
+						"kind": "columnHeader",
+						"rowIndex": 0,
+						"columnIndex": 2,
+						"content": "PRICE",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									413,
+									549,
+									537,
+									549,
+									537,
+									566,
+									413,
+									566
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 385,
+								"length": 5
+							}
+						],
+						"elements": [
+							"/paragraphs/9"
+						]
+					},
+					{
+						"rowIndex": 1,
+						"columnIndex": 0,
+						"content": "Turn compare throw.",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									36,
+									566,
+									248,
+									566,
+									248,
+									584,
+									36,
+									584
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 391,
+								"length": 19
+							}
+						],
+						"elements": [
+							"/paragraphs/10"
+						]
+					},
+					{
+						"rowIndex": 1,
+						"columnIndex": 1,
+						"content": "4.00",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									248,
+									566,
+									413,
+									566,
+									413,
+									584,
+									248,
+									584
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 411,
+								"length": 4
+							}
+						],
+						"elements": [
+							"/paragraphs/11"
+						]
+					},
+					{
+						"rowIndex": 1,
+						"columnIndex": 2,
+						"content": "$31.88",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									413,
+									566,
+									537,
+									566,
+									538,
+									584,
+									413,
+									584
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 416,
+								"length": 6
+							}
+						],
+						"elements": [
+							"/paragraphs/12"
+						]
+					},
+					{
+						"rowIndex": 2,
+						"columnIndex": 0,
+						"content": "Exist significant know.",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									36,
+									584,
+									248,
+									584,
+									248,
+									602,
+									36,
+									602
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 423,
+								"length": 23
+							}
+						],
+						"elements": [
+							"/paragraphs/13"
+						]
+					},
+					{
+						"rowIndex": 2,
+						"columnIndex": 1,
+						"content": "1.00",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									248,
+									584,
+									413,
+									584,
+									413,
+									602,
+									248,
+									602
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 447,
+								"length": 4
+							}
+						],
+						"elements": [
+							"/paragraphs/14"
+						]
+					},
+					{
+						"rowIndex": 2,
+						"columnIndex": 2,
+						"content": "$60.02",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									413,
+									584,
+									538,
+									584,
+									538,
+									602,
+									413,
+									602
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 452,
+								"length": 6
+							}
+						],
+						"elements": [
+							"/paragraphs/15"
+						]
+					},
+					{
+						"rowIndex": 3,
+						"columnIndex": 0,
+						"content": "Use exactly soldier class.",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									36,
+									602,
+									248,
+									602,
+									248,
+									620,
+									36,
+									619
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 459,
+								"length": 26
+							}
+						],
+						"elements": [
+							"/paragraphs/16"
+						]
+					},
+					{
+						"rowIndex": 3,
+						"columnIndex": 1,
+						"content": "6.00",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									248,
+									602,
+									413,
+									602,
+									414,
+									620,
+									248,
+									620
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 486,
+								"length": 4
+							}
+						],
+						"elements": [
+							"/paragraphs/17"
+						]
+					},
+					{
+						"rowIndex": 3,
+						"columnIndex": 2,
+						"content": "$54.82",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									413,
+									602,
+									538,
+									602,
+									538,
+									620,
+									414,
+									620
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 491,
+								"length": 6
+							}
+						],
+						"elements": [
+							"/paragraphs/18"
+						]
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							9,
+							547,
+							560,
+							547,
+							560,
+							621,
+							9,
+							621
+						]
+					}
+				],
+				"spans": [
+					{
+						"offset": 370,
+						"length": 127
+					}
+				]
+			}
+		],
+		"paragraphs": [
+			{
+				"spans": [
+					{
+						"offset": 0,
+						"length": 2
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							25,
+							19,
+							76,
+							21,
+							74,
+							74,
+							23,
+							72
+						]
+					}
+				],
+				"content": "Cq"
+			},
+			{
+				"spans": [
+					{
+						"offset": 3,
+						"length": 7
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							327,
+							20,
+							402,
+							20,
+							403,
+							38,
+							327,
+							38
+						]
+					}
+				],
+				"role": "title",
+				"content": "INVOICE"
+			},
+			{
+				"spans": [
+					{
+						"offset": 11,
+						"length": 54
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							327,
+							52,
+							463,
+							51,
+							463,
+							96,
+							327,
+							97
+						]
+					}
+				],
+				"content": "Date: 21-Jan-2018 Due Date : 30-Sep-2004 PO Number :91"
+			},
+			{
+				"spans": [
+					{
+						"offset": 66,
+						"length": 53
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							28,
+							143,
+							213,
+							143,
+							213,
+							170,
+							28,
+							170
+						]
+					}
+				],
+				"content": "Address: 16424 Timothy Mission Markville, AK 58294 US"
+			},
+			{
+				"spans": [
+					{
+						"offset": 120,
+						"length": 76
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							26,
+							188,
+							197,
+							188,
+							197,
+							229,
+							26,
+							229
+						]
+					}
+				],
+				"content": "Email:melvin40@example.net www.ThompsonandSons.org (GSTIN: 12345670 00070007"
+			},
+			{
+				"spans": [
+					{
+						"offset": 197,
+						"length": 148
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							330,
+							141,
+							523,
+							141,
+							523,
+							227,
+							330,
+							227
+						]
+					}
+				],
+				"content": "Bill to: Clifford Hubbard 816 Tran Plaza Apt. 249 Rebeccabury, KS 60646 US Tel:+(871)109-5778 Email:markgomez@example.com Site:https://melendez.biz/"
+			},
+			{
+				"spans": [
+					{
+						"offset": 346,
+						"length": 23
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							230,
+							239,
+							408,
+							239,
+							408,
+							253,
+							230,
+							254
+						]
+					}
+				],
+				"content": "GSTIN: OG@AAMFCO376K124"
+			},
+			{
+				"spans": [
+					{
+						"offset": 370,
+						"length": 5
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							36,
+							549,
+							248,
+							549,
+							248,
+							566,
+							36,
+							566
+						]
+					}
+				],
+				"content": "ITEMS"
+			},
+			{
+				"spans": [
+					{
+						"offset": 376,
+						"length": 8
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							248,
+							549,
+							413,
+							549,
+							413,
+							566,
+							248,
+							566
+						]
+					}
+				],
+				"content": "QUANTITY"
+			},
+			{
+				"spans": [
+					{
+						"offset": 385,
+						"length": 5
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							413,
+							549,
+							537,
+							549,
+							537,
+							566,
+							413,
+							566
+						]
+					}
+				],
+				"content": "PRICE"
+			},
+			{
+				"spans": [
+					{
+						"offset": 391,
+						"length": 19
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							36,
+							566,
+							248,
+							566,
+							248,
+							584,
+							36,
+							584
+						]
+					}
+				],
+				"content": "Turn compare throw."
+			},
+			{
+				"spans": [
+					{
+						"offset": 411,
+						"length": 4
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							248,
+							566,
+							413,
+							566,
+							413,
+							584,
+							248,
+							584
+						]
+					}
+				],
+				"content": "4.00"
+			},
+			{
+				"spans": [
+					{
+						"offset": 416,
+						"length": 6
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							413,
+							566,
+							537,
+							566,
+							538,
+							584,
+							413,
+							584
+						]
+					}
+				],
+				"content": "$31.88"
+			},
+			{
+				"spans": [
+					{
+						"offset": 423,
+						"length": 23
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							36,
+							584,
+							248,
+							584,
+							248,
+							602,
+							36,
+							602
+						]
+					}
+				],
+				"content": "Exist significant know."
+			},
+			{
+				"spans": [
+					{
+						"offset": 447,
+						"length": 4
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							248,
+							584,
+							413,
+							584,
+							413,
+							602,
+							248,
+							602
+						]
+					}
+				],
+				"content": "1.00"
+			},
+			{
+				"spans": [
+					{
+						"offset": 452,
+						"length": 6
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							413,
+							584,
+							538,
+							584,
+							538,
+							602,
+							413,
+							602
+						]
+					}
+				],
+				"content": "$60.02"
+			},
+			{
+				"spans": [
+					{
+						"offset": 459,
+						"length": 26
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							36,
+							602,
+							248,
+							602,
+							248,
+							620,
+							36,
+							619
+						]
+					}
+				],
+				"content": "Use exactly soldier class."
+			},
+			{
+				"spans": [
+					{
+						"offset": 486,
+						"length": 4
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							248,
+							602,
+							413,
+							602,
+							414,
+							620,
+							248,
+							620
+						]
+					}
+				],
+				"content": "6.00"
+			},
+			{
+				"spans": [
+					{
+						"offset": 491,
+						"length": 6
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							413,
+							602,
+							538,
+							602,
+							538,
+							620,
+							414,
+							620
+						]
+					}
+				],
+				"content": "$54.82"
+			},
+			{
+				"spans": [
+					{
+						"offset": 498,
+						"length": 64
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							8,
+							654,
+							245,
+							655,
+							245,
+							682,
+							8,
+							682
+						]
+					}
+				],
+				"content": "Total in words: five hundred and twenty- -nine point three three"
+			},
+			{
+				"spans": [
+					{
+						"offset": 563,
+						"length": 29
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							8,
+							682,
+							229,
+							682,
+							229,
+							694,
+							8,
+							694
+						]
+					}
+				],
+				"content": "Bank Name Central Bank of USA"
+			},
+			{
+				"spans": [
+					{
+						"offset": 593,
+						"length": 20
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							8,
+							696,
+							178,
+							696,
+							178,
+							708,
+							8,
+							708
+						]
+					}
+				],
+				"content": "Branch Name Raf CAMP"
+			},
+			{
+				"spans": [
+					{
+						"offset": 614,
+						"length": 28
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							8,
+							711,
+							199,
+							710,
+							199,
+							723,
+							8,
+							723
+						]
+					}
+				],
+				"content": "Bank Account Number 11158150"
+			},
+			{
+				"spans": [
+					{
+						"offset": 643,
+						"length": 27
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							8,
+							725,
+							202,
+							725,
+							202,
+							737,
+							8,
+							737
+						]
+					}
+				],
+				"content": "Bank Swift Code SBININBB250"
+			},
+			{
+				"spans": [
+					{
+						"offset": 671,
+						"length": 26
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							7,
+							769,
+							168,
+							769,
+							168,
+							783,
+							7,
+							783
+						]
+					}
+				],
+				"content": "Thank you for choosing us!"
+			},
+			{
+				"spans": [
+					{
+						"offset": 698,
+						"length": 76
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							387,
+							664,
+							555,
+							664,
+							555,
+							706,
+							387,
+							706
+						]
+					}
+				],
+				"content": "SUB_TOTAL : 516.46 USD DISCOUNT(3.42%): (-) 17.66 TAX:VAT (6.71%): 34.66 USD"
+			},
+			{
+				"spans": [
+					{
+						"offset": 775,
+						"length": 18
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							386,
+							737,
+							504,
+							737,
+							504,
+							749,
+							386,
+							750
+						]
+					}
+				],
+				"content": "TOTAL : 529.33 USD"
+			}
+		],
+		"styles": [],
+		"documents": [
+			{
+				"docType": "ocr_finetuned_25_v1",
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							0,
+							0,
+							595,
+							0,
+							595,
+							841,
+							0,
+							841
+						]
+					}
+				],
+				"fields": {
+					"Buyer": {
+						"type": "string",
+						"valueString": "Clifford Hubbard",
+						"content": "Clifford Hubbard",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									368,
+									141,
+									466,
+									141,
+									466,
+									155,
+									368,
+									155
+								]
+							}
+						],
+						"confidence": 0.895,
+						"spans": [
+							{
+								"offset": 206,
+								"length": 16
+							}
+						]
+					},
+					"Date": {
+						"type": "date",
+						"valueDate": "2018-01-21",
+						"content": "21-Jan-2018",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									359,
+									52,
+									429,
+									51,
+									429,
+									65,
+									359,
+									65
+								]
+							}
+						],
+						"confidence": 0.922,
+						"spans": [
+							{
+								"offset": 17,
+								"length": 11
+							}
+						]
+					},
+					"Currency": {
+						"type": "string",
+						"valueString": "USD",
+						"content": "USD",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									478,
+									737,
+									505,
+									737,
+									505,
+									750,
+									478,
+									750
+								]
+							}
+						],
+						"confidence": 0.923,
+						"spans": [
+							{
+								"offset": 790,
+								"length": 3
+							}
+						]
+					},
+					"Discount": {
+						"type": "string",
+						"valueString": "17.66",
+						"content": "17.66",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									518,
+									680,
+									550,
+									680,
+									550,
+									693,
+									518,
+									693
+								]
+							}
+						],
+						"confidence": 0.894,
+						"spans": [
+							{
+								"offset": 742,
+								"length": 5
+							}
+						]
+					},
+					"Address": {
+						"type": "string",
+						"valueString": "816 Tran Plaza Apt. 249 Rebeccabury, KS 60646 US",
+						"content": "816 Tran Plaza Apt. 249 Rebeccabury, KS 60646 US",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									330,
+									156,
+									488,
+									156,
+									488,
+									184,
+									330,
+									184
+								]
+							}
+						],
+						"confidence": 0.836,
+						"spans": [
+							{
+								"offset": 223,
+								"length": 48
+							}
+						]
+					},
+					"SubTotal": {
+						"type": "string",
+						"valueString": "516.46",
+						"content": "516.46",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									470,
+									664,
+									507,
+									664,
+									507,
+									677,
+									470,
+									677
+								]
+							}
+						],
+						"confidence": 0.901,
+						"spans": [
+							{
+								"offset": 710,
+								"length": 6
+							}
+						]
+					},
+					"Tax": {
+						"type": "string",
+						"valueString": "34.66",
+						"content": "34.66",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									495,
+									693,
+									525,
+									693,
+									525,
+									706,
+									495,
+									706
+								]
+							}
+						],
+						"confidence": 0.901,
+						"spans": [
+							{
+								"offset": 765,
+								"length": 5
+							}
+						]
+					},
+					"Total": {
+						"type": "string",
+						"valueString": "529.33",
+						"content": "529.33",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									438,
+									737,
+									474,
+									737,
+									474,
+									750,
+									438,
+									750
+								]
+							}
+						],
+						"confidence": 0.902,
+						"spans": [
+							{
+								"offset": 783,
+								"length": 6
+							}
+						]
+					}
+				},
+				"confidence": 0.99,
+				"spans": [
+					{
+						"offset": 0,
+						"length": 793
+					}
+				]
+			}
+		],
+		"contentFormat": "text",
+		"sections": [
+			{
+				"spans": [
+					{
+						"offset": 0,
+						"length": 793
+					}
+				],
+				"elements": [
+					"/sections/1",
+					"/sections/2"
+				]
+			},
+			{
+				"spans": [
+					{
+						"offset": 0,
+						"length": 2
+					}
+				],
+				"elements": [
+					"/figures/0"
+				]
+			},
+			{
+				"spans": [
+					{
+						"offset": 3,
+						"length": 790
+					}
+				],
+				"elements": [
+					"/paragraphs/1",
+					"/paragraphs/2",
+					"/paragraphs/3",
+					"/paragraphs/4",
+					"/paragraphs/5",
+					"/paragraphs/6",
+					"/tables/0",
+					"/paragraphs/19",
+					"/paragraphs/20",
+					"/paragraphs/21",
+					"/paragraphs/22",
+					"/paragraphs/23",
+					"/paragraphs/24",
+					"/paragraphs/25",
+					"/paragraphs/26"
+				]
+			}
+		],
+		"figures": [
+			{
+				"id": "1.1",
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							9,
+							8,
+							80,
+							8,
+							80,
+							87,
+							9,
+							87
+						]
+					}
+				],
+				"spans": [
+					{
+						"offset": 0,
+						"length": 2
+					}
+				],
+				"elements": [
+					"/paragraphs/0"
+				]
+			}
+		]
+	}
+}

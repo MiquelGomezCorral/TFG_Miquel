@@ -1,0 +1,5262 @@
+{
+	"status": "succeeded",
+	"createdDateTime": "2025-04-03T17:58:08Z",
+	"lastUpdatedDateTime": "2025-04-03T17:58:08Z",
+	"analyzeResult": {
+		"apiVersion": "2024-11-30",
+		"modelId": "ocr_finetuned_25_v1",
+		"stringIndexType": "utf16CodeUnit",
+		"content": "TAX INVOICE\nKirk, Murphy and Daniels\nTICKYLUZIDK AGNO\nInvoice Date: 22-Sep-2007\nInvoice number INV76884730\nPO Number :43\nBILL_TO:\nStephanie Bentley\n39872 Williams Glens\nMcdanielton, GA 07552 US\nTel:+(946)005-3349\nEmail:susanthomas@example.net\nSite:http://scott.com/\nDue Date : 09-Jan-2008\nQty\nID\nDescription\nUnit price\nAmount\n5.00\n005392\nHair blood operation.\n78.97\n394.85\n5.00\n567209\nPerform writer.\n62.59\n312.95\n5.00\n491742\nThen want show.\n56.36\n281.80\n2.00\n653899\nPay last.\n74.23\n148.46\n5.00\n323355\nLanguage measure thousand.\n83.05\n415.25\nNote: All payments to be made in cash. Contact us for queries on these quotations.\nTAX:VAT (6.14%): 95.36 USD\nTOTAL : 1599.27 USD\nTotal in words: one thousand, five hundred an- d ninety-nine point two seven",
+		"pages": [
+			{
+				"pageNumber": 1,
+				"angle": 0.057735420763492584,
+				"width": 595,
+				"height": 841,
+				"unit": "pixel",
+				"words": [
+					{
+						"content": "TAX",
+						"polygon": [
+							241,
+							11,
+							278,
+							11,
+							278,
+							29,
+							241,
+							29
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 0,
+							"length": 3
+						}
+					},
+					{
+						"content": "INVOICE",
+						"polygon": [
+							284,
+							11,
+							359,
+							11,
+							359,
+							29,
+							284,
+							29
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 4,
+							"length": 7
+						}
+					},
+					{
+						"content": "Kirk,",
+						"polygon": [
+							5,
+							63,
+							31,
+							63,
+							31,
+							78,
+							5,
+							77
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 12,
+							"length": 5
+						}
+					},
+					{
+						"content": "Murphy",
+						"polygon": [
+							34,
+							63,
+							78,
+							63,
+							78,
+							78,
+							34,
+							78
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 18,
+							"length": 6
+						}
+					},
+					{
+						"content": "and",
+						"polygon": [
+							82,
+							63,
+							103,
+							63,
+							103,
+							77,
+							82,
+							77
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 25,
+							"length": 3
+						}
+					},
+					{
+						"content": "Daniels",
+						"polygon": [
+							106,
+							63,
+							150,
+							63,
+							150,
+							77,
+							106,
+							77
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 29,
+							"length": 7
+						}
+					},
+					{
+						"content": "TICKYLUZIDK",
+						"polygon": [
+							15,
+							113,
+							52,
+							96,
+							52,
+							103,
+							19,
+							118
+						],
+						"confidence": 0.262,
+						"span": {
+							"offset": 37,
+							"length": 11
+						}
+					},
+					{
+						"content": "AGNO",
+						"polygon": [
+							62,
+							97,
+							82,
+							112,
+							77,
+							117,
+							60,
+							104
+						],
+						"confidence": 0.099,
+						"span": {
+							"offset": 49,
+							"length": 4
+						}
+					},
+					{
+						"content": "Invoice",
+						"polygon": [
+							425,
+							117,
+							464,
+							117,
+							464,
+							130,
+							425,
+							130
+						],
+						"confidence": 0.977,
+						"span": {
+							"offset": 54,
+							"length": 7
+						}
+					},
+					{
+						"content": "Date:",
+						"polygon": [
+							468,
+							117,
+							496,
+							117,
+							496,
+							130,
+							468,
+							130
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 62,
+							"length": 5
+						}
+					},
+					{
+						"content": "22-Sep-2007",
+						"polygon": [
+							499,
+							117,
+							570,
+							116,
+							571,
+							130,
+							499,
+							130
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 68,
+							"length": 11
+						}
+					},
+					{
+						"content": "Invoice",
+						"polygon": [
+							425,
+							140,
+							464,
+							140,
+							464,
+							153,
+							425,
+							153
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 80,
+							"length": 7
+						}
+					},
+					{
+						"content": "number",
+						"polygon": [
+							467,
+							140,
+							507,
+							140,
+							507,
+							153,
+							467,
+							153
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 88,
+							"length": 6
+						}
+					},
+					{
+						"content": "INV76884730",
+						"polygon": [
+							510,
+							140,
+							586,
+							139,
+							586,
+							153,
+							510,
+							153
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 95,
+							"length": 11
+						}
+					},
+					{
+						"content": "PO",
+						"polygon": [
+							424,
+							161,
+							441,
+							161,
+							441,
+							174,
+							424,
+							174
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 107,
+							"length": 2
+						}
+					},
+					{
+						"content": "Number",
+						"polygon": [
+							444,
+							161,
+							486,
+							161,
+							486,
+							174,
+							444,
+							174
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 110,
+							"length": 6
+						}
+					},
+					{
+						"content": ":43",
+						"polygon": [
+							489,
+							161,
+							506,
+							161,
+							506,
+							174,
+							489,
+							174
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 117,
+							"length": 3
+						}
+					},
+					{
+						"content": "BILL_TO:",
+						"polygon": [
+							196,
+							220,
+							247,
+							221,
+							247,
+							233,
+							196,
+							233
+						],
+						"confidence": 0.988,
+						"span": {
+							"offset": 121,
+							"length": 8
+						}
+					},
+					{
+						"content": "Stephanie",
+						"polygon": [
+							196,
+							234,
+							249,
+							234,
+							249,
+							247,
+							196,
+							246
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 130,
+							"length": 9
+						}
+					},
+					{
+						"content": "Bentley",
+						"polygon": [
+							252,
+							234,
+							293,
+							234,
+							293,
+							247,
+							252,
+							247
+						],
+						"confidence": 0.996,
+						"span": {
+							"offset": 140,
+							"length": 7
+						}
+					},
+					{
+						"content": "39872",
+						"polygon": [
+							196,
+							247,
+							227,
+							247,
+							227,
+							259,
+							196,
+							259
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 148,
+							"length": 5
+						}
+					},
+					{
+						"content": "Williams",
+						"polygon": [
+							230,
+							247,
+							275,
+							247,
+							275,
+							259,
+							230,
+							259
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 154,
+							"length": 8
+						}
+					},
+					{
+						"content": "Glens",
+						"polygon": [
+							278,
+							247,
+							310,
+							247,
+							310,
+							259,
+							278,
+							259
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 163,
+							"length": 5
+						}
+					},
+					{
+						"content": "Mcdanielton,",
+						"polygon": [
+							196,
+							260,
+							263,
+							260,
+							263,
+							272,
+							196,
+							272
+						],
+						"confidence": 0.974,
+						"span": {
+							"offset": 169,
+							"length": 12
+						}
+					},
+					{
+						"content": "GA",
+						"polygon": [
+							267,
+							260,
+							283,
+							260,
+							283,
+							272,
+							267,
+							272
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 182,
+							"length": 2
+						}
+					},
+					{
+						"content": "07552",
+						"polygon": [
+							286,
+							260,
+							317,
+							260,
+							317,
+							272,
+							286,
+							272
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 185,
+							"length": 5
+						}
+					},
+					{
+						"content": "US",
+						"polygon": [
+							320,
+							260,
+							337,
+							260,
+							337,
+							272,
+							320,
+							272
+						],
+						"confidence": 0.983,
+						"span": {
+							"offset": 191,
+							"length": 2
+						}
+					},
+					{
+						"content": "Tel:+(946)005-3349",
+						"polygon": [
+							196,
+							273,
+							296,
+							273,
+							296,
+							285,
+							196,
+							286
+						],
+						"confidence": 0.963,
+						"span": {
+							"offset": 194,
+							"length": 18
+						}
+					},
+					{
+						"content": "Email:susanthomas@example.net",
+						"polygon": [
+							196,
+							286,
+							377,
+							286,
+							377,
+							299,
+							196,
+							299
+						],
+						"confidence": 0.911,
+						"span": {
+							"offset": 213,
+							"length": 29
+						}
+					},
+					{
+						"content": "Site:http://scott.com/",
+						"polygon": [
+							196,
+							300,
+							307,
+							300,
+							307,
+							312,
+							196,
+							312
+						],
+						"confidence": 0.977,
+						"span": {
+							"offset": 243,
+							"length": 22
+						}
+					},
+					{
+						"content": "Due",
+						"polygon": [
+							186,
+							387,
+							209,
+							387,
+							209,
+							399,
+							186,
+							399
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 266,
+							"length": 3
+						}
+					},
+					{
+						"content": "Date",
+						"polygon": [
+							213,
+							387,
+							238,
+							387,
+							238,
+							399,
+							213,
+							399
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 270,
+							"length": 4
+						}
+					},
+					{
+						"content": ":",
+						"polygon": [
+							240,
+							387,
+							245,
+							387,
+							245,
+							399,
+							240,
+							399
+						],
+						"confidence": 0.977,
+						"span": {
+							"offset": 275,
+							"length": 1
+						}
+					},
+					{
+						"content": "09-Jan-2008",
+						"polygon": [
+							249,
+							387,
+							319,
+							386,
+							319,
+							399,
+							249,
+							399
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 277,
+							"length": 11
+						}
+					},
+					{
+						"content": "Qty",
+						"polygon": [
+							8,
+							420,
+							36,
+							421,
+							36,
+							435,
+							8,
+							434
+						],
+						"confidence": 0.986,
+						"span": {
+							"offset": 289,
+							"length": 3
+						}
+					},
+					{
+						"content": "ID",
+						"polygon": [
+							68,
+							421,
+							86,
+							421,
+							86,
+							433,
+							69,
+							433
+						],
+						"confidence": 0.913,
+						"span": {
+							"offset": 293,
+							"length": 2
+						}
+					},
+					{
+						"content": "Description",
+						"polygon": [
+							138,
+							420,
+							219,
+							420,
+							219,
+							435,
+							138,
+							435
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 296,
+							"length": 11
+						}
+					},
+					{
+						"content": "Unit",
+						"polygon": [
+							373,
+							420,
+							402,
+							420,
+							402,
+							435,
+							373,
+							435
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 308,
+							"length": 4
+						}
+					},
+					{
+						"content": "price",
+						"polygon": [
+							405,
+							420,
+							442,
+							420,
+							442,
+							435,
+							405,
+							435
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 313,
+							"length": 5
+						}
+					},
+					{
+						"content": "Amount",
+						"polygon": [
+							470,
+							421,
+							526,
+							421,
+							526,
+							434,
+							470,
+							434
+						],
+						"confidence": 0.989,
+						"span": {
+							"offset": 319,
+							"length": 6
+						}
+					},
+					{
+						"content": "5.00",
+						"polygon": [
+							8,
+							437,
+							37,
+							438,
+							37,
+							450,
+							8,
+							450
+						],
+						"confidence": 0.977,
+						"span": {
+							"offset": 326,
+							"length": 4
+						}
+					},
+					{
+						"content": "005392",
+						"polygon": [
+							68,
+							437,
+							117,
+							437,
+							117,
+							450,
+							68,
+							450
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 331,
+							"length": 6
+						}
+					},
+					{
+						"content": "Hair",
+						"polygon": [
+							138,
+							437,
+							164,
+							437,
+							164,
+							451,
+							138,
+							451
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 338,
+							"length": 4
+						}
+					},
+					{
+						"content": "blood",
+						"polygon": [
+							167,
+							437,
+							201,
+							438,
+							201,
+							451,
+							167,
+							451
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 343,
+							"length": 5
+						}
+					},
+					{
+						"content": "operation.",
+						"polygon": [
+							206,
+							438,
+							269,
+							438,
+							269,
+							451,
+							206,
+							451
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 349,
+							"length": 10
+						}
+					},
+					{
+						"content": "78.97",
+						"polygon": [
+							389,
+							437,
+							426,
+							437,
+							426,
+							450,
+							389,
+							450
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 360,
+							"length": 5
+						}
+					},
+					{
+						"content": "394.85",
+						"polygon": [
+							475,
+							437,
+							520,
+							437,
+							520,
+							450,
+							475,
+							450
+						],
+						"confidence": 0.996,
+						"span": {
+							"offset": 366,
+							"length": 6
+						}
+					},
+					{
+						"content": "5.00",
+						"polygon": [
+							8,
+							455,
+							37,
+							456,
+							37,
+							468,
+							8,
+							468
+						],
+						"confidence": 0.977,
+						"span": {
+							"offset": 373,
+							"length": 4
+						}
+					},
+					{
+						"content": "567209",
+						"polygon": [
+							68,
+							455,
+							117,
+							455,
+							117,
+							468,
+							68,
+							468
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 378,
+							"length": 6
+						}
+					},
+					{
+						"content": "Perform",
+						"polygon": [
+							138,
+							455,
+							182,
+							456,
+							182,
+							469,
+							138,
+							469
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 385,
+							"length": 7
+						}
+					},
+					{
+						"content": "writer.",
+						"polygon": [
+							191,
+							456,
+							231,
+							456,
+							231,
+							469,
+							191,
+							469
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 393,
+							"length": 7
+						}
+					},
+					{
+						"content": "62.59",
+						"polygon": [
+							389,
+							455,
+							426,
+							455,
+							426,
+							468,
+							389,
+							468
+						],
+						"confidence": 0.996,
+						"span": {
+							"offset": 401,
+							"length": 5
+						}
+					},
+					{
+						"content": "312.95",
+						"polygon": [
+							475,
+							455,
+							520,
+							455,
+							520,
+							468,
+							475,
+							468
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 407,
+							"length": 6
+						}
+					},
+					{
+						"content": "5.00",
+						"polygon": [
+							8,
+							473,
+							37,
+							474,
+							37,
+							486,
+							8,
+							486
+						],
+						"confidence": 0.989,
+						"span": {
+							"offset": 414,
+							"length": 4
+						}
+					},
+					{
+						"content": "491742",
+						"polygon": [
+							68,
+							473,
+							116,
+							473,
+							116,
+							486,
+							68,
+							486
+						],
+						"confidence": 0.998,
+						"span": {
+							"offset": 419,
+							"length": 6
+						}
+					},
+					{
+						"content": "Then",
+						"polygon": [
+							138,
+							474,
+							168,
+							474,
+							168,
+							487,
+							138,
+							487
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 426,
+							"length": 4
+						}
+					},
+					{
+						"content": "want",
+						"polygon": [
+							173,
+							474,
+							205,
+							474,
+							205,
+							487,
+							173,
+							487
+						],
+						"confidence": 0.996,
+						"span": {
+							"offset": 431,
+							"length": 4
+						}
+					},
+					{
+						"content": "show.",
+						"polygon": [
+							208,
+							474,
+							244,
+							474,
+							244,
+							487,
+							208,
+							487
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 436,
+							"length": 5
+						}
+					},
+					{
+						"content": "56.36",
+						"polygon": [
+							389,
+							473,
+							426,
+							473,
+							426,
+							486,
+							389,
+							486
+						],
+						"confidence": 0.996,
+						"span": {
+							"offset": 442,
+							"length": 5
+						}
+					},
+					{
+						"content": "281.80",
+						"polygon": [
+							475,
+							473,
+							519,
+							473,
+							519,
+							486,
+							475,
+							486
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 448,
+							"length": 6
+						}
+					},
+					{
+						"content": "2.00",
+						"polygon": [
+							8,
+							491,
+							37,
+							491,
+							37,
+							504,
+							8,
+							504
+						],
+						"confidence": 0.983,
+						"span": {
+							"offset": 455,
+							"length": 4
+						}
+					},
+					{
+						"content": "653899",
+						"polygon": [
+							68,
+							491,
+							116,
+							491,
+							116,
+							504,
+							68,
+							504
+						],
+						"confidence": 0.998,
+						"span": {
+							"offset": 460,
+							"length": 6
+						}
+					},
+					{
+						"content": "Pay",
+						"polygon": [
+							138,
+							491,
+							161,
+							491,
+							161,
+							505,
+							138,
+							505
+						],
+						"confidence": 0.998,
+						"span": {
+							"offset": 467,
+							"length": 3
+						}
+					},
+					{
+						"content": "last.",
+						"polygon": [
+							164,
+							491,
+							192,
+							491,
+							192,
+							505,
+							164,
+							505
+						],
+						"confidence": 0.984,
+						"span": {
+							"offset": 471,
+							"length": 5
+						}
+					},
+					{
+						"content": "74.23",
+						"polygon": [
+							389,
+							491,
+							426,
+							491,
+							426,
+							504,
+							389,
+							504
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 477,
+							"length": 5
+						}
+					},
+					{
+						"content": "148.46",
+						"polygon": [
+							477,
+							491,
+							520,
+							491,
+							520,
+							504,
+							477,
+							504
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 483,
+							"length": 6
+						}
+					},
+					{
+						"content": "5.00",
+						"polygon": [
+							7,
+							509,
+							37,
+							509,
+							37,
+							522,
+							7,
+							522
+						],
+						"confidence": 0.977,
+						"span": {
+							"offset": 490,
+							"length": 4
+						}
+					},
+					{
+						"content": "323355",
+						"polygon": [
+							68,
+							509,
+							117,
+							509,
+							117,
+							522,
+							68,
+							522
+						],
+						"confidence": 0.998,
+						"span": {
+							"offset": 495,
+							"length": 6
+						}
+					},
+					{
+						"content": "Language",
+						"polygon": [
+							137,
+							509,
+							200,
+							509,
+							200,
+							524,
+							137,
+							524
+						],
+						"confidence": 0.977,
+						"span": {
+							"offset": 502,
+							"length": 8
+						}
+					},
+					{
+						"content": "measure",
+						"polygon": [
+							203,
+							509,
+							259,
+							510,
+							259,
+							523,
+							203,
+							524
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 511,
+							"length": 7
+						}
+					},
+					{
+						"content": "thousand.",
+						"polygon": [
+							262,
+							510,
+							324,
+							509,
+							324,
+							523,
+							262,
+							523
+						],
+						"confidence": 0.977,
+						"span": {
+							"offset": 519,
+							"length": 9
+						}
+					},
+					{
+						"content": "83.05",
+						"polygon": [
+							389,
+							509,
+							426,
+							509,
+							426,
+							522,
+							389,
+							522
+						],
+						"confidence": 0.996,
+						"span": {
+							"offset": 529,
+							"length": 5
+						}
+					},
+					{
+						"content": "415.25",
+						"polygon": [
+							474,
+							509,
+							520,
+							509,
+							520,
+							522,
+							474,
+							522
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 535,
+							"length": 6
+						}
+					},
+					{
+						"content": "Note:",
+						"polygon": [
+							10,
+							604,
+							41,
+							604,
+							41,
+							617,
+							10,
+							616
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 542,
+							"length": 5
+						}
+					},
+					{
+						"content": "All",
+						"polygon": [
+							44,
+							604,
+							60,
+							604,
+							59,
+							617,
+							44,
+							617
+						],
+						"confidence": 0.981,
+						"span": {
+							"offset": 548,
+							"length": 3
+						}
+					},
+					{
+						"content": "payments",
+						"polygon": [
+							64,
+							604,
+							119,
+							603,
+							119,
+							617,
+							63,
+							617
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 552,
+							"length": 8
+						}
+					},
+					{
+						"content": "to",
+						"polygon": [
+							122,
+							603,
+							134,
+							603,
+							134,
+							617,
+							122,
+							617
+						],
+						"confidence": 0.998,
+						"span": {
+							"offset": 561,
+							"length": 2
+						}
+					},
+					{
+						"content": "be",
+						"polygon": [
+							137,
+							604,
+							151,
+							604,
+							151,
+							617,
+							137,
+							617
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 564,
+							"length": 2
+						}
+					},
+					{
+						"content": "made",
+						"polygon": [
+							155,
+							604,
+							185,
+							603,
+							185,
+							617,
+							155,
+							617
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 567,
+							"length": 4
+						}
+					},
+					{
+						"content": "in",
+						"polygon": [
+							187,
+							603,
+							199,
+							603,
+							199,
+							617,
+							187,
+							617
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 572,
+							"length": 2
+						}
+					},
+					{
+						"content": "cash.",
+						"polygon": [
+							203,
+							603,
+							235,
+							603,
+							235,
+							617,
+							203,
+							617
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 575,
+							"length": 5
+						}
+					},
+					{
+						"content": "Contact",
+						"polygon": [
+							10,
+							618,
+							55,
+							618,
+							55,
+							631,
+							10,
+							631
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 581,
+							"length": 7
+						}
+					},
+					{
+						"content": "us",
+						"polygon": [
+							59,
+							618,
+							72,
+							618,
+							72,
+							632,
+							59,
+							631
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 589,
+							"length": 2
+						}
+					},
+					{
+						"content": "for",
+						"polygon": [
+							76,
+							618,
+							93,
+							618,
+							93,
+							632,
+							76,
+							632
+						],
+						"confidence": 0.996,
+						"span": {
+							"offset": 592,
+							"length": 3
+						}
+					},
+					{
+						"content": "queries",
+						"polygon": [
+							95,
+							618,
+							138,
+							618,
+							138,
+							632,
+							95,
+							632
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 596,
+							"length": 7
+						}
+					},
+					{
+						"content": "on",
+						"polygon": [
+							141,
+							618,
+							156,
+							618,
+							156,
+							632,
+							141,
+							632
+						],
+						"confidence": 0.998,
+						"span": {
+							"offset": 604,
+							"length": 2
+						}
+					},
+					{
+						"content": "these",
+						"polygon": [
+							159,
+							618,
+							190,
+							618,
+							190,
+							632,
+							159,
+							632
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 607,
+							"length": 5
+						}
+					},
+					{
+						"content": "quotations.",
+						"polygon": [
+							194,
+							618,
+							260,
+							618,
+							260,
+							631,
+							194,
+							632
+						],
+						"confidence": 0.974,
+						"span": {
+							"offset": 613,
+							"length": 11
+						}
+					},
+					{
+						"content": "TAX:VAT",
+						"polygon": [
+							393,
+							595,
+							447,
+							595,
+							447,
+							609,
+							393,
+							609
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 625,
+							"length": 7
+						}
+					},
+					{
+						"content": "(6.14%):",
+						"polygon": [
+							450,
+							595,
+							495,
+							595,
+							495,
+							609,
+							450,
+							609
+						],
+						"confidence": 0.977,
+						"span": {
+							"offset": 633,
+							"length": 8
+						}
+					},
+					{
+						"content": "95.36",
+						"polygon": [
+							502,
+							595,
+							532,
+							595,
+							532,
+							609,
+							502,
+							609
+						],
+						"confidence": 0.998,
+						"span": {
+							"offset": 642,
+							"length": 5
+						}
+					},
+					{
+						"content": "USD",
+						"polygon": [
+							536,
+							595,
+							562,
+							595,
+							562,
+							609,
+							536,
+							609
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 648,
+							"length": 3
+						}
+					},
+					{
+						"content": "TOTAL",
+						"polygon": [
+							393,
+							618,
+							434,
+							618,
+							434,
+							631,
+							393,
+							631
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 652,
+							"length": 5
+						}
+					},
+					{
+						"content": ":",
+						"polygon": [
+							438,
+							618,
+							441,
+							618,
+							441,
+							631,
+							438,
+							631
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 658,
+							"length": 1
+						}
+					},
+					{
+						"content": "1599.27",
+						"polygon": [
+							445,
+							618,
+							488,
+							618,
+							488,
+							631,
+							445,
+							631
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 660,
+							"length": 7
+						}
+					},
+					{
+						"content": "USD",
+						"polygon": [
+							492,
+							618,
+							518,
+							618,
+							518,
+							631,
+							492,
+							631
+						],
+						"confidence": 0.996,
+						"span": {
+							"offset": 668,
+							"length": 3
+						}
+					},
+					{
+						"content": "Total",
+						"polygon": [
+							292,
+							668,
+							321,
+							668,
+							321,
+							681,
+							292,
+							681
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 672,
+							"length": 5
+						}
+					},
+					{
+						"content": "in",
+						"polygon": [
+							323,
+							668,
+							336,
+							668,
+							336,
+							681,
+							323,
+							681
+						],
+						"confidence": 0.998,
+						"span": {
+							"offset": 678,
+							"length": 2
+						}
+					},
+					{
+						"content": "words:",
+						"polygon": [
+							339,
+							668,
+							378,
+							668,
+							378,
+							681,
+							339,
+							681
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 681,
+							"length": 6
+						}
+					},
+					{
+						"content": "one",
+						"polygon": [
+							385,
+							668,
+							407,
+							668,
+							407,
+							682,
+							385,
+							681
+						],
+						"confidence": 0.998,
+						"span": {
+							"offset": 688,
+							"length": 3
+						}
+					},
+					{
+						"content": "thousand,",
+						"polygon": [
+							410,
+							668,
+							467,
+							668,
+							467,
+							682,
+							410,
+							682
+						],
+						"confidence": 0.994,
+						"span": {
+							"offset": 692,
+							"length": 9
+						}
+					},
+					{
+						"content": "five",
+						"polygon": [
+							470,
+							668,
+							491,
+							668,
+							491,
+							682,
+							470,
+							682
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 702,
+							"length": 4
+						}
+					},
+					{
+						"content": "hundred",
+						"polygon": [
+							495,
+							668,
+							542,
+							668,
+							542,
+							681,
+							495,
+							682
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 707,
+							"length": 7
+						}
+					},
+					{
+						"content": "an-",
+						"polygon": [
+							546,
+							668,
+							566,
+							668,
+							566,
+							681,
+							546,
+							681
+						],
+						"confidence": 0.992,
+						"span": {
+							"offset": 715,
+							"length": 3
+						}
+					},
+					{
+						"content": "d",
+						"polygon": [
+							292,
+							683,
+							300,
+							683,
+							300,
+							696,
+							292,
+							696
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 719,
+							"length": 1
+						}
+					},
+					{
+						"content": "ninety-nine",
+						"polygon": [
+							304,
+							683,
+							368,
+							683,
+							368,
+							696,
+							304,
+							696
+						],
+						"confidence": 0.993,
+						"span": {
+							"offset": 721,
+							"length": 11
+						}
+					},
+					{
+						"content": "point",
+						"polygon": [
+							372,
+							683,
+							401,
+							683,
+							401,
+							696,
+							372,
+							696
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 733,
+							"length": 5
+						}
+					},
+					{
+						"content": "two",
+						"polygon": [
+							404,
+							683,
+							425,
+							683,
+							425,
+							696,
+							404,
+							696
+						],
+						"confidence": 0.995,
+						"span": {
+							"offset": 739,
+							"length": 3
+						}
+					},
+					{
+						"content": "seven",
+						"polygon": [
+							428,
+							683,
+							464,
+							683,
+							464,
+							696,
+							428,
+							696
+						],
+						"confidence": 0.997,
+						"span": {
+							"offset": 743,
+							"length": 5
+						}
+					}
+				],
+				"lines": [
+					{
+						"content": "TAX INVOICE",
+						"polygon": [
+							241,
+							11,
+							359,
+							11,
+							359,
+							29,
+							241,
+							30
+						],
+						"spans": [
+							{
+								"offset": 0,
+								"length": 11
+							}
+						]
+					},
+					{
+						"content": "Kirk, Murphy and Daniels",
+						"polygon": [
+							5,
+							63,
+							150,
+							63,
+							150,
+							77,
+							5,
+							78
+						],
+						"spans": [
+							{
+								"offset": 12,
+								"length": 24
+							}
+						]
+					},
+					{
+						"content": "TICKYLUZIDK AGNO",
+						"polygon": [
+							15,
+							96,
+							81,
+							95,
+							82,
+							117,
+							15,
+							118
+						],
+						"spans": [
+							{
+								"offset": 37,
+								"length": 16
+							}
+						]
+					},
+					{
+						"content": "Invoice Date: 22-Sep-2007",
+						"polygon": [
+							425,
+							117,
+							570,
+							116,
+							570,
+							130,
+							425,
+							131
+						],
+						"spans": [
+							{
+								"offset": 54,
+								"length": 25
+							}
+						]
+					},
+					{
+						"content": "Invoice number INV76884730",
+						"polygon": [
+							425,
+							140,
+							586,
+							139,
+							586,
+							153,
+							425,
+							153
+						],
+						"spans": [
+							{
+								"offset": 80,
+								"length": 26
+							}
+						]
+					},
+					{
+						"content": "PO Number :43",
+						"polygon": [
+							424,
+							161,
+							506,
+							161,
+							506,
+							173,
+							424,
+							173
+						],
+						"spans": [
+							{
+								"offset": 107,
+								"length": 13
+							}
+						]
+					},
+					{
+						"content": "BILL_TO:",
+						"polygon": [
+							196,
+							220,
+							246,
+							220,
+							246,
+							233,
+							196,
+							232
+						],
+						"spans": [
+							{
+								"offset": 121,
+								"length": 8
+							}
+						]
+					},
+					{
+						"content": "Stephanie Bentley",
+						"polygon": [
+							196,
+							234,
+							293,
+							234,
+							293,
+							247,
+							196,
+							247
+						],
+						"spans": [
+							{
+								"offset": 130,
+								"length": 17
+							}
+						]
+					},
+					{
+						"content": "39872 Williams Glens",
+						"polygon": [
+							196,
+							247,
+							309,
+							247,
+							309,
+							259,
+							196,
+							259
+						],
+						"spans": [
+							{
+								"offset": 148,
+								"length": 20
+							}
+						]
+					},
+					{
+						"content": "Mcdanielton, GA 07552 US",
+						"polygon": [
+							196,
+							260,
+							336,
+							260,
+							336,
+							272,
+							196,
+							272
+						],
+						"spans": [
+							{
+								"offset": 169,
+								"length": 24
+							}
+						]
+					},
+					{
+						"content": "Tel:+(946)005-3349",
+						"polygon": [
+							196,
+							273,
+							295,
+							273,
+							295,
+							285,
+							196,
+							286
+						],
+						"spans": [
+							{
+								"offset": 194,
+								"length": 18
+							}
+						]
+					},
+					{
+						"content": "Email:susanthomas@example.net",
+						"polygon": [
+							196,
+							286,
+							376,
+							286,
+							376,
+							299,
+							196,
+							299
+						],
+						"spans": [
+							{
+								"offset": 213,
+								"length": 29
+							}
+						]
+					},
+					{
+						"content": "Site:http://scott.com/",
+						"polygon": [
+							196,
+							300,
+							307,
+							300,
+							307,
+							312,
+							196,
+							312
+						],
+						"spans": [
+							{
+								"offset": 243,
+								"length": 22
+							}
+						]
+					},
+					{
+						"content": "Due Date : 09-Jan-2008",
+						"polygon": [
+							186,
+							387,
+							319,
+							386,
+							319,
+							399,
+							186,
+							400
+						],
+						"spans": [
+							{
+								"offset": 266,
+								"length": 22
+							}
+						]
+					},
+					{
+						"content": "Qty",
+						"polygon": [
+							8,
+							420,
+							35,
+							421,
+							35,
+							435,
+							8,
+							434
+						],
+						"spans": [
+							{
+								"offset": 289,
+								"length": 3
+							}
+						]
+					},
+					{
+						"content": "ID",
+						"polygon": [
+							68,
+							421,
+							85,
+							420,
+							85,
+							433,
+							69,
+							433
+						],
+						"spans": [
+							{
+								"offset": 293,
+								"length": 2
+							}
+						]
+					},
+					{
+						"content": "Description",
+						"polygon": [
+							138,
+							420,
+							219,
+							420,
+							219,
+							435,
+							138,
+							435
+						],
+						"spans": [
+							{
+								"offset": 296,
+								"length": 11
+							}
+						]
+					},
+					{
+						"content": "Unit price",
+						"polygon": [
+							373,
+							420,
+							442,
+							420,
+							442,
+							435,
+							373,
+							435
+						],
+						"spans": [
+							{
+								"offset": 308,
+								"length": 10
+							}
+						]
+					},
+					{
+						"content": "Amount",
+						"polygon": [
+							470,
+							421,
+							526,
+							421,
+							526,
+							434,
+							470,
+							434
+						],
+						"spans": [
+							{
+								"offset": 319,
+								"length": 6
+							}
+						]
+					},
+					{
+						"content": "5.00",
+						"polygon": [
+							8,
+							437,
+							37,
+							438,
+							36,
+							450,
+							8,
+							450
+						],
+						"spans": [
+							{
+								"offset": 326,
+								"length": 4
+							}
+						]
+					},
+					{
+						"content": "005392",
+						"polygon": [
+							68,
+							437,
+							116,
+							437,
+							116,
+							450,
+							68,
+							450
+						],
+						"spans": [
+							{
+								"offset": 331,
+								"length": 6
+							}
+						]
+					},
+					{
+						"content": "Hair blood operation.",
+						"polygon": [
+							138,
+							437,
+							268,
+							438,
+							268,
+							451,
+							138,
+							451
+						],
+						"spans": [
+							{
+								"offset": 338,
+								"length": 21
+							}
+						]
+					},
+					{
+						"content": "78.97",
+						"polygon": [
+							389,
+							437,
+							425,
+							437,
+							425,
+							450,
+							389,
+							450
+						],
+						"spans": [
+							{
+								"offset": 360,
+								"length": 5
+							}
+						]
+					},
+					{
+						"content": "394.85",
+						"polygon": [
+							475,
+							437,
+							520,
+							437,
+							520,
+							450,
+							475,
+							450
+						],
+						"spans": [
+							{
+								"offset": 366,
+								"length": 6
+							}
+						]
+					},
+					{
+						"content": "5.00",
+						"polygon": [
+							8,
+							455,
+							37,
+							455,
+							36,
+							468,
+							8,
+							468
+						],
+						"spans": [
+							{
+								"offset": 373,
+								"length": 4
+							}
+						]
+					},
+					{
+						"content": "567209",
+						"polygon": [
+							68,
+							455,
+							116,
+							455,
+							116,
+							468,
+							68,
+							468
+						],
+						"spans": [
+							{
+								"offset": 378,
+								"length": 6
+							}
+						]
+					},
+					{
+						"content": "Perform writer.",
+						"polygon": [
+							138,
+							455,
+							231,
+							456,
+							231,
+							469,
+							138,
+							469
+						],
+						"spans": [
+							{
+								"offset": 385,
+								"length": 15
+							}
+						]
+					},
+					{
+						"content": "62.59",
+						"polygon": [
+							389,
+							455,
+							425,
+							455,
+							425,
+							468,
+							389,
+							468
+						],
+						"spans": [
+							{
+								"offset": 401,
+								"length": 5
+							}
+						]
+					},
+					{
+						"content": "312.95",
+						"polygon": [
+							475,
+							455,
+							520,
+							455,
+							520,
+							468,
+							475,
+							468
+						],
+						"spans": [
+							{
+								"offset": 407,
+								"length": 6
+							}
+						]
+					},
+					{
+						"content": "5.00",
+						"polygon": [
+							8,
+							473,
+							37,
+							473,
+							37,
+							486,
+							8,
+							486
+						],
+						"spans": [
+							{
+								"offset": 414,
+								"length": 4
+							}
+						]
+					},
+					{
+						"content": "491742",
+						"polygon": [
+							68,
+							473,
+							116,
+							473,
+							116,
+							486,
+							68,
+							486
+						],
+						"spans": [
+							{
+								"offset": 419,
+								"length": 6
+							}
+						]
+					},
+					{
+						"content": "Then want show.",
+						"polygon": [
+							138,
+							473,
+							244,
+							474,
+							244,
+							487,
+							138,
+							487
+						],
+						"spans": [
+							{
+								"offset": 426,
+								"length": 15
+							}
+						]
+					},
+					{
+						"content": "56.36",
+						"polygon": [
+							389,
+							473,
+							425,
+							473,
+							425,
+							486,
+							389,
+							486
+						],
+						"spans": [
+							{
+								"offset": 442,
+								"length": 5
+							}
+						]
+					},
+					{
+						"content": "281.80",
+						"polygon": [
+							475,
+							473,
+							519,
+							473,
+							519,
+							486,
+							475,
+							486
+						],
+						"spans": [
+							{
+								"offset": 448,
+								"length": 6
+							}
+						]
+					},
+					{
+						"content": "2.00",
+						"polygon": [
+							8,
+							491,
+							37,
+							491,
+							37,
+							504,
+							8,
+							504
+						],
+						"spans": [
+							{
+								"offset": 455,
+								"length": 4
+							}
+						]
+					},
+					{
+						"content": "653899",
+						"polygon": [
+							68,
+							491,
+							116,
+							491,
+							116,
+							504,
+							68,
+							504
+						],
+						"spans": [
+							{
+								"offset": 460,
+								"length": 6
+							}
+						]
+					},
+					{
+						"content": "Pay last.",
+						"polygon": [
+							138,
+							491,
+							192,
+							491,
+							192,
+							505,
+							138,
+							505
+						],
+						"spans": [
+							{
+								"offset": 467,
+								"length": 9
+							}
+						]
+					},
+					{
+						"content": "74.23",
+						"polygon": [
+							389,
+							491,
+							425,
+							491,
+							425,
+							504,
+							389,
+							504
+						],
+						"spans": [
+							{
+								"offset": 477,
+								"length": 5
+							}
+						]
+					},
+					{
+						"content": "148.46",
+						"polygon": [
+							477,
+							491,
+							519,
+							491,
+							519,
+							504,
+							477,
+							504
+						],
+						"spans": [
+							{
+								"offset": 483,
+								"length": 6
+							}
+						]
+					},
+					{
+						"content": "5.00",
+						"polygon": [
+							7,
+							509,
+							37,
+							509,
+							36,
+							522,
+							7,
+							522
+						],
+						"spans": [
+							{
+								"offset": 490,
+								"length": 4
+							}
+						]
+					},
+					{
+						"content": "323355",
+						"polygon": [
+							68,
+							509,
+							116,
+							509,
+							116,
+							522,
+							68,
+							522
+						],
+						"spans": [
+							{
+								"offset": 495,
+								"length": 6
+							}
+						]
+					},
+					{
+						"content": "Language measure thousand.",
+						"polygon": [
+							137,
+							509,
+							323,
+							509,
+							323,
+							523,
+							137,
+							523
+						],
+						"spans": [
+							{
+								"offset": 502,
+								"length": 26
+							}
+						]
+					},
+					{
+						"content": "83.05",
+						"polygon": [
+							389,
+							509,
+							426,
+							509,
+							426,
+							522,
+							389,
+							522
+						],
+						"spans": [
+							{
+								"offset": 529,
+								"length": 5
+							}
+						]
+					},
+					{
+						"content": "415.25",
+						"polygon": [
+							474,
+							509,
+							519,
+							509,
+							519,
+							522,
+							474,
+							522
+						],
+						"spans": [
+							{
+								"offset": 535,
+								"length": 6
+							}
+						]
+					},
+					{
+						"content": "Note: All payments to be made in cash.",
+						"polygon": [
+							10,
+							603,
+							235,
+							603,
+							235,
+							617,
+							10,
+							617
+						],
+						"spans": [
+							{
+								"offset": 542,
+								"length": 38
+							}
+						]
+					},
+					{
+						"content": "Contact us for queries on these quotations.",
+						"polygon": [
+							10,
+							618,
+							260,
+							618,
+							260,
+							632,
+							10,
+							631
+						],
+						"spans": [
+							{
+								"offset": 581,
+								"length": 43
+							}
+						]
+					},
+					{
+						"content": "TAX:VAT (6.14%): 95.36 USD",
+						"polygon": [
+							393,
+							595,
+							562,
+							595,
+							562,
+							609,
+							393,
+							609
+						],
+						"spans": [
+							{
+								"offset": 625,
+								"length": 26
+							}
+						]
+					},
+					{
+						"content": "TOTAL : 1599.27 USD",
+						"polygon": [
+							393,
+							618,
+							518,
+							618,
+							518,
+							631,
+							393,
+							631
+						],
+						"spans": [
+							{
+								"offset": 652,
+								"length": 19
+							}
+						]
+					},
+					{
+						"content": "Total in words: one thousand, five hundred an-",
+						"polygon": [
+							292,
+							668,
+							565,
+							668,
+							565,
+							681,
+							292,
+							682
+						],
+						"spans": [
+							{
+								"offset": 672,
+								"length": 46
+							}
+						]
+					},
+					{
+						"content": "d ninety-nine point two seven",
+						"polygon": [
+							292,
+							683,
+							463,
+							683,
+							463,
+							696,
+							292,
+							696
+						],
+						"spans": [
+							{
+								"offset": 719,
+								"length": 29
+							}
+						]
+					}
+				],
+				"spans": [
+					{
+						"offset": 0,
+						"length": 748
+					}
+				]
+			}
+		],
+		"tables": [
+			{
+				"rowCount": 6,
+				"columnCount": 5,
+				"cells": [
+					{
+						"kind": "columnHeader",
+						"rowIndex": 0,
+						"columnIndex": 0,
+						"content": "Qty",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									4,
+									413,
+									64,
+									414,
+									64,
+									432,
+									3,
+									432
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 289,
+								"length": 3
+							}
+						],
+						"elements": [
+							"/paragraphs/14"
+						]
+					},
+					{
+						"kind": "columnHeader",
+						"rowIndex": 0,
+						"columnIndex": 1,
+						"content": "ID",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									64,
+									414,
+									133,
+									414,
+									133,
+									432,
+									64,
+									432
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 293,
+								"length": 2
+							}
+						],
+						"elements": [
+							"/paragraphs/15"
+						]
+					},
+					{
+						"kind": "columnHeader",
+						"rowIndex": 0,
+						"columnIndex": 2,
+						"content": "Description",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									133,
+									414,
+									362,
+									414,
+									362,
+									432,
+									133,
+									432
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 296,
+								"length": 11
+							}
+						],
+						"elements": [
+							"/paragraphs/16"
+						]
+					},
+					{
+						"kind": "columnHeader",
+						"rowIndex": 0,
+						"columnIndex": 3,
+						"content": "Unit price",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									362,
+									414,
+									452,
+									414,
+									452,
+									432,
+									362,
+									432
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 308,
+								"length": 10
+							}
+						],
+						"elements": [
+							"/paragraphs/17"
+						]
+					},
+					{
+						"kind": "columnHeader",
+						"rowIndex": 0,
+						"columnIndex": 4,
+						"content": "Amount",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									452,
+									414,
+									542,
+									414,
+									542,
+									432,
+									452,
+									432
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 319,
+								"length": 6
+							}
+						],
+						"elements": [
+							"/paragraphs/18"
+						]
+					},
+					{
+						"rowIndex": 1,
+						"columnIndex": 0,
+						"content": "5.00",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									3,
+									432,
+									64,
+									432,
+									64,
+									450,
+									3,
+									450
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 326,
+								"length": 4
+							}
+						],
+						"elements": [
+							"/paragraphs/19"
+						]
+					},
+					{
+						"rowIndex": 1,
+						"columnIndex": 1,
+						"content": "005392",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									64,
+									432,
+									133,
+									432,
+									133,
+									451,
+									64,
+									450
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 331,
+								"length": 6
+							}
+						],
+						"elements": [
+							"/paragraphs/20"
+						]
+					},
+					{
+						"rowIndex": 1,
+						"columnIndex": 2,
+						"content": "Hair blood operation.",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									133,
+									432,
+									362,
+									432,
+									362,
+									451,
+									133,
+									451
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 338,
+								"length": 21
+							}
+						],
+						"elements": [
+							"/paragraphs/21"
+						]
+					},
+					{
+						"rowIndex": 1,
+						"columnIndex": 3,
+						"content": "78.97",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									362,
+									432,
+									452,
+									432,
+									452,
+									451,
+									362,
+									451
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 360,
+								"length": 5
+							}
+						],
+						"elements": [
+							"/paragraphs/22"
+						]
+					},
+					{
+						"rowIndex": 1,
+						"columnIndex": 4,
+						"content": "394.85",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									452,
+									432,
+									542,
+									432,
+									542,
+									451,
+									452,
+									451
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 366,
+								"length": 6
+							}
+						],
+						"elements": [
+							"/paragraphs/23"
+						]
+					},
+					{
+						"rowIndex": 2,
+						"columnIndex": 0,
+						"content": "5.00",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									3,
+									450,
+									64,
+									450,
+									64,
+									468,
+									3,
+									468
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 373,
+								"length": 4
+							}
+						],
+						"elements": [
+							"/paragraphs/24"
+						]
+					},
+					{
+						"rowIndex": 2,
+						"columnIndex": 1,
+						"content": "567209",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									64,
+									450,
+									133,
+									451,
+									133,
+									468,
+									64,
+									468
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 378,
+								"length": 6
+							}
+						],
+						"elements": [
+							"/paragraphs/25"
+						]
+					},
+					{
+						"rowIndex": 2,
+						"columnIndex": 2,
+						"content": "Perform writer.",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									133,
+									451,
+									362,
+									451,
+									362,
+									468,
+									133,
+									468
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 385,
+								"length": 15
+							}
+						],
+						"elements": [
+							"/paragraphs/26"
+						]
+					},
+					{
+						"rowIndex": 2,
+						"columnIndex": 3,
+						"content": "62.59",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									362,
+									451,
+									452,
+									451,
+									452,
+									468,
+									362,
+									468
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 401,
+								"length": 5
+							}
+						],
+						"elements": [
+							"/paragraphs/27"
+						]
+					},
+					{
+						"rowIndex": 2,
+						"columnIndex": 4,
+						"content": "312.95",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									452,
+									451,
+									542,
+									451,
+									542,
+									468,
+									452,
+									468
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 407,
+								"length": 6
+							}
+						],
+						"elements": [
+							"/paragraphs/28"
+						]
+					},
+					{
+						"rowIndex": 3,
+						"columnIndex": 0,
+						"content": "5.00",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									3,
+									468,
+									64,
+									468,
+									64,
+									486,
+									3,
+									486
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 414,
+								"length": 4
+							}
+						],
+						"elements": [
+							"/paragraphs/29"
+						]
+					},
+					{
+						"rowIndex": 3,
+						"columnIndex": 1,
+						"content": "491742",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									64,
+									468,
+									133,
+									468,
+									133,
+									486,
+									64,
+									486
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 419,
+								"length": 6
+							}
+						],
+						"elements": [
+							"/paragraphs/30"
+						]
+					},
+					{
+						"rowIndex": 3,
+						"columnIndex": 2,
+						"content": "Then want show.",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									133,
+									468,
+									362,
+									468,
+									362,
+									486,
+									133,
+									486
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 426,
+								"length": 15
+							}
+						],
+						"elements": [
+							"/paragraphs/31"
+						]
+					},
+					{
+						"rowIndex": 3,
+						"columnIndex": 3,
+						"content": "56.36",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									362,
+									468,
+									452,
+									468,
+									451,
+									486,
+									362,
+									486
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 442,
+								"length": 5
+							}
+						],
+						"elements": [
+							"/paragraphs/32"
+						]
+					},
+					{
+						"rowIndex": 3,
+						"columnIndex": 4,
+						"content": "281.80",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									452,
+									468,
+									542,
+									468,
+									542,
+									486,
+									451,
+									486
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 448,
+								"length": 6
+							}
+						],
+						"elements": [
+							"/paragraphs/33"
+						]
+					},
+					{
+						"rowIndex": 4,
+						"columnIndex": 0,
+						"content": "2.00",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									3,
+									486,
+									64,
+									486,
+									64,
+									504,
+									3,
+									504
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 455,
+								"length": 4
+							}
+						],
+						"elements": [
+							"/paragraphs/34"
+						]
+					},
+					{
+						"rowIndex": 4,
+						"columnIndex": 1,
+						"content": "653899",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									64,
+									486,
+									133,
+									486,
+									133,
+									504,
+									64,
+									504
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 460,
+								"length": 6
+							}
+						],
+						"elements": [
+							"/paragraphs/35"
+						]
+					},
+					{
+						"rowIndex": 4,
+						"columnIndex": 2,
+						"content": "Pay last.",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									133,
+									486,
+									362,
+									486,
+									362,
+									504,
+									133,
+									504
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 467,
+								"length": 9
+							}
+						],
+						"elements": [
+							"/paragraphs/36"
+						]
+					},
+					{
+						"rowIndex": 4,
+						"columnIndex": 3,
+						"content": "74.23",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									362,
+									486,
+									451,
+									486,
+									451,
+									504,
+									362,
+									504
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 477,
+								"length": 5
+							}
+						],
+						"elements": [
+							"/paragraphs/37"
+						]
+					},
+					{
+						"rowIndex": 4,
+						"columnIndex": 4,
+						"content": "148.46",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									451,
+									486,
+									542,
+									486,
+									542,
+									504,
+									451,
+									504
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 483,
+								"length": 6
+							}
+						],
+						"elements": [
+							"/paragraphs/38"
+						]
+					},
+					{
+						"rowIndex": 5,
+						"columnIndex": 0,
+						"content": "5.00",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									3,
+									504,
+									64,
+									504,
+									64,
+									521,
+									3,
+									521
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 490,
+								"length": 4
+							}
+						],
+						"elements": [
+							"/paragraphs/39"
+						]
+					},
+					{
+						"rowIndex": 5,
+						"columnIndex": 1,
+						"content": "323355",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									64,
+									504,
+									133,
+									504,
+									132,
+									521,
+									64,
+									521
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 495,
+								"length": 6
+							}
+						],
+						"elements": [
+							"/paragraphs/40"
+						]
+					},
+					{
+						"rowIndex": 5,
+						"columnIndex": 2,
+						"content": "Language measure thousand.",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									133,
+									504,
+									362,
+									504,
+									362,
+									522,
+									132,
+									521
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 502,
+								"length": 26
+							}
+						],
+						"elements": [
+							"/paragraphs/41"
+						]
+					},
+					{
+						"rowIndex": 5,
+						"columnIndex": 3,
+						"content": "83.05",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									362,
+									504,
+									451,
+									504,
+									451,
+									522,
+									362,
+									522
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 529,
+								"length": 5
+							}
+						],
+						"elements": [
+							"/paragraphs/42"
+						]
+					},
+					{
+						"rowIndex": 5,
+						"columnIndex": 4,
+						"content": "415.25",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									451,
+									504,
+									542,
+									504,
+									542,
+									522,
+									451,
+									522
+								]
+							}
+						],
+						"spans": [
+							{
+								"offset": 535,
+								"length": 6
+							}
+						],
+						"elements": [
+							"/paragraphs/43"
+						]
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							2,
+							413,
+							543,
+							413,
+							543,
+							524,
+							2,
+							524
+						]
+					}
+				],
+				"spans": [
+					{
+						"offset": 289,
+						"length": 252
+					}
+				]
+			}
+		],
+		"paragraphs": [
+			{
+				"spans": [
+					{
+						"offset": 0,
+						"length": 11
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							241,
+							11,
+							359,
+							11,
+							359,
+							29,
+							241,
+							30
+						]
+					}
+				],
+				"role": "title",
+				"content": "TAX INVOICE"
+			},
+			{
+				"spans": [
+					{
+						"offset": 12,
+						"length": 24
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							5,
+							63,
+							150,
+							63,
+							150,
+							77,
+							5,
+							78
+						]
+					}
+				],
+				"content": "Kirk, Murphy and Daniels"
+			},
+			{
+				"spans": [
+					{
+						"offset": 37,
+						"length": 16
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							15,
+							96,
+							81,
+							95,
+							82,
+							117,
+							15,
+							118
+						]
+					}
+				],
+				"content": "TICKYLUZIDK AGNO"
+			},
+			{
+				"spans": [
+					{
+						"offset": 54,
+						"length": 25
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							425,
+							117,
+							570,
+							116,
+							570,
+							130,
+							425,
+							131
+						]
+					}
+				],
+				"content": "Invoice Date: 22-Sep-2007"
+			},
+			{
+				"spans": [
+					{
+						"offset": 80,
+						"length": 26
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							425,
+							140,
+							586,
+							139,
+							586,
+							153,
+							425,
+							153
+						]
+					}
+				],
+				"content": "Invoice number INV76884730"
+			},
+			{
+				"spans": [
+					{
+						"offset": 107,
+						"length": 13
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							424,
+							161,
+							506,
+							161,
+							506,
+							173,
+							424,
+							173
+						]
+					}
+				],
+				"content": "PO Number :43"
+			},
+			{
+				"spans": [
+					{
+						"offset": 121,
+						"length": 8
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							196,
+							220,
+							246,
+							220,
+							246,
+							233,
+							196,
+							232
+						]
+					}
+				],
+				"content": "BILL_TO:"
+			},
+			{
+				"spans": [
+					{
+						"offset": 130,
+						"length": 17
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							196,
+							234,
+							293,
+							234,
+							293,
+							247,
+							196,
+							247
+						]
+					}
+				],
+				"content": "Stephanie Bentley"
+			},
+			{
+				"spans": [
+					{
+						"offset": 148,
+						"length": 20
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							196,
+							247,
+							309,
+							247,
+							309,
+							259,
+							196,
+							259
+						]
+					}
+				],
+				"content": "39872 Williams Glens"
+			},
+			{
+				"spans": [
+					{
+						"offset": 169,
+						"length": 24
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							196,
+							260,
+							336,
+							260,
+							336,
+							272,
+							196,
+							272
+						]
+					}
+				],
+				"content": "Mcdanielton, GA 07552 US"
+			},
+			{
+				"spans": [
+					{
+						"offset": 194,
+						"length": 18
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							196,
+							273,
+							295,
+							273,
+							295,
+							285,
+							196,
+							286
+						]
+					}
+				],
+				"content": "Tel:+(946)005-3349"
+			},
+			{
+				"spans": [
+					{
+						"offset": 213,
+						"length": 29
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							196,
+							286,
+							376,
+							286,
+							376,
+							299,
+							196,
+							299
+						]
+					}
+				],
+				"content": "Email:susanthomas@example.net"
+			},
+			{
+				"spans": [
+					{
+						"offset": 243,
+						"length": 22
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							196,
+							300,
+							307,
+							300,
+							307,
+							312,
+							196,
+							312
+						]
+					}
+				],
+				"content": "Site:http://scott.com/"
+			},
+			{
+				"spans": [
+					{
+						"offset": 266,
+						"length": 22
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							186,
+							387,
+							319,
+							386,
+							319,
+							399,
+							186,
+							400
+						]
+					}
+				],
+				"content": "Due Date : 09-Jan-2008"
+			},
+			{
+				"spans": [
+					{
+						"offset": 289,
+						"length": 3
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							4,
+							413,
+							64,
+							414,
+							64,
+							432,
+							3,
+							432
+						]
+					}
+				],
+				"content": "Qty"
+			},
+			{
+				"spans": [
+					{
+						"offset": 293,
+						"length": 2
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							64,
+							414,
+							133,
+							414,
+							133,
+							432,
+							64,
+							432
+						]
+					}
+				],
+				"content": "ID"
+			},
+			{
+				"spans": [
+					{
+						"offset": 296,
+						"length": 11
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							133,
+							414,
+							362,
+							414,
+							362,
+							432,
+							133,
+							432
+						]
+					}
+				],
+				"content": "Description"
+			},
+			{
+				"spans": [
+					{
+						"offset": 308,
+						"length": 10
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							362,
+							414,
+							452,
+							414,
+							452,
+							432,
+							362,
+							432
+						]
+					}
+				],
+				"content": "Unit price"
+			},
+			{
+				"spans": [
+					{
+						"offset": 319,
+						"length": 6
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							452,
+							414,
+							542,
+							414,
+							542,
+							432,
+							452,
+							432
+						]
+					}
+				],
+				"content": "Amount"
+			},
+			{
+				"spans": [
+					{
+						"offset": 326,
+						"length": 4
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							3,
+							432,
+							64,
+							432,
+							64,
+							450,
+							3,
+							450
+						]
+					}
+				],
+				"content": "5.00"
+			},
+			{
+				"spans": [
+					{
+						"offset": 331,
+						"length": 6
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							64,
+							432,
+							133,
+							432,
+							133,
+							451,
+							64,
+							450
+						]
+					}
+				],
+				"content": "005392"
+			},
+			{
+				"spans": [
+					{
+						"offset": 338,
+						"length": 21
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							133,
+							432,
+							362,
+							432,
+							362,
+							451,
+							133,
+							451
+						]
+					}
+				],
+				"content": "Hair blood operation."
+			},
+			{
+				"spans": [
+					{
+						"offset": 360,
+						"length": 5
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							362,
+							432,
+							452,
+							432,
+							452,
+							451,
+							362,
+							451
+						]
+					}
+				],
+				"content": "78.97"
+			},
+			{
+				"spans": [
+					{
+						"offset": 366,
+						"length": 6
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							452,
+							432,
+							542,
+							432,
+							542,
+							451,
+							452,
+							451
+						]
+					}
+				],
+				"content": "394.85"
+			},
+			{
+				"spans": [
+					{
+						"offset": 373,
+						"length": 4
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							3,
+							450,
+							64,
+							450,
+							64,
+							468,
+							3,
+							468
+						]
+					}
+				],
+				"content": "5.00"
+			},
+			{
+				"spans": [
+					{
+						"offset": 378,
+						"length": 6
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							64,
+							450,
+							133,
+							451,
+							133,
+							468,
+							64,
+							468
+						]
+					}
+				],
+				"content": "567209"
+			},
+			{
+				"spans": [
+					{
+						"offset": 385,
+						"length": 15
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							133,
+							451,
+							362,
+							451,
+							362,
+							468,
+							133,
+							468
+						]
+					}
+				],
+				"content": "Perform writer."
+			},
+			{
+				"spans": [
+					{
+						"offset": 401,
+						"length": 5
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							362,
+							451,
+							452,
+							451,
+							452,
+							468,
+							362,
+							468
+						]
+					}
+				],
+				"content": "62.59"
+			},
+			{
+				"spans": [
+					{
+						"offset": 407,
+						"length": 6
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							452,
+							451,
+							542,
+							451,
+							542,
+							468,
+							452,
+							468
+						]
+					}
+				],
+				"content": "312.95"
+			},
+			{
+				"spans": [
+					{
+						"offset": 414,
+						"length": 4
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							3,
+							468,
+							64,
+							468,
+							64,
+							486,
+							3,
+							486
+						]
+					}
+				],
+				"content": "5.00"
+			},
+			{
+				"spans": [
+					{
+						"offset": 419,
+						"length": 6
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							64,
+							468,
+							133,
+							468,
+							133,
+							486,
+							64,
+							486
+						]
+					}
+				],
+				"content": "491742"
+			},
+			{
+				"spans": [
+					{
+						"offset": 426,
+						"length": 15
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							133,
+							468,
+							362,
+							468,
+							362,
+							486,
+							133,
+							486
+						]
+					}
+				],
+				"content": "Then want show."
+			},
+			{
+				"spans": [
+					{
+						"offset": 442,
+						"length": 5
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							362,
+							468,
+							452,
+							468,
+							451,
+							486,
+							362,
+							486
+						]
+					}
+				],
+				"content": "56.36"
+			},
+			{
+				"spans": [
+					{
+						"offset": 448,
+						"length": 6
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							452,
+							468,
+							542,
+							468,
+							542,
+							486,
+							451,
+							486
+						]
+					}
+				],
+				"content": "281.80"
+			},
+			{
+				"spans": [
+					{
+						"offset": 455,
+						"length": 4
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							3,
+							486,
+							64,
+							486,
+							64,
+							504,
+							3,
+							504
+						]
+					}
+				],
+				"content": "2.00"
+			},
+			{
+				"spans": [
+					{
+						"offset": 460,
+						"length": 6
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							64,
+							486,
+							133,
+							486,
+							133,
+							504,
+							64,
+							504
+						]
+					}
+				],
+				"content": "653899"
+			},
+			{
+				"spans": [
+					{
+						"offset": 467,
+						"length": 9
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							133,
+							486,
+							362,
+							486,
+							362,
+							504,
+							133,
+							504
+						]
+					}
+				],
+				"content": "Pay last."
+			},
+			{
+				"spans": [
+					{
+						"offset": 477,
+						"length": 5
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							362,
+							486,
+							451,
+							486,
+							451,
+							504,
+							362,
+							504
+						]
+					}
+				],
+				"content": "74.23"
+			},
+			{
+				"spans": [
+					{
+						"offset": 483,
+						"length": 6
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							451,
+							486,
+							542,
+							486,
+							542,
+							504,
+							451,
+							504
+						]
+					}
+				],
+				"content": "148.46"
+			},
+			{
+				"spans": [
+					{
+						"offset": 490,
+						"length": 4
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							3,
+							504,
+							64,
+							504,
+							64,
+							521,
+							3,
+							521
+						]
+					}
+				],
+				"content": "5.00"
+			},
+			{
+				"spans": [
+					{
+						"offset": 495,
+						"length": 6
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							64,
+							504,
+							133,
+							504,
+							132,
+							521,
+							64,
+							521
+						]
+					}
+				],
+				"content": "323355"
+			},
+			{
+				"spans": [
+					{
+						"offset": 502,
+						"length": 26
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							133,
+							504,
+							362,
+							504,
+							362,
+							522,
+							132,
+							521
+						]
+					}
+				],
+				"content": "Language measure thousand."
+			},
+			{
+				"spans": [
+					{
+						"offset": 529,
+						"length": 5
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							362,
+							504,
+							451,
+							504,
+							451,
+							522,
+							362,
+							522
+						]
+					}
+				],
+				"content": "83.05"
+			},
+			{
+				"spans": [
+					{
+						"offset": 535,
+						"length": 6
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							451,
+							504,
+							542,
+							504,
+							542,
+							522,
+							451,
+							522
+						]
+					}
+				],
+				"content": "415.25"
+			},
+			{
+				"spans": [
+					{
+						"offset": 542,
+						"length": 82
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							10,
+							603,
+							260,
+							603,
+							260,
+							632,
+							10,
+							631
+						]
+					}
+				],
+				"content": "Note: All payments to be made in cash. Contact us for queries on these quotations."
+			},
+			{
+				"spans": [
+					{
+						"offset": 625,
+						"length": 26
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							393,
+							595,
+							562,
+							595,
+							562,
+							609,
+							393,
+							609
+						]
+					}
+				],
+				"content": "TAX:VAT (6.14%): 95.36 USD"
+			},
+			{
+				"spans": [
+					{
+						"offset": 652,
+						"length": 19
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							393,
+							618,
+							518,
+							618,
+							518,
+							631,
+							393,
+							631
+						]
+					}
+				],
+				"content": "TOTAL : 1599.27 USD"
+			},
+			{
+				"spans": [
+					{
+						"offset": 672,
+						"length": 76
+					}
+				],
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							292,
+							668,
+							565,
+							668,
+							565,
+							696,
+							292,
+							696
+						]
+					}
+				],
+				"content": "Total in words: one thousand, five hundred an- d ninety-nine point two seven"
+			}
+		],
+		"styles": [],
+		"documents": [
+			{
+				"docType": "ocr_finetuned_25_v1",
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							0,
+							0,
+							595,
+							0,
+							595,
+							841,
+							0,
+							841
+						]
+					}
+				],
+				"fields": {
+					"Buyer": {
+						"type": "string",
+						"valueString": "Stephanie Bentley",
+						"content": "Stephanie Bentley",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									196,
+									233,
+									293,
+									234,
+									293,
+									247,
+									196,
+									246
+								]
+							}
+						],
+						"confidence": 0.869,
+						"spans": [
+							{
+								"offset": 130,
+								"length": 17
+							}
+						]
+					},
+					"Date": {
+						"type": "date",
+						"valueDate": "2007-09-22",
+						"content": "22-Sep-2007",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									499,
+									116,
+									571,
+									116,
+									571,
+									130,
+									499,
+									131
+								]
+							}
+						],
+						"confidence": 0.921,
+						"spans": [
+							{
+								"offset": 68,
+								"length": 11
+							}
+						]
+					},
+					"Currency": {
+						"type": "string",
+						"valueString": "USD",
+						"content": "USD",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									492,
+									618,
+									518,
+									618,
+									518,
+									631,
+									492,
+									631
+								]
+							}
+						],
+						"confidence": 0.923,
+						"spans": [
+							{
+								"offset": 668,
+								"length": 3
+							}
+						]
+					},
+					"Address": {
+						"type": "string",
+						"valueString": "39872 Williams Glens\nMcdanielton, GA 07552 US",
+						"content": "39872 Williams Glens\nMcdanielton, GA 07552 US",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									196,
+									247,
+									337,
+									247,
+									337,
+									272,
+									196,
+									272
+								]
+							}
+						],
+						"confidence": 0.839,
+						"spans": [
+							{
+								"offset": 148,
+								"length": 45
+							}
+						]
+					},
+					"Tax": {
+						"type": "string",
+						"valueString": "95.36",
+						"content": "95.36",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									502,
+									595,
+									532,
+									595,
+									532,
+									609,
+									502,
+									609
+								]
+							}
+						],
+						"confidence": 0.882,
+						"spans": [
+							{
+								"offset": 642,
+								"length": 5
+							}
+						]
+					},
+					"Total": {
+						"type": "string",
+						"valueString": "1599.27",
+						"content": "1599.27",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									445,
+									618,
+									488,
+									618,
+									488,
+									631,
+									445,
+									631
+								]
+							}
+						],
+						"confidence": 0.9,
+						"spans": [
+							{
+								"offset": 660,
+								"length": 7
+							}
+						]
+					},
+					"SubTotal": {
+						"type": "string",
+						"confidence": 0.874
+					},
+					"Discount": {
+						"type": "string",
+						"confidence": 0.946
+					}
+				},
+				"confidence": 0.941,
+				"spans": [
+					{
+						"offset": 0,
+						"length": 748
+					}
+				]
+			}
+		],
+		"contentFormat": "text",
+		"sections": [
+			{
+				"spans": [
+					{
+						"offset": 0,
+						"length": 748
+					}
+				],
+				"elements": [
+					"/paragraphs/0",
+					"/paragraphs/1",
+					"/figures/0",
+					"/paragraphs/3",
+					"/paragraphs/4",
+					"/paragraphs/5",
+					"/paragraphs/6",
+					"/paragraphs/7",
+					"/paragraphs/8",
+					"/paragraphs/9",
+					"/paragraphs/10",
+					"/paragraphs/11",
+					"/paragraphs/12",
+					"/paragraphs/13",
+					"/tables/0",
+					"/paragraphs/44",
+					"/paragraphs/45",
+					"/paragraphs/46",
+					"/paragraphs/47"
+				]
+			}
+		],
+		"figures": [
+			{
+				"id": "1.1",
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							4,
+							89,
+							95,
+							89,
+							95,
+							181,
+							4,
+							180
+						]
+					}
+				],
+				"spans": [
+					{
+						"offset": 37,
+						"length": 16
+					}
+				],
+				"elements": [
+					"/paragraphs/2"
+				]
+			}
+		]
+	}
+}

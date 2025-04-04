@@ -1,0 +1,53 @@
+{
+	"$schema": "https://schema.cognitiveservices.azure.com/formrecognizer/2021-03-01/fields.json",
+	"fields": [
+		{
+			"fieldKey": "Buyer",
+			"fieldType": "string",
+			"fieldFormat": "not-specified",
+			"groupIndex": 0
+		},
+		{
+			"fieldKey": "Address",
+			"fieldType": "string",
+			"fieldFormat": "not-specified",
+			"groupIndex": 0
+		},
+		{
+			"fieldKey": "Date",
+			"fieldType": "date",
+			"fieldFormat": "not-specified",
+			"groupIndex": 0
+		},
+		{
+			"fieldKey": "Currency",
+			"fieldType": "string",
+			"fieldFormat": "not-specified"
+		},
+		{
+			"fieldKey": "SubTotal",
+			"fieldType": "string",
+			"fieldFormat": "not-specified",
+			"groupIndex": 0
+		},
+		{
+			"fieldKey": "Discount",
+			"fieldType": "string",
+			"fieldFormat": "not-specified",
+			"groupIndex": 0
+		},
+		{
+			"fieldKey": "Tax",
+			"fieldType": "string",
+			"fieldFormat": "not-specified",
+			"groupIndex": 0
+		},
+		{
+			"fieldKey": "Total",
+			"fieldType": "string",
+			"fieldFormat": "not-specified",
+			"groupIndex": 0
+		}
+	],
+	"definitions": {}
+}
