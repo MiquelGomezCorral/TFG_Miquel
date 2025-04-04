@@ -32,10 +32,10 @@ if [ "$PIP" = true ]; then
 
 
     # Install dependencies from requirements.txt
-    if [ -f "./TFG/requirements.txt" ]; then
-        pip install -r "./TFG/requirements.txt"
+    if [ -f "./scripts_environment/requirements.txt" ]; then
+        pip install -r "./scripts_environment/requirements.txt"
     else
-        echo "❌ Error: requirements.txt not found at ./TFG/requirements.txt"
+        echo "❌ Error: requirements.txt not found at ./scripts_environment/requirements.txt"
         exit 1
     fi
 
@@ -68,7 +68,13 @@ if [ "$GIT" = true ]; then
     git config --global user.email "miquelgc2003@gmail.com"
     git config --global user.name "Miquel Gómez Corral"
 
-    git pull
+    read -p "Do you want to pull the latest changes? (y/n): " answer
+
+    if [[ "$answer" =~ ^[Yy]$ ]]; then
+        git pull
+    else
+        echo "Skipping git pull."
+    fi
 
     # echo -e "\n======================================"
     # echo "              CLONNING OCR"

@@ -58,8 +58,22 @@ from TFG.scripts_donut.tokenizer import DonutDataset, added_tokens
 from TFG.scripts_dataset.utils import print_separator, change_directory, print_time, TimeTracker
 from TFG.scripts_dataset.validate_model import validate_prediction
 
+
+
 def fatura_metric(ground_truth, prediction):
     return 1-validate_prediction(ground_truth, prediction)[2]
+
+def train_model_from_args(args):
+    # ================== Clear repo =========================
+    if args.boom_folders:
+        clear_folder(folder="./temp")
+        clear_folder(folder="./wandb")
+    # ================== Training =========================
+    print_separator(f'Training {args.task_name}...', sep_type="SUPER")
+
+    train_model(args)
+
+    print_separator(f'DONE!', sep_type="SUPER")
 
 def train_model(args):
     CONFIG = Config(
@@ -75,12 +89,13 @@ def train_model(args):
     
     TIME_TRAKER = TimeTracker(name="Training")
     TIME_TRAKER.track("Start")
+    
     # =============================================================================
     #                            DATASET BASIC, NOT USED
     # =============================================================================
+    # TIME_TRAKER.track("Basic dataset load")
     # print_separator(f'Loadding dataset {args.dataset_name_or_path}...', sep_type="LONG")
     # dataset = load_dataset(args.dataset_name_or_path)
-    
     
     # =============================================================================
     #                                   MODEL
@@ -240,18 +255,6 @@ if __name__ == "__main__":
     donut_process.join()  # Ensure cleanup
     clean_all()
     
-    # ================== Clear repo =========================
-    if args.boom_folders:
-        clear_folder(folder="./temp")
-        clear_folder(folder="./wandb")
-    # ================== Training =========================
-    # t1 = time.time()
-    print_separator(f'Training {args.task_name}...', sep_type="SUPER")
-
-    train_model(args)
-
-    # t2 = time.time()
-    # diff = t2-t1
-    # print_time(diff, space=True )
-    print_separator(f'DONE!', sep_type="SUPER")
+    # ================== Train ======================
+    train_model_from_args(args)
 
