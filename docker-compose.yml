@@ -1,0 +1,12 @@
+services:
+  python:
+    container_name: python
+    build: .
+    # Que el container use la misma interfaz de red que mi máquina local
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    # environment:
+      # - MODULE_VERSION=0.0.1
+    volumes:
+      - ./app:/app
+    command: sh -c "tail -f /dev/null" # Mantener encendido el contenedor

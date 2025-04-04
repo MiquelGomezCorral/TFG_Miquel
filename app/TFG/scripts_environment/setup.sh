@@ -70,20 +70,20 @@ if [ "$GIT" = true ]; then
 
     git pull
 
-    echo -e "\n======================================"
-    echo "              CLONNING OCR"
-    echo "======================================"
+    # echo -e "\n======================================"
+    # echo "              CLONNING OCR"
+    # echo "======================================"
 
-    if [ -d './module_ocr_llm/' ]; then
-        echo -e "\n- PULLING module_ocr_llm"
+    # if [ -d './module_ocr_llm/' ]; then
+    #     echo -e "\n- PULLING module_ocr_llm"
 
-        cd ./module_ocr_llm/
-        git pull
-        cd ../
-    else
-        echo -e "\n- CLONNING module_ocr_llm"
-        git clone git@bitbucket.org:solverrepos/module_ocr_llm.git
-    fi
+    #     cd ./module_ocr_llm/
+    #     git pull
+    #     cd ../
+    # else
+    #     echo -e "\n- CLONNING module_ocr_llm"
+    #     git clone git@bitbucket.org:solverrepos/module_ocr_llm.git
+    # fi
 
 
     # if [ -d './donut/' ]; then
