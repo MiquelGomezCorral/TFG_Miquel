@@ -1,5 +1,5 @@
 [flake8]
-max-line-length = 88  # Adjust line length to your preference
+max-line-length = 100  # Adjust line length to your preference
 ignore = E501, W291, E302, W293  # Disable specific checks:
 # - E501: Line too long
 # - W291: Trailing whitespace
