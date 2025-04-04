@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance27.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Lisa Velazquez\", \"address\": \"4988 Jamie Cliffs Garciashire, PR 44787 US\", \"date\": \"02-May-2020\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 912.64, \"discount\": null, \"tax\": 57.95, \"total\": 941.29}}",
+    "original_data": {
+        "buyer": "Lisa Velazquez",
+        "address": "4988 Jamie Cliffs Garciashire, PR 44787 US",
+        "date": "02-May-2020",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 912.64,
+        "discount": null,
+        "tax": 57.95,
+        "total": 941.29
+    }
+}

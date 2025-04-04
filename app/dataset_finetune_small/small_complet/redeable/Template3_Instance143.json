@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance143.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Joanne Fletcher\", \"address\": \"45319 Brent Knoll Apt. 178 Jacksonville, FM 30089 US\", \"date\": \"12-Sep-2017\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 22.76, \"total\": 593.1}}",
+    "original_data": {
+        "buyer": "Joanne Fletcher",
+        "address": "45319 Brent Knoll Apt. 178 Jacksonville, FM 30089 US",
+        "date": "12-Sep-2017",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 22.76,
+        "total": 593.1
+    }
+}

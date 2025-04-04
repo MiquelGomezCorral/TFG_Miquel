@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance97.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"David Bauer\", \"address\": \"273 Keith Fields Guerreromouth, MH 59656 US\", \"date\": \"21-Oct-2001\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 782.34, \"discount\": 11.74, \"tax\": 54.69, \"total\": 819.74}}",
+    "original_data": {
+        "buyer": "David Bauer",
+        "address": "273 Keith Fields Guerreromouth, MH 59656 US",
+        "date": "21-Oct-2001",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 782.34,
+        "discount": 11.74,
+        "tax": 54.69,
+        "total": 819.74
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance39.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Robert Mitchell\", \"address\": \"5267 Bailey Vista Suite 326 North Mitchell, DC 72555 US\", \"date\": \"11-Apr-2015\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 798.12, \"discount\": null, \"tax\": null, \"total\": 803.63}}",
+    "original_data": {
+        "buyer": "Robert Mitchell",
+        "address": "5267 Bailey Vista Suite 326 North Mitchell, DC 72555 US",
+        "date": "11-Apr-2015",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 798.12,
+        "discount": null,
+        "tax": null,
+        "total": 803.63
+    }
+}

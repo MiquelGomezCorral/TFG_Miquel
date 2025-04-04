@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance40.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Yvonne Wright\", \"address\": \"1427 Michelle Row Suite 529 Lake Patrick, NJ 12150 US\", \"date\": \"29-Feb-2008\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 747.09, \"discount\": 17.93, \"tax\": 37.62, \"total\": 767.53}}",
+    "original_data": {
+        "buyer": "Yvonne Wright",
+        "address": "1427 Michelle Row Suite 529 Lake Patrick, NJ 12150 US",
+        "date": "29-Feb-2008",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 747.09,
+        "discount": 17.93,
+        "tax": 37.62,
+        "total": 767.53
+    }
+}

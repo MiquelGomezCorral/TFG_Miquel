@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance118.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Daniel Lee\", \"address\": \"3782 Lisa Plaza Apt. 990 Lake Albert, OR 52264 US\", \"date\": \"20-Jun-2021\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 65.35, \"total\": 973.25}}",
+    "original_data": {
+        "buyer": "Daniel Lee",
+        "address": "3782 Lisa Plaza Apt. 990 Lake Albert, OR 52264 US",
+        "date": "20-Jun-2021",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 65.35,
+        "total": 973.25
+    }
+}

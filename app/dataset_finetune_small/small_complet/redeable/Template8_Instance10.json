@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance10.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Christina Rogers\", \"address\": \"9312 Jade Field Suite 240 New Amandaside, WV 38718 US\", \"date\": \"02-May-2010\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 240.91, \"discount\": null, \"tax\": null, \"total\": 253.1}}",
+    "original_data": {
+        "buyer": "Christina Rogers",
+        "address": "9312 Jade Field Suite 240 New Amandaside, WV 38718 US",
+        "date": "02-May-2010",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 240.91,
+        "discount": null,
+        "tax": null,
+        "total": 253.1
+    }
+}

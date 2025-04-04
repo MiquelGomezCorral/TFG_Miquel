@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance165.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Bradley Kelly\", \"address\": \"941 Angel Views Lake James, GU 86435 US\", \"date\": \"12-Aug-2012\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 491.68, \"discount\": null, \"tax\": 28.36, \"total\": 515.02}}",
+    "original_data": {
+        "buyer": "Bradley Kelly",
+        "address": "941 Angel Views Lake James, GU 86435 US",
+        "date": "12-Aug-2012",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 491.68,
+        "discount": null,
+        "tax": 28.36,
+        "total": 515.02
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance193.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Brian Ryan\", \"address\": \"7425 Spencer Plaza Suite 354 West Elizabethbury, VT 91825 US\", \"date\": \"14-Dec-1998\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 687.9, \"discount\": 16.03, \"tax\": 29.94, \"total\": 704.36}}",
+    "original_data": {
+        "buyer": "Brian Ryan",
+        "address": "7425 Spencer Plaza Suite 354 West Elizabethbury, VT 91825 US",
+        "date": "14-Dec-1998",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 687.9,
+        "discount": 16.03,
+        "tax": 29.94,
+        "total": 704.36
+    }
+}

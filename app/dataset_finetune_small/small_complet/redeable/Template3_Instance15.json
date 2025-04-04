@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance15.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ryan Gates\", \"address\": \"566 Reginald Inlet Suite 746 Lake Michael, WY 95694 US\", \"date\": \"16-Feb-2009\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 32.74, \"total\": 675.56}}",
+    "original_data": {
+        "buyer": "Ryan Gates",
+        "address": "566 Reginald Inlet Suite 746 Lake Michael, WY 95694 US",
+        "date": "16-Feb-2009",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 32.74,
+        "total": 675.56
+    }
+}

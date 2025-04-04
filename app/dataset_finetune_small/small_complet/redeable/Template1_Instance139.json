@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance139.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jose Moody\", \"address\": \"0905 Peterson Crossroad West Benjamin, MA 61218 US\", \"date\": \"02-Jul-1994\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 713.51, \"discount\": 18.62, \"tax\": 26.83, \"total\": 719.93}}",
+    "original_data": {
+        "buyer": "Jose Moody",
+        "address": "0905 Peterson Crossroad West Benjamin, MA 61218 US",
+        "date": "02-Jul-1994",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 713.51,
+        "discount": 18.62,
+        "tax": 26.83,
+        "total": 719.93
+    }
+}

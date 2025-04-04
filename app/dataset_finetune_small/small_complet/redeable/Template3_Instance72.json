@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance72.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Bethany Pace\", \"address\": \"973 Amanda Forest Apt. 226 Port Rickfort, MI 24782 US\", \"date\": \"05-Jan-2005\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 63.31, \"total\": 1050.91}}",
+    "original_data": {
+        "buyer": "Bethany Pace",
+        "address": "973 Amanda Forest Apt. 226 Port Rickfort, MI 24782 US",
+        "date": "05-Jan-2005",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 63.31,
+        "total": 1050.91
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance198.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Thomas Gregory\", \"address\": \"65111 Debra Prairie Hallmouth, WA 31114 US\", \"date\": \"22-Jan-2019\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 670.27, \"discount\": 7.71, \"tax\": 33.94, \"total\": 684.84}}",
+    "original_data": {
+        "buyer": "Thomas Gregory",
+        "address": "65111 Debra Prairie Hallmouth, WA 31114 US",
+        "date": "22-Jan-2019",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 670.27,
+        "discount": 7.71,
+        "tax": 33.94,
+        "total": 684.84
+    }
+}

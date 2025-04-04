@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance11.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Janice Nguyen\", \"address\": \"193 Troy Radial Crossborough, NV 81506 US\", \"date\": \"11-Aug-2017\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 286.76, \"discount\": 12.7, \"tax\": 15.34, \"total\": 291.69}}",
+    "original_data": {
+        "buyer": "Janice Nguyen",
+        "address": "193 Troy Radial Crossborough, NV 81506 US",
+        "date": "11-Aug-2017",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 286.76,
+        "discount": 12.7,
+        "tax": 15.34,
+        "total": 291.69
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance76.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Julie Bailey\", \"address\": \"346 Dustin Burg South Christophertown, OK 09761 US\", \"date\": \"02-Dec-2011\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 391.05, \"discount\": 16.19, \"tax\": 16.48, \"total\": 403.03}}",
+    "original_data": {
+        "buyer": "Julie Bailey",
+        "address": "346 Dustin Burg South Christophertown, OK 09761 US",
+        "date": "02-Dec-2011",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 391.05,
+        "discount": 16.19,
+        "tax": 16.48,
+        "total": 403.03
+    }
+}

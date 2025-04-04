@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance98.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Hunter Gibbs\", \"address\": \"83474 Dawn Lake Gabriellestad, UT 28262 US\", \"date\": \"23-Dec-2011\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 846.72, \"discount\": null, \"tax\": null, \"total\": 858.83}}",
+    "original_data": {
+        "buyer": "Hunter Gibbs",
+        "address": "83474 Dawn Lake Gabriellestad, UT 28262 US",
+        "date": "23-Dec-2011",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 846.72,
+        "discount": null,
+        "tax": null,
+        "total": 858.83
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance20.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jonathan Kerr\", \"address\": \"453 Lee Port Suite 966 East Candace, VT 33600 US\", \"date\": \"27-Jan-2022\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 24.51, \"total\": 776.19}}",
+    "original_data": {
+        "buyer": "Jonathan Kerr",
+        "address": "453 Lee Port Suite 966 East Candace, VT 33600 US",
+        "date": "27-Jan-2022",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 24.51,
+        "total": 776.19
+    }
+}

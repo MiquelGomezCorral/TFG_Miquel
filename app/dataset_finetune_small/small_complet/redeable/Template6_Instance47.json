@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance47.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jessica Jones\", \"address\": \"9259 Ortega Rest Suite 719 West Timothy, NY 34357 US\", \"date\": \"18-Oct-2009\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 425.21, \"discount\": null, \"tax\": 13.18, \"total\": 421.04}}",
+    "original_data": {
+        "buyer": "Jessica Jones",
+        "address": "9259 Ortega Rest Suite 719 West Timothy, NY 34357 US",
+        "date": "18-Oct-2009",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 425.21,
+        "discount": null,
+        "tax": 13.18,
+        "total": 421.04
+    }
+}

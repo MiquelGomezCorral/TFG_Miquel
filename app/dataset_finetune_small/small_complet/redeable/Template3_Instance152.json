@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance152.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Victor Nguyen\", \"address\": \"86614 Martin Road Judyview, CA 67741 US\", \"date\": \"31-Oct-2002\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 17.14, \"total\": 357.41}}",
+    "original_data": {
+        "buyer": "Victor Nguyen",
+        "address": "86614 Martin Road Judyview, CA 67741 US",
+        "date": "31-Oct-2002",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 17.14,
+        "total": 357.41
+    }
+}

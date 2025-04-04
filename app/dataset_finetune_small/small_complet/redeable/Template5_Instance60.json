@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance60.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Heather Bell\", \"address\": \"4127 Joel Flat Ericshire, AK 75875 US\", \"date\": \"07-Aug-1997\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1010.64, \"discount\": null, \"tax\": 67.09, \"total\": 1037.71}}",
+    "original_data": {
+        "buyer": "Heather Bell",
+        "address": "4127 Joel Flat Ericshire, AK 75875 US",
+        "date": "07-Aug-1997",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1010.64,
+        "discount": null,
+        "tax": 67.09,
+        "total": 1037.71
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance82.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Mark Thompson\", \"address\": \"31702 Tracy Overpass North Jasmin, SC 50659 US\", \"date\": \"13-Jul-2010\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 326.73, \"discount\": null, \"tax\": 19.41, \"total\": 342.15}}",
+    "original_data": {
+        "buyer": "Mark Thompson",
+        "address": "31702 Tracy Overpass North Jasmin, SC 50659 US",
+        "date": "13-Jul-2010",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 326.73,
+        "discount": null,
+        "tax": 19.41,
+        "total": 342.15
+    }
+}

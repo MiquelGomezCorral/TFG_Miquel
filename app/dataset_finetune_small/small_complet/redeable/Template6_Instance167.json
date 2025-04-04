@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance167.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michael Webb\", \"address\": \"572 Jenna Square Apt. 229 West Jessica, MO 56411 US\", \"date\": \"02-Jul-2022\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 315.96, \"discount\": null, \"tax\": 21.64, \"total\": 328.06}}",
+    "original_data": {
+        "buyer": "Michael Webb",
+        "address": "572 Jenna Square Apt. 229 West Jessica, MO 56411 US",
+        "date": "02-Jul-2022",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 315.96,
+        "discount": null,
+        "tax": 21.64,
+        "total": 328.06
+    }
+}

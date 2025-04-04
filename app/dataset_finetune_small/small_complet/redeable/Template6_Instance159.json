@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance159.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Scott Hunt\", \"address\": \"97757 Matthew Village Suite 231 Lake Ashley, SC 47240 US\", \"date\": \"18-Jan-2023\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 835.46, \"discount\": null, \"tax\": 58.2, \"total\": 858.49}}",
+    "original_data": {
+        "buyer": "Scott Hunt",
+        "address": "97757 Matthew Village Suite 231 Lake Ashley, SC 47240 US",
+        "date": "18-Jan-2023",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 835.46,
+        "discount": null,
+        "tax": 58.2,
+        "total": 858.49
+    }
+}

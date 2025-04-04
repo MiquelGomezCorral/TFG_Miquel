@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance5.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Christopher Marshall\", \"address\": \"68630 Brian Lights Lake Danaview, TN 69169 US\", \"date\": \"23-Oct-2012\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 599.15, \"discount\": 20.61, \"tax\": 29.85, \"total\": 608.33}}",
+    "original_data": {
+        "buyer": "Christopher Marshall",
+        "address": "68630 Brian Lights Lake Danaview, TN 69169 US",
+        "date": "23-Oct-2012",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 599.15,
+        "discount": 20.61,
+        "tax": 29.85,
+        "total": 608.33
+    }
+}

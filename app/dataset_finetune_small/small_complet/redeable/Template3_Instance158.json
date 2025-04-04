@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance158.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Joshua Taylor\", \"address\": \"410 Michael Hill Suite 691 Bergerbury, SC 13688 US\", \"date\": \"28-Jul-2016\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 17.79, \"total\": 335.02}}",
+    "original_data": {
+        "buyer": "Joshua Taylor",
+        "address": "410 Michael Hill Suite 691 Bergerbury, SC 13688 US",
+        "date": "28-Jul-2016",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 17.79,
+        "total": 335.02
+    }
+}

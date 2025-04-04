@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance40.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"William Smith\", \"address\": \"94935 Johnson Expressway Apt. 901 Lake Rebecca, IA 43267 US\", \"date\": \"04-Feb-1995\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 398.85, \"discount\": null, \"tax\": 24.68, \"total\": 419.46}}",
+    "original_data": {
+        "buyer": "William Smith",
+        "address": "94935 Johnson Expressway Apt. 901 Lake Rebecca, IA 43267 US",
+        "date": "04-Feb-1995",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 398.85,
+        "discount": null,
+        "tax": 24.68,
+        "total": 419.46
+    }
+}

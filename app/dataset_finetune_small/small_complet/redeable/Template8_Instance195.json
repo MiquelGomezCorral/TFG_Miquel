@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance195.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Raymond Baker\", \"address\": \"924 Lin Trafficway Suite 687 Jackmouth, CA 90936 US\", \"date\": \"10-Oct-2004\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 390.5, \"discount\": null, \"tax\": null, \"total\": 400.43}}",
+    "original_data": {
+        "buyer": "Raymond Baker",
+        "address": "924 Lin Trafficway Suite 687 Jackmouth, CA 90936 US",
+        "date": "10-Oct-2004",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 390.5,
+        "discount": null,
+        "tax": null,
+        "total": 400.43
+    }
+}

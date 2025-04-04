@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance174.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ashley Owens\", \"address\": \"883 Paula Ford Suite 365 Catherineview, AZ 80736 US\", \"date\": \"03-Apr-1997\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 524.28, \"discount\": 22.65, \"tax\": 22.71, \"total\": 521.25}}",
+    "original_data": {
+        "buyer": "Ashley Owens",
+        "address": "883 Paula Ford Suite 365 Catherineview, AZ 80736 US",
+        "date": "03-Apr-1997",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 524.28,
+        "discount": 22.65,
+        "tax": 22.71,
+        "total": 521.25
+    }
+}

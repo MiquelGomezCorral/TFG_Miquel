@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance67.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Monica Mclaughlin\", \"address\": \"408 Williams Creek Apt. 492 North Benjaminport, GA 95250 US\", \"date\": \"26-Nov-2007\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 370.23, \"discount\": 8.07, \"tax\": 14.32, \"total\": 368.3}}",
+    "original_data": {
+        "buyer": "Monica Mclaughlin",
+        "address": "408 Williams Creek Apt. 492 North Benjaminport, GA 95250 US",
+        "date": "26-Nov-2007",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 370.23,
+        "discount": 8.07,
+        "tax": 14.32,
+        "total": 368.3
+    }
+}

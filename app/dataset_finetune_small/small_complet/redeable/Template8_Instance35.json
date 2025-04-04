@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance35.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Colin Horton\", \"address\": \"9138 John Parkways North Belindaville, WI 20574 US\", \"date\": \"27-Jan-2020\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 1286.26, \"discount\": null, \"tax\": null, \"total\": 1294.83}}",
+    "original_data": {
+        "buyer": "Colin Horton",
+        "address": "9138 John Parkways North Belindaville, WI 20574 US",
+        "date": "27-Jan-2020",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 1286.26,
+        "discount": null,
+        "tax": null,
+        "total": 1294.83
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance95.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jacob Sullivan\", \"address\": \"19800 Alan Point South Amanda, VT 14184 US\", \"date\": \"08-Jul-2004\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 16.53, \"total\": 442.4}}",
+    "original_data": {
+        "buyer": "Jacob Sullivan",
+        "address": "19800 Alan Point South Amanda, VT 14184 US",
+        "date": "08-Jul-2004",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 16.53,
+        "total": 442.4
+    }
+}

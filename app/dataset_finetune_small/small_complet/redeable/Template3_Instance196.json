@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance196.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ian Valdez\", \"address\": \"86185 Patricia Via Suite 411 Michaelland, CT 89529 US\", \"date\": \"05-Nov-2004\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 21.08, \"total\": 346.29}}",
+    "original_data": {
+        "buyer": "Ian Valdez",
+        "address": "86185 Patricia Via Suite 411 Michaelland, CT 89529 US",
+        "date": "05-Nov-2004",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 21.08,
+        "total": 346.29
+    }
+}

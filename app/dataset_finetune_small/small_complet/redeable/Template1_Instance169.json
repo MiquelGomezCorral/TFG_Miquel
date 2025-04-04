@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance169.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Linda Parker\", \"address\": \"4915 Antonio Fords Apt. 067 Oliviachester, OR 59242 US\", \"date\": \"24-Feb-2013\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 257.73, \"discount\": 11.96, \"tax\": 13.4, \"total\": 258.81}}",
+    "original_data": {
+        "buyer": "Linda Parker",
+        "address": "4915 Antonio Fords Apt. 067 Oliviachester, OR 59242 US",
+        "date": "24-Feb-2013",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 257.73,
+        "discount": 11.96,
+        "tax": 13.4,
+        "total": 258.81
+    }
+}

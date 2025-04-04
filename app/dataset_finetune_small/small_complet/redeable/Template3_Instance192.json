@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance192.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"James Haynes\", \"address\": \"45187 Amber Station New Andrea, NV 52879 US\", \"date\": \"26-Jun-1996\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 23.35, \"total\": 505.84}}",
+    "original_data": {
+        "buyer": "James Haynes",
+        "address": "45187 Amber Station New Andrea, NV 52879 US",
+        "date": "26-Jun-1996",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 23.35,
+        "total": 505.84
+    }
+}

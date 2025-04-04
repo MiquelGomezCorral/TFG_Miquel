@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance169.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Martha Cruz\", \"address\": \"287 Booth Island Sherylfurt, CO 75672 US\", \"date\": \"30-Sep-2011\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 337.81, \"discount\": null, \"tax\": 21.69, \"total\": 346.46}}",
+    "original_data": {
+        "buyer": "Martha Cruz",
+        "address": "287 Booth Island Sherylfurt, CO 75672 US",
+        "date": "30-Sep-2011",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 337.81,
+        "discount": null,
+        "tax": 21.69,
+        "total": 346.46
+    }
+}

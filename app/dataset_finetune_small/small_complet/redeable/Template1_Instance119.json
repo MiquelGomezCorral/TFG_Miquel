@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance119.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Wendy Drake\", \"address\": \"756 Claire Inlet Suite 825 Samanthaview, MT 70815 US\", \"date\": \"06-Apr-2016\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 646.73, \"discount\": 9.57, \"tax\": 25.2, \"total\": 649.68}}",
+    "original_data": {
+        "buyer": "Wendy Drake",
+        "address": "756 Claire Inlet Suite 825 Samanthaview, MT 70815 US",
+        "date": "06-Apr-2016",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 646.73,
+        "discount": 9.57,
+        "tax": 25.2,
+        "total": 649.68
+    }
+}

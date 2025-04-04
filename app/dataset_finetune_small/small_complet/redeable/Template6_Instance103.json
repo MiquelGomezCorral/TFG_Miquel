@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance103.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Joshua Snyder\", \"address\": \"88055 Odom Rapid West Brandy, WY 20718 US\", \"date\": \"09-Feb-2007\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 163.2, \"discount\": null, \"tax\": 5.51, \"total\": 166.15}}",
+    "original_data": {
+        "buyer": "Joshua Snyder",
+        "address": "88055 Odom Rapid West Brandy, WY 20718 US",
+        "date": "09-Feb-2007",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 163.2,
+        "discount": null,
+        "tax": 5.51,
+        "total": 166.15
+    }
+}

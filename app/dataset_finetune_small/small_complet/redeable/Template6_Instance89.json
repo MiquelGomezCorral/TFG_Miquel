@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance89.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Sierra Chapman\", \"address\": \"036 Frost Meadows Suite 367 Laurenview, GU 01598 US\", \"date\": \"21-Aug-2008\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 516.11, \"discount\": null, \"tax\": 18.79, \"total\": 515.6}}",
+    "original_data": {
+        "buyer": "Sierra Chapman",
+        "address": "036 Frost Meadows Suite 367 Laurenview, GU 01598 US",
+        "date": "21-Aug-2008",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 516.11,
+        "discount": null,
+        "tax": 18.79,
+        "total": 515.6
+    }
+}

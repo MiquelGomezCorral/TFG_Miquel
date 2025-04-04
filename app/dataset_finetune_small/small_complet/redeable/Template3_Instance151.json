@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance151.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Lance Anderson\", \"address\": \"462 Jacob Dale Apt. 622 North Susanton, WV 82021 US\", \"date\": \"05-Apr-2004\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 27.78, \"total\": 799.93}}",
+    "original_data": {
+        "buyer": "Lance Anderson",
+        "address": "462 Jacob Dale Apt. 622 North Susanton, WV 82021 US",
+        "date": "05-Apr-2004",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 27.78,
+        "total": 799.93
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance88.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kristine Collins DDS\", \"address\": \"41151 Gonzalez Extension Youngland, WV 53562 US\", \"date\": \"08-Mar-2009\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 299.73, \"discount\": null, \"tax\": 13.06, \"total\": 303.62}}",
+    "original_data": {
+        "buyer": "Kristine Collins DDS",
+        "address": "41151 Gonzalez Extension Youngland, WV 53562 US",
+        "date": "08-Mar-2009",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 299.73,
+        "discount": null,
+        "tax": 13.06,
+        "total": 303.62
+    }
+}

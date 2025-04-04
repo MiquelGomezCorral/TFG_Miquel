@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance134.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Andrea Underwood\", \"address\": \"037 Jennifer Springs Dannyport, PW 95523 US\", \"date\": \"01-Jun-2004\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 989.9, \"discount\": 42.76, \"tax\": 37.62, \"total\": 995.35}}",
+    "original_data": {
+        "buyer": "Andrea Underwood",
+        "address": "037 Jennifer Springs Dannyport, PW 95523 US",
+        "date": "01-Jun-2004",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 989.9,
+        "discount": 42.76,
+        "tax": 37.62,
+        "total": 995.35
+    }
+}

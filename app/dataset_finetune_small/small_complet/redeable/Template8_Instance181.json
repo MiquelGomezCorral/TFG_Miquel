@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance181.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Sarah Woods\", \"address\": \"439 Patricia Manors Suite 863 New Kimfort, PR 50749 US\", \"date\": \"07-Apr-2003\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 954.79, \"discount\": null, \"tax\": null, \"total\": 976.63}}",
+    "original_data": {
+        "buyer": "Sarah Woods",
+        "address": "439 Patricia Manors Suite 863 New Kimfort, PR 50749 US",
+        "date": "07-Apr-2003",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 954.79,
+        "discount": null,
+        "tax": null,
+        "total": 976.63
+    }
+}

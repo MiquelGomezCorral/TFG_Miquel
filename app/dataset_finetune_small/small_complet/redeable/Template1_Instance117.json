@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance117.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jason Pena\", \"address\": \"043 Lee Haven Apt. 140 Bergtown, RI 94535 US\", \"date\": \"22-Apr-2002\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 402.81, \"discount\": 18.49, \"tax\": 14.89, \"total\": 410.09}}",
+    "original_data": {
+        "buyer": "Jason Pena",
+        "address": "043 Lee Haven Apt. 140 Bergtown, RI 94535 US",
+        "date": "22-Apr-2002",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 402.81,
+        "discount": 18.49,
+        "tax": 14.89,
+        "total": 410.09
+    }
+}

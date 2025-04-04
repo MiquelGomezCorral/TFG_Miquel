@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance61.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Catherine Castillo\", \"address\": \"4301 Elizabeth Locks Douglasfurt, VI 34157 US\", \"date\": \"02-Oct-2019\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 167.37, \"discount\": null, \"tax\": null, \"total\": 167.56}}",
+    "original_data": {
+        "buyer": "Catherine Castillo",
+        "address": "4301 Elizabeth Locks Douglasfurt, VI 34157 US",
+        "date": "02-Oct-2019",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 167.37,
+        "discount": null,
+        "tax": null,
+        "total": 167.56
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance106.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Elizabeth Horton MD\", \"address\": \"216 Lee Locks Apt. 726 North Wendy, VI 87852 US\", \"date\": \"02-Aug-1996\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 37.12, \"total\": 653.15}}",
+    "original_data": {
+        "buyer": "Elizabeth Horton MD",
+        "address": "216 Lee Locks Apt. 726 North Wendy, VI 87852 US",
+        "date": "02-Aug-1996",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 37.12,
+        "total": 653.15
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance173.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Elaine Perry\", \"address\": \"188 Michael Ways East Davidbury, KS 28017 US\", \"date\": \"30-Dec-1993\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 67.75, \"discount\": null, \"tax\": 2.42, \"total\": 69.07}}",
+    "original_data": {
+        "buyer": "Elaine Perry",
+        "address": "188 Michael Ways East Davidbury, KS 28017 US",
+        "date": "30-Dec-1993",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 67.75,
+        "discount": null,
+        "tax": 2.42,
+        "total": 69.07
+    }
+}

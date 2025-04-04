@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance146.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Rebecca Gregory\", \"address\": \"2071 Cynthia Park Suite 463 Christopherton, AR 84112 US\", \"date\": \"17-Oct-2002\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 580.25, \"discount\": 24.08, \"tax\": 37.6, \"total\": 599.75}}",
+    "original_data": {
+        "buyer": "Rebecca Gregory",
+        "address": "2071 Cynthia Park Suite 463 Christopherton, AR 84112 US",
+        "date": "17-Oct-2002",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 580.25,
+        "discount": 24.08,
+        "tax": 37.6,
+        "total": 599.75
+    }
+}

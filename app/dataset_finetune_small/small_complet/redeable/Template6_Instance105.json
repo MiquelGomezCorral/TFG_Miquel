@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance105.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jeffrey Davis\", \"address\": \"0015 Bailey Path Apt. 068 Lewisstad, AL 34289 US\", \"date\": \"07-Mar-2018\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 534.94, \"discount\": null, \"tax\": 19.96, \"total\": 543.51}}",
+    "original_data": {
+        "buyer": "Jeffrey Davis",
+        "address": "0015 Bailey Path Apt. 068 Lewisstad, AL 34289 US",
+        "date": "07-Mar-2018",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 534.94,
+        "discount": null,
+        "tax": 19.96,
+        "total": 543.51
+    }
+}

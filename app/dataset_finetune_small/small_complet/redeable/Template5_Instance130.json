@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance130.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Lauren Davis\", \"address\": \"2518 Montgomery Pine Apt. 237 New Leonard, MS 19700 US\", \"date\": \"06-Jun-2000\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 676.26, \"discount\": null, \"tax\": 28.76, \"total\": 686.08}}",
+    "original_data": {
+        "buyer": "Lauren Davis",
+        "address": "2518 Montgomery Pine Apt. 237 New Leonard, MS 19700 US",
+        "date": "06-Jun-2000",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 676.26,
+        "discount": null,
+        "tax": 28.76,
+        "total": 686.08
+    }
+}

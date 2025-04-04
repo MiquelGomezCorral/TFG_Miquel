@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance98.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jacqueline Sanders\", \"address\": \"3328 Mullins Orchard Apt. 935 Lake Christopher, VI 59601 US\", \"date\": \"18-Sep-2021\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 37.65, \"total\": 1094.17}}",
+    "original_data": {
+        "buyer": "Jacqueline Sanders",
+        "address": "3328 Mullins Orchard Apt. 935 Lake Christopher, VI 59601 US",
+        "date": "18-Sep-2021",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 37.65,
+        "total": 1094.17
+    }
+}

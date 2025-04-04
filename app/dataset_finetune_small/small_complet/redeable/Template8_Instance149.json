@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance149.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Tiffany Bradford\", \"address\": \"3545 Tyler Knolls Bautistaside, ID 26529 US\", \"date\": \"08-Feb-1993\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 403.04, \"discount\": null, \"tax\": null, \"total\": 411.03}}",
+    "original_data": {
+        "buyer": "Tiffany Bradford",
+        "address": "3545 Tyler Knolls Bautistaside, ID 26529 US",
+        "date": "08-Feb-1993",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 403.04,
+        "discount": null,
+        "tax": null,
+        "total": 411.03
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance58.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Elizabeth Gregory\", \"address\": \"11398 Edwards Plain Suite 529 South Manuelfurt, KY 00621 US\", \"date\": \"29-Jul-2014\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 55.44, \"total\": 882.31}}",
+    "original_data": {
+        "buyer": "Elizabeth Gregory",
+        "address": "11398 Edwards Plain Suite 529 South Manuelfurt, KY 00621 US",
+        "date": "29-Jul-2014",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 55.44,
+        "total": 882.31
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance106.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Amanda Price\", \"address\": \"82236 Barbara Glens Suite 121 Jenniferstad, MN 19295 US\", \"date\": \"25-Dec-1997\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1035.24, \"discount\": null, \"tax\": 58.83, \"total\": 1042.62}}",
+    "original_data": {
+        "buyer": "Amanda Price",
+        "address": "82236 Barbara Glens Suite 121 Jenniferstad, MN 19295 US",
+        "date": "25-Dec-1997",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1035.24,
+        "discount": null,
+        "tax": 58.83,
+        "total": 1042.62
+    }
+}

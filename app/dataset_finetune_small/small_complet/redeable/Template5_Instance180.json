@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance180.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michael Miller\", \"address\": \"418 Morales Via Suite 686 West Danny, SC 86316 US\", \"date\": \"17-Nov-2005\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1577.11, \"discount\": null, \"tax\": 71.95, \"total\": 1610.42}}",
+    "original_data": {
+        "buyer": "Michael Miller",
+        "address": "418 Morales Via Suite 686 West Danny, SC 86316 US",
+        "date": "17-Nov-2005",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1577.11,
+        "discount": null,
+        "tax": 71.95,
+        "total": 1610.42
+    }
+}

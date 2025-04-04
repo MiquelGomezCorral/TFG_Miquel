@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance0.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Andrew White\", \"address\": \"187 Laurie Throughway Suite 418 Barronfurt, WY 54072 US\", \"date\": \"16-Feb-2002\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1016.78, \"discount\": null, \"tax\": 54.55, \"total\": 1028.12}}",
+    "original_data": {
+        "buyer": "Andrew White",
+        "address": "187 Laurie Throughway Suite 418 Barronfurt, WY 54072 US",
+        "date": "16-Feb-2002",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1016.78,
+        "discount": null,
+        "tax": 54.55,
+        "total": 1028.12
+    }
+}

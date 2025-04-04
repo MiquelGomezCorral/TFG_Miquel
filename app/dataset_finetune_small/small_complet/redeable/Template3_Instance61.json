@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance61.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Devin Carlson\", \"address\": \"6804 Pugh Parkway Carolview, VT 22811 US\", \"date\": \"28-Feb-2007\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 42.28, \"total\": 706.2}}",
+    "original_data": {
+        "buyer": "Devin Carlson",
+        "address": "6804 Pugh Parkway Carolview, VT 22811 US",
+        "date": "28-Feb-2007",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 42.28,
+        "total": 706.2
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance123.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Joel Robertson\", \"address\": \"87354 Jackson Mission Apt. 088 West Kennethfort, GA 22907 US\", \"date\": \"12-Dec-2008\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 332.56, \"discount\": null, \"tax\": 16.44, \"total\": 344.48}}",
+    "original_data": {
+        "buyer": "Joel Robertson",
+        "address": "87354 Jackson Mission Apt. 088 West Kennethfort, GA 22907 US",
+        "date": "12-Dec-2008",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 332.56,
+        "discount": null,
+        "tax": 16.44,
+        "total": 344.48
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance179.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Juan Hull\", \"address\": \"2990 Hensley Isle Suite 672 New Deborah, WV 12043 US\", \"date\": \"16-Oct-2010\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 515.83, \"discount\": null, \"tax\": null, \"total\": 533.72}}",
+    "original_data": {
+        "buyer": "Juan Hull",
+        "address": "2990 Hensley Isle Suite 672 New Deborah, WV 12043 US",
+        "date": "16-Oct-2010",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 515.83,
+        "discount": null,
+        "tax": null,
+        "total": 533.72
+    }
+}

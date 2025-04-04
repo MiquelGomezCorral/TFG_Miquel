@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance134.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kelly Ward\", \"address\": \"4751 Amanda Land Suite 314 Stewartstad, ID 25120 US\", \"date\": \"10-Apr-1998\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 574.46, \"discount\": null, \"tax\": null, \"total\": 583.98}}",
+    "original_data": {
+        "buyer": "Kelly Ward",
+        "address": "4751 Amanda Land Suite 314 Stewartstad, ID 25120 US",
+        "date": "10-Apr-1998",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 574.46,
+        "discount": null,
+        "tax": null,
+        "total": 583.98
+    }
+}

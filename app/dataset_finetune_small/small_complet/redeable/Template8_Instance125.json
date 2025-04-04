@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance125.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Joseph Adams\", \"address\": \"761 Tammy Drive Apt. 783 Lake Joshua, AL 74358 US\", \"date\": \"21-Jun-1993\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 886.14, \"discount\": null, \"tax\": null, \"total\": 929.99}}",
+    "original_data": {
+        "buyer": "Joseph Adams",
+        "address": "761 Tammy Drive Apt. 783 Lake Joshua, AL 74358 US",
+        "date": "21-Jun-1993",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 886.14,
+        "discount": null,
+        "tax": null,
+        "total": 929.99
+    }
+}

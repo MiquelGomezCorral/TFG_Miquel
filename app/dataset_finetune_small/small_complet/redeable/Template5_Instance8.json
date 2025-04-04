@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance8.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Brian Phillips\", \"address\": \"48681 Wheeler Parks Apt. 335 North Jennifer, DC 37684 US\", \"date\": \"08-Oct-2011\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 550.38, \"discount\": null, \"tax\": 25.91, \"total\": 555.38}}",
+    "original_data": {
+        "buyer": "Brian Phillips",
+        "address": "48681 Wheeler Parks Apt. 335 North Jennifer, DC 37684 US",
+        "date": "08-Oct-2011",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 550.38,
+        "discount": null,
+        "tax": 25.91,
+        "total": 555.38
+    }
+}

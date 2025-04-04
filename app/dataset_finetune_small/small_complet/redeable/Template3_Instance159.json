@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance159.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michael May\", \"address\": \"29266 Sherry Row Amandaport, TN 31298 US\", \"date\": \"12-Jan-2002\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 26.93, \"total\": 712.93}}",
+    "original_data": {
+        "buyer": "Michael May",
+        "address": "29266 Sherry Row Amandaport, TN 31298 US",
+        "date": "12-Jan-2002",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 26.93,
+        "total": 712.93
+    }
+}

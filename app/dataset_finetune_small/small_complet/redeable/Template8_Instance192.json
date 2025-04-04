@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance192.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Duane Carey\", \"address\": \"682 Brandy Corner Hoffmanhaven, AR 62877 US\", \"date\": \"27-May-2010\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 1538.03, \"discount\": null, \"tax\": null, \"total\": 1568.32}}",
+    "original_data": {
+        "buyer": "Duane Carey",
+        "address": "682 Brandy Corner Hoffmanhaven, AR 62877 US",
+        "date": "27-May-2010",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 1538.03,
+        "discount": null,
+        "tax": null,
+        "total": 1568.32
+    }
+}

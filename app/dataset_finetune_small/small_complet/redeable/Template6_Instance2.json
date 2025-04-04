@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance2.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Paul Merritt\", \"address\": \"6242 Hurst Avenue Christopherburgh, MN 50923 US\", \"date\": \"21-Jun-2010\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 408.96, \"discount\": null, \"tax\": 27.94, \"total\": 425.74}}",
+    "original_data": {
+        "buyer": "Paul Merritt",
+        "address": "6242 Hurst Avenue Christopherburgh, MN 50923 US",
+        "date": "21-Jun-2010",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 408.96,
+        "discount": null,
+        "tax": 27.94,
+        "total": 425.74
+    }
+}

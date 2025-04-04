@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance100.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Rachel Garza\", \"address\": \"41913 Paul Drives Port Jonathanmouth, WV 07494 US\", \"date\": \"17-Jun-2009\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 11.99, \"total\": 196.23}}",
+    "original_data": {
+        "buyer": "Rachel Garza",
+        "address": "41913 Paul Drives Port Jonathanmouth, WV 07494 US",
+        "date": "17-Jun-2009",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 11.99,
+        "total": 196.23
+    }
+}

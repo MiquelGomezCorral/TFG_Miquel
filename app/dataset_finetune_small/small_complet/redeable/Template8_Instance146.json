@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance146.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Douglas Johnson\", \"address\": \"690 Tina Throughway Lake Kristy, PR 81765 US\", \"date\": \"07-Jul-2011\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 956.36, \"discount\": null, \"tax\": null, \"total\": 999.03}}",
+    "original_data": {
+        "buyer": "Douglas Johnson",
+        "address": "690 Tina Throughway Lake Kristy, PR 81765 US",
+        "date": "07-Jul-2011",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 956.36,
+        "discount": null,
+        "tax": null,
+        "total": 999.03
+    }
+}

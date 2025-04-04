@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance14.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Laura Mendez\", \"address\": \"13996 Leslie Rapids Apt. 053 North Amy, NJ 11749 US\", \"date\": \"20-May-2001\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 17.43, \"total\": 265.39}}",
+    "original_data": {
+        "buyer": "Laura Mendez",
+        "address": "13996 Leslie Rapids Apt. 053 North Amy, NJ 11749 US",
+        "date": "20-May-2001",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 17.43,
+        "total": 265.39
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance8.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michael Dixon\", \"address\": \"6942 Kyle Ways Apt. 063 North Craig, ND 55485 US\", \"date\": \"14-Jul-2012\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 586.86, \"discount\": null, \"tax\": 32.25, \"total\": 611.83}}",
+    "original_data": {
+        "buyer": "Michael Dixon",
+        "address": "6942 Kyle Ways Apt. 063 North Craig, ND 55485 US",
+        "date": "14-Jul-2012",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 586.86,
+        "discount": null,
+        "tax": 32.25,
+        "total": 611.83
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance35.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ashley Sanders\", \"address\": \"730 Pugh Road Taylorstad, FM 93506 US\", \"date\": \"13-Apr-2017\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 922.85, \"discount\": 38.21, \"tax\": 53.75, \"total\": 935.35}}",
+    "original_data": {
+        "buyer": "Ashley Sanders",
+        "address": "730 Pugh Road Taylorstad, FM 93506 US",
+        "date": "13-Apr-2017",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 922.85,
+        "discount": 38.21,
+        "tax": 53.75,
+        "total": 935.35
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance74.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Bonnie Edwards\", \"address\": \"2861 Hernandez Garden North Wendyshire, WI 33282 US\", \"date\": \"23-Feb-2006\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1179.24, \"discount\": 40.68, \"tax\": 48.25, \"total\": 1213.81}}",
+    "original_data": {
+        "buyer": "Bonnie Edwards",
+        "address": "2861 Hernandez Garden North Wendyshire, WI 33282 US",
+        "date": "23-Feb-2006",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1179.24,
+        "discount": 40.68,
+        "tax": 48.25,
+        "total": 1213.81
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance86.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Rebecca Smith\", \"address\": \"47797 Charles Lake Christopherberg, TX 13843 US\", \"date\": \"23-Apr-2010\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 430.2, \"discount\": 21.17, \"tax\": 29.39, \"total\": 448.62}}",
+    "original_data": {
+        "buyer": "Rebecca Smith",
+        "address": "47797 Charles Lake Christopherberg, TX 13843 US",
+        "date": "23-Apr-2010",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 430.2,
+        "discount": 21.17,
+        "tax": 29.39,
+        "total": 448.62
+    }
+}

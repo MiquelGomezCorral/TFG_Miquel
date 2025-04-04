@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance153.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Victoria Spence\", \"address\": \"034 Jenkins Land North Scottview, NC 41061 US\", \"date\": \"24-Apr-2020\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 438.66, \"discount\": null, \"tax\": 20.92, \"total\": 453.48}}",
+    "original_data": {
+        "buyer": "Victoria Spence",
+        "address": "034 Jenkins Land North Scottview, NC 41061 US",
+        "date": "24-Apr-2020",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 438.66,
+        "discount": null,
+        "tax": 20.92,
+        "total": 453.48
+    }
+}

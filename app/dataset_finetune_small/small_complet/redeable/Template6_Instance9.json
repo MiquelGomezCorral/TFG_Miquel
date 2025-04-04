@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance9.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Patrick Walker\", \"address\": \"081 Barnett Overpass Jenniferfort, MA 73231 US\", \"date\": \"02-Apr-1998\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 410.52, \"discount\": null, \"tax\": 16.55, \"total\": 421.73}}",
+    "original_data": {
+        "buyer": "Patrick Walker",
+        "address": "081 Barnett Overpass Jenniferfort, MA 73231 US",
+        "date": "02-Apr-1998",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 410.52,
+        "discount": null,
+        "tax": 16.55,
+        "total": 421.73
+    }
+}

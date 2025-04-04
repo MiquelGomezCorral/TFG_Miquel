@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance68.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kimberly Gomez\", \"address\": \"132 Shea Points Normanton, NH 58411 US\", \"date\": \"19-Nov-1994\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 77.66, \"total\": 1166.72}}",
+    "original_data": {
+        "buyer": "Kimberly Gomez",
+        "address": "132 Shea Points Normanton, NH 58411 US",
+        "date": "19-Nov-1994",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 77.66,
+        "total": 1166.72
+    }
+}

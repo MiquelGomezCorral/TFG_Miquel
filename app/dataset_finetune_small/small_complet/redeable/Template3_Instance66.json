@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance66.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Candace Rogers\", \"address\": \"178 Brian Oval Barryburgh, AR 82072 US\", \"date\": \"16-Jul-1995\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 33.9, \"total\": 633.04}}",
+    "original_data": {
+        "buyer": "Candace Rogers",
+        "address": "178 Brian Oval Barryburgh, AR 82072 US",
+        "date": "16-Jul-1995",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 33.9,
+        "total": 633.04
+    }
+}

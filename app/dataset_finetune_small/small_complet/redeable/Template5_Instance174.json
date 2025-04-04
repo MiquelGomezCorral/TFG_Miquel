@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance174.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Cesar Lee\", \"address\": \"280 Garcia Heights Suite 953 Port Jillstad, DC 19775 US\", \"date\": \"01-Nov-1997\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 556.63, \"discount\": null, \"tax\": 24.44, \"total\": 558.08}}",
+    "original_data": {
+        "buyer": "Cesar Lee",
+        "address": "280 Garcia Heights Suite 953 Port Jillstad, DC 19775 US",
+        "date": "01-Nov-1997",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 556.63,
+        "discount": null,
+        "tax": 24.44,
+        "total": 558.08
+    }
+}

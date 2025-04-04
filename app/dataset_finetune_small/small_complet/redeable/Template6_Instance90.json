@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance90.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Derrick Pope\", \"address\": \"3177 Karen Falls Suite 182 Gardnershire, AL 12905 US\", \"date\": \"06-May-2001\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 759.38, \"discount\": null, \"tax\": 49.75, \"total\": 793.87}}",
+    "original_data": {
+        "buyer": "Derrick Pope",
+        "address": "3177 Karen Falls Suite 182 Gardnershire, AL 12905 US",
+        "date": "06-May-2001",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 759.38,
+        "discount": null,
+        "tax": 49.75,
+        "total": 793.87
+    }
+}

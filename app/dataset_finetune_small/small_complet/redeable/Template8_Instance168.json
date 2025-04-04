@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance168.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Teresa Fields\", \"address\": \"7731 Charles Trace Murphyberg, MD 40922 US\", \"date\": \"08-Jul-2022\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 532.63, \"discount\": null, \"tax\": null, \"total\": 550.31}}",
+    "original_data": {
+        "buyer": "Teresa Fields",
+        "address": "7731 Charles Trace Murphyberg, MD 40922 US",
+        "date": "08-Jul-2022",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 532.63,
+        "discount": null,
+        "tax": null,
+        "total": 550.31
+    }
+}

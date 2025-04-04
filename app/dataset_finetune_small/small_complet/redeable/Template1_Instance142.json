@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance142.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Tracy Price\", \"address\": \"30532 Peter Corner Suite 441 Fryechester, WY 44575 US\", \"date\": \"22-Jul-2014\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 897.84, \"discount\": 25.05, \"tax\": 48.8, \"total\": 902.29}}",
+    "original_data": {
+        "buyer": "Tracy Price",
+        "address": "30532 Peter Corner Suite 441 Fryechester, WY 44575 US",
+        "date": "22-Jul-2014",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 897.84,
+        "discount": 25.05,
+        "tax": 48.8,
+        "total": 902.29
+    }
+}

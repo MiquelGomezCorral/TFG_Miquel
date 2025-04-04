@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance124.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Todd Chang\", \"address\": \"701 Robert Island North Joshuamouth, AK 28759 US\", \"date\": \"23-Apr-2011\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 625.38, \"discount\": null, \"tax\": 39.32, \"total\": 634.68}}",
+    "original_data": {
+        "buyer": "Todd Chang",
+        "address": "701 Robert Island North Joshuamouth, AK 28759 US",
+        "date": "23-Apr-2011",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 625.38,
+        "discount": null,
+        "tax": 39.32,
+        "total": 634.68
+    }
+}

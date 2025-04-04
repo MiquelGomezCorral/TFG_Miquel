@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance175.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"John Gray\", \"address\": \"22755 Johnson Knolls New Christinaport, WY 12500 US\", \"date\": \"06-Jun-2013\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 24.2, \"total\": 602.7}}",
+    "original_data": {
+        "buyer": "John Gray",
+        "address": "22755 Johnson Knolls New Christinaport, WY 12500 US",
+        "date": "06-Jun-2013",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 24.2,
+        "total": 602.7
+    }
+}

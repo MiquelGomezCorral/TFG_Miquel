@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance147.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"James Gibson\", \"address\": \"86859 Jones Rue Elijahmouth, OR 26291 US\", \"date\": \"07-Oct-2021\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 24.76, \"total\": 609.46}}",
+    "original_data": {
+        "buyer": "James Gibson",
+        "address": "86859 Jones Rue Elijahmouth, OR 26291 US",
+        "date": "07-Oct-2021",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 24.76,
+        "total": 609.46
+    }
+}

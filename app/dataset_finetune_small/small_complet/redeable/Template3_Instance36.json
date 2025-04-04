@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance36.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Susan Jarvis\", \"address\": \"95990 Charles Estates Lake Cameron, UT 97019 US\", \"date\": \"26-Apr-1997\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 5.78, \"total\": 101.88}}",
+    "original_data": {
+        "buyer": "Susan Jarvis",
+        "address": "95990 Charles Estates Lake Cameron, UT 97019 US",
+        "date": "26-Apr-1997",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 5.78,
+        "total": 101.88
+    }
+}

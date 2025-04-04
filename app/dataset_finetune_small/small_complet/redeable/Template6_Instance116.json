@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance116.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Bryan Simon\", \"address\": \"169 Murphy Plains Suite 837 Lake Jessica, DC 79922 US\", \"date\": \"03-Apr-1996\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 375.59, \"discount\": null, \"tax\": 21.56, \"total\": 379.8}}",
+    "original_data": {
+        "buyer": "Bryan Simon",
+        "address": "169 Murphy Plains Suite 837 Lake Jessica, DC 79922 US",
+        "date": "03-Apr-1996",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 375.59,
+        "discount": null,
+        "tax": 21.56,
+        "total": 379.8
+    }
+}

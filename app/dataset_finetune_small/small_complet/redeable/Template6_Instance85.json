@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance85.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Felicia Yates\", \"address\": \"6129 Lopez Wall Mcintyreview, WA 30506 US\", \"date\": \"22-Oct-2012\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1008.84, \"discount\": null, \"tax\": 33.76, \"total\": 1009.31}}",
+    "original_data": {
+        "buyer": "Felicia Yates",
+        "address": "6129 Lopez Wall Mcintyreview, WA 30506 US",
+        "date": "22-Oct-2012",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1008.84,
+        "discount": null,
+        "tax": 33.76,
+        "total": 1009.31
+    }
+}

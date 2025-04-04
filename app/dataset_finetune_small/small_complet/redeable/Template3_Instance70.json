@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance70.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Wendy Brown\", \"address\": \"209 Wesley Lock Suite 497 East Michael, KY 52990 US\", \"date\": \"12-Feb-1994\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 23.71, \"total\": 369.46}}",
+    "original_data": {
+        "buyer": "Wendy Brown",
+        "address": "209 Wesley Lock Suite 497 East Michael, KY 52990 US",
+        "date": "12-Feb-1994",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 23.71,
+        "total": 369.46
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance124.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Christina Russell\", \"address\": \"5127 Erickson Extensions Transide, MD 93840 US\", \"date\": \"30-Nov-2005\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 9.18, \"total\": 194.19}}",
+    "original_data": {
+        "buyer": "Christina Russell",
+        "address": "5127 Erickson Extensions Transide, MD 93840 US",
+        "date": "30-Nov-2005",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 9.18,
+        "total": 194.19
+    }
+}

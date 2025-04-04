@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance5.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Terri Ibarra\", \"address\": \"84805 Leslie Oval Hurleyberg, MA 68615 US\", \"date\": \"09-Mar-1998\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 106.02, \"discount\": null, \"tax\": null, \"total\": 109.22}}",
+    "original_data": {
+        "buyer": "Terri Ibarra",
+        "address": "84805 Leslie Oval Hurleyberg, MA 68615 US",
+        "date": "09-Mar-1998",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 106.02,
+        "discount": null,
+        "tax": null,
+        "total": 109.22
+    }
+}

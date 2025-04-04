@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance60.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Steven Swanson\", \"address\": \"1480 Kevin Cape North Crystal, ME 37316 US\", \"date\": \"06-Feb-1994\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 38.39, \"total\": 1061.18}}",
+    "original_data": {
+        "buyer": "Steven Swanson",
+        "address": "1480 Kevin Cape North Crystal, ME 37316 US",
+        "date": "06-Feb-1994",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 38.39,
+        "total": 1061.18
+    }
+}

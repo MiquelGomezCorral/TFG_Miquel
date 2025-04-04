@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance58.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jamie Williams\", \"address\": \"1493 Foley Causeway Jasonton, WV 08717 US\", \"date\": \"14-Dec-2008\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 295.59, \"discount\": 7.27, \"tax\": 10.66, \"total\": 294.9}}",
+    "original_data": {
+        "buyer": "Jamie Williams",
+        "address": "1493 Foley Causeway Jasonton, WV 08717 US",
+        "date": "14-Dec-2008",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 295.59,
+        "discount": 7.27,
+        "tax": 10.66,
+        "total": 294.9
+    }
+}

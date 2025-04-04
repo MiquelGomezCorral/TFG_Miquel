@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance53.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Tracey Davis\", \"address\": \"13144 Romero Drive Port Amber, NE 21875 US\", \"date\": \"16-Aug-2011\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 745.88, \"discount\": 21.93, \"tax\": 48.55, \"total\": 778.99}}",
+    "original_data": {
+        "buyer": "Tracey Davis",
+        "address": "13144 Romero Drive Port Amber, NE 21875 US",
+        "date": "16-Aug-2011",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 745.88,
+        "discount": 21.93,
+        "tax": 48.55,
+        "total": 778.99
+    }
+}

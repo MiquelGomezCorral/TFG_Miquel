@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance11.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"James Hughes\", \"address\": \"45736 Clark Corners Apt. 078 Lake Savannah, NE 98114 US\", \"date\": \"17-Jul-2022\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 366.32, \"discount\": null, \"tax\": 22.75, \"total\": 374.97}}",
+    "original_data": {
+        "buyer": "James Hughes",
+        "address": "45736 Clark Corners Apt. 078 Lake Savannah, NE 98114 US",
+        "date": "17-Jul-2022",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 366.32,
+        "discount": null,
+        "tax": 22.75,
+        "total": 374.97
+    }
+}

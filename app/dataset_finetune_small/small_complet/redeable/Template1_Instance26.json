@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance26.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Marcia Hayes\", \"address\": \"4930 Rebecca Viaduct Lake Melissastad, WY 03429 US\", \"date\": \"28-Jun-1999\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 345.04, \"discount\": 4.93, \"tax\": 17.05, \"total\": 353.64}}",
+    "original_data": {
+        "buyer": "Marcia Hayes",
+        "address": "4930 Rebecca Viaduct Lake Melissastad, WY 03429 US",
+        "date": "28-Jun-1999",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 345.04,
+        "discount": 4.93,
+        "tax": 17.05,
+        "total": 353.64
+    }
+}

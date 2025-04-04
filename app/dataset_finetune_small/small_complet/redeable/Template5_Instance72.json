@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance72.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Natalie Hernandez\", \"address\": \"490 Day Valleys Bookerfurt, LA 72411 US\", \"date\": \"24-Feb-2012\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 452.97, \"discount\": null, \"tax\": 19.41, \"total\": 466.54}}",
+    "original_data": {
+        "buyer": "Natalie Hernandez",
+        "address": "490 Day Valleys Bookerfurt, LA 72411 US",
+        "date": "24-Feb-2012",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 452.97,
+        "discount": null,
+        "tax": 19.41,
+        "total": 466.54
+    }
+}

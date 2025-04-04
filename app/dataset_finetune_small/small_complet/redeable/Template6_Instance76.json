@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance76.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michael Flores\", \"address\": \"474 Kimberly Green Navarromouth, ND 89392 US\", \"date\": \"21-Mar-2002\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 898.84, \"discount\": null, \"tax\": 50.88, \"total\": 930.48}}",
+    "original_data": {
+        "buyer": "Michael Flores",
+        "address": "474 Kimberly Green Navarromouth, ND 89392 US",
+        "date": "21-Mar-2002",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 898.84,
+        "discount": null,
+        "tax": 50.88,
+        "total": 930.48
+    }
+}

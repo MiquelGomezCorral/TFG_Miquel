@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance197.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Timothy Taylor\", \"address\": \"31027 Thompson Green Suite 990 Thomasburgh, NJ 86251 US\", \"date\": \"25-Sep-2006\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 36.19, \"discount\": null, \"tax\": 1.11, \"total\": 36.61}}",
+    "original_data": {
+        "buyer": "Timothy Taylor",
+        "address": "31027 Thompson Green Suite 990 Thomasburgh, NJ 86251 US",
+        "date": "25-Sep-2006",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 36.19,
+        "discount": null,
+        "tax": 1.11,
+        "total": 36.61
+    }
+}

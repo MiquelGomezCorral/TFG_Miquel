@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance68.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Robert Curtis\", \"address\": \"5215 May Circle Apt. 142 Georgeport, ME 34027 US\", \"date\": \"02-Aug-2002\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 630.82, \"discount\": 30.53, \"tax\": 42.84, \"total\": 644.2}}",
+    "original_data": {
+        "buyer": "Robert Curtis",
+        "address": "5215 May Circle Apt. 142 Georgeport, ME 34027 US",
+        "date": "02-Aug-2002",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 630.82,
+        "discount": 30.53,
+        "tax": 42.84,
+        "total": 644.2
+    }
+}

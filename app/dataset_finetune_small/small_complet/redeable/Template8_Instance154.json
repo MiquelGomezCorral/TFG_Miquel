@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance154.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Steven Reilly Jr.\", \"address\": \"73574 Hopkins Land South Manuelchester, MI 08123 US\", \"date\": \"23-Mar-2017\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 365.52, \"discount\": null, \"tax\": null, \"total\": 372.85}}",
+    "original_data": {
+        "buyer": "Steven Reilly Jr.",
+        "address": "73574 Hopkins Land South Manuelchester, MI 08123 US",
+        "date": "23-Mar-2017",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 365.52,
+        "discount": null,
+        "tax": null,
+        "total": 372.85
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance4.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Katie Phillips\", \"address\": \"4020 Johnny Fork South Kimburgh, AZ 84325 US\", \"date\": \"05-Aug-2002\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 722.28, \"discount\": null, \"tax\": null, \"total\": 720.38}}",
+    "original_data": {
+        "buyer": "Katie Phillips",
+        "address": "4020 Johnny Fork South Kimburgh, AZ 84325 US",
+        "date": "05-Aug-2002",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 722.28,
+        "discount": null,
+        "tax": null,
+        "total": 720.38
+    }
+}

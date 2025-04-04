@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance16.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Drew Lewis\", \"address\": \"68896 Baker Fords Suite 385 South Arthur, FM 00701 US\", \"date\": \"11-May-2022\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 21.16, \"total\": 331.7}}",
+    "original_data": {
+        "buyer": "Drew Lewis",
+        "address": "68896 Baker Fords Suite 385 South Arthur, FM 00701 US",
+        "date": "11-May-2022",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 21.16,
+        "total": 331.7
+    }
+}

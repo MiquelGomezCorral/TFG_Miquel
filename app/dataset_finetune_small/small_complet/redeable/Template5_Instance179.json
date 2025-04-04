@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance179.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Johnny Johnson\", \"address\": \"4170 Bolton Cliff Bennettborough, DE 83984 US\", \"date\": \"01-May-2007\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1014.43, \"discount\": null, \"tax\": 70.48, \"total\": 1041.29}}",
+    "original_data": {
+        "buyer": "Johnny Johnson",
+        "address": "4170 Bolton Cliff Bennettborough, DE 83984 US",
+        "date": "01-May-2007",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1014.43,
+        "discount": null,
+        "tax": 70.48,
+        "total": 1041.29
+    }
+}

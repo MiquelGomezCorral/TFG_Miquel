@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance148.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Gloria Aguirre\", \"address\": \"573 Patricia Square Suite 260 Lake Kelsey, RI 81814 US\", \"date\": \"13-Jan-2008\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 217.85, \"discount\": null, \"tax\": null, \"total\": 217.01}}",
+    "original_data": {
+        "buyer": "Gloria Aguirre",
+        "address": "573 Patricia Square Suite 260 Lake Kelsey, RI 81814 US",
+        "date": "13-Jan-2008",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 217.85,
+        "discount": null,
+        "tax": null,
+        "total": 217.01
+    }
+}

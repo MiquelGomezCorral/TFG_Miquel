@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance42.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Nancy Leonard\", \"address\": \"5720 Michael Keys Anthonystad, ND 69503 US\", \"date\": \"03-Aug-2001\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 44.96, \"total\": 674.92}}",
+    "original_data": {
+        "buyer": "Nancy Leonard",
+        "address": "5720 Michael Keys Anthonystad, ND 69503 US",
+        "date": "03-Aug-2001",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 44.96,
+        "total": 674.92
+    }
+}

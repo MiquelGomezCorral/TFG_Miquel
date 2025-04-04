@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance183.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Connor Griffin\", \"address\": \"29616 Jillian Common Elizabethland, GA 10406 US\", \"date\": \"09-May-2012\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 30.31, \"total\": 905.5}}",
+    "original_data": {
+        "buyer": "Connor Griffin",
+        "address": "29616 Jillian Common Elizabethland, GA 10406 US",
+        "date": "09-May-2012",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 30.31,
+        "total": 905.5
+    }
+}

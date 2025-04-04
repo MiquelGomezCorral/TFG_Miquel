@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance177.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Mark Walls\", \"address\": \"29820 Chad Inlet Loweport, WA 06025 US\", \"date\": \"16-Apr-2009\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 526.54, \"discount\": 23.54, \"tax\": 17.3, \"total\": 535.57}}",
+    "original_data": {
+        "buyer": "Mark Walls",
+        "address": "29820 Chad Inlet Loweport, WA 06025 US",
+        "date": "16-Apr-2009",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 526.54,
+        "discount": 23.54,
+        "tax": 17.3,
+        "total": 535.57
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance3.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Joseph Jenkins\", \"address\": \"268 Krause Run Hesterview, MH 17423 US\", \"date\": \"26-Oct-2011\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 46.68, \"total\": 1274.35}}",
+    "original_data": {
+        "buyer": "Joseph Jenkins",
+        "address": "268 Krause Run Hesterview, MH 17423 US",
+        "date": "26-Oct-2011",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 46.68,
+        "total": 1274.35
+    }
+}

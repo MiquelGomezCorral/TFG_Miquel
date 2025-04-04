@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance167.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Laura Harper\", \"address\": \"299 Buchanan Flats Jasmineside, PR 86385 US\", \"date\": \"25-Mar-1997\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1009.61, \"discount\": null, \"tax\": 48.86, \"total\": 1030.91}}",
+    "original_data": {
+        "buyer": "Laura Harper",
+        "address": "299 Buchanan Flats Jasmineside, PR 86385 US",
+        "date": "25-Mar-1997",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1009.61,
+        "discount": null,
+        "tax": 48.86,
+        "total": 1030.91
+    }
+}

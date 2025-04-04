@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance27.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Steven Johnson\", \"address\": \"81428 Cruz Forest East Keith, UT 65756 US\", \"date\": \"18-Apr-2012\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 523.72, \"discount\": 19.74, \"tax\": 24.5, \"total\": 540.78}}",
+    "original_data": {
+        "buyer": "Steven Johnson",
+        "address": "81428 Cruz Forest East Keith, UT 65756 US",
+        "date": "18-Apr-2012",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 523.72,
+        "discount": 19.74,
+        "tax": 24.5,
+        "total": 540.78
+    }
+}

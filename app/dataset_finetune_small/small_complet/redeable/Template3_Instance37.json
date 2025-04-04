@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance37.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Maria Werner\", \"address\": \"9327 Lisa Roads Newtonview, MN 33259 US\", \"date\": \"24-Feb-2008\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 49.35, \"total\": 959.35}}",
+    "original_data": {
+        "buyer": "Maria Werner",
+        "address": "9327 Lisa Roads Newtonview, MN 33259 US",
+        "date": "24-Feb-2008",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 49.35,
+        "total": 959.35
+    }
+}

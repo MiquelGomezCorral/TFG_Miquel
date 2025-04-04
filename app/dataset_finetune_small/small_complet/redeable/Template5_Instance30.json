@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance30.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jeffery Anderson\", \"address\": \"051 Tamara Brook East Anthony, MS 58814 US\", \"date\": \"19-Apr-2008\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 564.89, \"discount\": null, \"tax\": 36.41, \"total\": 575.43}}",
+    "original_data": {
+        "buyer": "Jeffery Anderson",
+        "address": "051 Tamara Brook East Anthony, MS 58814 US",
+        "date": "19-Apr-2008",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 564.89,
+        "discount": null,
+        "tax": 36.41,
+        "total": 575.43
+    }
+}

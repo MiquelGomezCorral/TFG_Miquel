@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance187.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kaitlyn Wilson\", \"address\": \"39036 Timothy Rue Yolandafurt, DC 48011 US\", \"date\": \"11-Jan-2015\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 186.08, \"discount\": null, \"tax\": null, \"total\": 189.84}}",
+    "original_data": {
+        "buyer": "Kaitlyn Wilson",
+        "address": "39036 Timothy Rue Yolandafurt, DC 48011 US",
+        "date": "11-Jan-2015",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 186.08,
+        "discount": null,
+        "tax": null,
+        "total": 189.84
+    }
+}

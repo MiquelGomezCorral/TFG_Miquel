@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance45.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Barbara Kirk\", \"address\": \"375 Wagner Points Suite 008 Port Tammy, IL 07294 US\", \"date\": \"12-Dec-2019\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 260.88, \"discount\": 6.55, \"tax\": 10.74, \"total\": 258.76}}",
+    "original_data": {
+        "buyer": "Barbara Kirk",
+        "address": "375 Wagner Points Suite 008 Port Tammy, IL 07294 US",
+        "date": "12-Dec-2019",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 260.88,
+        "discount": 6.55,
+        "tax": 10.74,
+        "total": 258.76
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance32.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jason Morgan\", \"address\": \"6709 Scott Mill Webbstad, OR 52424 US\", \"date\": \"12-Feb-2012\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 342.14, \"discount\": null, \"tax\": 10.53, \"total\": 344.7}}",
+    "original_data": {
+        "buyer": "Jason Morgan",
+        "address": "6709 Scott Mill Webbstad, OR 52424 US",
+        "date": "12-Feb-2012",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 342.14,
+        "discount": null,
+        "tax": 10.53,
+        "total": 344.7
+    }
+}

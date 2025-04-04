@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance83.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Daniel Morris\", \"address\": \"670 Katie Burg Suite 967 Shawnbury, NY 82092 US\", \"date\": \"09-Dec-2009\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 228.12, \"discount\": null, \"tax\": 13.97, \"total\": 239.4}}",
+    "original_data": {
+        "buyer": "Daniel Morris",
+        "address": "670 Katie Burg Suite 967 Shawnbury, NY 82092 US",
+        "date": "09-Dec-2009",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 228.12,
+        "discount": null,
+        "tax": 13.97,
+        "total": 239.4
+    }
+}

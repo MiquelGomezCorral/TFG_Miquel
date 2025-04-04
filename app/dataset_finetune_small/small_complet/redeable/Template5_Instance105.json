@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance105.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Nicole Smith\", \"address\": \"273 Kyle Manor Lewisport, AZ 84916 US\", \"date\": \"30-Jul-2016\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 874.6, \"discount\": null, \"tax\": 48.31, \"total\": 905.33}}",
+    "original_data": {
+        "buyer": "Nicole Smith",
+        "address": "273 Kyle Manor Lewisport, AZ 84916 US",
+        "date": "30-Jul-2016",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 874.6,
+        "discount": null,
+        "tax": 48.31,
+        "total": 905.33
+    }
+}

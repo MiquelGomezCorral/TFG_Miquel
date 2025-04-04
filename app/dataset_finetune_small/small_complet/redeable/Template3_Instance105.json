@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance105.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kristen Suarez\", \"address\": \"985 May Rapids Solisfort, IA 68833 US\", \"date\": \"21-Mar-1995\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 31.13, \"total\": 704.62}}",
+    "original_data": {
+        "buyer": "Kristen Suarez",
+        "address": "985 May Rapids Solisfort, IA 68833 US",
+        "date": "21-Mar-1995",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 31.13,
+        "total": 704.62
+    }
+}

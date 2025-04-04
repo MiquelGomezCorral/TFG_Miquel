@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance192.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Bonnie Cooper\", \"address\": \"523 Michael Flat Longborough, PA 14039 US\", \"date\": \"19-Jan-1997\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 403.93, \"discount\": 13.77, \"tax\": 17.66, \"total\": 408.91}}",
+    "original_data": {
+        "buyer": "Bonnie Cooper",
+        "address": "523 Michael Flat Longborough, PA 14039 US",
+        "date": "19-Jan-1997",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 403.93,
+        "discount": 13.77,
+        "tax": 17.66,
+        "total": 408.91
+    }
+}

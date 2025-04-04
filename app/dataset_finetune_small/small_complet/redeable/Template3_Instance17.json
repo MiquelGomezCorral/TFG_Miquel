@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance17.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Thomas Powers\", \"address\": \"3230 Eric Pike Suite 226 North Elizabeth, FL 66387 US\", \"date\": \"01-Jan-2013\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 7.98, \"total\": 129.38}}",
+    "original_data": {
+        "buyer": "Thomas Powers",
+        "address": "3230 Eric Pike Suite 226 North Elizabeth, FL 66387 US",
+        "date": "01-Jan-2013",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 7.98,
+        "total": 129.38
+    }
+}

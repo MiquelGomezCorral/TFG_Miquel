@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance190.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Alex Moore\", \"address\": \"393 Ronald Drive West Nicholas, NE 48368 US\", \"date\": \"30-Jan-2005\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 39.61, \"total\": 609.11}}",
+    "original_data": {
+        "buyer": "Alex Moore",
+        "address": "393 Ronald Drive West Nicholas, NE 48368 US",
+        "date": "30-Jan-2005",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 39.61,
+        "total": 609.11
+    }
+}

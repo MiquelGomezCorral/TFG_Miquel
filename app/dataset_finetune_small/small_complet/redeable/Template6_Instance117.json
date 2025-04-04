@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance117.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Brian Valdez\", \"address\": \"3343 Valenzuela Mountain West Phillipport, OH 38545 US\", \"date\": \"03-Sep-2008\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 560.74, \"discount\": null, \"tax\": 24.62, \"total\": 572.86}}",
+    "original_data": {
+        "buyer": "Brian Valdez",
+        "address": "3343 Valenzuela Mountain West Phillipport, OH 38545 US",
+        "date": "03-Sep-2008",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 560.74,
+        "discount": null,
+        "tax": 24.62,
+        "total": 572.86
+    }
+}

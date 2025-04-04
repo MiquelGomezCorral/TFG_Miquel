@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance87.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Bethany Ochoa\", \"address\": \"8120 Jack Knolls Port Elijah, MI 36765 US\", \"date\": \"12-Feb-1993\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 595.68, \"discount\": null, \"tax\": 27.32, \"total\": 602.75}}",
+    "original_data": {
+        "buyer": "Bethany Ochoa",
+        "address": "8120 Jack Knolls Port Elijah, MI 36765 US",
+        "date": "12-Feb-1993",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 595.68,
+        "discount": null,
+        "tax": 27.32,
+        "total": 602.75
+    }
+}

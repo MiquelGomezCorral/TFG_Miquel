@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance81.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Rebecca Ross\", \"address\": \"5619 Hicks Forks Cynthiashire, WA 90879 US\", \"date\": \"08-Sep-1998\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 233.51, \"discount\": null, \"tax\": 8.67, \"total\": 230.92}}",
+    "original_data": {
+        "buyer": "Rebecca Ross",
+        "address": "5619 Hicks Forks Cynthiashire, WA 90879 US",
+        "date": "08-Sep-1998",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 233.51,
+        "discount": null,
+        "tax": 8.67,
+        "total": 230.92
+    }
+}

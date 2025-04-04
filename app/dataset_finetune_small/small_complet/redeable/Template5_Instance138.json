@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance138.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Alexander Mann\", \"address\": \"363 Cherry Lane Apt. 122 Johnnyfurt, AS 55611 US\", \"date\": \"28-May-2007\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1014.96, \"discount\": null, \"tax\": 69.53, \"total\": 1045.01}}",
+    "original_data": {
+        "buyer": "Alexander Mann",
+        "address": "363 Cherry Lane Apt. 122 Johnnyfurt, AS 55611 US",
+        "date": "28-May-2007",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1014.96,
+        "discount": null,
+        "tax": 69.53,
+        "total": 1045.01
+    }
+}

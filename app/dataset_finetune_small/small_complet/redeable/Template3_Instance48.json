@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance48.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Karen Smith\", \"address\": \"0203 Eric Mall Port Ronnie, VT 45234 US\", \"date\": \"03-Nov-2012\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 50.76, \"total\": 1141.14}}",
+    "original_data": {
+        "buyer": "Karen Smith",
+        "address": "0203 Eric Mall Port Ronnie, VT 45234 US",
+        "date": "03-Nov-2012",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 50.76,
+        "total": 1141.14
+    }
+}

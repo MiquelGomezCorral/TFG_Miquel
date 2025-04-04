@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance182.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"John Anderson\", \"address\": \"39939 Santos Manors Moranland, WA 83743 US\", \"date\": \"10-Feb-2008\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 4.66, \"total\": 99.12}}",
+    "original_data": {
+        "buyer": "John Anderson",
+        "address": "39939 Santos Manors Moranland, WA 83743 US",
+        "date": "10-Feb-2008",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 4.66,
+        "total": 99.12
+    }
+}

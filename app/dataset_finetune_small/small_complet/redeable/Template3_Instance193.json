@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance193.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Tyler Lawson\", \"address\": \"90822 Robert Land Lake Elizabethburgh, IA 12828 US\", \"date\": \"21-Oct-2008\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 21.55, \"total\": 520.43}}",
+    "original_data": {
+        "buyer": "Tyler Lawson",
+        "address": "90822 Robert Land Lake Elizabethburgh, IA 12828 US",
+        "date": "21-Oct-2008",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 21.55,
+        "total": 520.43
+    }
+}

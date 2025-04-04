@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance30.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Katrina Barajas\", \"address\": \"2865 Payne Expressway Apt. 271 Lindaside, NY 28332 US\", \"date\": \"12-Jun-1998\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 416.13, \"discount\": null, \"tax\": null, \"total\": 422.55}}",
+    "original_data": {
+        "buyer": "Katrina Barajas",
+        "address": "2865 Payne Expressway Apt. 271 Lindaside, NY 28332 US",
+        "date": "12-Jun-1998",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 416.13,
+        "discount": null,
+        "tax": null,
+        "total": 422.55
+    }
+}

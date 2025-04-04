@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance92.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Nicholas Richardson\", \"address\": \"86041 Catherine Union Stuartberg, NC 64098 US\", \"date\": \"28-Nov-2022\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 577.27, \"discount\": null, \"tax\": null, \"total\": 592.71}}",
+    "original_data": {
+        "buyer": "Nicholas Richardson",
+        "address": "86041 Catherine Union Stuartberg, NC 64098 US",
+        "date": "28-Nov-2022",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 577.27,
+        "discount": null,
+        "tax": null,
+        "total": 592.71
+    }
+}

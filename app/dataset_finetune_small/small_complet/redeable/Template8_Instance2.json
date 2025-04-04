@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance2.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"John Williams\", \"address\": \"13796 Ryan Isle Suite 192 Lake Lucas, OK 81921 US\", \"date\": \"08-Aug-2000\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 1018.62, \"discount\": null, \"tax\": null, \"total\": 1050.29}}",
+    "original_data": {
+        "buyer": "John Williams",
+        "address": "13796 Ryan Isle Suite 192 Lake Lucas, OK 81921 US",
+        "date": "08-Aug-2000",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 1018.62,
+        "discount": null,
+        "tax": null,
+        "total": 1050.29
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance86.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kathryn Navarro\", \"address\": \"29858 Jackson Street East Heatherfurt, CO 72110 US\", \"date\": \"09-Jul-2017\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 21.43, \"total\": 322.83}}",
+    "original_data": {
+        "buyer": "Kathryn Navarro",
+        "address": "29858 Jackson Street East Heatherfurt, CO 72110 US",
+        "date": "09-Jul-2017",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 21.43,
+        "total": 322.83
+    }
+}

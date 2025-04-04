@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance7.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Alicia Wu\", \"address\": \"3749 Hamilton Meadow Suite 617 Vanessafort, WV 39715 US\", \"date\": \"08-Oct-2006\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 550.96, \"discount\": null, \"tax\": 37.17, \"total\": 580.25}}",
+    "original_data": {
+        "buyer": "Alicia Wu",
+        "address": "3749 Hamilton Meadow Suite 617 Vanessafort, WV 39715 US",
+        "date": "08-Oct-2006",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 550.96,
+        "discount": null,
+        "tax": 37.17,
+        "total": 580.25
+    }
+}

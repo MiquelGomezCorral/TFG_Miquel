@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance50.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ashley Mathis\", \"address\": \"7664 Elizabeth Parkway North Brittney, MD 13920 US\", \"date\": \"14-Feb-2012\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 33.08, \"total\": 920.49}}",
+    "original_data": {
+        "buyer": "Ashley Mathis",
+        "address": "7664 Elizabeth Parkway North Brittney, MD 13920 US",
+        "date": "14-Feb-2012",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 33.08,
+        "total": 920.49
+    }
+}

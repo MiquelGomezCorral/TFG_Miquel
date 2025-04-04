@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance140.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jeffrey Bailey\", \"address\": \"1520 Grant Inlet Danielletown, RI 98370 US\", \"date\": \"24-Dec-2004\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 37.17, \"total\": 579.55}}",
+    "original_data": {
+        "buyer": "Jeffrey Bailey",
+        "address": "1520 Grant Inlet Danielletown, RI 98370 US",
+        "date": "24-Dec-2004",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 37.17,
+        "total": 579.55
+    }
+}

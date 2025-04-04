@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance106.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Mrs. Kristin Joyce\", \"address\": \"2842 Nelson Drives West Bethborough, MH 50279 US\", \"date\": \"05-Mar-2015\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 449.17, \"discount\": 20.8, \"tax\": 24.31, \"total\": 452.82}}",
+    "original_data": {
+        "buyer": "Mrs. Kristin Joyce",
+        "address": "2842 Nelson Drives West Bethborough, MH 50279 US",
+        "date": "05-Mar-2015",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 449.17,
+        "discount": 20.8,
+        "tax": 24.31,
+        "total": 452.82
+    }
+}

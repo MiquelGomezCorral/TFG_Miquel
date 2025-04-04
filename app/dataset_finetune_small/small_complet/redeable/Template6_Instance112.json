@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance112.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Gregory Johnson\", \"address\": \"3386 Fernandez Divide Apt. 673 Janetview, NC 96361 US\", \"date\": \"12-Jun-2007\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 731.61, \"discount\": null, \"tax\": 51.06, \"total\": 753.92}}",
+    "original_data": {
+        "buyer": "Gregory Johnson",
+        "address": "3386 Fernandez Divide Apt. 673 Janetview, NC 96361 US",
+        "date": "12-Jun-2007",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 731.61,
+        "discount": null,
+        "tax": 51.06,
+        "total": 753.92
+    }
+}

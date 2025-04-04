@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance189.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michele Fuentes\", \"address\": \"326 Herrera Via Batesmouth, MA 15059 US\", \"date\": \"27-Dec-2011\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 13.89, \"total\": 262.22}}",
+    "original_data": {
+        "buyer": "Michele Fuentes",
+        "address": "326 Herrera Via Batesmouth, MA 15059 US",
+        "date": "27-Dec-2011",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 13.89,
+        "total": 262.22
+    }
+}

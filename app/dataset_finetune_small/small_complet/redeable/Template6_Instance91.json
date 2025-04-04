@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance91.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Andrew Costa\", \"address\": \"93496 Wilson Corner Davisfurt, MN 17044 US\", \"date\": \"11-Feb-2009\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 1543.05, \"discount\": null, \"tax\": 89.96, \"total\": 1564.34}}",
+    "original_data": {
+        "buyer": "Andrew Costa",
+        "address": "93496 Wilson Corner Davisfurt, MN 17044 US",
+        "date": "11-Feb-2009",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 1543.05,
+        "discount": null,
+        "tax": 89.96,
+        "total": 1564.34
+    }
+}

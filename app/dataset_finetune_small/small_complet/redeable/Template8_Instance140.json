@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance140.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Shannon Alexander\", \"address\": \"838 Harris Ferry Matthewburgh, MP 10645 US\", \"date\": \"17-Sep-2009\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 707.98, \"discount\": null, \"tax\": null, \"total\": 722.84}}",
+    "original_data": {
+        "buyer": "Shannon Alexander",
+        "address": "838 Harris Ferry Matthewburgh, MP 10645 US",
+        "date": "17-Sep-2009",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 707.98,
+        "discount": null,
+        "tax": null,
+        "total": 722.84
+    }
+}

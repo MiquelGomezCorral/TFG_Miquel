@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance112.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Bradley Estrada\", \"address\": \"127 Susan Passage Suite 449 Port Markport, ID 58301 US\", \"date\": \"25-Jun-2013\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 680.79, \"discount\": null, \"tax\": 28.16, \"total\": 701.87}}",
+    "original_data": {
+        "buyer": "Bradley Estrada",
+        "address": "127 Susan Passage Suite 449 Port Markport, ID 58301 US",
+        "date": "25-Jun-2013",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 680.79,
+        "discount": null,
+        "tax": 28.16,
+        "total": 701.87
+    }
+}

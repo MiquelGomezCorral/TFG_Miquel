@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance171.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Paul Baker\", \"address\": \"7869 Kendra Wall North Jeffreytown, OH 11794 US\", \"date\": \"04-May-2005\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 968.32, \"discount\": 35.83, \"tax\": 45.48, \"total\": 973.61}}",
+    "original_data": {
+        "buyer": "Paul Baker",
+        "address": "7869 Kendra Wall North Jeffreytown, OH 11794 US",
+        "date": "04-May-2005",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 968.32,
+        "discount": 35.83,
+        "tax": 45.48,
+        "total": 973.61
+    }
+}

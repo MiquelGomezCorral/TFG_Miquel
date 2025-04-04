@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance131.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Carmen Reeves\", \"address\": \"1954 Wilson Mall Turnerside, MH 21563 US\", \"date\": \"24-May-2020\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 1132.97, \"discount\": null, \"tax\": 40.63, \"total\": 1139.38}}",
+    "original_data": {
+        "buyer": "Carmen Reeves",
+        "address": "1954 Wilson Mall Turnerside, MH 21563 US",
+        "date": "24-May-2020",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 1132.97,
+        "discount": null,
+        "tax": 40.63,
+        "total": 1139.38
+    }
+}

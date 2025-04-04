@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance133.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Courtney Davis\", \"address\": \"126 Baker Causeway Stevenborough, FL 64812 US\", \"date\": \"14-Oct-2008\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 12.56, \"total\": 270.88}}",
+    "original_data": {
+        "buyer": "Courtney Davis",
+        "address": "126 Baker Causeway Stevenborough, FL 64812 US",
+        "date": "14-Oct-2008",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 12.56,
+        "total": 270.88
+    }
+}

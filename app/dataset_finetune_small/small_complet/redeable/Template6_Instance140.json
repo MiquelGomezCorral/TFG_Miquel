@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance140.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kyle Ramirez\", \"address\": \"0535 Michael Rapids Port Ernestside, LA 91038 US\", \"date\": \"11-Feb-1994\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 793.94, \"discount\": null, \"tax\": 51.63, \"total\": 823.5}}",
+    "original_data": {
+        "buyer": "Kyle Ramirez",
+        "address": "0535 Michael Rapids Port Ernestside, LA 91038 US",
+        "date": "11-Feb-1994",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 793.94,
+        "discount": null,
+        "tax": 51.63,
+        "total": 823.5
+    }
+}

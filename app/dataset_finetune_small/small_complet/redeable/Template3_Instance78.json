@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance78.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Douglas Schneider\", \"address\": \"593 Ryan Fort Suite 278 Joanneville, MI 07468 US\", \"date\": \"06-Jul-1995\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 19.36, \"total\": 543.6}}",
+    "original_data": {
+        "buyer": "Douglas Schneider",
+        "address": "593 Ryan Fort Suite 278 Joanneville, MI 07468 US",
+        "date": "06-Jul-1995",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 19.36,
+        "total": 543.6
+    }
+}

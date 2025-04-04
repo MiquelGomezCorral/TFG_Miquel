@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance19.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Dawn Griffin\", \"address\": \"030 Joshua Stream Johnsonstad, PR 18478 US\", \"date\": \"13-Oct-2015\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1576.22, \"discount\": null, \"tax\": 68.69, \"total\": 1617.48}}",
+    "original_data": {
+        "buyer": "Dawn Griffin",
+        "address": "030 Joshua Stream Johnsonstad, PR 18478 US",
+        "date": "13-Oct-2015",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1576.22,
+        "discount": null,
+        "tax": 68.69,
+        "total": 1617.48
+    }
+}

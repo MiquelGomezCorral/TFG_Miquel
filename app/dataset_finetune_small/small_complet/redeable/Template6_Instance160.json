@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance160.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Joe Avila\", \"address\": \"15995 Russell Drive Port Linda, MA 65200 US\", \"date\": \"28-Sep-2018\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 446.98, \"discount\": null, \"tax\": 14.55, \"total\": 443.56}}",
+    "original_data": {
+        "buyer": "Joe Avila",
+        "address": "15995 Russell Drive Port Linda, MA 65200 US",
+        "date": "28-Sep-2018",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 446.98,
+        "discount": null,
+        "tax": 14.55,
+        "total": 443.56
+    }
+}

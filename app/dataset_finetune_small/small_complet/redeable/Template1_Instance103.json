@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance103.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michele Turner DDS\", \"address\": \"7673 Kevin Isle Robertfort, CT 51568 US\", \"date\": \"06-Sep-2007\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 805.87, \"discount\": 37.71, \"tax\": 50.52, \"total\": 839.31}}",
+    "original_data": {
+        "buyer": "Michele Turner DDS",
+        "address": "7673 Kevin Isle Robertfort, CT 51568 US",
+        "date": "06-Sep-2007",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 805.87,
+        "discount": 37.71,
+        "tax": 50.52,
+        "total": 839.31
+    }
+}

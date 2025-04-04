@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance161.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Timothy Carter\", \"address\": \"788 Mills Wall Markland, OH 78801 US\", \"date\": \"17-Apr-2018\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 700.09, \"discount\": null, \"tax\": 38.29, \"total\": 721.23}}",
+    "original_data": {
+        "buyer": "Timothy Carter",
+        "address": "788 Mills Wall Markland, OH 78801 US",
+        "date": "17-Apr-2018",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 700.09,
+        "discount": null,
+        "tax": 38.29,
+        "total": 721.23
+    }
+}

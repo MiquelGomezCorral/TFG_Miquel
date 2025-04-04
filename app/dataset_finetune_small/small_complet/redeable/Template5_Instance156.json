@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance156.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Taylor Jones\", \"address\": \"77235 Parker Gateway Apt. 509 Hendersonmouth, TN 20095 US\", \"date\": \"13-Mar-2007\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 432.86, \"discount\": null, \"tax\": 13.97, \"total\": 437.83}}",
+    "original_data": {
+        "buyer": "Taylor Jones",
+        "address": "77235 Parker Gateway Apt. 509 Hendersonmouth, TN 20095 US",
+        "date": "13-Mar-2007",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 432.86,
+        "discount": null,
+        "tax": 13.97,
+        "total": 437.83
+    }
+}

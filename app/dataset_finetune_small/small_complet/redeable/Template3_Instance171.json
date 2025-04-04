@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance171.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Steven Phillips\", \"address\": \"24469 Tanya Bypass Apt. 182 Nicholasshire, CO 75361 US\", \"date\": \"23-Jul-2007\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 29.39, \"total\": 611.62}}",
+    "original_data": {
+        "buyer": "Steven Phillips",
+        "address": "24469 Tanya Bypass Apt. 182 Nicholasshire, CO 75361 US",
+        "date": "23-Jul-2007",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 29.39,
+        "total": 611.62
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance141.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Mrs. Laura Butler\", \"address\": \"64879 Long Overpass Amyview, OH 20394 US\", \"date\": \"07-Apr-2020\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 591.17, \"discount\": null, \"tax\": 21.69, \"total\": 584.48}}",
+    "original_data": {
+        "buyer": "Mrs. Laura Butler",
+        "address": "64879 Long Overpass Amyview, OH 20394 US",
+        "date": "07-Apr-2020",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 591.17,
+        "discount": null,
+        "tax": 21.69,
+        "total": 584.48
+    }
+}

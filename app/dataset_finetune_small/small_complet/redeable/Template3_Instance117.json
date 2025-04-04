@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance117.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Adam Howard\", \"address\": \"2940 Catherine Wall Suite 872 East Aaronland, IN 99636 US\", \"date\": \"22-Sep-2018\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 44.59, \"total\": 1030.13}}",
+    "original_data": {
+        "buyer": "Adam Howard",
+        "address": "2940 Catherine Wall Suite 872 East Aaronland, IN 99636 US",
+        "date": "22-Sep-2018",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 44.59,
+        "total": 1030.13
+    }
+}

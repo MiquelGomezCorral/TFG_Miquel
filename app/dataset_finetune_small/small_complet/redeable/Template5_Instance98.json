@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance98.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Leslie Sanchez\", \"address\": \"02443 Walker Ridges Suite 573 North Paulbury, NY 37855 US\", \"date\": \"12-Apr-2022\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 340.3, \"discount\": null, \"tax\": 20.83, \"total\": 349.22}}",
+    "original_data": {
+        "buyer": "Leslie Sanchez",
+        "address": "02443 Walker Ridges Suite 573 North Paulbury, NY 37855 US",
+        "date": "12-Apr-2022",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 340.3,
+        "discount": null,
+        "tax": 20.83,
+        "total": 349.22
+    }
+}

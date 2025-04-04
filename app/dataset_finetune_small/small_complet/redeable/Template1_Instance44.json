@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance44.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Patricia Harris\", \"address\": \"3060 Benjamin Row Moralesland, NH 80754 US\", \"date\": \"07-Aug-2014\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 316.52, \"discount\": 6.81, \"tax\": 11.12, \"total\": 314.79}}",
+    "original_data": {
+        "buyer": "Patricia Harris",
+        "address": "3060 Benjamin Row Moralesland, NH 80754 US",
+        "date": "07-Aug-2014",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 316.52,
+        "discount": 6.81,
+        "tax": 11.12,
+        "total": 314.79
+    }
+}

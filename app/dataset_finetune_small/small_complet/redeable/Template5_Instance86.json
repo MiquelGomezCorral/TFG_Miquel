@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance86.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Dana Green\", \"address\": \"6043 Lambert Well Juanhaven, ME 57438 US\", \"date\": \"15-Jan-2014\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 650.09, \"discount\": null, \"tax\": 35.54, \"total\": 655.01}}",
+    "original_data": {
+        "buyer": "Dana Green",
+        "address": "6043 Lambert Well Juanhaven, ME 57438 US",
+        "date": "15-Jan-2014",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 650.09,
+        "discount": null,
+        "tax": 35.54,
+        "total": 655.01
+    }
+}

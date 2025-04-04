@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance119.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Sydney Gaines\", \"address\": \"8206 John Branch Apt. 962 Brittanyville, ND 13806 US\", \"date\": \"05-Feb-1994\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 429.43, \"discount\": null, \"tax\": 14.4, \"total\": 437.39}}",
+    "original_data": {
+        "buyer": "Sydney Gaines",
+        "address": "8206 John Branch Apt. 962 Brittanyville, ND 13806 US",
+        "date": "05-Feb-1994",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 429.43,
+        "discount": null,
+        "tax": 14.4,
+        "total": 437.39
+    }
+}

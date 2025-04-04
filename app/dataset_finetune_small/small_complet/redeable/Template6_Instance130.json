@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance130.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Christopher Valentine\", \"address\": \"934 Amy Flat Apt. 640 West Andrea, SD 61224 US\", \"date\": \"27-Jan-2009\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 888.25, \"discount\": null, \"tax\": 46.29, \"total\": 906.56}}",
+    "original_data": {
+        "buyer": "Christopher Valentine",
+        "address": "934 Amy Flat Apt. 640 West Andrea, SD 61224 US",
+        "date": "27-Jan-2009",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 888.25,
+        "discount": null,
+        "tax": 46.29,
+        "total": 906.56
+    }
+}

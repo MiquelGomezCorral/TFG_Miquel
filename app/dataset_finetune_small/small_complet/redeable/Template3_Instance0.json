@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance0.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Sarah Ross\", \"address\": \"073 Ayers Street Apt. 371 Lake James, MO 83191 US\", \"date\": \"03-Mar-2002\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 86.23, \"total\": 1377.77}}",
+    "original_data": {
+        "buyer": "Sarah Ross",
+        "address": "073 Ayers Street Apt. 371 Lake James, MO 83191 US",
+        "date": "03-Mar-2002",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 86.23,
+        "total": 1377.77
+    }
+}

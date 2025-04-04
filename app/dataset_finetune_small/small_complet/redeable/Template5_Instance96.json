@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance96.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Donna Cardenas\", \"address\": \"2772 Fletcher Forest Lake Mikeport, IL 60842 US\", \"date\": \"19-Nov-2014\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 428.17, \"discount\": null, \"tax\": 18.45, \"total\": 432.15}}",
+    "original_data": {
+        "buyer": "Donna Cardenas",
+        "address": "2772 Fletcher Forest Lake Mikeport, IL 60842 US",
+        "date": "19-Nov-2014",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 428.17,
+        "discount": null,
+        "tax": 18.45,
+        "total": 432.15
+    }
+}

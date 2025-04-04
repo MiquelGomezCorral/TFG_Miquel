@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance38.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Philip Pugh\", \"address\": \"59561 Donaldson Plaza Suite 338 Hallton, TX 67997 US\", \"date\": \"01-Aug-2002\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 8.68, \"total\": 169.97}}",
+    "original_data": {
+        "buyer": "Philip Pugh",
+        "address": "59561 Donaldson Plaza Suite 338 Hallton, TX 67997 US",
+        "date": "01-Aug-2002",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 8.68,
+        "total": 169.97
+    }
+}

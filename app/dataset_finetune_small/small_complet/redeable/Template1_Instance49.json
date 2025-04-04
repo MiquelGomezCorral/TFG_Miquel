@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance49.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Dana Edwards\", \"address\": \"3358 Martinez Cove Apt. 741 Loveview, CA 28306 US\", \"date\": \"26-Mar-2005\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 645.44, \"discount\": 11.94, \"tax\": 44.03, \"total\": 669.07}}",
+    "original_data": {
+        "buyer": "Dana Edwards",
+        "address": "3358 Martinez Cove Apt. 741 Loveview, CA 28306 US",
+        "date": "26-Mar-2005",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 645.44,
+        "discount": 11.94,
+        "tax": 44.03,
+        "total": 669.07
+    }
+}

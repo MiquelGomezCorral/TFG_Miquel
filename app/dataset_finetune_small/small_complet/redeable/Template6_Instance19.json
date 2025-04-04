@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance19.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Erica Wright\", \"address\": \"4840 Whitney Mall Apt. 717 Mcintyremouth, NY 13912 US\", \"date\": \"27-Sep-2018\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 565.8, \"discount\": null, \"tax\": 26.13, \"total\": 583.56}}",
+    "original_data": {
+        "buyer": "Erica Wright",
+        "address": "4840 Whitney Mall Apt. 717 Mcintyremouth, NY 13912 US",
+        "date": "27-Sep-2018",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 565.8,
+        "discount": null,
+        "tax": 26.13,
+        "total": 583.56
+    }
+}

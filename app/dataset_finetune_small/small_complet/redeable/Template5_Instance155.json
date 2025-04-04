@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance155.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Joshua Moore\", \"address\": \"64241 Johnson Rest Apt. 472 New Alison, AZ 51799 US\", \"date\": \"21-Feb-1994\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 582.21, \"discount\": null, \"tax\": 32.09, \"total\": 606.73}}",
+    "original_data": {
+        "buyer": "Joshua Moore",
+        "address": "64241 Johnson Rest Apt. 472 New Alison, AZ 51799 US",
+        "date": "21-Feb-1994",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 582.21,
+        "discount": null,
+        "tax": 32.09,
+        "total": 606.73
+    }
+}

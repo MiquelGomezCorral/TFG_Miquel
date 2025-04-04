@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance97.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Mary Henry\", \"address\": \"8243 Hunter Divide Apt. 240 Raymondmouth, WY 96587 US\", \"date\": \"04-Aug-2010\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 261.61, \"discount\": null, \"tax\": 17.63, \"total\": 267.18}}",
+    "original_data": {
+        "buyer": "Mary Henry",
+        "address": "8243 Hunter Divide Apt. 240 Raymondmouth, WY 96587 US",
+        "date": "04-Aug-2010",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 261.61,
+        "discount": null,
+        "tax": 17.63,
+        "total": 267.18
+    }
+}

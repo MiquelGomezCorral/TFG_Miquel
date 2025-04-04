@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance75.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Dr. Larry Wilson\", \"address\": \"7551 William Mountains North Kaylabury, NE 11422 US\", \"date\": \"06-Feb-1993\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 35.13, \"total\": 757.56}}",
+    "original_data": {
+        "buyer": "Dr. Larry Wilson",
+        "address": "7551 William Mountains North Kaylabury, NE 11422 US",
+        "date": "06-Feb-1993",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 35.13,
+        "total": 757.56
+    }
+}

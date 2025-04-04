@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance124.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Regina Williams\", \"address\": \"3293 Joyce Rest Suite 490 New Christopherport, GU 71987 US\", \"date\": \"17-Feb-2001\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 565.14, \"discount\": null, \"tax\": 28.06, \"total\": 568.28}}",
+    "original_data": {
+        "buyer": "Regina Williams",
+        "address": "3293 Joyce Rest Suite 490 New Christopherport, GU 71987 US",
+        "date": "17-Feb-2001",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 565.14,
+        "discount": null,
+        "tax": 28.06,
+        "total": 568.28
+    }
+}

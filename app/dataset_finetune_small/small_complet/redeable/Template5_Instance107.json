@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance107.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Colton Santiago\", \"address\": \"62264 Anita Throughway New Johnchester, OR 97583 US\", \"date\": \"17-Feb-1998\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 471.28, \"discount\": null, \"tax\": 20.21, \"total\": 473.44}}",
+    "original_data": {
+        "buyer": "Colton Santiago",
+        "address": "62264 Anita Throughway New Johnchester, OR 97583 US",
+        "date": "17-Feb-1998",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 471.28,
+        "discount": null,
+        "tax": 20.21,
+        "total": 473.44
+    }
+}

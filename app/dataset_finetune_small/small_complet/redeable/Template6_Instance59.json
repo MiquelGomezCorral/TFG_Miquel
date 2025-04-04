@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance59.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Elizabeth Anderson\", \"address\": \"981 Cochran River Suite 622 North Tammy, CA 80638 US\", \"date\": \"20-Jun-2008\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 289.05, \"discount\": null, \"tax\": 15.41, \"total\": 295.53}}",
+    "original_data": {
+        "buyer": "Elizabeth Anderson",
+        "address": "981 Cochran River Suite 622 North Tammy, CA 80638 US",
+        "date": "20-Jun-2008",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 289.05,
+        "discount": null,
+        "tax": 15.41,
+        "total": 295.53
+    }
+}

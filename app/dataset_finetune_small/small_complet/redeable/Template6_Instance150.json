@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance150.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Mark Bates\", \"address\": \"394 Frederick Brooks Kevinburgh, NH 27502 US\", \"date\": \"11-Nov-2003\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 70.4, \"discount\": null, \"tax\": 3.46, \"total\": 70.81}}",
+    "original_data": {
+        "buyer": "Mark Bates",
+        "address": "394 Frederick Brooks Kevinburgh, NH 27502 US",
+        "date": "11-Nov-2003",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 70.4,
+        "discount": null,
+        "tax": 3.46,
+        "total": 70.81
+    }
+}

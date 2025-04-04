@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance125.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Donna Berry\", \"address\": \"90379 Bird Via Apt. 066 Port Markstad, FM 42631 US\", \"date\": \"18-Jul-2016\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 641.25, \"discount\": 13.72, \"tax\": 27.42, \"total\": 644.88}}",
+    "original_data": {
+        "buyer": "Donna Berry",
+        "address": "90379 Bird Via Apt. 066 Port Markstad, FM 42631 US",
+        "date": "18-Jul-2016",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 641.25,
+        "discount": 13.72,
+        "tax": 27.42,
+        "total": 644.88
+    }
+}

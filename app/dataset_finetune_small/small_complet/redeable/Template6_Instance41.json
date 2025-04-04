@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance41.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Sharon Brown\", \"address\": \"597 Pierce Harbor Barrfurt, FL 41266 US\", \"date\": \"24-Oct-2013\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1201.63, \"discount\": null, \"tax\": 83.15, \"total\": 1242.48}}",
+    "original_data": {
+        "buyer": "Sharon Brown",
+        "address": "597 Pierce Harbor Barrfurt, FL 41266 US",
+        "date": "24-Oct-2013",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1201.63,
+        "discount": null,
+        "tax": 83.15,
+        "total": 1242.48
+    }
+}

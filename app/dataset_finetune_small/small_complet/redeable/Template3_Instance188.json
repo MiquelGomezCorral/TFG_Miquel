@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance188.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Lisa Brewer\", \"address\": \"46720 Ayers Rest Smithview, IN 78151 US\", \"date\": \"23-Dec-2013\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 37.88, \"total\": 766.06}}",
+    "original_data": {
+        "buyer": "Lisa Brewer",
+        "address": "46720 Ayers Rest Smithview, IN 78151 US",
+        "date": "23-Dec-2013",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 37.88,
+        "total": 766.06
+    }
+}

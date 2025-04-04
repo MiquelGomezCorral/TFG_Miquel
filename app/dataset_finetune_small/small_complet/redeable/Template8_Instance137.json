@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance137.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Emily Johnson\", \"address\": \"262 Curry Manors Suite 624 Richardhaven, TX 69291 US\", \"date\": \"03-Oct-2021\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 734.82, \"discount\": null, \"tax\": null, \"total\": 763.47}}",
+    "original_data": {
+        "buyer": "Emily Johnson",
+        "address": "262 Curry Manors Suite 624 Richardhaven, TX 69291 US",
+        "date": "03-Oct-2021",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 734.82,
+        "discount": null,
+        "tax": null,
+        "total": 763.47
+    }
+}

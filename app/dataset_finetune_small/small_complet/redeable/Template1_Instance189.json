@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance189.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Shelly Rodriguez\", \"address\": \"02547 Ramos Bypass Suite 849 Williamshaven, NC 38767 US\", \"date\": \"29-Apr-2012\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 131.67, \"discount\": 5.81, \"tax\": 6.22, \"total\": 134.41}}",
+    "original_data": {
+        "buyer": "Shelly Rodriguez",
+        "address": "02547 Ramos Bypass Suite 849 Williamshaven, NC 38767 US",
+        "date": "29-Apr-2012",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 131.67,
+        "discount": 5.81,
+        "tax": 6.22,
+        "total": 134.41
+    }
+}

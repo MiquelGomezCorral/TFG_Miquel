@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance33.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Joshua Murphy\", \"address\": \"997 Gonzalez Centers Apt. 031 Deannamouth, OK 97036 US\", \"date\": \"30-Jul-2021\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 417.8, \"discount\": null, \"tax\": 17.63, \"total\": 420.81}}",
+    "original_data": {
+        "buyer": "Joshua Murphy",
+        "address": "997 Gonzalez Centers Apt. 031 Deannamouth, OK 97036 US",
+        "date": "30-Jul-2021",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 417.8,
+        "discount": null,
+        "tax": 17.63,
+        "total": 420.81
+    }
+}

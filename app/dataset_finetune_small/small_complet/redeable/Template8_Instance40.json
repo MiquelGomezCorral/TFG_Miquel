@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance40.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Brittany Powell\", \"address\": \"2203 Brock Harbor East Christopherborough, OK 88186 US\", \"date\": \"18-Apr-2008\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 442.92, \"discount\": null, \"tax\": null, \"total\": 447.92}}",
+    "original_data": {
+        "buyer": "Brittany Powell",
+        "address": "2203 Brock Harbor East Christopherborough, OK 88186 US",
+        "date": "18-Apr-2008",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 442.92,
+        "discount": null,
+        "tax": null,
+        "total": 447.92
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance119.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Samuel Ward\", \"address\": \"99646 Martin Trace Port Kimberly, OK 78752 US\", \"date\": \"23-Oct-2009\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1068.5, \"discount\": null, \"tax\": 42.99, \"total\": 1075.91}}",
+    "original_data": {
+        "buyer": "Samuel Ward",
+        "address": "99646 Martin Trace Port Kimberly, OK 78752 US",
+        "date": "23-Oct-2009",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1068.5,
+        "discount": null,
+        "tax": 42.99,
+        "total": 1075.91
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance165.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michael Stewart\", \"address\": \"8670 Peter Ville Apt. 971 East Edward, NY 95960 US\", \"date\": \"29-Aug-2021\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 173.25, \"discount\": 5.53, \"tax\": 6.85, \"total\": 176.69}}",
+    "original_data": {
+        "buyer": "Michael Stewart",
+        "address": "8670 Peter Ville Apt. 971 East Edward, NY 95960 US",
+        "date": "29-Aug-2021",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 173.25,
+        "discount": 5.53,
+        "tax": 6.85,
+        "total": 176.69
+    }
+}

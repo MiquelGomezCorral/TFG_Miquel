@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance81.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Alfred Vasquez\", \"address\": \"51886 Deborah Forks Paulfurt, ND 74965 US\", \"date\": \"11-Mar-1997\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 554.46, \"discount\": null, \"tax\": null, \"total\": 568.03}}",
+    "original_data": {
+        "buyer": "Alfred Vasquez",
+        "address": "51886 Deborah Forks Paulfurt, ND 74965 US",
+        "date": "11-Mar-1997",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 554.46,
+        "discount": null,
+        "tax": null,
+        "total": 568.03
+    }
+}

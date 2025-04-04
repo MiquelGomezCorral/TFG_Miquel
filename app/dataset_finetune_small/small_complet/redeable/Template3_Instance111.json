@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance111.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Emily Gardner\", \"address\": \"2062 Jessica Parkways Lake Sarahchester, NY 50910 US\", \"date\": \"16-Sep-2008\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 1.38, \"total\": 33.58}}",
+    "original_data": {
+        "buyer": "Emily Gardner",
+        "address": "2062 Jessica Parkways Lake Sarahchester, NY 50910 US",
+        "date": "16-Sep-2008",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 1.38,
+        "total": 33.58
+    }
+}

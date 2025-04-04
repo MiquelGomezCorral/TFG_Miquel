@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance107.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Anthony Mcguire\", \"address\": \"3976 Tyler Meadow Williamtown, CA 93238 US\", \"date\": \"13-Jul-2014\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 322.06, \"discount\": null, \"tax\": 20.41, \"total\": 327.27}}",
+    "original_data": {
+        "buyer": "Anthony Mcguire",
+        "address": "3976 Tyler Meadow Williamtown, CA 93238 US",
+        "date": "13-Jul-2014",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 322.06,
+        "discount": null,
+        "tax": 20.41,
+        "total": 327.27
+    }
+}

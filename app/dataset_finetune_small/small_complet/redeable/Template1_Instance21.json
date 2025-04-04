@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance21.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"James Diaz\", \"address\": \"35003 Mark Forest Apt. 586 Lake Ronaldton, CA 36947 US\", \"date\": \"11-Mar-2016\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 721.05, \"discount\": 31.37, \"tax\": 37.43, \"total\": 728.05}}",
+    "original_data": {
+        "buyer": "James Diaz",
+        "address": "35003 Mark Forest Apt. 586 Lake Ronaldton, CA 36947 US",
+        "date": "11-Mar-2016",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 721.05,
+        "discount": 31.37,
+        "tax": 37.43,
+        "total": 728.05
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance79.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michael Wall\", \"address\": \"126 Frazier Ford Apt. 193 North Meganstad, ID 26052 US\", \"date\": \"14-Apr-1994\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 585.57, \"discount\": null, \"tax\": 26.64, \"total\": 596.75}}",
+    "original_data": {
+        "buyer": "Michael Wall",
+        "address": "126 Frazier Ford Apt. 193 North Meganstad, ID 26052 US",
+        "date": "14-Apr-1994",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 585.57,
+        "discount": null,
+        "tax": 26.64,
+        "total": 596.75
+    }
+}

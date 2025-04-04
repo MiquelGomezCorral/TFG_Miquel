@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance199.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Nicholas Elliott\", \"address\": \"3520 Smith Wells Suite 439 Patrickfort, WI 39647 US\", \"date\": \"01-Oct-2001\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 6.16, \"total\": 163.99}}",
+    "original_data": {
+        "buyer": "Nicholas Elliott",
+        "address": "3520 Smith Wells Suite 439 Patrickfort, WI 39647 US",
+        "date": "01-Oct-2001",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 6.16,
+        "total": 163.99
+    }
+}

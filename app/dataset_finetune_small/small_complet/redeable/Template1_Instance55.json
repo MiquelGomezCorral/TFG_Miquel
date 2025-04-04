@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance55.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Danielle Martin\", \"address\": \"0897 Kyle Wall Amandaside, VT 65340 US\", \"date\": \"10-Aug-2017\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 101.66, \"discount\": 2.86, \"tax\": 6.92, \"total\": 104.38}}",
+    "original_data": {
+        "buyer": "Danielle Martin",
+        "address": "0897 Kyle Wall Amandaside, VT 65340 US",
+        "date": "10-Aug-2017",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 101.66,
+        "discount": 2.86,
+        "tax": 6.92,
+        "total": 104.38
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance157.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ashley Bailey\", \"address\": \"14589 Rebecca Green Suite 387 New Joshualand, DC 75849 US\", \"date\": \"01-Jul-2004\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 1143.19, \"discount\": 47.1, \"tax\": 43.67, \"total\": 1153.71}}",
+    "original_data": {
+        "buyer": "Ashley Bailey",
+        "address": "14589 Rebecca Green Suite 387 New Joshualand, DC 75849 US",
+        "date": "01-Jul-2004",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 1143.19,
+        "discount": 47.1,
+        "tax": 43.67,
+        "total": 1153.71
+    }
+}

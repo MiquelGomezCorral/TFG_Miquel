@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance138.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Katie Ingram\", \"address\": \"679 Lewis Fields Apt. 971 West Patrickberg, ME 89614 US\", \"date\": \"23-May-2004\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 439.32, \"discount\": null, \"tax\": null, \"total\": 450.6}}",
+    "original_data": {
+        "buyer": "Katie Ingram",
+        "address": "679 Lewis Fields Apt. 971 West Patrickberg, ME 89614 US",
+        "date": "23-May-2004",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 439.32,
+        "discount": null,
+        "tax": null,
+        "total": 450.6
+    }
+}

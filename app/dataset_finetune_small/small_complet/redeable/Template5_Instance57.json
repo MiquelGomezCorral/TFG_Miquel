@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance57.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Mario Gonzales\", \"address\": \"6862 Nicole Via Gomezview, TN 63730 US\", \"date\": \"25-Oct-2007\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 673.78, \"discount\": null, \"tax\": 45.1, \"total\": 692.33}}",
+    "original_data": {
+        "buyer": "Mario Gonzales",
+        "address": "6862 Nicole Via Gomezview, TN 63730 US",
+        "date": "25-Oct-2007",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 673.78,
+        "discount": null,
+        "tax": 45.1,
+        "total": 692.33
+    }
+}

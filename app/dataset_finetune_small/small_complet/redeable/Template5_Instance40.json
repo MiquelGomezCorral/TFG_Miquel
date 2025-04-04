@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance40.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Renee Orr\", \"address\": \"14123 Strickland Lakes Lovefurt, DC 20804 US\", \"date\": \"11-May-2012\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 287.77, \"discount\": null, \"tax\": 11.36, \"total\": 290.3}}",
+    "original_data": {
+        "buyer": "Renee Orr",
+        "address": "14123 Strickland Lakes Lovefurt, DC 20804 US",
+        "date": "11-May-2012",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 287.77,
+        "discount": null,
+        "tax": 11.36,
+        "total": 290.3
+    }
+}

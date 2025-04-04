@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance52.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michael Smith\", \"address\": \"4430 Angie Knoll New Timothymouth, NC 33500 US\", \"date\": \"04-Jan-2010\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 347.83, \"discount\": 11.13, \"tax\": 22.22, \"total\": 358.57}}",
+    "original_data": {
+        "buyer": "Michael Smith",
+        "address": "4430 Angie Knoll New Timothymouth, NC 33500 US",
+        "date": "04-Jan-2010",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 347.83,
+        "discount": 11.13,
+        "tax": 22.22,
+        "total": 358.57
+    }
+}

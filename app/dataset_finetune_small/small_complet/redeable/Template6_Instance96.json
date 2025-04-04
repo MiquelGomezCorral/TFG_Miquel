@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance96.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ryan Tran\", \"address\": \"6741 Ronald Manor Suite 845 Stevensburgh, WI 71827 US\", \"date\": \"16-Jan-2006\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 469.2, \"discount\": null, \"tax\": 27.09, \"total\": 483.06}}",
+    "original_data": {
+        "buyer": "Ryan Tran",
+        "address": "6741 Ronald Manor Suite 845 Stevensburgh, WI 71827 US",
+        "date": "16-Jan-2006",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 469.2,
+        "discount": null,
+        "tax": 27.09,
+        "total": 483.06
+    }
+}

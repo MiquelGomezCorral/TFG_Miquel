@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance80.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Troy Bell\", \"address\": \"9006 David Ford East Tracey, NM 02408 US\", \"date\": \"06-Sep-2021\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 498.83, \"discount\": null, \"tax\": null, \"total\": 522.03}}",
+    "original_data": {
+        "buyer": "Troy Bell",
+        "address": "9006 David Ford East Tracey, NM 02408 US",
+        "date": "06-Sep-2021",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 498.83,
+        "discount": null,
+        "tax": null,
+        "total": 522.03
+    }
+}

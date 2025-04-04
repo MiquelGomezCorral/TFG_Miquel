@@ -1,5 +1,5 @@
 # donut/
-app/dataset_finetune/
+app/datasets_finetune/
 # module_ocr_llm/
 app/keys.txt
 app/wandb_api_key.txt

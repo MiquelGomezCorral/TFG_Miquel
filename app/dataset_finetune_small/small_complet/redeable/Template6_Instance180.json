@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance180.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"James Roth\", \"address\": \"130 Ford Plaza Apt. 080 Jamesland, NE 72019 US\", \"date\": \"20-Jun-2014\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 246.15, \"discount\": null, \"tax\": 17.13, \"total\": 260.6}}",
+    "original_data": {
+        "buyer": "James Roth",
+        "address": "130 Ford Plaza Apt. 080 Jamesland, NE 72019 US",
+        "date": "20-Jun-2014",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 246.15,
+        "discount": null,
+        "tax": 17.13,
+        "total": 260.6
+    }
+}

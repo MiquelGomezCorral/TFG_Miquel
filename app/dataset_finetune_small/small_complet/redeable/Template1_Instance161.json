@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance161.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Mr. Dustin Fritz\", \"address\": \"51897 Jodi Freeway Smithchester, NY 06699 US\", \"date\": \"16-Dec-2005\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 618.89, \"discount\": 25.44, \"tax\": 41.76, \"total\": 630.2}}",
+    "original_data": {
+        "buyer": "Mr. Dustin Fritz",
+        "address": "51897 Jodi Freeway Smithchester, NY 06699 US",
+        "date": "16-Dec-2005",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 618.89,
+        "discount": 25.44,
+        "tax": 41.76,
+        "total": 630.2
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance180.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Margaret Holmes\", \"address\": \"58284 Emily Avenue Apt. 945 Brownview, RI 54350 US\", \"date\": \"18-Jun-2016\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": null, \"discount\": null, \"tax\": 11.17, \"total\": 230.09}}",
+    "original_data": {
+        "buyer": "Margaret Holmes",
+        "address": "58284 Emily Avenue Apt. 945 Brownview, RI 54350 US",
+        "date": "18-Jun-2016",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": null,
+        "discount": null,
+        "tax": 11.17,
+        "total": 230.09
+    }
+}

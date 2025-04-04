@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance84.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Theresa Edwards\", \"address\": \"1866 Martinez Overpass Suite 486 New Matthewfurt, NM 80147 US\", \"date\": \"01-Jun-2018\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 587.78, \"discount\": 23.45, \"tax\": 19.97, \"total\": 583.0}}",
+    "original_data": {
+        "buyer": "Theresa Edwards",
+        "address": "1866 Martinez Overpass Suite 486 New Matthewfurt, NM 80147 US",
+        "date": "01-Jun-2018",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 587.78,
+        "discount": 23.45,
+        "tax": 19.97,
+        "total": 583.0
+    }
+}

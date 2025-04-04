@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance114.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Amanda Horton\", \"address\": \"0524 Rhonda Villages South Bradleyview, LA 88315 US\", \"date\": \"09-Mar-2020\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1047.38, \"discount\": null, \"tax\": 66.99, \"total\": 1076.77}}",
+    "original_data": {
+        "buyer": "Amanda Horton",
+        "address": "0524 Rhonda Villages South Bradleyview, LA 88315 US",
+        "date": "09-Mar-2020",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1047.38,
+        "discount": null,
+        "tax": 66.99,
+        "total": 1076.77
+    }
+}

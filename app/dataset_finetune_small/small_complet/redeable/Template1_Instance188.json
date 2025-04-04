@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance188.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kristin Randall\", \"address\": \"365 Barbara Crescent Lichester, HI 06249 US\", \"date\": \"11-Aug-2005\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 250.65, \"discount\": 3.89, \"tax\": 12.41, \"total\": 254.59}}",
+    "original_data": {
+        "buyer": "Kristin Randall",
+        "address": "365 Barbara Crescent Lichester, HI 06249 US",
+        "date": "11-Aug-2005",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 250.65,
+        "discount": 3.89,
+        "tax": 12.41,
+        "total": 254.59
+    }
+}

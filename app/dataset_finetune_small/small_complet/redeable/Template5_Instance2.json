@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance2.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michael Wood\", \"address\": \"51612 Mccarthy Squares Jacquelineburgh, VA 71879 US\", \"date\": \"25-Feb-2010\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 131.34, \"discount\": null, \"tax\": 4.26, \"total\": 134.04}}",
+    "original_data": {
+        "buyer": "Michael Wood",
+        "address": "51612 Mccarthy Squares Jacquelineburgh, VA 71879 US",
+        "date": "25-Feb-2010",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 131.34,
+        "discount": null,
+        "tax": 4.26,
+        "total": 134.04
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance112.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ray Davis\", \"address\": \"452 Strong Shoals West Samantha, OH 40926 US\", \"date\": \"21-Feb-2020\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 697.36, \"discount\": 25.59, \"tax\": 40.89, \"total\": 730.72}}",
+    "original_data": {
+        "buyer": "Ray Davis",
+        "address": "452 Strong Shoals West Samantha, OH 40926 US",
+        "date": "21-Feb-2020",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 697.36,
+        "discount": 25.59,
+        "tax": 40.89,
+        "total": 730.72
+    }
+}

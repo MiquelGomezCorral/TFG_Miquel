@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance56.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Kristy Simpson\", \"address\": \"593 Cynthia Harbor Apt. 531 Lake Leahmouth, ME 48763 US\", \"date\": \"25-Aug-2018\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 928.56, \"discount\": null, \"tax\": 64.7, \"total\": 982.67}}",
+    "original_data": {
+        "buyer": "Kristy Simpson",
+        "address": "593 Cynthia Harbor Apt. 531 Lake Leahmouth, ME 48763 US",
+        "date": "25-Aug-2018",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 928.56,
+        "discount": null,
+        "tax": 64.7,
+        "total": 982.67
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance156.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Linda Leon\", \"address\": \"78712 William Pass Suite 209 Bautistafurt, DC 29602 US\", \"date\": \"07-Jun-2006\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 824.83, \"discount\": null, \"tax\": null, \"total\": 820.51}}",
+    "original_data": {
+        "buyer": "Linda Leon",
+        "address": "78712 William Pass Suite 209 Bautistafurt, DC 29602 US",
+        "date": "07-Jun-2006",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 824.83,
+        "discount": null,
+        "tax": null,
+        "total": 820.51
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance107.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Angela Wilson\", \"address\": \"14425 Thomas Circle North Tonyamouth, TN 59517 US\", \"date\": \"11-May-2013\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 311.26, \"discount\": 12.48, \"tax\": 13.03, \"total\": 312.12}}",
+    "original_data": {
+        "buyer": "Angela Wilson",
+        "address": "14425 Thomas Circle North Tonyamouth, TN 59517 US",
+        "date": "11-May-2013",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 311.26,
+        "discount": 12.48,
+        "tax": 13.03,
+        "total": 312.12
+    }
+}

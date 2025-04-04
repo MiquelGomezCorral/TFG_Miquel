@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance70.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Candice Briggs\", \"address\": \"0692 Jennifer Estate Patelville, MA 76268 US\", \"date\": \"27-Apr-2012\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 277.96, \"discount\": null, \"tax\": null, \"total\": 280.46}}",
+    "original_data": {
+        "buyer": "Candice Briggs",
+        "address": "0692 Jennifer Estate Patelville, MA 76268 US",
+        "date": "27-Apr-2012",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 277.96,
+        "discount": null,
+        "tax": null,
+        "total": 280.46
+    }
+}

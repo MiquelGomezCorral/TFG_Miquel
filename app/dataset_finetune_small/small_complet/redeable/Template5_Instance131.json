@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance131.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Karen Smith\", \"address\": \"74300 Michael Island Apt. 648 Bairdhaven, MP 21122 US\", \"date\": \"09-Apr-1995\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 589.39, \"discount\": null, \"tax\": 34.73, \"total\": 612.8}}",
+    "original_data": {
+        "buyer": "Karen Smith",
+        "address": "74300 Michael Island Apt. 648 Bairdhaven, MP 21122 US",
+        "date": "09-Apr-1995",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 589.39,
+        "discount": null,
+        "tax": 34.73,
+        "total": 612.8
+    }
+}

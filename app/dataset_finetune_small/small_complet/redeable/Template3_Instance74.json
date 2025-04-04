@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance74.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jessica Guerrero\", \"address\": \"0471 Schroeder Ports South Steven, DC 05696 US\", \"date\": \"29-Dec-2010\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 51.22, \"total\": 1046.68}}",
+    "original_data": {
+        "buyer": "Jessica Guerrero",
+        "address": "0471 Schroeder Ports South Steven, DC 05696 US",
+        "date": "29-Dec-2010",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 51.22,
+        "total": 1046.68
+    }
+}

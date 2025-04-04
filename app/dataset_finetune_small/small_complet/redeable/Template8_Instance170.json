@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance170.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Samantha Green\", \"address\": \"27868 Shaw Way Suite 411 East David, MT 45188 US\", \"date\": \"22-Sep-2018\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 734.86, \"discount\": null, \"tax\": null, \"total\": 725.12}}",
+    "original_data": {
+        "buyer": "Samantha Green",
+        "address": "27868 Shaw Way Suite 411 East David, MT 45188 US",
+        "date": "22-Sep-2018",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 734.86,
+        "discount": null,
+        "tax": null,
+        "total": 725.12
+    }
+}

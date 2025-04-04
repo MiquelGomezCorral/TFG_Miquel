@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance139.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Julie Crane\", \"address\": \"242 Robinson Plaza Youngton, MI 55035 US\", \"date\": \"04-Jul-1994\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 658.94, \"discount\": null, \"tax\": null, \"total\": 651.05}}",
+    "original_data": {
+        "buyer": "Julie Crane",
+        "address": "242 Robinson Plaza Youngton, MI 55035 US",
+        "date": "04-Jul-1994",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 658.94,
+        "discount": null,
+        "tax": null,
+        "total": 651.05
+    }
+}

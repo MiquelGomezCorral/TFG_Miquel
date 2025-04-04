@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance144.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Susan Thomas\", \"address\": \"42141 Jordan Springs Rachelstad, PA 21768 US\", \"date\": \"26-May-2001\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 14.03, \"total\": 329.61}}",
+    "original_data": {
+        "buyer": "Susan Thomas",
+        "address": "42141 Jordan Springs Rachelstad, PA 21768 US",
+        "date": "26-May-2001",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 14.03,
+        "total": 329.61
+    }
+}

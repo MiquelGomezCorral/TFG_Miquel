@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance69.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jason Morton\", \"address\": \"4123 Nicole Ridges Suite 099 New Laura, NH 70841 US\", \"date\": \"16-Nov-1994\", \"shopping_or_tax\": true, \"currency\": \"EUR\", \"subtotal\": 186.92, \"discount\": null, \"tax\": null, \"total\": 188.42}}",
+    "original_data": {
+        "buyer": "Jason Morton",
+        "address": "4123 Nicole Ridges Suite 099 New Laura, NH 70841 US",
+        "date": "16-Nov-1994",
+        "shopping_or_tax": true,
+        "currency": "EUR",
+        "subtotal": 186.92,
+        "discount": null,
+        "tax": null,
+        "total": 188.42
+    }
+}

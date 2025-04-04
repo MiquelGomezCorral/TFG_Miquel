@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance67.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Erin Moody\", \"address\": \"720 Kevin Isle New Tammyview, CO 03291 US\", \"date\": \"30-Jun-2013\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1456.41, \"discount\": null, \"tax\": 74.09, \"total\": 1496.57}}",
+    "original_data": {
+        "buyer": "Erin Moody",
+        "address": "720 Kevin Isle New Tammyview, CO 03291 US",
+        "date": "30-Jun-2013",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1456.41,
+        "discount": null,
+        "tax": 74.09,
+        "total": 1496.57
+    }
+}

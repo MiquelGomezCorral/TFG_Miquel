@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance115.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ryan Zimmerman\", \"address\": \"4410 Jesus Stream Mitchellview, NH 43863 US\", \"date\": \"24-Aug-2022\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": null, \"discount\": null, \"tax\": 33.88, \"total\": 574.99}}",
+    "original_data": {
+        "buyer": "Ryan Zimmerman",
+        "address": "4410 Jesus Stream Mitchellview, NH 43863 US",
+        "date": "24-Aug-2022",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": null,
+        "discount": null,
+        "tax": 33.88,
+        "total": 574.99
+    }
+}

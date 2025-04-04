@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance16.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Ariel Davis\", \"address\": \"20828 Franklin Lights Apt. 278 East Kim, VT 04239 US\", \"date\": \"14-Apr-2006\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1290.12, \"discount\": null, \"tax\": 51.79, \"total\": 1288.63}}",
+    "original_data": {
+        "buyer": "Ariel Davis",
+        "address": "20828 Franklin Lights Apt. 278 East Kim, VT 04239 US",
+        "date": "14-Apr-2006",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1290.12,
+        "discount": null,
+        "tax": 51.79,
+        "total": 1288.63
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance98.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Michelle Ali\", \"address\": \"36306 Dylan Light Apt. 874 Bondfort, CO 66474 US\", \"date\": \"14-Jul-2013\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 586.48, \"discount\": null, \"tax\": 38.47, \"total\": 604.78}}",
+    "original_data": {
+        "buyer": "Michelle Ali",
+        "address": "36306 Dylan Light Apt. 874 Bondfort, CO 66474 US",
+        "date": "14-Jul-2013",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 586.48,
+        "discount": null,
+        "tax": 38.47,
+        "total": 604.78
+    }
+}

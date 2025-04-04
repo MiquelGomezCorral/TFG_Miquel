@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance24.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Lisa Woods\", \"address\": \"94844 Bennett Rapids Andreburgh, KS 52828 US\", \"date\": \"25-Aug-1995\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 650.1, \"discount\": null, \"tax\": 38.1, \"total\": 679.88}}",
+    "original_data": {
+        "buyer": "Lisa Woods",
+        "address": "94844 Bennett Rapids Andreburgh, KS 52828 US",
+        "date": "25-Aug-1995",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 650.1,
+        "discount": null,
+        "tax": 38.1,
+        "total": 679.88
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance102.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Hunter White\", \"address\": \"580 Johns Trafficway Apt. 099 Lake Elizabethfort, CA 70291 US\", \"date\": \"25-Jul-2016\", \"shopping_or_tax\": false, \"currency\": \"EUR\", \"subtotal\": 1141.81, \"discount\": null, \"tax\": 72.16, \"total\": 1183.48}}",
+    "original_data": {
+        "buyer": "Hunter White",
+        "address": "580 Johns Trafficway Apt. 099 Lake Elizabethfort, CA 70291 US",
+        "date": "25-Jul-2016",
+        "shopping_or_tax": false,
+        "currency": "EUR",
+        "subtotal": 1141.81,
+        "discount": null,
+        "tax": 72.16,
+        "total": 1183.48
+    }
+}

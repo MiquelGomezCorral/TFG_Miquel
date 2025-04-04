@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance142.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Stephanie Castro\", \"address\": \"44321 Barrera Meadows Suite 623 Clarkshire, CT 45089 US\", \"date\": \"13-Aug-2018\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 684.12, \"discount\": null, \"tax\": 44.89, \"total\": 702.81}}",
+    "original_data": {
+        "buyer": "Stephanie Castro",
+        "address": "44321 Barrera Meadows Suite 623 Clarkshire, CT 45089 US",
+        "date": "13-Aug-2018",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 684.12,
+        "discount": null,
+        "tax": 44.89,
+        "total": 702.81
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance163.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Vincent Nguyen\", \"address\": \"137 Hughes Meadow Zacharyberg, LA 86503 US\", \"date\": \"22-Apr-1996\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 1618.64, \"discount\": null, \"tax\": 100.27, \"total\": 1638.46}}",
+    "original_data": {
+        "buyer": "Vincent Nguyen",
+        "address": "137 Hughes Meadow Zacharyberg, LA 86503 US",
+        "date": "22-Apr-1996",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 1618.64,
+        "discount": null,
+        "tax": 100.27,
+        "total": 1638.46
+    }
+}

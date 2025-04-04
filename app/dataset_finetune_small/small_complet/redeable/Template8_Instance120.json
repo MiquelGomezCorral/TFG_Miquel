@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance120.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Colleen Moyer\", \"address\": \"94321 Gonzalez Mews Suzannetown, VI 17968 US\", \"date\": \"17-Jun-2002\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 1112.58, \"discount\": null, \"tax\": null, \"total\": 1120.27}}",
+    "original_data": {
+        "buyer": "Colleen Moyer",
+        "address": "94321 Gonzalez Mews Suzannetown, VI 17968 US",
+        "date": "17-Jun-2002",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 1112.58,
+        "discount": null,
+        "tax": null,
+        "total": 1120.27
+    }
+}

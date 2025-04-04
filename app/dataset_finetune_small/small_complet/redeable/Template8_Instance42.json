@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance42.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Christine Perez\", \"address\": \"06030 Eric Circles South Dalefurt, DE 89511 US\", \"date\": \"24-Nov-2020\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 229.37, \"discount\": null, \"tax\": null, \"total\": 233.08}}",
+    "original_data": {
+        "buyer": "Christine Perez",
+        "address": "06030 Eric Circles South Dalefurt, DE 89511 US",
+        "date": "24-Nov-2020",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 229.37,
+        "discount": null,
+        "tax": null,
+        "total": 233.08
+    }
+}

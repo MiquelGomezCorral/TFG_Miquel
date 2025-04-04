@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance95.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Alexander Williams\", \"address\": \"502 Hawkins Estate Apt. 923 New Miranda, AZ 78179 US\", \"date\": \"12-Jan-2003\", \"shopping_or_tax\": true, \"currency\": \"$\", \"subtotal\": 707.87, \"discount\": null, \"tax\": null, \"total\": 697.66}}",
+    "original_data": {
+        "buyer": "Alexander Williams",
+        "address": "502 Hawkins Estate Apt. 923 New Miranda, AZ 78179 US",
+        "date": "12-Jan-2003",
+        "shopping_or_tax": true,
+        "currency": "$",
+        "subtotal": 707.87,
+        "discount": null,
+        "tax": null,
+        "total": 697.66
+    }
+}

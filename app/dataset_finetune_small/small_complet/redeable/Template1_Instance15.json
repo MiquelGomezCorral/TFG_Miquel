@@ -1,0 +1,15 @@
+{
+    "file_name": "Template1_Instance15.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"April Johnson\", \"address\": \"979 Nixon Loop Apt. 299 Clementstown, VI 98807 US\", \"date\": \"21-Jul-1995\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 808.91, \"discount\": 39.88, \"tax\": 49.0, \"total\": 835.83}}",
+    "original_data": {
+        "buyer": "April Johnson",
+        "address": "979 Nixon Loop Apt. 299 Clementstown, VI 98807 US",
+        "date": "21-Jul-1995",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 808.91,
+        "discount": 39.88,
+        "tax": 49.0,
+        "total": 835.83
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "file_name": "Template3_Instance26.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Robert Cole\", \"address\": \"3754 Bradford Mountains Apt. 575 New Luis, RI 26646 US\", \"date\": \"10-May-1993\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": null, \"discount\": null, \"tax\": 26.76, \"total\": 609.5}}",
+    "original_data": {
+        "buyer": "Robert Cole",
+        "address": "3754 Bradford Mountains Apt. 575 New Luis, RI 26646 US",
+        "date": "10-May-1993",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": null,
+        "discount": null,
+        "tax": 26.76,
+        "total": 609.5
+    }
+}

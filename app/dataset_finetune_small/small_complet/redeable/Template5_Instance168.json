@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance168.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Daniel Mooney\", \"address\": \"8738 Fuller Mountain North Brianton, NE 01374 US\", \"date\": \"31-Jul-2002\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 1342.45, \"discount\": null, \"tax\": 48.2, \"total\": 1363.67}}",
+    "original_data": {
+        "buyer": "Daniel Mooney",
+        "address": "8738 Fuller Mountain North Brianton, NE 01374 US",
+        "date": "31-Jul-2002",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 1342.45,
+        "discount": null,
+        "tax": 48.2,
+        "total": 1363.67
+    }
+}

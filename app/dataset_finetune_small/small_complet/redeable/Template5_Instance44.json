@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance44.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Jessica Hudson\", \"address\": \"64852 Stephanie Village Suite 514 East Amy, VA 79469 US\", \"date\": \"05-Nov-2017\", \"shopping_or_tax\": false, \"currency\": \"USD\", \"subtotal\": 693.7, \"discount\": null, \"tax\": 39.31, \"total\": 720.32}}",
+    "original_data": {
+        "buyer": "Jessica Hudson",
+        "address": "64852 Stephanie Village Suite 514 East Amy, VA 79469 US",
+        "date": "05-Nov-2017",
+        "shopping_or_tax": false,
+        "currency": "USD",
+        "subtotal": 693.7,
+        "discount": null,
+        "tax": 39.31,
+        "total": 720.32
+    }
+}

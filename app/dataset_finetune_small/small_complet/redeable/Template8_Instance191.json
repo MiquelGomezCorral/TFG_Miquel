@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance191.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Christopher Reynolds\", \"address\": \"737 Kristi Route Lake Hollymouth, AR 85915 US\", \"date\": \"19-Nov-1997\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 149.53, \"discount\": null, \"tax\": null, \"total\": 148.39}}",
+    "original_data": {
+        "buyer": "Christopher Reynolds",
+        "address": "737 Kristi Route Lake Hollymouth, AR 85915 US",
+        "date": "19-Nov-1997",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 149.53,
+        "discount": null,
+        "tax": null,
+        "total": 148.39
+    }
+}

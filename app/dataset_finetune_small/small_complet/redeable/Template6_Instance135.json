@@ -1,0 +1,15 @@
+{
+    "file_name": "Template6_Instance135.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Amy Cruz\", \"address\": \"5593 Scott Shores Suite 893 Cobbtown, ND 21315 US\", \"date\": \"30-Apr-2007\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 930.45, \"discount\": null, \"tax\": 64.38, \"total\": 977.71}}",
+    "original_data": {
+        "buyer": "Amy Cruz",
+        "address": "5593 Scott Shores Suite 893 Cobbtown, ND 21315 US",
+        "date": "30-Apr-2007",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 930.45,
+        "discount": null,
+        "tax": 64.38,
+        "total": 977.71
+    }
+}

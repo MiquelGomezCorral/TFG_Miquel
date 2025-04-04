@@ -1,0 +1,15 @@
+{
+    "file_name": "Template8_Instance50.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Madison Stewart DDS\", \"address\": \"5914 Hill Dale Suite 997 West Elizabeth, MT 63122 US\", \"date\": \"15-Sep-2006\", \"shopping_or_tax\": true, \"currency\": \"USD\", \"subtotal\": 547.47, \"discount\": null, \"tax\": null, \"total\": 558.34}}",
+    "original_data": {
+        "buyer": "Madison Stewart DDS",
+        "address": "5914 Hill Dale Suite 997 West Elizabeth, MT 63122 US",
+        "date": "15-Sep-2006",
+        "shopping_or_tax": true,
+        "currency": "USD",
+        "subtotal": 547.47,
+        "discount": null,
+        "tax": null,
+        "total": 558.34
+    }
+}

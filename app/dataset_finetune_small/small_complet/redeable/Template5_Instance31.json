@@ -1,0 +1,15 @@
+{
+    "file_name": "Template5_Instance31.jpg",
+    "ground_truth": "{\"gt_parse\": {\"buyer\": \"Katelyn Robbins\", \"address\": \"080 Gonzales Light South Abigailstad, ME 92848 US\", \"date\": \"19-Jan-2016\", \"shopping_or_tax\": false, \"currency\": \"$\", \"subtotal\": 377.31, \"discount\": null, \"tax\": 16.54, \"total\": 387.25}}",
+    "original_data": {
+        "buyer": "Katelyn Robbins",
+        "address": "080 Gonzales Light South Abigailstad, ME 92848 US",
+        "date": "19-Jan-2016",
+        "shopping_or_tax": false,
+        "currency": "$",
+        "subtotal": 377.31,
+        "discount": null,
+        "tax": 16.54,
+        "total": 387.25
+    }
+}
