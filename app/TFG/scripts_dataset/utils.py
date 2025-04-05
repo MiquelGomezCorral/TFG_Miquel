@@ -77,11 +77,14 @@ def print_time(sec: float, n_files: Optional[int] = None, space: bool = False, p
 
         
 class TimeTracker:
-    def __init__(self, name: str):
+    def __init__(self, name: str, track_start_now: bool = False ):
         self.name = name
         self.hist: list[Tuple[str, float]] = []
-        
-        print_separator(f"TIME TRACKER FOR '{name}' INITIALIZED", sep_type="LONG")
+
+        if track_start_now:
+            self.track("START")
+
+        print_separator(f"TIME TRACKER FOR '{name}' INITIALIZED{' AND STARTING NOW.' if track_start_now else ''}", sep_type="LONG")
     
     def track(self, tag: str, verbose: bool = False, space: bool = True) -> float:
         """
@@ -132,7 +135,7 @@ class TimeTracker:
         for tag, records in metrics.items():
             diff = records[1]
             
-            print_time(diff, n_files=n, prefix=tag, out_file=out_file)
+            print_time(diff, n_files=n, prefix=tag, file=out_file)
                     
         return metrics
         

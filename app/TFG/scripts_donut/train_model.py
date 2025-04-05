@@ -69,11 +69,11 @@ def train_model_from_args(args):
         clear_folder(folder="./temp")
         clear_folder(folder="./wandb")
     # ================== Training =========================
-    print_separator(f'Training {args.task_name}...', sep_type="SUPER")
+    print_separator(f'Training {args.task_name}', sep_type="SUPER")
 
     train_model(args)
 
-    print_separator(f'DONE!', sep_type="SUPER")
+    print_separator(f'DONE {args.task_name}!', sep_type="SUPER")
 
 def train_model(args):
     CONFIG = Config(
@@ -178,7 +178,7 @@ def train_model(args):
     # =============================================================================
     #                               TRAINING
     # =============================================================================
-    print_separator(f'TRAINING', sep_type="SUPER")
+    print_separator(f'TRAINING {args.task_name}', sep_type="SUPER")
     model_module = DonutModelPLModule(
         config=MODEL_CONFIG.to_dict(), 
         processor=processor, 
@@ -236,7 +236,7 @@ def train_model(args):
     # =============================================================================
     #                               TIMING
     # =============================================================================
-    print_separator(f'TIMING', sep_type="SUPER")
+    print_separator(f'TIMING {args.task_name}', sep_type="SUPER")
 
     metrics = TIME_TRAKER.print_metrics()
     with open(os.path.join(args.result_path, "timing.txt"), "w") as f:

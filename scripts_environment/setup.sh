@@ -5,13 +5,15 @@
 ALL=false
 PIP=false
 GIT=false
+YES=false
 
-while getopts "apg" opt; do
+while getopts "apgy" opt; do
   case ${opt} in
     a ) ALL=true ;;
     p ) PIP=true ;;
     g ) GIT=true ;;
-    * ) echo "Usage: $0 [-p] (pip install) [-g] (git clone/pull) [-a] (do both) "; exit 1 ;;
+    y ) YES=true ;;
+    * ) echo "Usage: $0 [-p] (pip install) [-g] (git clone/pull) [-a] (do both) [-y] (accept all, pulling)"; exit 1 ;;
   esac
 done
 
@@ -68,12 +70,16 @@ if [ "$GIT" = true ]; then
     git config --global user.email "miquelgc2003@gmail.com"
     git config --global user.name "Miquel Gómez Corral"
 
-    read -p "Do you want to pull the latest changes? (y/n): " answer
-
-    if [[ "$answer" =~ ^[Yy]$ ]]; then
+    if [ "$YES" = true ]; then
         git pull
     else
-        echo "Skipping git pull."
+      read -p "Do you want to pull the latest changes? (y/n): " answer
+
+      if [[ "$answer" =~ ^[Yy]$ ]]; then
+          git pull
+      else
+          echo "Skipping git pull."
+      fi
     fi
 
     # echo -e "\n======================================"
