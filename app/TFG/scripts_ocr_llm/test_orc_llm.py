@@ -95,8 +95,8 @@ def main(args):
     
     models: list[str] = [
         # f"ocr_finetuned_{i*5}x5_v1" for i in range(1,5+1)
-        "ocr_finetuned_5x5_v1",
-        "ocr_finetuned_4x5_v1",
+        # "ocr_finetuned_5x5_v1",
+        # "ocr_finetuned_4x5_v1",
         "ocr_finetuned_3x5_v1",
         "ocr_finetuned_5x2_v1",
         "ocr_finetuned_5x1_v1",
@@ -115,7 +115,7 @@ def main(args):
         TIME_TRACKER.track(model)
         
         save_path_model = os.path.join(args.save_path, model)
-        MODEL_TIME_TRACKER = TimeTracker(name=model, track_start_now=True)
+        MODEL_TIME_TRACKER = TimeTracker(name=model, start_track_now=True)
         with open(metadata_path, "r", encoding="utf-8") as f:
             for line in itertools.islice(f, args.max_files):
                 # MODEL_TIME_TRACKER.track(tag="File start", verbose=True)
@@ -148,18 +148,19 @@ def main(args):
 
                 MODEL_TIME_TRACKER.stimate_lap_time(N=n_files)
                 MODEL_TIME_TRACKER.finish_lap()
-            # END FOR
-            MODEL_TIME_TRACKER.print_metrics()
+            # END FOR DOCUMENTS
+            MODEL_TIME_TRACKER.print_metrics(n_files)
         # END WITH
 
         # OUTPUT MANAGEMENT
         save_output(save_path_model, ground_truths, predictions)
-        print_separator("DONE!", sep_type="LONG")
         
         TIME_TRACKER.stimate_lap_time(N=len(models))
         TIME_TRACKER.finish_lap()
+        os.makedirs(save_path_model, exist_ok=True)
         TIME_TRACKER.save_metric(os.path.join(save_path_model, "timing_log.txt"))
     # END FOR MODELS
+    print_separator("DONE!", sep_type="LONG")
 
 
 def prepare_document(file_io: io.BytesIO, document_path: str) -> io.BytesIO:
@@ -224,18 +225,19 @@ def document_to_llm(llm_client: AzureOpenAILanguageModel, document_content: str)
 
 
 def save_output(save_path, ground_truths, predictions):
-    print(" - Saving output...", end="\r")
+    print("\nSaving output...", end="\r")
     json_output = {
         "ground_truths": ground_truths,
         "predictions": predictions
     }
     
     t_aux_4 = time.time()
+    os.makedirs(save_path,exist_ok=True)
     with open(os.path.join(save_path, "output.json"), "w", encoding="utf-8") as out_json:
         json.dump(json_output, out_json, ensure_ascii=False, indent=4)
         
     t_aux_5 = time.time()
-    print_time(t_aux_5 - t_aux_4, prefix=" - Saving output. ")
+    print_time(t_aux_5 - t_aux_4, prefix="Saving output. ")
     
     # print(json_output)
     return json_output
@@ -248,7 +250,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset_path", type=str, default="./datasets_finetune/outputs/FATURA/test")
-    parser.add_argument("--save_path", type=str, default="./outputs/ocr_llm/FATURA_NEXT")
+    parser.add_argument("--save_path", type=str, default=".TFG/outputs/ocr_llm")
     parser.add_argument("--max_files", type=int, default=None)
     parser.add_argument("--seed", type=int, default=42)
     args, left_argv = parser.parse_known_args()

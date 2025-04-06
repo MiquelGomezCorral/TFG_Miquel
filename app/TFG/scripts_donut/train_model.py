@@ -27,6 +27,11 @@ if __name__ == "__main__":
     parser.add_argument("-n", "--task_name", type=str, default="fatura_train")
     parser.add_argument("-k", "--make_me_a_donut", action="store_false", default=True)
     parser.add_argument("-b", "--boom_folders", action="store_false", default=True)
+    
+    parser.add_argument("-t", "--train_samples", default=None)
+    parser.add_argument("-v", "--validation_samples", default=None)
+    parser.add_argument("-s", "--test_samples", default=None)
+    
     args, left_argv = parser.parse_known_args()
 
     if args.task_name is None:
@@ -62,7 +67,9 @@ from TFG.scripts_dataset.utils import print_separator, change_directory, print_t
 from TFG.scripts_dataset.validate_model import validate_prediction
 
 
-
+# =============================================================================
+#                            TRAIN SCRIP UTILS
+# =============================================================================
 def fatura_metric(ground_truth, prediction, verbose: bool = False):
     return 1-validate_prediction(ground_truth, prediction, verbose = verbose)[2]
 
@@ -78,6 +85,11 @@ def train_model_from_args(args):
 
     print_separator(f'DONE {args.task_name}!', sep_type="SUPER")
 
+    
+# =============================================================================
+#                            TRAIN SCRIP
+# =============================================================================
+
 def train_model(args):
     CONFIG = Config(
         model_trained_path = os.path.join(args.result_path, "model_trained"),
@@ -85,6 +97,9 @@ def train_model(args):
         pretrained_model_name_or_path = args.pretrained_model_name_or_path,
         dataset_name_or_path = args.dataset_name_or_path,
         task_name = args.task_name,
+        train_samples = args.train_samples,
+        validation_samples = args.validation_samples,
+        test_samples = args.test_samples,
     )
     MODEL_CONFIG = Model_Config(
         # Partial so the function can be called later but with that parameter set
@@ -136,7 +151,8 @@ def train_model(args):
         split="train",
         task_start_token=CONFIG.special_token,
         prompt_end_token=CONFIG.special_token,
-        sort_json_key=False, # cord dataset is preprocessed, so no need for this
+        sort_json_key=False, # Our Fatura dataset is preprocessed, so no need for this
+        max_samples=CONFIG.train_samples,
     )
 
     val_dataset = DonutDataset(
@@ -147,7 +163,8 @@ def train_model(args):
         split="validation", 
         task_start_token=CONFIG.special_token, 
         prompt_end_token=CONFIG.special_token,
-        sort_json_key=False, # cord dataset is preprocessed, so no need for this
+        sort_json_key=False, # Our Fatura dataset is preprocessed, so no need for this
+        max_samples=CONFIG.validation_samples,
     )
     
     print_separator(f'Special Tokens', sep_type="NORMAL")
@@ -232,7 +249,8 @@ def train_model(args):
         save_path = CONFIG.model_prediction_path,
         dataset_name_or_path = CONFIG.dataset_name_or_path, 
         task_pront = CONFIG.special_token,
-        evaluators= [("fatura_metric", partial(fatura_metric, verbose=False))], # MODEL_CONFIG.metrics
+        evaluators = [("fatura_metric", partial(fatura_metric, verbose=False))], # MODEL_CONFIG.metrics
+        max_samples = CONFIG.test_samples,
     )
     
     TIME_TRAKER.track("Testing", verbose=True)

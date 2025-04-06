@@ -4,6 +4,9 @@ from dataclasses import dataclass, field, asdict
 
 @dataclass
 class Model_Config:
+    # ================================================
+    #                   FIELDS
+    # ================================================
     max_epochs: int = 300
     val_check_interval: float = 0.25  # how many times we want to validate during an epoch
     check_val_every_n_epoch: int = 2
@@ -12,23 +15,42 @@ class Model_Config:
     lr: float = 1e-5
     train_batch_sizes: tuple[int] = (8,) #list[int] = field(default_factory=lambda: [8])
     val_batch_sizes: tuple[int] = (1,) #list[int] = field(default_factory=lambda: [1])
-    seed: int = 42
+    
     num_nodes: int = 1
     warmup_steps: int = 10  # 10% of epochs
+    
+    seed: int = 42
     verbose: bool = True
+    
+    train_samples: int = None
+    validation_samples: int = None
+    test_samples: int = None
+    
     
     metrics: Iterable[Callable[[dict, dict], float]] = (
         # ("Normed_ED", lambda ground_truth, prediction: edit_distance(ground_truth, prediction) / max(len(ground_truth), len(prediction)))
     )
 
-    # Method to update configuration from a dictionary
+    # ================================================
+    #                   Methods
+    # ================================================
     def update_from_dict(self, config_dict: Dict):
+        """Method to update configuration from a dictionary
+
+        Args:
+            config_dict (Dict): Input dictionary
+        """
         for key, value in config_dict.items():
             if hasattr(self, key):
                 setattr(self, key, value)
 
     # Convert the Config object to a dictionary
     def to_dict(self):
+        """Generate a dict from the object
+
+        Returns:
+            dict: generated dict
+        """
         return asdict(self)
 
 

@@ -6,10 +6,9 @@ import time
 from typing import List, Tuple
 
 from parse import save_and_parse_files
-from TFG.scripts_dataset.utils import print_separator
 from file_class import Factura, Product
 from extract_templates import extract_json
-from TFG.scripts_dataset.utils import print_time
+from TFG.scripts_dataset.utils import print_separator, TimeTracker
 
 # ===========================================
 #             Management logic
@@ -37,16 +36,17 @@ def main(args) -> None:
     samples_per_template = (args.n_files // n_valid_templates) 
     
     file_ids: List[int] = [
-        random.sample(list(range(200)), k=samples_per_template) for i in valid_templates
+        random.sample(list(range(200)), k=samples_per_template) for _ in valid_templates
     ]
     
     pre_parsed_files: List[Tuple[str, Factura]] = []
     
     # ================== PROCESSING =========================
-    t1 = time.time()
+    TIME_TRAKER: TimeTracker = TimeTracker(name="Processing file", start_track_now=True)
     print_separator(f'Processing {args.n_files} Files...')
     
     for i in range(args.n_files):
+        TIME_TRAKER.start_lap(args.n_files)
         curr_template = valid_templates[i%n_valid_templates]
         curr_file_id = file_ids[i%n_valid_templates][i//n_valid_templates]
         file_name = f"Template{curr_template}_Instance{curr_file_id}.json"
@@ -59,20 +59,15 @@ def main(args) -> None:
             pre_parsed_file = extract_json(d, curr_template)
 
             pre_parsed_files.append((file_name, pre_parsed_file))
-
-    t2 = time.time()
-    diff = t2-t1
-    print_time(diff, args.n_files)
+        TIME_TRAKER.finish_lap_lap()
+        
+    TIME_TRAKER.track(tag="Finish porcessing files", verbose=True)
     
     # ================== SAVING =========================
     print_separator(f'Saving {args.n_files} Files...')
-    
     save_and_parse_files(pre_parsed_files, args.save_path, args.dataset_img_path, args.test_split, args.val_split)
 
-    t3 = time.time()
-    diff = t3-t2
-    print_time(diff, args.n_files)
-    
+    TIME_TRAKER.track(tag="Finish saving files", verbose=True)
     print_separator('DONE!')
 
 # ===========================================

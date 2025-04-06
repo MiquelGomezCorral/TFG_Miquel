@@ -35,12 +35,11 @@ from transformers import DonutProcessor, VisionEncoderDecoderModel
 
 def test_model(
     model, processor, dataset_name_or_path, save_path, task_pront, 
-    verbose: bool = True,
+    verbose: bool = True, max_samples: int = None,
     evaluators: list[Tuple[str, Callable[[dict,dict], float]]] = None
 ):
     if evaluators is None: evaluators = []
     evaluators = [('N_Tree_ED', lambda gt, pred: JSONParseEvaluator().cal_acc(pred, gt))] + evaluators
-    
     
     print_separator(f'TESTING', sep_type="SUPER")
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -53,6 +52,8 @@ def test_model(
     scores_list = []
 
     dataset = load_dataset(dataset_name_or_path, split="test")
+    if max_samples is not None:
+        dataset = dataset.select(range(max_samples))
 
     for idx, sample in tqdm(enumerate(dataset), total=len(dataset)):
         # prepare encoder inputs

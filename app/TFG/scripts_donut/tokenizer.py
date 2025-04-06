@@ -36,6 +36,7 @@ class DonutDataset(Dataset):
         task_start_token: str = "<s>",
         prompt_end_token: str = None,
         sort_json_key: bool = True,
+        max_samples: int = None
     ):
         super().__init__()
         self.processor = processor
@@ -49,6 +50,8 @@ class DonutDataset(Dataset):
         self.sort_json_key = sort_json_key
 
         self.dataset = load_dataset(dataset_name_or_path, split=self.split)
+        if max_samples is not None:
+            self.dataset = self.dataset.select(range(max_samples))
         self.dataset_length = len(self.dataset)
 
         self.gt_token_sequences = []

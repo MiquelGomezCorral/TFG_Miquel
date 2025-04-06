@@ -77,7 +77,7 @@ def print_time(sec: float, n_files: Optional[int] = None, space: bool = False, p
 
         
 class TimeTracker:
-    def __init__(self, name: str, track_start_now: bool = False ):
+    def __init__(self, name: str, start_track_now: bool = False ):
         self.name = name
         self.hist: dict[str, Tuple[float, float]] = dict()
         self.started: bool = False
@@ -87,10 +87,10 @@ class TimeTracker:
         self.lap_runing: bool = False
         self.lap_number: int = 0
         
-        if track_start_now:
+        if start_track_now:
             self.start()
             
-        print_separator(f"⏳ TIME TRACKER '{name}' INITIALIZED{'. STARTING NOW' if track_start_now else ''}! ⏳", sep_type="NORMAL")
+        print_separator(f"⏳ TIME TRACKER '{name}' INITIALIZED{'. STARTING NOW' if start_track_now else ''}! ⏳", sep_type="NORMAL")
     
     def start(self):
         """
@@ -231,6 +231,7 @@ class TimeTracker:
     def print_metrics(self, n: int = None, out_file: TextIO = None) -> dict:
         metrics = self.get_metrics(n)
         
+        print("")
         if n is not None:
             print(f"Processed {n} files in total\n", file=out_file)
         

@@ -30,7 +30,7 @@ def train_compare_nodel(args):
         'boom_folders': args.boom_folders,
     }
     
-    TIME_TRAKER: TimeTracker = TimeTracker(name="Model donut comparation", track_start_now=True)
+    TIME_TRAKER: TimeTracker = TimeTracker(name="Model donut comparation", start_track_now=True)
     
     for i in range(1, args.n_versions+1):
         # Convert to arguments
