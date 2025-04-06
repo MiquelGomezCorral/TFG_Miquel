@@ -37,7 +37,7 @@ def validate_model(output_path: str, ground_truths, model_predictions, verbose: 
     if N == 0: raise ValueError("Empty output, no output values found.")
     
     scores: dict[str, tuple] = {
-        "all": (0,0,0,0,0), # N_hist, Proportion, Precision, Recall, Fscore
+        "all": (0,0,0,0,0), # N_hist, Accuracy, Precision, Recall, Fscore
         **{key: (0,0,0,0,0) for key in ground_truths[0]}
     }
     
@@ -57,7 +57,7 @@ def validate_model(output_path: str, ground_truths, model_predictions, verbose: 
         os.makedirs(output_path, exist_ok=True)
         with open(os.path.join(output_path, "scores.txt"), "w") as out_file:
             print_scores(scores, N, file_out = out_file)
-        save_scores(scores, output_path)
+        save_scores(scores, N, output_path)
     
     print(f"Validate model: {scores = }")
     return scores

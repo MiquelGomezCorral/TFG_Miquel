@@ -10,31 +10,41 @@ def print_scores(scores: dict, N: int, file_out = None) -> None:
         print("Scores was none", file=file_out)
         return 
     
-    print(scores, file=file_out)
-    return
-    print(f"{'Field':>15} | {'Hits':^11} | {'Acuracy':^7} | {'Proportion':^10} | {'Precision':^9} | {'Recall':^6} | {'F_score':^7}", file=file_out)
+    print(f"{'Field':>15} | {'Hits':^11} | {'Proportion':^10} | {'Acuracy':^7} | {'Precision':^9} | {'Recall':^6} | {'F_score':^7}", file=file_out)
     separator = "---------------------------------------------"
     print(separator, file=file_out)
-    val, ratio, proportion, pre, rec, fsc = scores.get('all', (0, 0, 0, 0, 0, 0))
-    print(f"{'General Score':>15} | {val:>5}/{N:<5} | {ratio:^7.4f} | {proportion:^10.4f} | {pre:^9.4f} | {rec:^6.4f} | {fsc:7.4f}", file=file_out)
-    for key, (val, ratio, pre, rec, fsc) in scores.items():
-        if key == "all": continue
-        print(f"{key:>15} | {val:>5}/{N:<5} | {ratio:^7.4f} | {proportion:^10.4f} | {pre:^9.4f} | {rec:^6.4f} | {fsc:7.4f}", file=file_out)
     
+    # Ensure "all" appears the firts field
+    hits, prop, acc, pre, rec, fsc = scores.get('all', (0, 0, 0, 0, 0, 0))
+    print_fields("General Score", hits, prop, acc, pre, rec, fsc, N)
+    for key, (hits, prop, acc, pre, rec, fsc) in scores.items():
+        if key == "all": continue
+        print_fields(key, hits, prop, acc, pre, rec, fsc, N)
 
-def save_scores(scores: dict, path: str) -> None:
-    return
+def print_fields(key, hits, prop, acc, pre, rec, fsc, N, file_out):
+    print(f"{key:>15} | {hits:>5}/{N:<5} | {prop:^10.f} | {acc:^7.4f} | {pre:^9.4f} | {rec:^6.4f} | {fsc:7.4f}", file=file_out)
+        
+
+def save_scores(scores: dict, N: int, path: str) -> None:
     with open(os.path.join(path, "score.csv"), 'w', newline="") as out_file:
         out_writer = csv.DictWriter(
-            out_file, fieldnames=["Field", "Hits", "Accuracy"]
+            out_file, fieldnames=[
+                "Field", "Hits", "Total", "Proportion", "Accuracy", 
+                "Precision", "Recall", "F_score"
+            ]
         )
-        out_writer.writeheader()  # Write header row
+        out_writer.writeheader()
 
-        for key, (val, ratio) in scores.items():
+        for key, (hits, prop, acc, pre, rec, fsc) in scores.items():
             out_writer.writerow({
                 "Field": "General Score" if key == "all" else key,
-                "Hits": val,
-                "Accuracy": ratio
+                "Hits": hits,
+                "Total": N,
+                "Proportion": f"{prop:.4f}",
+                "Accuracy": f"{acc:.4f}",
+                "Precision": f"{pre:.4f}",
+                "Recall": f"{rec:.4f}",
+                "F_score": f"{fsc:.4f}"
             })
 
 def update_scores(base: dict, incoming: dict, inplace: bool = False) -> None:
