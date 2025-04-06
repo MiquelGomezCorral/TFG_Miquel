@@ -79,9 +79,9 @@ if __name__ == "__main__":
     parser.add_argument("--test_split", type=float)
     parser.add_argument("--val_split", type=float)
     parser.add_argument("--n_files", type=int, default=100)
-    parser.add_argument("--dataset_json_path", type=str, default="datasets_finetune/FATURA/Annotations/Original_Format")
-    parser.add_argument("--dataset_img_path", type=str, default="datasets_finetune/FATURA/images")
-    parser.add_argument("--save_path", type=str, default="datasets_finetune/outputs/FATURA")
+    parser.add_argument("--dataset_json_path", type=str, default="final_dataset_fatura/Annotations/Original_Format")
+    parser.add_argument("--dataset_img_path", type=str, default="final_dataset_fatura/images")
+    parser.add_argument("--save_path", type=str, default="final_dataset_fatura/outputs")
     parser.add_argument("--seed", type=int, default=42)
     args, left_argv = parser.parse_known_args()
 

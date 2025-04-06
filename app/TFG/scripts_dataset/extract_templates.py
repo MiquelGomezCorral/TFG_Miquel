@@ -52,7 +52,7 @@ def extract_template_1(data: Dict[str, Any], parsed_factura: Factura) -> Factura
     parsed_factura.address = " ".join(data["BUYER"]["text"].split("\n")[1:3]) # 41839 Lee Terrace Apt. 982\nLake Gregoryland, WV 71038 US -> One line
     parsed_factura.date = data["DATE"]["text"].split(": ")[1] # Date: 20-Mar-2008
     
-    parsed_factura.shopping_or_tax = 'commercial' in data["TITLE"]["text"].lower()
+    # parsed_factura.shopping_or_tax = 'commercial' in data["TITLE"]["text"].lower()
     
     parsed_factura.subtotal = float(data["SUB_TOTAL"]["text"].split()[-2])
     
@@ -79,7 +79,7 @@ def extract_template_3(data: Dict[str, Any], parsed_factura: Factura) -> Factura
     parsed_factura.address = " ".join(data["BILL_TO"]["text"].split("\n")[2:4]) # 41839 Lee Terrace Apt. 982\nLake Gregoryland, WV 71038 US -> One line
     parsed_factura.date = data["DATE"]["text"].split(": ")[1] # Date: 20-Mar-2008
     
-    parsed_factura.shopping_or_tax = 'commercial' in data["TITLE"]["text"].lower()
+    # parsed_factura.shopping_or_tax = 'commercial' in data["TITLE"]["text"].lower()
     
     parsed_factura.subtotal = None # it doesn't has
     
@@ -106,7 +106,7 @@ def extract_template_5(data: Dict[str, Any], parsed_factura: Factura) -> Factura
     parsed_factura.address = " ".join(data["BUYER"]["text"].split("\n")[1:3]) # 41839 Lee Terrace Apt. 982\nLake Gregoryland, WV 71038 US -> One line
     parsed_factura.date = data["DATE"]["text"].split(": ")[1] # Date: 20-Mar-2008
     
-    parsed_factura.shopping_or_tax = False # All are Taxes
+    # parsed_factura.shopping_or_tax = False # All are Taxes
     
     parsed_factura.subtotal = float(data["SUB_TOTAL"]["text"].split()[-2])
     
@@ -133,7 +133,7 @@ def extract_template_6(data: Dict[str, Any], parsed_factura: Factura) -> Factura
     parsed_factura.address = " ".join(data["BUYER"]["text"].split("\n")[1:3]) # 41839 Lee Terrace Apt. 982\nLake Gregoryland, WV 71038 US -> One line
     parsed_factura.date = data["DATE"]["text"].split(": ")[1] # Date: 20-Mar-2008
     
-    parsed_factura.shopping_or_tax = 'commercial' in data["TITLE"]["text"].lower()
+    # parsed_factura.shopping_or_tax = 'commercial' in data["TITLE"]["text"].lower()
     
     parsed_factura.subtotal = float(data["SUB_TOTAL"]["text"].split()[-2])
     
@@ -160,7 +160,7 @@ def extract_template_8(data: Dict[str, Any], parsed_factura: Factura) -> Factura
     parsed_factura.address = " ".join(data["BUYER"]["text"].split("\n")[1:3]) # 41839 Lee Terrace Apt. 982\nLake Gregoryland, WV 71038 US -> One line
     parsed_factura.date = data["DATE"]["text"].split(": ")[1] # Date: 20-Mar-2008
     
-    parsed_factura.shopping_or_tax = True # All are Commercial shopping
+    # parsed_factura.shopping_or_tax = True # All are Commercial shopping
     
     parsed_factura.subtotal = float(data["SUB_TOTAL"]["text"].split()[-2])
     

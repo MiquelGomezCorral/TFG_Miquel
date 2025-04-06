@@ -9,7 +9,7 @@ class Factura:
         self.buyer: str = ""
         self.address: str = ""
         self.date: str = ""
-        self.shopping_or_tax: bool = None  # True for Commercial, False for Tax
+        # self.shopping_or_tax: bool = None  # True for Commercial, False for Tax
         self.currency: str = ""
         self.subtotal: float = 0.0
         self.discount: float = 0.0
@@ -18,7 +18,7 @@ class Factura:
         # self.products: List[Product] = []
 
     def __repr__(self):
-        return f"Factura(buyer={self.buyer}, address={self.address}, date={self.date}, shopping_or_tax={self.shopping_or_tax}, currency={self.currency}, subtotal={self.subtotal}, discount={self.discount}, tax={self.tax}, total={self.total})"#, products={self.products})"
+        return f"Factura(buyer={self.buyer}, address={self.address}, date={self.date}, currency={self.currency}, subtotal={self.subtotal}, discount={self.discount}, tax={self.tax}, total={self.total})"#, products={self.products})" shopping_or_tax={self.shopping_or_tax},
 
     def to_dict(self):
         """
@@ -28,7 +28,7 @@ class Factura:
             "buyer": self.buyer,
             "address": self.address,
             "date": self.date,
-            "shopping_or_tax": self.shopping_or_tax,
+            # "shopping_or_tax": self.shopping_or_tax,
             "currency": self.currency,
             "subtotal": self.subtotal,
             "discount": self.discount,
@@ -46,7 +46,7 @@ class Factura:
         factura.buyer = data.get("buyer", "")
         factura.address = data.get("address", "")
         factura.date = data.get("date", "")
-        factura.shopping_or_tax = data.get("shopping_or_tax", None)
+        # factura.shopping_or_tax = data.get("shopping_or_tax", None)
         factura.currency = data.get("currency", "")
         factura.subtotal = data.get("subtotal", 0.0)
         factura.discount = data.get("discount", 0.0)

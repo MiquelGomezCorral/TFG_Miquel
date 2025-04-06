@@ -93,8 +93,6 @@ def validate_prediction(gt, pred, verbose: bool = False):
     #           VALIDATE ANSWER
     # =============================
     for key_gt, val_gt in gt.items():
-        if key_gt == "shopping_or_tax":
-            scores[key_gt] = (1, 1, 1, 1, 1)
         if key_gt not in pred:
             scores[key_gt] = (0, 0, 0, 0, 0)
             mistaken_keys.append(key_gt)
@@ -148,9 +146,6 @@ def validate_answer(key_gt, val_gt, val_pred) -> bool:
     if key_gt in ["discount", "tax", "subtotal", "total"]:
         if val_gt is None:
             return val_pred is None or val_pred == 0.0
-        
-    if key_gt == "shopping_or_tax": 
-        return True # We skip this paraneter
         
     return val_gt == val_pred
 
