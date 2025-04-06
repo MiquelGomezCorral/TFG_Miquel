@@ -34,7 +34,7 @@ if __name__ == "__main__":
         
         
     # ============================================================ 
-    # Start the donut animation in a separate process
+    #      Start the donut animation in a separated process
     # ============================================================
     if args.make_me_a_donut:
         import multiprocessing
@@ -45,6 +45,7 @@ if __name__ == "__main__":
         donut_process.start()
 
 import json
+from functools import partial
 from datasets import load_dataset
 from torch.utils.data import DataLoader
 from transformers import VisionEncoderDecoderConfig, DonutProcessor, VisionEncoderDecoderModel
@@ -62,8 +63,8 @@ from TFG.scripts_dataset.validate_model import validate_prediction
 
 
 
-def fatura_metric(ground_truth, prediction):
-    return 1-validate_prediction(ground_truth, prediction, verbose = True)[2]
+def fatura_metric(ground_truth, prediction, verbose: bool = False):
+    return 1-validate_prediction(ground_truth, prediction, verbose = verbose)[2]
 
 def train_model_from_args(args):
     # ================== Clear repo =========================
@@ -86,7 +87,8 @@ def train_model(args):
         task_name = args.task_name,
     )
     MODEL_CONFIG = Model_Config(
-        metrics = [("fatura_metric", fatura_metric)]
+        # Partial so the function can be called later but with that parameter set
+        metrics = [("fatura_metric", partial(fatura_metric, verbose=True))] 
     )
     
     TIME_TRAKER = TimeTracker(name="Training")
@@ -230,7 +232,7 @@ def train_model(args):
         save_path = CONFIG.model_prediction_path,
         dataset_name_or_path = CONFIG.dataset_name_or_path, 
         task_pront = CONFIG.special_token,
-        evaluators= MODEL_CONFIG.metrics
+        evaluators= [("fatura_metric", partial(fatura_metric, verbose=False))], # MODEL_CONFIG.metrics
     )
     
     TIME_TRAKER.track("Testing", verbose=True)
@@ -252,10 +254,11 @@ def train_model(args):
 # =============================================================================
 if __name__ == "__main__":
     # ================== Silly donut ======================
-    stop_event.set()  # Signal the animation to stop
-    donut_process.terminate()  # Kill the process
-    donut_process.join()  # Ensure cleanup
-    clean_all()
+    if args.make_me_a_donut:
+        stop_event.set()  # Signal the animation to stop
+        donut_process.terminate()  # Kill the process
+        donut_process.join()  # Ensure cleanup
+        clean_all()
     
     # ================== Train ======================
     train_model_from_args(args)

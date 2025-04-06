@@ -93,8 +93,10 @@ def validate_prediction(gt, pred, verbose: bool = False):
     #           VALIDATE ANSWER
     # =============================
     for key_gt, val_gt in gt.items():
+        if key_gt == "shopping_or_tax":
+            scores[key_gt] = (1, 1, 1, 1, 1)
         if key_gt not in pred:
-            scores[key_gt] = (0, 0, 0, 0)
+            scores[key_gt] = (0, 0, 0, 0, 0)
             mistaken_keys.append(key_gt)
         else:
             correct = validate_answer(key_gt, val_gt, pred[key_gt])
@@ -118,6 +120,7 @@ def validate_prediction(gt, pred, verbose: bool = False):
     scores["all"] = (int(all_correct), accuracy, precision, recall, f_score)
     return scores, all_correct, accuracy, mistaken_keys
         
+
 def validate_answer(key_gt, val_gt, val_pred) -> bool: 
     val_gt, val_pred = str(val_gt), str(val_pred)
     if isinstance(val_gt, str):
@@ -151,6 +154,10 @@ def validate_answer(key_gt, val_gt, val_pred) -> bool:
         
     return val_gt == val_pred
 
+
+# ==========================================================
+#                       MAIN
+# ==========================================================
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(

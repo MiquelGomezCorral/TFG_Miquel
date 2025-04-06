@@ -3,8 +3,24 @@ USED TO CHECK IF IN A FOLDER ALL THE FILES MENTIONED AT 'metadata.jsonl' ARE IN 
 """
 
 import os
+import sys
 import json
 import argparse
+
+if __name__ == "__main__":
+    curr_directory = os.getcwd()
+    print("\nStarting Directory:", curr_directory)
+    if not curr_directory.endswith("app"):
+        if curr_directory.endswith("TFG_Miquel"):
+            os.chdir("./app") 
+        else: os.chdir("../") 
+        print("New Directory:", os.getcwd())
+    # if new_directory is not None and not curr_directory.endswith(new_directory):
+    #     os.chdir(f"./{new_directory}") 
+    #     print("New Directory:", os.getcwd(), "\n")
+    sys.path.append(os.getcwd())
+    
+    
 
 def main(args):
     if not os.path.exists(args.folder_path):

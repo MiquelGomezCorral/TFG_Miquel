@@ -30,8 +30,7 @@ def train_compare_nodel(args):
         'boom_folders': args.boom_folders,
     }
     
-    TIME_TRAKER: TimeTracker = TimeTracker(name="Model donut comparation")
-    TIME_TRAKER.track("Start")
+    TIME_TRAKER: TimeTracker = TimeTracker(name="Model donut comparation", track_start_now=True)
     
     for i in range(1, args.n_versions+1):
         # Convert to arguments
@@ -56,14 +55,35 @@ if __name__ == "__main__":
     # ============================================================ 
     #                   Parse arguments
     # ============================================================
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-m", "--pretrained_model_name_or_path", type=str, required=False, default="naver-clova-ix/donut-base")
-    parser.add_argument("-d", "--datasets_name_or_path", type=str, required=False, default= f"dataset_finetune_small") #"['naver-clova-ix/cord-v1']"
-    parser.add_argument("-o", "--result_path", type=str, required=False, default='./TFG/outputs/donut_comp')
-    parser.add_argument("-n", "--task_name", type=str, default="fatura_train_comparation")
-    parser.add_argument("-k", "--make_me_a_donut", action="store_false", default=True)
-    parser.add_argument("-b", "--boom_folders", action="store_false", default=True)
-    parser.add_argument("-v", "--n_versions", type=int, default=5)
+    parser = argparse.ArgumentParser("Train and compare donut models with different settings.")
+    parser.add_argument(
+        "-m", "--pretrained_model_name_or_path", type=str, required=False, default="naver-clova-ix/donut-base",
+        help="Path or name of the pretrained model to fine-tune."
+    )
+    parser.add_argument(
+        "-d", "--datasets_name_or_path", type=str, required=False, default= f"dataset_finetune_small", #"['naver-clova-ix/cord-v1']""
+        help="Path to dataset or dataset name (default: dataset_finetune_small)."
+    )
+    parser.add_argument(
+        "-o", "--result_path", type=str, required=False, default='./TFG/outputs/donut_comp',
+        help="Directory where the results will be saved."
+    )
+    parser.add_argument(
+        "-n", "--task_name", type=str, default="fatura_train_comparation",
+        help="Name of the training task (used for logging and outputs)."
+    )
+    parser.add_argument(
+        "-k", "--make_me_a_donut", action="store_false", default=True,
+        help="Disable donut-making mode (default: enabled)."
+    )
+    parser.add_argument(
+        "-b", "--boom_folders", action="store_false", default=True,
+        help="Disable boom_folders behavior (whatever that means in context)."
+    )
+    parser.add_argument(
+        "-v", "--n_versions", type=int, default=5,
+        help="Number of versions to train and compare."
+    )
     args, left_argv = parser.parse_known_args()
 
     if args.task_name is None:

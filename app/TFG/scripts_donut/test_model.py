@@ -1,13 +1,13 @@
 import os
 import sys
 
-from TFG.scripts_dataset.validate_model import validate_model
-
 if __name__ == "__main__":
     curr_directory = os.getcwd()
-    print("\nOld Current Directory:", curr_directory)
-    if not curr_directory.endswith("TFG_Miquel"):
-        os.chdir("../") 
+    print("\nStarting Directory:", curr_directory)
+    if not curr_directory.endswith("app"):
+        if curr_directory.endswith("TFG_Miquel"):
+            os.chdir("./app") 
+        else: os.chdir("../") 
         print("New Directory:", os.getcwd())
     # if new_directory is not None and not curr_directory.endswith(new_directory):
     #     os.chdir(f"./{new_directory}") 
@@ -15,6 +15,7 @@ if __name__ == "__main__":
     sys.path.append(os.getcwd())
 
 from TFG.scripts_dataset.utils import print_separator, change_directory, print_time
+from TFG.scripts_dataset.validate_model import validate_model
 from TFG.scripts_donut.donut_utils import from_output_to_json
 
 import re

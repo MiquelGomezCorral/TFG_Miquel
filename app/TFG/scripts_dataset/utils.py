@@ -79,12 +79,17 @@ def print_time(sec: float, n_files: Optional[int] = None, space: bool = False, p
 class TimeTracker:
     def __init__(self, name: str, track_start_now: bool = False ):
         self.name = name
-        self.hist: list[Tuple[str, float]] = []
+        self.hist: dict[str, Tuple[float, float]] = dict()
+        self.last_time = -1
+        
+        self.lap_hist = dict()
+        self.lap_runing = False
+        self.lap_number = 0
 
         if track_start_now:
             self.track("START")
 
-        print_separator(f"TIME TRACKER FOR '{name}' INITIALIZED{' AND STARTING NOW.' if track_start_now else ''}", sep_type="LONG")
+        print_separator(f"⏳ TIME TRACKER FOR '{name}' INITIALIZED{', AND STARTING NOW' if track_start_now else ''}! ⏳", sep_type="LONG")
     
     def track(self, tag: str, verbose: bool = False, space: bool = True) -> float:
         """
@@ -92,31 +97,82 @@ class TimeTracker:
         """
         
         t = time.time()
-        diff = t - self.hist[-1][1] if len(self.hist) > 0 else 0
-        self.hist.append((tag, t, diff))
+        diff = t - self.last_time if self.last_time > 0 else 0
+        
+        if self.lap_runing:
+            if tag in self.lap_hist:
+                tag = f"{tag}_{self.lap_number}"
+            self.lap_hist[tag] = (t, diff)
+        else:
+            if tag in self.hist:
+                tag = f"{tag}_"
+            self.hist[tag] = (t, diff)
+        
         if verbose: 
-            print_time(diff, prefix=tag, space=space)
+            print_tag = tag if not self.lap_runing else f"{tag} lap {self.lap_number}"
+            print_time(diff, prefix=f"⏳ {print_tag}", sufix=" ⏳", space=space)
+            
+        self.last_time = t
         return diff
     
-    def get_metrics(self, n: int = None) -> dict:
+    def start_lap(self, verbose: bool = False, mute_warning: bool = False):
+        self.lap_runing = True
+        self.lap_number += 1
+        if len(self.lap_hist) > 0 and not mute_warning:
+            print("⚠️ WARNING: Starting lap without finishing previous. The records will be overritten. ⚠️")
+            
+        t = time.time()    
+        self.lap_hist["START_LAP"] = (t, 0)
+        self.last_time = t
+        
+        if verbose:
+            print(f" - Starting lap num {self.lap_number}!")
+        
+    def finish_lap(self):
+        self.lap_runing = False
+        
+        t = time.time()
+        self.lap_hist["FINISH_LAP"] = (t, t-self.lap_hist["START_LAP"][0])
+        
+        # Update possible previous times
+        for tag, (t, diff) in self.lap_hist.items():
+            if tag in self.hist:
+                _, prev_diff = self.hist[tag]
+                self.hist[tag] = (t, prev_diff + diff)
+            else:
+                self.hist[tag] = (t, diff)
+                
+                
+        self.lap_hist = dict()
+        
+        
+    def get_metrics(self, n: int = None, initial_tag: str = "START") -> dict:
         """
         Return a dict with all the metrics with the form: tag: (time, diff) 
         Added Normalized if n of samples is passed with the form: tag: (time, diff, diff/n) 
+        
+        initial_tag change it in case it hasn't been set as 'START' for the first track
         """
         t = time.time()
         if len(self.hist) > 0: 
-            self.hist[0] = ("Total", t, t - self.hist[0][1])
+            if initial_tag not in self.hist:
+                print(f"⚠️ WARNING: Passed initial tag '{initial_tag}' not found in history. Settin to first.⚠️")
+                initial_tag = next(iter(self.hist)) # Getting the firts added tag
+            self.hist["TOTAL"] = (t, t - self.hist[initial_tag][0])
+            
         else:
-            print("WARNING: Getting metrics with 0 tracked points. This will return an empty dict.")
+            print("⚠️ WARNING: Getting metrics with 0 tracked points. This will return an empty dict. ⚠️")
         
-        if n is None:
-            return {
-                tag: (time, diff) for (tag, time, diff) in self.hist
+        if n is not None:
+            res_hist =  {
+                tag: (time, diff, diff/n) for tag, (time, diff) in self.hist.items()
             }
         else:
-            return {
-                tag: (time, diff, diff/n) for (tag, time, diff) in self.hist
-            }
+            res_hist = self.hist.copy()
+        
+        if "START_LAP" in res_hist:
+            res_hist.pop("START_LAP")
+        return res_hist
         
     def save_metric(self, save_path: str, n: int = None) -> dict:
         metrics = self.get_metrics(n)
@@ -130,7 +186,7 @@ class TimeTracker:
         metrics = self.get_metrics(n)
         
         if n is not None:
-            print(f"Processed {n} files in total\n", out_file=out_file)
+            print(f"Processed {n} files in total\n", file=out_file)
         
         for tag, records in metrics.items():
             diff = records[1]
