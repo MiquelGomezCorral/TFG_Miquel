@@ -11,7 +11,7 @@ def print_scores(scores: dict, N: int, file_out = None) -> None:
         return 
     
     print(f"\n{'Field':>15} | {'Hits':^11} | {'Proportion':^10} | {'Acuracy':^7} | {'Precision':^9} | {'Recall':^6} | {'F_score':^7}", file=file_out)
-    separator = "---------------------------------------------------------------------------------------------------------"
+    separator = "------------------------------------------------------------------------------------"
     print(separator, file=file_out)
     
     # Ensure "all" appears the firts field
