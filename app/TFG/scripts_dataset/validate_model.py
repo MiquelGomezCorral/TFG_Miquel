@@ -37,8 +37,8 @@ def validate_model(output_path: str, ground_truths, model_predictions, verbose: 
     if N == 0: raise ValueError("Empty output, no output values found.")
     
     scores: dict[str, tuple] = {
-        "all": (0,0,0,0), #N_hist, Precision, Recall, Fscore
-        **{key: (0,0,0,0) for key in ground_truths[0]}
+        "all": (0,0,0,0,0), # N_hist, Proportion, Precision, Recall, Fscore
+        **{key: (0,0,0,0,0) for key in ground_truths[0]}
     }
     
     for gt, out in zip(ground_truths, model_predictions):
@@ -48,7 +48,7 @@ def validate_model(output_path: str, ground_truths, model_predictions, verbose: 
             print(F" - Mistakes: mistakes{mistakes}")
         
     scores = norm_scores(scores, N)
-    # key: (val, ratio, proportion, pre, rec, fsc)
+    # key: (val, total_acuracy, proportion, precision, recall, fscore)
     
     if verbose:
         print_scores(scores, N)
@@ -68,12 +68,12 @@ def validate_prediction(gt, pred):
         Recieve json str or dict ground trugths and model predictions and outputs the corresponding metrics
     """
     scores: dict[str, tuple] = {
-        "all": (0,0,0,0), #N_hist, Precision, Recall, Fscore
-        **{key: (0,0,0,0) for key in gt}
+        "all": (0,0,0,0,0), # Num hits, Proportion, Precision, Recall, Fscore
+        **{key: (0,0,0,0,0) for key in gt}
     }
-    total_keys = len(gt)
-    n_correct = 0
-    mistaken_keys = set()
+    total_keys: int = len(gt)
+    n_correct: int = 0
+    mistaken_keys: list = list()
     
     # =============================
     #           CHECK INPUT
@@ -95,25 +95,29 @@ def validate_prediction(gt, pred):
     for key_gt, val_gt in gt.items():
         if key_gt not in pred:
             scores[key_gt] = (0, 0, 0, 0)
+            mistaken_keys.append(key_gt)
         else:
             correct = validate_answer(key_gt, val_gt, pred[key_gt])
-            if not correct: mistaken_keys.add(key_gt)
-            n_correct += 1 if correct else 0
-            precision, recall, f_score = precision_recall_f1(val_gt, pred[key_gt])
+            accuracy, precision, recall, f_score = precision_recall_f1(val_gt, pred[key_gt])
             
-            scores[key_gt] = (int(correct), precision, recall, f_score)
+            if not correct: 
+                mistaken_keys.append(key_gt)
+            else:
+                n_correct += 1 
+            scores[key_gt] = (int(correct), accuracy, precision, recall, f_score)
     
-    proportion = n_correct / total_keys
+    
+    accuracy = n_correct / total_keys
     all_correct = len(mistaken_keys) == 0
-    
     gt_str = " ".join([str(val) for val in gt.values()])
     pred_str = " ".join([str(val) for val in pred.values()])
-    precision, recall, f_score = precision_recall_f1(gt_str, pred_str)
-    scores["all"] = (int(all_correct), proportion, precision, recall, f_score)
+    _, precision, recall, f_score = precision_recall_f1(gt_str, pred_str)
     
-    return scores, all_correct, proportion, list(mistaken_keys)
+    scores["all"] = (int(all_correct), accuracy, precision, recall, f_score)
+    return scores, all_correct, accuracy, mistaken_keys
         
 def validate_answer(key_gt, val_gt, val_pred) -> bool: 
+    val_gt, val_pred = str(val_gt), str(val_pred)
     if isinstance(val_gt, str):
         val_gt = val_gt.lower()
     if isinstance(val_pred, str):

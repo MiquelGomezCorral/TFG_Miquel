@@ -26,7 +26,7 @@ def train_compare_nodel(args):
         'dataset_name_or_path': args.datasets_name_or_path,
         'result_path': args.result_path,
         'task_name': args.task_name,
-        'stop_the_donut': args.stop_the_donut,
+        'make_me_a_donut': args.make_me_a_donut,
         'boom_folders': args.boom_folders,
     }
     
@@ -61,7 +61,7 @@ if __name__ == "__main__":
     parser.add_argument("-d", "--datasets_name_or_path", type=str, required=False, default= f"dataset_finetune_small") #"['naver-clova-ix/cord-v1']"
     parser.add_argument("-o", "--result_path", type=str, required=False, default='./TFG/outputs/donut_comp')
     parser.add_argument("-n", "--task_name", type=str, default="fatura_train_comparation")
-    parser.add_argument("-k", "--stop_the_donut", action="store_true", default=False)
+    parser.add_argument("-k", "--make_me_a_donut", action="store_false", default=True)
     parser.add_argument("-b", "--boom_folders", action="store_false", default=True)
     parser.add_argument("-v", "--n_versions", type=int, default=5)
     args, left_argv = parser.parse_known_args()

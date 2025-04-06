@@ -135,7 +135,7 @@ class TimeTracker:
         for tag, records in metrics.items():
             diff = records[1]
             
-            print_time(diff, n_files=n, prefix=tag, file=out_file)
+            print_time(diff, n_files=n, prefix=tag, out_file=out_file)
                     
         return metrics
         

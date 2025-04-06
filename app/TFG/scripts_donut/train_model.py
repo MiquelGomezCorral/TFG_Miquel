@@ -6,8 +6,10 @@ import argparse
 if __name__ == "__main__":
     curr_directory = os.getcwd()
     print("\nStarting Directory:", curr_directory)
-    if not curr_directory.endswith("TFG_Miquel"):
-        os.chdir("../") 
+    if not curr_directory.endswith("app"):
+        if curr_directory.endswith("TFG_Miquel"):
+            os.chdir("./app") 
+        else: os.chdir("../") 
         print("New Directory:", os.getcwd())
     # if new_directory is not None and not curr_directory.endswith(new_directory):
     #     os.chdir(f"./{new_directory}") 
@@ -23,7 +25,7 @@ if __name__ == "__main__":
     parser.add_argument("-d", "--dataset_name_or_path", type=str, required=False, default= f"datasets_finetune/outputs/FATURA") #"['naver-clova-ix/cord-v1']"
     parser.add_argument("-o", "--result_path", type=str, required=False, default='./TFG/outputs/donut')
     parser.add_argument("-n", "--task_name", type=str, default="fatura_train")
-    parser.add_argument("-k", "--stop_the_donut", action="store_true", default=False)
+    parser.add_argument("-k", "--make_me_a_donut", action="store_false", default=True)
     parser.add_argument("-b", "--boom_folders", action="store_false", default=True)
     args, left_argv = parser.parse_known_args()
 
@@ -34,7 +36,7 @@ if __name__ == "__main__":
     # ============================================================ 
     # Start the donut animation in a separate process
     # ============================================================
-    if not args.stop_the_donut:
+    if args.make_me_a_donut:
         import multiprocessing
         from TFG.scripts_donut.donut_print import print_donut, clean_all
             

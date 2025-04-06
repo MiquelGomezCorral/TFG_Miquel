@@ -51,11 +51,11 @@ def update_scores(base: dict, incoming: dict, inplace: bool = False) -> None:
         if k in base: 
             base[k] = tuple(a + b for a, b in zip(base[k], v))
         else:
-            base[k] = tuple(a for a in v)
+            base[k] = tuple(v)
     
     return base
         
-def norm_scores(scores: dict, N: int):
+def norm_scores(scores: dict, N: int) -> dict[str, tuple]:
     """Normalices the scores of a dict, keeping the first one (Which is supposed to be just the count of how many hits)
 
     Args:
@@ -65,11 +65,11 @@ def norm_scores(scores: dict, N: int):
     new_socres = dict()
     for key, val in scores.items():
         if isinstance(val, list) or isinstance(val, tuple):
-            new_socres[key] = [val] + [v/N for v in val]
+            new_socres[key] = tuple([val[0]] + [v/N for v in val])
         elif isinstance(val, dict): # I added this case but I don't think is neither useful or going to appear
-            new_socres[key] = [val] + [v/N for v in val.values()]
-        else:
-            new_socres[key] = [val, val/N]
+            new_socres[key] = tuple([val.values()[0]] + [v/N for v in val.values()])
+        else: # if it is just a value
+            new_socres[key] = tuple(val, val/N)
             
     return new_socres
     
@@ -139,11 +139,12 @@ def precision_recall_f1(gt, pred, char_level=False) -> tuple[float, float, float
     fp = len(pred_set - gt_set)
     fn = len(gt_set - pred_set)
 
+    accuracy = tp / len(gt_set) if len(gt_set) > 0 else 0
     precision = tp / (tp + fp) if (tp + fp) > 0 else 0
     recall = tp / (tp + fn) if (tp + fn) > 0 else 0
     f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) > 0 else 0
 
-    return precision, recall, f1
+    return accuracy, precision, recall, f1
 
 
 def levenshtein_similarity(str1, str2):
