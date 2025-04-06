@@ -63,7 +63,7 @@ from TFG.scripts_dataset.validate_model import validate_prediction
 
 
 def fatura_metric(ground_truth, prediction):
-    return 1-validate_prediction(ground_truth, prediction)[2]
+    return 1-validate_prediction(ground_truth, prediction, verbose = True)[2]
 
 def train_model_from_args(args):
     # ================== Clear repo =========================

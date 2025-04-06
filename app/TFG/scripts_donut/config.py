@@ -9,12 +9,12 @@ class Model_Config:
     check_val_every_n_epoch: int = 10
     gradient_clip_val: float = 1.0
     num_training_samples_per_epoch: int = 100
-    lr: float = 3e-5
+    lr: float = 5e-5
     train_batch_sizes: tuple[int] = (8,) #list[int] = field(default_factory=lambda: [8])
     val_batch_sizes: tuple[int] = (1,) #list[int] = field(default_factory=lambda: [1])
     seed: int = 42
     num_nodes: int = 1
-    warmup_steps: int = 3  # 10% of epochs
+    warmup_steps: int = 10  # 10% of epochs
     verbose: bool = True
     
     metrics: Iterable[Callable[[dict, dict], float]] = (

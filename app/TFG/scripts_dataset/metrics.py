@@ -16,10 +16,10 @@ def print_scores(scores: dict, N: int, file_out = None) -> None:
     
     # Ensure "all" appears the firts field
     hits, prop, acc, pre, rec, fsc = scores.get('all', (0, 0, 0, 0, 0, 0))
-    print_fields("General Score", hits, prop, acc, pre, rec, fsc, N)
+    print_fields("General Score", hits, prop, acc, pre, rec, fsc, N, file_out)
     for key, (hits, prop, acc, pre, rec, fsc) in scores.items():
         if key == "all": continue
-        print_fields(key, hits, prop, acc, pre, rec, fsc, N)
+        print_fields(key, hits, prop, acc, pre, rec, fsc, N, file_out)
 
 def print_fields(key, hits, prop, acc, pre, rec, fsc, N, file_out):
     print(f"{key:>15} | {hits:>5}/{N:<5} | {prop:^10.f} | {acc:^7.4f} | {pre:^9.4f} | {rec:^6.4f} | {fsc:7.4f}", file=file_out)

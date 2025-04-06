@@ -18,17 +18,18 @@ from TFG.scripts_dataset.utils import print_separator, change_directory, print_t
 from TFG.scripts_donut.donut_utils import from_output_to_json
 
 import re
+import time
 import json
 import torch
+import argparse
 import numpy as np
 from tqdm.auto import tqdm
 from typing import Callable, Tuple
 
 from donut import JSONParseEvaluator
 from datasets import load_dataset
+from transformers import DonutProcessor, VisionEncoderDecoderModel
 
-import argparse
-import time
 
 
 def test_model(

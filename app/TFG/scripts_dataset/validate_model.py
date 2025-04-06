@@ -63,7 +63,7 @@ def validate_model(output_path: str, ground_truths, model_predictions, verbose: 
     return scores
         
         
-def validate_prediction(gt, pred):
+def validate_prediction(gt, pred, verbose: bool = False):
     """
         Recieve json str or dict ground trugths and model predictions and outputs the corresponding metrics
     """
@@ -106,6 +106,8 @@ def validate_prediction(gt, pred):
                 n_correct += 1 
             scores[key_gt] = (int(correct), accuracy, precision, recall, f_score)
     
+    if verbose:
+        print(" - Mistakes:", mistaken_keys)
     
     accuracy = n_correct / total_keys
     all_correct = len(mistaken_keys) == 0
