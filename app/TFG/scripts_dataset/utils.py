@@ -68,7 +68,7 @@ def print_time(sec: float, n_files: Optional[int] = None, space: bool = False, p
         prefix = f"{prefix} "
     
     if n_files is not None:
-        message = f"{prefix}\n - {n_files:04} files in: {parse_seconds_to_minutes(sec)}{sufix}.\n"
+        message = f"{prefix}\n - {n_files:4} files in: {parse_seconds_to_minutes(sec)}{sufix}.\n"
         message += f" - Per document:  {parse_seconds_to_minutes(sec / n_files)}"
     else:
         message = f"{prefix}Time: {parse_seconds_to_minutes(sec)}{sufix}."
