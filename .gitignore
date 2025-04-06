@@ -1,11 +1,10 @@
-# donut/
 app/datasets_finetune/
-# module_ocr_llm/
+app/final_dataset_fatura
+
 app/keys.txt
 wandb_api.txt
 !app/script_orc_llm.py
 
-# !app/TFG/outputs/donut/
 app/TFG/outputs/donut/model_trained/*
 app/wandb/
 app/temp/

@@ -152,7 +152,7 @@ def main(args):
             MODEL_TIME_TRACKER.print_metrics(n_files)
         # END WITH
 
-        # OUTPUT MANAGEMENT
+        # OUTPUT MANAGEMENTj
         save_output(save_path_model, ground_truths, predictions)
         
         TIME_TRACKER.stimate_lap_time(N=len(models))
