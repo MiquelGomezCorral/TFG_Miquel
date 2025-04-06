@@ -86,75 +86,80 @@ def main(args):
     with open(metadata_path, "r", encoding="utf-8") as f:
         n_files = sum(1 for _ in itertools.islice(f, args.max_files))
 
-    # ================ Initialize clients and aux================
+    # ================ Initialize clients and aux ================
     print_separator("Initializing Clients and  variables...", sep_type="LONG")
-    llm_client: AzureOpenAILanguageModel = AzureOpenAILanguageModel()
     ocr_client: AzureDocumentIntelligenceClient = AzureDocumentIntelligenceClient()
+    llm_client: AzureOpenAILanguageModel = AzureOpenAILanguageModel()
+    
     TIME_TRACKER = TimeTracker(name="OCR LLM Testing")
+    
+    models: list[str] = [
+        # f"ocr_finetuned_{i*5}x5_v1" for i in range(1,5+1)
+        "ocr_finetuned_5x5_v1",
+        "ocr_finetuned_4x5_v1",
+        "ocr_finetuned_3x5_v1",
+        "ocr_finetuned_5x2_v1",
+        "ocr_finetuned_5x1_v1",
+    ]
     
     # ================ Process files ================
     # for document in os.listdir(args.dataset_path):
     print_separator(f"Processing {n_files} files...", sep_type="LONG")
-
-    count = 0
-    total_time_preraring = .0
-    total_time_extracting = .0
-    total_time_structured = .0
     
     ground_truths: list[dict] = []
     predictions: list[LLMStructuredResponse] = []
 
-    t_start = time.time()
-    with open(metadata_path, "r", encoding="utf-8") as f:
-        for line in itertools.islice(f, args.max_files):
-            TIME_TRACKER.track(tag="Start")
-            t_f_start = time.time()
-            TIME_TRACKER.track(tag="File start", verbose=True)
-            
-            document = json.loads(line)
-            document_name = document["file_name"]
-            ground_truths.append(
-                json.loads(document["ground_truth"])["gt_parse"]
-            )
-            document_path = os.path.join(args.dataset_path, document_name)
-            print(f"\nDocument {count+1}/{n_files}: {document_name}...")
+    TIME_TRACKER.start()
+    TIME_TRACKER.start_lap(verbose=True)
+    for model in models:
+        TIME_TRACKER.track(model)
+        
+        save_path_model = os.path.join(args.save_path, model)
+        MODEL_TIME_TRACKER = TimeTracker(name=model, track_start_now=True)
+        with open(metadata_path, "r", encoding="utf-8") as f:
+            for line in itertools.islice(f, args.max_files):
+                # MODEL_TIME_TRACKER.track(tag="File start", verbose=True)
+                
+                document = json.loads(line)
+                document_name = document["file_name"]
+                ground_truths.append(
+                    json.loads(document["ground_truth"])["gt_parse"]
+                )
+                document_path = os.path.join(args.dataset_path, document_name)
+                print(f"\nDocument: {document_name}...")
+                MODEL_TIME_TRACKER.start_lap(verbose=True, N=n_files)
 
-            # Read invoice from file to bytesIO
-            print(" - Preparing document...", end="\r")
-            file_io = prepare_document(io.BytesIO(), document_path)
-            TIME_TRACKER.track(tag="- Preparing document.", verbose=True)
-            
-            # Send document to ORC to extract content
-            print(" - Extracting content...", end="\r")
-            document_content, pages = document_to_orc(ocr_client, file_io)
-            TIME_TRACKER.track(tag="- Extracting content.", verbose=True)
+                # Read invoice from file to bytesIO
+                print(" - Preparing document...", end="\r")
+                file_io = prepare_document(io.BytesIO(), document_path)
+                MODEL_TIME_TRACKER.track(tag="Preparing document.", verbose=True, space=False)
+                
+                # Send document to ORC to extract content
+                print(" - Extracting content...", end="\r")
+                document_content, pages = document_to_orc(ocr_client, file_io, prebuilt_model=model)
+                MODEL_TIME_TRACKER.track(tag="Extracting content.", verbose=True, space=False)
 
-            # Define the prompt and send it to send to the LLM
-            print(" - Creating structured output...", end="\r")
-            llm_output = document_to_llm(llm_client, document_content)
-            predictions.append(json.loads(llm_output.model_dump_json()))
-            
-            TIME_TRACKER.track(tag=" - Creating structured output.", verbose=True)
+                # Define the prompt and send it to send to the LLM
+                print(" - Creating structured output...", end="\r")
+                llm_output = document_to_llm(llm_client, document_content)
+                predictions.append(json.loads(llm_output.model_dump_json()))
+                
+                MODEL_TIME_TRACKER.track(tag="Creating structured output.", verbose=True, space=False)
 
-            TIME_TRACKER.print_metrics()
-            t_f_end = time.time()
-            count += 1
-            eta = (n_files - count) * (t_f_end - t_start) / count
-            print_time(t_f_end - t_f_start, prefix="Total ", sufix=f". ETA: {parse_seconds_to_minutes(eta)}")
+                MODEL_TIME_TRACKER.stimate_lap_time(N=n_files)
+                MODEL_TIME_TRACKER.finish_lap()
+            # END FOR
+            MODEL_TIME_TRACKER.print_metrics()
+        # END WITH
 
-    # OUTPUT MANAGEMENT
-    save_output(args.save_path, ground_truths, predictions)
-
-    print_separator("DONE!", sep_type="LONG")
-
-    t_aux_end = time.time()
-    with open(os.path.join(args.save_path, "timing_log.txt"), "w") as log_file:
-        print(f"Processed {count} files in total\n", file=log_file)
-        print_time(t_aux_end - t_start, n_files=count, prefix="Total time: ", out_file=log_file)
-        # print_time((t_start - t_aux_end), n_files=count, prefix="Average time File: ", out_file=log_file)
-        print_time(total_time_preraring, n_files=count, prefix="Average time Preparing: ", out_file=log_file)
-        print_time(total_time_extracting, n_files=count, prefix="Average time Extracting: ", out_file=log_file)
-        print_time(total_time_structured, n_files=count, prefix="Average time Structured: ", out_file=log_file)
+        # OUTPUT MANAGEMENT
+        save_output(save_path_model, ground_truths, predictions)
+        print_separator("DONE!", sep_type="LONG")
+        
+        TIME_TRACKER.stimate_lap_time(N=len(models))
+        TIME_TRACKER.finish_lap()
+        TIME_TRACKER.save_metric(os.path.join(save_path_model, "timing_log.txt"))
+    # END FOR MODELS
 
 
 def prepare_document(file_io: io.BytesIO, document_path: str) -> io.BytesIO:
@@ -178,8 +183,9 @@ def prepare_document(file_io: io.BytesIO, document_path: str) -> io.BytesIO:
     return file_io
 
 
-def document_to_orc(ocr_client: AzureDocumentIntelligenceClient, file_io: io.BytesIO):
-    pages: list[str] = ocr_client.read_invoice(file_io)
+def document_to_orc(ocr_client: AzureDocumentIntelligenceClient, file_io: io.BytesIO, prebuilt_model: str = None):
+    # IMPORTANT TO CHANGE THE TYPE OF DOCUMENT THAT THE OCR HAS TO READ.
+    pages: list[str] = ocr_client.read_document(file_io, prebuilt_model=prebuilt_model)
 
     document_content: str = "\n\n ------- PAGE BREAK ------- \n\n".join(pages)
 
@@ -187,7 +193,6 @@ def document_to_orc(ocr_client: AzureDocumentIntelligenceClient, file_io: io.Byt
 
 
 def document_to_llm(llm_client: AzureOpenAILanguageModel, document_content: str):
-
     prompt: str = f"""
     Given the following invoice:
     <document>
@@ -242,7 +247,7 @@ if __name__ == "__main__":
     dotenv.load_dotenv()
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset_path", type=str, default="./dataset_finetune/test")
+    parser.add_argument("--dataset_path", type=str, default="./datasets_finetune/outputs/FATURA/test")
     parser.add_argument("--save_path", type=str, default="./outputs/ocr_llm/FATURA_NEXT")
     parser.add_argument("--max_files", type=int, default=None)
     parser.add_argument("--seed", type=int, default=42)

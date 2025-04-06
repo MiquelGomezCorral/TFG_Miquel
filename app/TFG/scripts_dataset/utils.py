@@ -80,22 +80,34 @@ class TimeTracker:
     def __init__(self, name: str, track_start_now: bool = False ):
         self.name = name
         self.hist: dict[str, Tuple[float, float]] = dict()
-        self.last_time = -1
+        self.started: bool = False
+        self.last_time: float = -1.0
         
         self.lap_hist = dict()
-        self.lap_runing = False
-        self.lap_number = 0
-
+        self.lap_runing: bool = False
+        self.lap_number: int = 0
+        
         if track_start_now:
-            self.track("START")
-
-        print_separator(f"⏳ TIME TRACKER FOR '{name}' INITIALIZED{', AND STARTING NOW' if track_start_now else ''}! ⏳", sep_type="LONG")
+            self.start()
+            
+        print_separator(f"⏳ TIME TRACKER '{name}' INITIALIZED{'. STARTING NOW' if track_start_now else ''}! ⏳", sep_type="NORMAL")
     
-    def track(self, tag: str, verbose: bool = False, space: bool = True) -> float:
+    def start(self):
+        """
+        Starts traking the time
+        """
+        self.started = True
+        self.track("START")
+        
+    
+    def track(self, tag: str, verbose: bool = False, space: bool = True, mute_warning: bool = False) -> float:
         """
         Track the time of a certain point and add it a tag. Return time since las track
         """
-        
+        if not self.started and not mute_warning:
+            print("⚠️ WARNING: Traking without startng, will call start. ⚠️")
+            self.start()
+            
         t = time.time()
         diff = t - self.last_time if self.last_time > 0 else 0
         
@@ -115,7 +127,20 @@ class TimeTracker:
         self.last_time = t
         return diff
     
-    def start_lap(self, verbose: bool = False, mute_warning: bool = False):
+    # ============================================================================
+    #                              LAPS MANAGEMENT
+    # ============================================================================
+    def start_lap(self, N: int = None, verbose: bool = False, mute_warning: bool = False) -> int:
+        """Starts a new lap with its oun metrics and returns the number of the current started lap
+
+        Args:
+            N (int, optional): Total number of potential laps. Defaults to None.
+            verbose (bool, optional): Print the number of the lap. Defaults to False.
+            mute_warning (bool, optional): Show or not warnings. Defaults to False.
+
+        Returns:
+            int: Number of the current started lap.
+        """
         self.lap_runing = True
         self.lap_number += 1
         if len(self.lap_hist) > 0 and not mute_warning:
@@ -126,7 +151,9 @@ class TimeTracker:
         self.last_time = t
         
         if verbose:
-            print(f" - Starting lap num {self.lap_number}!")
+            print(f"⏳ Starting lap num {self.lap_number}{f'/{N} ' if N is not None else ''}⏳!")
+            
+        return self.lap_number
         
     def finish_lap(self):
         self.lap_runing = False
@@ -145,6 +172,25 @@ class TimeTracker:
                 
         self.lap_hist = dict()
         
+    # ============================================================================
+    #                              STIMATE TIME
+    # ============================================================================
+    def stimate_lap_time(self, N: int, mute_warning: bool = False):
+        if not self.lap_runing and not mute_warning:
+            print("⚠️ WARNING: Stimating lap without starting it. Returning,,,⚠️")
+            return
+            
+        t_f_end = time.time()
+        eta = (N - self.lap_number) * (t_f_end - self.hist["START"][0]) / self.lap_number
+        print_time(
+            t_f_end - self.lap_hist["START_LAP"][0], 
+            prefix="Total ", 
+            sufix=f". ETA: {parse_seconds_to_minutes(eta)}"
+        )
+    
+    # ============================================================================
+    #                              METRICS MANAGEMENT
+    # ============================================================================
         
     def get_metrics(self, n: int = None, initial_tag: str = "START") -> dict:
         """
