@@ -93,23 +93,30 @@ def check_date_value(val_gt, val_pred, verbose: bool = False):
     if not isinstance(val_pred, str) or len(val_pred) == 0: return False
     
     gt_format = "%d-%b-%Y"
+    pred_formats = ["%d-%b-%Y", "%Y-%m-%d", "%d/%m/%Y", "%d.%m.%Y"] 
     try:
         date_obj_gt = datetime.strptime(val_gt, gt_format)
-        conv_val_gt = date_obj_gt.strftime("%Y-%m-%d")
+        # conv_val_gt = date_obj_gt.strftime("%Y-%m-%d")
     except ValueError:
         if verbose:
             print(f"val_gt '{val_gt}' doesn't match {gt_format}")
         return False
 
-    try:
-        date_obj_pred = datetime.strptime(val_pred, gt_format)
-        conv_val_pred = date_obj_pred.strftime("%Y-%m-%d")
-    except ValueError:
-        if verbose:
-            print(f"val_pred '{val_pred}' doesn't match {gt_format}")
-        return False
+    date_obj_pred = None
+    for fmt in pred_formats:
+        try:
+            date_obj_pred = datetime.strptime(val_pred, fmt)
+            break
+        except ValueError:
+            continue
 
-    return conv_val_gt == conv_val_pred
+    if not date_obj_pred:
+        if verbose:
+            print(f"val_pred '{val_pred}' didn't match any known formats: {pred_formats}")
+        return False
+    
+    # if conv_val_gt != conv_val_pred:
+    return date_obj_gt.date() == date_obj_gt.date()
 
 
 def precision_recall_f1(gt, pred, char_level=False) -> tuple[float, float, float]:

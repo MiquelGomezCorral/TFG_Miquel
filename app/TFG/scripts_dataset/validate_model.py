@@ -1,8 +1,18 @@
 import os
+import sys
 if __name__ == "__main__":
-    from utils import change_directory
-    change_directory()
-
+    curr_directory = os.getcwd()
+    print("\nStarting Directory:", curr_directory)
+    if not curr_directory.endswith("app"):
+        if curr_directory.endswith("TFG_Miquel"):
+            os.chdir("./app") 
+        else: os.chdir("../") 
+        print("New Directory:", os.getcwd())
+    # if new_directory is not None and not curr_directory.endswith(new_directory):
+    #     os.chdir(f"./{new_directory}") 
+    #     print("New Directory:", os.getcwd(), "\n")
+    sys.path.append(os.getcwd())
+    
 import json
 import argparse
 from datetime import datetime
@@ -127,7 +137,7 @@ def validate_answer(key_gt, val_gt, val_pred) -> bool:
         val_pred = val_pred.lower()
     
     if key_gt == "date":
-        return check_date_value(val_gt, val_pred)
+        return check_date_value(val_gt, val_pred, verbose=True)
     
     if key_gt == "currency":
         usd = ["$", "usd"]
@@ -146,6 +156,9 @@ def validate_answer(key_gt, val_gt, val_pred) -> bool:
     if key_gt in ["discount", "tax", "subtotal", "total"]:
         if val_gt is None:
             return val_pred is None or val_pred == 0.0
+    
+    if key_gt == "shopping_or_tax":
+        return True
         
     return val_gt == val_pred
 
@@ -156,8 +169,8 @@ def validate_answer(key_gt, val_gt, val_pred) -> bool:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--output_path", type=str,
-        default="TFG/outputs/FATURA/orc_llm/FATURA_GOOD"
+        "-o", "--output_path", type=str, default="TFG/outputs/FATURA/orc_llm/FATURA_GOOD",
+        help="Path the model output. Will be uses as result path as well."
     )
     args, left_argv = parser.parse_known_args()
 
