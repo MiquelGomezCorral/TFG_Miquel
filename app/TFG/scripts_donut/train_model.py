@@ -103,11 +103,11 @@ def train_model(args):
     )
     MODEL_CONFIG = Model_Config(
         # Partial so the function can be called later but with that parameter set
-        metrics = [("fatura_metric", partial(fatura_metric, verbose=True))] 
+        metrics = [("fatura_metric", partial(fatura_metric))] 
     )
     
     TIME_TRAKER = TimeTracker(name="Training")
-    TIME_TRAKER.track("Start")
+    TIME_TRAKER.start(verbose=False)
     
     # =============================================================================
     #                            DATASET BASIC, NOT USED
@@ -132,7 +132,7 @@ def train_model(args):
     """CHECK FOR WARNING ABOUT THE WEIGHTS BEING WELL LOADED"""
     processor = DonutProcessor.from_pretrained("naver-clova-ix/donut-base")
     model = VisionEncoderDecoderModel.from_pretrained("naver-clova-ix/donut-base", config=vision_encoder_config)
-    TIME_TRAKER.track("Getting Model", verbose=True)
+    TIME_TRAKER.track("Getting Model")
     
     
     # =============================================================================
@@ -172,7 +172,7 @@ def train_model(args):
     print(" - Original number of tokens:", processor.tokenizer.vocab_size)
     print(" - Number of tokens after adding special tokens:", len(processor.tokenizer))
     
-    TIME_TRAKER.track("Creating pythorch Dataset", verbose=True)
+    TIME_TRAKER.track("Creating pythorch Dataset")
     
     
     print_separator(f'Setting additional atributes...', sep_type="NORMAL")
@@ -185,7 +185,7 @@ def train_model(args):
     print(" - Pad token ID:", processor.decode([model.config.pad_token_id]))
     print(" - Decoder start token ID:", processor.decode([model.config.decoder_start_token_id]))
     
-    TIME_TRAKER.track("Setting additional atributes", verbose=True)
+    TIME_TRAKER.track("Setting additional atributes")
     
     
     print_separator(f'Creating pytorch Data Loaders...', sep_type="LONG")
@@ -194,7 +194,7 @@ def train_model(args):
     print(" - Creating Validation Dataloader...")
     val_dataloader = DataLoader(val_dataset, batch_size=1, shuffle=False, num_workers=4)
 
-    TIME_TRAKER.track("Creating pytorch Data Loaders", verbose=True)
+    TIME_TRAKER.track("Creating pytorch Data Loaders")
     
     # =============================================================================
     #                               TRAINING
@@ -236,7 +236,7 @@ def train_model(args):
 
     trainer.fit(model_module, train_dataloaders=train_dataloader, val_dataloaders=val_dataloader)
     
-    TIME_TRAKER.track("Training", verbose=True)
+    TIME_TRAKER.track("Training")
     
     # =============================================================================
     #                               TESTING
@@ -253,7 +253,7 @@ def train_model(args):
         max_samples = CONFIG.test_samples,
     )
     
-    TIME_TRAKER.track("Testing", verbose=True)
+    TIME_TRAKER.track("Testing")
     
     # =============================================================================
     #                               TIMING

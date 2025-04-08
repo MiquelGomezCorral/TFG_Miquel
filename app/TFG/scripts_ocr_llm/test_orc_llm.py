@@ -109,7 +109,7 @@ def main(args):
     ground_truths: list[dict] = []
     predictions: list[LLMStructuredResponse] = []
 
-    TIME_TRACKER.start()
+    TIME_TRACKER.start(verbose=False)
     TIME_TRACKER.start_lap(verbose=True)
     for model in models:
         TIME_TRACKER.track(model)
@@ -118,7 +118,7 @@ def main(args):
         MODEL_TIME_TRACKER = TimeTracker(name=model, start_track_now=True)
         with open(metadata_path, "r", encoding="utf-8") as f:
             for line in itertools.islice(f, args.max_files):
-                # MODEL_TIME_TRACKER.track(tag="File start", verbose=True)
+                # MODEL_TIME_TRACKER.track(tag="File start")
                 
                 document = json.loads(line)
                 document_name = document["file_name"]
@@ -127,24 +127,24 @@ def main(args):
                 )
                 document_path = os.path.join(args.dataset_path, document_name)
                 print(f"\nDocument: {document_name}...")
-                MODEL_TIME_TRACKER.start_lap(verbose=True, N=n_files)
+                MODEL_TIME_TRACKER.start_lap(N=n_files)
 
                 # Read invoice from file to bytesIO
                 print(" - Preparing document...", end="\r")
                 file_io = prepare_document(io.BytesIO(), document_path)
-                MODEL_TIME_TRACKER.track(tag="Preparing document.", verbose=True, space=False)
+                MODEL_TIME_TRACKER.track(tag="Preparing document.", space=False)
                 
                 # Send document to ORC to extract content
                 print(" - Extracting content...", end="\r")
                 document_content, pages = document_to_orc(ocr_client, file_io, prebuilt_model=model)
-                MODEL_TIME_TRACKER.track(tag="Extracting content.", verbose=True, space=False)
+                MODEL_TIME_TRACKER.track(tag="Extracting content.", space=False)
 
                 # Define the prompt and send it to send to the LLM
                 print(" - Creating structured output...", end="\r")
                 llm_output = document_to_llm(llm_client, document_content)
                 predictions.append(json.loads(llm_output.model_dump_json()))
                 
-                MODEL_TIME_TRACKER.track(tag="Creating structured output.", verbose=True, space=False)
+                MODEL_TIME_TRACKER.track(tag="Creating structured output.", space=False)
 
                 MODEL_TIME_TRACKER.stimate_lap_time(N=n_files)
                 MODEL_TIME_TRACKER.finish_lap()

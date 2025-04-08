@@ -76,13 +76,13 @@ def main(args) -> None:
             pre_parsed_files.append((file_name, pre_parsed_file))
         TIME_TRAKER.finish_lap()
         
-    TIME_TRAKER.track(tag="Finish porcessing files", verbose=True)
+    TIME_TRAKER.track(tag="Finish porcessing files")
     
     # ================== SAVING =========================
     print_separator(f'Saving {args.n_files} Files...')
     save_and_parse_files(pre_parsed_files, args.save_path, args.dataset_img_path, args.test_split, args.val_split)
 
-    TIME_TRAKER.track(tag="Finish saving files", verbose=True)
+    TIME_TRAKER.track(tag="Finish saving files")
     print_separator('DONE!')
 
 # ===========================================

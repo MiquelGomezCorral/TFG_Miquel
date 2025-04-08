@@ -46,7 +46,7 @@ def train_compare_nodel(args):
 
         train_model_from_args(args_train_model)
 
-    TIME_TRAKER.track("End")
+    TIME_TRAKER.track("End", verbose=False)
     TIME_TRAKER.print_metrics(args.n_versions)
 # =============================================================================
 #                               MAIN

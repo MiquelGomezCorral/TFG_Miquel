@@ -9,19 +9,19 @@ if __name__ == "__main__":
     # TIME_TRACKER = TimeTracker(name="Testing", start_track_now=True)
     TIME_TRACKER = TimeTracker(name="Testing")
     time.sleep(0.1)
-    TIME_TRACKER.track("START")
+    TIME_TRACKER.track("START", verbose=False)
     for i in range(N):
         TIME_TRACKER.start_lap()
         time.sleep(0.5 + ran.random()*.5 - .25) 
-        TIME_TRACKER.track("Load data", verbose=True)
+        TIME_TRACKER.track("Load data")
         time.sleep(0.5 + ran.random()*.5 - .25)
         
-        TIME_TRACKER.track("Parse model", verbose=True)
+        TIME_TRACKER.track("Parse model")
         
-        TIME_TRACKER.track("Train model", verbose=True)
+        TIME_TRACKER.track("Train model")
         time.sleep(1.5 + ran.random() - .5)
         
-        TIME_TRACKER.track("Test model", verbose=True)
+        TIME_TRACKER.track("Test model")
         time.sleep(0.5 + ran.random()*.5 - .25)
         
         TIME_TRACKER.finish_lap()
