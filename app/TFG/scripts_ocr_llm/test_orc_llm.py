@@ -269,7 +269,7 @@ if __name__ == "__main__":
         help="Max files loaded from the dataset"
     )
     parser.add_argument(
-        "l", "--llm", type=bool, default=True, action="store_false"
+        "l", "--llm", type=bool, default=True, action="store_false",
         help="If to use an LLM to structure the output of the OCR. Default to 'True'"
     )
     parser.add_argument(
