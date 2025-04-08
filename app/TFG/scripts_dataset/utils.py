@@ -4,8 +4,6 @@ import time
 import json
 from typing import Tuple, Literal, Optional, TextIO
 
-from TFG.scripts_dataset.time_traker import parse_seconds_to_minutes, print_time, TimeTracker
-
 # =================================================
 #                   GENERAL
 # =================================================

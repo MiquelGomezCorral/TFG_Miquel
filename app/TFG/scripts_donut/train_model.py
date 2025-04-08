@@ -28,9 +28,18 @@ if __name__ == "__main__":
     parser.add_argument("-k", "--make_me_a_donut", action="store_false", default=True)
     parser.add_argument("-b", "--boom_folders", action="store_false", default=True)
     
-    parser.add_argument("-t", "--train_samples", default=None)
-    parser.add_argument("-v", "--validation_samples", default=None)
-    parser.add_argument("-s", "--test_samples", default=None)
+    parser.add_argument(
+        "-tr", "--train_samples", type=int, default=None,
+        help="Number of samples for testing, 'None' will take al much as possible"
+    )
+    parser.add_argument(
+        "-va", "--validation_samples", type=int, default=None,
+        help="Number of samples for validation, 'None' will take al much as possible"
+    )
+    parser.add_argument(
+        "-ts", "--test_samples", type=int, default=None,
+        help="Number of samples for test, 'None' will take al much as possible"
+    )
     
     args, left_argv = parser.parse_known_args()
 
@@ -46,7 +55,10 @@ if __name__ == "__main__":
         from TFG.scripts_donut.donut_print import print_donut, clean_all
             
         stop_event = multiprocessing.Event()
-        donut_process = multiprocessing.Process(target=lambda: print_donut(infinite=True))
+        donut_process = multiprocessing.Process(
+            target=lambda: print_donut(infinite=True),
+            daemon=True # So if the main program stops it also does
+        )
         donut_process.start()
 
 import json
@@ -98,12 +110,12 @@ def train_model(args):
         pretrained_model_name_or_path = args.pretrained_model_name_or_path,
         dataset_name_or_path = args.dataset_name_or_path,
         task_name = args.task_name,
-        train_samples = args.train_samples,
-        validation_samples = args.validation_samples,
-        test_samples = args.test_samples,
     )
     MODEL_CONFIG = Model_Config(
         # Partial so the function can be called later but with that parameter set
+        train_samples = args.train_samples,
+        test_samples = args.test_samples,
+        validation_samples = args.validation_samples,
         metrics = [("fatura_metric", partial(fatura_metric))] 
     )
     
@@ -153,7 +165,7 @@ def train_model(args):
         task_start_token=CONFIG.special_token,
         prompt_end_token=CONFIG.special_token,
         sort_json_key=False, # Our Fatura dataset is preprocessed, so no need for this
-        max_samples=CONFIG.train_samples,
+        max_samples=MODEL_CONFIG.train_samples,
     )
 
     val_dataset = DonutDataset(
@@ -165,7 +177,7 @@ def train_model(args):
         task_start_token=CONFIG.special_token, 
         prompt_end_token=CONFIG.special_token,
         sort_json_key=False, # Our Fatura dataset is preprocessed, so no need for this
-        max_samples=CONFIG.validation_samples,
+        max_samples=MODEL_CONFIG.validation_samples,
     )
     
     print_separator(f'Special Tokens', sep_type="NORMAL")
@@ -251,7 +263,7 @@ def train_model(args):
         dataset_name_or_path = CONFIG.dataset_name_or_path, 
         task_pront = CONFIG.special_token,
         evaluators = [("fatura_metric", partial(fatura_metric, verbose=False))], # MODEL_CONFIG.metrics
-        max_samples = CONFIG.test_samples,
+        max_samples = MODEL_CONFIG.test_samples,
     )
     
     TIME_TRAKER.track("Testing")

@@ -136,16 +136,22 @@ def main(args):
                 MODEL_TIME_TRACKER.track(tag="Preparing document.", space=False)
                 
                 # Send document to ORC to extract content
-                print(" - Extracting content...", end="\r")
+                print(" - Extracting content with OCR...", end="\r")
                 document_content, pages = document_to_orc(ocr_client, file_io, prebuilt_model=model)
                 MODEL_TIME_TRACKER.track(tag="Extracting content.", space=False)
-
-                # Define the prompt and send it to send to the LLM
-                print(" - Creating structured output...", end="\r")
-                llm_output = document_to_llm(llm_client, document_content)
-                predictions.append(json.loads(llm_output.model_dump_json()))
                 
-                MODEL_TIME_TRACKER.track(tag="Creating structured output.", space=False)
+                print(f"{document_content = }")
+                print(f"{pages = }")
+
+                if args.llm:
+                    # Define the prompt and send it to send to the LLM
+                    print(" - Creating structured output with LLM...", end="\r")
+                    llm_output = document_to_llm(llm_client, document_content)
+                    predictions.append(json.loads(llm_output.model_dump_json()))
+                    MODEL_TIME_TRACKER.track(tag="Creating structured output.", space=False)
+                else:
+                    predictions.append(json.loads(pages.model_dump_json()))
+                    
 
                 MODEL_TIME_TRACKER.stimate_lap_time(N=n_files)
                 MODEL_TIME_TRACKER.finish_lap()
@@ -250,10 +256,26 @@ if __name__ == "__main__":
     dotenv.load_dotenv()
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset_path", type=str, default="./datasets_finetune/outputs/FATURA/test")
-    parser.add_argument("--save_path", type=str, default=".TFG/outputs/ocr_llm")
-    parser.add_argument("--max_files", type=int, default=None)
-    parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument(
+        "-d", "--dataset_path", type=str, default="./datasets_finetune/outputs/FATURA/test",
+        help="Local path from ./app to the dataset."
+    )
+    parser.add_argument(
+        "s", "--save_path", type=str, default=".TFG/outputs/ocr_llm",
+        help="Local path from ./app to the folder where all the outputs will be placed."
+    )
+    parser.add_argument(
+        "f", "--max_files", type=int, default=None,
+        help="Max files loaded from the dataset"
+    )
+    parser.add_argument(
+        "l", "--llm", type=bool, default=True, action="store_false"
+        help="If to use an LLM to structure the output of the OCR. Default to 'True'"
+    )
+    parser.add_argument(
+        "--seed", type=int, default=42,
+        help="Randomizer seed. Default to '42'"
+    )
     args, left_argv = parser.parse_known_args()
 
     main(args)

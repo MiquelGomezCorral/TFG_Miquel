@@ -1,6 +1,8 @@
 import time
 import json
 from typing import Tuple, Optional, TextIO
+
+from TFG.scripts_dataset.utils import print_separator
 # =================================================
 #                   HELPER FUNCTIONS
 # =================================================

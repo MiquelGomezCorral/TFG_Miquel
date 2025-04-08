@@ -16,7 +16,7 @@ from pytorch_lightning.utilities import rank_zero_only
 
 
 from TFG.scripts_donut.donut_utils import from_output_to_json
-# from TFG.scripts_dataset.utils import print_time
+# from TFG.scripts_dataset.time_traker import print_time
 
 
 class DonutModelPLModule(pl.LightningModule):
