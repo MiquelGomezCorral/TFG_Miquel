@@ -18,7 +18,7 @@ if __name__ == "__main__":
 import argparse
 from types import SimpleNamespace
 from train_model import train_model_from_args
-from TFG.scripts_dataset.utils import TimeTracker
+from TFG.scripts_dataset.time_traker import TimeTracker
 
 def train_compare_nodel(args):
     args_train_model_base = {

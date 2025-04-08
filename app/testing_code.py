@@ -1,7 +1,7 @@
 
 import time
 import random as ran
-from TFG.scripts_dataset.utils import TimeTracker
+from TFG.scripts_dataset.time_traker import TimeTracker
 
 
 if __name__ == "__main__":

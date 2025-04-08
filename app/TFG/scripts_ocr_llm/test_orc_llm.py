@@ -30,7 +30,8 @@ import itertools
 from pydantic import BaseModel, Field
 from ocr_llm_module.llm.azure.azure_openai import AzureOpenAILanguageModel
 from ocr_llm_module.ocr.azure.document_intelligence import AzureDocumentIntelligenceClient
-from TFG.scripts_dataset.utils import parse_seconds_to_minutes, print_separator, print_time, TimeTracker
+from TFG.scripts_dataset.utils import print_separator
+from TFG.scripts_dataset.time_traker import parse_seconds_to_minutes, print_time, TimeTracker
 
 # Define the structure of the response from the LLM
 class LLMStructuredResponse(BaseModel):

@@ -63,7 +63,8 @@ from TFG.scripts_donut.donut_utils import clear_folder
 from TFG.scripts_donut.config import Config, Model_Config
 from TFG.scripts_donut.lightning_module import DonutModelPLModule
 from TFG.scripts_donut.tokenizer import DonutDataset, added_tokens
-from TFG.scripts_dataset.utils import print_separator, change_directory, print_time, TimeTracker
+from TFG.scripts_dataset.utils import print_separator, change_directory
+from TFG.scripts_dataset.time_traker import TimeTracker
 from TFG.scripts_dataset.validate_model import validate_prediction
 
 
