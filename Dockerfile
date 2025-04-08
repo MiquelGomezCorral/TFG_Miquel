@@ -39,7 +39,7 @@ RUN pip install --extra-index-url https://solver:x6tDJ2to9Koz@pypi.solverml.com/
 
 
 # Custom dependencies
-COPY ./app/TFG/requirements.txt .
+COPY ./scripts_environment/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 
