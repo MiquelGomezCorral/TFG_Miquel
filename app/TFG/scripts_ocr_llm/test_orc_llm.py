@@ -97,7 +97,7 @@ def main(args):
     models: list[str] = [
         # f"ocr_finetuned_{i*5}x5_v1" for i in range(1,5+1)
         # "ocr_finetuned_5x5_v1",
-        # "ocr_finetuned_4x5_v1",
+        "ocr_finetuned_4x5_v1",
         "ocr_finetuned_3x5_v1",
         "ocr_finetuned_5x2_v1",
         "ocr_finetuned_5x1_v1",
