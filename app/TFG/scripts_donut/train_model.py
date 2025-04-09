@@ -22,7 +22,7 @@ if __name__ == "__main__":
     # ============================================================
     parser = argparse.ArgumentParser()
     parser.add_argument("-m", "--pretrained_model_name_or_path", type=str, required=False, default="naver-clova-ix/donut-base")
-    parser.add_argument("-d", "--dataset_name_or_path", type=str, required=False, default= f"datasets_finetune/outputs/FATURA") #"['naver-clova-ix/cord-v1']"
+    parser.add_argument("-d", "--dataset_name_or_path", type=str, required=False, default= f"final_dataset_fatura") #"['naver-clova-ix/cord-v1']"
     parser.add_argument("-o", "--result_path", type=str, required=False, default='./TFG/outputs/donut')
     parser.add_argument("-n", "--task_name", type=str, default="fatura_train")
     parser.add_argument("-k", "--make_me_a_donut", action="store_false", default=True)
@@ -69,6 +69,8 @@ from transformers import VisionEncoderDecoderConfig, DonutProcessor, VisionEncod
 import pytorch_lightning as pl
 from pytorch_lightning.loggers import WandbLogger
 from pytorch_lightning.callbacks import Callback, EarlyStopping, ModelCheckpoint
+from dotenv import load_dotenv
+load_dotenv()
 
 from test_model import test_model
 from TFG.scripts_donut.donut_utils import clear_folder
@@ -226,6 +228,7 @@ def train_model(args):
     wandb_logger = WandbLogger(project="Donut", name=CONFIG.task_name)
     early_stop_callback = EarlyStopping(monitor="val_edit_distance", patience=3, verbose=False, mode="min")
     
+    os.makedirs('./temp', exist_ok=True)
     checkpoint_callback = ModelCheckpoint(
         monitor='val_edit_distance',  # monitor metric validation loss
         mode='min',  # We want to minimize the edit distance

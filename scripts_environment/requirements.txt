@@ -13,3 +13,4 @@ ipynb
 wandb
 donut-python
 img2pdf
+python-dotenv

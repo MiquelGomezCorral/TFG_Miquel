@@ -96,11 +96,12 @@ def main(args):
     
     models: list[str] = [
         # f"ocr_finetuned_{i*5}x5_v1" for i in range(1,5+1)
-        # "ocr_finetuned_5x5_v1",
+        None,
+        "ocr_finetuned_5x5_v1",
         "ocr_finetuned_4x5_v1",
-        # "ocr_finetuned_3x5_v1",
-        # "ocr_finetuned_5x2_v1",
-        # "ocr_finetuned_5x1_v1",
+        "ocr_finetuned_3x5_v1",
+        "ocr_finetuned_5x2_v1",
+        "ocr_finetuned_5x1_v1",
     ]
     
     # ================ Process files ================
@@ -147,7 +148,7 @@ def main(args):
                     predictions.append(json.loads(llm_output.model_dump_json()))
                     MODEL_TIME_TRACKER.track(tag="Creating structured output.", space=False)
                 else:
-                    predictions.append(json.loads(pages.model_dump_json()))
+                    predictions.append(json.loads(json_output))
                     
 
                 MODEL_TIME_TRACKER.stimate_lap_time(N=n_files)

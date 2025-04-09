@@ -107,8 +107,8 @@ if __name__ == "__main__":
         help="Path or name of the pretrained model to fine-tune."
     )
     parser.add_argument(
-        "-d", "--datasets_name_or_path", type=str, required=False, default= f"dataset_finetune_small", #"['naver-clova-ix/cord-v1']""
-        help="Path to dataset or dataset name (default: dataset_finetune_small)."
+        "-d", "--datasets_name_or_path", type=str, required=False, default= f"final_dataset_fatura", #"['naver-clova-ix/cord-v1']""
+        help="Path to dataset or dataset name (default: final_dataset_fatura)."
     )
     parser.add_argument(
         "-o", "--result_path", type=str, required=False, default='./TFG/outputs/donut_comp',
