@@ -28,7 +28,14 @@ fi
 
 # Git commit and push
 git add .
-git commit -m "$COMMIT_MESSAGE"
-git push
+if ! git commit -m "$COMMIT_MESSAGE"; then
+    echo "❌ Commit failed."
+    exit 1
+fi
+
+if ! git push; then
+    echo "❌ Push failed."
+    exit 1
+fi
 
 echo "✅ Changes committed and pushed with message: \"$COMMIT_MESSAGE\""
