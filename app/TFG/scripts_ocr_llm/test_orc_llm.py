@@ -96,9 +96,9 @@ def main(args):
     
     models: list[str] = [
         # f"ocr_finetuned_{i*5}x5_v1" for i in range(1,5+1)
-        None,
-        "ocr_finetuned_5x5_v1",
-        "ocr_finetuned_4x5_v1",
+        # None,
+        # "ocr_finetuned_5x5_v1",
+        # "ocr_finetuned_4x5_v1",
         "ocr_finetuned_3x5_v1",
         "ocr_finetuned_5x2_v1",
         "ocr_finetuned_5x1_v1",
@@ -194,8 +194,8 @@ def document_to_orc(ocr_client: AzureDocumentIntelligenceClient, file_io: io.Byt
     pages, result = ocr_client.read_document(file_io, prebuilt_model=prebuilt_model)
 
     # check_orc_outpu(result)
-    fields_content, json_output = get_fields_from_resutl(result)
-    print(f"{fields_content = }")
+    fields_content, json_output = get_fields_from_result(result)
+    # print(f"{fields_content = }")
     
     document_content: str = "\n\n ------- PAGE BREAK ------- \n\n".join(pages)
 
@@ -251,7 +251,7 @@ def save_output(save_path, ground_truths, predictions):
     # print(json_output)
     return json_output
 
-def get_fields_from_resutl(result) -> tuple[dict, str]:
+def get_fields_from_result(result) -> tuple[dict, str]:
     """Convers the Result object return from a azure document intelligence OCR into a dict and a json format with just the field
     Example of results fields
     (
@@ -295,9 +295,16 @@ def get_fields_from_resutl(result) -> tuple[dict, str]:
     for document_fields in documents_fields:
         fields_dict = dict()
         for fields in document_fields:
-            # fields_dict[fields[0]] = fields[1]["content"]
+            # 
             field_name = f"value{fields[1]['type'].capitalize()}" # make the first letter of the type capillar so it ends like 'valueString' for example
-            fields_dict[fields[0]] = fields[1][field_name]
+            if field_name in  fields[1]:
+                fields_dict[fields[0]] = fields[1][field_name]
+            elif "content" in fields[1]:
+                print(f" - Formating key for {fields[0]} didn't work, trying content of:{fields}")
+                fields_dict[fields[0]] = fields[1]["content"]
+            else:
+                print(f" - Field {fields[0]} not found at: {fields[1]}")
+                fields_dict[fields[0]] = None
             
             # print(f" - Fields: {fields}")
         fields_content.append(fields_dict)
