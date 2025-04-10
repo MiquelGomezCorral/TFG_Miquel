@@ -5,7 +5,7 @@ import random
 import shutil
 from typing import Any, Dict, List, Optional, Tuple
 
-from TFG.scripts_dataset.utils import print_separator
+from TFG.utils.utils import print_separator
 from file_class import Factura, Product
 
 # ===========================================

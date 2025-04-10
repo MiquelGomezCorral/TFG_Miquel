@@ -1,7 +1,7 @@
 import os
 import sys
 import argparse
-
+from dotenv import load_dotenv
 
 if __name__ == "__main__":
     curr_directory = os.getcwd()
@@ -16,6 +16,7 @@ if __name__ == "__main__":
     #     print("New Directory:", os.getcwd(), "\n")
     sys.path.append(os.getcwd())
     
+    load_dotenv()
     
     # ============================================================ 
     #                   Parse arguments
@@ -69,16 +70,15 @@ from transformers import VisionEncoderDecoderConfig, DonutProcessor, VisionEncod
 import pytorch_lightning as pl
 from pytorch_lightning.loggers import WandbLogger
 from pytorch_lightning.callbacks import Callback, EarlyStopping, ModelCheckpoint
-from dotenv import load_dotenv
-load_dotenv()
+
 
 from test_model import test_model
 from TFG.scripts_donut.donut_utils import clear_folder
 from TFG.scripts_donut.config import Config, Model_Config
 from TFG.scripts_donut.lightning_module import DonutModelPLModule
 from TFG.scripts_donut.tokenizer import DonutDataset, added_tokens
-from TFG.scripts_dataset.utils import print_separator, change_directory
-from TFG.scripts_dataset.time_traker import TimeTracker
+from TFG.utils.utils import print_separator, change_directory
+from TFG.utils.time_traker import TimeTracker
 from TFG.scripts_dataset.validate_model import validate_prediction
 
 

@@ -14,8 +14,8 @@ if __name__ == "__main__":
     #     print("New Directory:", os.getcwd(), "\n")
     sys.path.append(os.getcwd())
 
-from TFG.scripts_dataset.utils import print_separator, change_directory
-from TFG.scripts_dataset.time_traker import print_time
+from TFG.utils.utils import print_separator, change_directory
+from TFG.utils.time_traker import print_time
 from TFG.scripts_dataset.validate_model import validate_model
 from TFG.scripts_donut.donut_utils import from_output_to_json
 

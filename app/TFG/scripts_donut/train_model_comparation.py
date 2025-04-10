@@ -18,7 +18,7 @@ if __name__ == "__main__":
 import argparse
 from types import SimpleNamespace
 from train_model import train_model_from_args
-from TFG.scripts_dataset.time_traker import TimeTracker
+from TFG.utils.time_traker import TimeTracker
 
 def train_compare_dataset(args):
     args_train_model_base = {

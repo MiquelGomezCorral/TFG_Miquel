@@ -15,20 +15,17 @@ if __name__ == "__main__":
 import os
 import io
 import json
-import os.path
-import time
 import img2pdf  # type: ignore
 import argparse
 import itertools
-from pydantic import BaseModel, Field
 
 from ocr_llm_module.llm.azure.azure_openai import AzureOpenAILanguageModel
 from ocr_llm_module.ocr.azure.document_intelligence import AzureDocumentIntelligenceClient
 
-from TFG.scripts_dataset.utils import print_separator
-from TFG.scripts_dataset.time_traker import parse_seconds_to_minutes, print_time, TimeTracker
+from TFG.utils.utils import print_separator
+from TFG.utils.time_traker import TimeTracker
 from TFG.scripts_ocr_llm.llm import LLMStructuredResponse, document_to_llm
-from TFG.scripts_ocr_llm.ocr import document_to_orc, get_fields_from_result
+from TFG.scripts_ocr_llm.ocr import document_to_orc
 
 def main(args):
     # ================ Check directory ================
@@ -179,7 +176,6 @@ def save_output(save_path, ground_truths, predictions, TIME_TRACKER):
 
 
 if __name__ == "__main__":
-
     sys.path.append("/app")
     dotenv.load_dotenv()
 

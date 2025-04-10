@@ -17,9 +17,9 @@ import json
 import argparse
 from datetime import datetime
 from collections import Counter
-from TFG.scripts_dataset.utils import print_separator
-from TFG.scripts_dataset.metrics import print_scores, save_scores
-from TFG.scripts_dataset.metrics import (
+from TFG.utils.utils import print_separator
+from TFG.utils.metrics import print_scores, save_scores
+from TFG.utils.metrics import (
     check_date_value, levenshtein_similarity, update_scores, norm_scores, precision_recall_f1
 )
 

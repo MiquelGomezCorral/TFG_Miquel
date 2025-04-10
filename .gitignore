@@ -1,5 +1,5 @@
 app/datasets_finetune/
-app/final_dataset_fatura/
+app/final_dataset_fatura*/
 
 app/keys.txt
 wandb_api.txt
