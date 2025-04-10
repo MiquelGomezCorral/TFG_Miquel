@@ -24,7 +24,7 @@ from ocr_llm_module.ocr.azure.document_intelligence import AzureDocumentIntellig
 
 from TFG.utils.utils import print_separator
 from TFG.utils.time_traker import TimeTracker
-from TFG.utils.token_metrics import get_text_cost
+from TFG.scripts_ocr_llm.token_metrics import get_text_cost
 from TFG.scripts_ocr_llm.llm import LLMStructuredResponse, document_to_llm
 from TFG.scripts_ocr_llm.ocr import document_to_orc
 

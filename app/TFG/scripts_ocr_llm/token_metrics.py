@@ -21,9 +21,9 @@ from tiktoken import Encoding, encoding_for_model
 
 
 COST_1M_TOKENS = {
-    "input": 0.15,
-    "cached_input": 0.07,
-    "output": 0.6,
+    "input": 0.15, #€
+    "cached_input": 0.07, #€
+    "output": 0.6, #€
 }
 
 def main(args):

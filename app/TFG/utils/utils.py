@@ -34,14 +34,15 @@ def print_separator(text: str, sep_type: Literal["SHORT", "NORMAL", "LONG", "SUP
 
 def change_directory(new_directory: str = None) -> None:
     curr_directory = os.getcwd()
-    print("\nOld Current Directory:", curr_directory)
-    if not curr_directory.endswith("TFG_Miquel"):
-        os.chdir("../") 
+    print("\nStarting Directory:", curr_directory)
+    if not curr_directory.endswith("app"):
+        if curr_directory.endswith("TFG_Miquel"):
+            os.chdir("./app") 
+        else: os.chdir("../") 
         print("New Directory:", os.getcwd())
-    if new_directory is not None and not curr_directory.endswith(new_directory):
-        os.chdir(f"./{new_directory}") 
-        print("New Directory:", os.getcwd(), "\n")
-
+    # if new_directory is not None and not curr_directory.endswith(new_directory):
+    #     os.chdir(f"./{new_directory}") 
+    #     print("New Directory:", os.getcwd(), "\n")
     sys.path.append(os.getcwd())
 
  
