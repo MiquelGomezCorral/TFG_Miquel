@@ -107,8 +107,8 @@ def train_model_from_args(args):
 
 def train_model(args):
     CONFIG = Config(
-        model_trained_path = os.path.join(args.result_path, "model_trained"),
-        model_prediction_path = os.path.join(args.result_path, "model_predictions"),
+        model_trained_path = args.result_path,
+        model_prediction_path = args.result_path,
         pretrained_model_name_or_path = args.pretrained_model_name_or_path,
         dataset_name_or_path = args.dataset_name_or_path,
         task_name = args.task_name,

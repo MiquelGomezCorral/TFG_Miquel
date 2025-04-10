@@ -370,7 +370,7 @@ if __name__ == "__main__":
         help="Local path from ./app to the dataset."
     )
     parser.add_argument(
-        "-s", "--save_path", type=str, default=".TFG/outputs/ocr_llm",
+        "-s", "--save_path", type=str, default="./TFG/outputs/ocr_llm",
         help="Local path from ./app to the folder where all the outputs will be placed."
     )
     parser.add_argument(
