@@ -9,6 +9,9 @@ app/TFG/outputs/donut/model_trained/*
 app/wandb/
 app/temp/
 
+**/temp/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
