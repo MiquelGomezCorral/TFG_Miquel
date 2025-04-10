@@ -115,7 +115,7 @@ def test_model(
     
     if save_path:
         os.makedirs(save_path, exist_ok=True)
-        with open(os.path.join(save_path, "predictions.json"), "w") as f:
+        with open(os.path.join(save_path, "output.json"), "w") as f:
             json.dump(scores, f)
 
     return scores

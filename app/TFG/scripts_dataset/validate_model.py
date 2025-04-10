@@ -186,7 +186,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-o", "--output_path", type=str, default="TFG/outputs/FATURA/orc_llm/FATURA_GOOD",
-        help="Path the model output. Will be uses as result path as well."
+        help="Path to the model output. Will be used as result path as well."
     )
     args, left_argv = parser.parse_known_args()
 
