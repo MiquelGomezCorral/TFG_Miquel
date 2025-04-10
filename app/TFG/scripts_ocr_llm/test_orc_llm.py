@@ -27,6 +27,7 @@ from TFG.utils.time_traker import TimeTracker
 from TFG.scripts_ocr_llm.token_metrics import get_text_cost
 from TFG.scripts_ocr_llm.llm import LLMStructuredResponse, document_to_llm
 from TFG.scripts_ocr_llm.ocr import document_to_orc
+from TFG.scripts_donut.donut_utils import clear_folder
 
 def main(args):
     # ================ Check directory ================
@@ -48,9 +49,9 @@ def main(args):
     
     models: list[str] = [
         # f"ocr_finetuned_{i*5}x5_v1" for i in range(1,5+1)
-        None,
+        # None,
         # "prebuilt-read"
-        # "ocr_finetuned_5x5_v1",
+        "ocr_finetuned_5x5_v1",
         # "ocr_finetuned_4x5_v1",
         # "ocr_finetuned_3x5_v1",
         # "ocr_finetuned_5x2_v1",
@@ -139,6 +140,7 @@ def main(args):
 
         # OUTPUT MANAGEMENTj
         save_output(save_path_model, ground_truths, predictions, costs=llm_costs[model_name], time_tracker=TIME_TRACKER)
+        clear_folder(folder=save_path_model_temp)
         
         TIME_TRACKER.stimate_lap_time(N=len(models))
         TIME_TRACKER.finish_lap()

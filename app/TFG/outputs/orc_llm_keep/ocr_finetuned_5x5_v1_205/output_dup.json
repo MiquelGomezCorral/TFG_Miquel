@@ -1,0 +1,4520 @@
+{
+    "llm_costs": {
+        "input": 0.0,
+        "output": 0.0
+    },
+    "ground_truths": [
+        {
+            "buyer": "Laura Goodman",
+            "address": "485 Jones Street East Sheilamouth, KY 74720 US",
+            "date": "11-Apr-2011",
+            "currency": "EUR",
+            "subtotal": 818.64,
+            "discount": 21.04,
+            "tax": 30.84,
+            "total": 826.48
+        },
+        {
+            "buyer": "Andre Quinn",
+            "address": "92236 Samantha Heights Apt. 345 Tammyton, AZ 75233 US",
+            "date": "05-May-2002",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 65.31,
+            "total": 1054.49
+        },
+        {
+            "buyer": "Julia Walters",
+            "address": "24930 Brittney Light Petersonport, MA 05662 US",
+            "date": "26-Oct-2013",
+            "currency": "USD",
+            "subtotal": 1232.25,
+            "discount": null,
+            "tax": 70.98,
+            "total": 1244.45
+        },
+        {
+            "buyer": "Ariel Davis",
+            "address": "20828 Franklin Lights Apt. 278 East Kim, VT 04239 US",
+            "date": "14-Apr-2006",
+            "currency": "USD",
+            "subtotal": 1290.12,
+            "discount": null,
+            "tax": 51.79,
+            "total": 1288.63
+        },
+        {
+            "buyer": "Shannon Alexander",
+            "address": "838 Harris Ferry Matthewburgh, MP 10645 US",
+            "date": "17-Sep-2009",
+            "currency": "USD",
+            "subtotal": 707.98,
+            "discount": null,
+            "tax": null,
+            "total": 722.84
+        },
+        {
+            "buyer": "Rachel Gonzalez",
+            "address": "80812 Cervantes Courts Philipmouth, NV 87475 US",
+            "date": "21-Feb-2007",
+            "currency": "USD",
+            "subtotal": 156.64,
+            "discount": 2.98,
+            "tax": 7.16,
+            "total": 162.12
+        },
+        {
+            "buyer": "Sara Chandler",
+            "address": "3238 Banks Stravenue Suite 183 East Catherine, NE 17999 US",
+            "date": "25-Dec-2000",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 58.61,
+            "total": 1003.0
+        },
+        {
+            "buyer": "Kristina Wyatt",
+            "address": "3064 Jennifer Vista Victorbury, CO 45641 US",
+            "date": "24-Jul-1995",
+            "currency": "$",
+            "subtotal": 825.02,
+            "discount": null,
+            "tax": 34.39,
+            "total": 818.98
+        },
+        {
+            "buyer": "Tanner Hernandez",
+            "address": "641 Mitchell Glen Nicolechester, ID 30279 US",
+            "date": "13-Nov-1995",
+            "currency": "EUR",
+            "subtotal": 1357.25,
+            "discount": null,
+            "tax": 58.88,
+            "total": 1370.25
+        },
+        {
+            "buyer": "Holly Martin",
+            "address": "738 Elizabeth Flats Apt. 080 Evansburgh, WY 01186 US",
+            "date": "26-Oct-2013",
+            "currency": "USD",
+            "subtotal": 480.72,
+            "discount": null,
+            "tax": null,
+            "total": 478.3
+        },
+        {
+            "buyer": "David Bauer",
+            "address": "273 Keith Fields Guerreromouth, MH 59656 US",
+            "date": "21-Oct-2001",
+            "currency": "EUR",
+            "subtotal": 782.34,
+            "discount": 11.74,
+            "tax": 54.69,
+            "total": 819.74
+        },
+        {
+            "buyer": "James Gibson",
+            "address": "86859 Jones Rue Elijahmouth, OR 26291 US",
+            "date": "07-Oct-2021",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 24.76,
+            "total": 609.46
+        },
+        {
+            "buyer": "Tracey Salinas",
+            "address": "7844 Smith Circle Apt. 746 Johnmouth, MH 84116 US",
+            "date": "04-Jan-2006",
+            "currency": "EUR",
+            "subtotal": 766.3,
+            "discount": null,
+            "tax": 50.22,
+            "total": 797.36
+        },
+        {
+            "buyer": "Margaret Lewis",
+            "address": "1241 Megan Cove Apt. 411 South Teresashire, CO 39172 US",
+            "date": "07-Mar-2019",
+            "currency": "EUR",
+            "subtotal": 611.6,
+            "discount": null,
+            "tax": 33.1,
+            "total": 619.56
+        },
+        {
+            "buyer": "Raymond Baker",
+            "address": "924 Lin Trafficway Suite 687 Jackmouth, CA 90936 US",
+            "date": "10-Oct-2004",
+            "currency": "USD",
+            "subtotal": 390.5,
+            "discount": null,
+            "tax": null,
+            "total": 400.43
+        },
+        {
+            "buyer": "Janet West",
+            "address": "490 Melinda Streets Apt. 806 Lauramouth, ID 47708 US",
+            "date": "31-May-1999",
+            "currency": "USD",
+            "subtotal": 735.75,
+            "discount": 10.23,
+            "tax": 42.69,
+            "total": 749.16
+        },
+        {
+            "buyer": "Tara Barnes",
+            "address": "3732 Wright Ports Ashleyport, VT 08388 US",
+            "date": "01-Jun-2012",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 56.14,
+            "total": 902.62
+        },
+        {
+            "buyer": "Heather Bell",
+            "address": "4127 Joel Flat Ericshire, AK 75875 US",
+            "date": "07-Aug-1997",
+            "currency": "USD",
+            "subtotal": 1010.64,
+            "discount": null,
+            "tax": 67.09,
+            "total": 1037.71
+        },
+        {
+            "buyer": "Michelle Brown",
+            "address": "139 Cynthia Summit Apt. 083 West Michelle, NC 08014 US",
+            "date": "14-Apr-2000",
+            "currency": "USD",
+            "subtotal": 262.72,
+            "discount": null,
+            "tax": 9.81,
+            "total": 264.36
+        },
+        {
+            "buyer": "Taylor Sexton",
+            "address": "8304 Orr Highway North Stephen, IL 87944 US",
+            "date": "20-Sep-2008",
+            "currency": "USD",
+            "subtotal": 369.87,
+            "discount": null,
+            "tax": null,
+            "total": 377.08
+        },
+        {
+            "buyer": "Jerome Cooper",
+            "address": "1637 Shawn Forest Apt. 944 Rosalesshire, ND 30133 US",
+            "date": "21-May-2019",
+            "currency": "EUR",
+            "subtotal": 1190.68,
+            "discount": 25.48,
+            "tax": 42.93,
+            "total": 1201.22
+        },
+        {
+            "buyer": "Brandy Vargas",
+            "address": "85305 Kimberly Cape East Bethtown, SD 38850 US",
+            "date": "29-Dec-1994",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 67.49,
+            "total": 1097.17
+        },
+        {
+            "buyer": "Brian Cain",
+            "address": "53566 Bryan Underpass South Javier, MO 97378 US",
+            "date": "20-Nov-2000",
+            "currency": "USD",
+            "subtotal": 702.7,
+            "discount": null,
+            "tax": 40.86,
+            "total": 728.73
+        },
+        {
+            "buyer": "Michael Webb",
+            "address": "572 Jenna Square Apt. 229 West Jessica, MO 56411 US",
+            "date": "02-Jul-2022",
+            "currency": "USD",
+            "subtotal": 315.96,
+            "discount": null,
+            "tax": 21.64,
+            "total": 328.06
+        },
+        {
+            "buyer": "Jason Morton",
+            "address": "4123 Nicole Ridges Suite 099 New Laura, NH 70841 US",
+            "date": "16-Nov-1994",
+            "currency": "EUR",
+            "subtotal": 186.92,
+            "discount": null,
+            "tax": null,
+            "total": 188.42
+        },
+        {
+            "buyer": "Samuel Cohen",
+            "address": "010 Lauren Tunnel Port Anthony, ME 04796 US",
+            "date": "21-Oct-2019",
+            "currency": "USD",
+            "subtotal": 824.45,
+            "discount": 23.74,
+            "tax": 28.24,
+            "total": 843.87
+        },
+        {
+            "buyer": "Gary Cross",
+            "address": "5528 Vickie Fords South Heatherside, NH 42370 US",
+            "date": "26-Feb-2003",
+            "currency": "EUR",
+            "subtotal": null,
+            "discount": null,
+            "tax": 37.06,
+            "total": 656.69
+        },
+        {
+            "buyer": "Reginald Bowen",
+            "address": "3554 Amanda Groves Suite 075 Smithview, WY 28820 US",
+            "date": "06-Apr-2000",
+            "currency": "$",
+            "subtotal": 550.86,
+            "discount": null,
+            "tax": 33.77,
+            "total": 564.19
+        },
+        {
+            "buyer": "Samuel Ward",
+            "address": "99646 Martin Trace Port Kimberly, OK 78752 US",
+            "date": "23-Oct-2009",
+            "currency": "EUR",
+            "subtotal": 1068.5,
+            "discount": null,
+            "tax": 42.99,
+            "total": 1075.91
+        },
+        {
+            "buyer": "Jesse Chavez DDS",
+            "address": "74535 Robert Roads Apt. 089 Fitzgeraldshire, IN 10493 US",
+            "date": "12-Feb-2015",
+            "currency": "USD",
+            "subtotal": 983.71,
+            "discount": null,
+            "tax": null,
+            "total": 999.52
+        },
+        {
+            "buyer": "Monica Mclaughlin",
+            "address": "408 Williams Creek Apt. 492 North Benjaminport, GA 95250 US",
+            "date": "26-Nov-2007",
+            "currency": "EUR",
+            "subtotal": 370.23,
+            "discount": 8.07,
+            "tax": 14.32,
+            "total": 368.3
+        },
+        {
+            "buyer": "Jonathon Robinson",
+            "address": "8371 Eric Turnpike Fosterton, FM 96947 US",
+            "date": "18-May-2002",
+            "currency": "EUR",
+            "subtotal": null,
+            "discount": null,
+            "tax": 37.77,
+            "total": 965.35
+        },
+        {
+            "buyer": "Nicole Smith",
+            "address": "273 Kyle Manor Lewisport, AZ 84916 US",
+            "date": "30-Jul-2016",
+            "currency": "USD",
+            "subtotal": 874.6,
+            "discount": null,
+            "tax": 48.31,
+            "total": 905.33
+        },
+        {
+            "buyer": "Mike Serrano",
+            "address": "73590 Gomez Light Markstad, KY 84765 US",
+            "date": "26-Dec-1996",
+            "currency": "$",
+            "subtotal": 205.51,
+            "discount": null,
+            "tax": 13.13,
+            "total": 208.82
+        },
+        {
+            "buyer": "Devin Francis",
+            "address": "0028 Brandt Shoals Apt. 098 Montoyamouth, MI 70282 US",
+            "date": "30-Jan-2010",
+            "currency": "EUR",
+            "subtotal": 279.54,
+            "discount": null,
+            "tax": null,
+            "total": 279.21
+        },
+        {
+            "buyer": "Janice Nguyen",
+            "address": "193 Troy Radial Crossborough, NV 81506 US",
+            "date": "11-Aug-2017",
+            "currency": "$",
+            "subtotal": 286.76,
+            "discount": 12.7,
+            "tax": 15.34,
+            "total": 291.69
+        },
+        {
+            "buyer": "Karen Smith",
+            "address": "0203 Eric Mall Port Ronnie, VT 45234 US",
+            "date": "03-Nov-2012",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 50.76,
+            "total": 1141.14
+        },
+        {
+            "buyer": "Jesse Wagner",
+            "address": "54219 Lawson Well Prattstad, ME 19525 US",
+            "date": "01-Apr-2008",
+            "currency": "$",
+            "subtotal": 193.98,
+            "discount": null,
+            "tax": 10.99,
+            "total": 199.91
+        },
+        {
+            "buyer": "Cynthia Harris",
+            "address": "45866 Boone Vista Suite 057 West Phyllis, ID 76268 US",
+            "date": "25-Jun-1996",
+            "currency": "EUR",
+            "subtotal": 154.1,
+            "discount": null,
+            "tax": 6.61,
+            "total": 158.12
+        },
+        {
+            "buyer": "Lauren Calderon",
+            "address": "85293 Laura Drive Apt. 436 New Claudiafort, IN 57401 US",
+            "date": "09-Jan-2012",
+            "currency": "$",
+            "subtotal": 589.03,
+            "discount": null,
+            "tax": null,
+            "total": 592.06
+        },
+        {
+            "buyer": "Jason Pena",
+            "address": "043 Lee Haven Apt. 140 Bergtown, RI 94535 US",
+            "date": "22-Apr-2002",
+            "currency": "EUR",
+            "subtotal": 402.81,
+            "discount": 18.49,
+            "tax": 14.89,
+            "total": 410.09
+        },
+        {
+            "buyer": "Nicole Reed",
+            "address": "9354 Duffy Via East Kevin, MA 07523 US",
+            "date": "11-Apr-2014",
+            "currency": "EUR",
+            "subtotal": null,
+            "discount": null,
+            "tax": 60.64,
+            "total": 912.98
+        },
+        {
+            "buyer": "Evelyn Norris",
+            "address": "32279 Salazar Lakes Apt. 201 Hubbardton, AK 23269 US",
+            "date": "26-Nov-1994",
+            "currency": "$",
+            "subtotal": 348.42,
+            "discount": null,
+            "tax": 20.03,
+            "total": 359.63
+        },
+        {
+            "buyer": "Chelsea Caldwell",
+            "address": "8579 French Fords Suite 222 Ericton, NM 03229 US",
+            "date": "25-Oct-2001",
+            "currency": "$",
+            "subtotal": 491.35,
+            "discount": null,
+            "tax": 33.24,
+            "total": 505.43
+        },
+        {
+            "buyer": "Katrina Barajas",
+            "address": "2865 Payne Expressway Apt. 271 Lindaside, NY 28332 US",
+            "date": "12-Jun-1998",
+            "currency": "EUR",
+            "subtotal": 416.13,
+            "discount": null,
+            "tax": null,
+            "total": 422.55
+        },
+        {
+            "buyer": "Alexander Hardin MD",
+            "address": "7614 Samantha Terrace West William, UT 60540 US",
+            "date": "23-Feb-2017",
+            "currency": "EUR",
+            "subtotal": 285.96,
+            "discount": 6.86,
+            "tax": 10.1,
+            "total": 289.8
+        },
+        {
+            "buyer": "Lance Anderson",
+            "address": "462 Jacob Dale Apt. 622 North Susanton, WV 82021 US",
+            "date": "05-Apr-2004",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 27.78,
+            "total": 799.93
+        },
+        {
+            "buyer": "Sherri Larsen",
+            "address": "686 Levi Locks Marcusshire, VT 72969 US",
+            "date": "16-Jun-1999",
+            "currency": "USD",
+            "subtotal": 624.69,
+            "discount": null,
+            "tax": 32.18,
+            "total": 626.57
+        },
+        {
+            "buyer": "Anthony Mcguire",
+            "address": "3976 Tyler Meadow Williamtown, CA 93238 US",
+            "date": "13-Jul-2014",
+            "currency": "USD",
+            "subtotal": 322.06,
+            "discount": null,
+            "tax": 20.41,
+            "total": 327.27
+        },
+        {
+            "buyer": "Joshua Bradley",
+            "address": "7878 Jamie Freeway Lake Heidi, MS 27565 US",
+            "date": "28-Nov-2015",
+            "currency": "USD",
+            "subtotal": 667.75,
+            "discount": null,
+            "tax": null,
+            "total": 678.64
+        },
+        {
+            "buyer": "Carlos Martin",
+            "address": "6162 Hughes Lights Suite 599 Port William, FM 74489 US",
+            "date": "01-Oct-2009",
+            "currency": "$",
+            "subtotal": 1617.22,
+            "discount": 72.29,
+            "tax": 90.7,
+            "total": 1686.9
+        },
+        {
+            "buyer": "Peter Lewis",
+            "address": "940 Leslie Tunnel Moralesmouth, CT 55149 US",
+            "date": "07-Jul-2010",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 17.13,
+            "total": 277.64
+        },
+        {
+            "buyer": "Jason Costa",
+            "address": "508 Schmidt Ramp Roseview, WI 79683 US",
+            "date": "19-Jun-2012",
+            "currency": "EUR",
+            "subtotal": 784.29,
+            "discount": null,
+            "tax": 45.88,
+            "total": 812.13
+        },
+        {
+            "buyer": "April Donovan",
+            "address": "002 Nicole Springs Suite 701 Port Abigailstad, MA 34772 US",
+            "date": "26-Nov-2002",
+            "currency": "$",
+            "subtotal": 955.54,
+            "discount": null,
+            "tax": 54.08,
+            "total": 963.47
+        },
+        {
+            "buyer": "Troy Bell",
+            "address": "9006 David Ford East Tracey, NM 02408 US",
+            "date": "06-Sep-2021",
+            "currency": "USD",
+            "subtotal": 498.83,
+            "discount": null,
+            "tax": null,
+            "total": 522.03
+        },
+        {
+            "buyer": "Gina Torres",
+            "address": "7655 Kendra Lake Apt. 516 Port Bryanport, WA 05617 US",
+            "date": "20-Mar-2004",
+            "currency": "$",
+            "subtotal": 259.55,
+            "discount": 10.07,
+            "tax": 10.64,
+            "total": 266.95
+        },
+        {
+            "buyer": "Jared Perkins",
+            "address": "1514 Lori Vista South Justin, KS 24669 US",
+            "date": "06-Nov-2004",
+            "currency": "EUR",
+            "subtotal": null,
+            "discount": null,
+            "tax": 3.71,
+            "total": 94.63
+        },
+        {
+            "buyer": "Justin Patel",
+            "address": "6631 Charles Garden Suite 418 Port Carolport, WI 83867 US",
+            "date": "05-Feb-2012",
+            "currency": "EUR",
+            "subtotal": 1126.04,
+            "discount": null,
+            "tax": 76.71,
+            "total": 1184.96
+        },
+        {
+            "buyer": "Emily Gonzalez",
+            "address": "2867 Austin Field Suite 777 Michaelview, ND 92151 US",
+            "date": "17-Mar-2013",
+            "currency": "$",
+            "subtotal": 1132.28,
+            "discount": null,
+            "tax": 75.74,
+            "total": 1179.03
+        },
+        {
+            "buyer": "Edgar Marshall",
+            "address": "370 Munoz Ridge Apt. 350 Cuevasfurt, TX 49327 US",
+            "date": "08-Jun-2000",
+            "currency": "$",
+            "subtotal": 428.06,
+            "discount": null,
+            "tax": null,
+            "total": 437.02
+        },
+        {
+            "buyer": "John Lawson",
+            "address": "65976 Shane Flat Apt. 654 Janetmouth, ID 41734 US",
+            "date": "17-Apr-2018",
+            "currency": "USD",
+            "subtotal": 1037.57,
+            "discount": 33.41,
+            "tax": 63.99,
+            "total": 1071.89
+        },
+        {
+            "buyer": "Albert Anderson",
+            "address": "8691 Whitney Rapids South Melindaside, ME 88779 US",
+            "date": "10-Apr-2001",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 49.56,
+            "total": 734.07
+        },
+        {
+            "buyer": "Allison Banks",
+            "address": "5623 Moody Junction Apt. 000 East Tina, NY 49227 US",
+            "date": "09-Oct-2001",
+            "currency": "$",
+            "subtotal": 757.13,
+            "discount": null,
+            "tax": 38.74,
+            "total": 786.25
+        },
+        {
+            "buyer": "Nicole Kelley",
+            "address": "4305 Stafford Plains Apt. 290 Haysmouth, NV 76557 US",
+            "date": "12-Nov-2017",
+            "currency": "EUR",
+            "subtotal": 851.33,
+            "discount": null,
+            "tax": 58.45,
+            "total": 883.05
+        },
+        {
+            "buyer": "Emily Johnson",
+            "address": "262 Curry Manors Suite 624 Richardhaven, TX 69291 US",
+            "date": "03-Oct-2021",
+            "currency": "USD",
+            "subtotal": 734.82,
+            "discount": null,
+            "tax": null,
+            "total": 763.47
+        },
+        {
+            "buyer": "Noah Lopez",
+            "address": "612 Rogers Knolls East Johnton, MS 61693 US",
+            "date": "24-Dec-1996",
+            "currency": "EUR",
+            "subtotal": 607.66,
+            "discount": 16.59,
+            "tax": 34.07,
+            "total": 622.53
+        },
+        {
+            "buyer": "Kristen Suarez",
+            "address": "985 May Rapids Solisfort, IA 68833 US",
+            "date": "21-Mar-1995",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 31.13,
+            "total": 704.62
+        },
+        {
+            "buyer": "Renee Orr",
+            "address": "14123 Strickland Lakes Lovefurt, DC 20804 US",
+            "date": "11-May-2012",
+            "currency": "$",
+            "subtotal": 287.77,
+            "discount": null,
+            "tax": 11.36,
+            "total": 290.3
+        },
+        {
+            "buyer": "Mary Henry",
+            "address": "8243 Hunter Divide Apt. 240 Raymondmouth, WY 96587 US",
+            "date": "04-Aug-2010",
+            "currency": "$",
+            "subtotal": 261.61,
+            "discount": null,
+            "tax": 17.63,
+            "total": 267.18
+        },
+        {
+            "buyer": "Brenda Chavez",
+            "address": "892 Michael Ramp Jessicaberg, NC 02054 US",
+            "date": "27-Oct-2020",
+            "currency": "$",
+            "subtotal": 692.26,
+            "discount": null,
+            "tax": null,
+            "total": 710.31
+        },
+        {
+            "buyer": "Michael Keller",
+            "address": "285 Alexis Expressway New Krystal, MA 06786 US",
+            "date": "15-Aug-2011",
+            "currency": "$",
+            "subtotal": 420.76,
+            "discount": 20.83,
+            "tax": 27.39,
+            "total": 437.0
+        },
+        {
+            "buyer": "Brad Humphrey",
+            "address": "12754 Emily Path Port Catherine, LA 72378 US",
+            "date": "08-Jul-2009",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 63.83,
+            "total": 1176.05
+        },
+        {
+            "buyer": "Melissa Jones",
+            "address": "914 Robin Camp Lake Rebeccaview, MI 84024 US",
+            "date": "08-Feb-2007",
+            "currency": "$",
+            "subtotal": 1162.34,
+            "discount": null,
+            "tax": 41.9,
+            "total": 1192.38
+        },
+        {
+            "buyer": "Richard Ross",
+            "address": "71223 Hart Valley Apt. 267 West Melissa, AK 24202 US",
+            "date": "29-Dec-2017",
+            "currency": "USD",
+            "subtotal": 423.67,
+            "discount": null,
+            "tax": 24.64,
+            "total": 439.54
+        },
+        {
+            "buyer": "Lori Humphrey",
+            "address": "225 Mills Flats Suite 265 East Kathrynbury, LA 99110 US",
+            "date": "21-Nov-1998",
+            "currency": "$",
+            "subtotal": 784.43,
+            "discount": null,
+            "tax": null,
+            "total": 806.14
+        },
+        {
+            "buyer": "Mary Rios",
+            "address": "6840 Boyle Forest Garrettville, TN 20516 US",
+            "date": "13-Aug-2019",
+            "currency": "USD",
+            "subtotal": 273.23,
+            "discount": 6.48,
+            "tax": 10.53,
+            "total": 277.91
+        },
+        {
+            "buyer": "Dominique Williams DDS",
+            "address": "264 Susan Hills Apt. 493 Lisaland, NM 59280 US",
+            "date": "24-Feb-2008",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 24.15,
+            "total": 702.98
+        },
+        {
+            "buyer": "Heather Schmidt",
+            "address": "843 Perez Inlet Apt. 779 Brittanybury, AZ 31043 US",
+            "date": "08-Dec-2003",
+            "currency": "USD",
+            "subtotal": 558.55,
+            "discount": null,
+            "tax": 21.86,
+            "total": 555.89
+        },
+        {
+            "buyer": "Amy Gibbs",
+            "address": "82097 Moore Branch Suite 397 Dominguezstad, MN 67956 US",
+            "date": "17-Aug-2016",
+            "currency": "$",
+            "subtotal": 892.06,
+            "discount": null,
+            "tax": 38.35,
+            "total": 908.29
+        },
+        {
+            "buyer": "Colin Anderson",
+            "address": "2226 Melissa Pass Apt. 672 South Robert, AZ 92383 US",
+            "date": "01-Jun-2011",
+            "currency": "$",
+            "subtotal": 285.97,
+            "discount": null,
+            "tax": null,
+            "total": 290.13
+        },
+        {
+            "buyer": "Dana Edwards",
+            "address": "3358 Martinez Cove Apt. 741 Loveview, CA 28306 US",
+            "date": "26-Mar-2005",
+            "currency": "EUR",
+            "subtotal": 645.44,
+            "discount": 11.94,
+            "tax": 44.03,
+            "total": 669.07
+        },
+        {
+            "buyer": "Jeffery Young",
+            "address": "934 Taylor Pines New Matthewshire, CO 84588 US",
+            "date": "06-Apr-2007",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 9.84,
+            "total": 332.53
+        },
+        {
+            "buyer": "Theresa Vega",
+            "address": "95498 Peter Dam Apt. 698 Victoriaton, NE 34892 US",
+            "date": "03-Jan-2008",
+            "currency": "EUR",
+            "subtotal": 1183.88,
+            "discount": null,
+            "tax": 64.59,
+            "total": 1203.25
+        },
+        {
+            "buyer": "Derrick Pope",
+            "address": "3177 Karen Falls Suite 182 Gardnershire, AL 12905 US",
+            "date": "06-May-2001",
+            "currency": "USD",
+            "subtotal": 759.38,
+            "discount": null,
+            "tax": 49.75,
+            "total": 793.87
+        },
+        {
+            "buyer": "Denise Woods",
+            "address": "73263 Allison Isle New Caitlyntown, ND 20173 US",
+            "date": "29-Aug-1999",
+            "currency": "EUR",
+            "subtotal": 84.4,
+            "discount": null,
+            "tax": null,
+            "total": 87.27
+        },
+        {
+            "buyer": "Adrienne Haynes",
+            "address": "310 Aguirre Club Suite 392 New Scott, LA 78952 US",
+            "date": "04-Oct-2018",
+            "currency": "EUR",
+            "subtotal": 197.07,
+            "discount": 8.59,
+            "tax": 11.98,
+            "total": 205.29
+        },
+        {
+            "buyer": "Michael Cantu",
+            "address": "4720 Barry Way Rossstad, MP 47430 US",
+            "date": "12-Nov-2008",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 16.75,
+            "total": 531.77
+        },
+        {
+            "buyer": "Jennifer Scott",
+            "address": "703 Eddie Inlet Smithshire, VI 24208 US",
+            "date": "22-Oct-1998",
+            "currency": "$",
+            "subtotal": 692.89,
+            "discount": null,
+            "tax": 30.76,
+            "total": 698.01
+        },
+        {
+            "buyer": "Michael Flores",
+            "address": "474 Kimberly Green Navarromouth, ND 89392 US",
+            "date": "21-Mar-2002",
+            "currency": "EUR",
+            "subtotal": 898.84,
+            "discount": null,
+            "tax": 50.88,
+            "total": 930.48
+        },
+        {
+            "buyer": "Kristina Kelly",
+            "address": "970 Steven Bridge Kathrynfort, TN 58591 US",
+            "date": "03-Apr-2020",
+            "currency": "$",
+            "subtotal": 795.52,
+            "discount": null,
+            "tax": null,
+            "total": 813.52
+        },
+        {
+            "buyer": "Nathan Anderson",
+            "address": "9025 Gilbert Expressway East Jamieshire, VA 74517 US",
+            "date": "02-Aug-2018",
+            "currency": "$",
+            "subtotal": 187.9,
+            "discount": 5.04,
+            "tax": 8.08,
+            "total": 190.81
+        },
+        {
+            "buyer": "Debbie Ramirez",
+            "address": "81810 Miller Key Apt. 462 Kimberlyport, MP 99762 US",
+            "date": "03-Jan-2016",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 30.28,
+            "total": 527.93
+        },
+        {
+            "buyer": "Kristy Simpson",
+            "address": "593 Cynthia Harbor Apt. 531 Lake Leahmouth, ME 48763 US",
+            "date": "25-Aug-2018",
+            "currency": "USD",
+            "subtotal": 928.56,
+            "discount": null,
+            "tax": 64.7,
+            "total": 982.67
+        },
+        {
+            "buyer": "John Gonzalez",
+            "address": "96474 Jordan Valley West Jennifer, AS 88993 US",
+            "date": "01-Oct-1994",
+            "currency": "USD",
+            "subtotal": 216.07,
+            "discount": null,
+            "tax": 9.51,
+            "total": 221.19
+        },
+        {
+            "buyer": "Kelly Ward",
+            "address": "4751 Amanda Land Suite 314 Stewartstad, ID 25120 US",
+            "date": "10-Apr-1998",
+            "currency": "EUR",
+            "subtotal": 574.46,
+            "discount": null,
+            "tax": null,
+            "total": 583.98
+        },
+        {
+            "buyer": "Jamie Williams",
+            "address": "1493 Foley Causeway Jasonton, WV 08717 US",
+            "date": "14-Dec-2008",
+            "currency": "$",
+            "subtotal": 295.59,
+            "discount": 7.27,
+            "tax": 10.66,
+            "total": 294.9
+        },
+        {
+            "buyer": "Jeffrey Elliott",
+            "address": "87074 Leslie Mission Suite 695 Chasehaven, RI 32588 US",
+            "date": "07-Aug-2008",
+            "currency": "EUR",
+            "subtotal": null,
+            "discount": null,
+            "tax": 32.93,
+            "total": 519.61
+        },
+        {
+            "buyer": "Christopher Reed",
+            "address": "11289 Daniel Hills Apt. 665 Lake Davidtown, IA 40481 US",
+            "date": "13-Jun-2018",
+            "currency": "EUR",
+            "subtotal": 108.81,
+            "discount": null,
+            "tax": 6.3,
+            "total": 111.56
+        },
+        {
+            "buyer": "Mark Bates",
+            "address": "394 Frederick Brooks Kevinburgh, NH 27502 US",
+            "date": "11-Nov-2003",
+            "currency": "$",
+            "subtotal": 70.4,
+            "discount": null,
+            "tax": 3.46,
+            "total": 70.81
+        },
+        {
+            "buyer": "Jesse Friedman",
+            "address": "696 Herring Junction Nicolehaven, LA 88635 US",
+            "date": "04-Aug-2018",
+            "currency": "EUR",
+            "subtotal": 379.16,
+            "discount": null,
+            "tax": null,
+            "total": 378.32
+        },
+        {
+            "buyer": "Bonnie Edwards",
+            "address": "2861 Hernandez Garden North Wendyshire, WI 33282 US",
+            "date": "23-Feb-2006",
+            "currency": "EUR",
+            "subtotal": 1179.24,
+            "discount": 40.68,
+            "tax": 48.25,
+            "total": 1213.81
+        },
+        {
+            "buyer": "Brittany Fitzgerald",
+            "address": "6420 Danielle Underpass Apt. 163 Lake Aaron, AR 06083 US",
+            "date": "20-Jan-1994",
+            "currency": "EUR",
+            "subtotal": null,
+            "discount": null,
+            "tax": 35.72,
+            "total": 649.78
+        },
+        {
+            "buyer": "Jennifer Hall",
+            "address": "09325 Gloria Mount Apt. 343 Rojasstad, WA 14443 US",
+            "date": "15-Nov-2013",
+            "currency": "EUR",
+            "subtotal": 768.66,
+            "discount": null,
+            "tax": 41.19,
+            "total": 796.32
+        },
+        {
+            "buyer": "John Howell",
+            "address": "3575 Eric Extensions West Melissaberg, MO 41420 US",
+            "date": "14-Mar-2000",
+            "currency": "USD",
+            "subtotal": 176.38,
+            "discount": null,
+            "tax": 9.84,
+            "total": 182.53
+        },
+        {
+            "buyer": "James Reyes",
+            "address": "328 Bush Corners Butlerborough, ME 84513 US",
+            "date": "08-Sep-2000",
+            "currency": "EUR",
+            "subtotal": 168.33,
+            "discount": null,
+            "tax": null,
+            "total": 169.93
+        },
+        {
+            "buyer": "Kaitlyn Christensen",
+            "address": "301 William Dam North Brendanborough, CA 21231 US",
+            "date": "23-Jul-2000",
+            "currency": "USD",
+            "subtotal": 954.46,
+            "discount": 47.15,
+            "tax": 48.43,
+            "total": 981.41
+        },
+        {
+            "buyer": "Nicole Barnett",
+            "address": "14425 Potts Falls Adammouth, CA 20926 US",
+            "date": "30-Aug-2015",
+            "currency": "EUR",
+            "subtotal": null,
+            "discount": null,
+            "tax": 34.32,
+            "total": 548.64
+        },
+        {
+            "buyer": "Tristan Ray",
+            "address": "16399 Brian Neck New Kara, CA 37070 US",
+            "date": "29-Jul-1997",
+            "currency": "$",
+            "subtotal": 707.98,
+            "discount": null,
+            "tax": 21.79,
+            "total": 703.43
+        },
+        {
+            "buyer": "Alexandra Price",
+            "address": "01085 Samantha Prairie Suite 571 North Nicole, MI 38110 US",
+            "date": "08-Mar-1996",
+            "currency": "$",
+            "subtotal": 256.19,
+            "discount": null,
+            "tax": 10.26,
+            "total": 258.07
+        },
+        {
+            "buyer": "Ricardo Choi",
+            "address": "6209 Samantha Knoll Brownfurt, VA 37254 US",
+            "date": "08-Jul-2016",
+            "currency": "EUR",
+            "subtotal": 223.56,
+            "discount": null,
+            "tax": null,
+            "total": 231.14
+        },
+        {
+            "buyer": "Tamara Perez",
+            "address": "2080 Bullock Manor South Daniel, MA 34400 US",
+            "date": "07-Sep-1996",
+            "currency": "USD",
+            "subtotal": 589.02,
+            "discount": 21.62,
+            "tax": 32.45,
+            "total": 603.15
+        },
+        {
+            "buyer": "David Barker",
+            "address": "96198 Simon Dam Apt. 247 Jenniferborough, OR 12913 US",
+            "date": "20-Apr-2011",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 8.17,
+            "total": 135.86
+        },
+        {
+            "buyer": "Laura Harper",
+            "address": "299 Buchanan Flats Jasmineside, PR 86385 US",
+            "date": "25-Mar-1997",
+            "currency": "USD",
+            "subtotal": 1009.61,
+            "discount": null,
+            "tax": 48.86,
+            "total": 1030.91
+        },
+        {
+            "buyer": "Diana Glass",
+            "address": "72366 David Well Swansonfurt, MI 76765 US",
+            "date": "05-Sep-2021",
+            "currency": "$",
+            "subtotal": 839.5,
+            "discount": null,
+            "tax": 28.63,
+            "total": 831.86
+        },
+        {
+            "buyer": "Alan Hamilton",
+            "address": "5373 Mary Mountain Apt. 627 Lewisville, HI 71093 US",
+            "date": "10-Jun-2003",
+            "currency": "EUR",
+            "subtotal": 987.32,
+            "discount": null,
+            "tax": null,
+            "total": 1006.57
+        },
+        {
+            "buyer": "Alexis Burgess",
+            "address": "217 Jacob Alley Apt. 066 Port Heather, AL 17209 US",
+            "date": "14-Oct-2011",
+            "currency": "$",
+            "subtotal": 1303.6,
+            "discount": 36.89,
+            "tax": 70.71,
+            "total": 1355.93
+        },
+        {
+            "buyer": "Victor Nguyen",
+            "address": "86614 Martin Road Judyview, CA 67741 US",
+            "date": "31-Oct-2002",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 17.14,
+            "total": 357.41
+        },
+        {
+            "buyer": "Carl Olson",
+            "address": "65693 Caitlyn Walks Suite 267 New Melissa, ME 97185 US",
+            "date": "17-Aug-2002",
+            "currency": "USD",
+            "subtotal": 393.28,
+            "discount": null,
+            "tax": 16.69,
+            "total": 393.69
+        },
+        {
+            "buyer": "Christian Smith",
+            "address": "7170 Rubio Trafficway East Lynn, WV 35481 US",
+            "date": "16-Jan-2013",
+            "currency": "USD",
+            "subtotal": 126.54,
+            "discount": null,
+            "tax": 6.98,
+            "total": 129.71
+        },
+        {
+            "buyer": "Briana Tucker",
+            "address": "3262 Jones Flat Suite 523 North Dennisville, OH 46865 US",
+            "date": "25-May-2008",
+            "currency": "EUR",
+            "subtotal": 1357.66,
+            "discount": null,
+            "tax": null,
+            "total": 1424.15
+        },
+        {
+            "buyer": "Ashley Bailey",
+            "address": "14589 Rebecca Green Suite 387 New Joshualand, DC 75849 US",
+            "date": "01-Jul-2004",
+            "currency": "$",
+            "subtotal": 1143.19,
+            "discount": 47.1,
+            "tax": 43.67,
+            "total": 1153.71
+        },
+        {
+            "buyer": "Christopher White",
+            "address": "537 Anna Stream Apt. 280 West Debrastad, PR 28649 US",
+            "date": "13-Jul-2001",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 55.45,
+            "total": 1179.52
+        },
+        {
+            "buyer": "Mario Gonzales",
+            "address": "6862 Nicole Via Gomezview, TN 63730 US",
+            "date": "25-Oct-2007",
+            "currency": "USD",
+            "subtotal": 673.78,
+            "discount": null,
+            "tax": 45.1,
+            "total": 692.33
+        },
+        {
+            "buyer": "Robert Mcintosh",
+            "address": "616 Robert Path Suite 857 Collinsfurt, WV 54290 US",
+            "date": "13-Aug-1999",
+            "currency": "$",
+            "subtotal": 1020.55,
+            "discount": null,
+            "tax": 35.0,
+            "total": 1008.4
+        },
+        {
+            "buyer": "Nicholas Richardson",
+            "address": "86041 Catherine Union Stuartberg, NC 64098 US",
+            "date": "28-Nov-2022",
+            "currency": "USD",
+            "subtotal": 577.27,
+            "discount": null,
+            "tax": null,
+            "total": 592.71
+        },
+        {
+            "buyer": "Perry Jackson",
+            "address": "720 Hensley Pines Suite 349 East Angela, MP 65342 US",
+            "date": "15-May-2004",
+            "currency": "$",
+            "subtotal": 1069.48,
+            "discount": 46.84,
+            "tax": 58.13,
+            "total": 1092.74
+        },
+        {
+            "buyer": "Brenda Smith",
+            "address": "1264 Tracey Light Lake Marcomouth, OH 71324 US",
+            "date": "22-Sep-2004",
+            "currency": "EUR",
+            "subtotal": null,
+            "discount": null,
+            "tax": 38.88,
+            "total": 801.21
+        },
+        {
+            "buyer": "Gloria Griffin",
+            "address": "3069 Rick Crossing Apt. 040 Georgebury, WV 79168 US",
+            "date": "02-Feb-2002",
+            "currency": "EUR",
+            "subtotal": 649.89,
+            "discount": null,
+            "tax": 25.88,
+            "total": 644.12
+        },
+        {
+            "buyer": "David Scott",
+            "address": "599 Erika Burgs Combsview, IA 43710 US",
+            "date": "06-Apr-1994",
+            "currency": "USD",
+            "subtotal": 423.56,
+            "discount": null,
+            "tax": 24.76,
+            "total": 438.07
+        },
+        {
+            "buyer": "Lynn Hughes",
+            "address": "4829 Sergio Walks South Alexanderborough, PA 62908 US",
+            "date": "03-Oct-1997",
+            "currency": "$",
+            "subtotal": 648.33,
+            "discount": null,
+            "tax": null,
+            "total": 670.95
+        },
+        {
+            "buyer": "Jasmine Davis",
+            "address": "911 Wallace Camp Suite 905 New Lindahaven, PW 51031 US",
+            "date": "18-Apr-2019",
+            "currency": "EUR",
+            "subtotal": 592.65,
+            "discount": 22.64,
+            "tax": 25.66,
+            "total": 590.93
+        },
+        {
+            "buyer": "Tammy Porter MD",
+            "address": "8573 Christian Fords Suite 844 Whitebury, IL 60768 US",
+            "date": "29-Jan-2017",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 17.89,
+            "total": 553.89
+        },
+        {
+            "buyer": "Lindsey Howell",
+            "address": "5987 Smith Mission Suite 917 Susanbury, MO 01957 US",
+            "date": "23-Oct-2003",
+            "currency": "EUR",
+            "subtotal": 421.09,
+            "discount": null,
+            "tax": 18.02,
+            "total": 423.4
+        },
+        {
+            "buyer": "Krista Williams MD",
+            "address": "91205 Myers Junction Nixonberg, ND 33500 US",
+            "date": "11-Apr-2017",
+            "currency": "EUR",
+            "subtotal": 770.03,
+            "discount": null,
+            "tax": 36.5,
+            "total": 776.96
+        },
+        {
+            "buyer": "David Solomon",
+            "address": "6140 Daniel Crest Apt. 912 Candicefort, AK 44420 US",
+            "date": "11-Dec-2021",
+            "currency": "$",
+            "subtotal": 678.45,
+            "discount": null,
+            "tax": null,
+            "total": 706.79
+        },
+        {
+            "buyer": "Ashley Wood",
+            "address": "601 Hernandez Manor Sanchezchester, OK 87089 US",
+            "date": "16-Aug-1993",
+            "currency": "EUR",
+            "subtotal": 550.49,
+            "discount": 25.32,
+            "tax": 38.52,
+            "total": 566.61
+        },
+        {
+            "buyer": "Brady Castro",
+            "address": "7322 Angela Tunnel Lake Jessicaport, MH 82274 US",
+            "date": "03-Mar-2005",
+            "currency": "EUR",
+            "subtotal": null,
+            "discount": null,
+            "tax": 60.22,
+            "total": 1512.79
+        },
+        {
+            "buyer": "Hunter White",
+            "address": "580 Johns Trafficway Apt. 099 Lake Elizabethfort, CA 70291 US",
+            "date": "25-Jul-2016",
+            "currency": "EUR",
+            "subtotal": 1141.81,
+            "discount": null,
+            "tax": 72.16,
+            "total": 1183.48
+        },
+        {
+            "buyer": "Jocelyn Hernandez",
+            "address": "73729 Robinson Points Suite 847 Seanmouth, WY 51415 US",
+            "date": "12-Apr-2013",
+            "currency": "USD",
+            "subtotal": 148.4,
+            "discount": null,
+            "tax": 7.19,
+            "total": 152.89
+        },
+        {
+            "buyer": "Nathan Wright",
+            "address": "89791 Armstrong Brooks Apt. 440 Leton, ME 89672 US",
+            "date": "11-Mar-2007",
+            "currency": "EUR",
+            "subtotal": 1265.94,
+            "discount": null,
+            "tax": null,
+            "total": 1269.13
+        },
+        {
+            "buyer": "Erica Barrera",
+            "address": "858 Michael Circles Davidbury, PW 38580 US",
+            "date": "30-Jan-2005",
+            "currency": "EUR",
+            "subtotal": 634.29,
+            "discount": 12.11,
+            "tax": 20.48,
+            "total": 624.7
+        },
+        {
+            "buyer": "Matthew Cooper",
+            "address": "097 Rivera Port Suite 314 Port Lisaland, MI 05698 US",
+            "date": "08-Jan-2021",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 42.16,
+            "total": 712.61
+        },
+        {
+            "buyer": "Abigail Jones",
+            "address": "72229 Kim Port New Patricia, PR 93805 US",
+            "date": "13-Jul-1994",
+            "currency": "$",
+            "subtotal": 202.21,
+            "discount": null,
+            "tax": 6.79,
+            "total": 203.76
+        },
+        {
+            "buyer": "Matthew Walsh",
+            "address": "1941 Zachary Haven Gonzalesshire, WA 45215 US",
+            "date": "05-Apr-2006",
+            "currency": "$",
+            "subtotal": 1447.74,
+            "discount": null,
+            "tax": 73.23,
+            "total": 1473.05
+        },
+        {
+            "buyer": "Jeanette Flores",
+            "address": "3052 Thomas Mountain Meganstad, MH 10808 US",
+            "date": "07-Feb-2009",
+            "currency": "USD",
+            "subtotal": 1510.21,
+            "discount": null,
+            "tax": null,
+            "total": 1491.16
+        },
+        {
+            "buyer": "John Landry",
+            "address": "9296 Small Square Suite 660 New Geraldview, VI 71440 US",
+            "date": "21-Jun-2011",
+            "currency": "$",
+            "subtotal": 373.18,
+            "discount": 5.34,
+            "tax": 11.79,
+            "total": 380.45
+        },
+        {
+            "buyer": "Daniel Lee",
+            "address": "3782 Lisa Plaza Apt. 990 Lake Albert, OR 52264 US",
+            "date": "20-Jun-2021",
+            "currency": "EUR",
+            "subtotal": null,
+            "discount": null,
+            "tax": 65.35,
+            "total": 973.25
+        },
+        {
+            "buyer": "Collin Harrell",
+            "address": "67845 Davis Shore Apt. 462 Nancymouth, TN 76864 US",
+            "date": "31-Oct-1993",
+            "currency": "EUR",
+            "subtotal": 841.57,
+            "discount": null,
+            "tax": 47.11,
+            "total": 851.06
+        },
+        {
+            "buyer": "Cynthia Hodges",
+            "address": "3613 Travis Estates Suite 631 South Carolynmouth, WV 85381 US",
+            "date": "16-Sep-2019",
+            "currency": "EUR",
+            "subtotal": 783.68,
+            "discount": null,
+            "tax": 39.35,
+            "total": 800.85
+        },
+        {
+            "buyer": "Claire Davenport",
+            "address": "50036 Clark Unions Hillville, SC 86237 US",
+            "date": "03-Apr-2021",
+            "currency": "EUR",
+            "subtotal": 623.74,
+            "discount": null,
+            "tax": null,
+            "total": 641.87
+        },
+        {
+            "buyer": "Heather Snyder",
+            "address": "61303 Kayla Plains Apt. 801 Carolbury, WV 72045 US",
+            "date": "12-Apr-2000",
+            "currency": "EUR",
+            "subtotal": 858.86,
+            "discount": 12.54,
+            "tax": 36.45,
+            "total": 873.58
+        },
+        {
+            "buyer": "Shannon Lamb",
+            "address": "39215 Rachel Ranch Apt. 305 Robertstad, NJ 75737 US",
+            "date": "18-Jan-2020",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 26.29,
+            "total": 709.51
+        },
+        {
+            "buyer": "Mrs. Dana Hays",
+            "address": "35444 Brown Keys Cooperport, VT 37515 US",
+            "date": "07-Mar-1999",
+            "currency": "$",
+            "subtotal": 555.32,
+            "discount": null,
+            "tax": 32.78,
+            "total": 577.38
+        },
+        {
+            "buyer": "Joshua Snyder",
+            "address": "88055 Odom Rapid West Brandy, WY 20718 US",
+            "date": "09-Feb-2007",
+            "currency": "$",
+            "subtotal": 163.2,
+            "discount": null,
+            "tax": 5.51,
+            "total": 166.15
+        },
+        {
+            "buyer": "Tony Hoffman",
+            "address": "2694 Jennifer Island Nunezview, UT 74734 US",
+            "date": "08-Feb-2010",
+            "currency": "EUR",
+            "subtotal": 124.58,
+            "discount": null,
+            "tax": null,
+            "total": 129.59
+        },
+        {
+            "buyer": "Tracey Davis",
+            "address": "13144 Romero Drive Port Amber, NE 21875 US",
+            "date": "16-Aug-2011",
+            "currency": "EUR",
+            "subtotal": 745.88,
+            "discount": 21.93,
+            "tax": 48.55,
+            "total": 778.99
+        },
+        {
+            "buyer": "Jeffrey Cunningham III",
+            "address": "850 Amanda Heights Suite 381 Lake Jeffrey, NE 33840 US",
+            "date": "26-Feb-2020",
+            "currency": "EUR",
+            "subtotal": null,
+            "discount": null,
+            "tax": 36.44,
+            "total": 1046.42
+        },
+        {
+            "buyer": "Lauren Davis",
+            "address": "2518 Montgomery Pine Apt. 237 New Leonard, MS 19700 US",
+            "date": "06-Jun-2000",
+            "currency": "USD",
+            "subtotal": 676.26,
+            "discount": null,
+            "tax": 28.76,
+            "total": 686.08
+        },
+        {
+            "buyer": "Brandon Tucker",
+            "address": "391 David Street Rushshire, KY 45152 US",
+            "date": "30-Apr-2017",
+            "currency": "$",
+            "subtotal": 1165.71,
+            "discount": null,
+            "tax": 74.79,
+            "total": 1208.44
+        },
+        {
+            "buyer": "Troy Fields",
+            "address": "938 Anderson Ridge Martinezshire, WY 08141 US",
+            "date": "15-Nov-1996",
+            "currency": "$",
+            "subtotal": 860.8,
+            "discount": null,
+            "tax": null,
+            "total": 873.97
+        },
+        {
+            "buyer": "Robert Curtis",
+            "address": "5215 May Circle Apt. 142 Georgeport, ME 34027 US",
+            "date": "02-Aug-2002",
+            "currency": "USD",
+            "subtotal": 630.82,
+            "discount": 30.53,
+            "tax": 42.84,
+            "total": 644.2
+        },
+        {
+            "buyer": "George Campbell",
+            "address": "033 Kelly Shoal Suite 318 Port Ericfort, ND 45923 US",
+            "date": "29-Jan-2019",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 14.71,
+            "total": 280.45
+        },
+        {
+            "buyer": "Alexander Mann",
+            "address": "363 Cherry Lane Apt. 122 Johnnyfurt, AS 55611 US",
+            "date": "28-May-2007",
+            "currency": "USD",
+            "subtotal": 1014.96,
+            "discount": null,
+            "tax": 69.53,
+            "total": 1045.01
+        },
+        {
+            "buyer": "Roberta Schaefer",
+            "address": "2699 Sandra Shoals Andrewsfort, ME 92873 US",
+            "date": "01-Apr-1998",
+            "currency": "USD",
+            "subtotal": 549.21,
+            "discount": null,
+            "tax": 23.47,
+            "total": 549.12
+        },
+        {
+            "buyer": "Ryan Thomas V",
+            "address": "1935 Woods Station New Jasmine, FM 83827 US",
+            "date": "03-Sep-2019",
+            "currency": "USD",
+            "subtotal": 1021.67,
+            "discount": null,
+            "tax": null,
+            "total": 1033.68
+        },
+        {
+            "buyer": "Laura Bennett",
+            "address": "5673 Richard Islands Jessicamouth, MS 51278 US",
+            "date": "12-May-1993",
+            "currency": "$",
+            "subtotal": 289.0,
+            "discount": 10.9,
+            "tax": 8.74,
+            "total": 291.44
+        },
+        {
+            "buyer": "Shannon Buck",
+            "address": "2954 Brown Lights Hollandbury, ME 42543 US",
+            "date": "12-May-1999",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 19.09,
+            "total": 608.85
+        },
+        {
+            "buyer": "Mark Thompson",
+            "address": "31702 Tracy Overpass North Jasmin, SC 50659 US",
+            "date": "13-Jul-2010",
+            "currency": "USD",
+            "subtotal": 326.73,
+            "discount": null,
+            "tax": 19.41,
+            "total": 342.15
+        },
+        {
+            "buyer": "Brian Valdez",
+            "address": "3343 Valenzuela Mountain West Phillipport, OH 38545 US",
+            "date": "03-Sep-2008",
+            "currency": "USD",
+            "subtotal": 560.74,
+            "discount": null,
+            "tax": 24.62,
+            "total": 572.86
+        },
+        {
+            "buyer": "Roger Owens",
+            "address": "844 Jenna Meadow New Erinburgh, KS 91075 US",
+            "date": "06-Oct-2015",
+            "currency": "USD",
+            "subtotal": 754.69,
+            "discount": null,
+            "tax": null,
+            "total": 771.0
+        },
+        {
+            "buyer": "Wendy Drake",
+            "address": "756 Claire Inlet Suite 825 Samanthaview, MT 70815 US",
+            "date": "06-Apr-2016",
+            "currency": "USD",
+            "subtotal": 646.73,
+            "discount": 9.57,
+            "tax": 25.2,
+            "total": 649.68
+        },
+        {
+            "buyer": "Amanda Snow",
+            "address": "870 Charles Mount Lake Annebury, KY 77091 US",
+            "date": "01-Sep-2018",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 31.98,
+            "total": 478.74
+        },
+        {
+            "buyer": "Clifford Perry",
+            "address": "2707 Stephanie Forge South John, DE 90116 US",
+            "date": "04-Sep-2018",
+            "currency": "$",
+            "subtotal": 339.64,
+            "discount": null,
+            "tax": 21.0,
+            "total": 357.11
+        },
+        {
+            "buyer": "Scott Hunt",
+            "address": "97757 Matthew Village Suite 231 Lake Ashley, SC 47240 US",
+            "date": "18-Jan-2023",
+            "currency": "EUR",
+            "subtotal": 835.46,
+            "discount": null,
+            "tax": 58.2,
+            "total": 858.49
+        },
+        {
+            "buyer": "Colleen Moyer",
+            "address": "94321 Gonzalez Mews Suzannetown, VI 17968 US",
+            "date": "17-Jun-2002",
+            "currency": "USD",
+            "subtotal": 1112.58,
+            "discount": null,
+            "tax": null,
+            "total": 1120.27
+        },
+        {
+            "buyer": "Mrs. Amanda Rodriguez",
+            "address": "59779 Karen Point North Tyler, ID 05169 US",
+            "date": "11-Jul-2018",
+            "currency": "EUR",
+            "subtotal": 603.54,
+            "discount": 9.23,
+            "tax": 19.52,
+            "total": 613.64
+        },
+        {
+            "buyer": "William Yoder",
+            "address": "7467 Jeanne Lodge New Carl, NH 52963 US",
+            "date": "20-Mar-2022",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 50.88,
+            "total": 782.76
+        },
+        {
+            "buyer": "Jennifer Sanchez",
+            "address": "5736 Charles Road West Timothy, ME 33970 US",
+            "date": "02-Jul-2002",
+            "currency": "EUR",
+            "subtotal": 200.66,
+            "discount": null,
+            "tax": 8.56,
+            "total": 200.59
+        },
+        {
+            "buyer": "Michael Wall",
+            "address": "126 Frazier Ford Apt. 193 North Meganstad, ID 26052 US",
+            "date": "14-Apr-1994",
+            "currency": "USD",
+            "subtotal": 585.57,
+            "discount": null,
+            "tax": 26.64,
+            "total": 596.75
+        },
+        {
+            "buyer": "Christina Mcgee",
+            "address": "986 Galvan Parkways Clarkshire, ID 31195 US",
+            "date": "24-Sep-2019",
+            "currency": "USD",
+            "subtotal": 404.02,
+            "discount": null,
+            "tax": null,
+            "total": 417.7
+        },
+        {
+            "buyer": "Cody Chang",
+            "address": "1140 Michael Lane Suite 878 Ashleyberg, PA 38170 US",
+            "date": "03-Jun-2016",
+            "currency": "USD",
+            "subtotal": 460.41,
+            "discount": 10.13,
+            "tax": 22.03,
+            "total": 470.42
+        },
+        {
+            "buyer": "Wendy Brown",
+            "address": "209 Wesley Lock Suite 497 East Michael, KY 52990 US",
+            "date": "12-Feb-1994",
+            "currency": "EUR",
+            "subtotal": null,
+            "discount": null,
+            "tax": 23.71,
+            "total": 369.46
+        },
+        {
+            "buyer": "Dana Green",
+            "address": "6043 Lambert Well Juanhaven, ME 57438 US",
+            "date": "15-Jan-2014",
+            "currency": "USD",
+            "subtotal": 650.09,
+            "discount": null,
+            "tax": 35.54,
+            "total": 655.01
+        },
+        {
+            "buyer": "Haley Hall",
+            "address": "542 Morris Ridge Brownhaven, NE 18734 US",
+            "date": "03-Nov-2007",
+            "currency": "$",
+            "subtotal": 677.06,
+            "discount": null,
+            "tax": 29.11,
+            "total": 686.54
+        },
+        {
+            "buyer": "Alfred Vasquez",
+            "address": "51886 Deborah Forks Paulfurt, ND 74965 US",
+            "date": "11-Mar-1997",
+            "currency": "EUR",
+            "subtotal": 554.46,
+            "discount": null,
+            "tax": null,
+            "total": 568.03
+        },
+        {
+            "buyer": "Monica Fuller",
+            "address": "866 Thomas Ways Suite 282 New Tonya, KS 08465 US",
+            "date": "28-Apr-2009",
+            "currency": "$",
+            "subtotal": 445.25,
+            "discount": 12.78,
+            "tax": 16.61,
+            "total": 441.11
+        },
+        {
+            "buyer": "Joseph Kennedy",
+            "address": "69526 Annette Tunnel New Jennifer, CA 04412 US",
+            "date": "20-Apr-2007",
+            "currency": "$",
+            "subtotal": null,
+            "discount": null,
+            "tax": 23.69,
+            "total": 489.97
+        },
+        {
+            "buyer": "Colton Santiago",
+            "address": "62264 Anita Throughway New Johnchester, OR 97583 US",
+            "date": "17-Feb-1998",
+            "currency": "EUR",
+            "subtotal": 471.28,
+            "discount": null,
+            "tax": 20.21,
+            "total": 473.44
+        },
+        {
+            "buyer": "Marcus Elliott",
+            "address": "36982 Lindsay Rue South Anthony, MA 64190 US",
+            "date": "20-Apr-2013",
+            "currency": "EUR",
+            "subtotal": 647.41,
+            "discount": null,
+            "tax": 26.03,
+            "total": 644.63
+        },
+        {
+            "buyer": "Megan Howard",
+            "address": "6833 Marks Rest Apt. 028 North Amyton, FL 25893 US",
+            "date": "03-May-2012",
+            "currency": "USD",
+            "subtotal": 323.85,
+            "discount": null,
+            "tax": null,
+            "total": 322.97
+        },
+        {
+            "buyer": "Shannon Smith",
+            "address": "274 Christine Ways Erinchester, SD 30741 US",
+            "date": "07-Aug-2006",
+            "currency": "EUR",
+            "subtotal": 308.29,
+            "discount": 11.28,
+            "tax": 15.89,
+            "total": 310.52
+        },
+        {
+            "buyer": "Madeline Harris",
+            "address": "640 Courtney Forge Port Miguel, DC 24632 US",
+            "date": "06-Mar-2006",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 32.39,
+            "total": 717.93
+        },
+        {
+            "buyer": "David Hogan",
+            "address": "5270 Lauren Islands Suite 667 Port Kevinside, KY 20127 US",
+            "date": "06-Jul-1993",
+            "currency": "$",
+            "subtotal": 649.83,
+            "discount": null,
+            "tax": 41.78,
+            "total": 670.88
+        },
+        {
+            "buyer": "Bryan Simon",
+            "address": "169 Murphy Plains Suite 837 Lake Jessica, DC 79922 US",
+            "date": "03-Apr-1996",
+            "currency": "USD",
+            "subtotal": 375.59,
+            "discount": null,
+            "tax": 21.56,
+            "total": 379.8
+        },
+        {
+            "buyer": "Emma Riggs",
+            "address": "198 Barton Viaduct Lake Belindahaven, PR 68557 US",
+            "date": "25-Apr-2017",
+            "currency": "$",
+            "subtotal": 354.44,
+            "discount": null,
+            "tax": null,
+            "total": 355.71
+        },
+        {
+            "buyer": "Eileen Clark",
+            "address": "40802 Mary Plain Wagnerport, OR 78992 US",
+            "date": "31-Dec-1997",
+            "currency": "$",
+            "subtotal": 739.26,
+            "discount": 24.25,
+            "tax": 32.45,
+            "total": 754.12
+        },
+        {
+            "buyer": "Charlotte Chambers",
+            "address": "9386 Molina Station Apt. 680 Jenniferfurt, MO 98653 US",
+            "date": "24-Feb-2016",
+            "currency": "EUR",
+            "subtotal": null,
+            "discount": null,
+            "tax": 4.84,
+            "total": 105.38
+        },
+        {
+            "buyer": "Thomas Adams",
+            "address": "421 Robert Valley Apt. 173 Saratown, MS 84994 US",
+            "date": "14-Oct-2012",
+            "currency": "EUR",
+            "subtotal": 1117.65,
+            "discount": null,
+            "tax": 62.06,
+            "total": 1166.19
+        },
+        {
+            "buyer": "Debbie White",
+            "address": "4520 Vega Stream Apt. 421 South Cheryl, GU 09989 US",
+            "date": "20-Apr-2018",
+            "currency": "USD",
+            "subtotal": 104.51,
+            "discount": null,
+            "tax": 5.21,
+            "total": 105.72
+        },
+        {
+            "buyer": "Teresa Fields",
+            "address": "7731 Charles Trace Murphyberg, MD 40922 US",
+            "date": "08-Jul-2022",
+            "currency": "EUR",
+            "subtotal": 532.63,
+            "discount": null,
+            "tax": null,
+            "total": 550.31
+        },
+        {
+            "buyer": "James Diaz",
+            "address": "35003 Mark Forest Apt. 586 Lake Ronaldton, CA 36947 US",
+            "date": "11-Mar-2016",
+            "currency": "USD",
+            "subtotal": 721.05,
+            "discount": 31.37,
+            "tax": 37.43,
+            "total": 728.05
+        },
+        {
+            "buyer": "Maria Cain",
+            "address": "3445 Pruitt Hills West Jose, HI 96647 US",
+            "date": "20-Dec-2002",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 20.42,
+            "total": 514.49
+        },
+        {
+            "buyer": "Lee Smith",
+            "address": "368 Larson Streets Suite 433 South Christinastad, NJ 75733 US",
+            "date": "19-Sep-2013",
+            "currency": "$",
+            "subtotal": 201.98,
+            "discount": null,
+            "tax": 6.35,
+            "total": 205.04
+        },
+        {
+            "buyer": "Krystal Fowler",
+            "address": "97589 Victor Extensions Port John, MS 48393 US",
+            "date": "02-Nov-2016",
+            "currency": "$",
+            "subtotal": 234.36,
+            "discount": null,
+            "tax": 13.42,
+            "total": 236.13
+        },
+        {
+            "buyer": "Zachary Johns",
+            "address": "031 Brittney Estates Suite 988 North Jessicahaven, OR 07935 US",
+            "date": "09-Dec-2001",
+            "currency": "USD",
+            "subtotal": 170.02,
+            "discount": null,
+            "tax": null,
+            "total": 176.21
+        }
+    ],
+    "predictions": [
+        [
+            {
+                "Buyer": "Laura Goodman",
+                "Date": "2011-04-11",
+                "Currency": "EUR",
+                "Discount": "21.04",
+                "Address": "485 Jones Street East Sheilamouth, KY 74720 US",
+                "SubTotal": "818.64",
+                "Tax": "30.84",
+                "Total": "826.48"
+            }
+        ],
+        [
+            {
+                "Buyer": "Andre Quinn",
+                "Date": "2002-05-05",
+                "Currency": "USD",
+                "Address": "92236 Samantha Heights Apt. 345 Tammyton, AZ 75233 US",
+                "Tax": "65.31",
+                "Total": "1054.49",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Julia Walters",
+                "Date": "2013-10-26",
+                "Currency": "USD",
+                "Address": "24930 Brittney Light Petersonport, MA 05662 US",
+                "SubTotal": "1232.25",
+                "Tax": "70.98",
+                "Total": "1244.45",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Ariel Davis",
+                "Date": "2006-04-14",
+                "Currency": "USD",
+                "Address": "20828 Franklin Lights Apt. 278 East Kim, VT 04239 US",
+                "SubTotal": "1290.12",
+                "Tax": "51.79",
+                "Total": "1288.63",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Shannon Alexander",
+                "Date": "2009-09-17",
+                "Currency": "USD",
+                "Address": "838 Harris Ferry Matthewburgh, MP 10645 US",
+                "SubTotal": "707.98",
+                "Total": "722.84",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Rachel Gonzalez",
+                "Date": "2007-02-21",
+                "Currency": "USD",
+                "Discount": "2.98",
+                "Address": "80812 Cervantes Courts Philipmouth, NV 87475 US",
+                "SubTotal": "156.64",
+                "Tax": "7.16",
+                "Total": "162.12"
+            }
+        ],
+        [
+            {
+                "Buyer": "Sara Chandler",
+                "Date": "2000-12-25",
+                "Currency": "$",
+                "Address": "3238 Banks Stravenue Suite 183\nEast Catherine, NE 17999 US",
+                "Tax": "58.61",
+                "Total": "1003.00",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Kristina Wyatt",
+                "Date": "1995-07-24",
+                "Currency": "$",
+                "Address": "3064 Jennifer Vista Victorbury, CO 45641 US",
+                "SubTotal": "825.02",
+                "Tax": "34.39",
+                "Total": "818.98",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Tanner Hernandez",
+                "Date": "1995-11-13",
+                "Currency": "EUR",
+                "Address": "641 Mitchell Glen Nicolechester, ID 30279 US",
+                "SubTotal": "1357.25",
+                "Tax": "58.88",
+                "Total": "1370.25",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Holly Martin",
+                "Date": "2013-10-26",
+                "Currency": "USD",
+                "Address": "738 Elizabeth Flats Apt. 080 Evansburgh, WY 01186 US",
+                "SubTotal": "480.72",
+                "Total": "478.30",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "David Bauer",
+                "Date": "2001-10-21",
+                "Currency": "EUR",
+                "Discount": "11.74",
+                "Address": "273 Keith Fields Guerreromouth, MH 59656 US",
+                "SubTotal": "782.34",
+                "Tax": "54.69",
+                "Total": "819.74"
+            }
+        ],
+        [
+            {
+                "Buyer": "James Gibson",
+                "Date": "2021-10-07",
+                "Currency": "$",
+                "Address": "86859 Jones Rue Elijahmouth, OR 26291 US",
+                "Tax": "24.76",
+                "Total": "609.46",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Tracey Salinas",
+                "Date": "2006-01-04",
+                "Currency": "EUR",
+                "Address": "7844 Smith Circle Apt. 746 Johnmouth, MH 84116 US",
+                "SubTotal": "766.30",
+                "Tax": "50.22",
+                "Total": "797.36",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Margaret Lewis",
+                "Date": "2019-03-07",
+                "Currency": "EUR",
+                "Address": "1241 Megan Cove Apt. 411 South Teresashire, CO 39172 US",
+                "SubTotal": "611.60",
+                "Tax": "33.10",
+                "Total": "619.56",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Raymond Baker",
+                "Date": "2004-10-10",
+                "Currency": "USD",
+                "Address": "924 Lin Trafficway Suite 687 Jackmouth, CA 90936 US",
+                "SubTotal": "390.50",
+                "Total": "400.43",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Janet West",
+                "Date": "1999-05-31",
+                "Currency": "USD",
+                "Discount": "10.23",
+                "Address": "490 Melinda Streets Apt. 806 Lauramouth, ID 47708 US",
+                "SubTotal": "735.75",
+                "Tax": "42.69",
+                "Total": "749.16"
+            }
+        ],
+        [
+            {
+                "Buyer": "Tara Barnes",
+                "Date": "2012-06-01",
+                "Currency": "USD",
+                "Address": "3732 Wright Ports Ashleyport, VT 08388 US",
+                "Tax": "56.14",
+                "Total": "902.62",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Heather Bell",
+                "Date": "1997-08-07",
+                "Currency": "USD",
+                "Address": "4127 Joel Flat Ericshire, AK 75875 US",
+                "SubTotal": "1010.64",
+                "Tax": "67.09",
+                "Total": "1037.71",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Michelle Brown",
+                "Date": "2000-04-14",
+                "Currency": "USD",
+                "Address": "139 Cynthia Summit Apt. 083 West Michelle, NC 08014 US",
+                "SubTotal": "262.72",
+                "Tax": "9.81",
+                "Total": "264.36",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Taylor Sexton",
+                "Date": "2008-09-20",
+                "Currency": "USD",
+                "Address": "8304 Orr Highway North Stephen, IL 87944 US",
+                "SubTotal": "369.87",
+                "Total": "377.08",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Jerome Cooper",
+                "Date": "2019-05-21",
+                "Currency": "EUR",
+                "Discount": "25.48",
+                "Address": "1637 Shawn Forest Apt. 944 Rosalesshire, ND 30133 US",
+                "SubTotal": "1190.68",
+                "Tax": "42.93",
+                "Total": "1201.22"
+            }
+        ],
+        [
+            {
+                "Buyer": "Brandy Vargas",
+                "Date": "1994-12-29",
+                "Currency": "USD",
+                "Address": "85305 Kimberly Cape East Bethtown, SD 38850 US",
+                "Tax": "67.49",
+                "Total": "1097.17",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Brian Cain",
+                "Date": "2000-11-20",
+                "Currency": "USD",
+                "Address": "53566 Bryan Underpass South Javier, MO 97378 US",
+                "SubTotal": "702.70",
+                "Tax": "40.86",
+                "Total": "728.73",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Michael Webb",
+                "Date": "2022-07-02",
+                "Currency": "USD",
+                "Address": "572 Jenna Square Apt. 229 West Jessica, MO 56411 US",
+                "SubTotal": "315.96",
+                "Tax": "21.64",
+                "Total": "328.06",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Jason Morton",
+                "Date": "1994-11-16",
+                "Currency": "EUR",
+                "Address": "4123 Nicole Ridges Suite 099 New Laura, NH 70841 US",
+                "SubTotal": "186.92",
+                "Total": "188.42",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Samuel Cohen",
+                "Date": "2019-10-21",
+                "Currency": "USD",
+                "Discount": "23.74",
+                "Address": "010 Lauren Tunnel Port Anthony, ME 04796 US",
+                "SubTotal": "824.45",
+                "Tax": "28.24",
+                "Total": "843.87"
+            }
+        ],
+        [
+            {
+                "Buyer": "Gary Cross",
+                "Date": "2003-02-26",
+                "Currency": "EUR",
+                "Address": "5528 Vickie Fords\nSouth Heatherside, NH 42370 US",
+                "Tax": "37.06 EUR",
+                "Total": "656.69",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Reginald Bowen",
+                "Date": "2000-04-06",
+                "Currency": "$",
+                "Address": "3554 Amanda Groves Suite 075 Smithview, WY 28820 US",
+                "SubTotal": "550.86",
+                "Tax": "33.77",
+                "Total": "564.19",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Samuel Ward",
+                "Date": "2009-10-23",
+                "Currency": "EUR",
+                "Address": "99646 Martin Trace Port Kimberly, OK 78752 US",
+                "SubTotal": "1068.50",
+                "Tax": "42.99",
+                "Total": "1075.91",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Jesse Chavez DDS",
+                "Date": "2015-02-12",
+                "Currency": "USD",
+                "Address": "74535 Robert Roads Apt. 089 Fitzgeraldshire, IN 10493 US",
+                "SubTotal": "983.71",
+                "Total": "999.52",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Monica Mclaughlin",
+                "Date": "2007-11-26",
+                "Currency": "EUR",
+                "Discount": "8.07",
+                "Address": "408 Williams Creek Apt. 492 North Benjaminport, GA 95250 US",
+                "SubTotal": "370.23",
+                "Tax": "14.32",
+                "Total": "368.30"
+            }
+        ],
+        [
+            {
+                "Buyer": "Jonathon Robinson",
+                "Date": "2002-05-18",
+                "Currency": "EUR",
+                "Address": "8371 Eric Turnpike Fosterton, FM 96947 US",
+                "Tax": "37.77 EUR",
+                "Total": "965.35 EUR",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Nicole Smith",
+                "Date": "2016-07-30",
+                "Currency": "USD",
+                "Address": "273 Kyle Manor Lewisport, AZ 84916 US",
+                "SubTotal": "874.60",
+                "Tax": "48.31",
+                "Total": "905.33",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Mike Serrano",
+                "Date": "1996-12-26",
+                "Currency": "$",
+                "Address": "73590 Gomez Light Markstad, KY 84765 US",
+                "SubTotal": "205.51",
+                "Tax": "13.13",
+                "Total": "208.82",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Devin Francis",
+                "Date": "2010-01-30",
+                "Currency": "EUR",
+                "Address": "0028 Brandt Shoals Apt. 098 Montoyamouth, MI 70282 US",
+                "SubTotal": "279.54",
+                "Total": "279.21",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Janice Nguyen",
+                "Date": "2017-08-11",
+                "Currency": "$",
+                "Discount": "12.7",
+                "Address": "193 Troy Radial Crossborough, NV 81506 US",
+                "SubTotal": "286.76",
+                "Tax": "15.34",
+                "Total": "291.69"
+            }
+        ],
+        [
+            {
+                "Buyer": "Karen Smith",
+                "Date": "2012-11-03",
+                "Currency": "$",
+                "Address": "0203 Eric Mall Port Ronnie, VT 45234 US",
+                "Tax": "50.76 $",
+                "Total": "1141.14",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Jesse Wagner",
+                "Date": "2008-04-01",
+                "Currency": "$",
+                "Address": "54219 Lawson Well Prattstad, ME 19525 US",
+                "SubTotal": "193.98",
+                "Tax": "10.99",
+                "Total": "199.91",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Cynthia Harris",
+                "Date": "1996-06-25",
+                "Currency": "EUR",
+                "Address": "45866 Boone Vista Suite 057 West Phyllis, ID 76268 US",
+                "SubTotal": "154.10",
+                "Tax": "6.61",
+                "Total": "158.12",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Lauren Calderon",
+                "Date": "2012-01-09",
+                "Currency": "$",
+                "Address": "85293 Laura Drive Apt. 436 New Claudiafort, IN 57401 US",
+                "SubTotal": "589.03",
+                "Total": "592.06",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Jason Pena",
+                "Date": "2002-04-22",
+                "Currency": "EUR",
+                "Discount": "18.49",
+                "Address": "043 Lee Haven Apt. 140 Bergtown, RI 94535 US",
+                "SubTotal": "402.81",
+                "Tax": "14.89",
+                "Total": "410.09"
+            }
+        ],
+        [
+            {
+                "Buyer": "Nicole Reed",
+                "Date": "2014-04-11",
+                "Currency": "EUR",
+                "Address": "9354 Duffy Via\nEast Kevin, MA 07523 US",
+                "Tax": "60.64",
+                "Total": "912.98",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Evelyn Norris",
+                "Date": "1994-11-26",
+                "Currency": "$",
+                "Address": "32279 Salazar Lakes Apt. 201 Hubbardton, AK 23269 US",
+                "SubTotal": "348.42",
+                "Tax": "20.03",
+                "Total": "359.63",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Chelsea Caldwell",
+                "Date": "2001-10-25",
+                "Currency": "$",
+                "Address": "8579 French Fords Suite 222 Ericton, NM 03229 US",
+                "SubTotal": "491.35",
+                "Tax": "33.24",
+                "Total": "505.43",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Katrina Barajas",
+                "Date": "1998-06-12",
+                "Currency": "EUR",
+                "Address": "2865 Payne Expressway Apt. 271 Lindaside, NY 28332 US",
+                "SubTotal": "416.13",
+                "Total": "422.55",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Alexander Hardin MD",
+                "Date": "2017-02-23",
+                "Currency": "EUR",
+                "Discount": "6.86",
+                "Address": "7614 Samantha Terrace West William, UT 60540 US",
+                "SubTotal": "285.96",
+                "Tax": "10.10",
+                "Total": "289.80"
+            }
+        ],
+        [
+            {
+                "Buyer": "Lance Anderson",
+                "Date": "2004-04-05",
+                "Currency": "USD",
+                "Address": "462 Jacob Dale Apt. 622 North Susanton, WV 82021 US",
+                "Tax": "27.78",
+                "Total": "799.93",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": ":Sherri Larsen",
+                "Date": "1999-06-16",
+                "Currency": "USD",
+                "Address": "686 Levi Locks Marcusshire, VT 72969 US",
+                "SubTotal": "624.69",
+                "Tax": "32.18",
+                "Total": "626.57",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Anthony Mcguire",
+                "Date": "2014-07-13",
+                "Currency": "USD",
+                "Address": "3976 Tyler Meadow Williamtown, CA 93238 US",
+                "SubTotal": "322.06",
+                "Tax": "20.41",
+                "Total": "327.27",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Joshua Bradley",
+                "Date": "2015-11-28",
+                "Currency": "USD",
+                "Address": "7878 Jamie Freeway Lake Heidi, MS 27565 US",
+                "SubTotal": "667.75",
+                "Total": "678.64",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Carlos Martin",
+                "Date": "2009-10-01",
+                "Currency": "$",
+                "Discount": "72.29",
+                "Address": "6162 Hughes Lights Suite 599 Port William, FM 74489 US",
+                "SubTotal": "1617.22",
+                "Tax": "90.70",
+                "Total": "1686.90"
+            }
+        ],
+        [
+            {
+                "Buyer": "Peter Lewis",
+                "Date": "2010-07-07",
+                "Currency": "USD",
+                "Address": "940 Leslie Tunnel Moralesmouth, CT 55149 US",
+                "Tax": "17.13",
+                "Total": "277.64",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Jason Costa",
+                "Date": "2012-06-19",
+                "Currency": "EUR",
+                "Address": "508 Schmidt Ramp Roseview, WI 79683 US",
+                "SubTotal": "784.29",
+                "Tax": "45.88",
+                "Total": "812.13",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "April Donovan",
+                "Date": "2002-11-26",
+                "Currency": "$",
+                "Address": "002 Nicole Springs Suite 701 Port Abigailstad, MA 34772 US",
+                "SubTotal": "955.54",
+                "Tax": "54.08",
+                "Total": "963.47",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Troy Bell",
+                "Date": "2021-09-06",
+                "Currency": "USD",
+                "Address": "9006 David Ford East Tracey, NM 02408 US",
+                "SubTotal": "498.83",
+                "Total": "522.03",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Gina Torres",
+                "Date": "2004-03-20",
+                "Currency": "$",
+                "Discount": "10.07",
+                "Address": "7655 Kendra Lake Apt. 516 Port Bryanport, WA 05617 US",
+                "SubTotal": "259.55",
+                "Tax": "10.64",
+                "Total": "266.95"
+            }
+        ],
+        [
+            {
+                "Buyer": "Jared Perkins",
+                "Date": "2004-11-06",
+                "Currency": "EUR",
+                "Address": "1514 Lori Vista South Justin, KS 24669 US",
+                "Tax": "3.71",
+                "Total": "94.63",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Justin Patel",
+                "Date": "2012-02-05",
+                "Currency": "EUR",
+                "Address": "6631 Charles Garden Suite 418 Port Carolport, WI 83867 US",
+                "SubTotal": "1126.04",
+                "Tax": "76.71",
+                "Total": "1184.96",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Emily Gonzalez",
+                "Date": "2013-03-17",
+                "Currency": "$",
+                "Address": "2867 Austin Field Suite 777 Michaelview, ND 92151 US",
+                "SubTotal": "1132.28",
+                "Tax": "75.74",
+                "Total": "1179.03",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Edgar Marshall",
+                "Date": "2000-06-08",
+                "Currency": "$",
+                "Address": "370 Munoz Ridge Apt. 350 Cuevasfurt, TX 49327 US",
+                "SubTotal": "428.06",
+                "Total": "437.02",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "John Lawson",
+                "Date": "2018-04-17",
+                "Currency": "USD",
+                "Discount": "33.41",
+                "Address": "65976 Shane Flat Apt. 654 Janetmouth, ID 41734 US",
+                "SubTotal": "1037.57",
+                "Tax": "63.99",
+                "Total": "1071.89"
+            }
+        ],
+        [
+            {
+                "Buyer": "Albert Anderson",
+                "Date": "2001-04-10",
+                "Currency": "$",
+                "Address": "8691 Whitney Rapids\nSouth Melindaside, ME 88779 US",
+                "Tax": "49.56",
+                "Total": "734.07",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Allison Banks",
+                "Date": "2001-10-09",
+                "Currency": "$",
+                "Address": "5623 Moody Junction Apt. 000 East Tina, NY 49227 US",
+                "SubTotal": "757.13",
+                "Tax": "38.74",
+                "Total": "786.25",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Nicole Kelley",
+                "Date": "2017-11-12",
+                "Currency": "EUR",
+                "Address": "4305 Stafford Plains Apt. 290 Haysmouth, NV 76557 US",
+                "SubTotal": "851.33",
+                "Tax": "58.45",
+                "Total": "883.05",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Emily Johnson",
+                "Date": "2021-10-03",
+                "Currency": "USD",
+                "Address": "262 Curry Manors Suite 624 Richardhaven, TX 69291 US",
+                "SubTotal": "734.82",
+                "Total": "763.47",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Noah Lopez",
+                "Date": "1996-12-24",
+                "Currency": "EUR",
+                "Discount": "16.59",
+                "Address": "612 Rogers Knolls East Johnton, MS 61693 US",
+                "SubTotal": "607.66",
+                "Tax": "34.07",
+                "Total": "622.53"
+            }
+        ],
+        [
+            {
+                "Buyer": "Kristen Suarez",
+                "Date": "1995-03-21",
+                "Currency": "USD",
+                "Address": "985 May Rapids Solisfort, IA 68833 US",
+                "Tax": "31.13",
+                "Total": "704.62",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Renee Orr",
+                "Date": "2012-05-11",
+                "Currency": "$",
+                "Address": "14123 Strickland Lakes Lovefurt, DC 20804 US",
+                "SubTotal": "287.77",
+                "Tax": "11.36",
+                "Total": "290.30",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Mary Henry",
+                "Date": "2010-08-04",
+                "Currency": "$",
+                "Address": "8243 Hunter Divide Apt. 240 Raymondmouth, WY 96587 US",
+                "SubTotal": "261.61",
+                "Tax": "17.63",
+                "Total": "267.18",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Brenda Chavez",
+                "Date": "2020-10-27",
+                "Currency": "$",
+                "Address": "892 Michael Ramp Jessicaberg, NC 02054 US",
+                "SubTotal": "692.26",
+                "Total": "710.31",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Michael Keller",
+                "Date": "2011-08-15",
+                "Currency": "$",
+                "Discount": "20.83",
+                "Address": "285 Alexis Expressway New Krystal, MA 06786 US",
+                "SubTotal": "420.76",
+                "Tax": "27.39",
+                "Total": "437.00"
+            }
+        ],
+        [
+            {
+                "Buyer": "Brad Humphrey",
+                "Date": "2009-07-08",
+                "Currency": "$",
+                "Address": "12754 Emily Path\nPort Catherine, LA 72378 US",
+                "Tax": "63.83",
+                "Total": "1176.05",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Melissa Jones",
+                "Date": "2007-02-08",
+                "Currency": "$",
+                "Address": "914 Robin Camp Lake Rebeccaview, MI 84024 US",
+                "SubTotal": "1162.34",
+                "Tax": "41.90",
+                "Total": "1192.38",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Richard Ross",
+                "Date": "2017-12-29",
+                "Currency": "USD",
+                "Address": "71223 Hart Valley Apt. 267 West Melissa, AK 24202 US",
+                "SubTotal": "423.67",
+                "Tax": "24.64",
+                "Total": "439.54",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Lori Humphrey",
+                "Date": "1998-11-21",
+                "Currency": "$",
+                "Address": "225 Mills Flats Suite 265 East Kathrynbury, LA 99110 US",
+                "SubTotal": "784.43",
+                "Total": "806.14",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Mary Rios",
+                "Date": "2019-08-13",
+                "Currency": "USD",
+                "Discount": "6.48",
+                "Address": "6840 Boyle Forest Garrettville, TN 20516 US",
+                "SubTotal": "273.23",
+                "Tax": "10.53",
+                "Total": "277.91"
+            }
+        ],
+        [
+            {
+                "Buyer": "Dominique Williams DDS",
+                "Date": "2008-02-24",
+                "Currency": "$",
+                "Address": "264 Susan Hills Apt. 493 Lisaland, NM 59280 US",
+                "Tax": "24.15",
+                "Total": "702.98",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Heather Schmidt",
+                "Date": "2003-12-08",
+                "Currency": "USD",
+                "Address": "843 Perez Inlet Apt. 779 Brittanybury, AZ 31043 US",
+                "SubTotal": "558.55",
+                "Tax": "21.86",
+                "Total": "555.89",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Amy Gibbs",
+                "Date": "2016-08-17",
+                "Currency": "$",
+                "Address": "82097 Moore Branch Suite 397 Dominguezstad, MN 67956 US",
+                "SubTotal": "892.06",
+                "Tax": "38.35",
+                "Total": "908.29",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Colin Anderson",
+                "Date": "2011-06-01",
+                "Currency": "$",
+                "Address": "2226 Melissa Pass Apt. 672 South Robert, AZ 92383 US",
+                "SubTotal": "285.97",
+                "Total": "290.13",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Dana Edwards",
+                "Date": "2005-03-26",
+                "Currency": "EUR",
+                "Discount": "11.94",
+                "Address": "3358 Martinez Cove Apt. 741 Loveview, CA 28306 US",
+                "SubTotal": "645.44",
+                "Tax": "44.03",
+                "Total": "669.07"
+            }
+        ],
+        [
+            {
+                "Buyer": "Jeffery Young",
+                "Date": "2007-04-06",
+                "Currency": "$",
+                "Address": "934 Taylor Pines New Matthewshire, CO 84588 US",
+                "Tax": "9.84",
+                "Total": "332.53",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Theresa Vega",
+                "Date": "2008-01-03",
+                "Currency": "EUR",
+                "Address": "95498 Peter Dam Apt. 698 Victoriaton, NE 34892 US",
+                "SubTotal": "1183.88",
+                "Tax": "64.59",
+                "Total": "1203.25",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Derrick Pope",
+                "Date": "2001-05-06",
+                "Currency": "USD",
+                "Address": "3177 Karen Falls Suite 182 Gardnershire, AL 12905 US",
+                "SubTotal": "759.38",
+                "Tax": "49.75",
+                "Total": "793.87",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Denise Woods",
+                "Date": "1999-08-29",
+                "Currency": "EUR",
+                "Address": "73263 Allison Isle New Caitlyntown, ND 20173 US",
+                "SubTotal": "84.40",
+                "Total": "87.27",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Adrienne Haynes",
+                "Date": "2018-10-04",
+                "Currency": "EUR",
+                "Discount": "8.59",
+                "Address": "310 Aguirre Club Suite 392 New Scott, LA 78952 US",
+                "SubTotal": "197.07",
+                "Tax": "11.98",
+                "Total": "205.29"
+            }
+        ],
+        [
+            {
+                "Buyer": "Michael Cantu",
+                "Date": "2008-11-12",
+                "Currency": "$",
+                "Address": "4720 Barry Way Rossstad, MP 47430 US",
+                "Tax": "16.75",
+                "Total": "531.77",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Jennifer Scott",
+                "Date": "1998-10-22",
+                "Currency": "$",
+                "Address": "703 Eddie Inlet Smithshire, VI 24208 US",
+                "SubTotal": "692.89",
+                "Tax": "30.76",
+                "Total": "698.01",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Michael Flores",
+                "Date": "2002-03-21",
+                "Currency": "EUR",
+                "Address": "474 Kimberly Green Navarromouth, ND 89392 US",
+                "SubTotal": "898.84",
+                "Tax": "50.88",
+                "Total": "930.48",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Kristina Kelly",
+                "Date": "2020-04-03",
+                "Currency": "$",
+                "Address": "970 Steven Bridge Kathrynfort, TN 58591 US",
+                "SubTotal": "795.52",
+                "Total": "813.52",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Nathan Anderson",
+                "Date": "2018-08-02",
+                "Currency": "$",
+                "Discount": "5.04",
+                "Address": "9025 Gilbert Expressway East Jamieshire, VA 74517 US",
+                "SubTotal": "187.90",
+                "Tax": "8.08",
+                "Total": "190.81"
+            }
+        ],
+        [
+            {
+                "Buyer": "Debbie Ramirez",
+                "Date": "2016-01-03",
+                "Currency": "USD",
+                "Address": "81810 Miller Key Apt. 462 Kimberlyport, MP 99762 US",
+                "Tax": "30.28",
+                "Total": "527.93",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Kristy Simpson",
+                "Date": "2018-08-25",
+                "Currency": "USD",
+                "Address": "593 Cynthia Harbor Apt. 531 Lake Leahmouth, ME 48763 US",
+                "SubTotal": "928.56",
+                "Total": "64.70\n982.67",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "John Gonzalez",
+                "Date": "1994-10-01",
+                "Currency": "USD",
+                "Address": "96474 Jordan Valley West Jennifer, AS 88993 US",
+                "SubTotal": "216.07",
+                "Tax": "9.51",
+                "Total": "221.19",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Kelly Ward",
+                "Date": "1998-04-10",
+                "Currency": "EUR",
+                "Address": "4751 Amanda Land Suite 314 Stewartstad, ID 25120 US",
+                "SubTotal": "574.46",
+                "Total": "583.98",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Jamie Williams",
+                "Date": "2008-12-14",
+                "Currency": "$",
+                "Discount": "7.27",
+                "Address": "1493 Foley Causeway Jasonton, WV 08717 US",
+                "SubTotal": "295.59",
+                "Tax": "10.66",
+                "Total": "294.90"
+            }
+        ],
+        [
+            {
+                "Buyer": "Jeffrey Elliott",
+                "Date": "2008-08-07",
+                "Currency": "EUR",
+                "Address": "87074 Leslie Mission Suite 695 Chasehaven, RI 32588 US",
+                "Tax": "32.93 EUR",
+                "Total": "519.61",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Christopher Reed",
+                "Date": "2018-06-13",
+                "Currency": "EUR",
+                "Address": "11289 Daniel Hills Apt. 665 Lake Davidtown, IA 40481 US",
+                "SubTotal": "108.81",
+                "Tax": "6.30",
+                "Total": "111.56",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Mark Bates",
+                "Date": "2003-11-11",
+                "Currency": "$",
+                "Address": "394 Frederick Brooks Kevinburgh, NH 27502 US",
+                "SubTotal": "70.40",
+                "Tax": "3.46",
+                "Total": "70.81",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Jesse Friedman",
+                "Date": "2018-08-04",
+                "Currency": "EUR",
+                "Address": "696 Herring Junction Nicolehaven, LA 88635 US",
+                "SubTotal": "379.16",
+                "Total": "378.32",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Bonnie Edwards",
+                "Date": "2006-02-23",
+                "Currency": "EUR",
+                "Discount": "40.68",
+                "Address": "2861 Hernandez Garden North Wendyshire, WI 33282 US",
+                "SubTotal": "1179.24",
+                "Tax": "48.25",
+                "Total": "1213.81"
+            }
+        ],
+        [
+            {
+                "Buyer": "Brittany Fitzgerald",
+                "Date": "1994-01-20",
+                "Currency": "EUR",
+                "Address": "6420 Danielle Underpass Apt. 163\nLake Aaron, AR 06083 US",
+                "Tax": "35.72",
+                "Total": "649.78",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Jennifer Hall",
+                "Date": "2013-11-15",
+                "Currency": "EUR",
+                "Address": "09325 Gloria Mount Apt. 343 Rojasstad, WA 14443 US",
+                "SubTotal": "768.66",
+                "Tax": "41.19",
+                "Total": "796.32",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:John Howell",
+                "Date": "2000-03-14",
+                "Currency": "USD",
+                "Address": "3575 Eric Extensions West Melissaberg, MO 41420 US",
+                "SubTotal": "176.38",
+                "Tax": "9.84",
+                "Total": "182.53",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "James Reyes",
+                "Date": "2000-09-08",
+                "Currency": "EUR",
+                "Address": "328 Bush Corners Butlerborough, ME 84513 US",
+                "SubTotal": "168.33",
+                "Total": "169.93",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Kaitlyn Christensen",
+                "Date": "2000-07-23",
+                "Currency": "USD",
+                "Discount": "47.15",
+                "Address": "301 William Dam North Brendanborough, CA 21231 US",
+                "SubTotal": "954.46",
+                "Tax": "48.43",
+                "Total": "981.41"
+            }
+        ],
+        [
+            {
+                "Buyer": "Nicole Barnett",
+                "Date": "2015-08-30",
+                "Currency": "EUR",
+                "Address": "14425 Potts Falls Adammouth, CA 20926 US",
+                "Tax": "34.32",
+                "Total": "548.64",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Tristan Ray",
+                "Date": "1997-07-29",
+                "Currency": "$",
+                "Address": "16399 Brian Neck New Kara, CA 37070 US",
+                "SubTotal": "707.98",
+                "Tax": "21.79",
+                "Total": "703.43",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Alexandra Price",
+                "Date": "1996-03-08",
+                "Currency": "$",
+                "Address": "01085 Samantha Prairie Suite 571 North Nicole, MI 38110 US",
+                "SubTotal": "256.19",
+                "Tax": "10.26",
+                "Total": "258.07",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Ricardo Choi",
+                "Date": "2016-07-08",
+                "Currency": "EUR",
+                "Address": "6209 Samantha Knoll Brownfurt, VA 37254 US",
+                "SubTotal": "223.56",
+                "Total": "231.14",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Tamara Perez",
+                "Date": "1996-09-07",
+                "Currency": "USD",
+                "Discount": "21.62",
+                "Address": "2080 Bullock Manor South Daniel, MA 34400 US",
+                "SubTotal": "589.02",
+                "Tax": "32.45",
+                "Total": "603.15"
+            }
+        ],
+        [
+            {
+                "Buyer": "David Barker",
+                "Date": "2011-04-20",
+                "Currency": "$",
+                "Address": "96198 Simon Dam Apt. 247\nJenniferborough, OR 12913 US",
+                "Tax": "8.17",
+                "Total": "135.86",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Laura Harper",
+                "Date": "1997-03-25",
+                "Currency": "USD",
+                "Address": "299 Buchanan Flats Jasmineside, PR 86385 US",
+                "SubTotal": "1009.61",
+                "Total": "48.86\n1030.91",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Diana Glass",
+                "Date": "2021-09-05",
+                "Currency": "$",
+                "Address": "72366 David Well Swansonfurt, MI 76765 US",
+                "SubTotal": "839.50",
+                "Tax": "28.63",
+                "Total": "831.86",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Alan Hamilton",
+                "Date": "2003-06-10",
+                "Currency": "EUR",
+                "Address": "5373 Mary Mountain Apt. 627 Lewisville, HI 71093 US",
+                "SubTotal": "987.32",
+                "Total": "1006.57",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Alexis Burgess",
+                "Date": "2011-10-14",
+                "Currency": "$",
+                "Discount": "36.89",
+                "Address": "217 Jacob Alley Apt. 066 Port Heather, AL 17209 US",
+                "SubTotal": "1303.60",
+                "Tax": "70.71",
+                "Total": "1355.93"
+            }
+        ],
+        [
+            {
+                "Buyer": "Victor Nguyen",
+                "Date": "2002-10-31",
+                "Currency": "$",
+                "Address": "86614 Martin Road Judyview, CA 67741 US",
+                "Tax": "17.14",
+                "Total": "357.41",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Carl Olson",
+                "Date": "2002-08-17",
+                "Currency": "USD",
+                "Address": "65693 Caitlyn Walks Suite 267 New Melissa, ME 97185 US",
+                "SubTotal": "393.28",
+                "Tax": "16.69",
+                "Total": "393.69",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Christian Smith",
+                "Date": "2013-01-16",
+                "Currency": "USD",
+                "Address": "7170 Rubio Trafficway East Lynn, WV 35481 US",
+                "SubTotal": "126.54",
+                "Tax": "6.98",
+                "Total": "129.71",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Briana Tucker",
+                "Date": "2008-05-25",
+                "Currency": "EUR",
+                "Address": "3262 Jones Flat Suite 523 North Dennisville, OH 46865 US",
+                "SubTotal": "1357.66",
+                "Total": "1424.15",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Ashley Bailey",
+                "Date": "2004-07-01",
+                "Currency": "$",
+                "Discount": "47.1",
+                "Address": "14589 Rebecca Green Suite 387 New Joshualand, DC 75849 US",
+                "SubTotal": "1143.19",
+                "Tax": "43.67",
+                "Total": "1153.71"
+            }
+        ],
+        [
+            {
+                "Buyer": "Christopher White",
+                "Date": "2001-07-13",
+                "Currency": "USD",
+                "Address": "537 Anna Stream Apt. 280\nWest Debrastad, PR 28649 US",
+                "Tax": "55.45 USD",
+                "Total": "1179.52",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Mario Gonzales",
+                "Date": "2007-10-25",
+                "Currency": "USD",
+                "Address": "6862 Nicole Via Gomezview, TN 63730 US",
+                "SubTotal": "673.78",
+                "Tax": "45.10",
+                "Total": "692.33",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Robert Mcintosh",
+                "Date": "1999-08-13",
+                "Currency": "$",
+                "Address": "616 Robert Path Suite 857 Collinsfurt, WV 54290 US",
+                "SubTotal": "1020.55",
+                "Tax": "35.00",
+                "Total": "1008.40",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Nicholas Richardson",
+                "Date": "2022-11-28",
+                "Currency": "USD",
+                "Address": "86041 Catherine Union Stuartberg, NC 64098 US",
+                "SubTotal": "577.27",
+                "Total": "592.71",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Perry Jackson",
+                "Date": "2004-05-15",
+                "Currency": "$",
+                "Discount": "46.84",
+                "Address": "720 Hensley Pines Suite 349 East Angela, MP 65342 US",
+                "SubTotal": "1069.48",
+                "Tax": "58.13",
+                "Total": "1092.74"
+            }
+        ],
+        [
+            {
+                "Buyer": "Brenda Smith",
+                "Date": "2004-09-22",
+                "Currency": "EUR",
+                "Address": "1264 Tracey Light Lake Marcomouth, OH 71324 US",
+                "Tax": "38.88",
+                "Total": "801.21",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Gloria Griffin",
+                "Date": "2002-02-02",
+                "Currency": "EUR",
+                "Address": "3069 Rick Crossing Apt. 040 Georgebury, WV 79168 US",
+                "SubTotal": "649.89",
+                "Tax": "25.88",
+                "Total": "644.12",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "David Scott",
+                "Date": "1994-04-06",
+                "Currency": "USD",
+                "Address": "599 Erika Burgs Combsview, IA 43710 US",
+                "SubTotal": "423.56",
+                "Tax": "24.76",
+                "Total": "438.07",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Lynn Hughes",
+                "Date": "1997-10-03",
+                "Currency": "$",
+                "Address": "4829 Sergio Walks South Alexanderborough, PA 62908 US",
+                "SubTotal": "648.33",
+                "Total": "670.95",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Jasmine Davis",
+                "Date": "2019-04-18",
+                "Currency": "EUR",
+                "Discount": "22.64",
+                "Address": "911 Wallace Camp Suite 905 New Lindahaven, PW 51031 US",
+                "SubTotal": "592.65",
+                "Tax": "25.66",
+                "Total": "590.93"
+            }
+        ],
+        [
+            {
+                "Buyer": "Tammy Porter MD",
+                "Date": "2017-01-29",
+                "Currency": "$",
+                "Address": "8573 Christian Fords Suite 844 Whitebury, IL 60768 US",
+                "Tax": "17.89",
+                "Total": "553.89",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Lindsey Howell",
+                "Date": "2003-10-23",
+                "Currency": "EUR",
+                "Address": "5987 Smith Mission Suite 917 Susanbury, MO 01957 US",
+                "SubTotal": "421.09",
+                "Tax": "18.02",
+                "Total": "423.40",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Krista Williams MD",
+                "Date": "2017-04-11",
+                "Currency": "EUR",
+                "Address": "91205 Myers Junction Nixonberg, ND 33500 US",
+                "SubTotal": "770.03",
+                "Tax": "36.50",
+                "Total": "776.96",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "David Solomon",
+                "Date": "2021-12-11",
+                "Currency": "$",
+                "Address": "6140 Daniel Crest Apt. 912 Candicefort, AK 44420 US",
+                "SubTotal": "678.45",
+                "Total": "706.79",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Ashley Wood",
+                "Date": "1993-08-16",
+                "Currency": "EUR",
+                "Discount": "25.32",
+                "Address": "601 Hernandez Manor Sanchezchester, OK 87089 US",
+                "SubTotal": "550.49",
+                "Tax": "38.52",
+                "Total": "566.61"
+            }
+        ],
+        [
+            {
+                "Buyer": "Brady Castro",
+                "Date": "2005-03-03",
+                "Currency": "EUR",
+                "Address": "7322 Angela Tunnel Lake Jessicaport, MH 82274 US",
+                "Tax": "60.22",
+                "Total": "1512.79",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Hunter White",
+                "Date": "2016-07-25",
+                "Currency": "EUR",
+                "Address": "580 Johns Trafficway Apt. 099 Lake Elizabethfort, CA 70291 US",
+                "SubTotal": "1141.81",
+                "Tax": "72.16",
+                "Total": "1183.48",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Jocelyn Hernandez",
+                "Date": "2013-04-12",
+                "Currency": "USD",
+                "Address": "73729 Robinson Points Suite 847 Seanmouth, WY 51415 US",
+                "SubTotal": "148.40",
+                "Tax": "7.19",
+                "Total": "152.89",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Nathan Wright",
+                "Date": "2007-03-11",
+                "Currency": "EUR",
+                "Address": "89791 Armstrong Brooks Apt. 440 Leton, ME 89672 US",
+                "SubTotal": "1265.94",
+                "Total": "1269.13",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Erica Barrera",
+                "Date": "2005-01-30",
+                "Currency": "EUR",
+                "Discount": "12.11",
+                "Address": "858 Michael Circles Davidbury, PW 38580 US",
+                "SubTotal": "634.29",
+                "Tax": "20.48",
+                "Total": "624.70"
+            }
+        ],
+        [
+            {
+                "Buyer": "Matthew Cooper",
+                "Date": "2021-01-08",
+                "Currency": "$",
+                "Address": "097 Rivera Port Suite 314\nPort Lisaland, MI 05698 US",
+                "Tax": "42.16",
+                "Total": "712.61",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Abigail Jones",
+                "Date": "1994-07-13",
+                "Currency": "$",
+                "Address": "72229 Kim Port New Patricia, PR 93805 US",
+                "SubTotal": "202.21",
+                "Tax": "6.79",
+                "Total": "203.76",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Matthew Walsh",
+                "Date": "2006-04-05",
+                "Currency": "$",
+                "Address": "1941 Zachary Haven Gonzalesshire, WA 45215 US",
+                "SubTotal": "1447.74",
+                "Tax": "73.23",
+                "Total": "1473.05",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Jeanette Flores",
+                "Date": "2009-02-07",
+                "Currency": "USD",
+                "Address": "3052 Thomas Mountain Meganstad, MH 10808 US",
+                "SubTotal": "1510.21",
+                "Total": "1491.16",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:John Landry",
+                "Date": "2011-06-21",
+                "Currency": "$",
+                "Discount": "5.34",
+                "Address": "9296 Small Square Suite 660 New Geraldview, VI 71440 US",
+                "SubTotal": "373.18",
+                "Tax": "11.79",
+                "Total": "380.45"
+            }
+        ],
+        [
+            {
+                "Buyer": "Daniel Lee",
+                "Date": "2021-06-20",
+                "Currency": "EUR",
+                "Address": "3782 Lisa Plaza Apt. 990 Lake Albert, OR 52264 US",
+                "Tax": "65.35 EUR",
+                "Total": "973.25 EUR",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Collin Harrell",
+                "Date": "1993-10-31",
+                "Currency": "EUR",
+                "Address": "67845 Davis Shore Apt. 462 Nancymouth, TN 76864 US",
+                "SubTotal": "841.57",
+                "Tax": "47.11",
+                "Total": "851.06",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Cynthia Hodges",
+                "Date": "2019-09-16",
+                "Currency": "EUR",
+                "Address": "3613 Travis Estates Suite 631 South Carolynmouth, WV 85381 US",
+                "SubTotal": "783.68",
+                "Tax": "39.35",
+                "Total": "800.85",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Claire Davenport",
+                "Date": "2021-04-03",
+                "Currency": "EUR",
+                "Address": "50036 Clark Unions Hillville, SC 86237 US",
+                "SubTotal": "623.74",
+                "Total": "641.87",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Heather Snyder",
+                "Date": "2000-04-12",
+                "Currency": "EUR",
+                "Discount": "12.54",
+                "Address": "61303 Kayla Plains Apt. 801 Carolbury, WV 72045 US",
+                "SubTotal": "858.86",
+                "Tax": "36.45",
+                "Total": "873.58"
+            }
+        ],
+        [
+            {
+                "Buyer": "Shannon Lamb",
+                "Date": "2020-01-18",
+                "Currency": "$",
+                "Address": "39215 Rachel Ranch Apt. 305 Robertstad, NJ 75737 US",
+                "Tax": "26.29",
+                "Total": "709.51",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Mrs. Dana Hays",
+                "Date": "1999-03-07",
+                "Currency": "$",
+                "Address": "35444 Brown Keys Cooperport, VT 37515 US",
+                "SubTotal": "555.32",
+                "Tax": "32.78",
+                "Total": "577.38",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Joshua Snyder",
+                "Date": "2007-02-09",
+                "Currency": "$",
+                "Address": "88055 Odom Rapid West Brandy, WY 20718 US",
+                "SubTotal": "163.20",
+                "Tax": "5.51",
+                "Total": "166.15",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Tony Hoffman",
+                "Date": "2010-02-08",
+                "Currency": "EUR",
+                "Address": "2694 Jennifer Island Nunezview, UT 74734 US",
+                "SubTotal": "124.58",
+                "Tax": "$7.58",
+                "Total": "129.59",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Tracey Davis",
+                "Date": "2011-08-16",
+                "Currency": "EUR",
+                "Discount": "21.93",
+                "Address": "13144 Romero Drive Port Amber, NE 21875 US",
+                "SubTotal": "745.88",
+                "Tax": "48.55",
+                "Total": "778.99"
+            }
+        ],
+        [
+            {
+                "Buyer": "Jeffrey Cunningham III",
+                "Date": "2020-02-26",
+                "Currency": "EUR",
+                "Address": "850 Amanda Heights Suite 381\nLake Jeffrey, NE 33840 US",
+                "Tax": "36.44",
+                "Total": "1046.42",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Lauren Davis",
+                "Date": "2000-06-06",
+                "Currency": "USD",
+                "Address": "2518 Montgomery Pine Apt. 237 New Leonard, MS 19700 US",
+                "SubTotal": "676.26",
+                "Tax": "28.76",
+                "Total": "686.08",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Brandon Tucker",
+                "Date": "2017-04-30",
+                "Currency": "$",
+                "Address": "391 David Street Rushshire, KY 45152 US",
+                "SubTotal": "1165.71",
+                "Tax": "74.79",
+                "Total": "1208.44",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Troy Fields",
+                "Date": "1996-11-15",
+                "Currency": "$",
+                "Address": "938 Anderson Ridge\nMartinezshire, WY 08141 US",
+                "SubTotal": "860.80",
+                "Total": "873.97",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Robert Curtis",
+                "Date": "2002-08-02",
+                "Currency": "USD",
+                "Discount": "30.53",
+                "Address": "5215 May Circle Apt. 142 Georgeport, ME 34027 US",
+                "SubTotal": "630.82",
+                "Tax": "42.84",
+                "Total": "644.20"
+            }
+        ],
+        [
+            {
+                "Buyer": "George Campbell",
+                "Date": "2019-01-29",
+                "Currency": "$",
+                "Address": "033 Kelly Shoal Suite 318\nPort Ericfort, ND 45923 US",
+                "Tax": "14.71",
+                "Total": "280.45",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Alexander Mann",
+                "Date": "2007-05-28",
+                "Currency": "USD",
+                "Address": "363 Cherry Lane Apt. 122 Johnnyfurt, AS 55611 US",
+                "SubTotal": "1014.96",
+                "Tax": "69.53",
+                "Total": "1045.01",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Roberta Schaefer",
+                "Date": "1998-04-01",
+                "Currency": "USD",
+                "Address": "2699 Sandra Shoals Andrewsfort, ME 92873 US",
+                "SubTotal": "549.21",
+                "Tax": "23.47",
+                "Total": "549.12",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Ryan Thomas V",
+                "Date": "2019-09-03",
+                "Currency": "USD",
+                "Address": "1935 Woods Station New Jasmine, FM 83827 US",
+                "SubTotal": "1021.67",
+                "Total": "1033.68",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Laura Bennett",
+                "Date": "1993-05-12",
+                "Currency": "$",
+                "Discount": "10.9",
+                "Address": "5673 Richard Islands Jessicamouth, MS 51278 US",
+                "SubTotal": "289.00",
+                "Tax": "8.74",
+                "Total": "291.44"
+            }
+        ],
+        [
+            {
+                "Buyer": "Shannon Buck",
+                "Date": "1999-05-12",
+                "Currency": "USD",
+                "Address": "2954 Brown Lights Hollandbury, ME 42543 US",
+                "Tax": "19.09",
+                "Total": "608.85",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Mark Thompson",
+                "Date": "2010-07-13",
+                "Currency": "USD",
+                "Address": "31702 Tracy Overpass North Jasmin, SC 50659 US",
+                "SubTotal": "326.73",
+                "Tax": "19.41",
+                "Total": "342.15",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Brian Valdez",
+                "Date": "2008-09-03",
+                "Currency": "USD",
+                "Address": "3343 Valenzuela Mountain West Phillipport, OH 38545 US",
+                "SubTotal": "560.74",
+                "Tax": "24.62",
+                "Total": "572.86",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Roger Owens",
+                "Date": "2015-10-06",
+                "Currency": "USD",
+                "Address": "844 Jenna Meadow New Erinburgh, KS 91075 US",
+                "SubTotal": "754.69",
+                "Total": "771.00",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Wendy Drake",
+                "Date": "2016-04-06",
+                "Currency": "USD",
+                "Discount": "9.57",
+                "Address": "756 Claire Inlet Suite 825 Samanthaview, MT 70815 US",
+                "SubTotal": "646.73",
+                "Tax": "25.20",
+                "Total": "649.68"
+            }
+        ],
+        [
+            {
+                "Buyer": "Amanda Snow",
+                "Date": "2018-09-01",
+                "Currency": "$",
+                "Address": "870 Charles Mount Lake Annebury, KY 77091 US",
+                "Tax": "31.98",
+                "Total": "478.74",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Clifford Perry",
+                "Date": "2018-09-04",
+                "Currency": "$",
+                "Address": "2707 Stephanie Forge South John, DE 90116 US",
+                "SubTotal": "339.64",
+                "Tax": "21.00",
+                "Total": "357.11",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Scott Hunt",
+                "Date": "2023-01-18",
+                "Currency": "EUR",
+                "Address": "97757 Matthew Village Suite 231 Lake Ashley, SC 47240 US",
+                "SubTotal": "835.46",
+                "Tax": "58.20",
+                "Total": "858.49",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Colleen Moyer",
+                "Date": "2002-06-17",
+                "Currency": "USD",
+                "Address": "94321 Gonzalez Mews Suzannetown, VI 17968 US",
+                "SubTotal": "1112.58",
+                "Total": "1120.27",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Mrs. Amanda Rodriguez",
+                "Date": "2018-07-11",
+                "Currency": "EUR",
+                "Discount": "9.23",
+                "Address": "59779 Karen Point North Tyler, ID 05169 US",
+                "SubTotal": "603.54",
+                "Tax": "19.52",
+                "Total": "613.64"
+            }
+        ],
+        [
+            {
+                "Buyer": "William Yoder",
+                "Date": "2022-03-20",
+                "Currency": "USD",
+                "Address": "7467 Jeanne Lodge New Carl, NH 52963 US",
+                "Tax": "50.88",
+                "Total": "782.76",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Jennifer Sanchez",
+                "Date": "2002-07-02",
+                "Currency": "EUR",
+                "Address": "5736 Charles Road West Timothy, ME 33970 US",
+                "SubTotal": "200.66",
+                "Tax": "8.56",
+                "Total": "200.59",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Michael Wall",
+                "Date": "1994-04-14",
+                "Currency": "USD",
+                "Address": "126 Frazier Ford Apt. 193 North Meganstad, ID 26052 US",
+                "SubTotal": "585.57",
+                "Tax": "26.64",
+                "Total": "596.75",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Christina Mcgee",
+                "Date": "2019-09-24",
+                "Currency": "USD",
+                "Address": "986 Galvan Parkways Clarkshire, ID 31195 US",
+                "SubTotal": "404.02",
+                "Total": "417.70",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Cody Chang",
+                "Date": "2016-06-03",
+                "Currency": "USD",
+                "Discount": "10.13",
+                "Address": "1140 Michael Lane Suite 878 Ashleyberg, PA 38170 US",
+                "SubTotal": "460.41",
+                "Tax": "22.03",
+                "Total": "470.42"
+            }
+        ],
+        [
+            {
+                "Buyer": "Wendy Brown",
+                "Date": "1994-02-12",
+                "Currency": "EUR",
+                "Address": "209 Wesley Lock Suite 497 East Michael, KY 52990 US",
+                "Tax": "23.71",
+                "Total": "369.46",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Dana Green",
+                "Date": "2014-01-15",
+                "Currency": "USD",
+                "Address": "6043 Lambert Well Juanhaven, ME 57438 US",
+                "SubTotal": "650.09",
+                "Tax": "35.54",
+                "Total": "655.01",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Haley Hall",
+                "Date": "2007-11-03",
+                "Currency": "$",
+                "Address": "542 Morris Ridge Brownhaven, NE 18734 US",
+                "SubTotal": "677.06",
+                "Tax": "29.11",
+                "Total": "686.54",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Alfred Vasquez",
+                "Date": "1997-03-11",
+                "Currency": "EUR",
+                "Address": "51886 Deborah Forks Paulfurt, ND 74965 US",
+                "SubTotal": "554.46",
+                "Total": "568.03",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Monica Fuller",
+                "Date": "2009-04-28",
+                "Currency": "$",
+                "Discount": "12.78",
+                "Address": "866 Thomas Ways Suite 282 New Tonya, KS 08465 US",
+                "SubTotal": "445.25",
+                "Tax": "16.61",
+                "Total": "441.11"
+            }
+        ],
+        [
+            {
+                "Buyer": "Joseph Kennedy",
+                "Date": "2007-04-20",
+                "Currency": "$",
+                "Address": "69526 Annette Tunnel\nNew Jennifer, CA 04412 US",
+                "Tax": "23.69",
+                "Total": "489.97",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Colton Santiago",
+                "Date": "1998-02-17",
+                "Currency": "EUR",
+                "Address": "62264 Anita Throughway New Johnchester, OR 97583 US",
+                "SubTotal": "471.28",
+                "Tax": "20.21",
+                "Total": "473.44",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Marcus Elliott",
+                "Date": "2013-04-20",
+                "Currency": "EUR",
+                "Address": "36982 Lindsay Rue South Anthony, MA 64190 US",
+                "SubTotal": "647.41",
+                "Tax": "26.03",
+                "Total": "644.63",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Megan Howard",
+                "Date": "2012-05-03",
+                "Currency": "USD",
+                "Address": "6833 Marks Rest Apt. 028 North Amyton, FL 25893 US",
+                "SubTotal": "323.85",
+                "Total": "322.97",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Shannon Smith",
+                "Date": "2006-08-07",
+                "Currency": "EUR",
+                "Discount": "11.28",
+                "Address": "274 Christine Ways Erinchester, SD 30741 US",
+                "SubTotal": "308.29",
+                "Tax": "15.89",
+                "Total": "310.52"
+            }
+        ],
+        [
+            {
+                "Buyer": "Madeline Harris",
+                "Date": "2006-03-06",
+                "Currency": "USD",
+                "Address": "640 Courtney Forge Port Miguel, DC 24632 US",
+                "Tax": "32.39",
+                "Total": "717.93",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "David Hogan",
+                "Date": "1993-07-06",
+                "Currency": "$",
+                "Address": "5270 Lauren Islands Suite 667 Port Kevinside, KY 20127 US",
+                "SubTotal": "649.83",
+                "Tax": "41.78",
+                "Total": "670.88",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Bryan Simon",
+                "Date": "1996-04-03",
+                "Currency": "USD",
+                "Address": "169 Murphy Plains Suite 837 Lake Jessica, DC 79922 US",
+                "SubTotal": "375.59",
+                "Tax": "21.56",
+                "Total": "379.80",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Emma Riggs",
+                "Date": "2017-04-25",
+                "Currency": "$",
+                "Address": "198 Barton Viaduct Lake Belindahaven, PR 68557 US",
+                "SubTotal": "354.44",
+                "Total": "355.71",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Eileen Clark",
+                "Date": "1997-12-31",
+                "Currency": "$",
+                "Discount": "24.25",
+                "Address": "40802 Mary Plain Wagnerport, OR 78992 US",
+                "SubTotal": "739.26",
+                "Tax": "32.45",
+                "Total": "754.12"
+            }
+        ],
+        [
+            {
+                "Buyer": "Charlotte Chambers",
+                "Date": "2016-02-24",
+                "Currency": "EUR",
+                "Address": "9386 Molina Station Apt. 680\nJenniferfurt, MO 98653 US",
+                "Tax": "4.84",
+                "Total": "105.38",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Thomas Adams",
+                "Date": "2012-10-14",
+                "Currency": "EUR",
+                "Address": "421 Robert Valley Apt. 173 Saratown, MS 84994 US",
+                "SubTotal": "1117.65",
+                "Tax": "62.06",
+                "Total": "1166.19",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Debbie White",
+                "Date": "2018-04-20",
+                "Currency": "USD",
+                "Address": "4520 Vega Stream Apt. 421 South Cheryl, GU 09989 US",
+                "SubTotal": "104.51",
+                "Tax": "5.21",
+                "Total": "105.72",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Teresa Fields",
+                "Date": "2022-07-08",
+                "Currency": "EUR",
+                "Address": "7731 Charles Trace Murphyberg, MD 40922 US",
+                "SubTotal": "532.63",
+                "Total": "550.31",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:James Diaz",
+                "Date": "2016-03-11",
+                "Currency": "USD",
+                "Discount": "31.37",
+                "Address": "35003 Mark Forest Apt. 586 Lake Ronaldton, CA 36947 US",
+                "SubTotal": "721.05",
+                "Tax": "37.43",
+                "Total": "728.05"
+            }
+        ],
+        [
+            {
+                "Buyer": "Maria Cain",
+                "Date": "2002-12-20",
+                "Currency": "USD",
+                "Address": "3445 Pruitt Hills West Jose, HI 96647 US",
+                "Tax": "20.42",
+                "Total": "514.49",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Lee Smith",
+                "Date": "2013-09-19",
+                "Currency": "$",
+                "Address": "368 Larson Streets Suite 433 South Christinastad, NJ 75733 US",
+                "SubTotal": "201.98",
+                "Tax": "6.35",
+                "Total": "205.04",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "to:Krystal Fowler",
+                "Date": "2016-11-02",
+                "Currency": "$",
+                "Address": "97589 Victor Extensions Port John, MS 48393 US",
+                "SubTotal": "234.36",
+                "Tax": "13.42",
+                "Total": "236.13",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Zachary Johns",
+                "Date": "2001-12-09",
+                "Currency": "USD",
+                "Address": "031 Brittney Estates Suite 988 North Jessicahaven, OR 07935 US",
+                "SubTotal": "170.02",
+                "Total": "176.21",
+                "Discount": null,
+                "Tax": null
+            }
+        ]
+    ]
+}

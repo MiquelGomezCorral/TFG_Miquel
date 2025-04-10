@@ -61,7 +61,7 @@ def validate_model(output_path: str, ground_truths, model_predictions, verbose: 
         new_scores, all_correct, proportion, mistakes = validate_prediction(gt, out)
         scores = update_scores(scores, new_scores)# scores.update(new_scores)
         if verbose:
-            print(F" - Mistakes: mistakes{mistakes}")
+            print(F" - Mistakes: mistakes{mistakes}", end="\r")
         
     scores = norm_scores(scores, N)
     # key: (val, total_acuracy, proportion, precision, recall, fscore)
