@@ -18,10 +18,6 @@ class LLMStructuredResponse(BaseModel):
         title="Date",
         description="The date of the invoice in YYYY-MM-DD format. IF IT DOES NOT APPEAR, 'None' should be assigned to this values."
     )
-    # shopping_or_tax: bool | None = Field(
-    #     title="Shopping or Tax",
-    #     description="True for commercial purchases, False for tax-related transactions. IF IT DOES NOT APPEAR, 'None' should be assigned to this values.",
-    # )
     currency: str | None = Field(
         title="Currency",
         description="The currency used in the invoice. IF IT DOES NOT APPEAR, 'None' should be assigned to this values."

@@ -24,6 +24,7 @@ from ocr_llm_module.ocr.azure.document_intelligence import AzureDocumentIntellig
 
 from TFG.utils.utils import print_separator
 from TFG.utils.time_traker import TimeTracker
+from TFG.utils.token_metrics import get_text_cost
 from TFG.scripts_ocr_llm.llm import LLMStructuredResponse, document_to_llm
 from TFG.scripts_ocr_llm.ocr import document_to_orc
 
@@ -47,12 +48,13 @@ def main(args):
     
     models: list[str] = [
         # f"ocr_finetuned_{i*5}x5_v1" for i in range(1,5+1)
-        # None,
-        "ocr_finetuned_5x5_v1",
-        "ocr_finetuned_4x5_v1",
+        None,
+        # "prebuilt-read"
+        # "ocr_finetuned_5x5_v1",
+        # "ocr_finetuned_4x5_v1",
         # "ocr_finetuned_3x5_v1",
         # "ocr_finetuned_5x2_v1",
-        "ocr_finetuned_5x1_v1",
+        # "ocr_finetuned_5x1_v1",
     ]
     
     # ================ Process files ================
@@ -61,18 +63,22 @@ def main(args):
     
     ground_truths: list[dict] = []
     predictions: list[LLMStructuredResponse] = []
-
+    llm_costs: dict[str, dict[str, float]] = {}
     TIME_TRACKER.start(verbose=False)
     TIME_TRACKER.start_lap(verbose=True)
     for model in models:
         TIME_TRACKER.track(model)
-        
-        save_path_model = os.path.join(args.save_path, model)
+        model_name = model if model is not None else 'prebuilt-read'
+        llm_costs[model_name] = {
+            "input": 0.0,
+            "output": 0.0
+        }
+        save_path_model = os.path.join(args.save_path, model_name)
         # BACKUP CHECKING IN CASE OF CRASH
         save_path_model_temp = os.path.join(save_path_model, "temp")
         os.makedirs(save_path_model_temp, exist_ok=True)
         
-        MODEL_TIME_TRACKER = TimeTracker(name=model, start_track_now=True)
+        MODEL_TIME_TRACKER = TimeTracker(name=model_name, start_track_now=True)
         with open(metadata_path, "r", encoding="utf-8") as f:
             for line in itertools.islice(f, args.max_files):
                 document = json.loads(line)
@@ -110,8 +116,12 @@ def main(args):
                 if args.llm:
                     # Define the prompt and send it to send to the LLM
                     print(" - Creating structured output with LLM...", end="\r")
+                    llm_costs[model_name]["input"] += get_text_cost(document_content, type='input')
                     llm_output = document_to_llm(llm_client, document_content)
-                    prediction = json.loads(llm_output.model_dump_json())
+                    json_output = llm_output.model_dump_json()
+                    prediction = json.loads(json_output)
+                    llm_costs[model_name]["output"] += get_text_cost(json_output, type='output')
+                    
                     MODEL_TIME_TRACKER.track(tag="Creating structured output.", space=False)
                 else:
                     prediction = json.loads(json_output)
@@ -128,7 +138,7 @@ def main(args):
         # END WITH
 
         # OUTPUT MANAGEMENTj
-        save_output(save_path_model, ground_truths, predictions, TIME_TRACKER)
+        save_output(save_path_model, ground_truths, predictions, costs=llm_costs[model_name], time_tracker=TIME_TRACKER)
         
         TIME_TRACKER.stimate_lap_time(N=len(models))
         TIME_TRACKER.finish_lap()
@@ -159,9 +169,10 @@ def prepare_document(file_io: io.BytesIO, document_path: str) -> io.BytesIO:
     return file_io
 
 
-def save_output(save_path, ground_truths, predictions, TIME_TRACKER):
+def save_output(save_path, ground_truths, predictions, costs, time_tracker):
     print("\nSaving output...", end="\r")
     json_output = {
+        "llm_costs": costs,
         "ground_truths": ground_truths,
         "predictions": predictions
     }
@@ -170,7 +181,7 @@ def save_output(save_path, ground_truths, predictions, TIME_TRACKER):
     with open(os.path.join(save_path, "output.json"), "w", encoding="utf-8") as out_json:
         json.dump(json_output, out_json, ensure_ascii=False, indent=4)
     
-    TIME_TRACKER.track("Saving output.")
+    time_tracker.track("Saving output.")
     # print(json_output)
     return json_output
 
@@ -185,7 +196,7 @@ if __name__ == "__main__":
         help="Local path from ./app to the dataset."
     )
     parser.add_argument(
-        "-s", "--save_path", type=str, default="./TFG/outputs/ocr_llm",
+        "-s", "--save_path", type=str, default="./TFG/outputs/ocr_llm_test",
         help="Local path from ./app to the folder where all the outputs will be placed."
     )
     parser.add_argument(

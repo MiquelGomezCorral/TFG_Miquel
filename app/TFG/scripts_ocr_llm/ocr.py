@@ -5,7 +5,11 @@ from ocr_llm_module.ocr.azure.document_intelligence import AzureDocumentIntellig
 
 def document_to_orc(ocr_client: AzureDocumentIntelligenceClient, file_io: io.BytesIO, prebuilt_model: str = None):
     # IMPORTANT TO CHANGE THE TYPE OF DOCUMENT THAT THE OCR HAS TO READ.
-    pages, result = ocr_client.read_document(file_io, prebuilt_model=prebuilt_model)
+    
+    if prebuilt_model is None:
+        pages, result = ocr_client.read_document(file_io)
+    else:
+        pages, result = ocr_client.read_document(file_io, prebuilt_model=prebuilt_model)
 
     # check_orc_outpu(result)
     fields_content, json_output = get_fields_from_result(result)
@@ -56,8 +60,11 @@ def get_fields_from_result(result) -> tuple[dict, str]:
     Returns:
         tuple[dict, str]: Structured output fields in dict and in json format
     """
-    documents_fields = [document.fields.items() for document in result.documents]
     fields_content = []
+    if not result.documents:
+        return fields_content, dict()
+    
+    documents_fields = [document.fields.items() for document in result.documents]
     for document_fields in documents_fields:
         fields_dict = dict()
         for fields in document_fields:
