@@ -8,15 +8,17 @@ from TFG.utils.utils import print_separator
 # =================================================
     
 def parse_seconds_to_minutes(sec: float) -> str:
-    minutes = int(sec // 60)
+    hours = int(sec // 3600)
+    minutes = int((sec % 3600) // 60)
     seconds = int(sec % 60)
     decimals = int((sec % 1) * 10000)
 
-    if minutes > 0:
+    if hours > 0:
+        return f"{hours:02} hours, {minutes:02} mins, {seconds:02}.{decimals:04} sec"
+    elif minutes > 0:
         return f"{minutes:02} mins, {seconds:02}.{decimals:04} sec"
     else:
         return f"{seconds:02}.{decimals:04} sec"
-
 
 def print_time(sec: float, n_files: Optional[int] = None, space: bool = False, prefix: str = "", sufix: str = "", out_file: Optional[TextIO] = None) -> None:
     if space:
