@@ -121,6 +121,8 @@ def train_model(args):
         metrics = [("fatura_metric", partial(fatura_metric))] 
     )
     
+    os.makedirs(args.result_path, exist_ok=True)
+    
     TIME_TRAKER = TimeTracker(name="Training")
     TIME_TRAKER.start(verbose=False)
     
