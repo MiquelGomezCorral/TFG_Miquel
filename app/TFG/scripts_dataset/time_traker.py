@@ -27,7 +27,7 @@ def print_time(sec: float, n_files: Optional[int] = None, space: bool = False, p
     
     if n_files is not None:
         message = f"{prefix}\n - {n_files:4} files in: {parse_seconds_to_minutes(sec)}{sufix}.\n"
-        message += f" - Per document:  {parse_seconds_to_minutes(sec / n_files)}"
+        message += f" -  Per document:  {parse_seconds_to_minutes(sec / n_files)}"
     else:
         message = f"{prefix}Time: {parse_seconds_to_minutes(sec)}{sufix}."
 
@@ -83,7 +83,7 @@ class TimeTracker:
             self.hist[tag] = (t, diff)
         
         if verbose: 
-            print_tag = tag if not self.lap_runing else f"{tag} lap {self.lap_number}"
+            print_tag = tag if not self.lap_runing else f"{tag} lap {self.lap_number}/{self.lap_spected_files}"
             print_time(diff, prefix=f"⏳ {print_tag}", sufix=" ⏳", space=space)
             
         self.last_time = t
@@ -92,6 +92,11 @@ class TimeTracker:
     # ============================================================================
     #                              LAPS MANAGEMENT
     # ============================================================================
+    def set_lap_number(self, n: int):
+        self.lap_number = n
+    def increase_lap_number(self, n: int = 1):
+        self.lap_number += n
+    
     def start_lap(self, N: int = None, verbose: bool = False, mute_warning: bool = False) -> int:
         """Starts a new lap with its oun metrics and returns the number of the current started lap
 
@@ -104,7 +109,8 @@ class TimeTracker:
             int: Number of the current started lap.
         """
         self.lap_runing = True
-        self.lap_number += 1
+        self.increase_lap_number()
+        self.lap_spected_files = N
         if len(self.lap_hist) > 0 and not mute_warning:
             print("⚠️ WARNING: Starting lap without finishing previous. The records will be overritten. ⚠️")
             
@@ -118,6 +124,9 @@ class TimeTracker:
         return self.lap_number
         
     def finish_lap(self):
+        if not self.lap_runing:
+            self.start_lap()
+            
         self.lap_runing = False
         
         t = time.time()
@@ -137,7 +146,9 @@ class TimeTracker:
     # ============================================================================
     #                              STIMATE TIME
     # ============================================================================
-    def stimate_lap_time(self, N: int, mute_warning: bool = False):
+    def stimate_lap_time(self, N: int = None, mute_warning: bool = False):
+        if N is None:
+            N = self.lap_spected_files
         if not self.lap_runing and not mute_warning:
             print("⚠️ WARNING: Stimating lap without starting it. Returning,,,⚠️")
             return

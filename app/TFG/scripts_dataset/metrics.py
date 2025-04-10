@@ -111,8 +111,8 @@ def check_date_value(val_gt, val_pred, verbose: bool = False):
             continue
 
     if not date_obj_pred:
-        if verbose:
-            print(f"val_pred '{val_pred}' didn't match any known formats: {pred_formats}")
+        #if verbose:
+            # print(f"val_pred '{val_pred}' didn't match any known formats: {pred_formats}")
         return False
     
     # if conv_val_gt != conv_val_pred:
