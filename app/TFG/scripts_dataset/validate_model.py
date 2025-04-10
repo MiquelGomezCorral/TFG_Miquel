@@ -52,6 +52,12 @@ def validate_model(output_path: str, ground_truths, model_predictions, verbose: 
     }
     
     for gt, out in zip(ground_truths, model_predictions):
+        if isinstance(out, list):
+            if out:
+                out = out[0]
+            else: 
+                print(f"\n - Skiping validtaion \n{out = } \n{gt = }")
+                continue
         new_scores, all_correct, proportion, mistakes = validate_prediction(gt, out)
         scores = update_scores(scores, new_scores)# scores.update(new_scores)
         if verbose:
@@ -100,7 +106,17 @@ def validate_prediction(gt, pred, verbose: bool = False):
         pred = json.loads(pred)
 
     # =============================
-    #           VALIDATE ANSWER
+    #           UNIFY KEYS 
+    # =============================
+    gt = {
+        key_gt.lower(): val_gt for key_gt, val_gt in gt.items()
+    }
+    pred = {
+        key_pred.lower(): val_pred for key_pred, val_pred in pred.items()
+    }
+
+    # =============================
+    #         VALIDATE ANSWER
     # =============================
     for key_gt, val_gt in gt.items():
         if key_gt not in pred:
