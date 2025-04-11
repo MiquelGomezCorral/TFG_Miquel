@@ -63,7 +63,7 @@ class Config:
     task_name: str = "fatrua_train"
     
     image_size: tuple[int, int] = (1280, 960)
-    max_length: int = 768
+    max_length: int = 384 # 128 * 3
     save_top_k: int = 1
     special_token: str = "<s_fatura>"
     # config: Model_Config = field(default_factory=Model_Config)  # Nested Config dataclass
