@@ -25,6 +25,7 @@ TESTING_ROUTES=(
     TFG/outputs/donut_v2/donut_comp_5x5_30_100
     TFG/outputs/donut_v2/donut_comp_6x5_30_100
 
+    TFG/outputs/orc_llm_keep/prebuilt-read
     TFG/outputs/orc_llm_keep/ocr_finetuned_2x5_v1
     TFG/outputs/orc_llm_keep/ocr_finetuned_3x5_v1
     TFG/outputs/orc_llm_keep/ocr_finetuned_4x5_v1
