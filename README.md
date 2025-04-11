@@ -25,3 +25,5 @@ https://drive.google.com/drive/folders/1BIYWqM5QI9LuC572ClKfI6v4rOdH0o1e
 
 - Go to the docker extension, rightclick on tfg_miquel-python > attach Visual Studio Code
 ```
+
+* [ ]

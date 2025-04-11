@@ -170,8 +170,15 @@ def validate_answer(key_gt, val_gt, val_pred) -> bool:
     
     # THIS SHOULD NOT BE DONE: THE MODEL SHOULD BE ABLE TO SPECIFY IF A FIELD APPEARS OR NOT
     if key_gt in ["discount", "tax", "subtotal", "total"]:
-        if val_gt is None:
-            return val_pred is None or val_pred == 0.0
+        valid_values = [None, 'none', '', 0.0]
+        if val_gt in valid_values:
+            return val_pred in valid_values
+        else:
+            val_gt = float(val_gt)
+            try:
+                val_pred = float(val_pred)
+            except ValueError as e:
+                return False
     
     if key_gt == "shopping_or_tax":
         return True
