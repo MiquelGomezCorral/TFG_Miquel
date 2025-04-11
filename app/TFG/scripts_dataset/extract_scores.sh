@@ -1,4 +1,6 @@
 #!/bin/bash
+# Stop the script if any command fails
+set -e
 
 # python TFG/scripts_dataset/validate_model.py -o TFG/outputs/donut_v2/donut_comp_1x5_30_100
 
@@ -39,7 +41,8 @@ for i in "${!TESTING_ROUTES[@]}"; do
     TR=${TESTING_ROUTES[$i]}
     
     echo "Validating output at ${TR}"
-    python TFG/scripts_dataset/validate_model.py -o ${TR}
+    # If this command fails, the script will exit here
+    python TFG/scripts_dataset/validate_model.py -o ${TR} -f 100
 done
 
 echo "✅ Validated ${#TESTING_ROUTES[@]} outputs successfully!"

@@ -1,5 +1,6 @@
 import os
 import sys
+
 if __name__ == "__main__":
     curr_directory = os.getcwd()
     print("\nStarting Directory:", curr_directory)
@@ -15,16 +16,13 @@ if __name__ == "__main__":
     
 import json
 import argparse
-from datetime import datetime
-from collections import Counter
 from TFG.utils.utils import print_separator
 from TFG.utils.metrics import print_scores, save_scores
-from TFG.utils.metrics import (
-    check_date_value, levenshtein_similarity, update_scores, norm_scores, precision_recall_f1
-)
+from TFG.utils.metrics import update_scores, norm_scores
+from TFG.utils.validation_utils import validate_prediction, validate_prediction_ed
 
 
-def load_output_validate_model(output_path: str):
+def load_output_validate_model(output_path: str, max_files: int = -1, max_ed: int = 5):
     print_separator(f'Opening file...')
     output_file_path = os.path.join(output_path, "output.json")
     print(f"File: {output_file_path}")
@@ -35,13 +33,13 @@ def load_output_validate_model(output_path: str):
     if "ground_truths" not in output or "predictions" not in output:
         raise KeyError("Missing required keys: 'ground_truths' or 'predictions'.")
     
-    ground_truths = output["ground_truths"]
-    model_predictions = output["predictions"]     
+    ground_truths = output["ground_truths"][:max_files]
+    model_predictions = output["predictions"][:max_files]
     
-    validate_model(output_path, ground_truths, model_predictions, verbose=True)
+    validate_model(output_path, ground_truths, model_predictions, max_files=max_files, max_ed=max_ed, verbose=True)
 
 
-def validate_model(output_path: str, ground_truths, model_predictions, verbose: bool = True) -> dict:
+def validate_model(output_path: str, ground_truths, model_predictions, max_files: int = -1, max_ed: int = 5, verbose: bool = True) -> dict:
     print_separator(f'Validating output...')
     N = len(ground_truths)
     if N == 0: raise ValueError("Empty output, no output values found.")
@@ -50,6 +48,14 @@ def validate_model(output_path: str, ground_truths, model_predictions, verbose: 
         "all": (0,0,0,0,0), # N_hist, Accuracy, Precision, Recall, Fscore
         **{key: (0,0,0,0,0) for key in ground_truths[0]}
     }
+    scores_leiv: dict[dict[str, tuple]] = {
+        i : {
+            "all": (0,0,0,0,0), # N_hist, Accuracy, Precision, Recall, Fscore
+            **{key: (0,0,0,0,0) for key in ground_truths[0]}
+        }
+        for i in range(1, max_ed+1)
+    }
+    
     
     for gt, out in zip(ground_truths, model_predictions):
         if isinstance(out, list):
@@ -59,9 +65,14 @@ def validate_model(output_path: str, ground_truths, model_predictions, verbose: 
                 print(f"\n - Skiping validtaion \n{out = } \n{gt = }")
                 continue
         new_scores, all_correct, proportion, mistakes = validate_prediction(gt, out)
-        scores = update_scores(scores, new_scores)# scores.update(new_scores)
+        scores = update_scores(scores, new_scores)
+        
+        for i, sub_score in scores_leiv.items():
+            new_scores, all_correct, accuracy, mistaken_keys = validate_prediction_ed(gt, out, edit_distance=i)
+            scores_leiv[i] = update_scores(sub_score, new_scores)
+        
         if verbose:
-            print(F" - Mistakes: mistakes{mistakes}", end="\r")
+            print(F" - Mistakes: {mistakes}", end="\r")
         
     scores = norm_scores(scores, N)
     # key: (val, total_acuracy, proportion, precision, recall, fscore)
@@ -71,120 +82,22 @@ def validate_model(output_path: str, ground_truths, model_predictions, verbose: 
     if output_path:
         print_separator(f'Saving output...')
         os.makedirs(output_path, exist_ok=True)
-        with open(os.path.join(output_path, "scores.txt"), "w") as out_file:
+        
+        out_file_name = f"scores{f'_{max_files}' if max_files >= 0 else ''}"
+        with open(os.path.join(output_path, f"{out_file_name}.txt"), "w") as out_file:
             print_scores(scores, N, file_out = out_file)
-        save_scores(scores, N, output_path)
+        save_scores(scores, N, output_path, out_file_name)
+        
+        for i, sub_score in scores_leiv.items():
+            sub_score = norm_scores(sub_score, N)
+            out_file_name = f"scores{f'_{max_files}' if max_files >= 0 else ''}_ed{i}"
+            with open(os.path.join(output_path, f"{out_file_name}.txt"), "w") as out_file:
+                print_scores(sub_score, N, file_out = out_file)
+            save_scores(sub_score, N, output_path, out_file_name)
     
     print(f"Validate model: {scores = }")
-    return scores
+    return scores, sub_score
         
-        
-def validate_prediction(gt, pred, verbose: bool = False):
-    """
-        Recieve json str or dict ground trugths and model predictions and outputs the corresponding metrics
-    """
-    scores: dict[str, tuple] = {
-        "all": (0,0,0,0,0), # Num hits, Proportion, Precision, Recall, Fscore
-        **{key: (0,0,0,0,0) for key in gt}
-    }
-    total_keys: int = len(gt)
-    n_correct: int = 0
-    mistaken_keys: list = list()
-    
-    # =============================
-    #           CHECK INPUT
-    # =============================
-    if not isinstance(gt, dict):
-        if len(gt) == 0: 
-            print("WARNING, EMPTY 'Ground Truth':", gt)
-            return scores, False, 0
-        gt = json.loads(gt)
-    if not isinstance(pred, dict):
-        if len(pred) == 0: 
-            print("WARNING, EMPTY 'Prediction':", pred)
-            return scores, False, 0
-        pred = json.loads(pred)
-
-    # =============================
-    #           UNIFY KEYS 
-    # =============================
-    gt = {
-        key_gt.lower(): val_gt for key_gt, val_gt in gt.items()
-    }
-    pred = {
-        key_pred.lower(): val_pred for key_pred, val_pred in pred.items()
-    }
-
-    # =============================
-    #         VALIDATE ANSWER
-    # =============================
-    for key_gt, val_gt in gt.items():
-        if key_gt not in pred:
-            scores[key_gt] = (0, 0, 0, 0, 0)
-            mistaken_keys.append(key_gt)
-        else:
-            correct = validate_answer(key_gt, val_gt, pred[key_gt])
-            accuracy, precision, recall, f_score = precision_recall_f1(val_gt, pred[key_gt])
-            
-            if not correct: 
-                mistaken_keys.append(key_gt)
-            else:
-                n_correct += 1 
-            scores[key_gt] = (int(correct), accuracy, precision, recall, f_score)
-    
-    if verbose:
-        print(" - Mistakes:", mistaken_keys)
-    
-    accuracy = n_correct / total_keys
-    all_correct = len(mistaken_keys) == 0
-    gt_str = " ".join([str(val) for val in gt.values()])
-    pred_str = " ".join([str(val) for val in pred.values()])
-    _, precision, recall, f_score = precision_recall_f1(gt_str, pred_str)
-    
-    scores["all"] = (int(all_correct), accuracy, precision, recall, f_score)
-    return scores, all_correct, accuracy, mistaken_keys
-        
-
-def validate_answer(key_gt, val_gt, val_pred) -> bool: 
-    val_gt, val_pred = str(val_gt), str(val_pred)
-    if isinstance(val_gt, str):
-        val_gt = val_gt.lower()
-    if isinstance(val_pred, str):
-        val_pred = val_pred.lower()
-    
-    if key_gt == "date":
-        return check_date_value(val_gt, val_pred, verbose=True)
-    
-    if key_gt == "currency":
-        usd = ["$", "usd"]
-        eur = ["€", "eur"]
-        if val_gt in usd:
-            return val_pred in usd
-        elif val_gt in eur:
-            return val_pred in eur
-        else: return False
-        
-    if key_gt == "address":
-        similarity = levenshtein_similarity(val_gt, val_pred)
-        return similarity > 0.95
-    
-    # THIS SHOULD NOT BE DONE: THE MODEL SHOULD BE ABLE TO SPECIFY IF A FIELD APPEARS OR NOT
-    if key_gt in ["discount", "tax", "subtotal", "total"]:
-        valid_values = [None, 'none', '', 0.0]
-        if val_gt in valid_values:
-            return val_pred in valid_values
-        else:
-            val_gt = float(val_gt)
-            try:
-                val_pred = float(val_pred)
-            except ValueError as e:
-                return False
-    
-    if key_gt == "shopping_or_tax":
-        return True
-        
-    return val_gt == val_pred
-
 
 # ==========================================================
 #                       MAIN
@@ -195,10 +108,18 @@ if __name__ == "__main__":
         "-o", "--output_path", type=str, default="TFG/outputs/FATURA/orc_llm/FATURA_GOOD",
         help="Path to the model output. Will be used as result path as well."
     )
+    parser.add_argument(
+        "-f", "--max_files", type=int, default=-1,
+        help="Max number of lines to process from the output. Default to -1 -> ALL"
+    )
+    parser.add_argument(
+        "-d", "--max_ed", type=int, default=5,
+        help="Max edit distance tolerance for cheking answers."
+    )
     args, left_argv = parser.parse_known_args()
 
     # ================== VALIDATION =========================
-    load_output_validate_model(args.output_path)
+    load_output_validate_model(args.output_path, args.max_files, args.max_ed)
     
     print_separator(f'DONE!')
   

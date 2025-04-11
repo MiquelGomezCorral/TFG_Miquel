@@ -26,8 +26,8 @@ def print_fields(key, hits, prop, acc, pre, rec, fsc, N, file_out):
     print(f"{key:>15} | {hits:>5}/{N:<5} | {prop:^10.4f} | {acc:^7.4f} | {pre:^9.4f} | {rec:^6.4f} | {fsc:7.4f}", file=file_out)
         
 
-def save_scores(scores: dict, N: int, path: str) -> None:
-    with open(os.path.join(path, "score.csv"), 'w', newline="") as out_file:
+def save_scores(scores: dict, N: int, path: str, out_file_name: str) -> None:
+    with open(os.path.join(path, f"{out_file_name}.csv"), 'w', newline="") as out_file:
         out_writer = csv.DictWriter(
             out_file, fieldnames=[
                 "Field", "Hits", "Total", "Proportion", "Accuracy", 
