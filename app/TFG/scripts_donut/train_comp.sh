@@ -11,7 +11,7 @@ TRAIN_VALUES=(5 10 15 20 25 30)
 N_TEMPLATES=5
 VAL=(30 30 30 30 30 30)
 TEST=100
-BASE_OUTPUT="app/TFG/outputs/donut"
+BASE_OUTPUT="TFG/outputs/donut"
 SCRIPT="app/TFG/scripts_donut/train_model.py"
 
 echo "🔧 Starting training for ${#TRAIN_VALUES[@]} configurations..."

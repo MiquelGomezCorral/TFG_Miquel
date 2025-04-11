@@ -1,7 +1,0 @@
-Getting Model Time: 08.2086 sec.
-Creating pythorch Dataset Time: 38.9895 sec.
-Setting additional atributes Time: 00.0003 sec.
-Creating pytorch Data Loaders Time: 00.0002 sec.
-Training Time: 19 mins, 37.4961 sec.
-Testing Time: 01 mins, 34.2569 sec.
-TOTAL Time: 21 mins, 58.9578 sec.

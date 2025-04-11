@@ -10,7 +10,11 @@ sconf>=0.2.3
 datasets
 sentence-transformers==2.2.2
 ipynb
+pip install ipykernel
 wandb
 donut-python
 img2pdf
 python-dotenv
+matplotlib
+plotly
+nbformat>=4.2.0
