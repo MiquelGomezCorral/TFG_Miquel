@@ -23,7 +23,5 @@ https://drive.google.com/drive/folders/1BIYWqM5QI9LuC572ClKfI6v4rOdH0o1e
 ```
 - docker compose up --build
 
-- Go to the docker extension, rightclick on tfg_miquel-python > attach Visual Studio Code
+- Go to the docker extension, rightclick on tfg_miquel-python > attach Visual Studio Cod
 ```
-
-* [ ]
