@@ -17,9 +17,9 @@ if __name__ == "__main__":
 import json
 import argparse
 from TFG.utils.utils import print_separator
-from TFG.utils.metrics import print_scores, save_scores
-from TFG.utils.metrics import update_scores, norm_scores
-from TFG.utils.validation_utils import validate_prediction, validate_prediction_ed
+from TFG.utils.metrics import print_scores, recompute_scores, save_scores
+from TFG.utils.metrics import update_scores
+from TFG.utils.validation_utils import validate_prediction, validate_prediction_ed, base_scores
 
 
 def load_output_validate_model(output_path: str, max_files: int = -1, max_ed: int = 5):
@@ -44,16 +44,10 @@ def validate_model(output_path: str, ground_truths, model_predictions, max_files
     N = len(ground_truths)
     if N == 0: raise ValueError("Empty output, no output values found.")
     
-    scores: dict[str, tuple] = {
-        "all": (0,0,0,0,0), # N_hist, Accuracy, Precision, Recall, Fscore
-        **{key: (0,0,0,0,0) for key in ground_truths[0]}
-    }
-    scores_leiv: dict[dict[str, tuple]] = {
-        i : {
-            "all": (0,0,0,0,0), # N_hist, Accuracy, Precision, Recall, Fscore
-            **{key: (0,0,0,0,0) for key in ground_truths[0]}
-        }
-        for i in range(1, max_ed+1)
+    scores = base_scores.copy()
+    scores_leiv: dict[dict[str, dict[str, float]]] = {
+        ed: scores.copy()
+        for ed in range(1, max_ed+1)
     }
     
     
@@ -74,7 +68,7 @@ def validate_model(output_path: str, ground_truths, model_predictions, max_files
         if verbose:
             print(F" - Mistakes: {mistakes}", end="\r")
         
-    scores = norm_scores(scores, N)
+    scores = recompute_scores(scores, N)
     # key: (val, total_acuracy, proportion, precision, recall, fscore)
     
     if verbose:
@@ -89,7 +83,7 @@ def validate_model(output_path: str, ground_truths, model_predictions, max_files
         save_scores(scores, N, output_path, out_file_name)
         
         for i, sub_score in scores_leiv.items():
-            sub_score = norm_scores(sub_score, N)
+            sub_score = recompute_scores(sub_score, N)
             out_file_name = f"scores{f'_{max_files}' if max_files >= 0 else ''}_ed{i}"
             with open(os.path.join(output_path, f"{out_file_name}.txt"), "w") as out_file:
                 print_scores(sub_score, N, file_out = out_file)

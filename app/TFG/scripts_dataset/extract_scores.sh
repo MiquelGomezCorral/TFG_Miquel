@@ -25,15 +25,13 @@ TESTING_ROUTES=(
     TFG/outputs/donut_v2/donut_comp_5x5_30_100
     TFG/outputs/donut_v2/donut_comp_6x5_30_100
 
-    TFG/outputs/orc_llm_keep/prebuilt-read
+    TFG/outputs/orc_llm_keep/ocr_llm_prebuilt-read
     TFG/outputs/orc_llm_keep/ocr_finetuned_2x5_v1
     TFG/outputs/orc_llm_keep/ocr_finetuned_3x5_v1
     TFG/outputs/orc_llm_keep/ocr_finetuned_4x5_v1
-    TFG/outputs/orc_llm_keep/ocr_finetuned_4x5_v1_fail
     TFG/outputs/orc_llm_keep/ocr_finetuned_5x1_v1
     TFG/outputs/orc_llm_keep/ocr_finetuned_5x5_v1
     TFG/outputs/orc_llm_keep/ocr_finetuned_5x5_v1_205
-    TFG/outputs/orc_llm_keep/ocr_finetuned_5x5_v1_fail
 )
 
 echo "🔧 Starting validation for ${#TESTING_ROUTES[@]} configurations..."
@@ -41,7 +39,9 @@ echo "🔧 Starting validation for ${#TESTING_ROUTES[@]} configurations..."
 for i in "${!TESTING_ROUTES[@]}"; do
     TR=${TESTING_ROUTES[$i]}
     
-    echo "Validating output at ${TR}"
+    echo "=========================================================================================================="
+    echo "                           Validating output at ${TR}"
+    echo "=========================================================================================================="
     # If this command fails, the script will exit here
     python TFG/scripts_dataset/validate_model.py -o ${TR} -f 100
 done
