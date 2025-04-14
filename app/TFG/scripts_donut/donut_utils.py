@@ -21,11 +21,14 @@ def from_output_to_json(processor, outputs, decoded: bool = False, second_reg: b
     seq = processor.token2json(seq)
     return seq
 
-def clear_folder(folder='./temp'):
+def clear_folder(folder='./temp', remove_folder: bool = False):
     """Clear the contents of the temporary folder."""
     if os.path.exists(folder) and os.path.isdir(folder):
         # Remove all contents in the temp directory
         shutil.rmtree(folder)
         print(f"Cleared the {folder} folder.")
+        
+        if remove_folder and os.path.exists(folder):
+            os.remove(folder)
     else:
         print(f"The directory {folder} does not exist.")

@@ -1,5 +1,6 @@
 import os
 import sys
+import copy
 
 if __name__ == "__main__":
     curr_directory = os.getcwd()
@@ -44,12 +45,12 @@ def validate_model(output_path: str, ground_truths, model_predictions, max_files
     N = len(ground_truths)
     if N == 0: raise ValueError("Empty output, no output values found.")
     
-    scores = base_scores.copy()
+    
+    scores = copy.deepcopy(base_scores)
     scores_leiv: dict[dict[str, dict[str, float]]] = {
-        ed: scores.copy()
+        ed: copy.deepcopy(scores)
         for ed in range(1, max_ed+1)
     }
-    
     
     for gt, out in zip(ground_truths, model_predictions):
         if isinstance(out, list):
@@ -89,7 +90,7 @@ def validate_model(output_path: str, ground_truths, model_predictions, max_files
                 print_scores(sub_score, N, file_out = out_file)
             save_scores(sub_score, N, output_path, out_file_name)
     
-    print(f"Validate model: {scores = }")
+    # print(f"Validate model: {scores = }")
     return scores, sub_score
         
 

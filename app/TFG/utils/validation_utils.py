@@ -1,4 +1,4 @@
-            
+import copy
 import json
 from TFG.utils.metrics import check_date_value, levenshtein_distance, levenshtein_similarity, precision_recall_f1, token_precision_recall_f1
 
@@ -32,7 +32,7 @@ def validate_prediction(gt, pred, verbose: bool = False):
     """
         Recieve json str or dict ground trugths and model predictions and outputs the corresponding metrics
     """
-    scores = base_scores.copy()
+    scores = copy.deepcopy(base_scores)
     total_keys: int = len(gt)
     n_correct: int = 0
     mistaken_keys: list = list()
@@ -150,7 +150,7 @@ def validate_prediction_ed(gt, pred, edit_distance: int, verbose: bool = False):
     """
         Recieve json str or dict ground trugths and model predictions and outputs the corresponding metrics
     """
-    scores = base_scores.copy()
+    scores = copy.deepcopy(base_scores)
 
     total_keys: int = len(gt)
     n_correct: int = 0

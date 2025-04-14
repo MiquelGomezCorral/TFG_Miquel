@@ -4,6 +4,23 @@ import json
 from ocr_llm_module.ocr.azure.document_intelligence import AzureDocumentIntelligenceClient
 
 def document_to_orc(ocr_client: AzureDocumentIntelligenceClient, file_io: io.BytesIO, prebuilt_model: str = None):
+    """
+    Processes a document using an OCR client and extracts text and structured fields.
+
+    Args:
+        ocr_client (AzureDocumentIntelligenceClient): The client used to perform OCR using Azure's Document Intelligence API.
+        file_io (io.BytesIO): A file-like object containing the document to be processed (e.g., a PDF or image).
+        prebuilt_model (str, optional): If specified, uses this prebuilt model for OCR (e.g., "prebuilt-invoice", "prebuilt-layout").
+
+    Returns:
+        tuple:
+            - raw_lines (str): All the lines of text from the document, separated by page breaks.
+            - document_content (str): Full STRUCTURED text content of the document, also separated by page breaks.
+            - pages (list[str]): List of page-wise STRUCTURED strings representing the text on each page.
+            - fields_content (dict): Dictionary of extracted fields and their corresponding values.
+            - json_output (dict): Raw JSON-like dictionary output from the OCR result containing structured data.
+    """
+
     # IMPORTANT TO CHANGE THE TYPE OF DOCUMENT THAT THE OCR HAS TO READ.
     
     if prebuilt_model is None:
@@ -11,13 +28,17 @@ def document_to_orc(ocr_client: AzureDocumentIntelligenceClient, file_io: io.Byt
     else:
         pages, result = ocr_client.read_document(file_io, prebuilt_model=prebuilt_model)
 
-    # check_orc_outpu(result)
-    fields_content, json_output = get_fields_from_result(result)
+    # check_orc_output(result)
+
+    page_break = "\n\n ------- PAGE BREAK ------- \n\n"
+    # print(result)
+    raw_lines = result.content
+    document_content: str = page_break.join(pages)
+    # fields_content, json_output = get_fields_from_result(result)
     # print(f"{fields_content = }")
     
-    document_content: str = "\n\n ------- PAGE BREAK ------- \n\n".join(pages)
 
-    return document_content, pages, fields_content, json_output 
+    return raw_lines, document_content, pages, None, None #fields_content, json_output 
 
 
 
@@ -91,43 +112,32 @@ def check_orc_output(result):
     # poller = document_intelligence_client.begin_analyze_document(
     #     model_id, AnalyzeDocumentRequest(url_source=formUrl)
     # )
-    
-    for idx, document in enumerate(result.documents):
-        print("--------Analyzing document #{}--------".format(idx + 1))
-        print("Document has type {}".format(document.doc_type))
-        print("Document has confidence {}".format(document.confidence))
-        print("Document was analyzed by model with ID {}".format(result.model_id))
-        for name, field in document.fields.items():
-            print("......found field of type '{}' with value '{}' and with confidence {}".format(field.type, field.content, field.confidence))
+    if result.documents:
+        for idx, document in enumerate(result.documents):
+            print(f"--------Analyzing document #{idx + 1}--------")
+            print(f"Document has type {document.doc_type}")
+            print(f"Document has confidence {document.confidence}")
+            print(f"Document was analyzed by model with ID {result.model_id}")
+            for name, field in document.fields.items():
+                print(f"......found field of type '{field.type}' with value '{field.content}' and with confidence {field.confidence}")
 
+    if result.pages:
+        for page in result.pages:
+            print(f"\nLines found on page {page.page_number}")
+            for line in page.lines:
+                print(f" - Line '{line.content.encode('utf-8')}'")
+            for word in page.words:
+                print(f" - Word '{word.content.encode('utf-8')}' has a confidence of {word.confidence}")
+            if page.selection_marks:
+                for selection_mark in page.selection_marks:
+                    print(f" - Selection mark is '{selection_mark.state}' and has a confidence of {selection_mark.confidence}")
 
-    # iterate over tables, lines, and selection marks on each page
-    for page in result.pages:
-        print("\nLines found on page {}".format(page.page_number))
-        for line in page.lines:
-            print("...Line '{}'".format(line.content.encode('utf-8')))
-        for word in page.words:
-            print(
-                "...Word '{}' has a confidence of {}".format(
-                    word.content.encode('utf-8'), word.confidence
-                )
-            )
-        if page.selection_marks:
-            for selection_mark in page.selection_marks:
-                print(
-                    "...Selection mark is '{}' and has a confidence of {}".format(
-                        selection_mark.state, selection_mark.confidence
-                    )
-                )
+    if result.tables:
+        for i, table in enumerate(result.tables):
+            print(f"\nTable {i + 1} can be found on page:")
+            for region in table.bounding_regions:
+                print(f"...{region.page_number}")
+            for cell in table.cells:
+                print(f"...Cell[{cell.row_index}][{cell.column_index}] has content '{cell.content.encode('utf-8')}'")
 
-    for i, table in enumerate(result.tables):
-        print("\nTable {} can be found on page:".format(i + 1))
-        for region in table.bounding_regions:
-            print("...{}".format(i + 1, region.page_number))
-        for cell in table.cells:
-            print(
-                "...Cell[{}][{}] has content '{}'".format(
-                    cell.row_index, cell.column_index, cell.content.encode('utf-8')
-                )
-            )
     print("-----------------------------------")

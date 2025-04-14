@@ -41,6 +41,7 @@ def main(args):
         
     return total
     
+    
 def get_text_cost(to_tokenize_text: str, type: Literal["input", "cached_input", "output"] , verbose: bool = False) -> float:
     cost_1m_tokens =  COST_1M_TOKENS[type]
     
@@ -52,6 +53,8 @@ def get_text_cost(to_tokenize_text: str, type: Literal["input", "cached_input", 
         print(f"The text costs {cost:5.6f}€ acoding to {cost_1m_tokens}")
         
     return cost
+    
+    
     
 if __name__ == "__main__":
     sys.path.append("/app")

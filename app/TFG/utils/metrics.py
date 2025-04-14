@@ -161,8 +161,6 @@ def recompute_scores(scores: dict[str, dict[str, float]], N: int) -> dict[str, t
             precision_recall_f1(sub_dict["tp"], sub_dict["fp"], sub_dict["fn"])
         )
         
-        
-            
     return new_socres
     
             

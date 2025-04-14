@@ -30,7 +30,15 @@ if __name__ == "__main__":
     # TIME_TRACKER.print_metrics(N)
 
 
-    t = 1744252067.5264242
-    readable = datetime.fromtimestamp(t)
-    print(readable)
-    print(parse_seconds_to_minutes(time.time() - t), "ago")
+    # t = 1744252067.5264242
+    # readable = datetime.fromtimestamp(t)
+    # print(readable)
+    # print(parse_seconds_to_minutes(time.time() - t), "ago")
+    
+    page_break = "\n\n ------- PAGE BREAK ------- \n\n"
+    raw_lines = page_break.join([
+        "\n".join([line for line in page]) 
+        for page in result.pages
+    ])
+    
+    print(raw_lines)
