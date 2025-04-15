@@ -1,5 +1,6 @@
 import copy
 import json
+import string
 from TFG.utils.metrics import check_date_value, levenshtein_distance, levenshtein_similarity, precision_recall_f1, token_precision_recall_f1
 
 
@@ -118,8 +119,9 @@ def validate_answer(key_gt, val_gt, val_pred) -> bool:
         else: return False
         
     if key_gt == "address":
-        similarity = levenshtein_similarity(val_gt, val_pred)
-        return similarity > 0.95
+        # Remove all puntuation
+        val_gt =   " ".join(val_gt.split()).translate(str.maketrans('', '', string.punctuation))
+        val_pred = " ".join(val_pred.split()).translate(str.maketrans('', '', string.punctuation))
     
     # THIS SHOULD NOT BE DONE: THE MODEL SHOULD BE ABLE TO SPECIFY IF A FIELD APPEARS OR NOT
     if key_gt in ["discount", "tax", "subtotal", "total"]:
