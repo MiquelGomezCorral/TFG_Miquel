@@ -125,6 +125,8 @@ def main(args):
                 raw_lines, document_content, pages, fields_content, json_output = document_to_orc(ocr_client, file_io, prebuilt_model=model)
                 MODEL_TIME_TRACKER.track(tag="Extracting content.", space=False)
                 
+                print(f"\n{raw_lines = }\n")
+                print(f"\n{document_content = }\n")
                 
                 # LLm
                 if args.llm:

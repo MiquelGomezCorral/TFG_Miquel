@@ -5,6 +5,15 @@ from TFG.utils.time_traker import TimeTracker, parse_seconds_to_minutes
 import time
 from datetime import datetime
 
+    
+class Test():
+    def __init__(self):
+        self.test = "test"
+
+
+
+
+
 if __name__ == "__main__":
     # N = 100
     # # TIME_TRACKER = TimeTracker(name="Testing", start_track_now=True)
@@ -35,10 +44,14 @@ if __name__ == "__main__":
     # print(readable)
     # print(parse_seconds_to_minutes(time.time() - t), "ago")
     
-    page_break = "\n\n ------- PAGE BREAK ------- \n\n"
-    raw_lines = page_break.join([
-        "\n".join([line for line in page]) 
-        for page in result.pages
-    ])
+    # page_break = "\n\n ------- PAGE BREAK ------- \n\n"
+    # raw_lines = page_break.join([
+    #     "\n".join([line for line in page]) 
+    #     for page in result.pages
+    # ])
     
-    print(raw_lines)
+    # print(raw_lines)
+    test: Test = Test()
+    print(test.test)
+    print(test.test2)
+    
