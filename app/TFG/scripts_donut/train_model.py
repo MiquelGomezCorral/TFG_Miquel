@@ -1,4 +1,4 @@
-import os
+import os#, tempfile
 import sys
 import argparse
 from dotenv import load_dotenv
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-m", "--pretrained_model_name_or_path", type=str, required=False, default="naver-clova-ix/donut-base")
     parser.add_argument("-d", "--dataset_name_or_path", type=str, required=False, default= f"final_dataset_fatura") #"['naver-clova-ix/cord-v1']"
-    parser.add_argument("-o", "--result_path", type=str, required=False, default='./TFG/outputs/donut')
+    parser.add_argument("-o", "--result_path", type=str, required=False, default='./TFG/outputs/donut_test/donut_comp_30x5_30_100')
     parser.add_argument("-n", "--task_name", type=str, default="fatura_train")
     parser.add_argument("-k", "--make_me_a_donut", action="store_false", default=True)
     parser.add_argument("-b", "--boom_folders", action="store_false", default=True)
@@ -67,6 +67,11 @@ from functools import partial
 from datasets import load_dataset
 from torch.utils.data import DataLoader
 from transformers import VisionEncoderDecoderConfig, DonutProcessor, VisionEncoderDecoderModel
+
+# # point all tempfile operations to your Drive folder
+# DRIVE_TMP = "./temp"
+# os.makedirs(DRIVE_TMP, exist_ok=True)
+# tempfile.tempdir = DRIVE_TMP
 import pytorch_lightning as pl
 from pytorch_lightning.loggers import WandbLogger
 from pytorch_lightning.callbacks import Callback, EarlyStopping, ModelCheckpoint
@@ -207,9 +212,9 @@ def train_model(args):
     
     print_separator(f'Creating pytorch Data Loaders...', sep_type="LONG")
     print(" - Creating Training Dataloader...")
-    train_dataloader = DataLoader(train_dataset, batch_size=1, shuffle=True, num_workers=4)
+    train_dataloader = DataLoader(train_dataset, batch_size=1, shuffle=True, num_workers=0) # num_workers=4
     print(" - Creating Validation Dataloader...")
-    val_dataloader = DataLoader(val_dataset, batch_size=1, shuffle=False, num_workers=4)
+    val_dataloader = DataLoader(val_dataset, batch_size=1, shuffle=False, num_workers=0) # num_workers=4
 
     TIME_TRAKER.track("Creating pytorch Data Loaders")
     
@@ -238,6 +243,7 @@ def train_model(args):
         save_last=False,  # Do not save the last model 
         dirpath='./temp',  # Directory to store checkpoints
         filename='donut_champion', 
+        save_weights_only=False
     )
     trainer = pl.Trainer(
             accelerator="gpu",
