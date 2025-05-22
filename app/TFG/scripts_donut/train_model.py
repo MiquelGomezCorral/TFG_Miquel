@@ -23,8 +23,8 @@ if __name__ == "__main__":
     # ============================================================
     parser = argparse.ArgumentParser()
     parser.add_argument("-m", "--pretrained_model_name_or_path", type=str, required=False, default="naver-clova-ix/donut-base")
-    parser.add_argument("-d", "--dataset_name_or_path", type=str, required=False, default= f"final_dataset_fatura") #"['naver-clova-ix/cord-v1']"
-    parser.add_argument("-o", "--result_path", type=str, required=False, default='./TFG/outputs/donut_test/donut_comp_30x5_30_100')
+    parser.add_argument("-d", "--dataset_name_or_path", type=str, required=False, default= f"./final_dataset_fatura") #"['naver-clova-ix/cord-v1']"
+    parser.add_argument("-o", "--result_path", type=str, required=False, default='./TFG/outputs/donut_test/donut_comp_5x5_30_100_v3')
     parser.add_argument("-n", "--task_name", type=str, default="fatura_train")
     parser.add_argument("-k", "--make_me_a_donut", action="store_false", default=True)
     parser.add_argument("-b", "--boom_folders", action="store_false", default=True)
@@ -164,7 +164,8 @@ def train_model(args):
     """TAKE INTO ACCOUNT THAT WE MODIFY THE TOKENIZER"""
     processor.image_processor.size = CONFIG.image_size[::-1] # should be (width, height)
     processor.image_processor.do_align_long_axis = False
-
+    
+    print("Dataset name or path:", CONFIG.dataset_name_or_path)
     train_dataset = DonutDataset(
         dataset_name_or_path=CONFIG.dataset_name_or_path, 
         model=model,
