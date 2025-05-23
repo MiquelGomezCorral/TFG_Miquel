@@ -1,10 +1,9 @@
 app/data/*
+!app/data/.gitkeep
 
 app/keys.txt
 wandb_api.txt
-!app/script_orc_llm.py
 
-app/TFG/outputs/donut/model_trained/*
 app/wandb/
 app/temp/
 
