@@ -1,0 +1,402 @@
+{
+    "ground_truths": [
+        {
+            "buyer": "Laura Goodman",
+            "address": "485 Jones Street East Sheilamouth, KY 74720 US",
+            "date": "11-Apr-2011",
+            "currency": "EUR",
+            "subtotal": 818.64,
+            "discount": 21.04,
+            "tax": 30.84,
+            "total": 826.48
+        },
+        {
+            "buyer": "Andre Quinn",
+            "address": "92236 Samantha Heights Apt. 345 Tammyton, AZ 75233 US",
+            "date": "05-May-2002",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 65.31,
+            "total": 1054.49
+        },
+        {
+            "buyer": "Julia Walters",
+            "address": "24930 Brittney Light Petersonport, MA 05662 US",
+            "date": "26-Oct-2013",
+            "currency": "USD",
+            "subtotal": 1232.25,
+            "discount": null,
+            "tax": 70.98,
+            "total": 1244.45
+        },
+        {
+            "buyer": "Ariel Davis",
+            "address": "20828 Franklin Lights Apt. 278 East Kim, VT 04239 US",
+            "date": "14-Apr-2006",
+            "currency": "USD",
+            "subtotal": 1290.12,
+            "discount": null,
+            "tax": 51.79,
+            "total": 1288.63
+        },
+        {
+            "buyer": "Shannon Alexander",
+            "address": "838 Harris Ferry Matthewburgh, MP 10645 US",
+            "date": "17-Sep-2009",
+            "currency": "USD",
+            "subtotal": 707.98,
+            "discount": null,
+            "tax": null,
+            "total": 722.84
+        },
+        {
+            "buyer": "Rachel Gonzalez",
+            "address": "80812 Cervantes Courts Philipmouth, NV 87475 US",
+            "date": "21-Feb-2007",
+            "currency": "USD",
+            "subtotal": 156.64,
+            "discount": 2.98,
+            "tax": 7.16,
+            "total": 162.12
+        },
+        {
+            "buyer": "Laura Goodman",
+            "address": "485 Jones Street East Sheilamouth, KY 74720 US",
+            "date": "11-Apr-2011",
+            "currency": "EUR",
+            "subtotal": 818.64,
+            "discount": 21.04,
+            "tax": 30.84,
+            "total": 826.48
+        },
+        {
+            "buyer": "Andre Quinn",
+            "address": "92236 Samantha Heights Apt. 345 Tammyton, AZ 75233 US",
+            "date": "05-May-2002",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 65.31,
+            "total": 1054.49
+        },
+        {
+            "buyer": "Julia Walters",
+            "address": "24930 Brittney Light Petersonport, MA 05662 US",
+            "date": "26-Oct-2013",
+            "currency": "USD",
+            "subtotal": 1232.25,
+            "discount": null,
+            "tax": 70.98,
+            "total": 1244.45
+        },
+        {
+            "buyer": "Ariel Davis",
+            "address": "20828 Franklin Lights Apt. 278 East Kim, VT 04239 US",
+            "date": "14-Apr-2006",
+            "currency": "USD",
+            "subtotal": 1290.12,
+            "discount": null,
+            "tax": 51.79,
+            "total": 1288.63
+        },
+        {
+            "buyer": "Shannon Alexander",
+            "address": "838 Harris Ferry Matthewburgh, MP 10645 US",
+            "date": "17-Sep-2009",
+            "currency": "USD",
+            "subtotal": 707.98,
+            "discount": null,
+            "tax": null,
+            "total": 722.84
+        },
+        {
+            "buyer": "Rachel Gonzalez",
+            "address": "80812 Cervantes Courts Philipmouth, NV 87475 US",
+            "date": "21-Feb-2007",
+            "currency": "USD",
+            "subtotal": 156.64,
+            "discount": 2.98,
+            "tax": 7.16,
+            "total": 162.12
+        },
+        {
+            "buyer": "Laura Goodman",
+            "address": "485 Jones Street East Sheilamouth, KY 74720 US",
+            "date": "11-Apr-2011",
+            "currency": "EUR",
+            "subtotal": 818.64,
+            "discount": 21.04,
+            "tax": 30.84,
+            "total": 826.48
+        },
+        {
+            "buyer": "Andre Quinn",
+            "address": "92236 Samantha Heights Apt. 345 Tammyton, AZ 75233 US",
+            "date": "05-May-2002",
+            "currency": "USD",
+            "subtotal": null,
+            "discount": null,
+            "tax": 65.31,
+            "total": 1054.49
+        },
+        {
+            "buyer": "Julia Walters",
+            "address": "24930 Brittney Light Petersonport, MA 05662 US",
+            "date": "26-Oct-2013",
+            "currency": "USD",
+            "subtotal": 1232.25,
+            "discount": null,
+            "tax": 70.98,
+            "total": 1244.45
+        },
+        {
+            "buyer": "Ariel Davis",
+            "address": "20828 Franklin Lights Apt. 278 East Kim, VT 04239 US",
+            "date": "14-Apr-2006",
+            "currency": "USD",
+            "subtotal": 1290.12,
+            "discount": null,
+            "tax": 51.79,
+            "total": 1288.63
+        },
+        {
+            "buyer": "Shannon Alexander",
+            "address": "838 Harris Ferry Matthewburgh, MP 10645 US",
+            "date": "17-Sep-2009",
+            "currency": "USD",
+            "subtotal": 707.98,
+            "discount": null,
+            "tax": null,
+            "total": 722.84
+        },
+        {
+            "buyer": "Rachel Gonzalez",
+            "address": "80812 Cervantes Courts Philipmouth, NV 87475 US",
+            "date": "21-Feb-2007",
+            "currency": "USD",
+            "subtotal": 156.64,
+            "discount": 2.98,
+            "tax": 7.16,
+            "total": 162.12
+        }
+    ],
+    "predictions": [
+        [
+            {
+                "Buyer": "Laura Goodman",
+                "Date": "2011-04-11",
+                "Currency": "EUR",
+                "Discount": "21.04",
+                "Address": "485 Jones Street East Sheilamouth, KY 74720 US",
+                "SubTotal": "818.64",
+                "Tax": "30.84",
+                "Total": "826.48"
+            }
+        ],
+        [
+            {
+                "Buyer": "Andre Quinn",
+                "Date": "2002-05-05",
+                "Currency": "USD",
+                "Address": "92236 Samantha Heights Apt. 345 Tammyton, AZ 75233 US",
+                "Tax": "65.31",
+                "Total": "1054.49",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Julia Walters",
+                "Date": "2013-10-26",
+                "Currency": "USD",
+                "Address": "24930 Brittney Light Petersonport, MA 05662 US",
+                "SubTotal": "1232.25",
+                "Tax": "70.98",
+                "Total": "1244.45",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Ariel Davis",
+                "Date": "2006-04-14",
+                "Currency": "USD",
+                "Address": "20828 Franklin Lights Apt. 278 East Kim, VT 04239 US",
+                "SubTotal": "1290.12",
+                "Tax": "51.79",
+                "Total": "1288.63",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Shannon Alexander",
+                "Date": "2009-09-17",
+                "Currency": "USD",
+                "Address": "838 Harris Ferry Matthewburgh, MP 10645 US",
+                "SubTotal": "707.98",
+                "Total": "722.84",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Rachel Gonzalez",
+                "Date": "2007-02-21",
+                "Currency": "USD",
+                "Discount": "2.98",
+                "Address": "80812 Cervantes Courts Philipmouth, NV 87475 US",
+                "SubTotal": "156.64",
+                "Tax": "7.16",
+                "Total": "162.12"
+            }
+        ],
+        [
+            {
+                "Buyer": "Laura Goodman",
+                "Date": "2011-04-11",
+                "Currency": "EUR",
+                "Discount": "21.04",
+                "Address": "485 Jones Street East Sheilamouth, KY 74720 US",
+                "SubTotal": "818.64",
+                "Tax": "30.84",
+                "Total": "826.48"
+            }
+        ],
+        [
+            {
+                "Buyer": "Andre Quinn",
+                "Date": "2002-05-05",
+                "Currency": "USD",
+                "Address": "92236 Samantha Heights Apt. 345 Tammyton, AZ 75233 US",
+                "Tax": "65.31",
+                "Total": "1054.49",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Julia Walters",
+                "Date": "2013-10-26",
+                "Currency": "USD",
+                "Address": "24930 Brittney Light Petersonport, MA 05662 US",
+                "SubTotal": "1232.25",
+                "Tax": "70.98",
+                "Total": "1244.45",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Ariel Davis",
+                "Date": "2006-04-14",
+                "Currency": "USD",
+                "Address": "20828 Franklin Lights Apt. 278 East Kim, VT 04239 US",
+                "SubTotal": "1290.12",
+                "Tax": "51.79",
+                "Total": "1288.63",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Shannon Alexander",
+                "Date": "2009-09-17",
+                "Currency": "USD",
+                "Address": "838 Harris Ferry Matthewburgh, MP 10645 US",
+                "SubTotal": "707.98",
+                "Total": "722.84",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Rachel Gonzalez",
+                "Date": "2007-02-21",
+                "Currency": "USD",
+                "Discount": "2.98",
+                "Address": "80812 Cervantes Courts Philipmouth, NV 87475 US",
+                "SubTotal": "156.64",
+                "Tax": "7.16",
+                "Total": "162.12"
+            }
+        ],
+        [
+            {
+                "Buyer": "Laura Goodman",
+                "Date": "2011-04-11",
+                "Currency": "EUR",
+                "Discount": "21.04",
+                "Address": "485 Jones Street East Sheilamouth, KY 74720 US",
+                "SubTotal": "818.64",
+                "Tax": "30.84",
+                "Total": "826.48"
+            }
+        ],
+        [
+            {
+                "Buyer": "Andre Quinn",
+                "Date": "2002-05-05",
+                "Currency": "USD",
+                "Address": "92236 Samantha Heights Apt. 345 Tammyton, AZ 75233 US",
+                "Tax": "65.31",
+                "Total": "1054.49 USD",
+                "SubTotal": null,
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Julia Walters",
+                "Date": "2013-10-26",
+                "Currency": "USD",
+                "Address": "24930 Brittney Light Petersonport, MA 05662 US",
+                "SubTotal": "1232.25",
+                "Tax": "70.98",
+                "Total": "1244.45",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Ariel Davis",
+                "Date": "2006-04-14",
+                "Currency": "USD",
+                "Address": "20828 Franklin Lights Apt. 278 East Kim, VT 04239 US",
+                "SubTotal": "1290.12",
+                "Tax": "51.79",
+                "Total": "1288.63",
+                "Discount": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Shannon Alexander",
+                "Date": "2009-09-17",
+                "Currency": "USD",
+                "Address": "838 Harris Ferry Matthewburgh, MP 10645 US",
+                "SubTotal": "707.98",
+                "Total": "722.84",
+                "Discount": null,
+                "Tax": null
+            }
+        ],
+        [
+            {
+                "Buyer": "Rachel Gonzalez",
+                "Date": "2007-02-21",
+                "Currency": "USD",
+                "Discount": "2.98",
+                "Address": "80812 Cervantes Courts Philipmouth, NV 87475 US",
+                "SubTotal": "156.64",
+                "Tax": "7.16",
+                "Total": "162.12"
+            }
+        ]
+    ]
+}

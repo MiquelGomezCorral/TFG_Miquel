@@ -34,14 +34,15 @@ WORKDIR /app
 # ====== Install python dependencies ======
 RUN pip install --upgrade pip setuptools wheel tomlq
 
-# Solver dependencies (privatte)
+# Solver dependencies (private)
 RUN pip install --extra-index-url https://solver:x6tDJ2to9Koz@pypi.solverml.com/ ocr-llm-module==0.0.1 
 
 
 # Custom dependencies
-COPY ./scripts_environment/requirements.txt .
+COPY ./setup/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-
-# Expose port 8000 for the application
+COPY ./app/setup.py setup.py
+RUN pip install -e .
+# Expose port 8000 for the application if needed
 # EXPOSE 8080

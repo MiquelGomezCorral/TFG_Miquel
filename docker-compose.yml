@@ -9,4 +9,6 @@ services:
       # - MODULE_VERSION=0.0.1
     volumes:
       - ./app:/app
+    environment:
+      - PYTHONPATH=/app
     command: sh -c "tail -f /dev/null" # Mantener encendido el contenedor

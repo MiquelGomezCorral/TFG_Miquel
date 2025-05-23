@@ -1,0 +1,26 @@
+{
+    "ground_truths": [
+        {
+            "buyer": "Laura Goodman",
+            "address": "485 Jones Street East Sheilamouth, KY 74720 US",
+            "date": "11-Apr-2011",
+            "currency": "EUR",
+            "subtotal": 818.64,
+            "discount": 21.04,
+            "tax": 30.84,
+            "total": 826.48
+        }
+    ],
+    "predictions": [
+        {
+            "buyer": "Laura Goodman",
+            "address": "485 Jones Street, East Sheilamouth, KY 74720 US",
+            "date": "2011-04-11",
+            "currency": "EUR",
+            "subtotal": 818.64,
+            "discount": 21.04,
+            "tax": 30.84,
+            "total": 826.48
+        }
+    ]
+}
