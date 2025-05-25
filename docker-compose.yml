@@ -11,4 +11,7 @@ services:
       - ./app:/app
     environment:
       - PYTHONPATH=/app
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
     command: sh -c "tail -f /dev/null" # Mantener encendido el contenedor

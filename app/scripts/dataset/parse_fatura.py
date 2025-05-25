@@ -82,10 +82,15 @@ if __name__ == "__main__":
     parser.add_argument("-t", "--test_split", type=float)
     parser.add_argument("-v", "--val_split", type=float)
     parser.add_argument("-n", "--n_files", type=int, default=100)
-    parser.add_argument("-j", "--dataset_json_path", type=str, default="datasets_finetune/FATURA/Annotations/Original_Format")
-    parser.add_argument("-i", "--dataset_img_path", type=str, default="datasets_finetune/FATURA/images")
-    parser.add_argument("-s", "--save_path", type=str, default="final_dataset_fatura/")
+    parser.add_argument("-j", "--dataset_json_path", type=str, default="data/invoices_dataset_final/Original_Format")
+    parser.add_argument("-i", "--dataset_img_path", type=str, default="data/invoices_dataset_final/images")
+    parser.add_argument("-s", "--save_path", type=str, default="data/final_dataset_fatura/")
     parser.add_argument("--seed", type=int, default=42)
     args, left_argv = parser.parse_known_args()
-
+    
+    if args.test_split is not None and (args.test_split > 1 or args.test_split < 0):
+        raise ValueError("Test split values not valir, has to be in [0, 1]. -t")
+    if args.val_split is not None and (args.val_split > 1 or args.val_split < 0):
+        raise ValueError("Validation split values not valir, has to be in [0, 1]. -v")
+    
     main(args)

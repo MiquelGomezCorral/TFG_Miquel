@@ -1,7 +1,7 @@
 
 from typing import Any, Dict
 
-from file_class import Factura
+from src.dataset.file_class import Factura
 
 
 # ===========================================

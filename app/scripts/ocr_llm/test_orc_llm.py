@@ -9,10 +9,11 @@
 import os
 import io
 import json
-import dotenv
 import img2pdf  
 import argparse
 import itertools
+from pathlib import Path
+from dotenv import load_dotenv
 
 from ocr_llm_module.llm.azure.azure_openai import AzureOpenAILanguageModel
 from ocr_llm_module.ocr.azure.document_intelligence import AzureDocumentIntelligenceClient
@@ -27,12 +28,12 @@ from src.ocr_llm.llm import LLMStructuredResponse, document_to_llm
 from src.utils.utils import clear_folder
 
 
+
 def main(args):
     # ================================================================
     #                           Check directory 
     # ================================================================
     os.makedirs(args.save_path, exist_ok=True)
-
     metadata_path = os.path.join(args.dataset_path, "metadata.jsonl")
     if not os.path.exists(metadata_path):
         raise KeyError(f"No 'metadata.jsonl' file found at {args.dataset_path}. Add one with the proper format")
@@ -45,15 +46,26 @@ def main(args):
     #                     Initialize clients and aux
     # ================================================================
     print_separator("Initializing Clients and  variables...", sep_type="LONG")
-    ocr_client: AzureDocumentIntelligenceClient = AzureDocumentIntelligenceClient()
-    llm_client: AzureOpenAILanguageModel = AzureOpenAILanguageModel()
+    ocr_client: AzureDocumentIntelligenceClient = AzureDocumentIntelligenceClient(
+        azure_endpoint=os.environ["AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT"],
+        azure_api_key=os.environ["AZURE_DOCUMENT_INTELLIGENCE_API_KEY"]
+    )
+
+    llm_client: AzureOpenAILanguageModel = AzureOpenAILanguageModel(
+        azure_endpoint=os.environ["AZURE_OPENAI_ENDPOINT"],
+        api_key=os.environ["AZURE_OPENAI_API_KEY"],
+        api_version=os.environ["AZURE_OPENAI_API_VERSION"],
+        embedings_endpoint=os.environ["AZURE_OPENAI_EMBEDDINGS_ENDPOINT"],
+        embeddings_api_key=os.environ["AZURE_OPENAI_EMBEDDINGS_API_KEY"],
+        embedings_model=os.environ["AZURE_OPENAI_EMBEDDINGS_MODEL"]
+    )
     
     TIME_TRACKER = TimeTracker(name="OCR LLM Testing")
     
     models: list[str] = [
         # f"ocr_finetuned_{i*5}x5_v1" for i in range(1,5+1)
-        # "prebuilt-read",
-        "prebuilt-invoice",
+        "prebuilt-read",
+        # "prebuilt-invoice",
         # "ocr_finetuned_5x5_v1",
         # "ocr_finetuned_4x5_v1",
         # "ocr_finetuned_3x5_v1",
@@ -123,8 +135,8 @@ def main(args):
                 raw_lines, document_content, pages, fields_content, json_output = document_to_orc(ocr_client, file_io, prebuilt_model=model)
                 MODEL_TIME_TRACKER.track(tag="Extracting content.", space=False)
                 
-                print(f"\n{raw_lines = }\n")
-                print(f"\n{document_content = }\n")
+                # print(f"\n{raw_lines = }\n")
+                # print(f"\n{document_content = }\n")
                 
                 # LLm
                 if args.llm:
@@ -203,15 +215,15 @@ def save_output(save_path, ground_truths, predictions, costs, time_tracker):
 
 
 if __name__ == "__main__":
-    dotenv.load_dotenv()
+    load_dotenv(dotenv_path=Path("/app/.env"))
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-d", "--dataset_path", type=str, default="./final_dataset_fatura/test",
+        "-d", "--dataset_path", type=str, default="data/final_dataset_fatura/test",
         help="Local path from ./app to the dataset."
     )
     parser.add_argument(
-        "-s", "--save_path", type=str, default="./TFG/outputs/ocr_llm_test",
+        "-s", "--save_path", type=str, default="src/outputs/ocr_llm_test",
         help="Local path from ./app to the folder where all the outputs will be placed."
     )
     parser.add_argument(
