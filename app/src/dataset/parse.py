@@ -210,18 +210,18 @@ def parse_file_redeable(file_name: str, pre_parsed_data: Factura) -> Dict[str, A
     return parsed_data
 
 
-# ===========================================
-#                Main
-# ===========================================
+# # ===========================================
+# #                Main
+# # ===========================================
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--test_split", type=float)
-    parser.add_argument("--val_split", type=float)
-    parser.add_argument("--dataset_json_path", type=str, default="datasets_finetune/outputs/FATURA/redeable")
-    parser.add_argument("--dataset_img_path", type=str, default="datasets_finetune/FATURA/images")
-    parser.add_argument("--save_path", type=str, default="datasets_finetune/outputs/FATURA")
-    parser.add_argument("--seed", type=int, default=42)
-    args, left_argv = parser.parse_known_args()
+# if __name__ == "__main__":
+#     parser = argparse.ArgumentParser()
+#     parser.add_argument("--test_split", type=float)
+#     parser.add_argument("--val_split", type=float)
+#     parser.add_argument("--dataset_json_path", type=str, default="datasets_finetune/outputs/FATURA/redeable")
+#     parser.add_argument("--dataset_img_path", type=str, default="datasets_finetune/FATURA/images")
+#     parser.add_argument("--save_path", type=str, default="datasets_finetune/outputs/FATURA")
+#     parser.add_argument("--seed", type=int, default=42)
+#     args, left_argv = parser.parse_known_args()
 
-    load_ensure_parse_and_save_files(args)
+#     load_ensure_parse_and_save_files(args)

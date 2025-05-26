@@ -205,7 +205,10 @@ def save_output(save_path, ground_truths, predictions, costs, time_tracker):
 if __name__ == "__main__":
     dotenv.load_dotenv()
 
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        prog="OCR LLM Test",
+        description="Test the OCR LLM module with a dataset, get the tokens cost and save the outputs. It will use the Azure Document Intelligence and Azure OpenAI APIs."
+    )
     parser.add_argument(
         "-d", "--dataset_path", type=str, default="./final_dataset_fatura/test",
         help="Local path from ./app to the dataset."

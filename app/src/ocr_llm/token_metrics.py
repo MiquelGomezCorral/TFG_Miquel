@@ -1,19 +1,5 @@
-import os
 import sys
 from typing import Literal
-
-if __name__ == "__main__":
-    curr_directory = os.getcwd()
-    print("\nStarting Directory:", curr_directory)
-    if not curr_directory.endswith("app"):
-        if curr_directory.endswith("TFG_Miquel"):
-            os.chdir("./app") 
-        else: os.chdir("../") 
-        print("New Directory:", os.getcwd())
-    # if new_directory is not None and not curr_directory.endswith(new_directory):
-    #     os.chdir(f"./{new_directory}") 
-    #     print("New Directory:", os.getcwd(), "\n")
-    sys.path.append(os.getcwd())
     
 import json
 import argparse
@@ -57,11 +43,9 @@ def get_text_cost(to_tokenize_text: str, type: Literal["input", "cached_input", 
     
     
 if __name__ == "__main__":
-    sys.path.append("/app")
-
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-o", "--model_output_path", type=str, default="./TFG/outputs/orc_llm_keep/FATURA_GOOD/output.json",
+        "-o", "--model_output_path", type=str, default="./src/outputs/orc_llm_keep/FATURA_GOOD/output.json",
         help="Local path from ./app to the dataset."
     )
     args, left_argv = parser.parse_known_args()

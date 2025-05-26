@@ -1,5 +1,4 @@
 from typing import Dict, Callable, Iterable
-from nltk import edit_distance
 from dataclasses import dataclass, field, asdict
 
 @dataclass

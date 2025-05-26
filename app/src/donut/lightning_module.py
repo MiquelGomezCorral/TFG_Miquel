@@ -1,22 +1,14 @@
 import re
-import time
-import math
-import json
 import torch
 import numpy as np
-from pathlib import Path
 from nltk import edit_distance
 from typing import Callable, Iterable, Tuple
 
-from torch.nn.utils.rnn import pad_sequence
-from torch.optim.lr_scheduler import LambdaLR
 
 import pytorch_lightning as pl
-from pytorch_lightning.utilities import rank_zero_only
 
 
 from src.donut.donut_utils import from_output_to_json
-# from TFG.scripts_dataset.time_traker import print_time
 
 
 class DonutModelPLModule(pl.LightningModule):

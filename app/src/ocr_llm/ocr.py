@@ -1,4 +1,3 @@
-    
 import io
 import json
 from ocr_llm_module.ocr.azure.document_intelligence import AzureDocumentIntelligenceClient

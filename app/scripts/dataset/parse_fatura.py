@@ -110,7 +110,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--seed", type=int, default=42,
-        help="random seed"
+        help="random seed. (default 42)"
     )
     args, left_argv = parser.parse_known_args()
     
