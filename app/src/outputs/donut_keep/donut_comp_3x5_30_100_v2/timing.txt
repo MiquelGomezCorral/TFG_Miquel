@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Getting Model Time: 07.7802 sec.
 Creating pythorch Dataset Time: 43.8227 sec.
 Setting additional atributes Time: 00.0003 sec.
@@ -6,12 +5,3 @@ Creating pytorch Data Loaders Time: 00.0003 sec.
 Training Time: 03 mins, 04.4246 sec.
 Testing Time: 02 mins, 21.6383 sec.
 TOTAL Time: 06 mins, 17.6732 sec.
-=======
-Getting Model Time: 07.7802 sec.
-Creating pythorch Dataset Time: 43.8227 sec.
-Setting additional atributes Time: 00.0003 sec.
-Creating pytorch Data Loaders Time: 00.0003 sec.
-Training Time: 03 mins, 04.4246 sec.
-Testing Time: 02 mins, 21.6383 sec.
-TOTAL Time: 06 mins, 17.6732 sec.
->>>>>>> db2f1eff (changed root folder by default for imports)
