@@ -35,7 +35,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-f", "--folder_path", type=str,
-        default="./finetune_orc/validation/"
+        default="data/finetune_orc/validation/"
     )
     args, left_argv = parser.parse_known_args()
     main(args)

@@ -86,7 +86,7 @@ def validate_model(output_path: str, ground_truths, model_predictions, max_files
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-o", "--output_path", type=str, default="TFG/outputs/FATURA/orc_llm/FATURA_GOOD",
+        "-o", "--output_path", type=str, default="src/outputs/orc_llm_keep/ocr_finetuned_5x5_v1",
         help="Path to the model output. Will be used as result path as well."
     )
     parser.add_argument(

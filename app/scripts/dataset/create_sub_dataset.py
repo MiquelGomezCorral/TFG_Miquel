@@ -60,11 +60,11 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-d", "--dataset_path", type=str, default="./final_dataset_fatura",
+        "-d", "--dataset_path", type=str, default="data/final_dataset_fatura",
         help="Local path from ./app to the dataset."
     )
     parser.add_argument(
-        "-s", "--save_path", type=str, default="./final_dataset_fatura_single",
+        "-s", "--save_path", type=str, default="data/final_dataset_fatura_single",
         help="Local path from ./app to the folder where all the outputs will be placed."
     )
     parser.add_argument(
