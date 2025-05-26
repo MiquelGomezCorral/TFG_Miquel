@@ -1,10 +1,14 @@
 #!/bin/bash
 
-# python app/srcpts/scripts_donut/train_model.py -tr 5  -va 5 -ts 100 -o app/TFG/outputs/donut/donut_comp_1x5_5_100 -n donut_comp_1x5_5_100 -k
-# python app/TFG/scripts_donut/train_model.py -tr 10 -va 5 -ts 100 -o app/TFG/outputs/donut/donut_comp_2x5_5_100 -n donut_comp_2x5_5_100 -k
-# python app/TFG/scripts_donut/train_model.py -tr 15 -va 5 -ts 100 -o app/TFG/outputs/donut/donut_comp_3x5_5_100 -n donut_comp_3x5_5_100 -k
-# python app/TFG/scripts_donut/train_model.py -tr 20 -va 5 -ts 100 -o app/TFG/outputs/donut/donut_comp_4x5_5_100 -n donut_comp_4x5_5_100 -k
-# python app/TFG/scripts_donut/train_model.py -tr 25 -va 5 -ts 100 -o app/TFG/outputs/donut/donut_comp_5x5_5_100 -n donut_comp_5x5_5_100 -k
+
+# This script trains multiple models with different training values and saves the outputs in a specified directory.
+# Above some examples of the calls it should be doing
+
+# python app/scripts/donut/train_model.py -tr 5  -va 5 -ts 100 -o app/src/outputs/donut/donut_comp_1x5_5_100 -n donut_comp_1x5_5_100 -k
+# python app/scripts/donut/train_model.py -tr 10 -va 5 -ts 100 -o app/src/outputs/donut/donut_comp_2x5_5_100 -n donut_comp_2x5_5_100 -k
+# python app/scripts/donut/train_model.py -tr 15 -va 5 -ts 100 -o app/src/outputs/donut/donut_comp_3x5_5_100 -n donut_comp_3x5_5_100 -k
+# python app/scripts/donut/train_model.py -tr 20 -va 5 -ts 100 -o app/src/outputs/donut/donut_comp_4x5_5_100 -n donut_comp_4x5_5_100 -k
+# python app/scripts/donut/train_model.py -tr 25 -va 5 -ts 100 -o app/src/outputs/donut/donut_comp_5x5_5_100 -n donut_comp_5x5_5_100 -k
 
 
 TRAIN_VALUES=(5 10 15 20 25 30)

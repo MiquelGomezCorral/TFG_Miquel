@@ -19,6 +19,7 @@ def load_output_validate_model(output_path: str, max_files: int = -1, max_ed: in
     if "ground_truths" not in output or "predictions" not in output:
         raise KeyError("Missing required keys: 'ground_truths' or 'predictions'.")
     
+    # crop the n of files to max_files
     ground_truths = output["ground_truths"][:max_files]
     model_predictions = output["predictions"][:max_files]
     
@@ -30,35 +31,40 @@ def validate_model(output_path: str, ground_truths, model_predictions, max_files
     N = len(ground_truths)
     if N == 0: raise ValueError("Empty output, no output values found.")
     
-    
+    # Set scores base and the scores with tolerance 
     scores = copy.deepcopy(base_scores)
     scores_leiv: dict[dict[str, dict[str, float]]] = {
         ed: copy.deepcopy(scores)
         for ed in range(1, max_ed+1)
     }
     
+    # Check each prediction against the ground truth
     for gt, out in zip(ground_truths, model_predictions):
         if isinstance(out, list):
-            if out:
-                out = out[0]
-            else: 
-                print(f"\n - Skiping validtaion \n{out = } \n{gt = }")
-                continue
+            if out:  out = out[0]
+            else:    print(f"\n - Skiping validtaion \n{out = } \n{gt = }"); continue
+        
+        # noraml scores
         new_scores, all_correct, proportion, mistakes = validate_prediction(gt, out)
         scores = update_scores(scores, new_scores)
         
+        # Tolerance scores
         for i, sub_score in scores_leiv.items():
             new_scores, all_correct, accuracy, mistaken_keys = validate_prediction_ed(gt, out, edit_distance=i)
             scores_leiv[i] = update_scores(sub_score, new_scores)
         
+        
         if verbose:
             print(F" - Mistakes: {mistakes}", end="\r")
         
+    # Create avg and set the fields properly
     scores = recompute_scores(scores, N)
     # key: (val, total_acuracy, proportion, precision, recall, fscore)
     
     if verbose:
         print_scores(scores, N)
+        
+    # Save scoress
     if output_path:
         print_separator(f'Saving output...')
         os.makedirs(output_path, exist_ok=True)

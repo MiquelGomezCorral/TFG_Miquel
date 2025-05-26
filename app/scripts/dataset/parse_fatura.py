@@ -52,13 +52,16 @@ def main(args) -> None:
         file_name = f"Template{curr_template}_Instance{curr_file_id}.json"
         
         file_path = os.path.join(args.dataset_json_path, file_name)
-        with open(file_path) as f:
-            print(f" - {i+1:<4}: Processing {file_name}...")
-            
-            d = json.load(f)
-            pre_parsed_file = extract_json(d, curr_template)
-
-            pre_parsed_files.append((file_name, pre_parsed_file))
+        if not os.path.exists(file_path):
+            print(f"Skipping {file_name} as it does not exist.")
+        else:
+            with open(file_path) as f:
+                print(f" - {i+1:<4}: Processing {file_name}...")
+                
+                d = json.load(f)
+                pre_parsed_file = extract_json(d, curr_template)
+                pre_parsed_files.append((file_name, pre_parsed_file))
+                
         TIME_TRAKER.finish_lap()
         
     TIME_TRAKER.track(tag="Finish porcessing files")

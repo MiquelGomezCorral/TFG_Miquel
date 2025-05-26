@@ -18,6 +18,11 @@ from src.utils.time_traker import print_time
 from src.donut.donut_utils import from_output_to_json
 
 
+"""
+    FILE NOT TESTED, MOST LIKELY IT WONT WORK!
+    I'M LAZY AS HELL
+"""
+
 
 def test_model(
     model, processor, dataset_name_or_path, save_path, task_pront, 
@@ -138,6 +143,10 @@ if __name__ == "__main__":
     if args.task_name is None:
         args.task_name = os.path.basename(args.dataset_name_or_path)
 
+
+    print("FILE NOT TESTED, MOST LIKELY IT WONT WORK!")
+
+    
     # ================== PROCESSING =========================
     t1 = time.time()
     print_separator(f'Processing {args.task_name} for test...')

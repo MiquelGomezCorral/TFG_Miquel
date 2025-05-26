@@ -1,85 +1,39 @@
+# ========== EARLY ARGS (before imports) ==========
+import argparse
+
+early_parser = argparse.ArgumentParser(add_help=False)
+early_parser.add_argument("-k", "--make_me_a_donut", action="store_false", default=True)
+early_args, _ = early_parser.parse_known_args()
+
+# Start donut animation if requested
+if early_args.make_me_a_donut:
+    import multiprocessing
+    from src.donut.donut_print import print_donut, clean_all
+
+    stop_event = multiprocessing.Event()
+    donut_process = multiprocessing.Process(
+        target=lambda: print_donut(infinite=True),
+        daemon=True
+    )
+    donut_process.start()
+else:
+    donut_process = None
+    stop_event = None
+
+
+# ========== HEAVY IMPORTS ==========
 import os
 import argparse
 from dotenv import load_dotenv
 
-if __name__ == "__main__":
-    load_dotenv()
-    
-    # ============================================================ 
-    #                   Parse arguments
-    # ============================================================
-    parser = argparse.ArgumentParser(
-        prog="Train Donut Model",
-        description="Train a Donut model with the given parameters. If you want to test the model, use the `test_model.py` script."
-    )
-    parser.add_argument(
-        "-m", "--pretrained_model_name_or_path", type=str, required=False, default="naver-clova-ix/donut-base",
-        help="Path to the pretrained model or model name from HuggingFace Hub. (default: naver-clova-ix/donut-base)"
-    )
-    parser.add_argument(
-        "-d", "--dataset_name_or_path", type=str, required=False, default= f"data/final_dataset_fatura", #"['naver-clova-ix/cord-v1']
-        help="Path to the dataset or dataset name from HuggingFace Hub. (default: data/final_dataset_fatura)"
-    )
-    parser.add_argument(
-        "-o", "--result_path", type=str, required=False, default='src/outputs/donut_test/donut_test',
-        help="Path to the folder where the results will be saved. (default: src/outputs/donut_test/donut_test)"
-    )
-    parser.add_argument(
-        "-n", "--task_name", type=str, default="fatura_train",
-        help="Name of the training task (used for logging and outputs). If not provided, it will be set to the name of the dataset folder. (default: fatura_train)"
-    )
-    parser.add_argument(
-        "-k", "--make_me_a_donut", action="store_false", default=True,
-        help="Whether to start the donut animation. If set to False, the animation will not start. (default: True)"
-    )
-    parser.add_argument(
-        "-b", "--boom_folders", action="store_false", default=True,
-        help="Whether to clear the output folders before training. If set to False, the folders will not be cleared. (default: True)"
-    )
-
-    parser.add_argument(
-        "-tr", "--train_samples", type=int, default=None,
-        help="Number of samples for testing, 'None' will take al much as possible"
-    )
-    parser.add_argument(
-        "-va", "--validation_samples", type=int, default=None,
-        help="Number of samples for validation, 'None' will take al much as possible"
-    )
-    parser.add_argument(
-        "-ts", "--test_samples", type=int, default=None,
-        help="Number of samples for test, 'None' will take al much as possible"
-    )
-    
-    args, left_argv = parser.parse_known_args()
-
-    if args.task_name is None:
-        args.task_name = os.path.basename(args.dataset_name_or_path)
-        
-        
-    # ============================================================ 
-    #      Start the donut animation in a separated process
-    # ============================================================
-    if args.make_me_a_donut:
-        import multiprocessing
-        from src.donut.donut_print import print_donut, clean_all
-            
-        stop_event = multiprocessing.Event()
-        donut_process = multiprocessing.Process(
-            target=lambda: print_donut(infinite=True),
-            daemon=True # So if the main program stops it also does
-        )
-        donut_process.start()
-
 import json
 from functools import partial
-from datasets import load_dataset
 from torch.utils.data import DataLoader
 from transformers import VisionEncoderDecoderConfig, DonutProcessor, VisionEncoderDecoderModel
 
 import pytorch_lightning as pl
 from pytorch_lightning.loggers import WandbLogger
 from pytorch_lightning.callbacks import Callback, EarlyStopping, ModelCheckpoint
-
 
 from scripts.donut.test_model import test_model
 
@@ -154,8 +108,6 @@ def train_model(args):
     vision_encoder_config.encoder.image_size = CONFIG.image_size # (height, width)
     # update max_length of the decoder (for generation)
     vision_encoder_config.decoder.max_length = CONFIG.max_length
-    # TODO we should actually update max_position_embeddings and interpolate the pre-trained ones:
-    # https://github.com/clovaai/donut/blob/0acc65a85d140852b8d9928565f0f6b2d98dc088/donut/model.py#L602
     
     """CHECK FOR WARNING ABOUT THE WEIGHTS BEING WELL LOADED"""
     processor = DonutProcessor.from_pretrained("naver-clova-ix/donut-base")
@@ -167,7 +119,7 @@ def train_model(args):
     #                               DATASET PYTORCH
     # =============================================================================
     print_separator(f'Creating pytorch Dataset...', sep_type="LONG")
-    """TAKE INTO ACCOUNT THAT WE MODIFY THE TOKENIZER"""
+    # TAKE INTO ACCOUNT THAT WE MODIFY THE TOKENIZER 
     processor.image_processor.size = CONFIG.image_size[::-1] # should be (width, height)
     processor.image_processor.do_align_long_axis = False
     
@@ -205,8 +157,12 @@ def train_model(args):
     
     
     print_separator(f'Setting additional atributes...', sep_type="NORMAL")
-    """nother important thing is that we need to set 2 additional attributes in the configuration of the model. This is not required, but will allow us to train the model by only providing the decoder targets, without having to provide any decoder inputs.
-    The model will automatically create the `decoder_input_ids` (the decoder inputs) based on the `labels`, by shifting them one position to the right and prepending the decoder_start_token_id. I recommend checking [this video](https://www.youtube.com/watch?v=IGu7ivuy1Ag&t=888s&ab_channel=NielsRogge) if you want to understand how models like Donut automatically create decoder_input_ids - and more broadly how Donut works."""
+    # Author comments: another important thing is that we need to set 2 additional attributes in the configuration of the model. This is not required, 
+    # but will allow us to train the model by only providing the decoder targets, without having to provide any decoder inputs.
+    # The model will automatically create the `decoder_input_ids` (the decoder inputs) based on the `labels`, 
+    # by shifting them one position to the right and prepending the decoder_start_token_id. I recommend checking 
+    # [this video](https://www.youtube.com/watch?v=IGu7ivuy1Ag&t=888s&ab_channel=NielsRogge) if you want to understand how models 
+    # like Donut automatically create decoder_input_ids - and more broadly how Donut works.
 
     model.config.pad_token_id = processor.tokenizer.pad_token_id
     model.config.decoder_start_token_id = processor.tokenizer.convert_tokens_to_ids([CONFIG.special_token])[0]
@@ -221,7 +177,7 @@ def train_model(args):
     print(" - Creating Training Dataloader...")
     train_dataloader = DataLoader(train_dataset, batch_size=1, shuffle=True, num_workers=0) # num_workers=4
     print(" - Creating Validation Dataloader...")
-    val_dataloader = DataLoader(val_dataset, batch_size=1, shuffle=False, num_workers=0) # num_workers=4
+    val_dataloader   = DataLoader(val_dataset, batch_size=1, shuffle=False, num_workers=0) # num_workers=4
 
     TIME_TRAKER.track("Creating pytorch Data Loaders")
     
@@ -239,30 +195,31 @@ def train_model(args):
         val_dataloader=val_dataloader
     )
     
+    # wandb to have a track of the model executionss
     wandb_logger = WandbLogger(project="Donut", name=CONFIG.task_name)
     early_stop_callback = EarlyStopping(monitor="val_edit_distance", patience=3, verbose=False, mode="min")
     
     os.makedirs('./temp', exist_ok=True)
     checkpoint_callback = ModelCheckpoint(
-        monitor='val_edit_distance',  # monitor metric validation loss
-        mode='min',  # We want to minimize the edit distance
-        save_top_k=CONFIG.save_top_k,  # 1 to Only save the best model
-        save_last=False,  # Do not save the last model 
-        dirpath='./temp',  # Directory to store checkpoints
+        monitor='val_edit_distance',    # monitor metric validation loss
+        mode='min',                     # We want to minimize the edit distance
+        save_top_k=CONFIG.save_top_k,   # 1 to Only save the best model
+        save_last=False,                # Do not save the last model 
+        dirpath='./temp',               # Directory to store checkpoints
         filename='donut_champion', 
         save_weights_only=False
     )
     trainer = pl.Trainer(
             accelerator="gpu",
             devices=1,
-            max_epochs=MODEL_CONFIG.max_epochs, #get("max_epochs"),
-            val_check_interval=MODEL_CONFIG.val_check_interval, #get("val_check_interval"),
-            check_val_every_n_epoch=MODEL_CONFIG.check_val_every_n_epoch, #get("check_val_every_n_epoch"),
-            gradient_clip_val=MODEL_CONFIG.gradient_clip_val, #get("gradient_clip_val"),
-            precision=16, # we'll use mixed precision
+            max_epochs=MODEL_CONFIG.max_epochs,                             #get("max_epochs"),
+            val_check_interval=MODEL_CONFIG.val_check_interval,             #get("val_check_interval"),
+            check_val_every_n_epoch=MODEL_CONFIG.check_val_every_n_epoch,   #get("check_val_every_n_epoch"),
+            gradient_clip_val=MODEL_CONFIG.gradient_clip_val,               #get("gradient_clip_val"),
+            precision=16,                                                   # we'll use mixed precision
             num_sanity_val_steps=0,
             logger=wandb_logger,
-            callbacks=[checkpoint_callback, early_stop_callback],#[PushToHubCallback(), early_stop_callback],
+            callbacks=[checkpoint_callback, early_stop_callback],           #[PushToHubCallback(), early_stop_callback],
     )
 
     trainer.fit(model_module, train_dataloaders=train_dataloader, val_dataloaders=val_dataloader)
@@ -292,6 +249,7 @@ def train_model(args):
     print_separator(f'TIMING {args.task_name}', sep_type="SUPER")
 
     metrics = TIME_TRAKER.print_metrics()
+    os.makedirs(args.result_path, exist_ok=True)
     with open(os.path.join(args.result_path, "timing.txt"), "w") as f:
         TIME_TRAKER.print_metrics(out_file = f)
     with open(os.path.join(args.result_path, "timing.json"), "w") as f:
@@ -303,11 +261,60 @@ def train_model(args):
 #                               MAIN & ARGS 
 # ====================================================================
 if __name__ == "__main__":
-    # ================== Silly donut ======================
+    load_dotenv()
+    parser = argparse.ArgumentParser(
+        prog="Train Donut Model",
+        description="Train a Donut model with the given parameters. If you want to test the model, use the `test_model.py` script."
+    )
+    parser.add_argument(
+        "-m", "--pretrained_model_name_or_path", type=str, required=False, default="naver-clova-ix/donut-base",
+        help="Path to the pretrained model or model name from HuggingFace Hub. (default: naver-clova-ix/donut-base)"
+    )
+    parser.add_argument(
+        "-d", "--dataset_name_or_path", type=str, required=False, default= f"data/final_dataset_fatura", #"['naver-clova-ix/cord-v1']
+        help="Path to the dataset or dataset name from HuggingFace Hub. (default: data/final_dataset_fatura)"
+    )
+    parser.add_argument(
+        "-o", "--result_path", type=str, required=False, default='src/outputs/donut_test/donut_test',
+        help="Path to the folder where the results will be saved. (default: src/outputs/donut_test/donut_test)"
+    )
+    parser.add_argument(
+        "-n", "--task_name", type=str, default="fatura_train",
+        help="Name of the training task (used for logging and outputs). If not provided, it will be set to the name of the dataset folder. (default: fatura_train)"
+    )
+    parser.add_argument(
+        "-k", "--make_me_a_donut", action="store_false", default=True,
+        help="Whether to start the donut animation. If set to False, the animation will not start. (default: True)"
+    )
+    parser.add_argument(
+        "-b", "--boom_folders", action="store_false", default=True,
+        help="Whether to clear the output folders before training. If set to False, the folders will not be cleared. (default: True)"
+    )
+
+    parser.add_argument(
+        "-tr", "--train_samples", type=int, default=None,
+        help="Number of samples for testing, 'None' will take al much as possible"
+    )
+    parser.add_argument(
+        "-va", "--validation_samples", type=int, default=None,
+        help="Number of samples for validation, 'None' will take al much as possible"
+    )
+    parser.add_argument(
+        "-ts", "--test_samples", type=int, default=None,
+        help="Number of samples for test, 'None' will take al much as possible"
+    )
+    
+    args, left_argv = parser.parse_known_args()
+
+    if args.task_name is None:
+        args.task_name = os.path.basename(args.dataset_name_or_path)
+        
+        
+    # ================== Stop donut ======================
     if args.make_me_a_donut:
-        stop_event.set()  # Signal the animation to stop
-        donut_process.terminate()  # Kill the process
-        donut_process.join()  # Ensure cleanup
+        stop_event.set()            # Signal the animation to stop
+        donut_process.terminate()   # Kill the process
+        donut_process.join()        # Ensure cleanup
         clean_all()
     
     # ================== Train ======================
