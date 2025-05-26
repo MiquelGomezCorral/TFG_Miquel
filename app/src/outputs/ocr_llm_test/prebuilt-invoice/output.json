@@ -1,5 +1,6 @@
 {
     "llm_costs": {
+<<<<<<< HEAD
         "input": 0.0013342500000000001,
         "output": 0.0009353999999999999
     },
@@ -253,10 +254,26 @@
             "discount": null,
             "tax": null,
             "total": 907.49
+=======
+        "input": 5.79e-05,
+        "output": 3.66e-05
+    },
+    "ground_truths": [
+        {
+            "buyer": "Laura Goodman",
+            "address": "485 Jones Street East Sheilamouth, KY 74720 US",
+            "date": "11-Apr-2011",
+            "currency": "EUR",
+            "subtotal": 818.64,
+            "discount": 21.04,
+            "tax": 30.84,
+            "total": 826.48
+>>>>>>> db2f1eff (changed root folder by default for imports)
         }
     ],
     "predictions": [
         {
+<<<<<<< HEAD
             "buyer": "Donna Little",
             "address": "54031 Robertson Squares, East Kimberlychester, MO 57002 US",
             "date": "1998-06-04",
@@ -505,6 +522,16 @@
             "discount": 2.01,
             "tax": 0.0,
             "total": 907.49
+=======
+            "buyer": "Laura Goodman",
+            "address": "485 Jones Street, East Sheilamouth, KY 74720 US",
+            "date": "2011-04-11",
+            "currency": "EUR",
+            "subtotal": 818.64,
+            "discount": 21.04,
+            "tax": 30.84,
+            "total": 826.48
+>>>>>>> db2f1eff (changed root folder by default for imports)
         }
     ]
 }
