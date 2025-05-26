@@ -79,13 +79,45 @@ def main(args) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--test_split", type=float)
-    parser.add_argument("-v", "--val_split", type=float)
-    parser.add_argument("-n", "--n_files", type=int, default=100)
-    parser.add_argument("-j", "--dataset_json_path", type=str, default="data/datasets_finetune/FATURA/Original_Format")
-    parser.add_argument("-i", "--dataset_img_path", type=str, default="data/datasets_finetune/FATURA/images")
-    parser.add_argument("-s", "--save_path", type=str, default="final_dataset_fatura/")
-    parser.add_argument("--seed", type=int, default=42)
+    parser = argparse.ArgumentParser(
+        prog="Parse fatura dataset to create useful notation",
+        description="Loops over the Fatura dataset and extracts from the notation the information to create the custom version of it"
+    )
+    
+    parser.add_argument(
+        "-t", "--test_split", type=float,
+        help="Proportion of samples for test in range [0,1]. (default None)"
+    )
+    parser.add_argument(
+        "-v", "--val_split", type=float,
+        help="Proportion of samples for validation in range [0,1]. (default None)"
+    )
+    parser.add_argument(
+        "-n", "--n_files", type=int, default=100,
+        help="Max number of files to process. (Default 0)"
+    )
+    parser.add_argument(
+        "-j", "--dataset_json_path", type=str, default="data/datasets_finetune/FATURA/Original_Format",
+        help="Path to the notated files"
+    )
+    parser.add_argument(
+        "-i", "--dataset_img_path", type=str, default="data/datasets_finetune/FATURA/images",
+        help="Path to the images"
+    )
+    parser.add_argument(
+        "-s", "--save_path", type=str, default="final_dataset_fatura/",
+        help="Saving path"
+    )
+    parser.add_argument(
+        "--seed", type=int, default=42,
+        help="random seed"
+    )
     args, left_argv = parser.parse_known_args()
-
+    
+    if args.test_split is not None and (args.test_split < 0 or args.test_split > 1):
+        raise ValueError("test_split (-t) has to be between 0 and 1 [0,1]")
+    if args.val_split is not None and (args.val_split < 0 or args.val_split > 1):
+        raise ValueError("val_split (-t) has to be between 0 and 1 [0,1]")
+    
+    
     main(args)

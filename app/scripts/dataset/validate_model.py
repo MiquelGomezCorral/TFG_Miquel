@@ -84,7 +84,10 @@ def validate_model(output_path: str, ground_truths, model_predictions, max_files
 #                               MAIN & ARGS 
 # ====================================================================
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        prog="Validate model output",
+        description="Validates the model output by comparing the ground truths with the predictions. It computes the scores and saves them to a file."
+    )
     parser.add_argument(
         "-o", "--output_path", type=str, default="src/outputs/orc_llm_keep/ocr_finetuned_5x5_v1",
         help="Path to the model output. Will be used as result path as well."

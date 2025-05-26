@@ -58,7 +58,10 @@ def main(args):
 #                               MAIN & ARGS 
 # ====================================================================
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        prog="create sub partition with one template",
+        description="Script to create a sub partition of a certain dataset with JUST ONE of the templates, leaves the original intact"
+    )
     parser.add_argument(
         "-d", "--dataset_path", type=str, default="data/final_dataset_fatura",
         help="Local path from ./app to the dataset."

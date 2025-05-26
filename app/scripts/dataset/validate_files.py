@@ -32,10 +32,13 @@ def main(args):
 #                               MAIN & ARGS 
 # ====================================================================
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        prog="Validate files",
+        description="Validates that all the files for a certain dataset exits. Go through all the GT and checks if the images associated with it exist."
+    )
     parser.add_argument(
-        "-f", "--folder_path", type=str,
-        default="data/finetune_orc/validation/"
+        "-f", "--folder_path", type=str, default="data/finetune_orc/validation/",
+        help="Path to the dataset folder"
     )
     args, left_argv = parser.parse_known_args()
     main(args)
