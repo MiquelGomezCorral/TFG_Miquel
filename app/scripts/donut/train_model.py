@@ -8,14 +8,35 @@ if __name__ == "__main__":
     # ============================================================ 
     #                   Parse arguments
     # ============================================================
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-m", "--pretrained_model_name_or_path", type=str, required=False, default="naver-clova-ix/donut-base")
-    parser.add_argument("-d", "--dataset_name_or_path", type=str, required=False, default= f"data/final_dataset_fatura") #"['naver-clova-ix/cord-v1']"
-    parser.add_argument("-o", "--result_path", type=str, required=False, default='src/outputs/donut_test/donut_test')
-    parser.add_argument("-n", "--task_name", type=str, default="fatura_train")
-    parser.add_argument("-k", "--make_me_a_donut", action="store_false", default=True)
-    parser.add_argument("-b", "--boom_folders", action="store_false", default=True)
-    
+    parser = argparse.ArgumentParser(
+        prog="Train Donut Model",
+        description="Train a Donut model with the given parameters. If you want to test the model, use the `test_model.py` script."
+    )
+    parser.add_argument(
+        "-m", "--pretrained_model_name_or_path", type=str, required=False, default="naver-clova-ix/donut-base",
+        help="Path to the pretrained model or model name from HuggingFace Hub. (default: naver-clova-ix/donut-base)"
+    )
+    parser.add_argument(
+        "-d", "--dataset_name_or_path", type=str, required=False, default= f"data/final_dataset_fatura", #"['naver-clova-ix/cord-v1']
+        help="Path to the dataset or dataset name from HuggingFace Hub. (default: data/final_dataset_fatura)"
+    )
+    parser.add_argument(
+        "-o", "--result_path", type=str, required=False, default='src/outputs/donut_test/donut_test',
+        help="Path to the folder where the results will be saved. (default: src/outputs/donut_test/donut_test)"
+    )
+    parser.add_argument(
+        "-n", "--task_name", type=str, default="fatura_train",
+        help="Name of the training task (used for logging and outputs). If not provided, it will be set to the name of the dataset folder. (default: fatura_train)"
+    )
+    parser.add_argument(
+        "-k", "--make_me_a_donut", action="store_false", default=True,
+        help="Whether to start the donut animation. If set to False, the animation will not start. (default: True)"
+    )
+    parser.add_argument(
+        "-b", "--boom_folders", action="store_false", default=True,
+        help="Whether to clear the output folders before training. If set to False, the folders will not be cleared. (default: True)"
+    )
+
     parser.add_argument(
         "-tr", "--train_samples", type=int, default=None,
         help="Number of samples for testing, 'None' will take al much as possible"

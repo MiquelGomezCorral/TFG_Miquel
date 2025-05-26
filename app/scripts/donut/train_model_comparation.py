@@ -89,7 +89,10 @@ if __name__ == "__main__":
     #                   Parse arguments
     # ============================================================
     # Old arguments for training
-    parser = argparse.ArgumentParser("Train and compare donut models with different settings.")
+    parser = argparse.ArgumentParser(
+        prog="Train and compare donut models with different settings.",
+        description="Trains multiple versions of a donut model with different dataset sizes and configurations."
+    )
     parser.add_argument(
         "-m", "--pretrained_model_name_or_path", type=str, required=False, default="naver-clova-ix/donut-base",
         help="Path or name of the pretrained model to fine-tune."
