@@ -15,7 +15,7 @@ import pytorch_lightning as pl
 from pytorch_lightning.utilities import rank_zero_only
 
 
-from TFG.scripts_donut.donut_utils import from_output_to_json
+from src.donut.donut_utils import from_output_to_json
 # from TFG.scripts_dataset.time_traker import print_time
 
 

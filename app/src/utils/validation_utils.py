@@ -1,7 +1,7 @@
 import copy
 import json
 import string
-from TFG.utils.metrics import check_date_value, levenshtein_distance, levenshtein_similarity, precision_recall_f1, token_precision_recall_f1
+from src.utils.metrics import check_date_value, levenshtein_distance, levenshtein_similarity, precision_recall_f1, token_precision_recall_f1
 
 
 keys = ['all', 'buyer', 'address', 'date', 'currency', 'subtotal', 'discount', 'tax', 'total']

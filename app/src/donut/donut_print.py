@@ -6,7 +6,7 @@ import sys
 import numpy as np
 import threading
 
-from TFG.utils.utils import print_separator
+from src.utils.utils import print_separator
 
 stop_event = threading.Event()
 
