@@ -32,8 +32,11 @@ RUN pip install --upgrade pip setuptools wheel tomlq
 RUN pip install --extra-index-url https://solver:x6tDJ2to9Koz@pypi.solverml.com/ ocr-llm-module==0.0.1 
 
 # ====== Set Root folder for imports & Install python dependencies ======
-COPY ./app/setup.py ./setup/requirements.txt ./
-RUN pip install -e . && pip install --no-cache-dir -r requirements.txt
+COPY ./app/setup.py ./
+RUN pip install -e . 
+
+COPY ./setup/requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
 
 
 # Expose port 8000 for the application if needed
