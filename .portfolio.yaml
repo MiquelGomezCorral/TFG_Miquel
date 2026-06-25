@@ -15,12 +15,16 @@ tags: [class]
 logo: readme-images/image.png
 screenShoots:
   - readme-images/image.png
+date:
+  en: Mar 2025
+  es: Mar 2025
 keywords:
   en: [document understanding, VDU, information extraction, OCR, DONUT, Azure OCR, LLM extraction, document AI, form parsing, JSON from image, Visual Document Understanding, bachelor thesis, PyTorch Lightning, Docker]
   es: [comprensión de documentos, VDU, extracción de información, OCR, DONUT, OCR de Azure, extracción con LLM, IA documental, parseo de formularios, JSON desde imagen, comprensión visual de documentos, TFG, PyTorch Lightning, Docker]
 slug: TFG_Miquel
 order: 85
 featured: false
+
 
 
 
