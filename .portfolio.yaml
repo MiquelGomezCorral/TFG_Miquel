@@ -12,6 +12,10 @@ descriptionLong:
     TFG que aborda el problema de VDU (Visual Document Understanding): extraer datos estructurados (JSON) a partir de imágenes de documentos. Implementa y compara tres enfoques: (1) pipeline OCR de Azure + LLM para extracción guiada por prompts, (2) fine-tuning de modelos OCR propios adaptados a la tarea específica, y (3) DONUT (Document Understanding Transformer de Clova AI), un modelo end-to-end basado en transformer encoder-decoder que procesa directamente la imagen del documento y genera la salida estructurada. DONUT se entrena con PyTorch Lightning, con tokenizador y procesador de imágenes personalizados. Incluye validación contra ground-truth, métricas de edición de distancia, y scripts de sincronización con repositorio privado de empresa. Contenerización completa con Docker Compose.
 technologies: [python, pytorch, docker, huggingface, jupyter]
 tags: [class]
+logo: readme-images/image.png
+screenShoots:
+  - readme-images/image.png
 slug: TFG_Miquel
 order: 85
 featured: false
+
