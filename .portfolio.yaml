@@ -1,6 +1,6 @@
 title:
-  en: TFG: Visual Document Understanding
-  es: TFG: Extracción de Información de Documentos
+  en: "TFG: Visual Document Understanding"
+  es: "TFG: Extracción de Información de Documentos"
 finished: finished
 descriptionShort:
   en: Bachelor's thesis evaluating Visual Document Understanding methods for extracting structured information from documents. Compares Azure OCR + LLM, custom fine-tuned OCR, and DONUT (Document Understanding Transformer) with PyTorch Lightning. Deployed with Docker.
@@ -31,7 +31,6 @@ keywords:
 slug: TFG_Miquel
 relevancy: 88
 featured: false
-
 
 
 
