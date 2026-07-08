@@ -91,9 +91,15 @@ Some of the requirements are libraries which are privated for company. In specif
 ## Gallery
 
 <p align="center">
-  <img src="readme-images/thumbnail_169.png" width="48%" />
-  <img src="readme-images/image_169.png" width="48%" />
-  <img src="readme-images/image%20(1)_169.png" width="48%" />
-  <img src="readme-images/image%20(2)_169.png" width="48%" />
+  <img src="readme-images/Thumbnail.gif" alt="Thumbnail" width="48%" />
+  <img src="readme-images/thumbnail_169.png" alt="thumbnail" width="48%" />
+  <img src="readme-images/image%20(1)_169.png" alt="image (1)" width="48%" />
+  <img src="readme-images/image%20(2)_169.png" alt="image (2)" width="48%" />
+  <img src="readme-images/image%20(3)_169.png" alt="image (3)" width="48%" />
+  <img src="readme-images/image%20(4)_169.png" alt="image (4)" width="48%" />
+  <img src="readme-images/image%20(5)_169.png" alt="image (5)" width="48%" />
+  <img src="readme-images/image%20(6)_169.png" alt="image (6)" width="48%" />
+  <img src="readme-images/image%20(7)_169.png" alt="image (7)" width="48%" />
+  <img src="readme-images/image_169.png" alt="image" width="48%" />
 </p>
 <!-- portfolio-gallery:end -->
