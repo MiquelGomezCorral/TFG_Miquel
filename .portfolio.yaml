@@ -13,6 +13,7 @@ descriptionLong:
 technologies: [ai, docker, huggingface, jupyter, matplot, numpy, pandas, plotly, python, pytorch]
 tags: [class]
 logo: readme-images/thumbnail_169.png
+gif: readme-images/Thumbnail.gif
 screenShoots:
   - readme-images/image_169.png
   - readme-images/image (1)_169.png
@@ -22,6 +23,7 @@ screenShoots:
   - readme-images/image (5)_169.png
   - readme-images/image (6)_169.png
   - readme-images/image (7)_169.png
+  - readme-images/Thumbnail.gif
 date:
   en: Mar 2025
   es: Mar 2025
